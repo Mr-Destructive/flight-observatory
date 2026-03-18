@@ -1,30 +1,26 @@
 [
   {
     "airport": "unknown",
-    "flights": 10225
+    "flights": 11402
   },
   {
     "airport": "HCME",
-    "flights": 28
+    "flights": 43
   },
   {
     "airport": "UESG",
-    "flights": 19
+    "flights": 27
   },
   {
-    "airport": "HCMG",
-    "flights": 15
-  },
-  {
-    "airport": "HAGO",
+    "airport": "OEOM",
     "flights": 14
   },
   {
-    "airport": "FSMA",
-    "flights": 13
+    "airport": "HCMV",
+    "flights": 14
   },
   {
-    "airport": "HCMV",
+    "airport": "HCAD",
     "flights": 13
   },
   {
@@ -36,67 +32,71 @@
     "flights": 12
   },
   {
-    "airport": "HCMN",
-    "flights": 12
-  },
-  {
-    "airport": "HCMU",
-    "flights": 11
-  },
-  {
-    "airport": "OEOM",
-    "flights": 11
-  },
-  {
-    "airport": "HCMF",
+    "airport": "HCMR",
     "flights": 10
   },
   {
-    "airport": "HCAD",
+    "airport": "HCMN",
     "flights": 9
   },
   {
-    "airport": "HKGA",
-    "flights": 9
-  },
-  {
-    "airport": "OYAT",
-    "flights": 9
-  },
-  {
-    "airport": "OESH",
-    "flights": 7
-  },
-  {
-    "airport": "HCMH",
-    "flights": 6
-  },
-  {
-    "airport": "HCMC",
-    "flights": 6
-  },
-  {
-    "airport": "FSSR",
-    "flights": 6
-  },
-  {
-    "airport": "OEPF",
-    "flights": 5
-  },
-  {
-    "airport": "HAKD",
-    "flights": 5
-  },
-  {
-    "airport": "OYSY",
-    "flights": 5
-  },
-  {
-    "airport": "HSKG",
-    "flights": 5
+    "airport": "HAGO",
+    "flights": 8
   },
   {
     "airport": "FSSD",
+    "flights": 8
+  },
+  {
+    "airport": "FSMA",
+    "flights": 8
+  },
+  {
+    "airport": "HKGA",
+    "flights": 8
+  },
+  {
+    "airport": "UESO",
+    "flights": 7
+  },
+  {
+    "airport": "HCMC",
+    "flights": 7
+  },
+  {
+    "airport": "HCMG",
+    "flights": 7
+  },
+  {
+    "airport": "OYGD",
+    "flights": 6
+  },
+  {
+    "airport": "HCMU",
+    "flights": 6
+  },
+  {
+    "airport": "HSKG",
+    "flights": 6
+  },
+  {
+    "airport": "HCMF",
+    "flights": 6
+  },
+  {
+    "airport": "HAWR",
+    "flights": 6
+  },
+  {
+    "airport": "HCMI",
+    "flights": 6
+  },
+  {
+    "airport": "OESH",
+    "flights": 5
+  },
+  {
+    "airport": "HCMA",
     "flights": 5
   }
 ]
