@@ -37,9 +37,16 @@
         <p class="hint">Leave blank to show all airports. Use <code>unknown</code> to view unmapped flights.</p>
       </div>
 
-      <section class="stats-grid" id="statsGrid"></section>
+      <section class="section">
+        <h2 class="section-title">Live Snapshot</h2>
+        <p class="section-subtitle">Latest 5-minute OpenSky pull (trimmed).</p>
+        <div class="stats-grid" id="statsGrid"></div>
+      </section>
 
-      <section class="grid">
+      <section class="section">
+        <h2 class="section-title">Live Charts</h2>
+        <p class="section-subtitle">Interactive charts from the latest snapshot.</p>
+        <div class="grid">
         <article class="card">
           <h2>Top Airports (Last 60m)</h2>
           <canvas id="topAirports"></canvas>
@@ -60,9 +67,13 @@
           <h2>Traffic by Minute</h2>
           <canvas id="minuteTraffic"></canvas>
         </article>
+        </div>
       </section>
 
-      <section class="tables">
+      <section class="section">
+        <h2 class="section-title">Live Tables</h2>
+        <p class="section-subtitle">Top categories from the current snapshot.</p>
+        <div class="tables">
         <article class="card wide">
           <h2>Top Airports (Snapshot)</h2>
           <div class="table" id="airportTable"></div>
@@ -75,9 +86,13 @@
           <h2>Top Origin Countries (Snapshot)</h2>
           <div class="table" id="countryTable"></div>
         </article>
+        </div>
       </section>
 
-      <section class="grid">
+      <section class="section">
+        <h2 class="section-title">Mumbai Historical</h2>
+        <p class="section-subtitle">Monthly first-day snapshots (2016–2026).</p>
+        <div class="grid">
         <article class="card wide">
           <h2>Mumbai Monthly Flights (5-Year)</h2>
           <canvas id="mumbaiMonthly"></canvas>
@@ -98,6 +113,7 @@
           <h2>Top Aircraft Models (Mumbai Dataset)</h2>
           <div class="table" id="modelTable"></div>
         </article>
+        </div>
       </section>
     </div>
 
