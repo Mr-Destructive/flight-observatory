@@ -94,7 +94,7 @@ async function loadCharts() {
     await Promise.all([
       fetchJson("./data/latest.json", true),
       fetchJson("./data/snapshot.json"),
-      fetchJson("./data/minute_traffic.json"),
+      fetchJson("./data/minute_traffic.json", true),
       fetchJson("./data/summary.json"),
       fetchJson("./data/airport_counts.json", true),
       fetchJson("./data/airline_counts.json", true),
@@ -185,14 +185,16 @@ async function loadCharts() {
     "#ffcf87"
   );
 
-  buildChart(
-    document.getElementById("minuteTraffic"),
-    "line",
-    safeMinute.map((d) => formatMinute(d.minute)),
-    safeMinute.map((d) => d.flights),
-    "Flights",
-    "#f4b266"
-  );
+  if (safeMinute.length) {
+    buildChart(
+      document.getElementById("minuteTraffic"),
+      "line",
+      safeMinute.map((d) => formatMinute(d.minute)),
+      safeMinute.map((d) => d.flights),
+      "Flights",
+      "#f4b266"
+    );
+  }
 
   renderStats(dataPack.summary);
   renderTable("airportTable", dataPack.airportCounts, ["airport", "flights"]);
