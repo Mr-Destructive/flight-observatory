@@ -27,6 +27,12 @@ MINUTE_HISTORY_LIMIT = int(os.getenv("MINUTE_HISTORY_LIMIT") or "1440")
 RETENTION_DAYS = int(os.getenv("RETENTION_DAYS") or "0")
 DEFAULT_AIRPORT = (os.getenv("DEFAULT_AIRPORT") or "").upper()
 MAX_SNAPSHOT_ROWS = int(os.getenv("MAX_SNAPSHOT_ROWS") or "500")
+SKIP_AIRPORT_MAPPING = (os.getenv("SKIP_AIRPORT_MAPPING") or "false").lower() in (
+    "1",
+    "true",
+    "yes",
+)
+FILTER_BBOX = os.getenv("FILTER_BBOX", "")
 
 DATA_DIR = os.path.join("dashboard", "data")
 os.makedirs(DATA_DIR, exist_ok=True)
@@ -312,13 +318,22 @@ def prune_old_rows(conn: sqlite3.Connection):
 
 
 def main():
-    airports = load_airports()
+    airports = [] if SKIP_AIRPORT_MAPPING else load_airports()
     airline_map = load_airlines() if INCLUDE_AIRLINE else {}
 
     flights = fetch_flights()
     rows = []
     snapshot = []
     now = datetime.now(timezone.utc)
+
+    bbox = None
+    if FILTER_BBOX:
+        try:
+            parts = [float(p.strip()) for p in FILTER_BBOX.split(",")]
+            if len(parts) == 4:
+                bbox = (parts[0], parts[1], parts[2], parts[3])
+        except ValueError:
+            bbox = None
 
     for f in flights:
         icao24 = f[0]
@@ -335,11 +350,14 @@ def main():
             if f[4]
             else now
         )
-        airport = (
-            nearest_airport(lat, lon, airports)
-            if lat is not None and lon is not None
-            else "unknown"
-        )
+        if bbox and lat is not None and lon is not None:
+            min_lat, max_lat, min_lon, max_lon = bbox
+            if not (min_lat <= lat <= max_lat and min_lon <= lon <= max_lon):
+                continue
+
+        airport = "unknown"
+        if not SKIP_AIRPORT_MAPPING and lat is not None and lon is not None:
+            airport = nearest_airport(lat, lon, airports)
         airline = "unknown"
         if INCLUDE_AIRLINE and callsign:
             m = re.match(r"^([A-Za-z]{3})", callsign)

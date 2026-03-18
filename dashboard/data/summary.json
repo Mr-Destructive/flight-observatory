@@ -1,1 +1,16 @@
-{}
+{
+  "generated_at": "2026-03-18T06:42:03.199266+00:00",
+  "total_flights": 91,
+  "unique_aircraft": 91,
+  "unique_airlines": 31,
+  "unique_airports": 1,
+  "on_ground": 8,
+  "airborne": 83,
+  "altitude_min": 38.1,
+  "altitude_median": 4160.52,
+  "altitude_p90": 11277.6,
+  "speed_min": 0.0,
+  "speed_median": 105.87,
+  "speed_p90": 242.01,
+  "default_airport": null
+}
