@@ -1,0 +1,37 @@
+{
+  "summary": {
+    "generated_at": "2026-03-18T00:00:00Z",
+    "total_flights": 6,
+    "unique_aircraft": 6,
+    "unique_airlines": 4,
+    "unique_airports": 3,
+    "airborne": 5,
+    "on_ground": 1,
+    "altitude_median": 9000,
+    "altitude_p90": 35000,
+    "speed_median": 240,
+    "speed_p90": 420
+  },
+  "airport_counts": [
+    {"airport": "VABB", "flights": 3},
+    {"airport": "VOBL", "flights": 2},
+    {"airport": "unknown", "flights": 1}
+  ],
+  "airline_counts": [
+    {"airline": "IndiGo", "flights": 2},
+    {"airline": "Air India", "flights": 2},
+    {"airline": "SpiceJet", "flights": 1}
+  ],
+  "country_counts": [
+    {"country": "India", "flights": 5},
+    {"country": "United Arab Emirates", "flights": 1}
+  ],
+  "flights": [
+    {"timestamp": "2026-03-18T00:00:00Z", "icao24": "800001", "callsign": "IGO123", "airline": "IndiGo", "origin_country": "India", "lat": 19.1, "lon": 72.9, "altitude": 11000, "on_ground": false, "velocity": 240, "heading": 80, "airport": "VABB"},
+    {"timestamp": "2026-03-18T00:00:00Z", "icao24": "800002", "callsign": "AIC456", "airline": "Air India", "origin_country": "India", "lat": 19.0, "lon": 72.8, "altitude": 0, "on_ground": true, "velocity": 0, "heading": 0, "airport": "VABB"},
+    {"timestamp": "2026-03-18T00:00:00Z", "icao24": "800003", "callsign": "SEJ789", "airline": "SpiceJet", "origin_country": "India", "lat": 13.1, "lon": 77.6, "altitude": 9000, "on_ground": false, "velocity": 220, "heading": 120, "airport": "VOBL"},
+    {"timestamp": "2026-03-18T00:00:00Z", "icao24": "800004", "callsign": "UAE10", "airline": "Emirates", "origin_country": "United Arab Emirates", "lat": 19.2, "lon": 73.0, "altitude": 35000, "on_ground": false, "velocity": 420, "heading": 270, "airport": "VABB"},
+    {"timestamp": "2026-03-18T00:00:00Z", "icao24": "800005", "callsign": "IGO456", "airline": "IndiGo", "origin_country": "India", "lat": 12.9, "lon": 77.5, "altitude": 12000, "on_ground": false, "velocity": 260, "heading": 210, "airport": "VOBL"},
+    {"timestamp": "2026-03-18T00:00:00Z", "icao24": "800006", "callsign": "AIC789", "airline": "Air India", "origin_country": "India", "lat": 18.9, "lon": 72.7, "altitude": 15000, "on_ground": false, "velocity": 280, "heading": 30, "airport": "unknown"}
+  ]
+}

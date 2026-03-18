@@ -1,6 +1,7 @@
 let currentAirport = "";
 let charts = [];
 let lastError = "";
+const STALE_MINUTES = 30;
 
 async function fetchJson(path) {
   try {
@@ -76,8 +77,9 @@ async function loadCharts() {
   charts.forEach((c) => c.destroy());
   charts = [];
 
-  const [snapshot, minuteTraffic, summary, airportCounts, airlineCounts, countryCounts, mumbaiMonthly, mumbaiSummary] =
+  const [latest, snapshot, minuteTraffic, summary, airportCounts, airlineCounts, countryCounts, mumbaiMonthly, mumbaiSummary, sample] =
     await Promise.all([
+      fetchJson("./data/latest.json"),
       fetchJson("./data/snapshot.json"),
       fetchJson("./data/minute_traffic.json"),
       fetchJson("./data/summary.json"),
@@ -86,30 +88,43 @@ async function loadCharts() {
       fetchJson("./data/country_counts.json"),
       fetchJson("./data/historical_monthly.json"),
       fetchJson("./data/historical_summary.json"),
+      fetchJson("./data/sample.json"),
     ]);
 
   showErrorBanner(lastError);
 
+  const safeLatest = latest && typeof latest === "object" ? latest : null;
   const safeSnapshot = Array.isArray(snapshot) ? snapshot : [];
   const safeMinute = Array.isArray(minuteTraffic) ? minuteTraffic : [];
   const safeSummary = summary && typeof summary === "object" ? summary : null;
   const safeAirportCounts = Array.isArray(airportCounts) ? airportCounts : [];
   const safeAirlineCounts = Array.isArray(airlineCounts) ? airlineCounts : [];
   const safeCountryCounts = Array.isArray(countryCounts) ? countryCounts : [];
+  const safeSample = sample && typeof sample === "object" ? sample : null;
 
-  if (!currentAirport && safeSummary?.default_airport) {
-    currentAirport = safeSummary.default_airport;
+  const dataPack = resolveDataPack(
+    safeLatest,
+    safeSummary,
+    safeSnapshot,
+    safeAirportCounts,
+    safeAirlineCounts,
+    safeCountryCounts,
+    safeSample
+  );
+
+  if (!currentAirport && dataPack.summary?.default_airport) {
+    currentAirport = dataPack.summary.default_airport;
     const input = document.getElementById("airportFilter");
     if (input) input.value = currentAirport;
   }
 
   const filtered = currentAirport
-    ? safeSnapshot.filter((r) =>
+    ? dataPack.flights.filter((r) =>
         (r.airport || "").toUpperCase() === currentAirport.toUpperCase()
       )
-    : safeSnapshot;
+    : dataPack.flights;
 
-  const topAirports = computeTop(safeSnapshot, "airport", 10).map(([k, v]) => ({
+  const topAirports = computeTop(dataPack.flights, "airport", 10).map(([k, v]) => ({
     airport: k,
     flights: v,
   }));
@@ -165,11 +180,12 @@ async function loadCharts() {
     "#f4b266"
   );
 
-  renderStats(safeSummary);
-  renderTable("airportTable", safeAirportCounts, ["airport", "flights"]);
-  renderTable("airlineTable", safeAirlineCounts, ["airline", "flights"]);
-  renderTable("countryTable", safeCountryCounts, ["country", "flights"]);
-  updateTimestampFromSummary(safeSummary);
+  renderStats(dataPack.summary);
+  renderTable("airportTable", dataPack.airportCounts, ["airport", "flights"]);
+  renderTable("airlineTable", dataPack.airlineCounts, ["airline", "flights"]);
+  renderTable("countryTable", dataPack.countryCounts, ["country", "flights"]);
+  updateTimestampFromSummary(dataPack.summary);
+  showStaleWarning(dataPack.summary);
 
   renderMumbaiSection(mumbaiMonthly, mumbaiSummary);
 }
@@ -309,6 +325,54 @@ function showErrorBanner(message) {
   }
   banner.hidden = false;
   banner.textContent = `Data fetch warning: ${message}`;
+}
+
+function resolveDataPack(latest, summary, snapshot, airportCounts, airlineCounts, countryCounts, sample) {
+  if (latest && Array.isArray(latest.flights)) {
+    return {
+      summary: latest.summary || summary,
+      flights: latest.flights,
+      airportCounts: latest.airport_counts || airportCounts,
+      airlineCounts: latest.airline_counts || airlineCounts,
+      countryCounts: latest.country_counts || countryCounts,
+    };
+  }
+  if (snapshot.length) {
+    return {
+      summary,
+      flights: snapshot,
+      airportCounts,
+      airlineCounts,
+      countryCounts,
+    };
+  }
+  if (sample && Array.isArray(sample.flights)) {
+    return {
+      summary: sample.summary || null,
+      flights: sample.flights,
+      airportCounts: sample.airport_counts || [],
+      airlineCounts: sample.airline_counts || [],
+      countryCounts: sample.country_counts || [],
+    };
+  }
+  return {
+    summary: null,
+    flights: [],
+    airportCounts: [],
+    airlineCounts: [],
+    countryCounts: [],
+  };
+}
+
+function showStaleWarning(summary) {
+  const banner = document.getElementById("errorBanner");
+  if (!banner || !summary?.generated_at) return;
+  const generated = new Date(summary.generated_at);
+  const ageMin = (Date.now() - generated.getTime()) / 60000;
+  if (ageMin > STALE_MINUTES) {
+    banner.hidden = false;
+    banner.textContent = `Data is stale (${Math.round(ageMin)} minutes old).`;
+  }
 }
 
 function renderMumbaiSection(monthly, summary) {

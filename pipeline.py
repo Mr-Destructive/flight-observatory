@@ -26,6 +26,7 @@ INCLUDE_AIRLINE = (os.getenv("INCLUDE_AIRLINE") or "true").lower() in (
 MINUTE_HISTORY_LIMIT = int(os.getenv("MINUTE_HISTORY_LIMIT") or "1440")
 RETENTION_DAYS = int(os.getenv("RETENTION_DAYS") or "0")
 DEFAULT_AIRPORT = (os.getenv("DEFAULT_AIRPORT") or "").upper()
+MAX_SNAPSHOT_ROWS = int(os.getenv("MAX_SNAPSHOT_ROWS") or "500")
 
 DATA_DIR = os.path.join("dashboard", "data")
 os.makedirs(DATA_DIR, exist_ok=True)
@@ -385,6 +386,9 @@ def main():
 
     snapshot_metrics = compute_snapshot_metrics(snapshot)
 
+    if MAX_SNAPSHOT_ROWS > 0 and len(snapshot) > MAX_SNAPSHOT_ROWS:
+        snapshot = snapshot[:MAX_SNAPSHOT_ROWS]
+
     write_json(os.path.join(DATA_DIR, "top_airports.json"), metrics["top_airports"])
     write_json(
         os.path.join(DATA_DIR, "altitude_bands.json"), metrics["altitude_bands"]
@@ -392,6 +396,16 @@ def main():
     write_json(os.path.join(DATA_DIR, "speed_bands.json"), metrics["speed_bands"])
     write_json(os.path.join(DATA_DIR, "top_airlines.json"), metrics["top_airlines"])
     write_json(os.path.join(DATA_DIR, "snapshot.json"), snapshot)
+    write_json(
+        os.path.join(DATA_DIR, "latest.json"),
+        {
+            "summary": snapshot_metrics["summary"],
+            "airport_counts": snapshot_metrics["airport_counts"],
+            "airline_counts": snapshot_metrics["airline_counts"],
+            "country_counts": snapshot_metrics["country_counts"],
+            "flights": snapshot,
+        },
+    )
     write_json(os.path.join(DATA_DIR, "summary.json"), snapshot_metrics["summary"])
     write_json(
         os.path.join(DATA_DIR, "airport_counts.json"),
