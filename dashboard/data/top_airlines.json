@@ -1,1 +1,42 @@
-[]
+[
+  {
+    "airline": "unknown",
+    "flights": 849
+  },
+  {
+    "airline": "Ryanair",
+    "flights": 166
+  },
+  {
+    "airline": "Delta Air Lines",
+    "flights": 141
+  },
+  {
+    "airline": "American Airlines",
+    "flights": 118
+  },
+  {
+    "airline": "Turkish Airlines",
+    "flights": 113
+  },
+  {
+    "airline": "IndiGo Airlines",
+    "flights": 96
+  },
+  {
+    "airline": "Lufthansa",
+    "flights": 90
+  },
+  {
+    "airline": "Air France",
+    "flights": 89
+  },
+  {
+    "airline": "United Airlines",
+    "flights": 87
+  },
+  {
+    "airline": "KLM Royal Dutch Airlines",
+    "flights": 80
+  }
+]

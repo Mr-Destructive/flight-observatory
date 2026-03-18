@@ -1,1 +1,42 @@
-[]
+[
+  {
+    "airport": "unknown",
+    "flights": 4166
+  },
+  {
+    "airport": "HCME",
+    "flights": 36
+  },
+  {
+    "airport": "YKII",
+    "flights": 29
+  },
+  {
+    "airport": "HCMV",
+    "flights": 13
+  },
+  {
+    "airport": "FSSD",
+    "flights": 11
+  },
+  {
+    "airport": "HKGA",
+    "flights": 10
+  },
+  {
+    "airport": "HCAD",
+    "flights": 9
+  },
+  {
+    "airport": "OEHL",
+    "flights": 8
+  },
+  {
+    "airport": "HCMR",
+    "flights": 6
+  },
+  {
+    "airport": "HCMC",
+    "flights": 6
+  }
+]
