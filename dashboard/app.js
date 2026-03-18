@@ -1,12 +1,18 @@
 let currentAirport = "";
 let charts = [];
+let lastError = "";
 
 async function fetchJson(path) {
-  const res = await fetch(path);
-  if (!res.ok) {
-    throw new Error(`Fetch failed: ${path} (${res.status})`);
+  try {
+    const res = await fetch(path);
+    if (!res.ok) {
+      throw new Error(`Fetch failed: ${path} (${res.status})`);
+    }
+    return await res.json();
+  } catch (err) {
+    lastError = `${err.message}`;
+    return null;
   }
-  return res.json();
 }
 
 function formatMinute(ts) {
@@ -80,19 +86,28 @@ async function loadCharts() {
       fetchJson("./data/country_counts.json"),
     ]);
 
-  if (!currentAirport && summary?.default_airport) {
-    currentAirport = summary.default_airport;
+  showErrorBanner(lastError);
+
+  const safeSnapshot = Array.isArray(snapshot) ? snapshot : [];
+  const safeMinute = Array.isArray(minuteTraffic) ? minuteTraffic : [];
+  const safeSummary = summary && typeof summary === "object" ? summary : null;
+  const safeAirportCounts = Array.isArray(airportCounts) ? airportCounts : [];
+  const safeAirlineCounts = Array.isArray(airlineCounts) ? airlineCounts : [];
+  const safeCountryCounts = Array.isArray(countryCounts) ? countryCounts : [];
+
+  if (!currentAirport && safeSummary?.default_airport) {
+    currentAirport = safeSummary.default_airport;
     const input = document.getElementById("airportFilter");
     if (input) input.value = currentAirport;
   }
 
   const filtered = currentAirport
-    ? snapshot.filter((r) =>
+    ? safeSnapshot.filter((r) =>
         (r.airport || "").toUpperCase() === currentAirport.toUpperCase()
       )
-    : snapshot;
+    : safeSnapshot;
 
-  const topAirports = computeTop(snapshot, "airport", 10).map(([k, v]) => ({
+  const topAirports = computeTop(safeSnapshot, "airport", 10).map(([k, v]) => ({
     airport: k,
     flights: v,
   }));
@@ -142,17 +157,17 @@ async function loadCharts() {
   buildChart(
     document.getElementById("minuteTraffic"),
     "line",
-    minuteTraffic.map((d) => formatMinute(d.minute)),
-    minuteTraffic.map((d) => d.flights),
+    safeMinute.map((d) => formatMinute(d.minute)),
+    safeMinute.map((d) => d.flights),
     "Flights",
     "#f4b266"
   );
 
-  renderStats(summary);
-  renderTable("airportTable", airportCounts, ["airport", "flights"]);
-  renderTable("airlineTable", airlineCounts, ["airline", "flights"]);
-  renderTable("countryTable", countryCounts, ["country", "flights"]);
-  updateTimestampFromSummary(summary);
+  renderStats(safeSummary);
+  renderTable("airportTable", safeAirportCounts, ["airport", "flights"]);
+  renderTable("airlineTable", safeAirlineCounts, ["airline", "flights"]);
+  renderTable("countryTable", safeCountryCounts, ["country", "flights"]);
+  updateTimestampFromSummary(safeSummary);
 }
 
 async function boot() {
@@ -278,4 +293,16 @@ function renderTable(targetId, rows, columns) {
 function shortLabel(label, max = 8) {
   if (!label) return "";
   return label.length > max ? `${label.slice(0, max)}…` : label;
+}
+
+function showErrorBanner(message) {
+  const banner = document.getElementById("errorBanner");
+  if (!banner) return;
+  if (!message) {
+    banner.hidden = true;
+    banner.textContent = "";
+    return;
+  }
+  banner.hidden = false;
+  banner.textContent = `Data fetch warning: ${message}`;
 }
