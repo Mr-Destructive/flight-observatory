@@ -1,102 +1,102 @@
 [
   {
     "airline": "unknown",
-    "flights": 4371
+    "flights": 4233
   },
   {
     "airline": "Southwest Airlines",
-    "flights": 483
+    "flights": 469
   },
   {
     "airline": "Delta Air Lines",
-    "flights": 468
+    "flights": 463
   },
   {
     "airline": "American Airlines",
-    "flights": 455
+    "flights": 458
   },
   {
     "airline": "United Airlines",
-    "flights": 398
+    "flights": 416
   },
   {
     "airline": "SkyWest",
-    "flights": 224
-  },
-  {
-    "airline": "Ryanair",
-    "flights": 169
+    "flights": 220
   },
   {
     "airline": "NetJets",
-    "flights": 152
+    "flights": 164
   },
   {
     "airline": "JetBlue Airways",
-    "flights": 128
+    "flights": 126
   },
   {
-    "airline": "Alaska Airlines",
-    "flights": 121
-  },
-  {
-    "airline": "easyJet",
-    "flights": 114
+    "airline": "Ryanair",
+    "flights": 123
   },
   {
     "airline": "United Parcel Service",
-    "flights": 113
+    "flights": 120
   },
   {
     "airline": "Republic Airlines",
+    "flights": 118
+  },
+  {
+    "airline": "Alaska Airlines",
     "flights": 111
   },
   {
     "airline": "Envoy Air",
-    "flights": 85
+    "flights": 93
   },
   {
     "airline": "Air Canada",
-    "flights": 85
-  },
-  {
-    "airline": "Lufthansa",
-    "flights": 83
-  },
-  {
-    "airline": "KLM Royal Dutch Airlines",
-    "flights": 82
+    "flights": 93
   },
   {
     "airline": "Bombardier Business Jet Solutions",
-    "flights": 75
+    "flights": 86
   },
   {
-    "airline": "Air France",
-    "flights": 75
+    "airline": "easyJet",
+    "flights": 82
   },
   {
-    "airline": "Turkish Airlines",
-    "flights": 66
-  },
-  {
-    "airline": "WestJet",
-    "flights": 64
+    "airline": "Lufthansa",
+    "flights": 76
   },
   {
     "airline": "Frontier Airlines",
-    "flights": 58
+    "flights": 67
   },
   {
-    "airline": "British Airways",
-    "flights": 55
+    "airline": "WestJet",
+    "flights": 62
+  },
+  {
+    "airline": "Federal Express",
+    "flights": 59
   },
   {
     "airline": "PSA Airlines",
+    "flights": 59
+  },
+  {
+    "airline": "KLM Royal Dutch Airlines",
+    "flights": 54
+  },
+  {
+    "airline": "TAM Brazilian Airlines",
     "flights": 53
   },
   {
     "airline": "Allegiant Air",
-    "flights": 49
+    "flights": 52
+  },
+  {
+    "airline": "Spirit Airlines",
+    "flights": 52
   }
 ]

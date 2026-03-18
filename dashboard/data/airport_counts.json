@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 10871
+    "flights": 10428
   },
   {
     "airport": "UESG",
-    "flights": 26
-  },
-  {
-    "airport": "HCME",
-    "flights": 25
-  },
-  {
-    "airport": "HKML",
-    "flights": 13
-  },
-  {
-    "airport": "YKII",
-    "flights": 8
-  },
-  {
-    "airport": "HCAD",
-    "flights": 8
-  },
-  {
-    "airport": "ZSWA",
-    "flights": 7
-  },
-  {
-    "airport": "FSMA",
-    "flights": 7
-  },
-  {
-    "airport": "FSSD",
-    "flights": 6
+    "flights": 33
   },
   {
     "airport": "ZSTX",
-    "flights": 5
+    "flights": 15
+  },
+  {
+    "airport": "HKML",
+    "flights": 10
   },
   {
     "airport": "HCMV",
-    "flights": 5
+    "flights": 9
   },
   {
-    "airport": "OEOM",
-    "flights": 5
+    "airport": "HCME",
+    "flights": 8
   },
   {
     "airport": "ZSJU",
-    "flights": 5
-  },
-  {
-    "airport": "HCMR",
-    "flights": 5
-  },
-  {
-    "airport": "HCMF",
-    "flights": 5
+    "flights": 8
   },
   {
     "airport": "UHOO",
-    "flights": 4
+    "flights": 8
+  },
+  {
+    "airport": "HCMI",
+    "flights": 6
+  },
+  {
+    "airport": "ZSWA",
+    "flights": 5
   },
   {
     "airport": "HCMC",
-    "flights": 4
-  },
-  {
-    "airport": "HCMU",
-    "flights": 4
-  },
-  {
-    "airport": "OYAT",
-    "flights": 4
-  },
-  {
-    "airport": "HCMS",
-    "flights": 4
+    "flights": 5
   },
   {
     "airport": "UESO",
     "flights": 4
   },
   {
-    "airport": "HCMN",
+    "airport": "OEPF",
     "flights": 4
   },
   {
-    "airport": "OYMB",
+    "airport": "OESH",
     "flights": 4
   },
   {
-    "airport": "HCMD",
+    "airport": "HKGA",
     "flights": 4
   },
   {
-    "airport": "HCMO",
+    "airport": "FSSD",
+    "flights": 4
+  },
+  {
+    "airport": "HCMF",
+    "flights": 4
+  },
+  {
+    "airport": "YKII",
+    "flights": 4
+  },
+  {
+    "airport": "ZSJD",
+    "flights": 4
+  },
+  {
+    "airport": "OEOM",
+    "flights": 3
+  },
+  {
+    "airport": "HCMS",
+    "flights": 3
+  },
+  {
+    "airport": "LTCU",
+    "flights": 3
+  },
+  {
+    "airport": "HCMG",
+    "flights": 3
+  },
+  {
+    "airport": "HTPE",
+    "flights": 3
+  },
+  {
+    "airport": "HAWR",
     "flights": 3
   }
 ]
