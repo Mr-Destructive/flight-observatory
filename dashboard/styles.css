@@ -243,7 +243,11 @@ h2 {
 
 canvas {
   width: 100% !important;
-  height: 100% !important;
+  height: 240px !important;
+}
+
+.card.wide canvas {
+  height: 260px !important;
 }
 
 @media (max-width: 900px) {
