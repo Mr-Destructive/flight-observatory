@@ -3,6 +3,7 @@ import json
 import os
 import re
 import sqlite3
+import time
 from datetime import datetime, timezone
 from math import radians, cos, sin, sqrt, atan2, floor
 from typing import Dict, List
@@ -33,6 +34,8 @@ SKIP_AIRPORT_MAPPING = (os.getenv("SKIP_AIRPORT_MAPPING") or "false").lower() in
     "yes",
 )
 FILTER_BBOX = os.getenv("FILTER_BBOX", "")
+PULL_COUNT = int(os.getenv("PULL_COUNT") or "1")
+PULL_INTERVAL_SEC = int(os.getenv("PULL_INTERVAL_SEC") or "10")
 
 DATA_DIR = os.path.join("dashboard", "data")
 os.makedirs(DATA_DIR, exist_ok=True)
@@ -321,7 +324,6 @@ def main():
     airports = [] if SKIP_AIRPORT_MAPPING else load_airports()
     airline_map = load_airlines() if INCLUDE_AIRLINE else {}
 
-    flights = fetch_flights()
     rows = []
     snapshot = []
     now = datetime.now(timezone.utc)
@@ -335,65 +337,75 @@ def main():
         except ValueError:
             bbox = None
 
-    for f in flights:
-        icao24 = f[0]
-        callsign = f[1].strip() if f[1] else ""
-        lat = safe_float(f[6])
-        lon = safe_float(f[5])
-        altitude = safe_float(f[7])
-        on_ground = bool(f[8]) if len(f) > 8 else False
-        velocity = safe_float(f[9])
-        heading = safe_float(f[10])
-        origin_country = f[2] if len(f) > 2 else ""
-        ts = (
-            datetime.fromtimestamp(f[4], tz=timezone.utc)
-            if f[4]
-            else now
-        )
-        if bbox and lat is not None and lon is not None:
-            min_lat, max_lat, min_lon, max_lon = bbox
-            if not (min_lat <= lat <= max_lat and min_lon <= lon <= max_lon):
-                continue
+    for i in range(max(PULL_COUNT, 1)):
+        pull_time = datetime.now(timezone.utc)
+        flights = fetch_flights()
+        pull_count = 0
 
-        airport = "unknown"
-        if not SKIP_AIRPORT_MAPPING and lat is not None and lon is not None:
-            airport = nearest_airport(lat, lon, airports)
-        airline = "unknown"
-        if INCLUDE_AIRLINE and callsign:
-            m = re.match(r"^([A-Za-z]{3})", callsign)
-            icao = m.group(1).upper() if m else ""
-            airline = airline_map.get(icao, "unknown") if icao else "unknown"
-
-        rows.append(
-            (
-                ts.isoformat(),
-                icao24,
-                callsign,
-                airline,
-                lat,
-                lon,
-                altitude,
-                velocity,
-                heading,
-                airport,
+        for f in flights:
+            icao24 = f[0]
+            callsign = f[1].strip() if f[1] else ""
+            lat = safe_float(f[6])
+            lon = safe_float(f[5])
+            altitude = safe_float(f[7])
+            on_ground = bool(f[8]) if len(f) > 8 else False
+            velocity = safe_float(f[9])
+            heading = safe_float(f[10])
+            origin_country = f[2] if len(f) > 2 else ""
+            ts = (
+                datetime.fromtimestamp(f[4], tz=timezone.utc)
+                if f[4]
+                else pull_time
             )
-        )
-        snapshot.append(
-            {
-                "timestamp": ts.isoformat(),
-                "icao24": icao24,
-                "callsign": callsign,
-                "airline": airline,
-                "origin_country": origin_country,
-                "lat": lat,
-                "lon": lon,
-                "altitude": altitude,
-                "on_ground": on_ground,
-                "velocity": velocity,
-                "heading": heading,
-                "airport": airport,
-            }
-        )
+            if bbox and lat is not None and lon is not None:
+                min_lat, max_lat, min_lon, max_lon = bbox
+                if not (min_lat <= lat <= max_lat and min_lon <= lon <= max_lon):
+                    continue
+
+            airport = "unknown"
+            if not SKIP_AIRPORT_MAPPING and lat is not None and lon is not None:
+                airport = nearest_airport(lat, lon, airports)
+            airline = "unknown"
+            if INCLUDE_AIRLINE and callsign:
+                m = re.match(r"^([A-Za-z]{3})", callsign)
+                icao = m.group(1).upper() if m else ""
+                airline = airline_map.get(icao, "unknown") if icao else "unknown"
+
+            rows.append(
+                (
+                    ts.isoformat(),
+                    icao24,
+                    callsign,
+                    airline,
+                    lat,
+                    lon,
+                    altitude,
+                    velocity,
+                    heading,
+                    airport,
+                )
+            )
+            snapshot.append(
+                {
+                    "timestamp": ts.isoformat(),
+                    "icao24": icao24,
+                    "callsign": callsign,
+                    "airline": airline,
+                    "origin_country": origin_country,
+                    "lat": lat,
+                    "lon": lon,
+                    "altitude": altitude,
+                    "on_ground": on_ground,
+                    "velocity": velocity,
+                    "heading": heading,
+                    "airport": airport,
+                }
+            )
+            pull_count += 1
+
+        update_minute_traffic(pull_count, pull_time)
+        if i < max(PULL_COUNT, 1) - 1:
+            time.sleep(PULL_INTERVAL_SEC)
 
     conn = sqlite3.connect(SQLITE_PATH)
     init_db(conn)
@@ -441,7 +453,6 @@ def main():
         os.path.join(DATA_DIR, "heading_bins.json"),
         snapshot_metrics["heading_bins"],
     )
-    update_minute_traffic(len(snapshot), now)
 
     print(f"Wrote {len(snapshot)} rows and dashboard JSON to {DATA_DIR}")
 
