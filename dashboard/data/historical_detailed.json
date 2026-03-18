@@ -1,17 +1,15 @@
 {
-  "generated_at": "2026-03-18T11:47:03.073651+00:00",
+  "generated_at": "2026-03-18T11:58:29.055055+00:00",
   "metrics": {
     "total_records": 135593,
     "total_months": 60,
     "avg_records_per_month": 2259.883333333333,
-    "records_per_day_avg": 75.32944444444445,
     "traffic_variance": 1784502.6810734463,
     "traffic_stdev": 1335.8527916927997,
     "traffic_cv": 0.5911158208872728,
     "traffic_seasonality_score": 59.111582088727275,
     "busiest_month": "2025-02-01",
     "slowest_month": "2020-02-01",
-    "traffic_trend": "INCREASING",
     "unique_flights_total": 7100,
     "unique_airlines_total": 201,
     "unique_registrations_total": 3445,

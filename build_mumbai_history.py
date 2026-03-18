@@ -123,6 +123,89 @@ if os.path.exists(DETAILED_METRICS_PATH):
     with open(DETAILED_METRICS_PATH, "r", encoding="utf-8") as f:
         details = json.load(f)
 
+SAFE_METRICS = {
+    "total_records",
+    "total_months",
+    "avg_records_per_month",
+    "traffic_variance",
+    "traffic_stdev",
+    "traffic_cv",
+    "traffic_seasonality_score",
+    "busiest_month",
+    "slowest_month",
+    "unique_flights_total",
+    "unique_airlines_total",
+    "unique_registrations_total",
+    "unique_hex_codes_total",
+    "unique_aircraft_models_total",
+    "flights_per_airline_avg",
+    "registrations_per_model_avg",
+    "top_3_airlines",
+    "aircraft_models_observed",
+    "top_aircraft_models",
+    "aircraft_diversity_index",
+    "narrow_body_percentage",
+    "wide_body_percentage",
+    "regional_percentage",
+    "cargo_percentage",
+    "altitude_avg",
+    "altitude_median",
+    "altitude_stdev",
+    "altitude_min",
+    "altitude_max",
+    "altitude_q1",
+    "altitude_q3",
+    "altitude_iqr",
+    "landing_approach_percentage",
+    "cruise_altitude_percentage",
+    "altitude_by_hour_peak",
+    "speed_avg",
+    "speed_median",
+    "speed_stdev",
+    "speed_min",
+    "speed_max",
+    "low_altitude_speed_avg",
+    "medium_altitude_speed_avg",
+    "high_altitude_speed_avg",
+    "stationary_aircraft_percentage",
+    "morning_traffic_percentage",
+    "afternoon_traffic_percentage",
+    "evening_traffic_percentage",
+    "night_traffic_percentage",
+    "early_morning_traffic_percentage",
+    "busiest_hour",
+    "busiest_hour_traffic",
+    "quietest_hour",
+    "quietest_hour_traffic",
+    "hourly_traffic_distribution",
+    "coverage_north",
+    "coverage_south",
+    "coverage_east",
+    "coverage_west",
+    "coverage_lat_span",
+    "coverage_lon_span",
+    "coverage_lat_center",
+    "coverage_lon_center",
+    "avg_track_heading",
+    "dominant_heading",
+    "heading_distribution",
+    "seasonal_pattern",
+    "highest_traffic_month_number",
+    "lowest_traffic_month_number",
+    "data_completeness_altitude",
+    "data_completeness_speed",
+    "data_completeness_track",
+    "data_completeness_position",
+    "data_completeness_time",
+    "data_completeness_all_fields",
+    "adsb_type_distribution",
+    "primary_adsb_type",
+}
+
+filtered_metrics = {
+    k: v for k, v in details.items() if k in SAFE_METRICS
+}
+
 def build_insights(metrics):
     insights = []
     if not metrics:
@@ -215,7 +298,7 @@ def build_insights(metrics):
 
 details_out = {
     "generated_at": datetime.now(timezone.utc).isoformat(),
-    "metrics": details,
+    "metrics": filtered_metrics,
     "hourly_distribution": [
         {"hour": h, "count": hour_counts[h]} for h in range(24)
     ],
@@ -232,23 +315,23 @@ details_out = {
     ],
     "seasonal_pattern": [
         {"month": k, "avg_count": v}
-        for k, v in sorted((details.get("seasonal_pattern") or {}).items())
+        for k, v in sorted((filtered_metrics.get("seasonal_pattern") or {}).items())
     ],
     "heading_distribution": [
         {"direction": k, "count": v}
-        for k, v in sorted((details.get("heading_distribution") or {}).items())
+        for k, v in sorted((filtered_metrics.get("heading_distribution") or {}).items())
     ],
     "fleet_mix": [
-        {"type": "Narrow-body", "share": details.get("narrow_body_percentage", 0)},
-        {"type": "Wide-body", "share": details.get("wide_body_percentage", 0)},
-        {"type": "Regional", "share": details.get("regional_percentage", 0)},
-        {"type": "Cargo", "share": details.get("cargo_percentage", 0)},
+        {"type": "Narrow-body", "share": filtered_metrics.get("narrow_body_percentage", 0)},
+        {"type": "Wide-body", "share": filtered_metrics.get("wide_body_percentage", 0)},
+        {"type": "Regional", "share": filtered_metrics.get("regional_percentage", 0)},
+        {"type": "Cargo", "share": filtered_metrics.get("cargo_percentage", 0)},
     ],
     "adsb_type_distribution": [
         {"type": k, "count": v}
-        for k, v in sorted((details.get("adsb_type_distribution") or {}).items())
+        for k, v in sorted((filtered_metrics.get("adsb_type_distribution") or {}).items())
     ],
-    "insights": build_insights(details),
+    "insights": build_insights(filtered_metrics),
 }
 
 with open(os.path.join(OUT_DIR, "historical_monthly.json"), "w") as f:
