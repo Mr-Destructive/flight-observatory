@@ -95,7 +95,7 @@ async function loadCharts() {
       fetchJson("./data/latest.json", true),
       fetchJson("./data/snapshot.json"),
       fetchJson("./data/minute_traffic.json", true),
-      fetchJson("./data/summary.json"),
+      fetchJson("./data/summary.json", true),
       fetchJson("./data/airport_counts.json", true),
       fetchJson("./data/airline_counts.json", true),
       fetchJson("./data/country_counts.json", true),
