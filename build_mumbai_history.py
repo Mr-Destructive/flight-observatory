@@ -13,6 +13,11 @@ files = sorted(glob.glob(os.path.join(DATA_DIR, "*.ndjson")))
 monthly_counts = Counter()
 monthly_alt = defaultdict(list)
 monthly_speed = defaultdict(list)
+yearly_counts = Counter()
+altitude_bins = Counter()
+speed_bins = Counter()
+ground_count = 0
+total_rows = 0
 
 prefix_counts = Counter()
 model_counts = Counter()
@@ -29,14 +34,21 @@ for path in files:
             except json.JSONDecodeError:
                 continue
             monthly_counts[month] += 1
+            total_rows += 1
+            year = month.split("-")[0]
+            yearly_counts[year] += 1
 
             alt = row.get("alt")
             if isinstance(alt, (int, float)):
                 monthly_alt[month].append(alt)
+                altitude_bins[int(math.floor(alt / 1000.0) * 1000)] += 1
+            elif alt == "ground":
+                ground_count += 1
 
             gs = row.get("gs")
             if isinstance(gs, (int, float)):
                 monthly_speed[month].append(gs)
+                speed_bins[int(math.floor(gs / 50.0) * 50)] += 1
 
             flight = row.get("flight") or ""
             prefix = "".join([c for c in flight if c.isalpha()])
@@ -70,7 +82,20 @@ for month in sorted(monthly_counts.keys()):
 
 summary = {
     "months": len(monthly_series),
-    "total_rows": sum(monthly_counts.values()),
+    "total_rows": total_rows,
+    "ground_rate": (ground_count / total_rows) if total_rows else 0,
+    "yearly_counts": [
+        {"year": y, "count": yearly_counts[y]}
+        for y in sorted(yearly_counts.keys())
+    ],
+    "altitude_bins": [
+        {"altitude_band": k, "count": altitude_bins[k]}
+        for k in sorted(altitude_bins.keys())
+    ],
+    "speed_bins": [
+        {"speed_band": k, "count": speed_bins[k]}
+        for k in sorted(speed_bins.keys())
+    ],
     "top_prefixes": [
         {"prefix": k, "flights": v}
         for k, v in prefix_counts.most_common(20)

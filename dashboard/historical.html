@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mumbai Historical Dashboard</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  </head>
+  <body>
+    <div class="page">
+      <nav class="nav">
+        <div class="brand">Flight Observatory</div>
+        <div class="links">
+          <a href="./">Live</a>
+          <a class="active" href="./historical.html">Historical</a>
+        </div>
+      </nav>
+      <header class="hero">
+        <div>
+          <p class="eyebrow">Mumbai 2016–2026</p>
+          <h1>Historical Analysis</h1>
+          <p class="subhead">
+            First-day monthly snapshots with expanded metrics.
+          </p>
+        </div>
+        <div class="meta">
+          <div class="pill" id="hist-summary">Loading…</div>
+        </div>
+      </header>
+
+      <section class="section">
+        <h2 class="section-title">Monthly Activity</h2>
+        <p class="section-subtitle">Long-term traffic trend and median altitude/speed.</p>
+        <div class="grid">
+          <article class="card wide">
+            <h2>Monthly Flight Counts</h2>
+            <canvas id="histMonthly"></canvas>
+          </article>
+          <article class="card">
+            <h2>Median Altitude</h2>
+            <canvas id="histAlt"></canvas>
+          </article>
+          <article class="card">
+            <h2>Median Speed</h2>
+            <canvas id="histSpeed"></canvas>
+          </article>
+          <article class="card wide">
+            <h2>Yearly Totals</h2>
+            <canvas id="histYearly"></canvas>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Distributions</h2>
+        <p class="section-subtitle">Altitude and speed distributions across the dataset.</p>
+        <div class="grid">
+          <article class="card">
+            <h2>Altitude Bands</h2>
+            <canvas id="histAltBins"></canvas>
+          </article>
+          <article class="card">
+            <h2>Speed Bands</h2>
+            <canvas id="histSpeedBins"></canvas>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Top Categories</h2>
+        <p class="section-subtitle">Most frequent airline prefixes and aircraft models.</p>
+        <div class="tables">
+          <article class="card wide">
+            <h2>Top Airline Prefixes</h2>
+            <div class="table" id="histPrefixTable"></div>
+          </article>
+          <article class="card wide">
+            <h2>Top Aircraft Models</h2>
+            <div class="table" id="histModelTable"></div>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <script src="./historical.js"></script>
+  </body>
+</html>

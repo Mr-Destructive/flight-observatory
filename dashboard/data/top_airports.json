@@ -1,42 +1,42 @@
 [
   {
     "airport": "unknown",
-    "flights": 4257
+    "flights": 36506
   },
   {
     "airport": "HCME",
-    "flights": 36
+    "flights": 71
   },
   {
     "airport": "YKII",
-    "flights": 29
+    "flights": 57
   },
   {
     "airport": "HCMV",
-    "flights": 13
-  },
-  {
-    "airport": "FSSD",
-    "flights": 11
-  },
-  {
-    "airport": "HKGA",
-    "flights": 10
+    "flights": 20
   },
   {
     "airport": "HCAD",
-    "flights": 9
+    "flights": 20
   },
   {
-    "airport": "OEHL",
-    "flights": 8
+    "airport": "HKGA",
+    "flights": 16
   },
   {
     "airport": "HCMR",
-    "flights": 6
+    "flights": 16
+  },
+  {
+    "airport": "FSSD",
+    "flights": 15
+  },
+  {
+    "airport": "HKML",
+    "flights": 14
   },
   {
     "airport": "HCMC",
-    "flights": 6
+    "flights": 13
   }
 ]

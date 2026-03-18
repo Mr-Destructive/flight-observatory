@@ -1,102 +1,102 @@
 [
   {
     "airline": "unknown",
-    "flights": 43
+    "flights": 5202
   },
   {
-    "airline": "IndiGo Airlines",
-    "flights": 9
-  },
-  {
-    "airline": "Air India Limited",
-    "flights": 8
-  },
-  {
-    "airline": "Air India Express",
-    "flights": 3
-  },
-  {
-    "airline": "EVA Air",
-    "flights": 2
-  },
-  {
-    "airline": "Alberta Government",
-    "flights": 1
-  },
-  {
-    "airline": "Lufthansa",
-    "flights": 1
-  },
-  {
-    "airline": "European Air Transport",
-    "flights": 1
-  },
-  {
-    "airline": "Biman Bangladesh Airlines",
-    "flights": 1
-  },
-  {
-    "airline": "Xiamen Airlines",
-    "flights": 1
+    "airline": "Ryanair",
+    "flights": 1231
   },
   {
     "airline": "Turkish Airlines",
-    "flights": 1
+    "flights": 930
   },
   {
-    "airline": "Aero Air",
-    "flights": 1
+    "airline": "Delta Air Lines",
+    "flights": 744
   },
   {
-    "airline": "FLowair Aviation",
-    "flights": 1
+    "airline": "American Airlines",
+    "flights": 622
+  },
+  {
+    "airline": "United Airlines",
+    "flights": 570
+  },
+  {
+    "airline": "IndiGo Airlines",
+    "flights": 545
+  },
+  {
+    "airline": "Air France",
+    "flights": 493
+  },
+  {
+    "airline": "Lufthansa",
+    "flights": 489
+  },
+  {
+    "airline": "KLM Royal Dutch Airlines",
+    "flights": 461
+  },
+  {
+    "airline": "Vueling Airlines",
+    "flights": 359
+  },
+  {
+    "airline": "Japan Airlines Domestic",
+    "flights": 329
+  },
+  {
+    "airline": "All Nippon Airways",
+    "flights": 312
+  },
+  {
+    "airline": "British Airways",
+    "flights": 292
+  },
+  {
+    "airline": "Southwest Airlines",
+    "flights": 291
+  },
+  {
+    "airline": "Qantas",
+    "flights": 288
+  },
+  {
+    "airline": "Swissair",
+    "flights": 281
+  },
+  {
+    "airline": "Air Canada",
+    "flights": 246
+  },
+  {
+    "airline": "Eurowings",
+    "flights": 240
+  },
+  {
+    "airline": "Virgin Australia",
+    "flights": 236
   },
   {
     "airline": "JetBlue Airways",
-    "flights": 1
+    "flights": 234
   },
   {
-    "airline": "Thai Vietjet Air",
-    "flights": 1
+    "airline": "Alaska Airlines",
+    "flights": 228
   },
   {
-    "airline": "Emirates",
-    "flights": 1
+    "airline": "Finnair",
+    "flights": 222
   },
   {
-    "airline": "Thomsonfly",
-    "flights": 1
+    "airline": "Air India Limited",
+    "flights": 215
   },
   {
-    "airline": "Malaysia Airlines",
-    "flights": 1
-  },
-  {
-    "airline": "Hainan Airlines",
-    "flights": 1
-  },
-  {
-    "airline": "Ural Airlines",
-    "flights": 1
-  },
-  {
-    "airline": "Aeroflot Russian Airlines",
-    "flights": 1
-  },
-  {
-    "airline": "Okay Airways",
-    "flights": 1
-  },
-  {
-    "airline": "AirAsia",
-    "flights": 1
-  },
-  {
-    "airline": "AlMasria Universal Airlines",
-    "flights": 1
-  },
-  {
-    "airline": "Ethiopian Airlines",
-    "flights": 1
+    "airline": "Cathay Pacific",
+    "flights": 210
   }
 ]
