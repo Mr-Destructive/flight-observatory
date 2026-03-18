@@ -1,7 +1,7 @@
 [
   {
     "airport": "unknown",
-    "flights": 198425
+    "flights": 207040
   },
   {
     "airport": "HCME",
@@ -9,34 +9,34 @@
   },
   {
     "airport": "UESG",
-    "flights": 356
+    "flights": 378
+  },
+  {
+    "airport": "YKII",
+    "flights": 221
   },
   {
     "airport": "HKML",
     "flights": 210
   },
   {
-    "airport": "YKII",
-    "flights": 208
-  },
-  {
     "airport": "HCMV",
-    "flights": 198
+    "flights": 200
   },
   {
     "airport": "HCAD",
-    "flights": 165
+    "flights": 166
   },
   {
     "airport": "FSMA",
-    "flights": 136
+    "flights": 141
   },
   {
     "airport": "HCMG",
-    "flights": 133
+    "flights": 135
   },
   {
     "airport": "OEOM",
-    "flights": 124
+    "flights": 125
   }
 ]
