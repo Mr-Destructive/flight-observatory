@@ -93,7 +93,7 @@ async function loadCharts() {
   const [latest, snapshot, minuteTraffic, summary, airportCounts, airlineCounts, countryCounts, sample] =
     await Promise.all([
       fetchJson("./data/latest.json", true),
-      fetchJson("./data/snapshot.json"),
+      fetchJson("./data/snapshot.json", true),
       fetchJson("./data/minute_traffic.json", true),
       fetchJson("./data/summary.json", true),
       fetchJson("./data/airport_counts.json", true),
