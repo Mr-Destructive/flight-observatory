@@ -16,9 +16,13 @@ AIRLINES_URL = (
     "https://raw.githubusercontent.com/jpatokal/openflights/master/data/airlines.dat"
 )
 
-SQLITE_PATH = os.getenv("SQLITE_PATH", "flights_adsb.sqlite")
-MAX_AIRPORT_DISTANCE_KM = float(os.getenv("MAX_AIRPORT_DISTANCE_KM", "50"))
-INCLUDE_AIRLINE = os.getenv("INCLUDE_AIRLINE", "true").lower() in ("1", "true", "yes")
+SQLITE_PATH = os.getenv("SQLITE_PATH") or "flights_adsb.sqlite"
+MAX_AIRPORT_DISTANCE_KM = float(os.getenv("MAX_AIRPORT_DISTANCE_KM") or "50")
+INCLUDE_AIRLINE = (os.getenv("INCLUDE_AIRLINE") or "true").lower() in (
+    "1",
+    "true",
+    "yes",
+)
 
 DATA_DIR = os.path.join("dashboard", "data")
 os.makedirs(DATA_DIR, exist_ok=True)
