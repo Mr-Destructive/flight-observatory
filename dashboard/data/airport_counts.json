@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 11506
+    "flights": 11338
+  },
+  {
+    "airport": "HCME",
+    "flights": 42
   },
   {
     "airport": "UESG",
     "flights": 35
   },
   {
-    "airport": "HCME",
-    "flights": 30
+    "airport": "FSMA",
+    "flights": 11
   },
   {
     "airport": "HKML",
-    "flights": 14
+    "flights": 10
   },
   {
-    "airport": "FSMA",
-    "flights": 9
+    "airport": "HCMV",
+    "flights": 10
   },
   {
-    "airport": "HCMN",
-    "flights": 9
+    "airport": "HCMF",
+    "flights": 10
   },
   {
-    "airport": "HCMR",
+    "airport": "HCMG",
     "flights": 8
   },
   {
     "airport": "HCAD",
-    "flights": 8
-  },
-  {
-    "airport": "UESO",
     "flights": 7
   },
   {
-    "airport": "HCMV",
-    "flights": 7
-  },
-  {
-    "airport": "HCMI",
-    "flights": 7
-  },
-  {
-    "airport": "OYMB",
+    "airport": "ZSJU",
     "flights": 6
   },
   {
-    "airport": "FSSD",
+    "airport": "HCMC",
     "flights": 6
   },
   {
-    "airport": "HAWR",
+    "airport": "OEBH",
     "flights": 6
   },
   {
-    "airport": "HCMA",
+    "airport": "HCMH",
     "flights": 6
   },
   {
-    "airport": "OEPF",
-    "flights": 6
-  },
-  {
-    "airport": "HSKG",
-    "flights": 6
-  },
-  {
-    "airport": "HCMG",
-    "flights": 6
-  },
-  {
-    "airport": "UHOO",
-    "flights": 6
-  },
-  {
-    "airport": "HCMS",
+    "airport": "FSDR",
     "flights": 5
   },
   {
-    "airport": "OESH",
+    "airport": "HCMN",
     "flights": 5
   },
   {
-    "airport": "OYGD",
+    "airport": "OEOM",
     "flights": 5
-  },
-  {
-    "airport": "OYSQ",
-    "flights": 4
   },
   {
     "airport": "HCMU",
+    "flights": 5
+  },
+  {
+    "airport": "OEYN",
+    "flights": 5
+  },
+  {
+    "airport": "HTMA",
     "flights": 4
   },
   {
-    "airport": "OYSH",
+    "airport": "OYGD",
+    "flights": 4
+  },
+  {
+    "airport": "FSSB",
+    "flights": 4
+  },
+  {
+    "airport": "LTCU",
+    "flights": 4
+  },
+  {
+    "airport": "HKGA",
+    "flights": 4
+  },
+  {
+    "airport": "FSSR",
+    "flights": 4
+  },
+  {
+    "airport": "OENG",
     "flights": 4
   }
 ]
