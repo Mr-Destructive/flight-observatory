@@ -23,6 +23,8 @@ INCLUDE_AIRLINE = (os.getenv("INCLUDE_AIRLINE") or "true").lower() in (
     "true",
     "yes",
 )
+MINUTE_HISTORY_LIMIT = int(os.getenv("MINUTE_HISTORY_LIMIT") or "1440")
+RETENTION_DAYS = int(os.getenv("RETENTION_DAYS") or "0")
 
 DATA_DIR = os.path.join("dashboard", "data")
 os.makedirs(DATA_DIR, exist_ok=True)
@@ -220,10 +222,22 @@ def update_minute_traffic(count: int, ts: datetime):
     history = [h for h in history if "minute" in h and "flights" in h]
     history.append({"minute": minute_key, "flights": count})
     history.sort(key=lambda x: x["minute"])
-    # Keep last 60 minutes
-    if len(history) > 60:
-        history = history[-60:]
+    # Keep a rolling window (default: 1440 minutes = 24h)
+    if MINUTE_HISTORY_LIMIT > 0 and len(history) > MINUTE_HISTORY_LIMIT:
+        history = history[-MINUTE_HISTORY_LIMIT:]
     write_json(path, history)
+
+
+def prune_old_rows(conn: sqlite3.Connection):
+    if RETENTION_DAYS <= 0:
+        return
+    cutoff = datetime.now(timezone.utc).timestamp() - (RETENTION_DAYS * 86400)
+    cutoff_iso = datetime.fromtimestamp(cutoff, tz=timezone.utc).isoformat()
+    conn.execute(
+        "DELETE FROM flights_adsb WHERE timestamp < ?",
+        (cutoff_iso,),
+    )
+    conn.commit()
 
 
 def main():
@@ -291,6 +305,7 @@ def main():
     conn = sqlite3.connect(SQLITE_PATH)
     init_db(conn)
     insert_rows(conn, rows)
+    prune_old_rows(conn)
     metrics = build_metrics(conn)
     conn.close()
 

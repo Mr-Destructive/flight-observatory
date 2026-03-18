@@ -28,12 +28,14 @@ jobs:
         env:
           MAX_AIRPORT_DISTANCE_KM: ${{ vars.MAX_AIRPORT_DISTANCE_KM }}
           INCLUDE_AIRLINE: ${{ vars.INCLUDE_AIRLINE }}
+          MINUTE_HISTORY_LIMIT: ${{ vars.MINUTE_HISTORY_LIMIT }}
+          RETENTION_DAYS: ${{ vars.RETENTION_DAYS }}
 
-      - name: Commit dashboard JSON
+      - name: Commit dashboard JSON + SQLite
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
-          git add dashboard/data/*.json
+          git add dashboard/data/*.json flights_adsb.sqlite
           if git diff --cached --quiet; then
             echo "No changes to commit"
             exit 0
