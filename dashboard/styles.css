@@ -126,6 +126,35 @@ h1 {
   color: var(--muted);
 }
 
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.stat-card {
+  grid-column: span 3;
+  background: rgba(21, 29, 39, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 14px 16px;
+  min-height: 90px;
+}
+
+.stat-card .label {
+  font-size: 12px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.stat-card .value {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 6px;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -146,6 +175,53 @@ h1 {
   grid-column: span 12;
 }
 
+.card h2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tables {
+  margin-top: 24px;
+  display: grid;
+  gap: 18px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+  font-size: 12px;
+  max-height: 340px;
+  overflow: auto;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 8px 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: left;
+}
+
+.table th {
+  color: var(--muted);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 11px;
+  position: sticky;
+  top: 0;
+  background: #111826;
+  z-index: 1;
+}
+
 h2 {
   margin: 0 0 16px;
   font-size: 18px;
@@ -158,6 +234,15 @@ canvas {
 
 @media (max-width: 900px) {
   .card {
+    grid-column: span 12;
+  }
+  .stat-card {
+    grid-column: span 6;
+  }
+}
+
+@media (max-width: 600px) {
+  .stat-card {
     grid-column: span 12;
   }
 }

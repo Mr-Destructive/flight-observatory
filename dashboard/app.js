@@ -16,8 +16,7 @@ function formatMinute(ts) {
 
 function updateTimestamp() {
   const el = document.getElementById("last-updated");
-  const now = new Date();
-  el.textContent = `Last updated: ${now.toLocaleString()}`;
+  el.textContent = "Last updated: --";
 }
 
 function buildChart(ctx, type, labels, data, label, color) {
@@ -38,12 +37,22 @@ function buildChart(ctx, type, labels, data, label, color) {
     },
     options: {
       responsive: true,
+      maintainAspectRatio: false,
       plugins: {
         legend: { display: false },
+        tooltip: {
+          callbacks: {
+            title: (items) => items[0]?.label || "",
+          },
+        },
       },
       scales: {
         x: {
-          ticks: { color: "#b5c0d0" },
+          ticks: {
+            color: "#b5c0d0",
+            maxRotation: 0,
+            callback: (val, idx) => shortLabel(labels[idx] || ""),
+          },
           grid: { color: "rgba(255,255,255,0.06)" },
         },
         y: {
@@ -61,11 +70,21 @@ async function loadCharts() {
   charts.forEach((c) => c.destroy());
   charts = [];
 
-  const [snapshot, minuteTraffic] =
+  const [snapshot, minuteTraffic, summary, airportCounts, airlineCounts, countryCounts] =
     await Promise.all([
       fetchJson("./data/snapshot.json"),
       fetchJson("./data/minute_traffic.json"),
+      fetchJson("./data/summary.json"),
+      fetchJson("./data/airport_counts.json"),
+      fetchJson("./data/airline_counts.json"),
+      fetchJson("./data/country_counts.json"),
     ]);
+
+  if (!currentAirport && summary?.default_airport) {
+    currentAirport = summary.default_airport;
+    const input = document.getElementById("airportFilter");
+    if (input) input.value = currentAirport;
+  }
 
   const filtered = currentAirport
     ? snapshot.filter((r) =>
@@ -129,7 +148,11 @@ async function loadCharts() {
     "#f4b266"
   );
 
-  updateTimestamp();
+  renderStats(summary);
+  renderTable("airportTable", airportCounts, ["airport", "flights"]);
+  renderTable("airlineTable", airlineCounts, ["airline", "flights"]);
+  renderTable("countryTable", countryCounts, ["country", "flights"]);
+  updateTimestampFromSummary(summary);
 }
 
 async function boot() {
@@ -184,4 +207,75 @@ function computeBins(rows, key, size, outKey) {
   return [...counts.entries()]
     .sort((a, b) => a[0] - b[0])
     .map(([bucket, count]) => ({ [outKey]: bucket, flights: count }));
+}
+
+function updateTimestampFromSummary(summary) {
+  const el = document.getElementById("last-updated");
+  if (!summary?.generated_at) {
+    el.textContent = "Last updated: --";
+    return;
+  }
+  const d = new Date(summary.generated_at);
+  el.textContent = `Last updated: ${d.toLocaleString()}`;
+}
+
+function renderStats(summary) {
+  const grid = document.getElementById("statsGrid");
+  if (!grid || !summary) return;
+  const items = [
+    ["Total Flights", summary.total_flights],
+    ["Unique Aircraft", summary.unique_aircraft],
+    ["Unique Airlines", summary.unique_airlines],
+    ["Unique Airports", summary.unique_airports],
+    ["Airborne", summary.airborne],
+    ["On Ground", summary.on_ground],
+    ["Median Altitude (m)", summary.altitude_median],
+    ["P90 Altitude (m)", summary.altitude_p90],
+    ["Median Speed (m/s)", summary.speed_median],
+    ["P90 Speed (m/s)", summary.speed_p90],
+  ];
+  grid.innerHTML = items
+    .map(
+      ([label, value]) => `
+      <div class="stat-card">
+        <div class="label">${label}</div>
+        <div class="value">${formatValue(value)}</div>
+      </div>`
+    )
+    .join("");
+}
+
+function formatValue(val) {
+  if (val === null || val === undefined) return "--";
+  if (typeof val === "number") {
+    if (Number.isInteger(val)) return val.toLocaleString();
+    return val.toFixed(1);
+  }
+  return val;
+}
+
+function renderTable(targetId, rows, columns) {
+  const el = document.getElementById(targetId);
+  if (!el) return;
+  if (!Array.isArray(rows) || rows.length === 0) {
+    el.innerHTML = "<p class=\"hint\">No data yet.</p>";
+    return;
+  }
+  const header = columns
+    .map((c) => `<th>${c.replace(/_/g, " ")}</th>`)
+    .join("");
+  const body = rows
+    .map(
+      (r) =>
+        `<tr>${columns
+          .map((c) => `<td>${formatValue(r[c])}</td>`)
+          .join("")}</tr>`
+    )
+    .join("");
+  el.innerHTML = `<table><thead><tr>${header}</tr></thead><tbody>${body}</tbody></table>`;
+}
+
+function shortLabel(label, max = 8) {
+  if (!label) return "";
+  return label.length > max ? `${label.slice(0, max)}…` : label;
 }

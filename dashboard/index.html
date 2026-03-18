@@ -36,6 +36,8 @@
         <p class="hint">Leave blank to show all airports. Use <code>unknown</code> to view unmapped flights.</p>
       </div>
 
+      <section class="stats-grid" id="statsGrid"></section>
+
       <section class="grid">
         <article class="card">
           <h2>Top Airports (Last 60m)</h2>
@@ -56,6 +58,21 @@
         <article class="card wide">
           <h2>Traffic by Minute</h2>
           <canvas id="minuteTraffic"></canvas>
+        </article>
+      </section>
+
+      <section class="tables">
+        <article class="card wide">
+          <h2>Top Airports (Snapshot)</h2>
+          <div class="table" id="airportTable"></div>
+        </article>
+        <article class="card wide">
+          <h2>Top Airlines (Snapshot)</h2>
+          <div class="table" id="airlineTable"></div>
+        </article>
+        <article class="card wide">
+          <h2>Top Origin Countries (Snapshot)</h2>
+          <div class="table" id="countryTable"></div>
         </article>
       </section>
     </div>

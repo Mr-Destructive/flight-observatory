@@ -25,6 +25,7 @@ INCLUDE_AIRLINE = (os.getenv("INCLUDE_AIRLINE") or "true").lower() in (
 )
 MINUTE_HISTORY_LIMIT = int(os.getenv("MINUTE_HISTORY_LIMIT") or "1440")
 RETENTION_DAYS = int(os.getenv("RETENTION_DAYS") or "0")
+DEFAULT_AIRPORT = (os.getenv("DEFAULT_AIRPORT") or "").upper()
 
 DATA_DIR = os.path.join("dashboard", "data")
 os.makedirs(DATA_DIR, exist_ok=True)
@@ -200,6 +201,75 @@ def build_metrics(conn: sqlite3.Connection):
     }
 
 
+def compute_snapshot_metrics(snapshot: list[dict]):
+    total = len(snapshot)
+    unique_hex = len({r["icao24"] for r in snapshot if r.get("icao24")})
+    unique_airlines = len({r["airline"] for r in snapshot if r.get("airline")})
+    unique_airports = len({r["airport"] for r in snapshot if r.get("airport")})
+    on_ground = sum(1 for r in snapshot if r.get("on_ground") is True)
+    airborne = total - on_ground
+
+    alt_vals = sorted([r["altitude"] for r in snapshot if isinstance(r.get("altitude"), (int, float))])
+    spd_vals = sorted([r["velocity"] for r in snapshot if isinstance(r.get("velocity"), (int, float))])
+    heading_vals = [r["heading"] for r in snapshot if isinstance(r.get("heading"), (int, float))]
+
+    def pctile(arr, p):
+        if not arr:
+            return None
+        idx = int((len(arr) - 1) * p)
+        return arr[idx]
+
+    def freq(key):
+        counts = {}
+        for r in snapshot:
+            val = r.get(key) or "unknown"
+            counts[val] = counts.get(val, 0) + 1
+        return counts
+
+    airport_counts = freq("airport")
+    airline_counts = freq("airline")
+    country_counts = freq("origin_country")
+
+    heading_bins = {}
+    for h in heading_vals:
+        bucket = int(floor(h / 30) * 30)
+        heading_bins[bucket] = heading_bins.get(bucket, 0) + 1
+
+    summary = {
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "total_flights": total,
+        "unique_aircraft": unique_hex,
+        "unique_airlines": unique_airlines,
+        "unique_airports": unique_airports,
+        "on_ground": on_ground,
+        "airborne": airborne,
+        "altitude_min": alt_vals[0] if alt_vals else None,
+        "altitude_median": pctile(alt_vals, 0.5),
+        "altitude_p90": pctile(alt_vals, 0.9),
+        "speed_min": spd_vals[0] if spd_vals else None,
+        "speed_median": pctile(spd_vals, 0.5),
+        "speed_p90": pctile(spd_vals, 0.9),
+        "default_airport": DEFAULT_AIRPORT or None,
+    }
+
+    def top_n(counts, n=20, key_name="key"):
+        return [
+            {key_name: k, "flights": v}
+            for k, v in sorted(counts.items(), key=lambda x: x[1], reverse=True)[:n]
+        ]
+
+    return {
+        "summary": summary,
+        "airport_counts": top_n(airport_counts, 25, "airport"),
+        "airline_counts": top_n(airline_counts, 25, "airline"),
+        "country_counts": top_n(country_counts, 25, "country"),
+        "heading_bins": [
+            {"heading_band": k, "flights": heading_bins[k]}
+            for k in sorted(heading_bins.keys())
+        ],
+    }
+
+
 def load_history(path: str):
     if not os.path.exists(path):
         return []
@@ -255,8 +325,10 @@ def main():
         lat = safe_float(f[6])
         lon = safe_float(f[5])
         altitude = safe_float(f[7])
+        on_ground = bool(f[8]) if len(f) > 8 else False
         velocity = safe_float(f[9])
         heading = safe_float(f[10])
+        origin_country = f[2] if len(f) > 2 else ""
         ts = (
             datetime.fromtimestamp(f[4], tz=timezone.utc)
             if f[4]
@@ -293,9 +365,11 @@ def main():
                 "icao24": icao24,
                 "callsign": callsign,
                 "airline": airline,
+                "origin_country": origin_country,
                 "lat": lat,
                 "lon": lon,
                 "altitude": altitude,
+                "on_ground": on_ground,
                 "velocity": velocity,
                 "heading": heading,
                 "airport": airport,
@@ -309,6 +383,8 @@ def main():
     metrics = build_metrics(conn)
     conn.close()
 
+    snapshot_metrics = compute_snapshot_metrics(snapshot)
+
     write_json(os.path.join(DATA_DIR, "top_airports.json"), metrics["top_airports"])
     write_json(
         os.path.join(DATA_DIR, "altitude_bands.json"), metrics["altitude_bands"]
@@ -316,6 +392,23 @@ def main():
     write_json(os.path.join(DATA_DIR, "speed_bands.json"), metrics["speed_bands"])
     write_json(os.path.join(DATA_DIR, "top_airlines.json"), metrics["top_airlines"])
     write_json(os.path.join(DATA_DIR, "snapshot.json"), snapshot)
+    write_json(os.path.join(DATA_DIR, "summary.json"), snapshot_metrics["summary"])
+    write_json(
+        os.path.join(DATA_DIR, "airport_counts.json"),
+        snapshot_metrics["airport_counts"],
+    )
+    write_json(
+        os.path.join(DATA_DIR, "airline_counts.json"),
+        snapshot_metrics["airline_counts"],
+    )
+    write_json(
+        os.path.join(DATA_DIR, "country_counts.json"),
+        snapshot_metrics["country_counts"],
+    )
+    write_json(
+        os.path.join(DATA_DIR, "heading_bins.json"),
+        snapshot_metrics["heading_bins"],
+    )
     update_minute_traffic(len(snapshot), now)
 
     print(f"Wrote {len(snapshot)} rows and dashboard JSON to {DATA_DIR}")

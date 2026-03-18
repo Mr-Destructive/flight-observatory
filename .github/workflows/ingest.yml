@@ -30,6 +30,7 @@ jobs:
           INCLUDE_AIRLINE: ${{ vars.INCLUDE_AIRLINE }}
           MINUTE_HISTORY_LIMIT: ${{ vars.MINUTE_HISTORY_LIMIT }}
           RETENTION_DAYS: ${{ vars.RETENTION_DAYS }}
+          DEFAULT_AIRPORT: ${{ vars.DEFAULT_AIRPORT }}
 
       - name: Commit dashboard JSON + SQLite
         run: |
