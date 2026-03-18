@@ -1,0 +1,168 @@
+{
+  "months": 60,
+  "total_rows": 135593,
+  "top_prefixes": [
+    {
+      "prefix": "IGO",
+      "flights": 37380
+    },
+    {
+      "prefix": "AIC",
+      "flights": 22514
+    },
+    {
+      "prefix": "VTI",
+      "flights": 9374
+    },
+    {
+      "prefix": "SEJ",
+      "flights": 4572
+    },
+    {
+      "prefix": "AKJ",
+      "flights": 4070
+    },
+    {
+      "prefix": "GOW",
+      "flights": 2977
+    },
+    {
+      "prefix": "AXB",
+      "flights": 2908
+    },
+    {
+      "prefix": "IAD",
+      "flights": 1715
+    },
+    {
+      "prefix": "ETH",
+      "flights": 1440
+    },
+    {
+      "prefix": "UAE",
+      "flights": 1403
+    },
+    {
+      "prefix": "FOLOWME",
+      "flights": 1383
+    },
+    {
+      "prefix": "ETD",
+      "flights": 992
+    },
+    {
+      "prefix": "SDG",
+      "flights": 922
+    },
+    {
+      "prefix": "SIA",
+      "flights": 829
+    },
+    {
+      "prefix": "LLR",
+      "flights": 807
+    },
+    {
+      "prefix": "BDA",
+      "flights": 776
+    },
+    {
+      "prefix": "ABY",
+      "flights": 662
+    },
+    {
+      "prefix": "IGOP",
+      "flights": 651
+    },
+    {
+      "prefix": "IGOC",
+      "flights": 645
+    },
+    {
+      "prefix": "IGOH",
+      "flights": 643
+    }
+  ],
+  "top_models": [
+    {
+      "model": "A20N",
+      "flights": 47596
+    },
+    {
+      "model": "A21N",
+      "flights": 25496
+    },
+    {
+      "model": "B38M",
+      "flights": 10763
+    },
+    {
+      "model": "A320",
+      "flights": 9500
+    },
+    {
+      "model": "B738",
+      "flights": 5058
+    },
+    {
+      "model": "B77W",
+      "flights": 3716
+    },
+    {
+      "model": "A321",
+      "flights": 3058
+    },
+    {
+      "model": "A319",
+      "flights": 2324
+    },
+    {
+      "model": "B77L",
+      "flights": 1806
+    },
+    {
+      "model": "B788",
+      "flights": 1726
+    },
+    {
+      "model": "B789",
+      "flights": 1634
+    },
+    {
+      "model": "A359",
+      "flights": 1400
+    },
+    {
+      "model": "A333",
+      "flights": 1319
+    },
+    {
+      "model": "AT76",
+      "flights": 1135
+    },
+    {
+      "model": "B752",
+      "flights": 892
+    },
+    {
+      "model": "GLEX",
+      "flights": 693
+    },
+    {
+      "model": "A332",
+      "flights": 675
+    },
+    {
+      "model": "E35L",
+      "flights": 669
+    },
+    {
+      "model": "DH8D",
+      "flights": 632
+    },
+    {
+      "model": "B772",
+      "flights": 560
+    }
+  ]
+}
