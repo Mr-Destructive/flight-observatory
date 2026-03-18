@@ -1,74 +1,46 @@
 [
   {
     "airport": "unknown",
-    "flights": 9863
+    "flights": 9361
   },
   {
     "airport": "UESG",
-    "flights": 35
-  },
-  {
-    "airport": "ZSJU",
-    "flights": 10
-  },
-  {
-    "airport": "HCMI",
-    "flights": 7
-  },
-  {
-    "airport": "HCMF",
-    "flights": 6
-  },
-  {
-    "airport": "OEOM",
-    "flights": 5
-  },
-  {
-    "airport": "HKML",
-    "flights": 5
+    "flights": 21
   },
   {
     "airport": "YKII",
-    "flights": 5
+    "flights": 10
   },
   {
     "airport": "FSMA",
-    "flights": 5
+    "flights": 6
   },
   {
     "airport": "ZSWA",
+    "flights": 6
+  },
+  {
+    "airport": "YSMI",
     "flights": 5
   },
   {
-    "airport": "ZSJD",
-    "flights": 5
+    "airport": "HCMV",
+    "flights": 4
   },
   {
-    "airport": "UHOO",
-    "flights": 5
+    "airport": "HCAD",
+    "flights": 4
   },
   {
     "airport": "ZSTX",
     "flights": 4
   },
   {
-    "airport": "HKGA",
+    "airport": "YQNS",
     "flights": 4
   },
   {
-    "airport": "HCMH",
-    "flights": 4
-  },
-  {
-    "airport": "OYMB",
-    "flights": 4
-  },
-  {
-    "airport": "OEPF",
-    "flights": 3
-  },
-  {
-    "airport": "OYSH",
+    "airport": "ZSJU",
     "flights": 3
   },
   {
@@ -76,27 +48,55 @@
     "flights": 3
   },
   {
-    "airport": "HCMG",
+    "airport": "OEPF",
     "flights": 3
   },
   {
-    "airport": "ZSYW",
+    "airport": "FSSD",
     "flights": 3
   },
   {
-    "airport": "ZSJH",
+    "airport": "EPGE",
     "flights": 3
   },
   {
-    "airport": "HCAD",
+    "airport": "UHOO",
+    "flights": 3
+  },
+  {
+    "airport": "HCMF",
+    "flights": 3
+  },
+  {
+    "airport": "OEJF",
+    "flights": 3
+  },
+  {
+    "airport": "OEZL",
+    "flights": 3
+  },
+  {
+    "airport": "HCMS",
+    "flights": 3
+  },
+  {
+    "airport": "OERB",
     "flights": 2
   },
   {
-    "airport": "OJKF",
+    "airport": "UESO",
     "flights": 2
   },
   {
-    "airport": "OESH",
+    "airport": "HCMI",
+    "flights": 2
+  },
+  {
+    "airport": "HKGA",
+    "flights": 2
+  },
+  {
+    "airport": "OEAD",
     "flights": 2
   }
 ]
