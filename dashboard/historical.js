@@ -9,15 +9,17 @@ function buildChart(ctx, type, labels, data, color) {
     type,
     data: {
       labels,
-      datasets: [
-        {
-          data,
-          borderColor: color,
-          backgroundColor: color,
-          fill: type === "line",
-          tension: 0.35,
-        },
-      ],
+      datasets: Array.isArray(data)
+        ? [
+            {
+              data,
+              borderColor: color,
+              backgroundColor: color,
+              fill: type === "line",
+              tension: 0.35,
+            },
+          ]
+        : data,
     },
     options: {
       responsive: true,
@@ -53,10 +55,55 @@ function renderTable(targetId, rows, columns) {
   el.innerHTML = `<table><thead><tr>${header}</tr></thead><tbody>${body}</tbody></table>`;
 }
 
+function renderInsights(targetId, insights) {
+  const el = document.getElementById(targetId);
+  if (!el) return;
+  if (!insights || !insights.length) {
+    el.innerHTML = "<p class=\"hint\">No insights yet</p>";
+    return;
+  }
+  el.innerHTML = insights
+    .map(
+      (insight) => `
+      <article class="insight-card">
+        <div class="tag">${insight.tag || "Insight"}</div>
+        <h3>${insight.title}</h3>
+        <p>${insight.detail}</p>
+      </article>
+    `
+    )
+    .join("");
+}
+
+function renderMetricTable(targetId, metrics) {
+  const el = document.getElementById(targetId);
+  if (!el) return;
+  if (!metrics || typeof metrics !== "object") {
+    el.innerHTML = "<p class=\"hint\">No metrics</p>";
+    return;
+  }
+  const rows = Object.keys(metrics)
+    .sort()
+    .map((key) => {
+      const value = metrics[key];
+      let formatted = value;
+      if (typeof value === "number") {
+        formatted = Number.isInteger(value) ? value.toLocaleString() : value.toFixed(2);
+      } else if (Array.isArray(value)) {
+        formatted = JSON.stringify(value);
+      } else if (value && typeof value === "object") {
+        formatted = JSON.stringify(value);
+      }
+      return { key, value: formatted };
+    });
+  renderTable(targetId, rows, ["key", "value"]);
+}
+
 async function main() {
-  const [monthly, summary] = await Promise.all([
+  const [monthly, summary, detailed] = await Promise.all([
     fetchJson("./data/historical_monthly.json"),
     fetchJson("./data/historical_summary.json"),
+    fetchJson("./data/historical_detailed.json"),
   ]);
 
   const summaryEl = document.getElementById("hist-summary");
@@ -120,6 +167,91 @@ async function main() {
 
   renderTable("histPrefixTable", summary.top_prefixes || [], ["prefix", "flights"]);
   renderTable("histModelTable", summary.top_models || [], ["model", "flights"]);
+
+  if (detailed?.insights) {
+    renderInsights("histInsights", detailed.insights);
+  }
+
+  if (detailed?.hourly_distribution) {
+    buildChart(
+      document.getElementById("histHourly"),
+      "bar",
+      detailed.hourly_distribution.map((d) => `${d.hour}h`),
+      detailed.hourly_distribution.map((d) => d.count),
+      "#7bdff6"
+    );
+  }
+
+  if (detailed?.minute_distribution) {
+    buildChart(
+      document.getElementById("histMinute"),
+      "line",
+      detailed.minute_distribution.map((d) => d.minute),
+      detailed.minute_distribution.map((d) => d.count),
+      "#f4b266"
+    );
+  }
+
+  if (detailed?.seasonal_pattern) {
+    buildChart(
+      document.getElementById("histSeasonal"),
+      "bar",
+      detailed.seasonal_pattern.map((d) => d.month),
+      detailed.seasonal_pattern.map((d) => d.avg_count),
+      "#c2a5ff"
+    );
+  }
+
+  if (detailed?.heading_distribution) {
+    buildChart(
+      document.getElementById("histHeading"),
+      "bar",
+      detailed.heading_distribution.map((d) => d.direction),
+      detailed.heading_distribution.map((d) => d.count),
+      "#ffcf87"
+    );
+  }
+
+  if (detailed?.fleet_mix) {
+    buildChart(
+      document.getElementById("histFleet"),
+      "bar",
+      detailed.fleet_mix.map((d) => d.type),
+      detailed.fleet_mix.map((d) => d.share),
+      "#7bdff6"
+    );
+  }
+
+  if (detailed?.metrics) {
+    const m = detailed.metrics;
+    const completenessRows = [
+      { field: "Altitude", pct: m.data_completeness_altitude ?? 0 },
+      { field: "Speed", pct: m.data_completeness_speed ?? 0 },
+      { field: "Track", pct: m.data_completeness_track ?? 0 },
+      { field: "Position", pct: m.data_completeness_position ?? 0 },
+      { field: "Timestamp", pct: m.data_completeness_time ?? 0 },
+      { field: "All Fields", pct: m.data_completeness_all_fields ?? 0 },
+    ];
+    buildChart(
+      document.getElementById("histQuality"),
+      "bar",
+      completenessRows.map((d) => d.field),
+      completenessRows.map((d) => d.pct),
+      "#f4b266"
+    );
+  }
+
+  if (detailed?.adsb_type_distribution) {
+    buildChart(
+      document.getElementById("histAdsb"),
+      "bar",
+      detailed.adsb_type_distribution.map((d) => d.type),
+      detailed.adsb_type_distribution.map((d) => d.count),
+      "#c2a5ff"
+    );
+  }
+
+  renderMetricTable("histMetricTable", detailed?.metrics || {});
 }
 
 main().catch((err) => console.error(err));

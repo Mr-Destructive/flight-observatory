@@ -72,6 +72,61 @@
       </section>
 
       <section class="section">
+        <h2 class="section-title">Key Insights</h2>
+        <p class="section-subtitle">Non-technical takeaways distilled from 100+ metrics.</p>
+        <div class="insight-grid" id="histInsights"></div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Time Of Day & Seasonality</h2>
+        <p class="section-subtitle">Hourly patterns, minute distribution, and seasonal shape.</p>
+        <div class="grid">
+          <article class="card">
+            <h2>Hourly Activity</h2>
+            <canvas id="histHourly"></canvas>
+          </article>
+          <article class="card">
+            <h2>Minute Distribution</h2>
+            <canvas id="histMinute"></canvas>
+          </article>
+          <article class="card wide">
+            <h2>Seasonal Pattern (Month of Year)</h2>
+            <canvas id="histSeasonal"></canvas>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Direction & Fleet</h2>
+        <p class="section-subtitle">Directional flow and aircraft mix.</p>
+        <div class="grid">
+          <article class="card">
+            <h2>Heading Distribution</h2>
+            <canvas id="histHeading"></canvas>
+          </article>
+          <article class="card">
+            <h2>Fleet Mix</h2>
+            <canvas id="histFleet"></canvas>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Data Quality & ADS-B</h2>
+        <p class="section-subtitle">Completeness and ADS-B message types.</p>
+        <div class="grid">
+          <article class="card">
+            <h2>Field Completeness</h2>
+            <canvas id="histQuality"></canvas>
+          </article>
+          <article class="card">
+            <h2>ADS-B Types</h2>
+            <canvas id="histAdsb"></canvas>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
         <h2 class="section-title">Top Categories</h2>
         <p class="section-subtitle">Most frequent airline prefixes and aircraft models.</p>
         <div class="tables">
@@ -84,6 +139,15 @@
             <div class="table" id="histModelTable"></div>
           </article>
         </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">All Metrics</h2>
+        <p class="section-subtitle">Complete metric dump from the 100+ analysis pass.</p>
+        <article class="card wide">
+          <h2>Detailed Metrics</h2>
+          <div class="table" id="histMetricTable"></div>
+        </article>
       </section>
     </div>
 

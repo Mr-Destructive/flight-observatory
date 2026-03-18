@@ -237,6 +237,43 @@ h1 {
   gap: 18px;
 }
 
+.insight-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.insight-card {
+  grid-column: span 6;
+  padding: 16px 18px;
+  border-radius: 16px;
+  border: 1px solid rgba(123, 223, 246, 0.2);
+  background: rgba(18, 28, 40, 0.75);
+}
+
+.insight-card .tag {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: rgba(123, 223, 246, 0.12);
+  color: var(--accent-2);
+  margin-bottom: 10px;
+}
+
+.insight-card h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+}
+
+.insight-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
 .table {
   width: 100%;
   border-collapse: collapse;
@@ -297,6 +334,9 @@ canvas {
   }
   .stat-card {
     grid-column: span 6;
+  }
+  .insight-card {
+    grid-column: span 12;
   }
 }
 
