@@ -5,7 +5,9 @@ const STALE_MINUTES = 30;
 
 async function fetchJson(path, optional = false) {
   try {
-    const res = await fetch(path);
+    const url = new URL(path, window.location.origin);
+    url.searchParams.set("v", Date.now().toString());
+    const res = await fetch(url.toString(), { cache: "no-store" });
     if (!res.ok) {
       if (optional) return null;
       throw new Error(`Fetch failed: ${path} (${res.status})`);
@@ -88,7 +90,7 @@ async function loadCharts() {
   charts.forEach((c) => c.destroy());
   charts = [];
 
-  const [latest, snapshot, minuteTraffic, summary, airportCounts, airlineCounts, countryCounts, mumbaiMonthly, mumbaiSummary, sample] =
+  const [latest, snapshot, minuteTraffic, summary, airportCounts, airlineCounts, countryCounts, sample] =
     await Promise.all([
       fetchJson("./data/latest.json", true),
       fetchJson("./data/snapshot.json"),
@@ -97,8 +99,6 @@ async function loadCharts() {
       fetchJson("./data/airport_counts.json"),
       fetchJson("./data/airline_counts.json"),
       fetchJson("./data/country_counts.json"),
-      fetchJson("./data/historical_monthly.json", true),
-      fetchJson("./data/historical_summary.json", true),
       fetchJson("./data/sample.json", true),
     ]);
 
@@ -201,7 +201,6 @@ async function loadCharts() {
   updateTimestampFromSummary(dataPack.summary);
   showStaleWarning(dataPack.summary);
 
-  renderMumbaiSection(mumbaiMonthly, mumbaiSummary);
 }
 
 async function boot() {
@@ -386,46 +385,5 @@ function showStaleWarning(summary) {
   if (ageMin > STALE_MINUTES) {
     banner.hidden = false;
     banner.textContent = `Data is stale (${Math.round(ageMin)} minutes old).`;
-  }
-}
-
-function renderMumbaiSection(monthly, summary) {
-  const safeMonthly = Array.isArray(monthly) ? monthly : [];
-  const safeSummary = summary && typeof summary === "object" ? summary : null;
-
-  if (safeMonthly.length) {
-    buildChart(
-      document.getElementById("mumbaiMonthly"),
-      "line",
-      safeMonthly.map((d) => d.month),
-      safeMonthly.map((d) => d.count),
-      "Flights",
-      "#7bdff6"
-    );
-
-    buildChart(
-      document.getElementById("mumbaiAltMedian"),
-      "line",
-      safeMonthly.map((d) => d.month),
-      safeMonthly.map((d) => d.alt_median || 0),
-      "Altitude",
-      "#f4b266"
-    );
-
-    buildChart(
-      document.getElementById("mumbaiSpeedMedian"),
-      "line",
-      safeMonthly.map((d) => d.month),
-      safeMonthly.map((d) => d.speed_median || 0),
-      "Speed",
-      "#c2a5ff"
-    );
-  }
-
-  if (safeSummary?.top_prefixes) {
-    renderTable("prefixTable", safeSummary.top_prefixes, ["prefix", "flights"]);
-  }
-  if (safeSummary?.top_models) {
-    renderTable("modelTable", safeSummary.top_models, ["model", "flights"]);
   }
 }
