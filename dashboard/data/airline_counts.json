@@ -1,102 +1,102 @@
 [
   {
     "airline": "unknown",
-    "flights": 5202
+    "flights": 892
   },
   {
     "airline": "Ryanair",
-    "flights": 1231
-  },
-  {
-    "airline": "Turkish Airlines",
-    "flights": 930
-  },
-  {
-    "airline": "Delta Air Lines",
-    "flights": 744
-  },
-  {
-    "airline": "American Airlines",
-    "flights": 622
-  },
-  {
-    "airline": "United Airlines",
-    "flights": 570
-  },
-  {
-    "airline": "IndiGo Airlines",
-    "flights": 545
-  },
-  {
-    "airline": "Air France",
-    "flights": 493
-  },
-  {
-    "airline": "Lufthansa",
-    "flights": 489
-  },
-  {
-    "airline": "KLM Royal Dutch Airlines",
-    "flights": 461
-  },
-  {
-    "airline": "Vueling Airlines",
-    "flights": 359
-  },
-  {
-    "airline": "Japan Airlines Domestic",
-    "flights": 329
-  },
-  {
-    "airline": "All Nippon Airways",
-    "flights": 312
-  },
-  {
-    "airline": "British Airways",
-    "flights": 292
-  },
-  {
-    "airline": "Southwest Airlines",
-    "flights": 291
-  },
-  {
-    "airline": "Qantas",
-    "flights": 288
-  },
-  {
-    "airline": "Swissair",
-    "flights": 281
-  },
-  {
-    "airline": "Air Canada",
-    "flights": 246
-  },
-  {
-    "airline": "Eurowings",
-    "flights": 240
-  },
-  {
-    "airline": "Virgin Australia",
-    "flights": 236
-  },
-  {
-    "airline": "JetBlue Airways",
-    "flights": 234
-  },
-  {
-    "airline": "Alaska Airlines",
-    "flights": 228
-  },
-  {
-    "airline": "Finnair",
     "flights": 222
   },
   {
-    "airline": "Air India Limited",
-    "flights": 215
+    "airline": "Turkish Airlines",
+    "flights": 137
   },
   {
-    "airline": "Cathay Pacific",
-    "flights": 210
+    "airline": "easyJet",
+    "flights": 104
+  },
+  {
+    "airline": "Delta Air Lines",
+    "flights": 98
+  },
+  {
+    "airline": "American Airlines",
+    "flights": 93
+  },
+  {
+    "airline": "IndiGo Airlines",
+    "flights": 91
+  },
+  {
+    "airline": "United Airlines",
+    "flights": 91
+  },
+  {
+    "airline": "Lufthansa",
+    "flights": 75
+  },
+  {
+    "airline": "Scandinavian Airlines System",
+    "flights": 67
+  },
+  {
+    "airline": "British Airways",
+    "flights": 64
+  },
+  {
+    "airline": "KLM Royal Dutch Airlines",
+    "flights": 61
+  },
+  {
+    "airline": "All Nippon Airways",
+    "flights": 57
+  },
+  {
+    "airline": "Air France",
+    "flights": 55
+  },
+  {
+    "airline": "Vueling Airlines",
+    "flights": 54
+  },
+  {
+    "airline": "Japan Airlines Domestic",
+    "flights": 52
+  },
+  {
+    "airline": "Pegasus Airlines",
+    "flights": 49
+  },
+  {
+    "airline": "Southwest Airlines",
+    "flights": 48
+  },
+  {
+    "airline": "Virgin Australia",
+    "flights": 46
+  },
+  {
+    "airline": "Swissair",
+    "flights": 41
+  },
+  {
+    "airline": "Korean Air",
+    "flights": 38
+  },
+  {
+    "airline": "United Parcel Service",
+    "flights": 37
+  },
+  {
+    "airline": "JetBlue Airways",
+    "flights": 36
+  },
+  {
+    "airline": "Finnair",
+    "flights": 36
+  },
+  {
+    "airline": "Qantas",
+    "flights": 35
   }
 ]
