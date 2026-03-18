@@ -1,34 +1,22 @@
 [
   {
     "airport": "unknown",
-    "flights": 11215
-  },
-  {
-    "airport": "HCME",
-    "flights": 24
+    "flights": 10871
   },
   {
     "airport": "UESG",
-    "flights": 24
+    "flights": 26
   },
   {
-    "airport": "HCMV",
-    "flights": 15
-  },
-  {
-    "airport": "ZSJU",
-    "flights": 9
+    "airport": "HCME",
+    "flights": 25
   },
   {
     "airport": "HKML",
-    "flights": 9
+    "flights": 13
   },
   {
-    "airport": "HCMR",
-    "flights": 8
-  },
-  {
-    "airport": "OESK",
+    "airport": "YKII",
     "flights": 8
   },
   {
@@ -36,43 +24,23 @@
     "flights": 8
   },
   {
-    "airport": "HCMF",
+    "airport": "ZSWA",
     "flights": 7
   },
   {
-    "airport": "ZSTX",
+    "airport": "FSMA",
     "flights": 7
   },
   {
     "airport": "FSSD",
-    "flights": 7
-  },
-  {
-    "airport": "HCMG",
     "flights": 6
   },
   {
-    "airport": "OESH",
-    "flights": 6
-  },
-  {
-    "airport": "OEYN",
+    "airport": "ZSTX",
     "flights": 5
   },
   {
-    "airport": "UHOO",
-    "flights": 5
-  },
-  {
-    "airport": "EPGE",
-    "flights": 5
-  },
-  {
-    "airport": "ZSWA",
-    "flights": 5
-  },
-  {
-    "airport": "HCMH",
+    "airport": "HCMV",
     "flights": 5
   },
   {
@@ -80,11 +48,19 @@
     "flights": 5
   },
   {
-    "airport": "HASM",
+    "airport": "ZSJU",
     "flights": 5
   },
   {
-    "airport": "HCMN",
+    "airport": "HCMR",
+    "flights": 5
+  },
+  {
+    "airport": "HCMF",
+    "flights": 5
+  },
+  {
+    "airport": "UHOO",
     "flights": 4
   },
   {
@@ -92,11 +68,35 @@
     "flights": 4
   },
   {
-    "airport": "OYZM",
+    "airport": "HCMU",
     "flights": 4
   },
   {
-    "airport": "OJPH",
+    "airport": "OYAT",
     "flights": 4
+  },
+  {
+    "airport": "HCMS",
+    "flights": 4
+  },
+  {
+    "airport": "UESO",
+    "flights": 4
+  },
+  {
+    "airport": "HCMN",
+    "flights": 4
+  },
+  {
+    "airport": "OYMB",
+    "flights": 4
+  },
+  {
+    "airport": "HCMD",
+    "flights": 4
+  },
+  {
+    "airport": "HCMO",
+    "flights": 3
   }
 ]
