@@ -3,15 +3,18 @@ let charts = [];
 let lastError = "";
 const STALE_MINUTES = 30;
 
-async function fetchJson(path) {
+async function fetchJson(path, optional = false) {
   try {
     const res = await fetch(path);
     if (!res.ok) {
+      if (optional) return null;
       throw new Error(`Fetch failed: ${path} (${res.status})`);
     }
     return await res.json();
   } catch (err) {
-    lastError = `${err.message}`;
+    if (!optional) {
+      lastError = `${err.message}`;
+    }
     return null;
   }
 }
@@ -79,19 +82,17 @@ async function loadCharts() {
 
   const [latest, snapshot, minuteTraffic, summary, airportCounts, airlineCounts, countryCounts, mumbaiMonthly, mumbaiSummary, sample] =
     await Promise.all([
-      fetchJson("./data/latest.json"),
+      fetchJson("./data/latest.json", true),
       fetchJson("./data/snapshot.json"),
       fetchJson("./data/minute_traffic.json"),
       fetchJson("./data/summary.json"),
       fetchJson("./data/airport_counts.json"),
       fetchJson("./data/airline_counts.json"),
       fetchJson("./data/country_counts.json"),
-      fetchJson("./data/historical_monthly.json"),
-      fetchJson("./data/historical_summary.json"),
-      fetchJson("./data/sample.json"),
+      fetchJson("./data/historical_monthly.json", true),
+      fetchJson("./data/historical_summary.json", true),
+      fetchJson("./data/sample.json", true),
     ]);
-
-  showErrorBanner(lastError);
 
   const safeLatest = latest && typeof latest === "object" ? latest : null;
   const safeSnapshot = Array.isArray(snapshot) ? snapshot : [];
@@ -111,6 +112,11 @@ async function loadCharts() {
     safeCountryCounts,
     safeSample
   );
+
+  if (dataPack.flights.length) {
+    lastError = "";
+  }
+  showErrorBanner(lastError);
 
   if (!currentAirport && dataPack.summary?.default_airport) {
     currentAirport = dataPack.summary.default_airport;
