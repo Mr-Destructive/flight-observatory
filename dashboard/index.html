@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Flight Tracker Dashboard</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  </head>
+  <body>
+    <div class="page">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">OpenSky + SQLite</p>
+          <h1>Live Flight Tracker</h1>
+          <p class="subhead">
+            Rolling 60-minute view of traffic, altitude, and speed distribution.
+          </p>
+        </div>
+        <div class="meta">
+          <div class="pill">Refresh: 60s</div>
+          <div class="pill" id="last-updated">Last updated: --</div>
+        </div>
+      </header>
+      <div class="filters">
+        <label for="airportFilter">Airport filter (ICAO, e.g. VABB)</label>
+        <div class="filter-row">
+          <input id="airportFilter" type="text" placeholder="All airports" />
+          <button id="applyFilter">Apply</button>
+          <button id="clearFilter" class="ghost">Clear</button>
+        </div>
+        <p class="hint">Leave blank to show all airports. Use <code>unknown</code> to view unmapped flights.</p>
+      </div>
+
+      <section class="grid">
+        <article class="card">
+          <h2>Top Airports (Last 60m)</h2>
+          <canvas id="topAirports"></canvas>
+        </article>
+        <article class="card">
+          <h2>Altitude Bands (m)</h2>
+          <canvas id="altitudeBands"></canvas>
+        </article>
+        <article class="card">
+          <h2>Speed Bands (m/s)</h2>
+          <canvas id="speedBands"></canvas>
+        </article>
+        <article class="card">
+          <h2>Top Airlines</h2>
+          <canvas id="topAirlines"></canvas>
+        </article>
+        <article class="card wide">
+          <h2>Traffic by Minute</h2>
+          <canvas id="minuteTraffic"></canvas>
+        </article>
+      </section>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

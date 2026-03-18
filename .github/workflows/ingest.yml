@@ -1,0 +1,42 @@
+name: ingest-flight-data
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run SQLite pipeline
+        run: python pipeline.py
+        env:
+          MAX_AIRPORT_DISTANCE_KM: ${{ vars.MAX_AIRPORT_DISTANCE_KM }}
+          INCLUDE_AIRLINE: ${{ vars.INCLUDE_AIRLINE }}
+
+      - name: Commit dashboard JSON
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add dashboard/data/*.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "Update dashboard data"
+          git push
