@@ -1,102 +1,102 @@
 [
   {
     "airline": "unknown",
-    "flights": 4233
-  },
-  {
-    "airline": "Southwest Airlines",
-    "flights": 469
-  },
-  {
-    "airline": "Delta Air Lines",
-    "flights": 463
+    "flights": 3851
   },
   {
     "airline": "American Airlines",
-    "flights": 458
+    "flights": 470
+  },
+  {
+    "airline": "Southwest Airlines",
+    "flights": 457
   },
   {
     "airline": "United Airlines",
-    "flights": 416
+    "flights": 456
+  },
+  {
+    "airline": "Delta Air Lines",
+    "flights": 454
   },
   {
     "airline": "SkyWest",
-    "flights": 220
+    "flights": 201
   },
   {
     "airline": "NetJets",
-    "flights": 164
-  },
-  {
-    "airline": "JetBlue Airways",
-    "flights": 126
-  },
-  {
-    "airline": "Ryanair",
-    "flights": 123
-  },
-  {
-    "airline": "United Parcel Service",
-    "flights": 120
+    "flights": 159
   },
   {
     "airline": "Republic Airlines",
-    "flights": 118
+    "flights": 132
+  },
+  {
+    "airline": "JetBlue Airways",
+    "flights": 131
   },
   {
     "airline": "Alaska Airlines",
-    "flights": 111
+    "flights": 126
+  },
+  {
+    "airline": "United Parcel Service",
+    "flights": 101
   },
   {
     "airline": "Envoy Air",
-    "flights": 93
+    "flights": 92
   },
   {
     "airline": "Air Canada",
-    "flights": 93
+    "flights": 91
+  },
+  {
+    "airline": "Ryanair",
+    "flights": 90
   },
   {
     "airline": "Bombardier Business Jet Solutions",
-    "flights": 86
-  },
-  {
-    "airline": "easyJet",
-    "flights": 82
-  },
-  {
-    "airline": "Lufthansa",
     "flights": 76
   },
   {
-    "airline": "Frontier Airlines",
-    "flights": 67
-  },
-  {
     "airline": "WestJet",
-    "flights": 62
-  },
-  {
-    "airline": "Federal Express",
-    "flights": 59
+    "flights": 71
   },
   {
     "airline": "PSA Airlines",
-    "flights": 59
+    "flights": 70
   },
   {
-    "airline": "KLM Royal Dutch Airlines",
+    "airline": "Federal Express",
+    "flights": 68
+  },
+  {
+    "airline": "Frontier Airlines",
+    "flights": 65
+  },
+  {
+    "airline": "Lufthansa",
+    "flights": 56
+  },
+  {
+    "airline": "easyJet",
     "flights": 54
   },
   {
+    "airline": "Spirit Airlines",
+    "flights": 54
+  },
+  {
+    "airline": "Virgin Australia",
+    "flights": 49
+  },
+  {
     "airline": "TAM Brazilian Airlines",
-    "flights": 53
+    "flights": 45
   },
   {
     "airline": "Allegiant Air",
-    "flights": 52
-  },
-  {
-    "airline": "Spirit Airlines",
-    "flights": 52
+    "flights": 43
   }
 ]

@@ -1,58 +1,54 @@
 [
   {
     "airport": "unknown",
-    "flights": 10428
+    "flights": 9863
   },
   {
     "airport": "UESG",
-    "flights": 33
-  },
-  {
-    "airport": "ZSTX",
-    "flights": 15
-  },
-  {
-    "airport": "HKML",
-    "flights": 10
-  },
-  {
-    "airport": "HCMV",
-    "flights": 9
-  },
-  {
-    "airport": "HCME",
-    "flights": 8
+    "flights": 35
   },
   {
     "airport": "ZSJU",
-    "flights": 8
-  },
-  {
-    "airport": "UHOO",
-    "flights": 8
+    "flights": 10
   },
   {
     "airport": "HCMI",
+    "flights": 7
+  },
+  {
+    "airport": "HCMF",
     "flights": 6
+  },
+  {
+    "airport": "OEOM",
+    "flights": 5
+  },
+  {
+    "airport": "HKML",
+    "flights": 5
+  },
+  {
+    "airport": "YKII",
+    "flights": 5
+  },
+  {
+    "airport": "FSMA",
+    "flights": 5
   },
   {
     "airport": "ZSWA",
     "flights": 5
   },
   {
-    "airport": "HCMC",
+    "airport": "ZSJD",
     "flights": 5
   },
   {
-    "airport": "UESO",
-    "flights": 4
+    "airport": "UHOO",
+    "flights": 5
   },
   {
-    "airport": "OEPF",
-    "flights": 4
-  },
-  {
-    "airport": "OESH",
+    "airport": "ZSTX",
     "flights": 4
   },
   {
@@ -60,31 +56,23 @@
     "flights": 4
   },
   {
-    "airport": "FSSD",
+    "airport": "HCMH",
     "flights": 4
   },
   {
-    "airport": "HCMF",
+    "airport": "OYMB",
     "flights": 4
   },
   {
-    "airport": "YKII",
-    "flights": 4
-  },
-  {
-    "airport": "ZSJD",
-    "flights": 4
-  },
-  {
-    "airport": "OEOM",
+    "airport": "OEPF",
     "flights": 3
   },
   {
-    "airport": "HCMS",
+    "airport": "OYSH",
     "flights": 3
   },
   {
-    "airport": "LTCU",
+    "airport": "ZSLI",
     "flights": 3
   },
   {
@@ -92,11 +80,23 @@
     "flights": 3
   },
   {
-    "airport": "HTPE",
+    "airport": "ZSYW",
     "flights": 3
   },
   {
-    "airport": "HAWR",
+    "airport": "ZSJH",
     "flights": 3
+  },
+  {
+    "airport": "HCAD",
+    "flights": 2
+  },
+  {
+    "airport": "OJKF",
+    "flights": 2
+  },
+  {
+    "airport": "OESH",
+    "flights": 2
   }
 ]
