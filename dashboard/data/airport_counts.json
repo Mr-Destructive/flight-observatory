@@ -1,42 +1,34 @@
 [
   {
     "airport": "unknown",
-    "flights": 11236
-  },
-  {
-    "airport": "UESG",
-    "flights": 31
+    "flights": 11192
   },
   {
     "airport": "HCME",
-    "flights": 21
+    "flights": 36
+  },
+  {
+    "airport": "UESG",
+    "flights": 30
   },
   {
     "airport": "HKML",
     "flights": 14
   },
   {
+    "airport": "HCAD",
+    "flights": 8
+  },
+  {
+    "airport": "UESO",
+    "flights": 8
+  },
+  {
     "airport": "HCMV",
-    "flights": 9
-  },
-  {
-    "airport": "HCMN",
     "flights": 7
   },
   {
-    "airport": "HCMG",
-    "flights": 7
-  },
-  {
-    "airport": "HCMU",
-    "flights": 6
-  },
-  {
-    "airport": "ZSJU",
-    "flights": 6
-  },
-  {
-    "airport": "UHOO",
+    "airport": "HCMI",
     "flights": 6
   },
   {
@@ -44,27 +36,19 @@
     "flights": 6
   },
   {
-    "airport": "OYSQ",
+    "airport": "OYSH",
     "flights": 5
   },
   {
-    "airport": "HCMS",
+    "airport": "HSKG",
     "flights": 5
   },
   {
-    "airport": "HCMR",
+    "airport": "OEPF",
     "flights": 5
   },
   {
-    "airport": "HKGA",
-    "flights": 5
-  },
-  {
-    "airport": "OEOM",
-    "flights": 5
-  },
-  {
-    "airport": "HCMH",
+    "airport": "OESH",
     "flights": 5
   },
   {
@@ -72,31 +56,47 @@
     "flights": 5
   },
   {
-    "airport": "HCMO",
+    "airport": "HCMC",
     "flights": 5
   },
   {
-    "airport": "HCMF",
-    "flights": 5
-  },
-  {
-    "airport": "HCMA",
+    "airport": "ZSJU",
     "flights": 4
   },
   {
-    "airport": "HCAD",
+    "airport": "HCMU",
     "flights": 4
   },
   {
-    "airport": "OYRN",
+    "airport": "OYMB",
     "flights": 4
   },
   {
-    "airport": "FSSD",
+    "airport": "HDDK",
     "flights": 4
   },
   {
-    "airport": "HAWR",
+    "airport": "LTCE",
     "flights": 4
+  },
+  {
+    "airport": "HTKI",
+    "flights": 4
+  },
+  {
+    "airport": "OYSQ",
+    "flights": 4
+  },
+  {
+    "airport": "HAKD",
+    "flights": 4
+  },
+  {
+    "airport": "OEHL",
+    "flights": 3
+  },
+  {
+    "airport": "HCMS",
+    "flights": 3
   }
 ]
