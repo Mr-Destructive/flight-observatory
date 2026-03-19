@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 12277
+    "flights": 11944
   },
   {
     "airport": "UESG",
-    "flights": 36
+    "flights": 30
   },
   {
     "airport": "HCME",
-    "flights": 35
+    "flights": 28
   },
   {
-    "airport": "HCMV",
-    "flights": 18
-  },
-  {
-    "airport": "HAGO",
+    "airport": "HKGA",
     "flights": 13
   },
   {
-    "airport": "OEOM",
+    "airport": "HCMS",
+    "flights": 11
+  },
+  {
+    "airport": "HCMV",
     "flights": 11
   },
   {
     "airport": "HKML",
-    "flights": 10
-  },
-  {
-    "airport": "HCMG",
-    "flights": 10
-  },
-  {
-    "airport": "FSMA",
     "flights": 9
   },
   {
-    "airport": "HKGA",
-    "flights": 8
+    "airport": "OEOM",
+    "flights": 9
   },
   {
     "airport": "HCMU",
-    "flights": 7
+    "flights": 8
   },
   {
-    "airport": "HCMC",
-    "flights": 7
+    "airport": "HCMF",
+    "flights": 8
   },
   {
     "airport": "HCAD",
+    "flights": 8
+  },
+  {
+    "airport": "HAGO",
+    "flights": 8
+  },
+  {
+    "airport": "HCMN",
     "flights": 7
   },
   {
-    "airport": "HAKL",
+    "airport": "HCMR",
+    "flights": 7
+  },
+  {
+    "airport": "OEYN",
+    "flights": 7
+  },
+  {
+    "airport": "HSKG",
     "flights": 6
   },
   {
-    "airport": "OYMB",
+    "airport": "HCBA",
     "flights": 6
   },
   {
-    "airport": "HCMO",
-    "flights": 6
+    "airport": "HCMH",
+    "flights": 5
   },
   {
-    "airport": "FSSD",
-    "flights": 6
+    "airport": "UHOO",
+    "flights": 5
   },
   {
     "airport": "OEHL",
     "flights": 5
   },
   {
-    "airport": "HCMA",
+    "airport": "HCMD",
     "flights": 5
   },
   {
-    "airport": "HCBA",
+    "airport": "FSMA",
     "flights": 5
   },
   {
-    "airport": "OEPJ",
+    "airport": "OEPF",
     "flights": 5
   },
   {
-    "airport": "HCMS",
-    "flights": 5
-  },
-  {
-    "airport": "HCMN",
-    "flights": 5
-  },
-  {
-    "airport": "OYQN",
+    "airport": "OEBA",
     "flights": 4
   },
   {
-    "airport": "FSSB",
+    "airport": "ZSJU",
     "flights": 4
   }
 ]
