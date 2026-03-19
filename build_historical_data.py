@@ -200,6 +200,19 @@ def build_detailed_metrics(conn):
             hourly[int(hour)] += 1
 
     hourly_list = [{"hour": h, "count": hourly.get(h, 0)} for h in range(24)]
+    
+    # Aircraft count over time (weekly)
+    aircraft_weekly = cur.execute(
+        """
+        SELECT strftime('%Y-W%W', timestamp) as week, COUNT(DISTINCT icao24) as unique_aircraft
+        FROM flights_adsb
+        WHERE timestamp IS NOT NULL AND icao24 IS NOT NULL
+        GROUP BY week
+        ORDER BY week ASC
+        LIMIT 52
+    """
+    ).fetchall()
+    aircraft_weekly_list = [{"week": w, "aircraft": a} for w, a in aircraft_weekly]
 
     # Seasonal pattern (month of year)
     seasonal = defaultdict(list)
@@ -319,10 +332,81 @@ def build_detailed_metrics(conn):
     # Generate insights
     insights = generate_insights(conn, total)
 
+    # Ground vs Airborne ratio (estimate based on altitude)
+    on_ground = cur.execute(
+        "SELECT COUNT(*) FROM flights_adsb WHERE altitude IS NOT NULL AND altitude < 100"
+    ).fetchone()[0]
+    airborne = cur.execute(
+        "SELECT COUNT(*) FROM flights_adsb WHERE altitude IS NOT NULL AND altitude >= 100"
+    ).fetchone()[0]
+    
+    # Top airports by activity
+    top_airports_activity = cur.execute(
+        """
+        SELECT nearest_airport, COUNT(*) as count
+        FROM flights_adsb
+        WHERE nearest_airport IS NOT NULL AND nearest_airport != 'unknown'
+        GROUP BY nearest_airport
+        ORDER BY count DESC
+        LIMIT 20
+    """
+    ).fetchall()
+    
+    # Altitude statistics
+    alt_stats = cur.execute(
+        """
+        SELECT 
+            MIN(altitude) as min_alt,
+            MAX(altitude) as max_alt,
+            AVG(altitude) as avg_alt
+        FROM flights_adsb
+        WHERE altitude IS NOT NULL
+    """
+    ).fetchone()
+    
+    # Speed statistics
+    speed_stats = cur.execute(
+        """
+        SELECT 
+            MIN(velocity) as min_speed,
+            MAX(velocity) as max_speed,
+            AVG(velocity) as avg_speed
+        FROM flights_adsb
+        WHERE velocity IS NOT NULL
+    """
+    ).fetchone()
+    
+    # Unique aircraft per day
+    aircraft_daily = cur.execute(
+        """
+        SELECT DATE(timestamp) as day, COUNT(DISTINCT icao24) as aircraft
+        FROM flights_adsb
+        WHERE timestamp IS NOT NULL
+        GROUP BY day
+        ORDER BY day DESC
+        LIMIT 30
+    """
+    ).fetchall()
+    aircraft_daily_list = [{"day": d, "aircraft": a} for d, a in aircraft_daily]
+
     return {
         "hourly_distribution": hourly_list,
         "seasonal_pattern": seasonal_list,
         "heading_distribution": heading_list,
+        "aircraft_weekly": aircraft_weekly_list,
+        "aircraft_daily": aircraft_daily_list,
+        "ground_airborne": {"on_ground": on_ground, "airborne": airborne},
+        "top_airports_activity": [{"airport": a, "activity": c} for a, c in top_airports_activity],
+        "altitude_stats": {
+            "min": alt_stats[0],
+            "max": alt_stats[1],
+            "avg": round(alt_stats[2], 1) if alt_stats[2] else None
+        },
+        "speed_stats": {
+            "min": speed_stats[0],
+            "max": speed_stats[1],
+            "avg": round(speed_stats[2], 1) if speed_stats[2] else None
+        },
         "adsb_type_distribution": adsb_types,
         "metrics": completeness,
         "insights": insights,

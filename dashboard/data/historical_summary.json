@@ -1,76 +1,76 @@
 {
-  "total_rows": 260591,
+  "total_rows": 266599,
   "months": 1,
   "date_range": [
     "2026-03-18T06:01:35+00:00",
-    "2026-03-19T09:07:09+00:00"
+    "2026-03-19T09:28:53+00:00"
   ],
   "yearly_counts": [
     {
       "year": 2026,
-      "count": 260591
+      "count": 266599
     }
   ],
   "altitude_bins": [
     {
       "altitude_band": "-1000m",
-      "count": 1660
+      "count": 1695
     },
     {
       "altitude_band": "0m",
-      "count": 40917
+      "count": 41656
     },
     {
       "altitude_band": "1000m",
-      "count": 23993
+      "count": 24400
     },
     {
       "altitude_band": "2000m",
-      "count": 13228
+      "count": 13497
     },
     {
       "altitude_band": "3000m",
-      "count": 9976
+      "count": 10205
     },
     {
       "altitude_band": "4000m",
-      "count": 8211
+      "count": 8390
     },
     {
       "altitude_band": "5000m",
-      "count": 7635
+      "count": 7834
     },
     {
       "altitude_band": "6000m",
-      "count": 7909
+      "count": 8105
     },
     {
       "altitude_band": "7000m",
-      "count": 9245
+      "count": 9453
     },
     {
       "altitude_band": "8000m",
-      "count": 8979
+      "count": 9204
     },
     {
       "altitude_band": "9000m",
-      "count": 14724
+      "count": 15088
     },
     {
       "altitude_band": "10000m",
-      "count": 47470
+      "count": 48763
     },
     {
       "altitude_band": "11000m",
-      "count": 30371
+      "count": 31256
     },
     {
       "altitude_band": "12000m",
-      "count": 7438
+      "count": 7588
     },
     {
       "altitude_band": "13000m",
-      "count": 3171
+      "count": 3188
     },
     {
       "altitude_band": "14000m",
@@ -106,7 +106,7 @@
     },
     {
       "altitude_band": "23000m",
-      "count": 5
+      "count": 6
     },
     {
       "altitude_band": "24000m",
@@ -138,7 +138,7 @@
     },
     {
       "altitude_band": "34000m",
-      "count": 2
+      "count": 3
     },
     {
       "altitude_band": "36000m",
@@ -152,31 +152,31 @@
   "speed_bins": [
     {
       "speed_band": "0m/s",
-      "count": 48114
+      "count": 49048
     },
     {
       "speed_band": "50m/s",
-      "count": 41635
+      "count": 42393
     },
     {
       "speed_band": "100m/s",
-      "count": 25592
+      "count": 26177
     },
     {
       "speed_band": "150m/s",
-      "count": 30820
+      "count": 31579
     },
     {
       "speed_band": "200m/s",
-      "count": 89988
+      "count": 92302
     },
     {
       "speed_band": "250m/s",
-      "count": 23169
+      "count": 23790
     },
     {
       "speed_band": "300m/s",
-      "count": 1052
+      "count": 1084
     },
     {
       "speed_band": "350m/s",
@@ -184,7 +184,7 @@
     },
     {
       "speed_band": "400m/s",
-      "count": 10
+      "count": 11
     },
     {
       "speed_band": "450m/s",
@@ -242,245 +242,245 @@
   "top_airlines": [
     {
       "airline": "unknown",
-      "flights": 78666
+      "flights": 79920
     },
     {
       "airline": "American Airlines",
-      "flights": 9404
+      "flights": 9523
     },
     {
       "airline": "Delta Air Lines",
-      "flights": 9142
+      "flights": 9252
     },
     {
       "airline": "United Airlines",
-      "flights": 8487
+      "flights": 8593
     },
     {
       "airline": "Southwest Airlines",
-      "flights": 8109
+      "flights": 8168
     },
     {
       "airline": "Ryanair",
-      "flights": 6525
+      "flights": 6818
     },
     {
       "airline": "Turkish Airlines",
-      "flights": 4072
+      "flights": 4194
     },
     {
       "airline": "SkyWest",
-      "flights": 3430
+      "flights": 3433
     },
     {
       "airline": "JetBlue Airways",
-      "flights": 2851
-    },
-    {
-      "airline": "Alaska Airlines",
-      "flights": 2569
+      "flights": 2888
     },
     {
       "airline": "IndiGo Airlines",
-      "flights": 2516
+      "flights": 2615
+    },
+    {
+      "airline": "Alaska Airlines",
+      "flights": 2599
     },
     {
       "airline": "Lufthansa",
-      "flights": 2508
-    },
-    {
-      "airline": "NetJets",
-      "flights": 2238
+      "flights": 2587
     },
     {
       "airline": "Air France",
-      "flights": 2238
+      "flights": 2320
     },
     {
       "airline": "easyJet",
-      "flights": 2217
+      "flights": 2315
+    },
+    {
+      "airline": "NetJets",
+      "flights": 2240
     },
     {
       "airline": "Air Canada",
-      "flights": 2181
-    },
-    {
-      "airline": "KLM Royal Dutch Airlines",
-      "flights": 2042
+      "flights": 2218
     },
     {
       "airline": "United Parcel Service",
-      "flights": 1998
+      "flights": 2125
+    },
+    {
+      "airline": "KLM Royal Dutch Airlines",
+      "flights": 2124
     },
     {
       "airline": "Republic Airlines",
-      "flights": 1929
+      "flights": 1931
     },
     {
       "airline": "British Airways",
-      "flights": 1874
+      "flights": 1929
     },
     {
       "airline": "Federal Express",
-      "flights": 1649
+      "flights": 1818
     },
     {
       "airline": "Scandinavian Airlines System",
-      "flights": 1637
+      "flights": 1709
     },
     {
       "airline": "All Nippon Airways",
-      "flights": 1583
+      "flights": 1643
     },
     {
       "airline": "Frontier Airlines",
-      "flights": 1476
-    },
-    {
-      "airline": "Vueling Airlines",
-      "flights": 1422
+      "flights": 1500
     },
     {
       "airline": "Japan Airlines Domestic",
-      "flights": 1420
+      "flights": 1487
     },
     {
-      "airline": "Envoy Air",
-      "flights": 1402
+      "airline": "Vueling Airlines",
+      "flights": 1476
     },
     {
       "airline": "WestJet",
-      "flights": 1400
+      "flights": 1414
     },
     {
       "airline": "Pegasus Airlines",
-      "flights": 1351
+      "flights": 1414
+    },
+    {
+      "airline": "Envoy Air",
+      "flights": 1405
     },
     {
       "airline": "Air India Limited",
-      "flights": 1336
+      "flights": 1390
     }
   ],
   "top_models": [
     {
       "model": "AAL",
-      "flights": 9404
+      "flights": 9523
     },
     {
       "model": "DAL",
-      "flights": 9142
+      "flights": 9252
     },
     {
       "model": "UAL",
-      "flights": 8487
+      "flights": 8593
     },
     {
       "model": "SWA",
-      "flights": 8109
+      "flights": 8168
     },
     {
       "model": "RYR",
-      "flights": 6525
+      "flights": 6818
     },
     {
       "model": "THY",
-      "flights": 4072
+      "flights": 4194
     },
     {
       "model": "SKW",
-      "flights": 3430
+      "flights": 3433
     },
     {
       "model": "JBU",
-      "flights": 2851
-    },
-    {
-      "model": "ASA",
-      "flights": 2569
+      "flights": 2888
     },
     {
       "model": "IGO",
-      "flights": 2516
+      "flights": 2615
+    },
+    {
+      "model": "ASA",
+      "flights": 2599
     },
     {
       "model": "DLH",
-      "flights": 2508
-    },
-    {
-      "model": "EJA",
-      "flights": 2238
+      "flights": 2587
     },
     {
       "model": "AFR",
-      "flights": 2238
+      "flights": 2320
     },
     {
       "model": "EZY",
-      "flights": 2217
+      "flights": 2315
+    },
+    {
+      "model": "EJA",
+      "flights": 2240
     },
     {
       "model": "ACA",
-      "flights": 2181
-    },
-    {
-      "model": "KLM",
-      "flights": 2042
+      "flights": 2218
     },
     {
       "model": "UPS",
-      "flights": 1998
+      "flights": 2125
+    },
+    {
+      "model": "KLM",
+      "flights": 2124
     },
     {
       "model": "RPA",
-      "flights": 1929
+      "flights": 1931
     },
     {
       "model": "BAW",
-      "flights": 1874
-    },
-    {
-      "model": "EJU",
-      "flights": 1743
+      "flights": 1929
     },
     {
       "model": "FDX",
-      "flights": 1649
+      "flights": 1818
+    },
+    {
+      "model": "EJU",
+      "flights": 1807
     },
     {
       "model": "SAS",
-      "flights": 1637
+      "flights": 1709
     },
     {
       "model": "ANA",
-      "flights": 1583
+      "flights": 1643
     },
     {
       "model": "FFT",
-      "flights": 1476
-    },
-    {
-      "model": "VLG",
-      "flights": 1422
+      "flights": 1500
     },
     {
       "model": "JAL",
-      "flights": 1420
+      "flights": 1487
     },
     {
-      "model": "ENY",
-      "flights": 1402
+      "model": "VLG",
+      "flights": 1476
     },
     {
       "model": "WJA",
-      "flights": 1400
-    },
-    {
-      "model": "CXK",
-      "flights": 1365
+      "flights": 1414
     },
     {
       "model": "PGT",
-      "flights": 1351
+      "flights": 1414
+    },
+    {
+      "model": "ENY",
+      "flights": 1405
+    },
+    {
+      "model": "AIC",
+      "flights": 1390
     }
   ]
 }

@@ -38,7 +38,7 @@
     },
     {
       "hour": 9,
-      "count": 11634
+      "count": 17642
     },
     {
       "hour": 10,
@@ -100,43 +100,155 @@
   "seasonal_pattern": [
     {
       "month": "Mar",
-      "avg_count": 260591
+      "avg_count": 266599
     }
   ],
   "heading_distribution": [
     {
       "direction": "N",
-      "count": 29607
+      "count": 30235
     },
     {
       "direction": "NE",
-      "count": 29846
+      "count": 30521
     },
     {
       "direction": "E",
-      "count": 38861
+      "count": 39800
     },
     {
       "direction": "SE",
-      "count": 30600
+      "count": 31422
     },
     {
       "direction": "S",
-      "count": 30133
+      "count": 30814
     },
     {
       "direction": "SW",
-      "count": 31719
+      "count": 32455
     },
     {
       "direction": "W",
-      "count": 38464
+      "count": 39259
     },
     {
       "direction": "NW",
-      "count": 31361
+      "count": 32093
     }
   ],
+  "aircraft_weekly": [
+    {
+      "week": "2026-W11",
+      "aircraft": 49849
+    }
+  ],
+  "aircraft_daily": [
+    {
+      "day": "2026-03-19",
+      "aircraft": 20213
+    },
+    {
+      "day": "2026-03-18",
+      "aircraft": 46574
+    }
+  ],
+  "ground_airborne": {
+    "on_ground": 5531,
+    "airborne": 235090
+  },
+  "top_airports_activity": [
+    {
+      "airport": "HCME",
+      "activity": 790
+    },
+    {
+      "airport": "UESG",
+      "activity": 441
+    },
+    {
+      "airport": "YKII",
+      "activity": 368
+    },
+    {
+      "airport": "HCMV",
+      "activity": 296
+    },
+    {
+      "airport": "HKML",
+      "activity": 284
+    },
+    {
+      "airport": "HCAD",
+      "activity": 224
+    },
+    {
+      "airport": "FSMA",
+      "activity": 200
+    },
+    {
+      "airport": "HCMG",
+      "activity": 181
+    },
+    {
+      "airport": "OEOM",
+      "activity": 163
+    },
+    {
+      "airport": "HCMN",
+      "activity": 162
+    },
+    {
+      "airport": "HCMF",
+      "activity": 150
+    },
+    {
+      "airport": "HCMC",
+      "activity": 148
+    },
+    {
+      "airport": "FSSD",
+      "activity": 148
+    },
+    {
+      "airport": "HKGA",
+      "activity": 141
+    },
+    {
+      "airport": "HCMS",
+      "activity": 141
+    },
+    {
+      "airport": "HAGO",
+      "activity": 132
+    },
+    {
+      "airport": "HCMU",
+      "activity": 129
+    },
+    {
+      "airport": "HCMR",
+      "activity": 119
+    },
+    {
+      "airport": "OESH",
+      "activity": 113
+    },
+    {
+      "airport": "OESK",
+      "activity": 104
+    }
+  ],
+  "altitude_stats": {
+    "min": -304.8,
+    "max": 37459.92,
+    "avg": 6511.0
+  },
+  "speed_stats": {
+    "min": 0.0,
+    "max": 1968.94,
+    "avg": 152.0
+  },
   "adsb_type_distribution": [
     {
       "type": "Position Only",
@@ -171,18 +283,18 @@
     },
     {
       "category": "Operations",
-      "title": "Average Altitude: 6497m",
-      "detail": "Aircraft in the region operate at an average altitude of 6497 meters."
+      "title": "Average Altitude: 6511m",
+      "detail": "Aircraft in the region operate at an average altitude of 6511 meters."
     },
     {
       "category": "Operations",
-      "title": "Average Speed: 151.7m/s",
-      "detail": "Aircraft maintain an average speed of 151.7 m/s (\u2248294kt)."
+      "title": "Average Speed: 152.0m/s",
+      "detail": "Aircraft maintain an average speed of 152.0 m/s (\u2248295kt)."
     },
     {
       "category": "Airlines",
       "title": "Dominant Carrier: unknown",
-      "detail": "unknown represents 30.2% of all tracked flights."
+      "detail": "unknown represents 30.0% of all tracked flights."
     },
     {
       "category": "Quality",

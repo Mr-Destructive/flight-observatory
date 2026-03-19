@@ -299,6 +299,51 @@ async function loadHistoricalDashboard() {
     );
   }
 
+  if (detailed?.aircraft_weekly && Array.isArray(detailed.aircraft_weekly)) {
+    createChart(
+      "aircraftWeekly",
+      "line",
+      detailed.aircraft_weekly.map((d) => d.week),
+      detailed.aircraft_weekly.map((d) => d.aircraft),
+      "rgb(59, 130, 246)",
+      "Aircraft"
+    );
+  }
+
+  if (detailed?.aircraft_daily && Array.isArray(detailed.aircraft_daily)) {
+    createChart(
+      "aircraftDaily",
+      "line",
+      detailed.aircraft_daily.map((d) => d.day),
+      detailed.aircraft_daily.map((d) => d.aircraft),
+      "rgb(251, 146, 60)",
+      "Aircraft"
+    );
+  }
+
+  if (detailed?.ground_airborne) {
+    const ga = detailed.ground_airborne;
+    createChart(
+      "groundAirborne",
+      "doughnut",
+      ["On Ground", "Airborne"],
+      [ga.on_ground || 0, ga.airborne || 0],
+      "rgb(168, 85, 247)",
+      "Count"
+    );
+  }
+
+  if (detailed?.top_airports_activity && Array.isArray(detailed.top_airports_activity)) {
+    createChart(
+      "topAirportsActivity",
+      "bar",
+      detailed.top_airports_activity.map((d) => d.airport),
+      detailed.top_airports_activity.map((d) => d.activity),
+      "rgb(34, 197, 94)",
+      "Activity Count"
+    );
+  }
+
   // ========================================================================
   // Data Quality
   // ========================================================================
