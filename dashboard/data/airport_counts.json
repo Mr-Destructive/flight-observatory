@@ -1,62 +1,38 @@
 [
   {
     "airport": "unknown",
-    "flights": 9427
+    "flights": 8891
   },
   {
     "airport": "UESG",
-    "flights": 18
+    "flights": 21
   },
   {
     "airport": "YKII",
-    "flights": 10
+    "flights": 12
+  },
+  {
+    "airport": "ZSTX",
+    "flights": 8
   },
   {
     "airport": "FSMA",
     "flights": 7
   },
   {
-    "airport": "UHOO",
-    "flights": 6
-  },
-  {
-    "airport": "UESO",
+    "airport": "ZSJU",
     "flights": 5
   },
   {
-    "airport": "HCME",
+    "airport": "UHOO",
+    "flights": 5
+  },
+  {
+    "airport": "EPGE",
     "flights": 4
   },
   {
-    "airport": "HKML",
-    "flights": 4
-  },
-  {
-    "airport": "ZSTX",
-    "flights": 4
-  },
-  {
-    "airport": "UEMA",
-    "flights": 4
-  },
-  {
-    "airport": "YSMI",
-    "flights": 4
-  },
-  {
-    "airport": "HCMV",
-    "flights": 4
-  },
-  {
-    "airport": "OEZL",
-    "flights": 3
-  },
-  {
-    "airport": "HCMU",
-    "flights": 3
-  },
-  {
-    "airport": "HCMA",
+    "airport": "YSRN",
     "flights": 3
   },
   {
@@ -64,7 +40,7 @@
     "flights": 3
   },
   {
-    "airport": "FSSD",
+    "airport": "HSKG",
     "flights": 3
   },
   {
@@ -72,15 +48,39 @@
     "flights": 3
   },
   {
-    "airport": "HCMI",
+    "airport": "UESO",
     "flights": 3
   },
   {
-    "airport": "HKGA",
+    "airport": "OYZM",
     "flights": 2
   },
   {
-    "airport": "OEBA",
+    "airport": "OEYN",
+    "flights": 2
+  },
+  {
+    "airport": "FNXA",
+    "flights": 2
+  },
+  {
+    "airport": "ZSSR",
+    "flights": 2
+  },
+  {
+    "airport": "HCME",
+    "flights": 2
+  },
+  {
+    "airport": "OEPF",
+    "flights": 2
+  },
+  {
+    "airport": "HCBG",
+    "flights": 2
+  },
+  {
+    "airport": "OYSQ",
     "flights": 2
   },
   {
@@ -88,15 +88,15 @@
     "flights": 2
   },
   {
-    "airport": "HEBR",
+    "airport": "YSMI",
     "flights": 2
   },
   {
-    "airport": "OERF",
-    "flights": 2
+    "airport": "LLMG",
+    "flights": 1
   },
   {
-    "airport": "OYAT",
-    "flights": 2
+    "airport": "OEPC",
+    "flights": 1
   }
 ]
