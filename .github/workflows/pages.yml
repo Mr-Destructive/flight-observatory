@@ -28,6 +28,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          lfs: true
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -36,6 +37,7 @@ jobs:
 
       - name: Generate historical data
         run: python3 build_historical_data.py
+        continue-on-error: true
 
       - name: Configure Pages
         uses: actions/configure-pages@v5

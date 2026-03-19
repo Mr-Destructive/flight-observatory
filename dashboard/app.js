@@ -278,9 +278,10 @@ async function loadDashboard() {
     : flights;
 
   // Update timestamp
-  if (summary?.generated_at) {
+  const lastUpdatedEl = document.getElementById("lastUpdated");
+  if (lastUpdatedEl && summary?.generated_at) {
     const date = new Date(summary.generated_at);
-    document.getElementById("lastUpdated").textContent = date.toLocaleTimeString(
+    lastUpdatedEl.textContent = date.toLocaleTimeString(
       [],
       { hour: "2-digit", minute: "2-digit", second: "2-digit" }
     );
