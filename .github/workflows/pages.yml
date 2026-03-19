@@ -50,18 +50,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
-      - name: Configure Pages source
-        run: |
-          gh api repos/$GITHUB_REPOSITORY/pages \
-            --method PATCH \
-            --input - << 'EOF'
-          {
-            "source": {
-              "branch": "gh-pages",
-              "path": "/"
-            }
-          }
-          EOF
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
