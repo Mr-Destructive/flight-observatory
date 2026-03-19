@@ -1,74 +1,54 @@
 [
   {
     "airport": "unknown",
-    "flights": 7981
+    "flights": 9854
   },
   {
     "airport": "HCME",
     "flights": 35
   },
   {
-    "airport": "HCMN",
-    "flights": 18
+    "airport": "HCMV",
+    "flights": 21
   },
   {
     "airport": "HKML",
-    "flights": 17
+    "flights": 16
   },
   {
     "airport": "HCAD",
-    "flights": 15
-  },
-  {
-    "airport": "HCMV",
-    "flights": 14
-  },
-  {
-    "airport": "FSMA",
-    "flights": 14
-  },
-  {
-    "airport": "HCMU",
     "flights": 12
   },
   {
-    "airport": "HCMS",
+    "airport": "HCMG",
     "flights": 11
   },
   {
-    "airport": "HCMH",
-    "flights": 10
-  },
-  {
-    "airport": "YKII",
-    "flights": 10
-  },
-  {
     "airport": "OEOM",
+    "flights": 11
+  },
+  {
+    "airport": "OEPF",
     "flights": 9
   },
   {
-    "airport": "OYGD",
+    "airport": "HCMU",
     "flights": 9
-  },
-  {
-    "airport": "OYSQ",
-    "flights": 8
-  },
-  {
-    "airport": "OEYN",
-    "flights": 8
   },
   {
     "airport": "HAGO",
     "flights": 8
   },
   {
-    "airport": "HSKG",
+    "airport": "OEHL",
     "flights": 8
   },
   {
-    "airport": "HCMG",
+    "airport": "HKGA",
+    "flights": 8
+  },
+  {
+    "airport": "OYSQ",
     "flights": 7
   },
   {
@@ -76,27 +56,47 @@
     "flights": 7
   },
   {
+    "airport": "HCMI",
+    "flights": 6
+  },
+  {
+    "airport": "YKII",
+    "flights": 6
+  },
+  {
     "airport": "HCMF",
-    "flights": 7
-  },
-  {
-    "airport": "FSSD",
-    "flights": 7
-  },
-  {
-    "airport": "OYAT",
     "flights": 6
   },
   {
-    "airport": "HKGA",
+    "airport": "HASM",
     "flights": 6
   },
   {
-    "airport": "HCBG",
+    "airport": "OYSH",
     "flights": 6
   },
   {
-    "airport": "HCMR",
+    "airport": "FSMA",
     "flights": 6
+  },
+  {
+    "airport": "OEZL",
+    "flights": 6
+  },
+  {
+    "airport": "OESH",
+    "flights": 5
+  },
+  {
+    "airport": "OEWD",
+    "flights": 5
+  },
+  {
+    "airport": "OEYN",
+    "flights": 5
+  },
+  {
+    "airport": "OYSY",
+    "flights": 4
   }
 ]
