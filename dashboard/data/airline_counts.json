@@ -1,102 +1,102 @@
 [
   {
     "airline": "unknown",
-    "flights": 1672
-  },
-  {
-    "airline": "Ryanair",
-    "flights": 286
-  },
-  {
-    "airline": "Southwest Airlines",
-    "flights": 275
+    "flights": 2088
   },
   {
     "airline": "American Airlines",
-    "flights": 270
+    "flights": 326
   },
   {
     "airline": "Delta Air Lines",
-    "flights": 240
+    "flights": 305
+  },
+  {
+    "airline": "Southwest Airlines",
+    "flights": 303
+  },
+  {
+    "airline": "Ryanair",
+    "flights": 293
   },
   {
     "airline": "United Airlines",
-    "flights": 183
+    "flights": 219
   },
   {
     "airline": "Turkish Airlines",
-    "flights": 130
+    "flights": 141
   },
   {
     "airline": "JetBlue Airways",
-    "flights": 125
+    "flights": 129
   },
   {
     "airline": "Lufthansa",
-    "flights": 103
-  },
-  {
-    "airline": "easyJet",
-    "flights": 100
+    "flights": 112
   },
   {
     "airline": "IndiGo Airlines",
-    "flights": 98
+    "flights": 110
+  },
+  {
+    "airline": "easyJet",
+    "flights": 107
   },
   {
     "airline": "Republic Airlines",
-    "flights": 93
-  },
-  {
-    "airline": "British Airways",
-    "flights": 76
-  },
-  {
-    "airline": "Federal Express",
-    "flights": 71
-  },
-  {
-    "airline": "Jet2.com",
-    "flights": 70
-  },
-  {
-    "airline": "Pegasus Airlines",
-    "flights": 69
-  },
-  {
-    "airline": "United Parcel Service",
-    "flights": 67
-  },
-  {
-    "airline": "All Nippon Airways",
-    "flights": 66
-  },
-  {
-    "airline": "Frontier Airlines",
-    "flights": 64
-  },
-  {
-    "airline": "KLM Royal Dutch Airlines",
-    "flights": 64
-  },
-  {
-    "airline": "Air France",
-    "flights": 62
-  },
-  {
-    "airline": "Envoy Air",
-    "flights": 58
-  },
-  {
-    "airline": "Spirit Airlines",
-    "flights": 58
+    "flights": 95
   },
   {
     "airline": "SkyWest",
-    "flights": 57
+    "flights": 80
   },
   {
-    "airline": "PSA Airlines",
-    "flights": 54
+    "airline": "KLM Royal Dutch Airlines",
+    "flights": 77
+  },
+  {
+    "airline": "Air France",
+    "flights": 73
+  },
+  {
+    "airline": "British Airways",
+    "flights": 73
+  },
+  {
+    "airline": "Jet2.com",
+    "flights": 71
+  },
+  {
+    "airline": "Envoy Air",
+    "flights": 69
+  },
+  {
+    "airline": "Frontier Airlines",
+    "flights": 68
+  },
+  {
+    "airline": "United Parcel Service",
+    "flights": 68
+  },
+  {
+    "airline": "Pegasus Airlines",
+    "flights": 64
+  },
+  {
+    "airline": "Scandinavian Airlines System",
+    "flights": 63
+  },
+  {
+    "airline": "Allegiant Air",
+    "flights": 62
+  },
+  {
+    "airline": "Federal Express",
+    "flights": 61
+  },
+  {
+    "airline": "All Nippon Airways",
+    "flights": 61
   }
 ]

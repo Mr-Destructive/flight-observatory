@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 7092
+    "flights": 7981
   },
   {
     "airport": "HCME",
-    "flights": 49
-  },
-  {
-    "airport": "HCMV",
-    "flights": 21
-  },
-  {
-    "airport": "HCMC",
-    "flights": 12
+    "flights": 35
   },
   {
     "airport": "HCMN",
-    "flights": 12
-  },
-  {
-    "airport": "YKII",
-    "flights": 12
-  },
-  {
-    "airport": "HCMG",
-    "flights": 11
+    "flights": 18
   },
   {
     "airport": "HKML",
-    "flights": 11
+    "flights": 17
   },
   {
     "airport": "HCAD",
-    "flights": 11
+    "flights": 15
+  },
+  {
+    "airport": "HCMV",
+    "flights": 14
   },
   {
     "airport": "FSMA",
+    "flights": 14
+  },
+  {
+    "airport": "HCMU",
+    "flights": 12
+  },
+  {
+    "airport": "HCMS",
+    "flights": 11
+  },
+  {
+    "airport": "HCMH",
+    "flights": 10
+  },
+  {
+    "airport": "YKII",
     "flights": 10
   },
   {
     "airport": "OEOM",
-    "flights": 10
+    "flights": 9
   },
   {
-    "airport": "FSSD",
+    "airport": "OYGD",
+    "flights": 9
+  },
+  {
+    "airport": "OYSQ",
     "flights": 8
+  },
+  {
+    "airport": "OEYN",
+    "flights": 8
+  },
+  {
+    "airport": "HAGO",
+    "flights": 8
+  },
+  {
+    "airport": "HSKG",
+    "flights": 8
+  },
+  {
+    "airport": "HCMG",
+    "flights": 7
+  },
+  {
+    "airport": "HCMC",
+    "flights": 7
   },
   {
     "airport": "HCMF",
     "flights": 7
   },
   {
-    "airport": "HKGA",
+    "airport": "FSSD",
     "flights": 7
   },
   {
-    "airport": "HTPE",
+    "airport": "OYAT",
     "flights": 6
   },
   {
-    "airport": "HCMS",
+    "airport": "HKGA",
     "flights": 6
   },
   {
-    "airport": "HAGO",
+    "airport": "HCBG",
     "flights": 6
   },
   {
-    "airport": "HCMH",
+    "airport": "HCMR",
     "flights": 6
-  },
-  {
-    "airport": "HCMO",
-    "flights": 5
-  },
-  {
-    "airport": "FSDR",
-    "flights": 5
-  },
-  {
-    "airport": "OYBN",
-    "flights": 5
-  },
-  {
-    "airport": "OEPJ",
-    "flights": 5
-  },
-  {
-    "airport": "EPGE",
-    "flights": 5
-  },
-  {
-    "airport": "HTKI",
-    "flights": 4
-  },
-  {
-    "airport": "FVOT",
-    "flights": 4
   }
 ]
