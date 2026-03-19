@@ -1,78 +1,94 @@
 [
   {
     "airport": "unknown",
-    "flights": 11672
+    "flights": 11158
   },
   {
     "airport": "HCME",
-    "flights": 26
+    "flights": 34
   },
   {
     "airport": "UESG",
-    "flights": 25
-  },
-  {
-    "airport": "HCMV",
-    "flights": 15
-  },
-  {
-    "airport": "FSSD",
-    "flights": 12
-  },
-  {
-    "airport": "OYGD",
-    "flights": 9
+    "flights": 27
   },
   {
     "airport": "HCAD",
-    "flights": 9
-  },
-  {
-    "airport": "ZSTX",
-    "flights": 8
-  },
-  {
-    "airport": "FSMA",
-    "flights": 8
+    "flights": 11
   },
   {
     "airport": "HCMG",
-    "flights": 8
-  },
-  {
-    "airport": "OEHL",
-    "flights": 7
-  },
-  {
-    "airport": "HCMC",
-    "flights": 7
-  },
-  {
-    "airport": "HCMF",
-    "flights": 6
-  },
-  {
-    "airport": "HKML",
-    "flights": 6
+    "flights": 9
   },
   {
     "airport": "HCMS",
-    "flights": 6
+    "flights": 9
   },
   {
-    "airport": "HCMR",
-    "flights": 6
+    "airport": "FSMA",
+    "flights": 9
   },
   {
-    "airport": "HKGA",
-    "flights": 5
+    "airport": "HCMO",
+    "flights": 8
   },
   {
-    "airport": "OOSH",
-    "flights": 5
+    "airport": "HCMV",
+    "flights": 8
   },
   {
     "airport": "OESK",
+    "flights": 7
+  },
+  {
+    "airport": "HEAR",
+    "flights": 7
+  },
+  {
+    "airport": "HCMR",
+    "flights": 7
+  },
+  {
+    "airport": "FSSD",
+    "flights": 7
+  },
+  {
+    "airport": "OEOM",
+    "flights": 6
+  },
+  {
+    "airport": "HAWR",
+    "flights": 6
+  },
+  {
+    "airport": "HCMC",
+    "flights": 6
+  },
+  {
+    "airport": "UHOO",
+    "flights": 6
+  },
+  {
+    "airport": "YKII",
+    "flights": 5
+  },
+  {
+    "airport": "HKML",
+    "flights": 5
+  },
+  {
+    "airport": "ZSTX",
+    "flights": 5
+  },
+  {
+    "airport": "HCMN",
+    "flights": 5
+  },
+  {
+    "airport": "HCMI",
+    "flights": 4
+  },
+  {
+    "airport": "HCMF",
     "flights": 4
   },
   {
@@ -80,23 +96,7 @@
     "flights": 4
   },
   {
-    "airport": "ZSJU",
-    "flights": 4
-  },
-  {
-    "airport": "UHOO",
-    "flights": 4
-  },
-  {
-    "airport": "UESO",
-    "flights": 4
-  },
-  {
-    "airport": "HDOB",
-    "flights": 4
-  },
-  {
-    "airport": "OYZM",
+    "airport": "OYRN",
     "flights": 4
   }
 ]
