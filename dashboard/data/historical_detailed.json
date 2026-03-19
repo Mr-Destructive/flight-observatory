@@ -1,305 +1,403 @@
 {
+  "generated_at": "2026-03-19T09:44:52.648612+00:00",
+  "metrics": {},
   "hourly_distribution": [
     {
       "hour": 0,
-      "count": 0
+      "count": 4147
     },
     {
       "hour": 1,
-      "count": 6947
+      "count": 4958
     },
     {
       "hour": 2,
-      "count": 0
+      "count": 6244
     },
     {
       "hour": 3,
-      "count": 0
+      "count": 5889
     },
     {
       "hour": 4,
-      "count": 4881
+      "count": 6281
     },
     {
       "hour": 5,
-      "count": 4402
+      "count": 6858
     },
     {
       "hour": 6,
-      "count": 42037
+      "count": 6298
     },
     {
       "hour": 7,
-      "count": 9942
+      "count": 5980
     },
     {
       "hour": 8,
-      "count": 15558
+      "count": 6612
     },
     {
       "hour": 9,
-      "count": 17642
+      "count": 6027
     },
     {
       "hour": 10,
-      "count": 6369
+      "count": 6468
     },
     {
       "hour": 11,
-      "count": 7409
+      "count": 6255
     },
     {
       "hour": 12,
-      "count": 0
+      "count": 6574
     },
     {
       "hour": 13,
-      "count": 10682
+      "count": 5995
     },
     {
       "hour": 14,
-      "count": 11901
+      "count": 6549
     },
     {
       "hour": 15,
-      "count": 0
+      "count": 6572
     },
     {
       "hour": 16,
-      "count": 11924
+      "count": 6634
     },
     {
       "hour": 17,
-      "count": 11773
+      "count": 6658
     },
     {
       "hour": 18,
-      "count": 11611
+      "count": 6148
     },
     {
       "hour": 19,
-      "count": 22955
+      "count": 4912
     },
     {
       "hour": 20,
-      "count": 11570
+      "count": 3851
     },
     {
       "hour": 21,
-      "count": 21904
+      "count": 2457
     },
     {
       "hour": 22,
-      "count": 19663
+      "count": 3725
     },
     {
       "hour": 23,
-      "count": 17429
+      "count": 3501
     }
   ],
-  "seasonal_pattern": [
+  "minute_distribution": [
     {
-      "month": "Mar",
-      "avg_count": 266599
-    }
-  ],
-  "heading_distribution": [
-    {
-      "direction": "N",
-      "count": 30235
+      "minute": 0,
+      "count": 373
     },
     {
-      "direction": "NE",
-      "count": 30521
-    },
-    {
-      "direction": "E",
-      "count": 39800
-    },
-    {
-      "direction": "SE",
-      "count": 31422
-    },
-    {
-      "direction": "S",
-      "count": 30814
-    },
-    {
-      "direction": "SW",
-      "count": 32455
-    },
-    {
-      "direction": "W",
-      "count": 39259
-    },
-    {
-      "direction": "NW",
-      "count": 32093
-    }
-  ],
-  "aircraft_weekly": [
-    {
-      "week": "2026-W11",
-      "aircraft": 49849
-    }
-  ],
-  "aircraft_daily": [
-    {
-      "day": "2026-03-19",
-      "aircraft": 20213
-    },
-    {
-      "day": "2026-03-18",
-      "aircraft": 46574
-    }
-  ],
-  "ground_airborne": {
-    "on_ground": 5531,
-    "airborne": 235090
-  },
-  "top_airports_activity": [
-    {
-      "airport": "HCME",
-      "activity": 790
-    },
-    {
-      "airport": "UESG",
-      "activity": 441
-    },
-    {
-      "airport": "YKII",
-      "activity": 368
-    },
-    {
-      "airport": "HCMV",
-      "activity": 296
-    },
-    {
-      "airport": "HKML",
-      "activity": 284
-    },
-    {
-      "airport": "HCAD",
-      "activity": 224
-    },
-    {
-      "airport": "FSMA",
-      "activity": 200
-    },
-    {
-      "airport": "HCMG",
-      "activity": 181
-    },
-    {
-      "airport": "OEOM",
-      "activity": 163
-    },
-    {
-      "airport": "HCMN",
-      "activity": 162
-    },
-    {
-      "airport": "HCMF",
-      "activity": 150
-    },
-    {
-      "airport": "HCMC",
-      "activity": 148
-    },
-    {
-      "airport": "FSSD",
-      "activity": 148
-    },
-    {
-      "airport": "HKGA",
-      "activity": 141
-    },
-    {
-      "airport": "HCMS",
-      "activity": 141
-    },
-    {
-      "airport": "HAGO",
-      "activity": 132
-    },
-    {
-      "airport": "HCMU",
-      "activity": 129
-    },
-    {
-      "airport": "HCMR",
-      "activity": 119
-    },
-    {
-      "airport": "OESH",
-      "activity": 113
-    },
-    {
-      "airport": "OESK",
-      "activity": 104
-    }
-  ],
-  "altitude_stats": {
-    "min": -304.8,
-    "max": 37459.92,
-    "avg": 6511.0
-  },
-  "speed_stats": {
-    "min": 0.0,
-    "max": 1968.94,
-    "avg": 152.0
-  },
-  "adsb_type_distribution": [
-    {
-      "type": "Position Only",
+      "minute": 1,
       "count": 0
     },
     {
-      "type": "Position + Velocity",
+      "minute": 2,
       "count": 0
     },
     {
-      "type": "Position + Altitude",
+      "minute": 3,
       "count": 0
     },
     {
-      "type": "All Fields",
+      "minute": 4,
+      "count": 10993
+    },
+    {
+      "minute": 5,
+      "count": 357
+    },
+    {
+      "minute": 6,
       "count": 0
+    },
+    {
+      "minute": 7,
+      "count": 0
+    },
+    {
+      "minute": 8,
+      "count": 0
+    },
+    {
+      "minute": 9,
+      "count": 10899
+    },
+    {
+      "minute": 10,
+      "count": 406
+    },
+    {
+      "minute": 11,
+      "count": 0
+    },
+    {
+      "minute": 12,
+      "count": 0
+    },
+    {
+      "minute": 13,
+      "count": 0
+    },
+    {
+      "minute": 14,
+      "count": 10951
+    },
+    {
+      "minute": 15,
+      "count": 414
+    },
+    {
+      "minute": 16,
+      "count": 0
+    },
+    {
+      "minute": 17,
+      "count": 0
+    },
+    {
+      "minute": 18,
+      "count": 0
+    },
+    {
+      "minute": 19,
+      "count": 10950
+    },
+    {
+      "minute": 20,
+      "count": 424
+    },
+    {
+      "minute": 21,
+      "count": 0
+    },
+    {
+      "minute": 22,
+      "count": 0
+    },
+    {
+      "minute": 23,
+      "count": 0
+    },
+    {
+      "minute": 24,
+      "count": 11090
+    },
+    {
+      "minute": 25,
+      "count": 359
+    },
+    {
+      "minute": 26,
+      "count": 0
+    },
+    {
+      "minute": 27,
+      "count": 0
+    },
+    {
+      "minute": 28,
+      "count": 0
+    },
+    {
+      "minute": 29,
+      "count": 10853
+    },
+    {
+      "minute": 30,
+      "count": 440
+    },
+    {
+      "minute": 31,
+      "count": 0
+    },
+    {
+      "minute": 32,
+      "count": 0
+    },
+    {
+      "minute": 33,
+      "count": 0
+    },
+    {
+      "minute": 34,
+      "count": 10956
+    },
+    {
+      "minute": 35,
+      "count": 396
+    },
+    {
+      "minute": 36,
+      "count": 0
+    },
+    {
+      "minute": 37,
+      "count": 0
+    },
+    {
+      "minute": 38,
+      "count": 0
+    },
+    {
+      "minute": 39,
+      "count": 10839
+    },
+    {
+      "minute": 40,
+      "count": 381
+    },
+    {
+      "minute": 41,
+      "count": 0
+    },
+    {
+      "minute": 42,
+      "count": 0
+    },
+    {
+      "minute": 43,
+      "count": 0
+    },
+    {
+      "minute": 44,
+      "count": 10887
+    },
+    {
+      "minute": 45,
+      "count": 369
+    },
+    {
+      "minute": 46,
+      "count": 0
+    },
+    {
+      "minute": 47,
+      "count": 0
+    },
+    {
+      "minute": 48,
+      "count": 0
+    },
+    {
+      "minute": 49,
+      "count": 10814
+    },
+    {
+      "minute": 50,
+      "count": 366
+    },
+    {
+      "minute": 51,
+      "count": 0
+    },
+    {
+      "minute": 52,
+      "count": 0
+    },
+    {
+      "minute": 53,
+      "count": 0
+    },
+    {
+      "minute": 54,
+      "count": 10865
+    },
+    {
+      "minute": 55,
+      "count": 330
+    },
+    {
+      "minute": 56,
+      "count": 0
+    },
+    {
+      "minute": 57,
+      "count": 0
+    },
+    {
+      "minute": 58,
+      "count": 0
+    },
+    {
+      "minute": 59,
+      "count": 10881
     }
   ],
-  "metrics": {
-    "data_completeness_altitude": 90.3,
-    "data_completeness_speed": 100.0,
-    "data_completeness_track": 100.0,
-    "data_completeness_position": 99.1,
-    "data_completeness_time": 100.0,
-    "data_completeness_all_fields": 90.2
-  },
-  "insights": [
+  "weekday_distribution": [
     {
-      "category": "Traffic",
-      "title": "Peak Activity at 06:00",
-      "detail": "Highest concentration of flights occurs around 06:00 hours with ~42037 records."
+      "weekday": 0,
+      "label": "Mon",
+      "count": 19633
     },
     {
-      "category": "Operations",
-      "title": "Average Altitude: 6511m",
-      "detail": "Aircraft in the region operate at an average altitude of 6511 meters."
+      "weekday": 1,
+      "label": "Tue",
+      "count": 15606
     },
     {
-      "category": "Operations",
-      "title": "Average Speed: 152.0m/s",
-      "detail": "Aircraft maintain an average speed of 152.0 m/s (\u2248295kt)."
+      "weekday": 2,
+      "label": "Wed",
+      "count": 17054
     },
     {
-      "category": "Airlines",
-      "title": "Dominant Carrier: unknown",
-      "detail": "unknown represents 30.0% of all tracked flights."
+      "weekday": 3,
+      "label": "Thu",
+      "count": 19462
     },
     {
-      "category": "Quality",
-      "title": "Data Completeness: 90.3%",
-      "detail": "90.3% of records have all key fields (altitude, speed, heading)."
+      "weekday": 4,
+      "label": "Fri",
+      "count": 17365
+    },
+    {
+      "weekday": 5,
+      "label": "Sat",
+      "count": 24952
+    },
+    {
+      "weekday": 6,
+      "label": "Sun",
+      "count": 21521
     }
-  ]
+  ],
+  "seasonal_pattern": [],
+  "heading_distribution": [],
+  "fleet_mix": [
+    {
+      "type": "Narrow-body",
+      "share": 0
+    },
+    {
+      "type": "Wide-body",
+      "share": 0
+    },
+    {
+      "type": "Regional",
+      "share": 0
+    },
+    {
+      "type": "Cargo",
+      "share": 0
+    }
+  ],
+  "adsb_type_distribution": [],
+  "insights": []
 }

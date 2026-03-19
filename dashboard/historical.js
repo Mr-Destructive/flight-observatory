@@ -323,14 +323,36 @@ async function loadHistoricalDashboard() {
 
   if (detailed?.ground_airborne) {
     const ga = detailed.ground_airborne;
-    createChart(
-      "groundAirborne",
-      "doughnut",
-      ["On Ground", "Airborne"],
-      [ga.on_ground || 0, ga.airborne || 0],
-      "rgb(168, 85, 247)",
-      "Count"
-    );
+    const ctx = document.getElementById("groundAirborne");
+    if (ctx) {
+      new Chart(ctx.getContext("2d"), {
+        type: "doughnut",
+        data: {
+          labels: ["On Ground", "Airborne"],
+          datasets: [
+            {
+              data: [ga.on_ground || 0, ga.airborne || 0],
+              backgroundColor: ["rgb(249, 115, 22)", "rgb(16, 185, 129)"],
+              borderColor: ["rgba(249, 115, 22, 0.2)", "rgba(16, 185, 129, 0.2)"],
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { display: true, position: "bottom" },
+            tooltip: {
+              backgroundColor: "rgba(15, 23, 42, 0.95)",
+              titleColor: "#f3f4f6",
+              bodyColor: "#9ca3af",
+            },
+          },
+        },
+      });
+      charts.set("groundAirborne", ctx);
+    }
   }
 
   if (detailed?.top_airports_activity && Array.isArray(detailed.top_airports_activity)) {
