@@ -1,22 +1,34 @@
 [
   {
     "airport": "unknown",
-    "flights": 4706
+    "flights": 4130
   },
   {
     "airport": "YKII",
-    "flights": 15
+    "flights": 27
   },
   {
     "airport": "HCME",
-    "flights": 10
+    "flights": 18
   },
   {
-    "airport": "UESG",
-    "flights": 7
+    "airport": "EPGE",
+    "flights": 8
   },
   {
-    "airport": "UHOO",
+    "airport": "OESH",
+    "flights": 6
+  },
+  {
+    "airport": "HCMI",
+    "flights": 6
+  },
+  {
+    "airport": "HCAD",
+    "flights": 6
+  },
+  {
+    "airport": "OESK",
     "flights": 5
   },
   {
@@ -24,19 +36,27 @@
     "flights": 5
   },
   {
+    "airport": "OEYN",
+    "flights": 5
+  },
+  {
+    "airport": "UHOO",
+    "flights": 5
+  },
+  {
+    "airport": "YSRN",
+    "flights": 5
+  },
+  {
+    "airport": "OYGD",
+    "flights": 4
+  },
+  {
+    "airport": "HCMG",
+    "flights": 4
+  },
+  {
     "airport": "OEPF",
-    "flights": 4
-  },
-  {
-    "airport": "ENBA",
-    "flights": 4
-  },
-  {
-    "airport": "HCBA",
-    "flights": 4
-  },
-  {
-    "airport": "FSMA",
     "flights": 4
   },
   {
@@ -44,59 +64,39 @@
     "flights": 4
   },
   {
-    "airport": "EPCD",
+    "airport": "HCMV",
     "flights": 4
   },
   {
-    "airport": "OEZL",
-    "flights": 3
-  },
-  {
-    "airport": "HCMC",
-    "flights": 3
-  },
-  {
-    "airport": "FSDR",
-    "flights": 3
-  },
-  {
-    "airport": "EPGE",
-    "flights": 3
-  },
-  {
-    "airport": "OEYN",
-    "flights": 3
-  },
-  {
-    "airport": "ZSSH",
-    "flights": 2
-  },
-  {
-    "airport": "LTFO",
-    "flights": 2
-  },
-  {
-    "airport": "HCMS",
-    "flights": 2
-  },
-  {
-    "airport": "OEOM",
-    "flights": 2
+    "airport": "HCMU",
+    "flights": 4
   },
   {
     "airport": "OEWD",
-    "flights": 2
+    "flights": 3
   },
   {
-    "airport": "OESK",
-    "flights": 2
+    "airport": "UESG",
+    "flights": 3
   },
   {
-    "airport": "YWYY",
-    "flights": 2
+    "airport": "HDDK",
+    "flights": 3
   },
   {
-    "airport": "OERS",
-    "flights": 2
+    "airport": "OYQN",
+    "flights": 3
+  },
+  {
+    "airport": "ZSJU",
+    "flights": 3
+  },
+  {
+    "airport": "HCMJ",
+    "flights": 3
+  },
+  {
+    "airport": "OEHL",
+    "flights": 3
   }
 ]
