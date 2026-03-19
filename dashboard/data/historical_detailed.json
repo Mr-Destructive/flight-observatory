@@ -1,8 +1,193 @@
 {
-  "hourly_distribution": [],
-  "seasonal_pattern": [],
-  "heading_distribution": [],
-  "adsb_type_distribution": [],
-  "metrics": {},
-  "insights": []
+  "hourly_distribution": [
+    {
+      "hour": 0,
+      "count": 0
+    },
+    {
+      "hour": 1,
+      "count": 6947
+    },
+    {
+      "hour": 2,
+      "count": 0
+    },
+    {
+      "hour": 3,
+      "count": 0
+    },
+    {
+      "hour": 4,
+      "count": 4881
+    },
+    {
+      "hour": 5,
+      "count": 4402
+    },
+    {
+      "hour": 6,
+      "count": 42037
+    },
+    {
+      "hour": 7,
+      "count": 9942
+    },
+    {
+      "hour": 8,
+      "count": 15558
+    },
+    {
+      "hour": 9,
+      "count": 5804
+    },
+    {
+      "hour": 10,
+      "count": 6369
+    },
+    {
+      "hour": 11,
+      "count": 7409
+    },
+    {
+      "hour": 12,
+      "count": 0
+    },
+    {
+      "hour": 13,
+      "count": 10682
+    },
+    {
+      "hour": 14,
+      "count": 11901
+    },
+    {
+      "hour": 15,
+      "count": 0
+    },
+    {
+      "hour": 16,
+      "count": 11924
+    },
+    {
+      "hour": 17,
+      "count": 11773
+    },
+    {
+      "hour": 18,
+      "count": 11611
+    },
+    {
+      "hour": 19,
+      "count": 22955
+    },
+    {
+      "hour": 20,
+      "count": 11570
+    },
+    {
+      "hour": 21,
+      "count": 21904
+    },
+    {
+      "hour": 22,
+      "count": 19663
+    },
+    {
+      "hour": 23,
+      "count": 17429
+    }
+  ],
+  "seasonal_pattern": [
+    {
+      "month": "Mar",
+      "avg_count": 254761
+    }
+  ],
+  "heading_distribution": [
+    {
+      "direction": "N",
+      "count": 29033
+    },
+    {
+      "direction": "NE",
+      "count": 29184
+    },
+    {
+      "direction": "E",
+      "count": 37907
+    },
+    {
+      "direction": "SE",
+      "count": 29773
+    },
+    {
+      "direction": "S",
+      "count": 29421
+    },
+    {
+      "direction": "SW",
+      "count": 31042
+    },
+    {
+      "direction": "W",
+      "count": 37750
+    },
+    {
+      "direction": "NW",
+      "count": 30651
+    }
+  ],
+  "adsb_type_distribution": [
+    {
+      "type": "Position Only",
+      "count": 0
+    },
+    {
+      "type": "Position + Velocity",
+      "count": 0
+    },
+    {
+      "type": "Position + Altitude",
+      "count": 0
+    },
+    {
+      "type": "All Fields",
+      "count": 0
+    }
+  ],
+  "metrics": {
+    "data_completeness_altitude": 90.3,
+    "data_completeness_speed": 100.0,
+    "data_completeness_track": 100.0,
+    "data_completeness_position": 99.1,
+    "data_completeness_time": 100.0,
+    "data_completeness_all_fields": 90.2
+  },
+  "insights": [
+    {
+      "category": "Traffic",
+      "title": "Peak Activity at 06:00",
+      "detail": "Highest concentration of flights occurs around 06:00 hours with ~42037 records."
+    },
+    {
+      "category": "Operations",
+      "title": "Average Altitude: 6484m",
+      "detail": "Aircraft in the region operate at an average altitude of 6484 meters."
+    },
+    {
+      "category": "Operations",
+      "title": "Average Speed: 151.5m/s",
+      "detail": "Aircraft maintain an average speed of 151.5 m/s (\u2248294kt)."
+    },
+    {
+      "category": "Airlines",
+      "title": "Dominant Carrier: unknown",
+      "detail": "unknown represents 30.4% of all tracked flights."
+    },
+    {
+      "category": "Quality",
+      "title": "Data Completeness: 90.3%",
+      "detail": "90.3% of records have all key fields (altitude, speed, heading)."
+    }
+  ]
 }
