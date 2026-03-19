@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 8479
+    "flights": 6794
   },
   {
     "airport": "UESG",
-    "flights": 22
-  },
-  {
-    "airport": "ZSWA",
-    "flights": 10
-  },
-  {
-    "airport": "ZSTX",
-    "flights": 9
+    "flights": 21
   },
   {
     "airport": "YKII",
+    "flights": 12
+  },
+  {
+    "airport": "EPGE",
     "flights": 6
   },
   {
+    "airport": "ZSJU",
+    "flights": 5
+  },
+  {
+    "airport": "UGSB",
+    "flights": 4
+  },
+  {
+    "airport": "ZSTX",
+    "flights": 4
+  },
+  {
+    "airport": "UATA",
+    "flights": 4
+  },
+  {
     "airport": "UHOO",
-    "flights": 6
+    "flights": 4
   },
   {
     "airport": "UEMU",
     "flights": 4
   },
   {
-    "airport": "HCMF",
+    "airport": "LTCE",
     "flights": 3
   },
   {
-    "airport": "ZSJU",
+    "airport": "LTFO",
     "flights": 3
   },
   {
-    "airport": "FSMA",
+    "airport": "ZHEC",
     "flights": 3
   },
   {
-    "airport": "YSRN",
+    "airport": "YSMI",
     "flights": 3
+  },
+  {
+    "airport": "UEMA",
+    "flights": 2
+  },
+  {
+    "airport": "LTCK",
+    "flights": 2
+  },
+  {
+    "airport": "HSKA",
+    "flights": 2
+  },
+  {
+    "airport": "HEPS",
+    "flights": 2
+  },
+  {
+    "airport": "ZSWA",
+    "flights": 2
+  },
+  {
+    "airport": "OETB",
+    "flights": 2
   },
   {
     "airport": "YWYY",
     "flights": 2
   },
   {
-    "airport": "ENDU",
+    "airport": "UEST",
     "flights": 2
   },
   {
-    "airport": "OEYN",
+    "airport": "HCMA",
     "flights": 2
   },
   {
-    "airport": "HCAD",
+    "airport": "UEMH",
     "flights": 2
   },
   {
-    "airport": "OESK",
-    "flights": 2
-  },
-  {
-    "airport": "OEHL",
-    "flights": 2
-  },
-  {
-    "airport": "EPST",
-    "flights": 2
-  },
-  {
-    "airport": "UGSB",
-    "flights": 2
-  },
-  {
-    "airport": "OEAD",
-    "flights": 2
-  },
-  {
-    "airport": "YSMI",
-    "flights": 2
-  },
-  {
-    "airport": "OYTZ",
-    "flights": 2
-  },
-  {
-    "airport": "ZSFY",
-    "flights": 2
-  },
-  {
-    "airport": "ZSLI",
-    "flights": 2
-  },
-  {
-    "airport": "ZSNB",
+    "airport": "YSRN",
     "flights": 2
   }
 ]
