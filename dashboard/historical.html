@@ -3,152 +3,139 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Mumbai Historical Dashboard</title>
+    <title>Flight Observatory - Historical Analysis</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@300;400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
   </head>
   <body>
-    <div class="page">
-      <nav class="nav">
-        <div class="brand">Flight Observatory</div>
-        <div class="links">
-          <a href="./">Live</a>
-          <a class="active" href="./historical.html">Historical</a>
+    <div class="dashboard">
+      <nav class="navbar">
+        <div class="navbar-left">
+          <div class="logo">🛩️ Flight Observatory</div>
+          <span class="badge">HISTORICAL</span>
+        </div>
+        <div class="navbar-right">
+          <a href="./" class="nav-link">Live</a>
+          <a href="./historical.html" class="nav-link active">Historical</a>
         </div>
       </nav>
-      <header class="hero">
-        <div>
-          <p class="eyebrow">Mumbai 2016–2026</p>
-          <h1>Historical Analysis</h1>
-          <p class="subhead">
-            First-day monthly snapshots with expanded metrics.
-          </p>
-        </div>
-        <div class="meta">
-          <div class="pill" id="hist-summary">Loading…</div>
-        </div>
-      </header>
 
-      <section class="section">
-        <h2 class="section-title">Monthly Activity</h2>
-        <p class="section-subtitle">Long-term traffic trend and median altitude/speed.</p>
-        <div class="grid">
-          <article class="card wide">
-            <h2>Monthly Flight Counts</h2>
-            <canvas id="histMonthly"></canvas>
-          </article>
-          <article class="card">
-            <h2>Median Altitude</h2>
-            <canvas id="histAlt"></canvas>
-          </article>
-          <article class="card">
-            <h2>Median Speed</h2>
-            <canvas id="histSpeed"></canvas>
-          </article>
-          <article class="card wide">
-            <h2>Yearly Totals</h2>
-            <canvas id="histYearly"></canvas>
-          </article>
-        </div>
-      </section>
+      <main class="main-container">
+        <section class="header-section">
+          <div class="header-content">
+            <h1>Historical Analysis</h1>
+            <p>Multi-year traffic patterns and trends</p>
+          </div>
+          <div class="header-info">
+            <div class="info-box">
+              <span class="label">Total Records</span>
+              <span class="value" id="totalRows">--</span>
+            </div>
+            <div class="info-box">
+              <span class="label">Time Span</span>
+              <span class="value" id="timeSpan">--</span>
+            </div>
+          </div>
+        </section>
 
-      <section class="section">
-        <h2 class="section-title">Distributions</h2>
-        <p class="section-subtitle">Altitude and speed distributions across the dataset.</p>
-        <div class="grid">
-          <article class="card">
-            <h2>Altitude Bands</h2>
-            <canvas id="histAltBins"></canvas>
-          </article>
-          <article class="card">
-            <h2>Speed Bands</h2>
-            <canvas id="histSpeedBins"></canvas>
-          </article>
-        </div>
-      </section>
+        <section class="charts-section">
+          <h2 class="section-title">Trends & Patterns</h2>
+          <div class="charts-grid wide">
+            <div class="chart-card wide">
+              <h3>Monthly Activity</h3>
+              <canvas id="monthlyActivity"></canvas>
+            </div>
+            <div class="chart-card">
+              <h3>Yearly Totals</h3>
+              <canvas id="yearlyTotals"></canvas>
+            </div>
+            <div class="chart-card">
+              <h3>Seasonal Pattern</h3>
+              <canvas id="seasonalPattern"></canvas>
+            </div>
+          </div>
+        </section>
 
-      <section class="section">
-        <h2 class="section-title">Key Insights</h2>
-        <p class="section-subtitle">Non-technical takeaways distilled from 100+ metrics.</p>
-        <div class="insight-grid" id="histInsights"></div>
-      </section>
+        <section class="charts-section">
+          <h2 class="section-title">Operational Metrics</h2>
+          <div class="charts-grid">
+            <div class="chart-card">
+              <h3>Median Altitude by Month</h3>
+              <canvas id="altitudeMonthly"></canvas>
+            </div>
+            <div class="chart-card">
+              <h3>Median Speed by Month</h3>
+              <canvas id="speedMonthly"></canvas>
+            </div>
+            <div class="chart-card">
+              <h3>Altitude Distribution</h3>
+              <canvas id="altitudeDistribution"></canvas>
+            </div>
+            <div class="chart-card">
+              <h3>Speed Distribution</h3>
+              <canvas id="speedDistribution"></canvas>
+            </div>
+          </div>
+        </section>
 
-      <section class="section">
-        <h2 class="section-title">Time Of Day & Seasonality</h2>
-        <p class="section-subtitle">Hourly patterns, minute distribution, and seasonal shape.</p>
-        <div class="grid">
-          <article class="card">
-            <h2>Hourly Activity</h2>
-            <canvas id="histHourly"></canvas>
-          </article>
-          <article class="card">
-            <h2>Minute Distribution</h2>
-            <canvas id="histMinute"></canvas>
-          </article>
-          <article class="card wide">
-            <h2>Seasonal Pattern (Month of Year)</h2>
-            <canvas id="histSeasonal"></canvas>
-          </article>
-        </div>
-      </section>
+        <section class="charts-section">
+          <h2 class="section-title">Daily & Directional Patterns</h2>
+          <div class="charts-grid">
+            <div class="chart-card wide">
+              <h3>Hourly Activity Pattern</h3>
+              <canvas id="hourlyPattern"></canvas>
+            </div>
+            <div class="chart-card">
+              <h3>Heading Distribution</h3>
+              <canvas id="headingDistribution"></canvas>
+            </div>
+          </div>
+        </section>
 
-      <section class="section">
-        <h2 class="section-title">Direction & Fleet</h2>
-        <p class="section-subtitle">Directional flow and aircraft mix.</p>
-        <div class="grid">
-          <article class="card">
-            <h2>Heading Distribution</h2>
-            <canvas id="histHeading"></canvas>
-          </article>
-          <article class="card">
-            <h2>Fleet Mix</h2>
-            <canvas id="histFleet"></canvas>
-          </article>
-        </div>
-      </section>
+        <section class="charts-section">
+          <h2 class="section-title">Data Quality</h2>
+          <div class="charts-grid">
+            <div class="chart-card">
+              <h3>Field Completeness</h3>
+              <canvas id="dataQuality"></canvas>
+            </div>
+            <div class="chart-card">
+              <h3>ADS-B Message Types</h3>
+              <canvas id="adsbTypes"></canvas>
+            </div>
+          </div>
+        </section>
 
-      <section class="section">
-        <h2 class="section-title">Data Quality & ADS-B</h2>
-        <p class="section-subtitle">Completeness and ADS-B message types.</p>
-        <div class="grid">
-          <article class="card">
-            <h2>Field Completeness</h2>
-            <canvas id="histQuality"></canvas>
-          </article>
-          <article class="card">
-            <h2>ADS-B Types</h2>
-            <canvas id="histAdsb"></canvas>
-          </article>
-        </div>
-      </section>
+        <section class="tables-section">
+          <h2 class="section-title">Top Categories</h2>
+          <div class="tables-grid wide">
+            <div class="table-card">
+              <h3>Top Airlines</h3>
+              <div class="table-wrapper" id="topAirlines"></div>
+            </div>
+            <div class="table-card">
+              <h3>Top Aircraft Models</h3>
+              <div class="table-wrapper" id="topModels"></div>
+            </div>
+          </div>
+        </section>
 
-      <section class="section">
-        <h2 class="section-title">Top Categories</h2>
-        <p class="section-subtitle">Most frequent airline prefixes and aircraft models.</p>
-        <div class="tables">
-          <article class="card wide">
-            <h2>Top Airline Prefixes</h2>
-            <div class="table" id="histPrefixTable"></div>
-          </article>
-          <article class="card wide">
-            <h2>Top Aircraft Models</h2>
-            <div class="table" id="histModelTable"></div>
-          </article>
-        </div>
-      </section>
+        <section class="insights-section">
+          <h2 class="section-title">Key Insights</h2>
+          <div class="insights-grid" id="insightsContainer"></div>
+        </section>
 
-      <section class="section">
-        <h2 class="section-title">All Metrics</h2>
-        <p class="section-subtitle">Complete metric dump from the 100+ analysis pass.</p>
-        <article class="card wide">
-          <h2>Detailed Metrics</h2>
-          <div class="table" id="histMetricTable"></div>
-        </article>
-      </section>
+        <section class="tables-section">
+          <h2 class="section-title">Complete Metrics</h2>
+          <div class="table-card wide">
+            <div class="table-wrapper" id="allMetrics"></div>
+          </div>
+        </section>
+      </main>
     </div>
 
     <script src="./historical.js"></script>

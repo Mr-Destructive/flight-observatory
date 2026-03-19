@@ -3,99 +3,114 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Flight Tracker Dashboard</title>
+    <title>Flight Observatory - Live Dashboard</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@300;400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
   </head>
   <body>
-    <div class="page">
-      <nav class="nav">
-        <div class="brand">Flight Observatory</div>
-        <div class="links">
-          <a class="active" href="./">Live</a>
-          <a href="./historical.html">Historical</a>
+    <div class="dashboard">
+      <nav class="navbar">
+        <div class="navbar-left">
+          <div class="logo">🛩️ Flight Observatory</div>
+          <span class="badge">LIVE</span>
+        </div>
+        <div class="navbar-right">
+          <a href="./" class="nav-link active">Live</a>
+          <a href="./historical.html" class="nav-link">Historical</a>
         </div>
       </nav>
-      <header class="hero">
-        <div>
-          <p class="eyebrow">OpenSky + SQLite</p>
-          <h1>Live Flight Tracker</h1>
-          <p class="subhead">
-            Rolling 60-minute view of traffic, altitude, and speed distribution.
-          </p>
-        </div>
-        <div class="meta">
-          <div class="pill">Refresh: 60s</div>
-          <div class="pill" id="last-updated">Last updated: --</div>
-        </div>
-      </header>
-      <div class="alert" id="errorBanner" hidden></div>
-      <div class="filters">
-        <label for="airportFilter">Airport filter (ICAO, e.g. VABB)</label>
-        <div class="filter-row">
-          <input id="airportFilter" type="text" placeholder="All airports" />
-          <button id="applyFilter">Apply</button>
-          <button id="clearFilter" class="ghost">Clear</button>
-        </div>
-        <p class="hint">Leave blank to show all airports. Use <code>unknown</code> to view unmapped flights.</p>
-      </div>
 
-      <section class="section">
-        <h2 class="section-title">Live Snapshot</h2>
-        <p class="section-subtitle">Latest 5-minute OpenSky pull (trimmed).</p>
-        <div class="stats-grid" id="statsGrid"></div>
-      </section>
+      <main class="main-container">
+        <section class="header-section">
+          <div class="header-content">
+            <h1>Live Flight Tracking</h1>
+            <p>Real-time aircraft surveillance from OpenSky Network</p>
+          </div>
+          <div class="header-info">
+            <div class="info-box">
+              <span class="label">Last Updated</span>
+              <span class="value" id="lastUpdated">--:--:--</span>
+            </div>
+            <div class="info-box">
+              <span class="label">Update Interval</span>
+              <span class="value">60s</span>
+            </div>
+          </div>
+        </section>
 
-      <section class="section">
-        <h2 class="section-title">Live Charts</h2>
-        <p class="section-subtitle">Interactive charts from the latest snapshot.</p>
-        <div class="grid">
-        <article class="card">
-          <h2>Top Airports (Last 60m)</h2>
-          <canvas id="topAirports"></canvas>
-        </article>
-        <article class="card">
-          <h2>Altitude Bands (m)</h2>
-          <canvas id="altitudeBands"></canvas>
-        </article>
-        <article class="card">
-          <h2>Speed Bands (m/s)</h2>
-          <canvas id="speedBands"></canvas>
-        </article>
-        <article class="card">
-          <h2>Top Airlines</h2>
-          <canvas id="topAirlines"></canvas>
-        </article>
-        <article class="card wide">
-          <h2>Traffic by Minute</h2>
-          <canvas id="minuteTraffic"></canvas>
-        </article>
-        </div>
-      </section>
+        <section class="metrics-section">
+          <div class="metrics-grid" id="metricsGrid"></div>
+        </section>
 
-      <section class="section">
-        <h2 class="section-title">Live Tables</h2>
-        <p class="section-subtitle">Top categories from the current snapshot.</p>
-        <div class="tables">
-        <article class="card wide">
-          <h2>Top Airports (Snapshot)</h2>
-          <div class="table" id="airportTable"></div>
-        </article>
-        <article class="card wide">
-          <h2>Top Airlines (Snapshot)</h2>
-          <div class="table" id="airlineTable"></div>
-        </article>
-        <article class="card wide">
-          <h2>Top Origin Countries (Snapshot)</h2>
-          <div class="table" id="countryTable"></div>
-        </article>
-        </div>
-      </section>
+        <section class="filter-section">
+          <div class="filter-container">
+            <label for="airportFilter">Filter by Airport</label>
+            <div class="filter-input-group">
+              <input
+                id="airportFilter"
+                type="text"
+                placeholder="e.g., VABB, EGLL"
+                autocomplete="off"
+              />
+              <button id="applyFilter" class="btn-primary">Apply</button>
+              <button id="clearFilter" class="btn-secondary">Clear</button>
+            </div>
+            <p class="filter-hint">Leave blank to show all airports</p>
+          </div>
+        </section>
 
+        <section class="charts-section">
+          <h2 class="section-title">Traffic Analysis</h2>
+          <div class="charts-grid">
+            <div class="chart-card">
+              <h3>Flights by Minute (60m)</h3>
+              <canvas id="minuteTraffic"></canvas>
+            </div>
+            <div class="chart-card">
+              <h3>Top Airports</h3>
+              <canvas id="topAirports"></canvas>
+            </div>
+            <div class="chart-card">
+              <h3>Altitude Distribution</h3>
+              <canvas id="altitudeBands"></canvas>
+            </div>
+            <div class="chart-card">
+              <h3>Speed Distribution</h3>
+              <canvas id="speedBands"></canvas>
+            </div>
+            <div class="chart-card">
+              <h3>Top Airlines</h3>
+              <canvas id="topAirlines"></canvas>
+            </div>
+            <div class="chart-card">
+              <h3>Heading Distribution</h3>
+              <canvas id="headingBins"></canvas>
+            </div>
+          </div>
+        </section>
+
+        <section class="tables-section">
+          <h2 class="section-title">Top Categories</h2>
+          <div class="tables-grid">
+            <div class="table-card">
+              <h3>Airports</h3>
+              <div class="table-wrapper" id="airportTable"></div>
+            </div>
+            <div class="table-card">
+              <h3>Airlines</h3>
+              <div class="table-wrapper" id="airlineTable"></div>
+            </div>
+            <div class="table-card">
+              <h3>Countries</h3>
+              <div class="table-wrapper" id="countryTable"></div>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
 
     <script src="./app.js"></script>
