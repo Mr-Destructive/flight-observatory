@@ -38,7 +38,7 @@
     },
     {
       "hour": 9,
-      "count": 5804
+      "count": 11634
     },
     {
       "hour": 10,
@@ -100,41 +100,41 @@
   "seasonal_pattern": [
     {
       "month": "Mar",
-      "avg_count": 254761
+      "avg_count": 260591
     }
   ],
   "heading_distribution": [
     {
       "direction": "N",
-      "count": 29033
+      "count": 29607
     },
     {
       "direction": "NE",
-      "count": 29184
+      "count": 29846
     },
     {
       "direction": "E",
-      "count": 37907
+      "count": 38861
     },
     {
       "direction": "SE",
-      "count": 29773
+      "count": 30600
     },
     {
       "direction": "S",
-      "count": 29421
+      "count": 30133
     },
     {
       "direction": "SW",
-      "count": 31042
+      "count": 31719
     },
     {
       "direction": "W",
-      "count": 37750
+      "count": 38464
     },
     {
       "direction": "NW",
-      "count": 30651
+      "count": 31361
     }
   ],
   "adsb_type_distribution": [
@@ -171,18 +171,18 @@
     },
     {
       "category": "Operations",
-      "title": "Average Altitude: 6484m",
-      "detail": "Aircraft in the region operate at an average altitude of 6484 meters."
+      "title": "Average Altitude: 6497m",
+      "detail": "Aircraft in the region operate at an average altitude of 6497 meters."
     },
     {
       "category": "Operations",
-      "title": "Average Speed: 151.5m/s",
-      "detail": "Aircraft maintain an average speed of 151.5 m/s (\u2248294kt)."
+      "title": "Average Speed: 151.7m/s",
+      "detail": "Aircraft maintain an average speed of 151.7 m/s (\u2248294kt)."
     },
     {
       "category": "Airlines",
       "title": "Dominant Carrier: unknown",
-      "detail": "unknown represents 30.4% of all tracked flights."
+      "detail": "unknown represents 30.2% of all tracked flights."
     },
     {
       "category": "Quality",
