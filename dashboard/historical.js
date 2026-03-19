@@ -6,7 +6,9 @@ const charts = new Map();
 
 async function fetchJson(path) {
   try {
-    const res = await fetch(path);
+    const basePath = window.location.pathname.split('/').slice(0, -1).join('/');
+    const fullPath = basePath + '/' + path;
+    const res = await fetch(fullPath);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     return await res.json();
   } catch (err) {

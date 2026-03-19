@@ -9,7 +9,8 @@ let charts = new Map();
 
 async function fetchJson(path, optional = false) {
   try {
-    const url = new URL(path, window.location.origin);
+    const basePath = window.location.pathname.split('/').slice(0, -1).join('/');
+    const url = new URL(basePath + '/' + path, window.location.origin);
     url.searchParams.set("_t", Date.now());
     const res = await fetch(url.toString(), { cache: "no-store" });
     if (!res.ok) {
