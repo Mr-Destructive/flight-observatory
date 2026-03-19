@@ -1,55 +1,39 @@
 [
   {
     "airport": "unknown",
-    "flights": 10628
+    "flights": 10410
   },
   {
     "airport": "UESG",
-    "flights": 32
+    "flights": 20
   },
   {
-    "airport": "FSSD",
-    "flights": 10
-  },
-  {
-    "airport": "FSMA",
-    "flights": 10
-  },
-  {
-    "airport": "HKML",
-    "flights": 8
-  },
-  {
-    "airport": "HCME",
-    "flights": 8
-  },
-  {
-    "airport": "ZSJU",
-    "flights": 7
-  },
-  {
-    "airport": "ZSTX",
-    "flights": 7
-  },
-  {
-    "airport": "YKII",
-    "flights": 7
-  },
-  {
-    "airport": "HCMF",
-    "flights": 6
-  },
-  {
-    "airport": "UHOO",
-    "flights": 6
+    "airport": "OEOM",
+    "flights": 9
   },
   {
     "airport": "HCMV",
+    "flights": 8
+  },
+  {
+    "airport": "YKII",
+    "flights": 8
+  },
+  {
+    "airport": "HCMF",
+    "flights": 7
+  },
+  {
+    "airport": "HCMC",
     "flights": 6
   },
   {
-    "airport": "HCMR",
-    "flights": 5
+    "airport": "OESK",
+    "flights": 6
+  },
+  {
+    "airport": "FSSD",
+    "flights": 6
   },
   {
     "airport": "HKGA",
@@ -60,27 +44,39 @@
     "flights": 5
   },
   {
-    "airport": "ZSWA",
+    "airport": "FSMA",
+    "flights": 5
+  },
+  {
+    "airport": "HCMR",
     "flights": 4
   },
   {
-    "airport": "HAGO",
+    "airport": "HAKL",
     "flights": 4
   },
   {
-    "airport": "HCAD",
+    "airport": "HEPS",
     "flights": 4
   },
   {
-    "airport": "HCMS",
+    "airport": "ZSJU",
     "flights": 4
+  },
+  {
+    "airport": "HCMJ",
+    "flights": 3
   },
   {
     "airport": "OYRN",
-    "flights": 4
+    "flights": 3
   },
   {
-    "airport": "OESH",
+    "airport": "HCAD",
+    "flights": 3
+  },
+  {
+    "airport": "YSRN",
     "flights": 3
   },
   {
@@ -88,15 +84,19 @@
     "flights": 3
   },
   {
-    "airport": "HCMC",
+    "airport": "ZSTX",
     "flights": 3
   },
   {
-    "airport": "OESK",
+    "airport": "HCMS",
     "flights": 3
   },
   {
-    "airport": "OEAB",
+    "airport": "HCME",
+    "flights": 3
+  },
+  {
+    "airport": "HCMG",
     "flights": 3
   }
 ]
