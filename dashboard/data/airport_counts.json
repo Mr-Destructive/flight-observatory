@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 10410
+    "flights": 9718
   },
   {
     "airport": "UESG",
-    "flights": 20
-  },
-  {
-    "airport": "OEOM",
-    "flights": 9
-  },
-  {
-    "airport": "HCMV",
-    "flights": 8
+    "flights": 22
   },
   {
     "airport": "YKII",
-    "flights": 8
+    "flights": 17
   },
   {
-    "airport": "HCMF",
-    "flights": 7
-  },
-  {
-    "airport": "HCMC",
-    "flights": 6
-  },
-  {
-    "airport": "OESK",
-    "flights": 6
+    "airport": "FSMA",
+    "flights": 10
   },
   {
     "airport": "FSSD",
     "flights": 6
   },
   {
-    "airport": "HKGA",
-    "flights": 5
+    "airport": "HCME",
+    "flights": 4
+  },
+  {
+    "airport": "OYMB",
+    "flights": 4
+  },
+  {
+    "airport": "UHOO",
+    "flights": 4
   },
   {
     "airport": "UESO",
-    "flights": 5
-  },
-  {
-    "airport": "FSMA",
-    "flights": 5
-  },
-  {
-    "airport": "HCMR",
     "flights": 4
   },
   {
-    "airport": "HAKL",
+    "airport": "YSMI",
     "flights": 4
   },
   {
-    "airport": "HEPS",
-    "flights": 4
+    "airport": "HKGA",
+    "flights": 3
+  },
+  {
+    "airport": "OESK",
+    "flights": 3
+  },
+  {
+    "airport": "HASM",
+    "flights": 3
+  },
+  {
+    "airport": "ZSWA",
+    "flights": 3
+  },
+  {
+    "airport": "HKML",
+    "flights": 3
+  },
+  {
+    "airport": "HCMV",
+    "flights": 3
   },
   {
     "airport": "ZSJU",
-    "flights": 4
-  },
-  {
-    "airport": "HCMJ",
     "flights": 3
   },
   {
-    "airport": "OYRN",
-    "flights": 3
+    "airport": "OEPJ",
+    "flights": 2
   },
   {
-    "airport": "HCAD",
-    "flights": 3
+    "airport": "UEMA",
+    "flights": 2
   },
   {
-    "airport": "YSRN",
-    "flights": 3
+    "airport": "HCMO",
+    "flights": 2
   },
   {
-    "airport": "HCMI",
-    "flights": 3
+    "airport": "UEMT",
+    "flights": 2
   },
   {
-    "airport": "ZSTX",
-    "flights": 3
+    "airport": "UEEE",
+    "flights": 2
   },
   {
-    "airport": "HCMS",
-    "flights": 3
+    "airport": "LLEY",
+    "flights": 2
   },
   {
-    "airport": "HCME",
-    "flights": 3
+    "airport": "HTDA",
+    "flights": 2
   },
   {
-    "airport": "HCMG",
-    "flights": 3
+    "airport": "HCBA",
+    "flights": 2
   }
 ]
