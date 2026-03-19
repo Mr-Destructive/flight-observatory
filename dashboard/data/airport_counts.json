@@ -1,1 +1,102 @@
-[]
+[
+  {
+    "airport": "unknown",
+    "flights": 5357
+  },
+  {
+    "airport": "HCME",
+    "flights": 44
+  },
+  {
+    "airport": "HCMV",
+    "flights": 26
+  },
+  {
+    "airport": "YKII",
+    "flights": 20
+  },
+  {
+    "airport": "HKGA",
+    "flights": 14
+  },
+  {
+    "airport": "HCMN",
+    "flights": 13
+  },
+  {
+    "airport": "HKML",
+    "flights": 12
+  },
+  {
+    "airport": "FSMA",
+    "flights": 12
+  },
+  {
+    "airport": "HCAD",
+    "flights": 12
+  },
+  {
+    "airport": "HAGO",
+    "flights": 9
+  },
+  {
+    "airport": "HCMF",
+    "flights": 9
+  },
+  {
+    "airport": "OEOM",
+    "flights": 8
+  },
+  {
+    "airport": "HCMS",
+    "flights": 7
+  },
+  {
+    "airport": "HCMC",
+    "flights": 7
+  },
+  {
+    "airport": "HCMU",
+    "flights": 7
+  },
+  {
+    "airport": "HSKG",
+    "flights": 7
+  },
+  {
+    "airport": "HAKL",
+    "flights": 6
+  },
+  {
+    "airport": "HCMR",
+    "flights": 6
+  },
+  {
+    "airport": "OESK",
+    "flights": 6
+  },
+  {
+    "airport": "OEHL",
+    "flights": 6
+  },
+  {
+    "airport": "HCMG",
+    "flights": 6
+  },
+  {
+    "airport": "OEZL",
+    "flights": 6
+  },
+  {
+    "airport": "HAWR",
+    "flights": 5
+  },
+  {
+    "airport": "HCMI",
+    "flights": 5
+  },
+  {
+    "airport": "HASM",
+    "flights": 5
+  }
+]
