@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 4529
+    "flights": 4720
   },
   {
     "airport": "HCME",
-    "flights": 39
+    "flights": 29
   },
   {
     "airport": "YKII",
-    "flights": 24
+    "flights": 14
   },
   {
-    "airport": "HCMV",
-    "flights": 15
+    "airport": "FSMA",
+    "flights": 13
+  },
+  {
+    "airport": "HCMN",
+    "flights": 11
   },
   {
     "airport": "HKML",
-    "flights": 12
+    "flights": 11
+  },
+  {
+    "airport": "HCMV",
+    "flights": 10
   },
   {
     "airport": "HCMG",
     "flights": 9
   },
   {
-    "airport": "HCMC",
+    "airport": "HCAD",
     "flights": 9
   },
   {
-    "airport": "OEHL",
-    "flights": 7
-  },
-  {
-    "airport": "OEOM",
-    "flights": 7
+    "airport": "OESH",
+    "flights": 8
   },
   {
     "airport": "OESK",
     "flights": 7
   },
   {
-    "airport": "HAKD",
-    "flights": 6
-  },
-  {
-    "airport": "HCMK",
-    "flights": 6
-  },
-  {
-    "airport": "FSMA",
-    "flights": 6
-  },
-  {
-    "airport": "HCMH",
-    "flights": 6
-  },
-  {
-    "airport": "HCAD",
-    "flights": 5
-  },
-  {
-    "airport": "YSMI",
-    "flights": 5
-  },
-  {
-    "airport": "FSSB",
-    "flights": 5
-  },
-  {
-    "airport": "HAGO",
-    "flights": 5
-  },
-  {
-    "airport": "HCMI",
-    "flights": 5
+    "airport": "HCMU",
+    "flights": 7
   },
   {
     "airport": "FSSD",
+    "flights": 7
+  },
+  {
+    "airport": "HAGO",
+    "flights": 7
+  },
+  {
+    "airport": "HCMF",
+    "flights": 6
+  },
+  {
+    "airport": "HCMS",
+    "flights": 6
+  },
+  {
+    "airport": "HCMO",
     "flights": 5
   },
   {
-    "airport": "YWYY",
+    "airport": "HCMK",
+    "flights": 5
+  },
+  {
+    "airport": "HAKD",
+    "flights": 5
+  },
+  {
+    "airport": "HKGA",
+    "flights": 5
+  },
+  {
+    "airport": "HCMH",
+    "flights": 5
+  },
+  {
+    "airport": "HTZA",
     "flights": 4
   },
   {
-    "airport": "YSRN",
+    "airport": "HCMJ",
     "flights": 4
   },
   {
-    "airport": "HCMR",
+    "airport": "FSDR",
     "flights": 4
   },
   {
-    "airport": "HCMU",
-    "flights": 4
-  },
-  {
-    "airport": "OYZM",
+    "airport": "HCMI",
     "flights": 4
   }
 ]
