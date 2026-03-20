@@ -1,34 +1,58 @@
 [
   {
     "airport": "unknown",
-    "flights": 6530
+    "flights": 4616
   },
   {
     "airport": "YKII",
-    "flights": 20
+    "flights": 11
+  },
+  {
+    "airport": "HCME",
+    "flights": 11
   },
   {
     "airport": "UESG",
-    "flights": 16
+    "flights": 11
   },
   {
-    "airport": "OESK",
+    "airport": "OEOM",
+    "flights": 7
+  },
+  {
+    "airport": "UGSB",
     "flights": 6
   },
   {
-    "airport": "ZSTX",
-    "flights": 5
-  },
-  {
     "airport": "HKML",
+    "flights": 4
+  },
+  {
+    "airport": "OESH",
+    "flights": 4
+  },
+  {
+    "airport": "HCMA",
+    "flights": 4
+  },
+  {
+    "airport": "HCMF",
+    "flights": 4
+  },
+  {
+    "airport": "OEYN",
     "flights": 3
   },
   {
-    "airport": "ENBA",
+    "airport": "HCMI",
     "flights": 3
   },
   {
-    "airport": "YSMI",
+    "airport": "HCMN",
+    "flights": 3
+  },
+  {
+    "airport": "EPGE",
     "flights": 3
   },
   {
@@ -36,23 +60,19 @@
     "flights": 3
   },
   {
-    "airport": "UEMU",
+    "airport": "FSMA",
+    "flights": 3
+  },
+  {
+    "airport": "LTCU",
     "flights": 2
   },
   {
-    "airport": "LTFO",
+    "airport": "OEAO",
     "flights": 2
   },
   {
-    "airport": "OERR",
-    "flights": 2
-  },
-  {
-    "airport": "FSSB",
-    "flights": 2
-  },
-  {
-    "airport": "EPGE",
+    "airport": "ZSWA",
     "flights": 2
   },
   {
@@ -60,43 +80,23 @@
     "flights": 2
   },
   {
-    "airport": "UGSB",
+    "airport": "LTFO",
     "flights": 2
   },
   {
-    "airport": "HCBG",
+    "airport": "YSMI",
     "flights": 2
   },
   {
-    "airport": "HCMF",
+    "airport": "OEWD",
     "flights": 2
   },
   {
-    "airport": "OERF",
+    "airport": "HCMU",
     "flights": 2
   },
   {
-    "airport": "UESO",
+    "airport": "HCMR",
     "flights": 2
-  },
-  {
-    "airport": "OEPF",
-    "flights": 2
-  },
-  {
-    "airport": "OEGT",
-    "flights": 1
-  },
-  {
-    "airport": "LLEY",
-    "flights": 1
-  },
-  {
-    "airport": "EPAR",
-    "flights": 1
-  },
-  {
-    "airport": "ZSDY",
-    "flights": 1
   }
 ]
