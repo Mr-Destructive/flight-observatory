@@ -1,42 +1,30 @@
 [
   {
     "airport": "unknown",
-    "flights": 8582
-  },
-  {
-    "airport": "UESG",
-    "flights": 15
+    "flights": 6530
   },
   {
     "airport": "YKII",
-    "flights": 9
+    "flights": 20
   },
   {
-    "airport": "ZSTX",
-    "flights": 7
+    "airport": "UESG",
+    "flights": 16
   },
   {
-    "airport": "UHOO",
+    "airport": "OESK",
     "flights": 6
   },
   {
-    "airport": "ZSJU",
+    "airport": "ZSTX",
     "flights": 5
   },
   {
-    "airport": "UESO",
-    "flights": 5
-  },
-  {
-    "airport": "YSRN",
-    "flights": 4
-  },
-  {
-    "airport": "EPGE",
+    "airport": "HKML",
     "flights": 3
   },
   {
-    "airport": "UGSB",
+    "airport": "ENBA",
     "flights": 3
   },
   {
@@ -44,7 +32,7 @@
     "flights": 3
   },
   {
-    "airport": "HCMV",
+    "airport": "YSRN",
     "flights": 3
   },
   {
@@ -52,7 +40,7 @@
     "flights": 2
   },
   {
-    "airport": "OESK",
+    "airport": "LTFO",
     "flights": 2
   },
   {
@@ -60,43 +48,55 @@
     "flights": 2
   },
   {
-    "airport": "HHAS",
+    "airport": "FSSB",
     "flights": 2
   },
   {
-    "airport": "HCME",
+    "airport": "EPGE",
     "flights": 2
   },
   {
-    "airport": "OEGS",
+    "airport": "ZSJU",
     "flights": 2
   },
   {
-    "airport": "ZSWA",
+    "airport": "UGSB",
     "flights": 2
   },
   {
-    "airport": "OETB",
+    "airport": "HCBG",
     "flights": 2
   },
   {
-    "airport": "HSKG",
+    "airport": "HCMF",
     "flights": 2
   },
   {
-    "airport": "FSMA",
+    "airport": "OERF",
     "flights": 2
   },
   {
-    "airport": "ZSRZ",
+    "airport": "UESO",
     "flights": 2
   },
   {
-    "airport": "ENBA",
+    "airport": "OEPF",
+    "flights": 2
+  },
+  {
+    "airport": "OEGT",
     "flights": 1
   },
   {
-    "airport": "ZSSH",
+    "airport": "LLEY",
+    "flights": 1
+  },
+  {
+    "airport": "EPAR",
+    "flights": 1
+  },
+  {
+    "airport": "ZSDY",
     "flights": 1
   }
 ]
