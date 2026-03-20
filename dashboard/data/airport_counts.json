@@ -1,34 +1,54 @@
 [
   {
     "airport": "unknown",
-    "flights": 4616
+    "flights": 4352
   },
   {
     "airport": "YKII",
-    "flights": 11
+    "flights": 20
   },
   {
     "airport": "HCME",
-    "flights": 11
+    "flights": 12
   },
   {
     "airport": "UESG",
-    "flights": 11
+    "flights": 8
   },
   {
-    "airport": "OEOM",
+    "airport": "HCAD",
+    "flights": 8
+  },
+  {
+    "airport": "HCMV",
     "flights": 7
   },
   {
-    "airport": "UGSB",
+    "airport": "OESH",
     "flights": 6
   },
   {
-    "airport": "HKML",
+    "airport": "HCMG",
+    "flights": 6
+  },
+  {
+    "airport": "HDDK",
+    "flights": 5
+  },
+  {
+    "airport": "OESK",
+    "flights": 5
+  },
+  {
+    "airport": "HCMS",
     "flights": 4
   },
   {
-    "airport": "OESH",
+    "airport": "HAKD",
+    "flights": 4
+  },
+  {
+    "airport": "HCMR",
     "flights": 4
   },
   {
@@ -36,67 +56,47 @@
     "flights": 4
   },
   {
-    "airport": "HCMF",
+    "airport": "OEPF",
     "flights": 4
   },
   {
-    "airport": "OEYN",
-    "flights": 3
+    "airport": "OOFD",
+    "flights": 4
+  },
+  {
+    "airport": "UHOO",
+    "flights": 4
   },
   {
     "airport": "HCMI",
-    "flights": 3
+    "flights": 4
   },
   {
     "airport": "HCMN",
+    "flights": 4
+  },
+  {
+    "airport": "HDAS",
     "flights": 3
   },
   {
-    "airport": "EPGE",
+    "airport": "OJPH",
     "flights": 3
   },
   {
-    "airport": "YSRN",
+    "airport": "OENG",
     "flights": 3
   },
   {
-    "airport": "FSMA",
+    "airport": "OEHL",
     "flights": 3
   },
   {
-    "airport": "LTCU",
-    "flights": 2
+    "airport": "YKER",
+    "flights": 3
   },
   {
-    "airport": "OEAO",
-    "flights": 2
-  },
-  {
-    "airport": "ZSWA",
-    "flights": 2
-  },
-  {
-    "airport": "ZSJU",
-    "flights": 2
-  },
-  {
-    "airport": "LTFO",
-    "flights": 2
-  },
-  {
-    "airport": "YSMI",
-    "flights": 2
-  },
-  {
-    "airport": "OEWD",
-    "flights": 2
-  },
-  {
-    "airport": "HCMU",
-    "flights": 2
-  },
-  {
-    "airport": "HCMR",
-    "flights": 2
+    "airport": "ZSTX",
+    "flights": 3
   }
 ]
