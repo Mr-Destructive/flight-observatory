@@ -1,38 +1,42 @@
 [
   {
     "airport": "unknown",
-    "flights": 9266
+    "flights": 8890
   },
   {
     "airport": "UESG",
-    "flights": 20
+    "flights": 26
   },
   {
     "airport": "YKII",
-    "flights": 13
+    "flights": 15
   },
   {
-    "airport": "ZSTX",
-    "flights": 7
-  },
-  {
-    "airport": "ZSJU",
-    "flights": 6
-  },
-  {
-    "airport": "UHOO",
-    "flights": 6
+    "airport": "HCMV",
+    "flights": 9
   },
   {
     "airport": "FSSD",
-    "flights": 6
+    "flights": 9
+  },
+  {
+    "airport": "ZSTX",
+    "flights": 8
+  },
+  {
+    "airport": "ZSJU",
+    "flights": 8
+  },
+  {
+    "airport": "OEPF",
+    "flights": 4
+  },
+  {
+    "airport": "ZSWA",
+    "flights": 4
   },
   {
     "airport": "HKGA",
-    "flights": 5
-  },
-  {
-    "airport": "OEOM",
     "flights": 4
   },
   {
@@ -40,55 +44,15 @@
     "flights": 4
   },
   {
-    "airport": "EPGE",
-    "flights": 4
-  },
-  {
-    "airport": "YQNS",
-    "flights": 4
-  },
-  {
-    "airport": "FSMA",
-    "flights": 4
-  },
-  {
-    "airport": "OEPF",
-    "flights": 4
-  },
-  {
-    "airport": "YSMI",
-    "flights": 4
-  },
-  {
     "airport": "HSKG",
     "flights": 4
   },
   {
-    "airport": "OYTZ",
+    "airport": "HCMS",
     "flights": 3
   },
   {
-    "airport": "ZSJD",
-    "flights": 3
-  },
-  {
-    "airport": "ZSJH",
-    "flights": 3
-  },
-  {
-    "airport": "HCME",
-    "flights": 3
-  },
-  {
-    "airport": "ZSWA",
-    "flights": 3
-  },
-  {
-    "airport": "HTMA",
-    "flights": 3
-  },
-  {
-    "airport": "HCMV",
+    "airport": "OESK",
     "flights": 3
   },
   {
@@ -96,7 +60,43 @@
     "flights": 3
   },
   {
-    "airport": "OEPJ",
+    "airport": "UEEE",
+    "flights": 3
+  },
+  {
+    "airport": "HCME",
+    "flights": 3
+  },
+  {
+    "airport": "FSAL",
+    "flights": 3
+  },
+  {
+    "airport": "YSRN",
+    "flights": 3
+  },
+  {
+    "airport": "UESO",
+    "flights": 3
+  },
+  {
+    "airport": "FSMA",
+    "flights": 3
+  },
+  {
+    "airport": "OEYN",
+    "flights": 3
+  },
+  {
+    "airport": "FSAS",
+    "flights": 2
+  },
+  {
+    "airport": "HAWR",
+    "flights": 2
+  },
+  {
+    "airport": "OYSY",
     "flights": 2
   }
 ]
