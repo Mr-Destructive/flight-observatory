@@ -1,38 +1,18 @@
 [
   {
     "airport": "unknown",
-    "flights": 9958
+    "flights": 9266
   },
   {
     "airport": "UESG",
-    "flights": 26
+    "flights": 20
   },
   {
-    "airport": "HCMV",
-    "flights": 11
-  },
-  {
-    "airport": "HKML",
-    "flights": 10
+    "airport": "YKII",
+    "flights": 13
   },
   {
     "airport": "ZSTX",
-    "flights": 9
-  },
-  {
-    "airport": "FSMA",
-    "flights": 8
-  },
-  {
-    "airport": "OEOM",
-    "flights": 7
-  },
-  {
-    "airport": "ZSWA",
-    "flights": 7
-  },
-  {
-    "airport": "OESH",
     "flights": 7
   },
   {
@@ -40,7 +20,11 @@
     "flights": 6
   },
   {
-    "airport": "YKII",
+    "airport": "UHOO",
+    "flights": 6
+  },
+  {
+    "airport": "FSSD",
     "flights": 6
   },
   {
@@ -48,55 +32,71 @@
     "flights": 5
   },
   {
-    "airport": "UHOO",
-    "flights": 5
-  },
-  {
-    "airport": "FSSD",
-    "flights": 5
-  },
-  {
-    "airport": "OEYN",
+    "airport": "OEOM",
     "flights": 4
   },
   {
-    "airport": "HCMN",
+    "airport": "UEMA",
     "flights": 4
   },
   {
-    "airport": "HCMU",
+    "airport": "EPGE",
     "flights": 4
   },
   {
-    "airport": "HCMF",
+    "airport": "YQNS",
     "flights": 4
+  },
+  {
+    "airport": "FSMA",
+    "flights": 4
+  },
+  {
+    "airport": "OEPF",
+    "flights": 4
+  },
+  {
+    "airport": "YSMI",
+    "flights": 4
+  },
+  {
+    "airport": "HSKG",
+    "flights": 4
+  },
+  {
+    "airport": "OYTZ",
+    "flights": 3
   },
   {
     "airport": "ZSJD",
-    "flights": 4
-  },
-  {
-    "airport": "HKMA",
     "flights": 3
   },
   {
-    "airport": "OEST",
+    "airport": "ZSJH",
     "flights": 3
   },
   {
-    "airport": "OESK",
+    "airport": "HCME",
     "flights": 3
   },
   {
-    "airport": "HTPE",
+    "airport": "ZSWA",
     "flights": 3
   },
   {
-    "airport": "HCAD",
+    "airport": "HTMA",
     "flights": 3
   },
   {
-    "airport": "HCMC",
+    "airport": "HCMV",
     "flights": 3
+  },
+  {
+    "airport": "HKML",
+    "flights": 3
+  },
+  {
+    "airport": "OEPJ",
+    "flights": 2
   }
 ]
