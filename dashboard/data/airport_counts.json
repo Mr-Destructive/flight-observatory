@@ -1,78 +1,66 @@
 [
   {
     "airport": "unknown",
-    "flights": 8890
+    "flights": 8282
   },
   {
     "airport": "UESG",
-    "flights": 26
+    "flights": 27
   },
   {
     "airport": "YKII",
-    "flights": 15
-  },
-  {
-    "airport": "HCMV",
-    "flights": 9
-  },
-  {
-    "airport": "FSSD",
     "flights": 9
   },
   {
     "airport": "ZSTX",
-    "flights": 8
+    "flights": 7
+  },
+  {
+    "airport": "UHOO",
+    "flights": 6
+  },
+  {
+    "airport": "YSMI",
+    "flights": 5
+  },
+  {
+    "airport": "HCMV",
+    "flights": 5
+  },
+  {
+    "airport": "FSMA",
+    "flights": 5
+  },
+  {
+    "airport": "ZSSR",
+    "flights": 4
+  },
+  {
+    "airport": "EPGE",
+    "flights": 4
+  },
+  {
+    "airport": "HKML",
+    "flights": 4
   },
   {
     "airport": "ZSJU",
-    "flights": 8
-  },
-  {
-    "airport": "OEPF",
     "flights": 4
   },
   {
-    "airport": "ZSWA",
+    "airport": "YSRN",
     "flights": 4
   },
   {
-    "airport": "HKGA",
+    "airport": "OEOM",
+    "flights": 4
+  },
+  {
+    "airport": "HCMC",
     "flights": 4
   },
   {
     "airport": "UEMA",
-    "flights": 4
-  },
-  {
-    "airport": "HSKG",
-    "flights": 4
-  },
-  {
-    "airport": "HCMS",
-    "flights": 3
-  },
-  {
-    "airport": "OESK",
-    "flights": 3
-  },
-  {
-    "airport": "HKML",
-    "flights": 3
-  },
-  {
-    "airport": "UEEE",
-    "flights": 3
-  },
-  {
-    "airport": "HCME",
-    "flights": 3
-  },
-  {
-    "airport": "FSAL",
-    "flights": 3
-  },
-  {
-    "airport": "YSRN",
     "flights": 3
   },
   {
@@ -80,23 +68,35 @@
     "flights": 3
   },
   {
-    "airport": "FSMA",
+    "airport": "HCMI",
     "flights": 3
   },
   {
-    "airport": "OEYN",
+    "airport": "OESK",
     "flights": 3
   },
   {
-    "airport": "FSAS",
+    "airport": "ZSWA",
+    "flights": 3
+  },
+  {
+    "airport": "HCMO",
     "flights": 2
   },
   {
-    "airport": "HAWR",
+    "airport": "ZSSH",
     "flights": 2
   },
   {
-    "airport": "OYSY",
+    "airport": "OYBN",
+    "flights": 2
+  },
+  {
+    "airport": "LLEY",
+    "flights": 2
+  },
+  {
+    "airport": "LTCR",
     "flights": 2
   }
 ]
