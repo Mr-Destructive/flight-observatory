@@ -1,51 +1,51 @@
 [
   {
     "airline": "unknown",
-    "flights": 4651
-  },
-  {
-    "airline": "Southwest Airlines",
-    "flights": 447
+    "flights": 4517
   },
   {
     "airline": "American Airlines",
-    "flights": 424
+    "flights": 462
+  },
+  {
+    "airline": "Southwest Airlines",
+    "flights": 442
   },
   {
     "airline": "United Airlines",
-    "flights": 413
+    "flights": 418
   },
   {
     "airline": "Delta Air Lines",
-    "flights": 411
+    "flights": 416
   },
   {
     "airline": "Ryanair",
-    "flights": 336
+    "flights": 333
   },
   {
     "airline": "SkyWest",
-    "flights": 190
+    "flights": 223
   },
   {
     "airline": "NetJets",
-    "flights": 174
+    "flights": 191
   },
   {
     "airline": "Turkish Airlines",
-    "flights": 164
-  },
-  {
-    "airline": "Alaska Airlines",
-    "flights": 131
+    "flights": 154
   },
   {
     "airline": "JetBlue Airways",
-    "flights": 122
+    "flights": 135
+  },
+  {
+    "airline": "Alaska Airlines",
+    "flights": 120
   },
   {
     "airline": "Republic Airlines",
-    "flights": 116
+    "flights": 113
   },
   {
     "airline": "Bombardier Business Jet Solutions",
@@ -53,50 +53,50 @@
   },
   {
     "airline": "Frontier Airlines",
-    "flights": 87
-  },
-  {
-    "airline": "easyJet",
-    "flights": 87
+    "flights": 92
   },
   {
     "airline": "Air Canada",
-    "flights": 80
+    "flights": 86
   },
   {
     "airline": "Envoy Air",
-    "flights": 77
+    "flights": 85
+  },
+  {
+    "airline": "easyJet",
+    "flights": 84
   },
   {
     "airline": "British Airways",
-    "flights": 66
-  },
-  {
-    "airline": "WestJet",
-    "flights": 65
+    "flights": 75
   },
   {
     "airline": "Allegiant Air",
-    "flights": 62
+    "flights": 66
   },
   {
     "airline": "PSA Airlines",
-    "flights": 60
-  },
-  {
-    "airline": "Lufthansa",
-    "flights": 59
+    "flights": 65
   },
   {
     "airline": "Vueling Airlines",
-    "flights": 57
+    "flights": 61
   },
   {
-    "airline": "Spirit Airlines",
-    "flights": 57
+    "airline": "WestJet",
+    "flights": 59
   },
   {
     "airline": "Scandinavian Airlines System",
-    "flights": 56
+    "flights": 58
+  },
+  {
+    "airline": "Air France",
+    "flights": 55
+  },
+  {
+    "airline": "Lufthansa",
+    "flights": 51
   }
 ]
