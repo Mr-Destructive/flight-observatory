@@ -1,58 +1,54 @@
 [
   {
     "airport": "unknown",
-    "flights": 11650
-  },
-  {
-    "airport": "HCME",
-    "flights": 34
+    "flights": 11370
   },
   {
     "airport": "UESG",
-    "flights": 28
+    "flights": 30
+  },
+  {
+    "airport": "HCME",
+    "flights": 25
+  },
+  {
+    "airport": "HCMV",
+    "flights": 24
   },
   {
     "airport": "HKML",
     "flights": 16
   },
   {
-    "airport": "ZSTX",
-    "flights": 13
-  },
-  {
-    "airport": "HCAD",
-    "flights": 11
-  },
-  {
-    "airport": "HCMG",
-    "flights": 10
-  },
-  {
-    "airport": "HCMV",
-    "flights": 10
-  },
-  {
-    "airport": "FSSD",
+    "airport": "ZSWA",
     "flights": 9
   },
   {
-    "airport": "FSMA",
+    "airport": "ZSTX",
     "flights": 8
+  },
+  {
+    "airport": "FSSD",
+    "flights": 8
+  },
+  {
+    "airport": "HCAD",
+    "flights": 7
+  },
+  {
+    "airport": "ZSJU",
+    "flights": 7
   },
   {
     "airport": "OEOM",
     "flights": 7
   },
   {
-    "airport": "ZSWA",
-    "flights": 7
-  },
-  {
-    "airport": "OESK",
+    "airport": "OERB",
     "flights": 6
   },
   {
-    "airport": "HCMH",
+    "airport": "OEHL",
     "flights": 6
   },
   {
@@ -60,19 +56,15 @@
     "flights": 6
   },
   {
-    "airport": "UHOO",
+    "airport": "FSMA",
     "flights": 6
   },
   {
-    "airport": "OEYN",
-    "flights": 6
+    "airport": "HCMS",
+    "flights": 5
   },
   {
     "airport": "OYAT",
-    "flights": 6
-  },
-  {
-    "airport": "HCMC",
     "flights": 5
   },
   {
@@ -80,23 +72,31 @@
     "flights": 5
   },
   {
-    "airport": "HSKG",
+    "airport": "HCMI",
     "flights": 5
   },
   {
-    "airport": "HCMN",
-    "flights": 5
-  },
-  {
-    "airport": "HCMU",
-    "flights": 5
-  },
-  {
-    "airport": "OYSY",
+    "airport": "HAGO",
     "flights": 4
   },
   {
-    "airport": "OESH",
+    "airport": "OEYN",
+    "flights": 4
+  },
+  {
+    "airport": "HCMA",
+    "flights": 4
+  },
+  {
+    "airport": "HAKD",
+    "flights": 4
+  },
+  {
+    "airport": "HTPE",
+    "flights": 4
+  },
+  {
+    "airport": "HCMC",
     "flights": 4
   }
 ]
