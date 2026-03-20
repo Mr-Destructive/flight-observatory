@@ -1,82 +1,70 @@
 [
   {
     "airport": "unknown",
-    "flights": 12368
+    "flights": 12412
+  },
+  {
+    "airport": "UESG",
+    "flights": 37
   },
   {
     "airport": "HCME",
     "flights": 35
   },
   {
-    "airport": "UESG",
-    "flights": 27
-  },
-  {
-    "airport": "HCMG",
-    "flights": 12
-  },
-  {
-    "airport": "HAGO",
-    "flights": 12
+    "airport": "HCMV",
+    "flights": 14
   },
   {
     "airport": "HKGA",
+    "flights": 12
+  },
+  {
+    "airport": "HCMG",
     "flights": 11
   },
   {
-    "airport": "HKML",
+    "airport": "HCMN",
     "flights": 10
   },
   {
-    "airport": "OEOM",
+    "airport": "HCMH",
+    "flights": 10
+  },
+  {
+    "airport": "HKML",
     "flights": 9
   },
   {
-    "airport": "HCMU",
+    "airport": "HCMC",
     "flights": 9
-  },
-  {
-    "airport": "FSMA",
-    "flights": 9
-  },
-  {
-    "airport": "HCMN",
-    "flights": 8
-  },
-  {
-    "airport": "HCMV",
-    "flights": 8
-  },
-  {
-    "airport": "OEHL",
-    "flights": 7
-  },
-  {
-    "airport": "OEPJ",
-    "flights": 7
-  },
-  {
-    "airport": "OYMB",
-    "flights": 7
-  },
-  {
-    "airport": "HCMI",
-    "flights": 7
   },
   {
     "airport": "FSSD",
+    "flights": 9
+  },
+  {
+    "airport": "HCMS",
+    "flights": 8
+  },
+  {
+    "airport": "FSMA",
+    "flights": 8
+  },
+  {
+    "airport": "HAGO",
+    "flights": 8
+  },
+  {
+    "airport": "HCMF",
     "flights": 7
   },
   {
-    "airport": "HASM",
-    "flights": 6
+    "airport": "OESK",
+    "flights": 7
   },
   {
-    "airport": "HCMB",
-    "flights": 6
-  },
-  {
-    "airport": "HCAD",
+    "airport": "OEHL",
     "flights": 6
   },
   {
@@ -84,11 +72,7 @@
     "flights": 6
   },
   {
-    "airport": "HAKD",
-    "flights": 6
-  },
-  {
-    "airport": "HCMF",
+    "airport": "HCMR",
     "flights": 6
   },
   {
@@ -96,7 +80,23 @@
     "flights": 5
   },
   {
-    "airport": "HAKL",
+    "airport": "OEYN",
+    "flights": 5
+  },
+  {
+    "airport": "HCMK",
+    "flights": 5
+  },
+  {
+    "airport": "ZSTX",
+    "flights": 5
+  },
+  {
+    "airport": "UESO",
+    "flights": 5
+  },
+  {
+    "airport": "OEOM",
     "flights": 5
   }
 ]
