@@ -1,7 +1,7 @@
 [
   {
     "airport": "unknown",
-    "flights": 12155
+    "flights": 12003
   },
   {
     "airport": "HCME",
@@ -9,30 +9,34 @@
   },
   {
     "airport": "UESG",
-    "flights": 27
-  },
-  {
-    "airport": "FSMA",
-    "flights": 12
+    "flights": 25
   },
   {
     "airport": "HKML",
-    "flights": 10
-  },
-  {
-    "airport": "HCMU",
-    "flights": 10
+    "flights": 17
   },
   {
     "airport": "HCMV",
+    "flights": 11
+  },
+  {
+    "airport": "FSMA",
+    "flights": 11
+  },
+  {
+    "airport": "HKGA",
     "flights": 10
   },
   {
-    "airport": "OEYN",
+    "airport": "HCAD",
     "flights": 9
   },
   {
-    "airport": "HCMC",
+    "airport": "HCMU",
+    "flights": 9
+  },
+  {
+    "airport": "HAGO",
     "flights": 8
   },
   {
@@ -40,43 +44,27 @@
     "flights": 8
   },
   {
-    "airport": "HAGO",
-    "flights": 8
-  },
-  {
-    "airport": "UEMA",
-    "flights": 6
-  },
-  {
-    "airport": "UEMU",
-    "flights": 6
-  },
-  {
-    "airport": "OYBN",
-    "flights": 6
-  },
-  {
     "airport": "HCMG",
     "flights": 6
   },
   {
-    "airport": "HSKG",
+    "airport": "HCMH",
     "flights": 6
   },
   {
-    "airport": "HCAD",
-    "flights": 5
+    "airport": "OYSY",
+    "flights": 6
   },
   {
-    "airport": "HCMS",
-    "flights": 5
+    "airport": "FSSD",
+    "flights": 6
   },
   {
-    "airport": "OYAT",
-    "flights": 5
+    "airport": "HCMF",
+    "flights": 6
   },
   {
-    "airport": "HCMK",
+    "airport": "OESK",
     "flights": 5
   },
   {
@@ -84,7 +72,11 @@
     "flights": 5
   },
   {
-    "airport": "ZSTX",
+    "airport": "HCMS",
+    "flights": 5
+  },
+  {
+    "airport": "HSKG",
     "flights": 5
   },
   {
@@ -93,10 +85,18 @@
   },
   {
     "airport": "HCMN",
-    "flights": 5
+    "flights": 4
   },
   {
-    "airport": "FSSD",
-    "flights": 5
+    "airport": "HASL",
+    "flights": 4
+  },
+  {
+    "airport": "OEPF",
+    "flights": 4
+  },
+  {
+    "airport": "OYRN",
+    "flights": 4
   }
 ]
