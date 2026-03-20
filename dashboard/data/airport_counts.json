@@ -1,54 +1,42 @@
 [
   {
     "airport": "unknown",
-    "flights": 12412
-  },
-  {
-    "airport": "UESG",
-    "flights": 37
+    "flights": 12155
   },
   {
     "airport": "HCME",
-    "flights": 35
+    "flights": 30
   },
   {
-    "airport": "HCMV",
-    "flights": 14
+    "airport": "UESG",
+    "flights": 27
   },
   {
-    "airport": "HKGA",
+    "airport": "FSMA",
     "flights": 12
   },
   {
-    "airport": "HCMG",
-    "flights": 11
-  },
-  {
-    "airport": "HCMN",
-    "flights": 10
-  },
-  {
-    "airport": "HCMH",
-    "flights": 10
-  },
-  {
     "airport": "HKML",
+    "flights": 10
+  },
+  {
+    "airport": "HCMU",
+    "flights": 10
+  },
+  {
+    "airport": "HCMV",
+    "flights": 10
+  },
+  {
+    "airport": "OEYN",
     "flights": 9
   },
   {
     "airport": "HCMC",
-    "flights": 9
-  },
-  {
-    "airport": "FSSD",
-    "flights": 9
-  },
-  {
-    "airport": "HCMS",
     "flights": 8
   },
   {
-    "airport": "FSMA",
+    "airport": "OEOM",
     "flights": 8
   },
   {
@@ -56,15 +44,19 @@
     "flights": 8
   },
   {
-    "airport": "HCMF",
-    "flights": 7
+    "airport": "UEMA",
+    "flights": 6
   },
   {
-    "airport": "OESK",
-    "flights": 7
+    "airport": "UEMU",
+    "flights": 6
   },
   {
-    "airport": "OEHL",
+    "airport": "OYBN",
+    "flights": 6
+  },
+  {
+    "airport": "HCMG",
     "flights": 6
   },
   {
@@ -72,15 +64,15 @@
     "flights": 6
   },
   {
-    "airport": "HCMR",
-    "flights": 6
-  },
-  {
-    "airport": "UHOO",
+    "airport": "HCAD",
     "flights": 5
   },
   {
-    "airport": "OEYN",
+    "airport": "HCMS",
+    "flights": 5
+  },
+  {
+    "airport": "OYAT",
     "flights": 5
   },
   {
@@ -88,15 +80,23 @@
     "flights": 5
   },
   {
+    "airport": "HCMR",
+    "flights": 5
+  },
+  {
     "airport": "ZSTX",
     "flights": 5
   },
   {
-    "airport": "UESO",
+    "airport": "OESH",
     "flights": 5
   },
   {
-    "airport": "OEOM",
+    "airport": "HCMN",
+    "flights": 5
+  },
+  {
+    "airport": "FSSD",
     "flights": 5
   }
 ]
