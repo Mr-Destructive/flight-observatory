@@ -1,30 +1,34 @@
 [
   {
     "airport": "unknown",
-    "flights": 5661
+    "flights": 6173
   },
   {
     "airport": "HCME",
-    "flights": 44
+    "flights": 45
+  },
+  {
+    "airport": "HAGO",
+    "flights": 18
   },
   {
     "airport": "HCMV",
-    "flights": 22
-  },
-  {
-    "airport": "HKML",
-    "flights": 15
+    "flights": 18
   },
   {
     "airport": "YKII",
-    "flights": 14
-  },
-  {
-    "airport": "HCMC",
-    "flights": 13
+    "flights": 16
   },
   {
     "airport": "HCMN",
+    "flights": 11
+  },
+  {
+    "airport": "HCMR",
+    "flights": 11
+  },
+  {
+    "airport": "HCAD",
     "flights": 11
   },
   {
@@ -32,71 +36,67 @@
     "flights": 10
   },
   {
-    "airport": "HAGO",
+    "airport": "HASL",
     "flights": 10
   },
   {
-    "airport": "HCMO",
+    "airport": "FSMA",
+    "flights": 10
+  },
+  {
+    "airport": "HCMF",
     "flights": 9
   },
   {
-    "airport": "HCAD",
-    "flights": 9
+    "airport": "HAKD",
+    "flights": 8
   },
   {
     "airport": "HCMG",
-    "flights": 9
+    "flights": 8
   },
   {
-    "airport": "OEYN",
+    "airport": "OEBH",
     "flights": 7
   },
   {
-    "airport": "HCMH",
+    "airport": "OYSN",
     "flights": 7
   },
   {
-    "airport": "OEPJ",
+    "airport": "HCMS",
+    "flights": 7
+  },
+  {
+    "airport": "HCMU",
+    "flights": 7
+  },
+  {
+    "airport": "YSMI",
     "flights": 7
   },
   {
     "airport": "HAWR",
-    "flights": 7
-  },
-  {
-    "airport": "HCMR",
-    "flights": 7
-  },
-  {
-    "airport": "HDDK",
-    "flights": 6
-  },
-  {
-    "airport": "HCMI",
-    "flights": 6
-  },
-  {
-    "airport": "FSSR",
     "flights": 6
   },
   {
     "airport": "HKGA",
-    "flights": 5
+    "flights": 6
   },
   {
-    "airport": "OYMB",
-    "flights": 5
+    "airport": "HKML",
+    "flights": 6
   },
   {
-    "airport": "OESK",
-    "flights": 5
+    "airport": "OYGD",
+    "flights": 6
   },
   {
-    "airport": "OYSY",
-    "flights": 5
+    "airport": "FSSB",
+    "flights": 6
   },
   {
-    "airport": "HCMS",
+    "airport": "HCBG",
     "flights": 5
   }
 ]
