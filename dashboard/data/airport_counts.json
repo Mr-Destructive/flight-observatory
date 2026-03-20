@@ -1,38 +1,38 @@
 [
   {
     "airport": "unknown",
-    "flights": 8891
+    "flights": 8582
   },
   {
     "airport": "UESG",
-    "flights": 21
+    "flights": 15
   },
   {
     "airport": "YKII",
-    "flights": 12
+    "flights": 9
   },
   {
     "airport": "ZSTX",
-    "flights": 8
+    "flights": 7
   },
   {
-    "airport": "FSMA",
-    "flights": 7
+    "airport": "UHOO",
+    "flights": 6
   },
   {
     "airport": "ZSJU",
     "flights": 5
   },
   {
-    "airport": "UHOO",
+    "airport": "UESO",
     "flights": 5
   },
   {
-    "airport": "EPGE",
+    "airport": "YSRN",
     "flights": 4
   },
   {
-    "airport": "YSRN",
+    "airport": "EPGE",
     "flights": 3
   },
   {
@@ -40,47 +40,15 @@
     "flights": 3
   },
   {
-    "airport": "HSKG",
+    "airport": "YSMI",
     "flights": 3
   },
   {
-    "airport": "ZSWA",
+    "airport": "HCMV",
     "flights": 3
   },
   {
-    "airport": "UESO",
-    "flights": 3
-  },
-  {
-    "airport": "OYZM",
-    "flights": 2
-  },
-  {
-    "airport": "OEYN",
-    "flights": 2
-  },
-  {
-    "airport": "FNXA",
-    "flights": 2
-  },
-  {
-    "airport": "ZSSR",
-    "flights": 2
-  },
-  {
-    "airport": "HCME",
-    "flights": 2
-  },
-  {
-    "airport": "OEPF",
-    "flights": 2
-  },
-  {
-    "airport": "HCBG",
-    "flights": 2
-  },
-  {
-    "airport": "OYSQ",
+    "airport": "UEMU",
     "flights": 2
   },
   {
@@ -88,15 +56,47 @@
     "flights": 2
   },
   {
-    "airport": "YSMI",
+    "airport": "OERR",
     "flights": 2
   },
   {
-    "airport": "LLMG",
+    "airport": "HHAS",
+    "flights": 2
+  },
+  {
+    "airport": "HCME",
+    "flights": 2
+  },
+  {
+    "airport": "OEGS",
+    "flights": 2
+  },
+  {
+    "airport": "ZSWA",
+    "flights": 2
+  },
+  {
+    "airport": "OETB",
+    "flights": 2
+  },
+  {
+    "airport": "HSKG",
+    "flights": 2
+  },
+  {
+    "airport": "FSMA",
+    "flights": 2
+  },
+  {
+    "airport": "ZSRZ",
+    "flights": 2
+  },
+  {
+    "airport": "ENBA",
     "flights": 1
   },
   {
-    "airport": "OEPC",
+    "airport": "ZSSH",
     "flights": 1
   }
 ]
