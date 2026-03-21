@@ -1,42 +1,46 @@
 [
   {
     "airport": "unknown",
-    "flights": 4879
+    "flights": 4939
   },
   {
     "airport": "CYYZ",
-    "flights": 33
-  },
-  {
-    "airport": "KATL",
-    "flights": 24
-  },
-  {
-    "airport": "LSZH",
-    "flights": 23
+    "flights": 38
   },
   {
     "airport": "EGKK",
-    "flights": 21
+    "flights": 27
   },
   {
     "airport": "KMCO",
-    "flights": 20
+    "flights": 23
   },
   {
-    "airport": "KBOS",
-    "flights": 19
+    "airport": "LSZH",
+    "flights": 22
+  },
+  {
+    "airport": "EDDF",
+    "flights": 22
+  },
+  {
+    "airport": "KORD",
+    "flights": 21
+  },
+  {
+    "airport": "KATL",
+    "flights": 18
+  },
+  {
+    "airport": "KDFW",
+    "flights": 18
   },
   {
     "airport": "VHHH",
     "flights": 17
   },
   {
-    "airport": "LEBL",
-    "flights": 16
-  },
-  {
-    "airport": "EDDF",
+    "airport": "KBOS",
     "flights": 16
   },
   {
@@ -44,59 +48,55 @@
     "flights": 15
   },
   {
-    "airport": "EHAM",
-    "flights": 13
+    "airport": "VIDP",
+    "flights": 12
   },
   {
-    "airport": "EBBR",
+    "airport": "YSSY",
     "flights": 12
   },
   {
     "airport": "ZGSZ",
-    "flights": 12
+    "flights": 11
   },
   {
-    "airport": "KLGA",
-    "flights": 10
+    "airport": "KIAD",
+    "flights": 11
   },
   {
-    "airport": "LHBP",
-    "flights": 10
+    "airport": "LEBL",
+    "flights": 11
   },
   {
     "airport": "LOWW",
-    "flights": 9
-  },
-  {
-    "airport": "CYUL",
-    "flights": 9
-  },
-  {
-    "airport": "LTFM",
-    "flights": 9
-  },
-  {
-    "airport": "YSSY",
-    "flights": 9
-  },
-  {
-    "airport": "VIDP",
-    "flights": 8
-  },
-  {
-    "airport": "KORD",
-    "flights": 8
-  },
-  {
-    "airport": "VTBS",
-    "flights": 8
-  },
-  {
-    "airport": "VABB",
-    "flights": 8
+    "flights": 11
   },
   {
     "airport": "KJFK",
+    "flights": 10
+  },
+  {
+    "airport": "EHAM",
+    "flights": 10
+  },
+  {
+    "airport": "KAUS",
+    "flights": 10
+  },
+  {
+    "airport": "KDCA",
+    "flights": 9
+  },
+  {
+    "airport": "KEWR",
+    "flights": 9
+  },
+  {
+    "airport": "EBBR",
+    "flights": 9
+  },
+  {
+    "airport": "VABB",
     "flights": 8
   }
 ]
