@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 4721
+    "flights": 5140
   },
   {
     "airport": "HCME",
-    "flights": 30
-  },
-  {
-    "airport": "YKII",
-    "flights": 26
+    "flights": 37
   },
   {
     "airport": "HCMV",
-    "flights": 23
+    "flights": 20
   },
   {
-    "airport": "HCMG",
+    "airport": "YKII",
+    "flights": 20
+  },
+  {
+    "airport": "HKML",
+    "flights": 13
+  },
+  {
+    "airport": "HCMI",
     "flights": 12
   },
   {
     "airport": "HCAD",
-    "flights": 10
-  },
-  {
-    "airport": "OEOM",
-    "flights": 10
-  },
-  {
-    "airport": "FSSD",
-    "flights": 9
-  },
-  {
-    "airport": "HKML",
-    "flights": 9
+    "flights": 12
   },
   {
     "airport": "HAGO",
-    "flights": 8
+    "flights": 11
   },
   {
-    "airport": "UGSB",
-    "flights": 8
+    "airport": "OEOM",
+    "flights": 11
   },
   {
-    "airport": "FSMA",
-    "flights": 8
+    "airport": "FSSD",
+    "flights": 10
   },
   {
-    "airport": "OESK",
+    "airport": "HCMC",
     "flights": 7
   },
   {
-    "airport": "HCMR",
-    "flights": 6
+    "airport": "HKGA",
+    "flights": 7
   },
   {
-    "airport": "OYSY",
-    "flights": 6
+    "airport": "FSMA",
+    "flights": 7
   },
   {
     "airport": "HCMN",
     "flights": 6
   },
   {
-    "airport": "HKGA",
+    "airport": "HCMR",
     "flights": 6
+  },
+  {
+    "airport": "HCMG",
+    "flights": 6
+  },
+  {
+    "airport": "OESK",
+    "flights": 6
+  },
+  {
+    "airport": "HCMB",
+    "flights": 5
+  },
+  {
+    "airport": "OEPJ",
+    "flights": 5
+  },
+  {
+    "airport": "UGSB",
+    "flights": 5
+  },
+  {
+    "airport": "HTKI",
+    "flights": 4
+  },
+  {
+    "airport": "YSMI",
+    "flights": 4
   },
   {
     "airport": "HCMU",
-    "flights": 6
+    "flights": 4
   },
   {
-    "airport": "HASM",
-    "flights": 5
+    "airport": "HCMA",
+    "flights": 4
   },
   {
-    "airport": "OERS",
-    "flights": 5
-  },
-  {
-    "airport": "OESH",
-    "flights": 5
-  },
-  {
-    "airport": "OYMB",
-    "flights": 5
-  },
-  {
-    "airport": "HAKL",
-    "flights": 5
-  },
-  {
-    "airport": "OEYN",
-    "flights": 5
-  },
-  {
-    "airport": "HDDK",
-    "flights": 5
+    "airport": "FVOT",
+    "flights": 4
   }
 ]
