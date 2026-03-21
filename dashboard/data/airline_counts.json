@@ -1,102 +1,102 @@
 [
   {
     "airline": "unknown",
-    "flights": 780
+    "flights": 803
   },
   {
     "airline": "Ryanair",
-    "flights": 345
+    "flights": 316
   },
   {
     "airline": "Turkish Airlines",
-    "flights": 163
-  },
-  {
-    "airline": "United Airlines",
-    "flights": 116
+    "flights": 147
   },
   {
     "airline": "Delta Air Lines",
-    "flights": 113
+    "flights": 114
+  },
+  {
+    "airline": "United Airlines",
+    "flights": 111
   },
   {
     "airline": "American Airlines",
-    "flights": 102
+    "flights": 100
   },
   {
     "airline": "easyJet",
+    "flights": 97
+  },
+  {
+    "airline": "IndiGo Airlines",
     "flights": 92
   },
   {
     "airline": "Lufthansa",
-    "flights": 91
-  },
-  {
-    "airline": "IndiGo Airlines",
-    "flights": 83
-  },
-  {
-    "airline": "Air France",
-    "flights": 70
-  },
-  {
-    "airline": "KLM Royal Dutch Airlines",
-    "flights": 67
-  },
-  {
-    "airline": "Vueling Airlines",
-    "flights": 66
-  },
-  {
-    "airline": "Southwest Airlines",
-    "flights": 64
+    "flights": 80
   },
   {
     "airline": "British Airways",
-    "flights": 60
+    "flights": 68
   },
   {
-    "airline": "Swissair",
-    "flights": 55
+    "airline": "Scandinavian Airlines System",
+    "flights": 64
   },
   {
     "airline": "All Nippon Airways",
     "flights": 54
   },
   {
+    "airline": "Pegasus Airlines",
+    "flights": 53
+  },
+  {
+    "airline": "Southwest Airlines",
+    "flights": 53
+  },
+  {
+    "airline": "KLM Royal Dutch Airlines",
+    "flights": 53
+  },
+  {
     "airline": "Japan Airlines Domestic",
     "flights": 51
   },
   {
-    "airline": "Pegasus Airlines",
+    "airline": "Vueling Airlines",
     "flights": 49
+  },
+  {
+    "airline": "Air France",
+    "flights": 48
   },
   {
     "airline": "Air Canada",
     "flights": 47
   },
   {
-    "airline": "Alaska Airlines",
+    "airline": "Swissair",
+    "flights": 44
+  },
+  {
+    "airline": "Air India Limited",
     "flights": 43
   },
   {
-    "airline": "Scandinavian Airlines System",
-    "flights": 41
+    "airline": "Jet2.com",
+    "flights": 42
+  },
+  {
+    "airline": "Korean Air",
+    "flights": 42
+  },
+  {
+    "airline": "Transavia France",
+    "flights": 40
   },
   {
     "airline": "LOT Polish Airlines",
     "flights": 39
-  },
-  {
-    "airline": "Air India Limited",
-    "flights": 38
-  },
-  {
-    "airline": "JetBlue Airways",
-    "flights": 38
-  },
-  {
-    "airline": "Korean Air",
-    "flights": 38
   }
 ]

@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 4438
+    "flights": 4358
   },
   {
     "airport": "HCME",
-    "flights": 39
+    "flights": 45
   },
   {
     "airport": "YKII",
-    "flights": 21
+    "flights": 25
+  },
+  {
+    "airport": "FSMA",
+    "flights": 13
+  },
+  {
+    "airport": "HCMG",
+    "flights": 11
+  },
+  {
+    "airport": "HCMV",
+    "flights": 11
   },
   {
     "airport": "HKML",
     "flights": 10
   },
   {
-    "airport": "OEYN",
-    "flights": 10
-  },
-  {
-    "airport": "HCMS",
+    "airport": "HCMN",
     "flights": 9
   },
   {
-    "airport": "HCMV",
-    "flights": 9
-  },
-  {
-    "airport": "FSMA",
-    "flights": 9
+    "airport": "OYAT",
+    "flights": 7
   },
   {
     "airport": "FSSD",
     "flights": 7
   },
   {
-    "airport": "OESK",
+    "airport": "HCAD",
     "flights": 7
   },
   {
-    "airport": "HSKG",
+    "airport": "FSDR",
     "flights": 6
   },
   {
-    "airport": "UGSB",
-    "flights": 5
+    "airport": "OEOM",
+    "flights": 6
   },
   {
-    "airport": "HEAR",
-    "flights": 5
-  },
-  {
-    "airport": "HAGO",
-    "flights": 5
-  },
-  {
-    "airport": "HTMA",
-    "flights": 5
-  },
-  {
-    "airport": "FSDR",
-    "flights": 5
-  },
-  {
-    "airport": "HCMU",
-    "flights": 4
-  },
-  {
-    "airport": "HCMN",
-    "flights": 4
-  },
-  {
-    "airport": "OEUM",
-    "flights": 4
-  },
-  {
-    "airport": "FSSR",
-    "flights": 4
-  },
-  {
-    "airport": "HTTG",
-    "flights": 4
-  },
-  {
-    "airport": "HCMI",
-    "flights": 4
+    "airport": "OEYN",
+    "flights": 6
   },
   {
     "airport": "OYRN",
+    "flights": 5
+  },
+  {
+    "airport": "HDDK",
+    "flights": 5
+  },
+  {
+    "airport": "HCMF",
     "flights": 4
   },
   {
-    "airport": "OEAO",
+    "airport": "UESG",
     "flights": 4
   },
   {
-    "airport": "HCMC",
+    "airport": "FSAL",
     "flights": 4
+  },
+  {
+    "airport": "HCMS",
+    "flights": 4
+  },
+  {
+    "airport": "HSKG",
+    "flights": 4
+  },
+  {
+    "airport": "HTKI",
+    "flights": 4
+  },
+  {
+    "airport": "HCMB",
+    "flights": 3
+  },
+  {
+    "airport": "OESH",
+    "flights": 3
+  },
+  {
+    "airport": "OYZM",
+    "flights": 3
   }
 ]
