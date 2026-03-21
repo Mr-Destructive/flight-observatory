@@ -1,11 +1,11 @@
 [
   {
     "airport": "unknown",
-    "flights": 8282
+    "flights": 8038
   },
   {
     "airport": "UESG",
-    "flights": 27
+    "flights": 26
   },
   {
     "airport": "YKII",
@@ -13,66 +13,34 @@
   },
   {
     "airport": "ZSTX",
-    "flights": 7
-  },
-  {
-    "airport": "UHOO",
-    "flights": 6
-  },
-  {
-    "airport": "YSMI",
-    "flights": 5
-  },
-  {
-    "airport": "HCMV",
-    "flights": 5
-  },
-  {
-    "airport": "FSMA",
-    "flights": 5
-  },
-  {
-    "airport": "ZSSR",
-    "flights": 4
+    "flights": 8
   },
   {
     "airport": "EPGE",
+    "flights": 5
+  },
+  {
+    "airport": "YSMI",
     "flights": 4
   },
   {
-    "airport": "HKML",
-    "flights": 4
-  },
-  {
-    "airport": "ZSJU",
-    "flights": 4
-  },
-  {
-    "airport": "YSRN",
-    "flights": 4
-  },
-  {
-    "airport": "OEOM",
-    "flights": 4
-  },
-  {
-    "airport": "HCMC",
+    "airport": "UESO",
     "flights": 4
   },
   {
     "airport": "UEMA",
+    "flights": 4
+  },
+  {
+    "airport": "OIKJ",
     "flights": 3
   },
   {
-    "airport": "UESO",
+    "airport": "YSRN",
     "flights": 3
   },
   {
-    "airport": "HCMI",
-    "flights": 3
-  },
-  {
-    "airport": "OESK",
+    "airport": "ZSSH",
     "flights": 3
   },
   {
@@ -80,23 +48,55 @@
     "flights": 3
   },
   {
-    "airport": "HCMO",
+    "airport": "ZSJU",
+    "flights": 3
+  },
+  {
+    "airport": "HCBG",
+    "flights": 3
+  },
+  {
+    "airport": "HCMV",
+    "flights": 3
+  },
+  {
+    "airport": "HCMF",
     "flights": 2
   },
   {
-    "airport": "ZSSH",
+    "airport": "UGSB",
     "flights": 2
   },
   {
-    "airport": "OYBN",
+    "airport": "ZSJH",
     "flights": 2
   },
   {
-    "airport": "LLEY",
+    "airport": "OESK",
     "flights": 2
   },
   {
     "airport": "LTCR",
+    "flights": 2
+  },
+  {
+    "airport": "ENDU",
+    "flights": 2
+  },
+  {
+    "airport": "ENBA",
+    "flights": 2
+  },
+  {
+    "airport": "HTNA",
+    "flights": 2
+  },
+  {
+    "airport": "HKML",
+    "flights": 2
+  },
+  {
+    "airport": "FSDR",
     "flights": 2
   }
 ]
