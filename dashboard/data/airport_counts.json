@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 6005
-  },
-  {
-    "airport": "KDFW",
-    "flights": 33
-  },
-  {
-    "airport": "LSZH",
-    "flights": 31
+    "flights": 7307
   },
   {
     "airport": "KATL",
-    "flights": 25
+    "flights": 46
   },
   {
     "airport": "CYYZ",
-    "flights": 23
-  },
-  {
-    "airport": "KORD",
-    "flights": 22
-  },
-  {
-    "airport": "EGKK",
-    "flights": 21
-  },
-  {
-    "airport": "EHAM",
-    "flights": 19
-  },
-  {
-    "airport": "KEWR",
-    "flights": 19
-  },
-  {
-    "airport": "VHHH",
-    "flights": 19
-  },
-  {
-    "airport": "RJTT",
-    "flights": 17
+    "flights": 33
   },
   {
     "airport": "KBOS",
+    "flights": 27
+  },
+  {
+    "airport": "KORD",
+    "flights": 24
+  },
+  {
+    "airport": "LSZH",
+    "flights": 19
+  },
+  {
+    "airport": "KLAS",
+    "flights": 18
+  },
+  {
+    "airport": "EGKK",
+    "flights": 18
+  },
+  {
+    "airport": "KDCA",
+    "flights": 18
+  },
+  {
+    "airport": "EHAM",
+    "flights": 18
+  },
+  {
+    "airport": "KEWR",
     "flights": 17
   },
   {
-    "airport": "KMCO",
+    "airport": "KDFW",
     "flights": 17
-  },
-  {
-    "airport": "VIDP",
-    "flights": 14
   },
   {
     "airport": "KLGA",
+    "flights": 16
+  },
+  {
+    "airport": "KBNA",
+    "flights": 16
+  },
+  {
+    "airport": "EDDF",
+    "flights": 15
+  },
+  {
+    "airport": "KMCO",
+    "flights": 14
+  },
+  {
+    "airport": "CYYC",
+    "flights": 14
+  },
+  {
+    "airport": "RJTT",
+    "flights": 14
+  },
+  {
+    "airport": "VHHH",
+    "flights": 14
+  },
+  {
+    "airport": "KIAD",
     "flights": 13
   },
   {
-    "airport": "CYUL",
-    "flights": 13
-  },
-  {
-    "airport": "ZGSZ",
+    "airport": "VIDP",
     "flights": 12
   },
   {
-    "airport": "KJFK",
+    "airport": "KTPA",
     "flights": 12
   },
   {
-    "airport": "VTBS",
-    "flights": 11
+    "airport": "KOAK",
+    "flights": 12
   },
   {
     "airport": "LEBL",
     "flights": 11
   },
   {
-    "airport": "KAUS",
+    "airport": "CYUL",
     "flights": 11
-  },
-  {
-    "airport": "EDDF",
-    "flights": 11
-  },
-  {
-    "airport": "CYYC",
-    "flights": 10
-  },
-  {
-    "airport": "KSTL",
-    "flights": 9
-  },
-  {
-    "airport": "EGCC",
-    "flights": 9
   }
 ]
