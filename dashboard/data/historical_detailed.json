@@ -42,11 +42,11 @@
     },
     {
       "hour": 10,
-      "count": 20285
+      "count": 33246
     },
     {
       "hour": 11,
-      "count": 38691
+      "count": 53115
     },
     {
       "hour": 12,
@@ -101,19 +101,19 @@
     {
       "hour": 0,
       "count": 8161,
-      "pulse_index": 25.0,
+      "pulse_index": 24.0,
       "status": "TROUGH"
     },
     {
       "hour": 1,
       "count": 6947,
-      "pulse_index": 21.0,
+      "pulse_index": 20.0,
       "status": "TROUGH"
     },
     {
       "hour": 2,
       "count": 13216,
-      "pulse_index": 40.0,
+      "pulse_index": 39.0,
       "status": "TROUGH"
     },
     {
@@ -125,174 +125,174 @@
     {
       "hour": 4,
       "count": 14676,
-      "pulse_index": 44.0,
+      "pulse_index": 43.0,
       "status": "TROUGH"
     },
     {
       "hour": 5,
       "count": 17795,
-      "pulse_index": 54.0,
+      "pulse_index": 52.0,
       "status": "NORMAL"
     },
     {
       "hour": 6,
       "count": 51824,
-      "pulse_index": 157.0,
+      "pulse_index": 151.0,
       "status": "PEAK"
     },
     {
       "hour": 7,
       "count": 24727,
-      "pulse_index": 75.0,
+      "pulse_index": 72.0,
       "status": "NORMAL"
     },
     {
       "hour": 8,
       "count": 36744,
-      "pulse_index": 111.0,
+      "pulse_index": 107.0,
       "status": "NORMAL"
     },
     {
       "hour": 9,
       "count": 29594,
-      "pulse_index": 89.0,
+      "pulse_index": 86.0,
       "status": "NORMAL"
     },
     {
       "hour": 10,
-      "count": 20285,
-      "pulse_index": 61.0,
+      "count": 33246,
+      "pulse_index": 97.0,
       "status": "NORMAL"
     },
     {
       "hour": 11,
-      "count": 38691,
-      "pulse_index": 117.0,
-      "status": "NORMAL"
+      "count": 53115,
+      "pulse_index": 155.0,
+      "status": "PEAK"
     },
     {
       "hour": 12,
       "count": 8000,
-      "pulse_index": 24.0,
+      "pulse_index": 23.0,
       "status": "TROUGH"
     },
     {
       "hour": 13,
       "count": 32018,
-      "pulse_index": 97.0,
+      "pulse_index": 94.0,
       "status": "NORMAL"
     },
     {
       "hour": 14,
       "count": 35774,
-      "pulse_index": 108.0,
+      "pulse_index": 105.0,
       "status": "NORMAL"
     },
     {
       "hour": 15,
       "count": 38287,
-      "pulse_index": 116.0,
+      "pulse_index": 112.0,
       "status": "NORMAL"
     },
     {
       "hour": 16,
       "count": 37556,
-      "pulse_index": 114.0,
+      "pulse_index": 110.0,
       "status": "NORMAL"
     },
     {
       "hour": 17,
       "count": 49365,
-      "pulse_index": 149.0,
+      "pulse_index": 144.0,
       "status": "NORMAL"
     },
     {
       "hour": 18,
       "count": 35872,
-      "pulse_index": 108.0,
+      "pulse_index": 105.0,
       "status": "NORMAL"
     },
     {
       "hour": 19,
       "count": 60012,
-      "pulse_index": 181.0,
+      "pulse_index": 175.0,
       "status": "PEAK"
     },
     {
       "hour": 20,
       "count": 45889,
-      "pulse_index": 139.0,
+      "pulse_index": 134.0,
       "status": "NORMAL"
     },
     {
       "hour": 21,
       "count": 67452,
-      "pulse_index": 204.0,
+      "pulse_index": 197.0,
       "status": "PEAK"
     },
     {
       "hour": 22,
       "count": 58843,
-      "pulse_index": 178.0,
+      "pulse_index": 172.0,
       "status": "PEAK"
     },
     {
       "hour": 23,
       "count": 62211,
-      "pulse_index": 188.0,
+      "pulse_index": 182.0,
       "status": "PEAK"
     }
   ],
   "seasonal_pattern": [
     {
       "month": "Mar",
-      "avg_count": 793939
+      "avg_count": 821324
     }
   ],
   "heading_distribution": [
     {
       "direction": "N",
-      "count": 92026
+      "count": 95015
     },
     {
       "direction": "NE",
-      "count": 92848
+      "count": 95885
     },
     {
       "direction": "E",
-      "count": 114807
+      "count": 118173
     },
     {
       "direction": "SE",
-      "count": 92238
+      "count": 95577
     },
     {
       "direction": "S",
-      "count": 92495
+      "count": 95674
     },
     {
       "direction": "SW",
-      "count": 94449
+      "count": 98110
     },
     {
       "direction": "W",
-      "count": 119524
+      "count": 123647
     },
     {
       "direction": "NW",
-      "count": 95552
+      "count": 99243
     }
   ],
   "aircraft_weekly": [
     {
       "week": "2026-W11",
-      "aircraft": 78565
+      "aircraft": 79205
     }
   ],
   "aircraft_daily": [
     {
       "day": "2026-03-21",
-      "aircraft": 20085
+      "aircraft": 23368
     },
     {
       "day": "2026-03-20",
@@ -326,39 +326,39 @@
     {
       "weekday": 6,
       "label": "Sat",
-      "count": 56155
+      "count": 83540
     }
   ],
   "ground_airborne": {
-    "on_ground": 14990,
-    "airborne": 703746
+    "on_ground": 15305,
+    "airborne": 728128
   },
   "altitude_stats": {
     "min": -312.42,
     "max": 37459.92,
-    "avg": 6425.7
+    "avg": 6454.1
   },
   "speed_stats": {
     "min": 0.0,
     "max": 2222.16,
-    "avg": 150.4
+    "avg": 150.9
   },
   "adsb_type_distribution": [
     {
       "type": "Position Only",
-      "count": 69212
+      "count": 71696
     },
     {
       "type": "Has Velocity",
-      "count": 793581
+      "count": 820955
     },
     {
       "type": "Has Altitude",
-      "count": 718736
+      "count": 743433
     },
     {
       "type": "Full Data",
-      "count": 718062
+      "count": 742743
     }
   ],
   "metrics": {
@@ -368,8 +368,8 @@
     "data_completeness_position": 99.2,
     "data_completeness_time": 100.0,
     "data_completeness_all_fields": 90.4,
-    "unique_aircraft": 78565,
-    "total_records": 793939
+    "unique_aircraft": 79205,
+    "total_records": 821324
   },
   "insights": [
     {
@@ -387,7 +387,7 @@
     {
       "category": "Sky",
       "title": "Preferred Cruise: 10km",
-      "detail": "144,826 flights at 10km - the busiest sky corridor",
+      "detail": "151,202 flights at 10km - the busiest sky corridor",
       "icon": "\u2708\ufe0f"
     },
     {
@@ -398,20 +398,20 @@
     },
     {
       "category": "Operations",
-      "title": "Avg Altitude: 6,426m",
+      "title": "Avg Altitude: 6,454m",
       "detail": "Aircraft cruise at 21ft on average",
       "icon": "\ud83d\udeeb"
     },
     {
       "category": "Operations",
-      "title": "Avg Speed: 150m/s",
-      "detail": "Average ground speed is 292 knots",
+      "title": "Avg Speed: 151m/s",
+      "detail": "Average ground speed is 293 knots",
       "icon": "\ud83d\ude80"
     },
     {
       "category": "Airlines",
       "title": "Dominant Carrier: American Airlines",
-      "detail": "American Airlines flies 3.8% of identified flights",
+      "detail": "American Airlines flies 3.7% of identified flights",
       "icon": "\ud83c\udfc6"
     },
     {
@@ -434,18 +434,18 @@
     },
     {
       "category": "Anomaly",
-      "title": "Ghost Fleet: 865",
-      "detail": "865 aircraft with 0 velocity at altitude - possible parked aircraft",
+      "title": "Ghost Fleet: 908",
+      "detail": "908 aircraft with 0 velocity at altitude - possible parked aircraft",
       "icon": "\ud83d\udc7b"
     },
     {
       "category": "Fleet",
-      "title": "78,565 Unique Aircraft",
-      "detail": "Tracked 78,565 distinct aircraft in the data",
+      "title": "79,205 Unique Aircraft",
+      "detail": "Tracked 79,205 distinct aircraft in the data",
       "icon": "\ud83d\udee9\ufe0f"
     }
   ],
-  "unique_aircraft": 78565,
+  "unique_aircraft": 79205,
   "in_out_ratios": [
     {
       "airport": "HCME",
@@ -569,7 +569,7 @@
     }
   ],
   "ghost_planes": {
-    "aircraft": 865,
-    "sightings": 1276
+    "aircraft": 908,
+    "sightings": 1375
   }
 }
