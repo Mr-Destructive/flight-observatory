@@ -1,0 +1,693 @@
+{
+  "altitude_tiers": [
+    {
+      "tier": "LOW (0-3km)",
+      "flights": 250729,
+      "avg_speed": 73.0
+    },
+    {
+      "tier": "MID (3-9km)",
+      "flights": 155519,
+      "avg_speed": 181.0
+    },
+    {
+      "tier": "HIGH (9-12km)",
+      "flights": 279113,
+      "avg_speed": 231.0
+    },
+    {
+      "tier": "HEAVY (12-15km)",
+      "flights": 33212,
+      "avg_speed": 230.0
+    },
+    {
+      "tier": "ULTRALONG (>15km)",
+      "flights": 153,
+      "avg_speed": 57.0
+    }
+  ],
+  "speed_tiers": [
+    {
+      "tier": "SLOW (<100m/s)",
+      "flights": 208158,
+      "avg_alt": 1149.0
+    },
+    {
+      "tier": "CRUISING (100-200)",
+      "flights": 169806,
+      "avg_alt": 5103.0
+    },
+    {
+      "tier": "FAST (200-300)",
+      "flights": 337819,
+      "avg_alt": 10305.0
+    },
+    {
+      "tier": "VFAST (300-400)",
+      "flights": 2757,
+      "avg_alt": 10746.0
+    },
+    {
+      "tier": "DEMON (>400)",
+      "flights": 186,
+      "avg_alt": 8981.0
+    }
+  ],
+  "efficiency_curve": [
+    {
+      "altitude": 1000,
+      "flights": 60902,
+      "avg_speed": 90.0,
+      "efficiency": 45.03
+    },
+    {
+      "altitude": 2000,
+      "flights": 39717,
+      "avg_speed": 112.0,
+      "efficiency": 37.37
+    },
+    {
+      "altitude": 3000,
+      "flights": 30396,
+      "avg_speed": 144.0,
+      "efficiency": 36.02
+    },
+    {
+      "altitude": 4000,
+      "flights": 24023,
+      "avg_speed": 165.0,
+      "efficiency": 33.01
+    },
+    {
+      "altitude": 5000,
+      "flights": 22348,
+      "avg_speed": 178.0,
+      "efficiency": 29.73
+    },
+    {
+      "altitude": 6000,
+      "flights": 23362,
+      "avg_speed": 190.0,
+      "efficiency": 27.12
+    },
+    {
+      "altitude": 7000,
+      "flights": 27619,
+      "avg_speed": 200.0,
+      "efficiency": 25.02
+    },
+    {
+      "altitude": 8000,
+      "flights": 26782,
+      "avg_speed": 218.0,
+      "efficiency": 24.17
+    },
+    {
+      "altitude": 9000,
+      "flights": 44352,
+      "avg_speed": 226.0,
+      "efficiency": 22.62
+    },
+    {
+      "altitude": 10000,
+      "flights": 143961,
+      "avg_speed": 233.0,
+      "efficiency": 21.14
+    },
+    {
+      "altitude": 11000,
+      "flights": 89214,
+      "avg_speed": 234.0,
+      "efficiency": 19.51
+    },
+    {
+      "altitude": 12000,
+      "flights": 22296,
+      "avg_speed": 231.0,
+      "efficiency": 17.8
+    },
+    {
+      "altitude": 13000,
+      "flights": 10133,
+      "avg_speed": 227.0,
+      "efficiency": 16.25
+    },
+    {
+      "altitude": 14000,
+      "flights": 656,
+      "avg_speed": 241.0,
+      "efficiency": 16.09
+    }
+  ],
+  "busiest_corridors": [
+    {
+      "altitude_band": 10000,
+      "flights": 144826
+    },
+    {
+      "altitude_band": 11000,
+      "flights": 89669
+    },
+    {
+      "altitude_band": 9000,
+      "flights": 44618
+    },
+    {
+      "altitude_band": 3000,
+      "flights": 30739
+    },
+    {
+      "altitude_band": 7000,
+      "flights": 27709
+    },
+    {
+      "altitude_band": 8000,
+      "flights": 26902
+    },
+    {
+      "altitude_band": 4000,
+      "flights": 24196
+    },
+    {
+      "altitude_band": 6000,
+      "flights": 23496
+    },
+    {
+      "altitude_band": 5000,
+      "flights": 22479
+    },
+    {
+      "altitude_band": 12000,
+      "flights": 22395
+    }
+  ],
+  "flight_phases": [
+    {
+      "phase": "HIGH_CRITERIA",
+      "sightings": 279113,
+      "percentage": 38.8
+    },
+    {
+      "phase": "TAKEOFF/CLIMB",
+      "sightings": 235747,
+      "percentage": 32.8
+    },
+    {
+      "phase": "LOW_CRITERIA",
+      "sightings": 155521,
+      "percentage": 21.6
+    },
+    {
+      "phase": "CRUISE",
+      "sightings": 33365,
+      "percentage": 4.6
+    },
+    {
+      "phase": "GROUND",
+      "sightings": 14990,
+      "percentage": 2.1
+    }
+  ],
+  "directional_traffic": [
+    {
+      "direction": "WESTBOUND",
+      "flights": 198336,
+      "avg_speed": 163.0,
+      "avg_alt": 6784.0
+    },
+    {
+      "direction": "EASTBOUND",
+      "flights": 192817,
+      "avg_speed": 178.0,
+      "avg_alt": 6670.0
+    },
+    {
+      "direction": "SOUTHBOUND",
+      "flights": 163907,
+      "avg_speed": 159.0,
+      "avg_alt": 6015.0
+    },
+    {
+      "direction": "NORTHBOUND",
+      "flights": 163666,
+      "avg_speed": 156.0,
+      "avg_alt": 6115.0
+    }
+  ],
+  "speed_leaderboard": [
+    {
+      "icao24": "155c0f",
+      "max_speed": 2222.16,
+      "avg_alt": null,
+      "region": "unknown"
+    },
+    {
+      "icao24": "06a14a",
+      "max_speed": 2111.33,
+      "avg_alt": 7043.0,
+      "region": "unknown"
+    },
+    {
+      "icao24": "507cba",
+      "max_speed": 1968.94,
+      "avg_alt": 10215.0,
+      "region": "unknown"
+    },
+    {
+      "icao24": "8990f4",
+      "max_speed": 1893.63,
+      "avg_alt": 3955.0,
+      "region": "unknown"
+    },
+    {
+      "icao24": "152040",
+      "max_speed": 1861.2,
+      "avg_alt": 3715.0,
+      "region": "unknown"
+    },
+    {
+      "icao24": "155c10",
+      "max_speed": 1841.43,
+      "avg_alt": null,
+      "region": "unknown"
+    },
+    {
+      "icao24": "151df2",
+      "max_speed": 1745.5,
+      "avg_alt": 9510.0,
+      "region": "unknown"
+    },
+    {
+      "icao24": "155c5c",
+      "max_speed": 1675.88,
+      "avg_alt": null,
+      "region": "unknown"
+    },
+    {
+      "icao24": "600854",
+      "max_speed": 1654.67,
+      "avg_alt": 4249.0,
+      "region": "unknown"
+    },
+    {
+      "icao24": "155be0",
+      "max_speed": 1587.9,
+      "avg_alt": null,
+      "region": "unknown"
+    },
+    {
+      "icao24": "155bd1",
+      "max_speed": 1568.47,
+      "avg_alt": 10058.0,
+      "region": "unknown"
+    },
+    {
+      "icao24": "60084e",
+      "max_speed": 1523.67,
+      "avg_alt": 10973.0,
+      "region": "unknown"
+    },
+    {
+      "icao24": "151e39",
+      "max_speed": 1455.02,
+      "avg_alt": 10051.0,
+      "region": "unknown"
+    },
+    {
+      "icao24": "155c54",
+      "max_speed": 1373.79,
+      "avg_alt": 2431.0,
+      "region": "unknown"
+    },
+    {
+      "icao24": "151dfc",
+      "max_speed": 1354.37,
+      "avg_alt": 10668.0,
+      "region": "unknown"
+    }
+  ],
+  "holding_patterns": [
+    {
+      "airport": "HCME",
+      "aircraft": 365,
+      "sightings": 532,
+      "avg_alt": 1447.0
+    },
+    {
+      "airport": "HKML",
+      "aircraft": 336,
+      "sightings": 485,
+      "avg_alt": 1224.0
+    },
+    {
+      "airport": "UESG",
+      "aircraft": 298,
+      "sightings": 443,
+      "avg_alt": 1335.0
+    },
+    {
+      "airport": "HCMV",
+      "aircraft": 220,
+      "sightings": 306,
+      "avg_alt": 1451.0
+    },
+    {
+      "airport": "YKII",
+      "aircraft": 191,
+      "sightings": 215,
+      "avg_alt": 1570.0
+    },
+    {
+      "airport": "OEYN",
+      "aircraft": 111,
+      "sightings": 180,
+      "avg_alt": 1417.0
+    },
+    {
+      "airport": "ZSJU",
+      "aircraft": 134,
+      "sightings": 157,
+      "avg_alt": 1355.0
+    },
+    {
+      "airport": "HCMN",
+      "aircraft": 96,
+      "sightings": 141,
+      "avg_alt": 1391.0
+    },
+    {
+      "airport": "FSMA",
+      "aircraft": 92,
+      "sightings": 118,
+      "avg_alt": 1356.0
+    },
+    {
+      "airport": "OEOM",
+      "aircraft": 91,
+      "sightings": 117,
+      "avg_alt": 1336.0
+    }
+  ],
+  "wind_effect": [
+    {
+      "route": "EASTBOUND (Tailwind)",
+      "flights": 384424,
+      "avg_speed": 153.0,
+      "avg_alt": 6406.0
+    },
+    {
+      "route": "WESTBOUND (Headwind)",
+      "flights": 387787,
+      "avg_speed": 156.0,
+      "avg_alt": 6465.0
+    }
+  ],
+  "regional_density": [
+    {
+      "lat": 40.0,
+      "lon": -75.0,
+      "flights": 32011,
+      "aircraft": 8567
+    },
+    {
+      "lat": 35.0,
+      "lon": -85.0,
+      "flights": 24655,
+      "aircraft": 8251
+    },
+    {
+      "lat": 30.0,
+      "lon": -80.0,
+      "flights": 20454,
+      "aircraft": 7286
+    },
+    {
+      "lat": 35.0,
+      "lon": -80.0,
+      "flights": 20320,
+      "aircraft": 7382
+    },
+    {
+      "lat": 40.0,
+      "lon": -85.0,
+      "flights": 19726,
+      "aircraft": 7407
+    },
+    {
+      "lat": 35.0,
+      "lon": -95.0,
+      "flights": 17924,
+      "aircraft": 6708
+    },
+    {
+      "lat": 35.0,
+      "lon": -115.0,
+      "flights": 17913,
+      "aircraft": 6187
+    },
+    {
+      "lat": 35.0,
+      "lon": -120.0,
+      "flights": 17769,
+      "aircraft": 5547
+    },
+    {
+      "lat": 50.0,
+      "lon": 0.0,
+      "flights": 17539,
+      "aircraft": 5396
+    },
+    {
+      "lat": 40.0,
+      "lon": -90.0,
+      "flights": 17381,
+      "aircraft": 6404
+    },
+    {
+      "lat": 50.0,
+      "lon": 5.0,
+      "flights": 16878,
+      "aircraft": 5369
+    },
+    {
+      "lat": 50.0,
+      "lon": 10.0,
+      "flights": 16776,
+      "aircraft": 5259
+    },
+    {
+      "lat": 35.0,
+      "lon": -110.0,
+      "flights": 15509,
+      "aircraft": 5182
+    },
+    {
+      "lat": 40.0,
+      "lon": -80.0,
+      "flights": 14872,
+      "aircraft": 6450
+    },
+    {
+      "lat": 25.0,
+      "lon": -80.0,
+      "flights": 14624,
+      "aircraft": 5842
+    },
+    {
+      "lat": 30.0,
+      "lon": -85.0,
+      "flights": 14569,
+      "aircraft": 6210
+    },
+    {
+      "lat": 40.0,
+      "lon": -105.0,
+      "flights": 13439,
+      "aircraft": 4863
+    },
+    {
+      "lat": 45.0,
+      "lon": 10.0,
+      "flights": 12781,
+      "aircraft": 3959
+    },
+    {
+      "lat": 30.0,
+      "lon": -95.0,
+      "flights": 12498,
+      "aircraft": 5323
+    },
+    {
+      "lat": 40.0,
+      "lon": -120.0,
+      "flights": 10909,
+      "aircraft": 3948
+    }
+  ],
+  "airline_preferences": [
+    {
+      "airline": "Tower Air",
+      "flights": 93,
+      "avg_alt": 11554.0,
+      "avg_speed": 24.0
+    },
+    {
+      "airline": "Jazeera Airways",
+      "flights": 63,
+      "avg_alt": 10424.0,
+      "avg_speed": 213.0
+    },
+    {
+      "airline": "Royal Jordanian",
+      "flights": 564,
+      "avg_alt": 10411.0,
+      "avg_speed": 221.0
+    },
+    {
+      "airline": "Afra Airlines",
+      "flights": 60,
+      "avg_alt": 10357.0,
+      "avg_speed": 201.0
+    },
+    {
+      "airline": "Scat Air",
+      "flights": 211,
+      "avg_alt": 10329.0,
+      "avg_speed": 211.0
+    },
+    {
+      "airline": "XL Airways France",
+      "flights": 127,
+      "avg_alt": 10302.0,
+      "avg_speed": 217.0
+    },
+    {
+      "airline": "Aero California",
+      "flights": 173,
+      "avg_alt": 10262.0,
+      "avg_speed": 41.0
+    },
+    {
+      "airline": "TUIfly Nordic",
+      "flights": 162,
+      "avg_alt": 10261.0,
+      "avg_speed": 213.0
+    },
+    {
+      "airline": "Pakistan International Airlines",
+      "flights": 60,
+      "avg_alt": 10251.0,
+      "avg_speed": 201.0
+    },
+    {
+      "airline": "AlMasria Universal Airlines",
+      "flights": 136,
+      "avg_alt": 10239.0,
+      "avg_speed": 327.0
+    },
+    {
+      "airline": "Nesma Airlines",
+      "flights": 229,
+      "avg_alt": 10199.0,
+      "avg_speed": 217.0
+    },
+    {
+      "airline": "DAT Enterprise Limited",
+      "flights": 406,
+      "avg_alt": 10092.0,
+      "avg_speed": 211.0
+    },
+    {
+      "airline": "Jetairfly",
+      "flights": 407,
+      "avg_alt": 10088.0,
+      "avg_speed": 208.0
+    },
+    {
+      "airline": "Shanxi Airlines",
+      "flights": 197,
+      "avg_alt": 10075.0,
+      "avg_speed": 216.0
+    },
+    {
+      "airline": "Air Cairo",
+      "flights": 544,
+      "avg_alt": 10029.0,
+      "avg_speed": 219.0
+    },
+    {
+      "airline": "Nationwide Airlines",
+      "flights": 62,
+      "avg_alt": 9990.0,
+      "avg_speed": 188.0
+    },
+    {
+      "airline": "Arkefly",
+      "flights": 224,
+      "avg_alt": 9978.0,
+      "avg_speed": 210.0
+    },
+    {
+      "airline": "Oman Air",
+      "flights": 438,
+      "avg_alt": 9920.0,
+      "avg_speed": 219.0
+    },
+    {
+      "airline": "Executive AirShare",
+      "flights": 273,
+      "avg_alt": 9912.0,
+      "avg_speed": 179.0
+    },
+    {
+      "airline": "Uzbekistan Airways",
+      "flights": 262,
+      "avg_alt": 9899.0,
+      "avg_speed": 187.0
+    }
+  ],
+  "peak_hours": [
+    {
+      "hour": "21",
+      "flights": 67452
+    },
+    {
+      "hour": "23",
+      "flights": 62211
+    },
+    {
+      "hour": "19",
+      "flights": 60012
+    },
+    {
+      "hour": "22",
+      "flights": 58843
+    },
+    {
+      "hour": "06",
+      "flights": 51824
+    }
+  ],
+  "quiet_hours": [
+    {
+      "hour": "01",
+      "flights": 6947
+    },
+    {
+      "hour": "12",
+      "flights": 8000
+    },
+    {
+      "hour": "00",
+      "flights": 8161
+    },
+    {
+      "hour": "02",
+      "flights": 13216
+    },
+    {
+      "hour": "04",
+      "flights": 14676
+    }
+  ]
+}

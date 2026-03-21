@@ -1,9 +1,5 @@
 const charts = new Map();
 
-// ============================================================================
-// Data Fetching
-// ============================================================================
-
 async function fetchJson(path) {
   try {
     const basePath = window.location.pathname.split('/').slice(0, -1).join('/');
@@ -17,26 +13,16 @@ async function fetchJson(path) {
   }
 }
 
-// ============================================================================
-// Chart Creation
-// ============================================================================
-
-function createChart(canvasId, type, labels, data, color, yLabel = "") {
+function createChart(canvasId, type, labels, data, color, yLabel = "", options = {}) {
   const canvas = document.getElementById(canvasId);
   if (!canvas) return null;
 
   const hasData = data && data.length > 0 && data.some(v => v !== null && v !== undefined);
-  const isSinglePoint = hasData && data.filter(v => v !== null && v !== undefined).length === 1;
-
+  
   if (!hasData) {
     const parent = canvas.parentElement;
     if (parent) {
-      const hint = document.createElement("div");
-      hint.className = "hint";
-      hint.textContent = "No data available";
-      hint.style.cssText = "text-align: center; padding: 60px 0; color: var(--text-tertiary);";
-      canvas.style.display = "none";
-      parent.appendChild(hint);
+      canvas.style.display = 'none';
     }
     return null;
   }
@@ -46,22 +32,20 @@ function createChart(canvasId, type, labels, data, color, yLabel = "") {
     type,
     data: {
       labels,
-      datasets: [
-        {
-          label: yLabel || "Value",
-          data,
-          borderColor: color,
-          backgroundColor:
-            type === "line" ? color.replace(/[^,]+(?=\))/, "0.1") : color + "40",
-          fill: type === "line" && !isSinglePoint,
-          tension: type === "line" ? 0.3 : 0,
-          borderWidth: 2,
-          pointRadius: isSinglePoint ? 4 : (hasData ? 2 : 0),
-          pointHoverRadius: 4,
-          pointBackgroundColor: color,
-          spanGaps: true,
-        },
-      ],
+      datasets: [{
+        label: yLabel || "Value",
+        data,
+        borderColor: color,
+        backgroundColor: type === "line" ? color.replace(/[^,]+(?=\))/, "0.1") : color + "40",
+        fill: type === "line",
+        tension: type === "line" ? 0.3 : 0,
+        borderWidth: 2,
+        pointRadius: 3,
+        pointHoverRadius: 5,
+        pointBackgroundColor: color,
+        spanGaps: true,
+        ...options.dataset,
+      }],
     },
     options: {
       responsive: true,
@@ -78,18 +62,11 @@ function createChart(canvasId, type, labels, data, color, yLabel = "") {
           displayColors: false,
         },
       },
-      interaction: { mode: "index", intersect: false },
       scales: {
-        x: {
-          ticks: { color: "#6b7280", maxRotation: 45 },
-          grid: { color: "rgba(255, 255, 255, 0.05)", drawBorder: false },
-        },
-        y: {
-          beginAtZero: type === "bar",
-          ticks: { color: "#6b7280" },
-          grid: { color: "rgba(255, 255, 255, 0.05)", drawBorder: false },
-        },
+        x: { ticks: { color: "#6b7280", maxRotation: 45 }, grid: { color: "rgba(255, 255, 255, 0.05)" } },
+        y: { beginAtZero: type === "bar", ticks: { color: "#6b7280" }, grid: { color: "rgba(255, 255, 255, 0.05)" } },
       },
+      ...options.chart,
     },
   });
 
@@ -106,143 +83,130 @@ function formatNumber(val) {
   return String(val);
 }
 
-function renderHistoricalMetrics(summary, detailed) {
-  const grid = document.getElementById("historicalMetrics");
-  if (!grid) return;
-
-  const metrics = [];
+function renderInsights(elementId, insights) {
+  const el = document.getElementById(elementId);
+  if (!el || !insights?.length) return;
   
-  if (summary?.total_rows) {
-    document.getElementById("uniqueAircraft").textContent = formatNumber(detailed?.unique_aircraft || "--");
-  }
-
-  if (detailed?.altitude_stats) {
-    const alt = detailed.altitude_stats;
-    metrics.push(
-      { label: "Avg Altitude", value: formatNumber(alt.avg) + "m", color: "--accent-orange" },
-      { label: "Max Altitude", value: formatNumber(alt.max) + "m", color: "--accent-purple" }
-    );
-  }
-
-  if (detailed?.speed_stats) {
-    const spd = detailed.speed_stats;
-    metrics.push(
-      { label: "Avg Speed", value: formatNumber(spd.avg) + "m/s", color: "--accent-cyan" },
-      { label: "Max Speed", value: formatNumber(spd.max) + "m/s", color: "--accent-green" }
-    );
-  }
-
-  if (detailed?.ground_airborne) {
-    const ga = detailed.ground_airborne;
-    const total = ga.on_ground + ga.airborne;
-    const airbornePct = total > 0 ? ((ga.airborne / total) * 100).toFixed(1) : 0;
-    metrics.push(
-      { label: "Airborne", value: formatNumber(ga.airborne) + " (" + airbornePct + "%)", color: "--accent-green" },
-      { label: "On Ground", value: formatNumber(ga.on_ground), color: "--accent-orange" }
-    );
-  }
-
-  if (detailed?.metrics) {
-    const m = detailed.metrics;
-    if (m.data_completeness_all_fields) {
-      metrics.push({ label: "Data Quality", value: m.data_completeness_all_fields + "%", color: "--accent-cyan" });
-    }
-    if (m.total_records) {
-      metrics.push({ label: "Total Records", value: formatNumber(m.total_records), color: "--accent-purple" });
-    }
-  }
-
-  if (metrics.length === 0) return;
-
-  grid.innerHTML = metrics
-    .map((m) => `
-      <div class="metric-card">
-        <div class="metric-label">${m.label}</div>
-        <div class="metric-value">${m.value}</div>
+  el.innerHTML = insights.map(insight => `
+    <article class="insight-card">
+      <div class="insight-icon">${insight.icon || '📊'}</div>
+      <div class="insight-content">
+        <h4>${insight.title}</h4>
+        <p>${insight.detail}</p>
       </div>
-    `)
-    .join("");
+    </article>
+  `).join('');
 }
 
-// ============================================================================
-// Table Rendering
-// ============================================================================
+function renderQuickStats(summary, detailed, sky) {
+  const grid = document.getElementById("quickStats");
+  if (!grid) return;
+
+  const stats = [];
+  
+  if (detailed?.unique_aircraft) {
+    stats.push({ label: "Unique Aircraft", value: formatNumber(detailed.unique_aircraft), color: "--accent-purple" });
+  }
+  if (detailed?.altitude_stats?.avg) {
+    stats.push({ label: "Avg Altitude", value: Math.round(detailed.altitude_stats.avg) + "m", color: "--accent-orange" });
+  }
+  if (detailed?.speed_stats?.max) {
+    stats.push({ label: "Max Speed", value: Math.round(detailed.speed_stats.max) + "m/s", color: "--accent-cyan" });
+  }
+  if (sky?.busiest_corridors?.[0]) {
+    stats.push({ label: "Busiest FL", value: Math.round(sky.busiest_corridors[0].altitude_band / 1000) + "km", color: "--accent-green" });
+  }
+  if (detailed?.ground_airborne) {
+    const pct = Math.round(100 * detailed.ground_airborne.airborne / (detailed.ground_airborne.airborne + detailed.ground_airborne.on_ground));
+    stats.push({ label: "Airborne %", value: pct + "%", color: "--accent-pink" });
+  }
+  if (detailed?.ghost_planes) {
+    stats.push({ label: "Ghost Fleet", value: formatNumber(detailed.ghost_planes.aircraft), color: "--accent-purple" });
+  }
+
+  grid.innerHTML = stats.map(s => `
+    <div class="metric-card">
+      <div class="metric-label">${s.label}</div>
+      <div class="metric-value" style="color: var(${s.color})">${s.value}</div>
+    </div>
+  `).join('');
+}
+
+function renderSpeedLeaderboard(leaderboard) {
+  const el = document.getElementById("speedLeaderboard");
+  if (!el || !leaderboard?.length) return;
+
+  el.innerHTML = `
+    <table class="leaderboard-table">
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>ICAO24</th>
+          <th>Max Speed</th>
+          <th>Speed (knots)</th>
+          <th>Avg Alt</th>
+          <th>Region</th>
+        </tr>
+      </thead>
+      <tbody>
+        ${leaderboard.map((item, i) => `
+          <tr>
+            <td class="rank">#${i + 1}</td>
+            <td class="icao">${item.icao24?.toUpperCase() || '--'}</td>
+            <td class="speed">${Math.round(item.max_speed)} m/s</td>
+            <td class="knots">${Math.round(item.max_speed * 1.944)} kt</td>
+            <td>${Math.round(item.avg_alt || 0)}m</td>
+            <td>${item.region || '--'}</td>
+          </tr>
+        `).join('')}
+      </tbody>
+    </table>
+  `;
+}
 
 function renderTable(elementId, rows, columns) {
   const el = document.getElementById(elementId);
-  if (!el) return;
+  if (!el || !rows?.length) return;
 
-  if (!rows || !Array.isArray(rows) || rows.length === 0) {
-    el.innerHTML = '<div class="hint">No data available</div>';
-    return;
-  }
-
-  const header = columns.map((c) => `<th>${c.toUpperCase()}</th>`).join("");
-  const body = rows
-    .map(
-      (r) =>
-        `<tr>${columns.map((c) => `<td>${formatNumber(r[c])}</td>`).join("")}</tr>`
-    )
-    .join("");
+  const header = columns.map(c => `<th>${c.toUpperCase()}</th>`).join("");
+  const body = rows.map(r => 
+    `<tr>${columns.map(c => `<td>${formatNumber(r[c])}</td>`).join('')}</tr>`
+  ).join("");
 
   el.innerHTML = `<table><thead><tr>${header}</tr></thead><tbody>${body}</tbody></table>`;
 }
 
-function renderMetricsTable(elementId, metrics) {
-  const el = document.getElementById(elementId);
-  if (!el || !metrics || typeof metrics !== "object") {
-    if (el) el.innerHTML = '<div class="hint">No metrics available</div>';
-    return;
-  }
-
-  const rows = Object.entries(metrics)
-    .sort(([a], [b]) => a.localeCompare(b))
-    .map(([key, value]) => {
-      let formatted = value;
-      if (typeof value === "number") {
-        formatted = Number.isInteger(value)
-          ? value.toLocaleString()
-          : value.toFixed(2);
-      } else if (Array.isArray(value) || (value && typeof value === "object")) {
-        formatted = JSON.stringify(value);
-      }
-      return { metric: key, value: formatted };
-    });
-
-  renderTable(elementId, rows, ["metric", "value"]);
+function renderGroundAirborne(data) {
+  if (!data) return;
+  const ctx = document.getElementById("groundAirborne");
+  if (!ctx) return;
+  
+  new Chart(ctx.getContext("2d"), {
+    type: "doughnut",
+    data: {
+      labels: ["On Ground", "Airborne"],
+      datasets: [{
+        data: [data.on_ground || 0, data.airborne || 0],
+        backgroundColor: ["rgb(249, 115, 22)", "rgb(16, 185, 129)"],
+        borderWidth: 0,
+      }],
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: true, position: "bottom", labels: { color: "#9ca3af" } },
+      },
+    },
+  });
 }
-
-function renderInsights(elementId, insights) {
-  const el = document.getElementById(elementId);
-  if (!el) return;
-
-  if (!insights || !Array.isArray(insights) || insights.length === 0) {
-    el.innerHTML = '<div class="hint">No insights available</div>';
-    return;
-  }
-
-  el.innerHTML = insights
-    .map(
-      (insight) => `
-    <article class="insight-card">
-      <div class="insight-tag">${insight.category || insight.tag || "Insight"}</div>
-      <h4>${insight.title}</h4>
-      <p>${insight.detail || insight.description}</p>
-    </article>
-  `
-    )
-    .join("");
-}
-
-// ============================================================================
-// Main Load Function
-// ============================================================================
 
 async function loadHistoricalDashboard() {
-  const [monthly, summary, detailed] = await Promise.all([
+  const [monthly, summary, detailed, sky] = await Promise.all([
     fetchJson("./data/historical_monthly.json"),
     fetchJson("./data/historical_summary.json"),
     fetchJson("./data/historical_detailed.json"),
+    fetchJson("./data/sky_analytics.json"),
   ]);
 
   if (!monthly || !summary) {
@@ -250,302 +214,280 @@ async function loadHistoricalDashboard() {
     return;
   }
 
-  // Update header info
+  // Header info
   if (summary.total_rows) {
-    document.getElementById("totalRows").textContent =
-      summary.total_rows.toLocaleString();
+    document.getElementById("totalRows").textContent = summary.total_rows.toLocaleString();
   }
-  if (summary.date_range && summary.date_range.length === 2) {
+  if (summary.date_range?.length === 2) {
     const start = new Date(summary.date_range[0]);
     const end = new Date(summary.date_range[1]);
     const days = Math.ceil((end - start) / (1000 * 60 * 60 * 24));
     if (days <= 1) {
       document.getElementById("timeSpan").textContent = "1 day";
-      document.getElementById("dataDescription").textContent = "Recent flight activity snapshot";
     } else if (days < 30) {
       document.getElementById("timeSpan").textContent = days + " days";
-      document.getElementById("dataDescription").textContent = "Recent traffic patterns";
     } else if (days < 365) {
       document.getElementById("timeSpan").textContent = Math.ceil(days / 30) + " months";
-      document.getElementById("dataDescription").textContent = "Seasonal traffic patterns";
     } else {
       document.getElementById("timeSpan").textContent = Math.ceil(days / 365) + " years";
-      document.getElementById("dataDescription").textContent = "Multi-year traffic trends";
     }
-  } else if (summary.months) {
-    document.getElementById("timeSpan").textContent =
-      summary.months + " months";
   }
 
-  // Render metrics
-  renderHistoricalMetrics(summary, detailed);
+  // Quick stats
+  renderQuickStats(summary, detailed, sky);
 
-  // ========================================================================
-  // Monthly Trends
-  // ========================================================================
+  // Insights
+  if (detailed?.insights?.length) {
+    renderInsights("insightsContainer", detailed.insights);
+  }
 
-  if (Array.isArray(monthly) && monthly.length > 0) {
+  // Ghost Fleet
+  if (detailed?.ghost_planes) {
+    document.getElementById("ghostAircraft").textContent = formatNumber(detailed.ghost_planes.aircraft);
+    document.getElementById("ghostSightings").textContent = formatNumber(detailed.ghost_planes.sightings);
+  }
+
+  // Speed Leaderboard
+  if (sky?.speed_leaderboard?.length) {
+    renderSpeedLeaderboard(sky.speed_leaderboard);
+  }
+
+  // Sky Pulse Chart
+  if (detailed?.hourly_pulse?.length) {
     createChart(
-      "monthlyActivity",
-      "line",
-      monthly.map((d) => d.month),
-      monthly.map((d) => d.count),
+      "skyPulse", "bar",
+      detailed.hourly_pulse.map(d => `${d.hour}:00`),
+      detailed.hourly_pulse.map(d => d.pulse_index),
+      "rgb(139, 92, 246)",
+      "Pulse Index %"
+    );
+  }
+
+  // Traffic Wave
+  if (detailed?.hourly_distribution?.length) {
+    createChart(
+      "trafficWave", "line",
+      detailed.hourly_distribution.map(d => `${d.hour}:00`),
+      detailed.hourly_distribution.map(d => d.count),
       "rgb(6, 182, 212)",
       "Flights"
     );
+  }
 
+  // Altitude Tiers
+  if (sky?.altitude_tiers?.length) {
     createChart(
-      "altitudeMonthly",
-      "line",
-      monthly.map((d) => d.month),
-      monthly.map((d) => d.alt_median || 0),
+      "altitudeTiers", "doughnut",
+      sky.altitude_tiers.map(d => d.tier),
+      sky.altitude_tiers.map(d => d.flights),
       "rgb(249, 115, 22)",
-      "Altitude (m)"
-    );
-
-    createChart(
-      "speedMonthly",
-      "line",
-      monthly.map((d) => d.month),
-      monthly.map((d) => d.speed_median || 0),
-      "rgb(168, 85, 247)",
-      "Speed (m/s)"
+      "Flights"
     );
   }
 
-  // ========================================================================
-  // Yearly Totals
-  // ========================================================================
-
-  if (summary.yearly_counts && Array.isArray(summary.yearly_counts)) {
+  // Flight Phases
+  if (sky?.flight_phases?.length) {
     createChart(
-      "yearlyTotals",
-      "bar",
-      summary.yearly_counts.map((d) => String(d.year)),
-      summary.yearly_counts.map((d) => d.count),
+      "flightPhases", "doughnut",
+      sky.flight_phases.map(d => d.phase.replace('_', ' ')),
+      sky.flight_phases.map(d => d.sightings),
       "rgb(16, 185, 129)",
-      "Flights"
+      "Sightings"
     );
   }
 
-  // ========================================================================
-  // Distributions
-  // ========================================================================
-
-  if (summary.altitude_bins && Array.isArray(summary.altitude_bins)) {
+  // Busiest Corridors
+  if (sky?.busiest_corridors?.length) {
     createChart(
-      "altitudeDistribution",
-      "bar",
-      summary.altitude_bins.map((d) => d.altitude_band),
-      summary.altitude_bins.map((d) => d.count),
+      "busiestCorridors", "bar",
+      sky.busiest_corridors.map(d => `${d.altitude_band / 1000}km`),
+      sky.busiest_corridors.map(d => d.flights),
       "rgb(168, 85, 247)",
       "Flights"
     );
   }
 
-  if (summary.speed_bins && Array.isArray(summary.speed_bins)) {
+  // Efficiency Curve
+  if (sky?.efficiency_curve?.length) {
     createChart(
-      "speedDistribution",
-      "bar",
-      summary.speed_bins.map((d) => d.speed_band),
-      summary.speed_bins.map((d) => d.count),
+      "efficiencyCurve", "line",
+      sky.efficiency_curve.map(d => `${d.altitude / 1000}km`),
+      sky.efficiency_curve.map(d => d.efficiency),
       "rgb(236, 72, 153)",
-      "Flights"
+      "Efficiency"
     );
   }
 
-  // ========================================================================
-  // Seasonal & Hourly Patterns
-  // ========================================================================
-
-  if (detailed?.seasonal_pattern && Array.isArray(detailed.seasonal_pattern)) {
-    createChart(
-      "seasonalPattern",
-      "bar",
-      detailed.seasonal_pattern.map((d) => d.month),
-      detailed.seasonal_pattern.map((d) => d.avg_count),
-      "rgb(59, 130, 246)",
-      "Avg Flights"
-    );
-  }
-
-  if (detailed?.hourly_distribution && Array.isArray(detailed.hourly_distribution)) {
-    createChart(
-      "hourlyPattern",
-      "bar",
-      detailed.hourly_distribution.map((d) => `${d.hour}h`),
-      detailed.hourly_distribution.map((d) => d.count),
-      "rgb(251, 146, 60)",
-      "Flights"
-    );
-  }
-
-  if (detailed?.weekday_distribution && Array.isArray(detailed.weekday_distribution)) {
-    createChart(
-      "weekdayPattern",
-      "bar",
-      detailed.weekday_distribution.map((d) => d.label || d.weekday),
-      detailed.weekday_distribution.map((d) => d.count),
-      "rgb(236, 72, 153)",
-      "Flights"
-    );
-  }
-
-  // ========================================================================
-  // Directional & Fleet
-  // ========================================================================
-
-  if (detailed?.heading_distribution && Array.isArray(detailed.heading_distribution)) {
-    createChart(
-      "headingDistribution",
-      "bar",
-      detailed.heading_distribution.map((d) => d.direction || d.heading),
-      detailed.heading_distribution.map((d) => d.count),
-      "rgb(34, 197, 94)",
-      "Flights"
-    );
-  }
-
-  if (detailed?.aircraft_weekly && Array.isArray(detailed.aircraft_weekly)) {
-    createChart(
-      "aircraftWeekly",
-      "line",
-      detailed.aircraft_weekly.map((d) => d.week),
-      detailed.aircraft_weekly.map((d) => d.aircraft),
-      "rgb(59, 130, 246)",
-      "Aircraft"
-    );
-  }
-
-  if (detailed?.aircraft_daily && Array.isArray(detailed.aircraft_daily)) {
-    createChart(
-      "aircraftDaily",
-      "line",
-      detailed.aircraft_daily.map((d) => d.day),
-      detailed.aircraft_daily.map((d) => d.aircraft),
-      "rgb(251, 146, 60)",
-      "Aircraft"
-    );
-  }
-
-  if (detailed?.ground_airborne) {
-    const ga = detailed.ground_airborne;
-    const ctx = document.getElementById("groundAirborne");
-    if (ctx) {
-      new Chart(ctx.getContext("2d"), {
-        type: "doughnut",
+  // In/Out Ratio
+  if (detailed?.in_out_ratios?.length) {
+    const arrivals = detailed.in_out_ratios.map(d => d.arrivals);
+    const departures = detailed.in_out_ratios.map(d => d.departures);
+    const labels = detailed.in_out_ratios.map(d => d.airport);
+    
+    const canvas = document.getElementById("inOutRatio");
+    if (canvas) {
+      new Chart(canvas.getContext("2d"), {
+        type: "bar",
         data: {
-          labels: ["On Ground", "Airborne"],
+          labels,
           datasets: [
-            {
-              data: [ga.on_ground || 0, ga.airborne || 0],
-              backgroundColor: ["rgb(249, 115, 22)", "rgb(16, 185, 129)"],
-              borderColor: ["rgba(249, 115, 22, 0.2)", "rgba(16, 185, 129, 0.2)"],
-              borderWidth: 1,
-            },
+            { label: "Arrivals", data: arrivals, backgroundColor: "rgb(16, 185, 129)", borderRadius: 4 },
+            { label: "Departures", data: departures, backgroundColor: "rgb(249, 115, 22)", borderRadius: 4 },
           ],
         },
         options: {
           responsive: true,
           maintainAspectRatio: false,
-          plugins: {
-            legend: { display: true, position: "bottom" },
-            tooltip: {
-              backgroundColor: "rgba(15, 23, 42, 0.95)",
-              titleColor: "#f3f4f6",
-              bodyColor: "#9ca3af",
-            },
+          plugins: { legend: { display: true, position: "bottom", labels: { color: "#9ca3af" } } },
+          scales: {
+            x: { ticks: { color: "#6b7280" }, grid: { color: "rgba(255, 255, 255, 0.05)" } },
+            y: { ticks: { color: "#6b7280" }, grid: { color: "rgba(255, 255, 255, 0.05)" } },
           },
         },
       });
-      charts.set("groundAirborne", ctx);
     }
   }
 
-  if (detailed?.top_airports_activity && Array.isArray(detailed.top_airports_activity)) {
+  // Heading Distribution
+  if (detailed?.heading_distribution?.length) {
     createChart(
-      "topAirportsActivity",
-      "bar",
-      detailed.top_airports_activity.map((d) => d.airport),
-      detailed.top_airports_activity.map((d) => d.activity),
-      "rgb(34, 197, 94)",
-      "Activity Count"
+      "headingDistribution", "bar",
+      detailed.heading_distribution.map(d => d.direction),
+      detailed.heading_distribution.map(d => d.count),
+      "rgb(59, 130, 246)",
+      "Flights"
     );
   }
 
-  // ========================================================================
-  // Data Quality
-  // ========================================================================
+  // Directional Traffic Stats
+  if (sky?.directional_traffic?.length) {
+    createChart(
+      "directionalTraffic", "bar",
+      sky.directional_traffic.map(d => d.direction),
+      sky.directional_traffic.map(d => d.flights),
+      "rgb(34, 197, 94)",
+      "Flights"
+    );
+  }
 
+  // Speed Tiers
+  if (sky?.speed_tiers?.length) {
+    createChart(
+      "speedTiers", "bar",
+      sky.speed_tiers.map(d => d.tier),
+      sky.speed_tiers.map(d => d.flights),
+      "rgb(251, 146, 60)",
+      "Flights"
+    );
+  }
+
+  // Wind Effect
+  if (sky?.wind_effect?.length) {
+    createChart(
+      "windEffect", "bar",
+      sky.wind_effect.map(d => d.route),
+      sky.wind_effect.map(d => d.avg_speed),
+      "rgb(6, 182, 212)",
+      "Avg Speed (m/s)"
+    );
+  }
+
+  // Holding Patterns
+  if (sky?.holding_patterns?.length) {
+    createChart(
+      "holdingPatterns", "bar",
+      sky.holding_patterns.map(d => d.airport),
+      sky.holding_patterns.map(d => d.sightings),
+      "rgb(236, 72, 153)",
+      "Sightings"
+    );
+  }
+
+  // Airline Preferences
+  if (sky?.airline_preferences?.length) {
+    createChart(
+      "airlinePreferences", "bar",
+      sky.airline_preferences.map(d => d.airline.substring(0, 15)),
+      sky.airline_preferences.map(d => d.avg_alt),
+      "rgb(168, 85, 247)",
+      "Avg Altitude (m)"
+    );
+  }
+
+  // Regional Density
+  if (sky?.regional_density?.length) {
+    createChart(
+      "regionalDensity", "bar",
+      sky.regional_density.map(d => `${d.lat}° / ${d.lon}°`),
+      sky.regional_density.map(d => d.flights),
+      "rgb(251, 146, 60)",
+      "Flights"
+    );
+  }
+
+  // Weekday Pattern
+  if (detailed?.weekday_distribution?.length) {
+    createChart(
+      "weekdayPattern", "bar",
+      detailed.weekday_distribution.map(d => d.label),
+      detailed.weekday_distribution.map(d => d.count),
+      "rgb(139, 92, 246)",
+      "Flights"
+    );
+  }
+
+  // Ground vs Airborne
+  if (detailed?.ground_airborne) {
+    renderGroundAirborne(detailed.ground_airborne);
+  }
+
+  // Altitude Distribution
+  if (summary?.altitude_bins?.length) {
+    createChart(
+      "altitudeDistribution", "bar",
+      summary.altitude_bins.map(d => d.altitude_band),
+      summary.altitude_bins.map(d => d.count),
+      "rgb(168, 85, 247)",
+      "Flights"
+    );
+  }
+
+  // Speed Distribution
+  if (summary?.speed_bins?.length) {
+    createChart(
+      "speedDistribution", "bar",
+      summary.speed_bins.map(d => d.speed_band),
+      summary.speed_bins.map(d => d.count),
+      "rgb(236, 72, 153)",
+      "Flights"
+    );
+  }
+
+  // Data Quality
   if (detailed?.metrics) {
     const m = detailed.metrics;
-    const completenessData = [
-      m.data_completeness_altitude ?? 0,
-      m.data_completeness_speed ?? 0,
-      m.data_completeness_track ?? 0,
-      m.data_completeness_position ?? 0,
-      m.data_completeness_time ?? 0,
-    ];
     createChart(
-      "dataQuality",
-      "bar",
+      "dataQuality", "bar",
       ["Altitude", "Speed", "Track", "Position", "Time"],
-      completenessData,
+      [
+        m.data_completeness_altitude ?? 0,
+        m.data_completeness_speed ?? 0,
+        m.data_completeness_track ?? 0,
+        m.data_completeness_position ?? 0,
+        m.data_completeness_time ?? 0,
+      ],
       "rgb(251, 146, 60)",
       "Completeness %"
     );
   }
 
-  if (detailed?.adsb_type_distribution && Array.isArray(detailed.adsb_type_distribution)) {
-    createChart(
-      "adsbTypes",
-      "bar",
-      detailed.adsb_type_distribution.map((d) => d.type),
-      detailed.adsb_type_distribution.map((d) => d.count),
-      "rgb(139, 92, 246)",
-      "Count"
-    );
+  // Tables
+  if (summary?.top_airlines?.length) {
+    renderTable("topAirlines", summary.top_airlines.slice(0, 15), ["airline", "flights"]);
   }
-
-  // ========================================================================
-  // Top Categories
-  // ========================================================================
-
-  if (summary.top_airlines && Array.isArray(summary.top_airlines)) {
-    renderTable(
-      "topAirlines",
-      summary.top_airlines.slice(0, 20),
-      ["airline", "flights"]
-    );
-  }
-
-  if (summary.top_models && Array.isArray(summary.top_models)) {
-    renderTable(
-      "topModels",
-      summary.top_models.slice(0, 20),
-      ["model", "flights"]
-    );
-  }
-
-  // ========================================================================
-  // Insights
-  // ========================================================================
-
-  if (detailed?.insights && Array.isArray(detailed.insights)) {
-    renderInsights("insightsContainer", detailed.insights);
-  }
-
-  // ========================================================================
-  // All Metrics
-  // ========================================================================
-
-  if (detailed?.metrics) {
-    renderMetricsTable("allMetrics", detailed.metrics);
+  if (summary?.top_models?.length) {
+    renderTable("topModels", summary.top_models.slice(0, 15), ["model", "flights"]);
   }
 }
-
-// ============================================================================
-// Initialization
-// ============================================================================
 
 loadHistoricalDashboard();

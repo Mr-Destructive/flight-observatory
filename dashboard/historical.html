@@ -27,8 +27,8 @@
       <main class="main-container">
         <section class="header-section">
           <div class="header-content">
-            <h1>Historical Analysis</h1>
-            <p id="dataDescription">Flight activity patterns over time</p>
+            <h1>Sky Analytics</h1>
+            <p id="dataDescription">Deep dive into flight patterns and airspace insights</p>
           </div>
           <div class="header-info">
             <div class="info-box">
@@ -46,38 +46,196 @@
           </div>
         </section>
 
+        <!-- Quick Stats Cards -->
         <section class="metrics-section">
-          <div class="metrics-grid" id="historicalMetrics"></div>
+          <div class="metrics-grid" id="quickStats"></div>
         </section>
 
+        <!-- Key Insights -->
+        <section class="insights-section">
+          <h2 class="section-title">🔍 Key Insights</h2>
+          <div class="insights-grid" id="insightsContainer"></div>
+        </section>
+
+        <!-- Sky Pulse Section -->
         <section class="charts-section">
-          <h2 class="section-title">Trends & Patterns</h2>
-          <div class="charts-grid wide">
+          <h2 class="section-title">⏱️ Sky Pulse Index</h2>
+          <p class="section-desc">Traffic intensity relative to daily average (100%)</p>
+          <div class="charts-grid">
             <div class="chart-card wide">
-              <h3>Monthly Activity</h3>
-              <canvas id="monthlyActivity"></canvas>
-            </div>
-            <div class="chart-card">
-              <h3>Yearly Totals</h3>
-              <canvas id="yearlyTotals"></canvas>
-            </div>
-            <div class="chart-card">
-              <h3>Seasonal Pattern</h3>
-              <canvas id="seasonalPattern"></canvas>
+              <h3>Hourly Traffic Pulse</h3>
+              <canvas id="skyPulse"></canvas>
             </div>
           </div>
         </section>
 
+        <!-- Traffic Wave -->
         <section class="charts-section">
-          <h2 class="section-title">Operational Metrics</h2>
+          <h2 class="section-title">🌊 Traffic Wave</h2>
+          <p class="section-desc">Flight volume across 24 hours</p>
+          <div class="charts-grid">
+            <div class="chart-card wide">
+              <h3>Hourly Distribution</h3>
+              <canvas id="trafficWave"></canvas>
+            </div>
+          </div>
+        </section>
+
+        <!-- Sky Real Estate -->
+        <section class="charts-section">
+          <h2 class="section-title">🏠 Sky Real Estate</h2>
+          <p class="section-desc">Altitude band distribution - who's flying where</p>
           <div class="charts-grid">
             <div class="chart-card">
-              <h3>Median Altitude by Month</h3>
-              <canvas id="altitudeMonthly"></canvas>
+              <h3>Altitude Tiers</h3>
+              <canvas id="altitudeTiers"></canvas>
             </div>
             <div class="chart-card">
-              <h3>Median Speed by Month</h3>
-              <canvas id="speedMonthly"></canvas>
+              <h3>Flight Phases</h3>
+              <canvas id="flightPhases"></canvas>
+            </div>
+            <div class="chart-card wide">
+              <h3>Busiest Sky Corridors (FL Rankings)</h3>
+              <canvas id="busiestCorridors"></canvas>
+            </div>
+          </div>
+        </section>
+
+        <!-- Efficiency Curve -->
+        <section class="charts-section">
+          <h2 class="section-title">📈 Cruise Efficiency</h2>
+          <p class="section-desc">Speed/Altitude ratio - lower is more efficient</p>
+          <div class="charts-grid">
+            <div class="chart-card wide">
+              <h3>Efficiency Curve by Altitude</h3>
+              <canvas id="efficiencyCurve"></canvas>
+            </div>
+          </div>
+        </section>
+
+        <!-- In/Out Ratios -->
+        <section class="charts-section">
+          <h2 class="section-title">✈️ Airport Traffic Flow</h2>
+          <p class="section-desc">Arrivals vs Departures - which airports are sinks vs sources</p>
+          <div class="charts-grid">
+            <div class="chart-card wide">
+              <h3>In/Out Ratio</h3>
+              <canvas id="inOutRatio"></canvas>
+            </div>
+          </div>
+        </section>
+
+        <!-- Directional Traffic -->
+        <section class="charts-section">
+          <h2 class="section-title">🧭 Directional Traffic</h2>
+          <p class="section-desc">Compass distribution of flight paths</p>
+          <div class="charts-grid">
+            <div class="chart-card">
+              <h3>Heading Distribution</h3>
+              <canvas id="headingDistribution"></canvas>
+            </div>
+            <div class="chart-card">
+              <h3>Direction Stats</h3>
+              <canvas id="directionalTraffic"></canvas>
+            </div>
+          </div>
+        </section>
+
+        <!-- Speed Analytics -->
+        <section class="charts-section">
+          <h2 class="section-title">⚡ Speed Analytics</h2>
+          <p class="section-desc">From crawl to supersonic</p>
+          <div class="charts-grid">
+            <div class="chart-card">
+              <h3>Speed Tiers</h3>
+              <canvas id="speedTiers"></canvas>
+            </div>
+            <div class="chart-card">
+              <h3>Wind Effect</h3>
+              <canvas id="windEffect"></canvas>
+            </div>
+            <div class="chart-card wide">
+              <h3>Top Speed Demons 🏆</h3>
+              <div class="leaderboard" id="speedLeaderboard"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Ghost Fleet -->
+        <section class="charts-section ghost-section">
+          <h2 class="section-title">👻 Ghost Fleet</h2>
+          <p class="section-desc">Aircraft with 0 velocity but altitude > 100m (likely parked)</p>
+          <div class="charts-grid">
+            <div class="chart-card">
+              <div class="ghost-counter">
+                <div class="ghost-number" id="ghostAircraft">--</div>
+                <div class="ghost-label">Unique Aircraft</div>
+              </div>
+            </div>
+            <div class="chart-card">
+              <div class="ghost-counter">
+                <div class="ghost-number" id="ghostSightings">--</div>
+                <div class="ghost-label">Total Sightings</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Holding Patterns -->
+        <section class="charts-section">
+          <h2 class="section-title">🔄 Holding Pattern Watch</h2>
+          <p class="section-desc">Aircraft circling at low altitude (potential delays)</p>
+          <div class="charts-grid">
+            <div class="chart-card wide">
+              <h3>Top Holding Locations</h3>
+              <canvas id="holdingPatterns"></canvas>
+            </div>
+          </div>
+        </section>
+
+        <!-- Airline Altitude Preferences -->
+        <section class="charts-section">
+          <h2 class="section-title">🏢 Airline Preferences</h2>
+          <p class="section-desc">Which airlines fly highest (long-haul vs regional)</p>
+          <div class="charts-grid">
+            <div class="chart-card wide">
+              <h3>Altitude by Airline</h3>
+              <canvas id="airlinePreferences"></canvas>
+            </div>
+          </div>
+        </section>
+
+        <!-- Regional Density -->
+        <section class="charts-section">
+          <h2 class="section-title">🗺️ Traffic Hotspots</h2>
+          <p class="section-desc">Most congested 5°×5° grid cells</p>
+          <div class="charts-grid">
+            <div class="chart-card wide">
+              <h3>Regional Density</h3>
+              <canvas id="regionalDensity"></canvas>
+            </div>
+          </div>
+        </section>
+
+        <!-- Weekend vs Weekday -->
+        <section class="charts-section">
+          <h2 class="section-title">📅 Weekday vs Weekend</h2>
+          <p class="section-desc">Traffic patterns differ by day type</p>
+          <div class="charts-grid">
+            <div class="chart-card wide">
+              <h3>Weekday Distribution</h3>
+              <canvas id="weekdayPattern"></canvas>
+            </div>
+          </div>
+        </section>
+
+        <!-- Traditional Charts -->
+        <section class="charts-section">
+          <h2 class="section-title">📊 Classic Metrics</h2>
+          <div class="charts-grid">
+            <div class="chart-card">
+              <h3>Ground vs Airborne</h3>
+              <canvas id="groundAirborne"></canvas>
             </div>
             <div class="chart-card">
               <h3>Altitude Distribution</h3>
@@ -87,65 +245,16 @@
               <h3>Speed Distribution</h3>
               <canvas id="speedDistribution"></canvas>
             </div>
-          </div>
-        </section>
-
-        <section class="charts-section">
-          <h2 class="section-title">Daily & Directional Patterns</h2>
-          <div class="charts-grid">
-            <div class="chart-card wide">
-              <h3>Hourly Activity Pattern</h3>
-              <canvas id="hourlyPattern"></canvas>
-            </div>
             <div class="chart-card">
-              <h3>Weekday Distribution</h3>
-              <canvas id="weekdayPattern"></canvas>
-            </div>
-            <div class="chart-card">
-              <h3>Heading Distribution</h3>
-              <canvas id="headingDistribution"></canvas>
-            </div>
-            <div class="chart-card wide">
-              <h3>Aircraft Count by Week</h3>
-              <canvas id="aircraftWeekly"></canvas>
-            </div>
-            <div class="chart-card wide">
-              <h3>Unique Aircraft Daily (Last 30 Days)</h3>
-              <canvas id="aircraftDaily"></canvas>
-            </div>
-          </div>
-        </section>
-
-        <section class="charts-section">
-          <h2 class="section-title">Airport & Ground Activity</h2>
-          <div class="charts-grid">
-            <div class="chart-card">
-              <h3>Ground vs Airborne</h3>
-              <canvas id="groundAirborne"></canvas>
-            </div>
-            <div class="chart-card wide">
-              <h3>Top Airports by Activity</h3>
-              <canvas id="topAirportsActivity"></canvas>
-            </div>
-          </div>
-        </section>
-
-        <section class="charts-section">
-          <h2 class="section-title">Data Quality</h2>
-          <div class="charts-grid">
-            <div class="chart-card">
-              <h3>Field Completeness</h3>
+              <h3>Data Quality</h3>
               <canvas id="dataQuality"></canvas>
             </div>
-            <div class="chart-card">
-              <h3>ADS-B Message Types</h3>
-              <canvas id="adsbTypes"></canvas>
-            </div>
           </div>
         </section>
 
+        <!-- Tables -->
         <section class="tables-section">
-          <h2 class="section-title">Top Categories</h2>
+          <h2 class="section-title">📋 Top Lists</h2>
           <div class="tables-grid wide">
             <div class="table-card">
               <h3>Top Airlines</h3>
@@ -158,17 +267,6 @@
           </div>
         </section>
 
-        <section class="insights-section">
-          <h2 class="section-title">Key Insights</h2>
-          <div class="insights-grid" id="insightsContainer"></div>
-        </section>
-
-        <section class="tables-section">
-          <h2 class="section-title">Complete Metrics</h2>
-          <div class="table-card wide">
-            <div class="table-wrapper" id="allMetrics"></div>
-          </div>
-        </section>
       </main>
     </div>
 
