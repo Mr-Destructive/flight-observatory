@@ -1,34 +1,42 @@
 [
   {
     "airport": "unknown",
-    "flights": 4544
+    "flights": 4721
   },
   {
     "airport": "HCME",
-    "flights": 36
-  },
-  {
-    "airport": "HKML",
-    "flights": 19
+    "flights": 30
   },
   {
     "airport": "YKII",
-    "flights": 17
+    "flights": 26
   },
   {
     "airport": "HCMV",
-    "flights": 13
+    "flights": 23
+  },
+  {
+    "airport": "HCMG",
+    "flights": 12
   },
   {
     "airport": "HCAD",
     "flights": 10
   },
   {
-    "airport": "FSMA",
+    "airport": "OEOM",
+    "flights": 10
+  },
+  {
+    "airport": "FSSD",
     "flights": 9
   },
   {
-    "airport": "HCMU",
+    "airport": "HKML",
+    "flights": 9
+  },
+  {
+    "airport": "HAGO",
     "flights": 8
   },
   {
@@ -36,27 +44,23 @@
     "flights": 8
   },
   {
+    "airport": "FSMA",
+    "flights": 8
+  },
+  {
     "airport": "OESK",
-    "flights": 8
-  },
-  {
-    "airport": "FSSD",
-    "flights": 8
-  },
-  {
-    "airport": "HCMC",
     "flights": 7
   },
   {
-    "airport": "HCMS",
-    "flights": 7
+    "airport": "HCMR",
+    "flights": 6
+  },
+  {
+    "airport": "OYSY",
+    "flights": 6
   },
   {
     "airport": "HCMN",
-    "flights": 7
-  },
-  {
-    "airport": "HCMG",
     "flights": 6
   },
   {
@@ -64,39 +68,35 @@
     "flights": 6
   },
   {
-    "airport": "HSKG",
+    "airport": "HCMU",
     "flights": 6
   },
   {
-    "airport": "HCMR",
+    "airport": "HASM",
     "flights": 5
   },
   {
-    "airport": "HAKD",
-    "flights": 5
-  },
-  {
-    "airport": "HAGO",
-    "flights": 5
-  },
-  {
-    "airport": "HCMI",
+    "airport": "OERS",
     "flights": 5
   },
   {
     "airport": "OESH",
-    "flights": 4
+    "flights": 5
   },
   {
-    "airport": "ZSJU",
-    "flights": 4
+    "airport": "OYMB",
+    "flights": 5
   },
   {
-    "airport": "YSMI",
-    "flights": 4
+    "airport": "HAKL",
+    "flights": 5
   },
   {
-    "airport": "HASM",
-    "flights": 4
+    "airport": "OEYN",
+    "flights": 5
+  },
+  {
+    "airport": "HDDK",
+    "flights": 5
   }
 ]
