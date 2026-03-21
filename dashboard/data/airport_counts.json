@@ -1,66 +1,58 @@
 [
   {
     "airport": "unknown",
-    "flights": 9836
+    "flights": 9811
   },
   {
     "airport": "KDFW",
-    "flights": 41
+    "flights": 43
   },
   {
     "airport": "KDEN",
-    "flights": 33
-  },
-  {
-    "airport": "KATL",
-    "flights": 32
+    "flights": 40
   },
   {
     "airport": "KPHX",
-    "flights": 26
-  },
-  {
-    "airport": "LSZH",
-    "flights": 22
-  },
-  {
-    "airport": "KIAD",
-    "flights": 21
-  },
-  {
-    "airport": "CYYZ",
-    "flights": 21
-  },
-  {
-    "airport": "KLGA",
-    "flights": 20
-  },
-  {
-    "airport": "KSLC",
-    "flights": 18
-  },
-  {
-    "airport": "KLAX",
-    "flights": 18
-  },
-  {
-    "airport": "SKBO",
-    "flights": 17
+    "flights": 35
   },
   {
     "airport": "CYYC",
+    "flights": 26
+  },
+  {
+    "airport": "KATL",
+    "flights": 23
+  },
+  {
+    "airport": "KLAX",
+    "flights": 22
+  },
+  {
+    "airport": "KSLC",
+    "flights": 21
+  },
+  {
+    "airport": "LSZH",
+    "flights": 17
+  },
+  {
+    "airport": "KORD",
+    "flights": 17
+  },
+  {
+    "airport": "EGKK",
     "flights": 16
   },
   {
-    "airport": "KMCO",
+    "airport": "EHAM",
+    "flights": 16
+  },
+  {
+    "airport": "CYYZ",
     "flights": 15
   },
   {
-    "airport": "KBOS",
-    "flights": 15
-  },
-  {
-    "airport": "MGGT",
+    "airport": "CYVR",
     "flights": 15
   },
   {
@@ -68,35 +60,43 @@
     "flights": 14
   },
   {
-    "airport": "EDDF",
+    "airport": "KEWR",
     "flights": 14
   },
   {
-    "airport": "KTMB",
+    "airport": "KSFO",
     "flights": 13
   },
   {
-    "airport": "KVNY",
+    "airport": "KBOS",
     "flights": 13
   },
   {
-    "airport": "KEWR",
+    "airport": "SKBO",
     "flights": 12
   },
   {
-    "airport": "CYUL",
+    "airport": "KLGA",
+    "flights": 12
+  },
+  {
+    "airport": "KVNY",
+    "flights": 12
+  },
+  {
+    "airport": "KTEB",
     "flights": 11
+  },
+  {
+    "airport": "EDDF",
+    "flights": 11
+  },
+  {
+    "airport": "VABB",
+    "flights": 10
   },
   {
     "airport": "KCOS",
-    "flights": 11
-  },
-  {
-    "airport": "KLAS",
-    "flights": 11
-  },
-  {
-    "airport": "EGKK",
-    "flights": 11
+    "flights": 10
   }
 ]
