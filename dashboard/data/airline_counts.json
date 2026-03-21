@@ -1,102 +1,102 @@
 [
   {
     "airline": "unknown",
-    "flights": 2382
-  },
-  {
-    "airline": "American Airlines",
-    "flights": 505
-  },
-  {
-    "airline": "Delta Air Lines",
-    "flights": 484
+    "flights": 1419
   },
   {
     "airline": "Southwest Airlines",
-    "flights": 469
+    "flights": 419
+  },
+  {
+    "airline": "American Airlines",
+    "flights": 408
+  },
+  {
+    "airline": "Delta Air Lines",
+    "flights": 392
   },
   {
     "airline": "United Airlines",
-    "flights": 458
-  },
-  {
-    "airline": "SkyWest",
-    "flights": 224
-  },
-  {
-    "airline": "JetBlue Airways",
-    "flights": 134
-  },
-  {
-    "airline": "Republic Airlines",
-    "flights": 134
+    "flights": 371
   },
   {
     "airline": "Alaska Airlines",
-    "flights": 124
+    "flights": 145
+  },
+  {
+    "airline": "SkyWest",
+    "flights": 144
+  },
+  {
+    "airline": "JetBlue Airways",
+    "flights": 129
   },
   {
     "airline": "Frontier Airlines",
-    "flights": 110
-  },
-  {
-    "airline": "Envoy Air",
-    "flights": 92
-  },
-  {
-    "airline": "Allegiant Air",
-    "flights": 87
-  },
-  {
-    "airline": "NetJets",
-    "flights": 84
+    "flights": 104
   },
   {
     "airline": "Air Canada",
-    "flights": 82
+    "flights": 92
   },
   {
-    "airline": "WestJet",
-    "flights": 76
+    "airline": "Envoy Air",
+    "flights": 83
   },
   {
-    "airline": "Turkish Airlines",
+    "airline": "Republic Airlines",
     "flights": 72
   },
   {
-    "airline": "Ryanair",
+    "airline": "Federal Express",
     "flights": 70
   },
   {
+    "airline": "Turkish Airlines",
+    "flights": 70
+  },
+  {
+    "airline": "WestJet",
+    "flights": 69
+  },
+  {
     "airline": "All Nippon Airways",
-    "flights": 61
+    "flights": 68
+  },
+  {
+    "airline": "IndiGo Airlines",
+    "flights": 64
+  },
+  {
+    "airline": "Allegiant Air",
+    "flights": 64
   },
   {
     "airline": "Japan Airlines Domestic",
-    "flights": 54
-  },
-  {
-    "airline": "TAM Brazilian Airlines",
-    "flights": 49
+    "flights": 56
   },
   {
     "airline": "Spirit Airlines",
+    "flights": 55
+  },
+  {
+    "airline": "United Parcel Service",
+    "flights": 52
+  },
+  {
+    "airline": "Air India Limited",
     "flights": 49
   },
   {
-    "airline": "Sun Country Airlines",
-    "flights": 40
-  },
-  {
-    "airline": "British Airways",
-    "flights": 39
+    "airline": "PSA Airlines",
+    "flights": 46
   },
   {
     "airline": "Virgin Australia",
-    "flights": 38
+    "flights": 41
   },
   {
-    "airline": "PSA Airlines",
-    "flights": 37
+    "airline": "Cathay Pacific",
+    "flights": 33
   }
 ]

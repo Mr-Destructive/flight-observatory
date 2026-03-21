@@ -1,50 +1,54 @@
 [
   {
     "airport": "unknown",
-    "flights": 8038
-  },
-  {
-    "airport": "UESG",
-    "flights": 26
+    "flights": 6403
   },
   {
     "airport": "YKII",
-    "flights": 9
+    "flights": 19
   },
   {
-    "airport": "ZSTX",
+    "airport": "UESG",
+    "flights": 14
+  },
+  {
+    "airport": "UGSB",
     "flights": 8
   },
   {
-    "airport": "EPGE",
-    "flights": 5
-  },
-  {
-    "airport": "YSMI",
-    "flights": 4
-  },
-  {
-    "airport": "UESO",
-    "flights": 4
-  },
-  {
-    "airport": "UEMA",
-    "flights": 4
-  },
-  {
-    "airport": "OIKJ",
-    "flights": 3
+    "airport": "ZSTX",
+    "flights": 7
   },
   {
     "airport": "YSRN",
-    "flights": 3
+    "flights": 5
   },
   {
-    "airport": "ZSSH",
-    "flights": 3
+    "airport": "LLEY",
+    "flights": 4
+  },
+  {
+    "airport": "HEAR",
+    "flights": 4
+  },
+  {
+    "airport": "EPGE",
+    "flights": 4
   },
   {
     "airport": "ZSWA",
+    "flights": 3
+  },
+  {
+    "airport": "UHOO",
+    "flights": 3
+  },
+  {
+    "airport": "LTCE",
+    "flights": 3
+  },
+  {
+    "airport": "YSMI",
     "flights": 3
   },
   {
@@ -52,23 +56,11 @@
     "flights": 3
   },
   {
-    "airport": "HCBG",
+    "airport": "UEMU",
     "flights": 3
   },
   {
-    "airport": "HCMV",
-    "flights": 3
-  },
-  {
-    "airport": "HCMF",
-    "flights": 2
-  },
-  {
-    "airport": "UGSB",
-    "flights": 2
-  },
-  {
-    "airport": "ZSJH",
+    "airport": "OEHL",
     "flights": 2
   },
   {
@@ -76,11 +68,23 @@
     "flights": 2
   },
   {
-    "airport": "LTCR",
+    "airport": "LTFO",
     "flights": 2
   },
   {
-    "airport": "ENDU",
+    "airport": "HSNW",
+    "flights": 2
+  },
+  {
+    "airport": "HEPS",
+    "flights": 2
+  },
+  {
+    "airport": "UEMH",
+    "flights": 2
+  },
+  {
+    "airport": "OEPF",
     "flights": 2
   },
   {
@@ -88,15 +92,11 @@
     "flights": 2
   },
   {
-    "airport": "HTNA",
+    "airport": "EPST",
     "flights": 2
   },
   {
-    "airport": "HKML",
-    "flights": 2
-  },
-  {
-    "airport": "FSDR",
-    "flights": 2
+    "airport": "OYZM",
+    "flights": 1
   }
 ]
