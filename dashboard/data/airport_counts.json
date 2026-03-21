@@ -1,50 +1,58 @@
 [
   {
     "airport": "unknown",
-    "flights": 6403
+    "flights": 4810
   },
   {
     "airport": "YKII",
-    "flights": 19
+    "flights": 16
+  },
+  {
+    "airport": "HCME",
+    "flights": 15
   },
   {
     "airport": "UESG",
-    "flights": 14
+    "flights": 12
   },
   {
-    "airport": "UGSB",
-    "flights": 8
-  },
-  {
-    "airport": "ZSTX",
-    "flights": 7
-  },
-  {
-    "airport": "YSRN",
+    "airport": "OESK",
     "flights": 5
   },
   {
-    "airport": "LLEY",
+    "airport": "UEMA",
+    "flights": 5
+  },
+  {
+    "airport": "UGSB",
+    "flights": 5
+  },
+  {
+    "airport": "HKML",
     "flights": 4
   },
   {
-    "airport": "HEAR",
+    "airport": "HCMG",
     "flights": 4
   },
   {
-    "airport": "EPGE",
+    "airport": "OEYN",
     "flights": 4
   },
   {
-    "airport": "ZSWA",
+    "airport": "HCMI",
     "flights": 3
   },
   {
-    "airport": "UHOO",
+    "airport": "HCMV",
     "flights": 3
   },
   {
-    "airport": "LTCE",
+    "airport": "OOSH",
+    "flights": 3
+  },
+  {
+    "airport": "OEPF",
     "flights": 3
   },
   {
@@ -52,39 +60,11 @@
     "flights": 3
   },
   {
-    "airport": "ZSJU",
+    "airport": "ZSWA",
     "flights": 3
   },
   {
-    "airport": "UEMU",
-    "flights": 3
-  },
-  {
-    "airport": "OEHL",
-    "flights": 2
-  },
-  {
-    "airport": "OESK",
-    "flights": 2
-  },
-  {
-    "airport": "LTFO",
-    "flights": 2
-  },
-  {
-    "airport": "HSNW",
-    "flights": 2
-  },
-  {
-    "airport": "HEPS",
-    "flights": 2
-  },
-  {
-    "airport": "UEMH",
-    "flights": 2
-  },
-  {
-    "airport": "OEPF",
+    "airport": "OEUM",
     "flights": 2
   },
   {
@@ -92,11 +72,31 @@
     "flights": 2
   },
   {
-    "airport": "EPST",
+    "airport": "UESO",
     "flights": 2
   },
   {
-    "airport": "OYZM",
-    "flights": 1
+    "airport": "LTCE",
+    "flights": 2
+  },
+  {
+    "airport": "ZSNJ",
+    "flights": 2
+  },
+  {
+    "airport": "OEOM",
+    "flights": 2
+  },
+  {
+    "airport": "YWYY",
+    "flights": 2
+  },
+  {
+    "airport": "EPGE",
+    "flights": 2
+  },
+  {
+    "airport": "EPRJ",
+    "flights": 2
   }
 ]
