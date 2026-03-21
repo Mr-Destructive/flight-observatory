@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 5140
+    "flights": 5330
   },
   {
     "airport": "HCME",
-    "flights": 37
+    "flights": 44
   },
   {
     "airport": "HCMV",
-    "flights": 20
+    "flights": 19
   },
   {
     "airport": "YKII",
-    "flights": 20
+    "flights": 17
   },
   {
-    "airport": "HKML",
-    "flights": 13
-  },
-  {
-    "airport": "HCMI",
+    "airport": "OEYN",
     "flights": 12
-  },
-  {
-    "airport": "HCAD",
-    "flights": 12
-  },
-  {
-    "airport": "HAGO",
-    "flights": 11
-  },
-  {
-    "airport": "OEOM",
-    "flights": 11
-  },
-  {
-    "airport": "FSSD",
-    "flights": 10
-  },
-  {
-    "airport": "HCMC",
-    "flights": 7
-  },
-  {
-    "airport": "HKGA",
-    "flights": 7
-  },
-  {
-    "airport": "FSMA",
-    "flights": 7
-  },
-  {
-    "airport": "HCMN",
-    "flights": 6
-  },
-  {
-    "airport": "HCMR",
-    "flights": 6
   },
   {
     "airport": "HCMG",
-    "flights": 6
-  },
-  {
-    "airport": "OESK",
-    "flights": 6
-  },
-  {
-    "airport": "HCMB",
-    "flights": 5
-  },
-  {
-    "airport": "OEPJ",
-    "flights": 5
-  },
-  {
-    "airport": "UGSB",
-    "flights": 5
-  },
-  {
-    "airport": "HTKI",
-    "flights": 4
-  },
-  {
-    "airport": "YSMI",
-    "flights": 4
+    "flights": 12
   },
   {
     "airport": "HCMU",
-    "flights": 4
+    "flights": 11
   },
   {
-    "airport": "HCMA",
-    "flights": 4
+    "airport": "FSMA",
+    "flights": 10
+  },
+  {
+    "airport": "HCMR",
+    "flights": 10
+  },
+  {
+    "airport": "OEOM",
+    "flights": 10
+  },
+  {
+    "airport": "HKML",
+    "flights": 9
+  },
+  {
+    "airport": "HCAD",
+    "flights": 9
+  },
+  {
+    "airport": "HCMC",
+    "flights": 8
+  },
+  {
+    "airport": "HCMN",
+    "flights": 8
+  },
+  {
+    "airport": "FSSD",
+    "flights": 7
   },
   {
     "airport": "FVOT",
-    "flights": 4
+    "flights": 6
+  },
+  {
+    "airport": "HAKD",
+    "flights": 6
+  },
+  {
+    "airport": "OEHL",
+    "flights": 6
+  },
+  {
+    "airport": "FSDR",
+    "flights": 6
+  },
+  {
+    "airport": "HAGO",
+    "flights": 5
+  },
+  {
+    "airport": "HAWR",
+    "flights": 5
+  },
+  {
+    "airport": "OENG",
+    "flights": 5
+  },
+  {
+    "airport": "OESK",
+    "flights": 5
+  },
+  {
+    "airport": "OEPF",
+    "flights": 5
+  },
+  {
+    "airport": "OESH",
+    "flights": 5
   }
 ]
