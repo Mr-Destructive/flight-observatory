@@ -1,26 +1,38 @@
 [
   {
     "airport": "unknown",
-    "flights": 4096
+    "flights": 4181
   },
   {
     "airport": "HCME",
-    "flights": 16
+    "flights": 26
   },
   {
     "airport": "YKII",
-    "flights": 16
-  },
-  {
-    "airport": "UESG",
-    "flights": 8
-  },
-  {
-    "airport": "OEOM",
-    "flights": 6
+    "flights": 20
   },
   {
     "airport": "HCMV",
+    "flights": 10
+  },
+  {
+    "airport": "HKML",
+    "flights": 7
+  },
+  {
+    "airport": "UESG",
+    "flights": 7
+  },
+  {
+    "airport": "OYZM",
+    "flights": 6
+  },
+  {
+    "airport": "HAKD",
+    "flights": 6
+  },
+  {
+    "airport": "HCMC",
     "flights": 6
   },
   {
@@ -28,47 +40,27 @@
     "flights": 6
   },
   {
-    "airport": "OEYN",
+    "airport": "EPGE",
     "flights": 5
-  },
-  {
-    "airport": "HKGA",
-    "flights": 5
-  },
-  {
-    "airport": "OESK",
-    "flights": 4
-  },
-  {
-    "airport": "HCMI",
-    "flights": 4
-  },
-  {
-    "airport": "LTCE",
-    "flights": 4
-  },
-  {
-    "airport": "UHOO",
-    "flights": 4
-  },
-  {
-    "airport": "OESH",
-    "flights": 4
-  },
-  {
-    "airport": "OEPF",
-    "flights": 3
   },
   {
     "airport": "UGSB",
-    "flights": 3
+    "flights": 5
   },
   {
-    "airport": "HCMF",
-    "flights": 3
+    "airport": "HCMN",
+    "flights": 5
   },
   {
-    "airport": "EPGE",
+    "airport": "FSSD",
+    "flights": 5
+  },
+  {
+    "airport": "ZSWA",
+    "flights": 4
+  },
+  {
+    "airport": "ENBA",
     "flights": 3
   },
   {
@@ -76,27 +68,35 @@
     "flights": 3
   },
   {
+    "airport": "HDTJ",
+    "flights": 3
+  },
+  {
     "airport": "FSMA",
     "flights": 3
   },
   {
-    "airport": "HCMR",
+    "airport": "HAGO",
     "flights": 3
   },
   {
-    "airport": "HKML",
+    "airport": "LTFO",
     "flights": 3
   },
   {
-    "airport": "HCMA",
+    "airport": "ENDU",
     "flights": 3
   },
   {
-    "airport": "HHAG",
+    "airport": "FSSR",
     "flights": 3
   },
   {
-    "airport": "HSKG",
+    "airport": "HCMU",
+    "flights": 3
+  },
+  {
+    "airport": "OYAT",
     "flights": 3
   }
 ]
