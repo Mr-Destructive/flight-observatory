@@ -1,102 +1,102 @@
 [
   {
     "airline": "unknown",
-    "flights": 1220
+    "flights": 1343
   },
   {
     "airline": "Ryanair",
-    "flights": 313
+    "flights": 320
   },
   {
     "airline": "Southwest Airlines",
-    "flights": 234
-  },
-  {
-    "airline": "American Airlines",
-    "flights": 224
+    "flights": 283
   },
   {
     "airline": "Delta Air Lines",
-    "flights": 188
+    "flights": 263
+  },
+  {
+    "airline": "American Airlines",
+    "flights": 261
   },
   {
     "airline": "United Airlines",
-    "flights": 177
-  },
-  {
-    "airline": "Turkish Airlines",
-    "flights": 101
-  },
-  {
-    "airline": "Lufthansa",
-    "flights": 100
-  },
-  {
-    "airline": "easyJet",
-    "flights": 95
+    "flights": 202
   },
   {
     "airline": "JetBlue Airways",
-    "flights": 94
+    "flights": 114
   },
   {
     "airline": "IndiGo Airlines",
-    "flights": 81
+    "flights": 112
   },
   {
-    "airline": "Air France",
-    "flights": 78
+    "airline": "Turkish Airlines",
+    "flights": 110
+  },
+  {
+    "airline": "Lufthansa",
+    "flights": 107
+  },
+  {
+    "airline": "easyJet",
+    "flights": 102
   },
   {
     "airline": "All Nippon Airways",
-    "flights": 72
-  },
-  {
-    "airline": "British Airways",
-    "flights": 72
-  },
-  {
-    "airline": "Scandinavian Airlines System",
-    "flights": 68
+    "flights": 74
   },
   {
     "airline": "Jet2.com",
+    "flights": 74
+  },
+  {
+    "airline": "Air France",
+    "flights": 71
+  },
+  {
+    "airline": "British Airways",
+    "flights": 70
+  },
+  {
+    "airline": "Republic Airlines",
     "flights": 67
   },
   {
     "airline": "Frontier Airlines",
-    "flights": 62
+    "flights": 64
   },
   {
     "airline": "Federal Express",
-    "flights": 60
+    "flights": 62
   },
   {
     "airline": "Pegasus Airlines",
-    "flights": 59
+    "flights": 62
+  },
+  {
+    "airline": "Scandinavian Airlines System",
+    "flights": 61
   },
   {
     "airline": "KLM Royal Dutch Airlines",
-    "flights": 59
+    "flights": 61
   },
   {
-    "airline": "Republic Airlines",
-    "flights": 57
-  },
-  {
-    "airline": "Japan Airlines Domestic",
-    "flights": 55
+    "airline": "Envoy Air",
+    "flights": 56
   },
   {
     "airline": "SkyWest",
-    "flights": 51
+    "flights": 56
   },
   {
-    "airline": "Air India Limited",
-    "flights": 49
+    "airline": "Spirit Airlines",
+    "flights": 56
   },
   {
     "airline": "Air Canada",
-    "flights": 49
+    "flights": 52
   }
 ]
