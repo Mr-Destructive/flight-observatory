@@ -25,6 +25,22 @@ function createChart(canvasId, type, labels, data, color, yLabel = "") {
   const canvas = document.getElementById(canvasId);
   if (!canvas) return null;
 
+  const hasData = data && data.length > 0 && data.some(v => v !== null && v !== undefined);
+  const isSinglePoint = hasData && data.filter(v => v !== null && v !== undefined).length === 1;
+
+  if (!hasData) {
+    const parent = canvas.parentElement;
+    if (parent) {
+      const hint = document.createElement("div");
+      hint.className = "hint";
+      hint.textContent = "No data available";
+      hint.style.cssText = "text-align: center; padding: 60px 0; color: var(--text-tertiary);";
+      canvas.style.display = "none";
+      parent.appendChild(hint);
+    }
+    return null;
+  }
+
   const ctx = canvas.getContext("2d");
   const chart = new Chart(ctx, {
     type,
@@ -37,12 +53,13 @@ function createChart(canvasId, type, labels, data, color, yLabel = "") {
           borderColor: color,
           backgroundColor:
             type === "line" ? color.replace(/[^,]+(?=\))/, "0.1") : color + "40",
-          fill: type === "line",
+          fill: type === "line" && !isSinglePoint,
           tension: type === "line" ? 0.3 : 0,
           borderWidth: 2,
-          pointRadius: 2,
+          pointRadius: isSinglePoint ? 4 : (hasData ? 2 : 0),
           pointHoverRadius: 4,
           pointBackgroundColor: color,
+          spanGaps: true,
         },
       ],
     },
@@ -68,6 +85,7 @@ function createChart(canvasId, type, labels, data, color, yLabel = "") {
           grid: { color: "rgba(255, 255, 255, 0.05)", drawBorder: false },
         },
         y: {
+          beginAtZero: type === "bar",
           ticks: { color: "#6b7280" },
           grid: { color: "rgba(255, 255, 255, 0.05)", drawBorder: false },
         },
@@ -86,6 +104,64 @@ function formatNumber(val) {
     return val.toFixed(1);
   }
   return String(val);
+}
+
+function renderHistoricalMetrics(summary, detailed) {
+  const grid = document.getElementById("historicalMetrics");
+  if (!grid) return;
+
+  const metrics = [];
+  
+  if (summary?.total_rows) {
+    document.getElementById("uniqueAircraft").textContent = formatNumber(detailed?.unique_aircraft || "--");
+  }
+
+  if (detailed?.altitude_stats) {
+    const alt = detailed.altitude_stats;
+    metrics.push(
+      { label: "Avg Altitude", value: formatNumber(alt.avg) + "m", color: "--accent-orange" },
+      { label: "Max Altitude", value: formatNumber(alt.max) + "m", color: "--accent-purple" }
+    );
+  }
+
+  if (detailed?.speed_stats) {
+    const spd = detailed.speed_stats;
+    metrics.push(
+      { label: "Avg Speed", value: formatNumber(spd.avg) + "m/s", color: "--accent-cyan" },
+      { label: "Max Speed", value: formatNumber(spd.max) + "m/s", color: "--accent-green" }
+    );
+  }
+
+  if (detailed?.ground_airborne) {
+    const ga = detailed.ground_airborne;
+    const total = ga.on_ground + ga.airborne;
+    const airbornePct = total > 0 ? ((ga.airborne / total) * 100).toFixed(1) : 0;
+    metrics.push(
+      { label: "Airborne", value: formatNumber(ga.airborne) + " (" + airbornePct + "%)", color: "--accent-green" },
+      { label: "On Ground", value: formatNumber(ga.on_ground), color: "--accent-orange" }
+    );
+  }
+
+  if (detailed?.metrics) {
+    const m = detailed.metrics;
+    if (m.data_completeness_all_fields) {
+      metrics.push({ label: "Data Quality", value: m.data_completeness_all_fields + "%", color: "--accent-cyan" });
+    }
+    if (m.total_records) {
+      metrics.push({ label: "Total Records", value: formatNumber(m.total_records), color: "--accent-purple" });
+    }
+  }
+
+  if (metrics.length === 0) return;
+
+  grid.innerHTML = metrics
+    .map((m) => `
+      <div class="metric-card">
+        <div class="metric-label">${m.label}</div>
+        <div class="metric-value">${m.value}</div>
+      </div>
+    `)
+    .join("");
 }
 
 // ============================================================================
@@ -179,10 +255,30 @@ async function loadHistoricalDashboard() {
     document.getElementById("totalRows").textContent =
       summary.total_rows.toLocaleString();
   }
-  if (summary.months) {
+  if (summary.date_range && summary.date_range.length === 2) {
+    const start = new Date(summary.date_range[0]);
+    const end = new Date(summary.date_range[1]);
+    const days = Math.ceil((end - start) / (1000 * 60 * 60 * 24));
+    if (days <= 1) {
+      document.getElementById("timeSpan").textContent = "1 day";
+      document.getElementById("dataDescription").textContent = "Recent flight activity snapshot";
+    } else if (days < 30) {
+      document.getElementById("timeSpan").textContent = days + " days";
+      document.getElementById("dataDescription").textContent = "Recent traffic patterns";
+    } else if (days < 365) {
+      document.getElementById("timeSpan").textContent = Math.ceil(days / 30) + " months";
+      document.getElementById("dataDescription").textContent = "Seasonal traffic patterns";
+    } else {
+      document.getElementById("timeSpan").textContent = Math.ceil(days / 365) + " years";
+      document.getElementById("dataDescription").textContent = "Multi-year traffic trends";
+    }
+  } else if (summary.months) {
     document.getElementById("timeSpan").textContent =
       summary.months + " months";
   }
+
+  // Render metrics
+  renderHistoricalMetrics(summary, detailed);
 
   // ========================================================================
   // Monthly Trends
@@ -280,6 +376,17 @@ async function loadHistoricalDashboard() {
       detailed.hourly_distribution.map((d) => `${d.hour}h`),
       detailed.hourly_distribution.map((d) => d.count),
       "rgb(251, 146, 60)",
+      "Flights"
+    );
+  }
+
+  if (detailed?.weekday_distribution && Array.isArray(detailed.weekday_distribution)) {
+    createChart(
+      "weekdayPattern",
+      "bar",
+      detailed.weekday_distribution.map((d) => d.label || d.weekday),
+      detailed.weekday_distribution.map((d) => d.count),
+      "rgb(236, 72, 153)",
       "Flights"
     );
   }

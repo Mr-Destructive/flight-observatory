@@ -1,403 +1,358 @@
 {
-  "generated_at": "2026-03-19T09:44:52.648612+00:00",
-  "metrics": {},
   "hourly_distribution": [
     {
       "hour": 0,
-      "count": 4147
+      "count": 8161
     },
     {
       "hour": 1,
-      "count": 4958
+      "count": 6947
     },
     {
       "hour": 2,
-      "count": 6244
+      "count": 13216
     },
     {
       "hour": 3,
-      "count": 5889
+      "count": 0
     },
     {
       "hour": 4,
-      "count": 6281
+      "count": 14676
     },
     {
       "hour": 5,
-      "count": 6858
+      "count": 17795
     },
     {
       "hour": 6,
-      "count": 6298
+      "count": 51824
     },
     {
       "hour": 7,
-      "count": 5980
+      "count": 24727
     },
     {
       "hour": 8,
-      "count": 6612
+      "count": 36744
     },
     {
       "hour": 9,
-      "count": 6027
+      "count": 29594
     },
     {
       "hour": 10,
-      "count": 6468
+      "count": 20285
     },
     {
       "hour": 11,
-      "count": 6255
+      "count": 38691
     },
     {
       "hour": 12,
-      "count": 6574
+      "count": 8000
     },
     {
       "hour": 13,
-      "count": 5995
+      "count": 32018
     },
     {
       "hour": 14,
-      "count": 6549
+      "count": 35774
     },
     {
       "hour": 15,
-      "count": 6572
+      "count": 38287
     },
     {
       "hour": 16,
-      "count": 6634
+      "count": 37556
     },
     {
       "hour": 17,
-      "count": 6658
+      "count": 49365
     },
     {
       "hour": 18,
-      "count": 6148
+      "count": 35872
     },
     {
       "hour": 19,
-      "count": 4912
+      "count": 60012
     },
     {
       "hour": 20,
-      "count": 3851
+      "count": 45889
     },
     {
       "hour": 21,
-      "count": 2457
+      "count": 67452
     },
     {
       "hour": 22,
-      "count": 3725
+      "count": 58843
     },
     {
       "hour": 23,
-      "count": 3501
+      "count": 62211
     }
   ],
-  "minute_distribution": [
+  "seasonal_pattern": [
     {
-      "minute": 0,
-      "count": 373
+      "month": "Mar",
+      "avg_count": 793939
+    }
+  ],
+  "heading_distribution": [
+    {
+      "direction": "N",
+      "count": 92026
     },
     {
-      "minute": 1,
-      "count": 0
+      "direction": "NE",
+      "count": 92848
     },
     {
-      "minute": 2,
-      "count": 0
+      "direction": "E",
+      "count": 114807
     },
     {
-      "minute": 3,
-      "count": 0
+      "direction": "SE",
+      "count": 92238
     },
     {
-      "minute": 4,
-      "count": 10993
+      "direction": "S",
+      "count": 92495
     },
     {
-      "minute": 5,
-      "count": 357
+      "direction": "SW",
+      "count": 94449
     },
     {
-      "minute": 6,
-      "count": 0
+      "direction": "W",
+      "count": 119524
     },
     {
-      "minute": 7,
-      "count": 0
+      "direction": "NW",
+      "count": 95552
+    }
+  ],
+  "aircraft_weekly": [
+    {
+      "week": "2026-W11",
+      "aircraft": 78565
+    }
+  ],
+  "aircraft_daily": [
+    {
+      "day": "2026-03-21",
+      "aircraft": 20085
     },
     {
-      "minute": 8,
-      "count": 0
+      "day": "2026-03-20",
+      "aircraft": 52540
     },
     {
-      "minute": 9,
-      "count": 10899
+      "day": "2026-03-19",
+      "aircraft": 50821
     },
     {
-      "minute": 10,
-      "count": 406
-    },
-    {
-      "minute": 11,
-      "count": 0
-    },
-    {
-      "minute": 12,
-      "count": 0
-    },
-    {
-      "minute": 13,
-      "count": 0
-    },
-    {
-      "minute": 14,
-      "count": 10951
-    },
-    {
-      "minute": 15,
-      "count": 414
-    },
-    {
-      "minute": 16,
-      "count": 0
-    },
-    {
-      "minute": 17,
-      "count": 0
-    },
-    {
-      "minute": 18,
-      "count": 0
-    },
-    {
-      "minute": 19,
-      "count": 10950
-    },
-    {
-      "minute": 20,
-      "count": 424
-    },
-    {
-      "minute": 21,
-      "count": 0
-    },
-    {
-      "minute": 22,
-      "count": 0
-    },
-    {
-      "minute": 23,
-      "count": 0
-    },
-    {
-      "minute": 24,
-      "count": 11090
-    },
-    {
-      "minute": 25,
-      "count": 359
-    },
-    {
-      "minute": 26,
-      "count": 0
-    },
-    {
-      "minute": 27,
-      "count": 0
-    },
-    {
-      "minute": 28,
-      "count": 0
-    },
-    {
-      "minute": 29,
-      "count": 10853
-    },
-    {
-      "minute": 30,
-      "count": 440
-    },
-    {
-      "minute": 31,
-      "count": 0
-    },
-    {
-      "minute": 32,
-      "count": 0
-    },
-    {
-      "minute": 33,
-      "count": 0
-    },
-    {
-      "minute": 34,
-      "count": 10956
-    },
-    {
-      "minute": 35,
-      "count": 396
-    },
-    {
-      "minute": 36,
-      "count": 0
-    },
-    {
-      "minute": 37,
-      "count": 0
-    },
-    {
-      "minute": 38,
-      "count": 0
-    },
-    {
-      "minute": 39,
-      "count": 10839
-    },
-    {
-      "minute": 40,
-      "count": 381
-    },
-    {
-      "minute": 41,
-      "count": 0
-    },
-    {
-      "minute": 42,
-      "count": 0
-    },
-    {
-      "minute": 43,
-      "count": 0
-    },
-    {
-      "minute": 44,
-      "count": 10887
-    },
-    {
-      "minute": 45,
-      "count": 369
-    },
-    {
-      "minute": 46,
-      "count": 0
-    },
-    {
-      "minute": 47,
-      "count": 0
-    },
-    {
-      "minute": 48,
-      "count": 0
-    },
-    {
-      "minute": 49,
-      "count": 10814
-    },
-    {
-      "minute": 50,
-      "count": 366
-    },
-    {
-      "minute": 51,
-      "count": 0
-    },
-    {
-      "minute": 52,
-      "count": 0
-    },
-    {
-      "minute": 53,
-      "count": 0
-    },
-    {
-      "minute": 54,
-      "count": 10865
-    },
-    {
-      "minute": 55,
-      "count": 330
-    },
-    {
-      "minute": 56,
-      "count": 0
-    },
-    {
-      "minute": 57,
-      "count": 0
-    },
-    {
-      "minute": 58,
-      "count": 0
-    },
-    {
-      "minute": 59,
-      "count": 10881
+      "day": "2026-03-18",
+      "aircraft": 46574
     }
   ],
   "weekday_distribution": [
     {
-      "weekday": 0,
-      "label": "Mon",
-      "count": 19633
-    },
-    {
-      "weekday": 1,
-      "label": "Tue",
-      "count": 15606
-    },
-    {
-      "weekday": 2,
-      "label": "Wed",
-      "count": 17054
-    },
-    {
       "weekday": 3,
       "label": "Thu",
-      "count": 19462
+      "count": 223297
     },
     {
       "weekday": 4,
       "label": "Fri",
-      "count": 17365
+      "count": 231398
     },
     {
       "weekday": 5,
       "label": "Sat",
-      "count": 24952
+      "count": 283089
     },
     {
       "weekday": 6,
       "label": "Sun",
-      "count": 21521
+      "count": 56155
     }
   ],
-  "seasonal_pattern": [],
-  "heading_distribution": [],
-  "fleet_mix": [
+  "ground_airborne": {
+    "on_ground": 14990,
+    "airborne": 703746
+  },
+  "top_airports_activity": [
     {
-      "type": "Narrow-body",
-      "share": 0
+      "airport": "HCME",
+      "activity": 2376
     },
     {
-      "type": "Wide-body",
-      "share": 0
+      "airport": "UESG",
+      "activity": 1394
     },
     {
-      "type": "Regional",
-      "share": 0
+      "airport": "HCMV",
+      "activity": 990
     },
     {
-      "type": "Cargo",
-      "share": 0
+      "airport": "YKII",
+      "activity": 940
+    },
+    {
+      "airport": "HKML",
+      "activity": 830
+    },
+    {
+      "airport": "FSMA",
+      "activity": 629
+    },
+    {
+      "airport": "HCAD",
+      "activity": 608
+    },
+    {
+      "airport": "HCMG",
+      "activity": 548
+    },
+    {
+      "airport": "OEOM",
+      "activity": 521
+    },
+    {
+      "airport": "FSSD",
+      "activity": 508
+    },
+    {
+      "airport": "HCMN",
+      "activity": 496
+    },
+    {
+      "airport": "HCMC",
+      "activity": 450
+    },
+    {
+      "airport": "HKGA",
+      "activity": 428
+    },
+    {
+      "airport": "HCMS",
+      "activity": 417
+    },
+    {
+      "airport": "HAGO",
+      "activity": 403
+    },
+    {
+      "airport": "HCMU",
+      "activity": 401
+    },
+    {
+      "airport": "HCMF",
+      "activity": 390
+    },
+    {
+      "airport": "OEYN",
+      "activity": 360
+    },
+    {
+      "airport": "HCMR",
+      "activity": 355
+    },
+    {
+      "airport": "OESK",
+      "activity": 313
     }
   ],
-  "adsb_type_distribution": [],
-  "insights": []
+  "altitude_stats": {
+    "min": -312.42,
+    "max": 37459.92,
+    "avg": 6425.7
+  },
+  "speed_stats": {
+    "min": 0.0,
+    "max": 2222.16,
+    "avg": 150.4
+  },
+  "adsb_type_distribution": [
+    {
+      "type": "Position Only",
+      "count": 69212
+    },
+    {
+      "type": "Has Velocity",
+      "count": 793581
+    },
+    {
+      "type": "Has Altitude",
+      "count": 718736
+    },
+    {
+      "type": "Full Data",
+      "count": 718062
+    }
+  ],
+  "metrics": {
+    "data_completeness_altitude": 90.5,
+    "data_completeness_speed": 100.0,
+    "data_completeness_track": 100.0,
+    "data_completeness_position": 99.2,
+    "data_completeness_time": 100.0,
+    "data_completeness_all_fields": 90.4,
+    "unique_aircraft": 78565,
+    "total_records": 793939
+  },
+  "insights": [
+    {
+      "category": "Traffic",
+      "title": "Peak Activity at 21:00",
+      "detail": "Highest concentration of flights occurs around 21:00 hours with ~67,452 records."
+    },
+    {
+      "category": "Traffic",
+      "title": "Quietest Hour at 01:00",
+      "detail": "Lowest activity observed around 01:00 with ~6,947 records."
+    },
+    {
+      "category": "Operations",
+      "title": "Avg Altitude: 6,426m",
+      "detail": "Aircraft operate at an average altitude of 6,426m (21ft)."
+    },
+    {
+      "category": "Operations",
+      "title": "Avg Speed: 150.4m/s",
+      "detail": "Average ground speed of 150.4 m/s (~292 knots)."
+    },
+    {
+      "category": "Airlines",
+      "title": "Dominant Carrier: American Airlines",
+      "detail": "American Airlines represents 3.8% of identified flights."
+    },
+    {
+      "category": "Airports",
+      "title": "Busiest Airport: HCME",
+      "detail": "HCME has the highest flight activity with 2,376 records."
+    },
+    {
+      "category": "Status",
+      "title": "97.9% Airborne",
+      "detail": "97.9% of flights with altitude data are in the air, 2.1% on ground."
+    },
+    {
+      "category": "Quality",
+      "title": "Data Completeness: 90.5%",
+      "detail": "90.5% of records have complete altitude, speed, and heading data."
+    },
+    {
+      "category": "Fleet",
+      "title": "78,565 Unique Aircraft",
+      "detail": "Tracked 78,565 distinct aircraft over the data period."
+    }
+  ],
+  "unique_aircraft": 78565
 }

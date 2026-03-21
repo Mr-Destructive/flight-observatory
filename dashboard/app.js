@@ -28,9 +28,15 @@ async function fetchJson(path, optional = false) {
 // Metrics & Stats
 // ============================================================================
 
-function renderMetrics(summary) {
+function renderMetrics(summary, flights) {
   const grid = document.getElementById("metricsGrid");
   if (!grid || !summary) return;
+
+  const altitudes = (flights || []).map((r) => r.altitude).filter((v) => typeof v === "number");
+  const speeds = (flights || []).map((r) => r.velocity).filter((v) => typeof v === "number");
+
+  const altP90 = computePercentile(altitudes, 0.9);
+  const speedP90 = computePercentile(speeds, 0.9);
 
   const metrics = [
     {
@@ -64,14 +70,24 @@ function renderMetrics(summary) {
       color: "--accent-cyan",
     },
     {
-      label: "Median Alt (m)",
-      value: formatNumber(summary.altitude_median),
+      label: "Avg Alt (m)",
+      value: formatNumber(summary.altitude_avg),
       color: "--accent-orange",
     },
     {
-      label: "Median Spd (m/s)",
-      value: formatNumber(summary.speed_median),
+      label: "P90 Alt (m)",
+      value: formatNumber(altP90),
       color: "--accent-purple",
+    },
+    {
+      label: "Avg Spd (m/s)",
+      value: formatNumber(summary.speed_avg),
+      color: "--accent-green",
+    },
+    {
+      label: "P90 Spd (m/s)",
+      value: formatNumber(speedP90),
+      color: "--accent-pink",
     },
   ];
 
@@ -85,6 +101,13 @@ function renderMetrics(summary) {
   `
     )
     .join("");
+}
+
+function computePercentile(arr, p) {
+  if (!arr || arr.length === 0) return null;
+  const sorted = arr.slice().sort((a, b) => a - b);
+  const idx = Math.floor(sorted.length * p);
+  return sorted[Math.min(idx, sorted.length - 1)];
 }
 
 function formatNumber(val) {
@@ -250,6 +273,11 @@ async function loadDashboard() {
     fetchJson("./data/minute_traffic.json", true),
   ]);
 
+  const flights = latest?.flights || snapshot || [];
+
+  const altitudes = flights.map((r) => r.altitude).filter((v) => typeof v === "number");
+  const speeds = flights.map((r) => r.velocity).filter((v) => typeof v === "number");
+
   const summary =
     latest?.summary ||
     (snapshot && snapshot.length
@@ -260,17 +288,14 @@ async function loadDashboard() {
           unique_airports: new Set(snapshot.map((r) => r.airport)).size,
           airborne: snapshot.filter((r) => !r.on_ground).length,
           on_ground: snapshot.filter((r) => r.on_ground).length,
-          altitude_median: computeMedian(
-            snapshot.map((r) => r.altitude).filter((v) => typeof v === "number")
-          ),
-          speed_median: computeMedian(
-            snapshot.map((r) => r.velocity).filter((v) => typeof v === "number")
-          ),
+          altitude_avg: altitudes.length ? altitudes.reduce((a, b) => a + b, 0) / altitudes.length : null,
+          altitude_median: computeMedian(altitudes),
+          speed_avg: speeds.length ? speeds.reduce((a, b) => a + b, 0) / speeds.length : null,
+          speed_median: computeMedian(speeds),
           generated_at: new Date().toISOString(),
         }
       : null);
 
-  const flights = latest?.flights || snapshot || [];
   const filtered = currentAirportFilter
     ? flights.filter(
         (f) =>
@@ -289,7 +314,7 @@ async function loadDashboard() {
   }
 
   // Render metrics
-  renderMetrics(summary);
+  renderMetrics(summary, flights);
 
   // Build charts
   if (minuteTraffic && Array.isArray(minuteTraffic) && minuteTraffic.length > 0) {

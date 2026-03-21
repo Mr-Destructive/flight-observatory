@@ -47,7 +47,7 @@ def load_airports() -> List[Dict[str, float]]:
         reader = csv.DictReader(f)
         for row in reader:
             if row.get("coordinates"):
-                lon_str, lat_str = row["coordinates"].split(",")
+                lat_str, lon_str = row["coordinates"].split(",")
                 try:
                     airports.append(
                         {

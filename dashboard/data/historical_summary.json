@@ -1,439 +1,562 @@
 {
-  "months": 60,
-  "total_rows": 135593,
-  "ground_rate": 0.12045607074111496,
+  "total_rows": 793939,
+  "months": 1,
+  "date_range": [
+    "2026-03-18T06:01:35+00:00",
+    "2026-03-21T09:57:23+00:00"
+  ],
   "yearly_counts": [
     {
-      "year": "2020",
-      "count": 58
-    },
-    {
-      "year": "2021",
-      "count": 1166
-    },
-    {
-      "year": "2022",
-      "count": 18006
-    },
-    {
-      "year": "2023",
-      "count": 30396
-    },
-    {
-      "year": "2024",
-      "count": 30009
-    },
-    {
-      "year": "2025",
-      "count": 43561
-    },
-    {
-      "year": "2026",
-      "count": 12397
+      "year": 2026,
+      "count": 793939
     }
   ],
   "altitude_bins": [
     {
-      "altitude_band": -1000,
-      "count": 39
+      "altitude_band": "-1000m",
+      "count": 3840
     },
     {
-      "altitude_band": 0,
-      "count": 5273
+      "altitude_band": "0m",
+      "count": 127791
     },
     {
-      "altitude_band": 1000,
-      "count": 5025
+      "altitude_band": "1000m",
+      "count": 76662
     },
     {
-      "altitude_band": 2000,
-      "count": 5802
+      "altitude_band": "2000m",
+      "count": 42444
     },
     {
-      "altitude_band": 3000,
-      "count": 6643
+      "altitude_band": "3000m",
+      "count": 30739
     },
     {
-      "altitude_band": 4000,
-      "count": 5409
+      "altitude_band": "4000m",
+      "count": 24196
     },
     {
-      "altitude_band": 5000,
-      "count": 5206
+      "altitude_band": "5000m",
+      "count": 22479
     },
     {
-      "altitude_band": 6000,
-      "count": 5802
+      "altitude_band": "6000m",
+      "count": 23496
     },
     {
-      "altitude_band": 7000,
-      "count": 9045
+      "altitude_band": "7000m",
+      "count": 27709
     },
     {
-      "altitude_band": 8000,
-      "count": 7569
+      "altitude_band": "8000m",
+      "count": 26902
     },
     {
-      "altitude_band": 9000,
-      "count": 7857
+      "altitude_band": "9000m",
+      "count": 44618
     },
     {
-      "altitude_band": 10000,
-      "count": 7266
+      "altitude_band": "10000m",
+      "count": 144826
     },
     {
-      "altitude_band": 11000,
-      "count": 6651
+      "altitude_band": "11000m",
+      "count": 89669
     },
     {
-      "altitude_band": 12000,
-      "count": 5010
+      "altitude_band": "12000m",
+      "count": 22395
     },
     {
-      "altitude_band": 13000,
-      "count": 4318
+      "altitude_band": "13000m",
+      "count": 10159
     },
     {
-      "altitude_band": 14000,
-      "count": 3246
+      "altitude_band": "14000m",
+      "count": 658
     },
     {
-      "altitude_band": 15000,
-      "count": 2771
+      "altitude_band": "15000m",
+      "count": 19
     },
     {
-      "altitude_band": 16000,
-      "count": 2377
-    },
-    {
-      "altitude_band": 17000,
-      "count": 2028
-    },
-    {
-      "altitude_band": 18000,
-      "count": 1479
-    },
-    {
-      "altitude_band": 19000,
-      "count": 1248
-    },
-    {
-      "altitude_band": 20000,
-      "count": 1066
-    },
-    {
-      "altitude_band": 21000,
-      "count": 831
-    },
-    {
-      "altitude_band": 22000,
-      "count": 733
-    },
-    {
-      "altitude_band": 23000,
-      "count": 654
-    },
-    {
-      "altitude_band": 24000,
-      "count": 481
-    },
-    {
-      "altitude_band": 25000,
-      "count": 398
-    },
-    {
-      "altitude_band": 26000,
-      "count": 254
-    },
-    {
-      "altitude_band": 27000,
-      "count": 240
-    },
-    {
-      "altitude_band": 28000,
-      "count": 218
-    },
-    {
-      "altitude_band": 29000,
-      "count": 178
-    },
-    {
-      "altitude_band": 30000,
-      "count": 293
-    },
-    {
-      "altitude_band": 31000,
-      "count": 327
-    },
-    {
-      "altitude_band": 32000,
-      "count": 832
-    },
-    {
-      "altitude_band": 33000,
-      "count": 962
-    },
-    {
-      "altitude_band": 34000,
-      "count": 1439
-    },
-    {
-      "altitude_band": 35000,
-      "count": 2153
-    },
-    {
-      "altitude_band": 36000,
-      "count": 2091
-    },
-    {
-      "altitude_band": 37000,
-      "count": 2263
-    },
-    {
-      "altitude_band": 38000,
-      "count": 1386
-    },
-    {
-      "altitude_band": 39000,
-      "count": 964
-    },
-    {
-      "altitude_band": 40000,
-      "count": 319
-    },
-    {
-      "altitude_band": 41000,
-      "count": 338
-    },
-    {
-      "altitude_band": 42000,
-      "count": 3
-    },
-    {
-      "altitude_band": 43000,
-      "count": 30
-    },
-    {
-      "altitude_band": 44000,
+      "altitude_band": "16000m",
       "count": 2
     },
     {
-      "altitude_band": 45000,
-      "count": 22
+      "altitude_band": "17000m",
+      "count": 24
+    },
+    {
+      "altitude_band": "18000m",
+      "count": 43
+    },
+    {
+      "altitude_band": "19000m",
+      "count": 10
+    },
+    {
+      "altitude_band": "20000m",
+      "count": 3
+    },
+    {
+      "altitude_band": "21000m",
+      "count": 6
+    },
+    {
+      "altitude_band": "22000m",
+      "count": 8
+    },
+    {
+      "altitude_band": "23000m",
+      "count": 4
+    },
+    {
+      "altitude_band": "24000m",
+      "count": 1
+    },
+    {
+      "altitude_band": "25000m",
+      "count": 1
+    },
+    {
+      "altitude_band": "26000m",
+      "count": 1
+    },
+    {
+      "altitude_band": "27000m",
+      "count": 5
+    },
+    {
+      "altitude_band": "28000m",
+      "count": 5
+    },
+    {
+      "altitude_band": "29000m",
+      "count": 4
+    },
+    {
+      "altitude_band": "30000m",
+      "count": 2
+    },
+    {
+      "altitude_band": "31000m",
+      "count": 2
+    },
+    {
+      "altitude_band": "32000m",
+      "count": 5
+    },
+    {
+      "altitude_band": "33000m",
+      "count": 1
+    },
+    {
+      "altitude_band": "34000m",
+      "count": 2
+    },
+    {
+      "altitude_band": "35000m",
+      "count": 1
+    },
+    {
+      "altitude_band": "36000m",
+      "count": 2
+    },
+    {
+      "altitude_band": "37000m",
+      "count": 2
     }
   ],
   "speed_bins": [
     {
-      "speed_band": 0,
-      "count": 17671
+      "speed_band": "0m/s",
+      "count": 147618
     },
     {
-      "speed_band": 50,
-      "count": 610
+      "speed_band": "50m/s",
+      "count": 133172
     },
     {
-      "speed_band": 100,
-      "count": 7948
+      "speed_band": "100m/s",
+      "count": 75418
     },
     {
-      "speed_band": 150,
-      "count": 19438
+      "speed_band": "150m/s",
+      "count": 95075
     },
     {
-      "speed_band": 200,
-      "count": 21586
+      "speed_band": "200m/s",
+      "count": 270563
     },
     {
-      "speed_band": 250,
-      "count": 28337
+      "speed_band": "250m/s",
+      "count": 68749
     },
     {
-      "speed_band": 300,
-      "count": 11147
+      "speed_band": "300m/s",
+      "count": 2745
     },
     {
-      "speed_band": 350,
-      "count": 10906
+      "speed_band": "350m/s",
+      "count": 32
     },
     {
-      "speed_band": 400,
-      "count": 8475
+      "speed_band": "400m/s",
+      "count": 27
     },
     {
-      "speed_band": 450,
-      "count": 7723
+      "speed_band": "450m/s",
+      "count": 23
     },
     {
-      "speed_band": 500,
-      "count": 1649
+      "speed_band": "500m/s",
+      "count": 30
     },
     {
-      "speed_band": 550,
-      "count": 103
+      "speed_band": "550m/s",
+      "count": 29
+    },
+    {
+      "speed_band": "600m/s",
+      "count": 9
+    },
+    {
+      "speed_band": "650m/s",
+      "count": 17
+    },
+    {
+      "speed_band": "700m/s",
+      "count": 34
+    },
+    {
+      "speed_band": "750m/s",
+      "count": 2
+    },
+    {
+      "speed_band": "800m/s",
+      "count": 1
+    },
+    {
+      "speed_band": "850m/s",
+      "count": 1
+    },
+    {
+      "speed_band": "900m/s",
+      "count": 3
+    },
+    {
+      "speed_band": "950m/s",
+      "count": 1
+    },
+    {
+      "speed_band": "1000m/s",
+      "count": 1
+    },
+    {
+      "speed_band": "1150m/s",
+      "count": 1
+    },
+    {
+      "speed_band": "1200m/s",
+      "count": 2
+    },
+    {
+      "speed_band": "1250m/s",
+      "count": 1
+    },
+    {
+      "speed_band": "1300m/s",
+      "count": 8
+    },
+    {
+      "speed_band": "1350m/s",
+      "count": 3
+    },
+    {
+      "speed_band": "1450m/s",
+      "count": 1
+    },
+    {
+      "speed_band": "1500m/s",
+      "count": 1
+    },
+    {
+      "speed_band": "1550m/s",
+      "count": 2
+    },
+    {
+      "speed_band": "1650m/s",
+      "count": 2
+    },
+    {
+      "speed_band": "1700m/s",
+      "count": 1
+    },
+    {
+      "speed_band": "1800m/s",
+      "count": 1
+    },
+    {
+      "speed_band": "1850m/s",
+      "count": 2
+    },
+    {
+      "speed_band": "1950m/s",
+      "count": 1
+    },
+    {
+      "speed_band": "2100m/s",
+      "count": 4
+    },
+    {
+      "speed_band": "2200m/s",
+      "count": 1
     }
   ],
-  "top_prefixes": [
+  "top_airlines": [
     {
-      "prefix": "IGO",
-      "flights": 37380
+      "airline": "unknown",
+      "flights": 251475
     },
     {
-      "prefix": "AIC",
-      "flights": 22514
+      "airline": "American Airlines",
+      "flights": 29787
     },
     {
-      "prefix": "VTI",
-      "flights": 9374
+      "airline": "Delta Air Lines",
+      "flights": 29215
     },
     {
-      "prefix": "SEJ",
-      "flights": 4572
+      "airline": "Southwest Airlines",
+      "flights": 28191
     },
     {
-      "prefix": "AKJ",
-      "flights": 4070
+      "airline": "United Airlines",
+      "flights": 27211
     },
     {
-      "prefix": "GOW",
-      "flights": 2977
+      "airline": "Ryanair",
+      "flights": 22097
     },
     {
-      "prefix": "AXB",
-      "flights": 2908
+      "airline": "SkyWest",
+      "flights": 11700
     },
     {
-      "prefix": "IAD",
-      "flights": 1715
+      "airline": "Turkish Airlines",
+      "flights": 10373
     },
     {
-      "prefix": "ETH",
-      "flights": 1440
+      "airline": "JetBlue Airways",
+      "flights": 9202
     },
     {
-      "prefix": "UAE",
-      "flights": 1403
+      "airline": "Alaska Airlines",
+      "flights": 8024
     },
     {
-      "prefix": "FOLOWME",
-      "flights": 1383
+      "airline": "NetJets",
+      "flights": 7668
     },
     {
-      "prefix": "ETD",
-      "flights": 992
+      "airline": "Lufthansa",
+      "flights": 6949
     },
     {
-      "prefix": "SDG",
-      "flights": 922
+      "airline": "Republic Airlines",
+      "flights": 6737
     },
     {
-      "prefix": "SIA",
-      "flights": 829
+      "airline": "easyJet",
+      "flights": 6692
     },
     {
-      "prefix": "LLR",
-      "flights": 807
+      "airline": "IndiGo Airlines",
+      "flights": 6518
     },
     {
-      "prefix": "BDA",
-      "flights": 776
+      "airline": "Air Canada",
+      "flights": 6280
     },
     {
-      "prefix": "ABY",
-      "flights": 662
+      "airline": "Frontier Airlines",
+      "flights": 6087
     },
     {
-      "prefix": "IGOP",
-      "flights": 651
+      "airline": "Air France",
+      "flights": 5810
     },
     {
-      "prefix": "IGOC",
-      "flights": 645
+      "airline": "KLM Royal Dutch Airlines",
+      "flights": 5284
     },
     {
-      "prefix": "IGOH",
-      "flights": 643
+      "airline": "British Airways",
+      "flights": 5273
+    },
+    {
+      "airline": "United Parcel Service",
+      "flights": 5223
+    },
+    {
+      "airline": "Envoy Air",
+      "flights": 4876
+    },
+    {
+      "airline": "Scandinavian Airlines System",
+      "flights": 4562
+    },
+    {
+      "airline": "Federal Express",
+      "flights": 4414
+    },
+    {
+      "airline": "WestJet",
+      "flights": 4268
+    },
+    {
+      "airline": "All Nippon Airways",
+      "flights": 4147
+    },
+    {
+      "airline": "Vueling Airlines",
+      "flights": 4024
+    },
+    {
+      "airline": "Pegasus Airlines",
+      "flights": 3894
+    },
+    {
+      "airline": "Allegiant Air",
+      "flights": 3671
+    },
+    {
+      "airline": "Bombardier Business Jet Solutions",
+      "flights": 3662
     }
   ],
   "top_models": [
     {
-      "model": "A20N",
-      "flights": 47596
+      "model": "AAL",
+      "flights": 29787
     },
     {
-      "model": "A21N",
-      "flights": 25496
+      "model": "DAL",
+      "flights": 29215
     },
     {
-      "model": "B38M",
-      "flights": 10763
+      "model": "SWA",
+      "flights": 28191
     },
     {
-      "model": "A320",
-      "flights": 9500
+      "model": "UAL",
+      "flights": 27211
     },
     {
-      "model": "B738",
-      "flights": 5058
+      "model": "RYR",
+      "flights": 22097
     },
     {
-      "model": "B77W",
-      "flights": 3716
+      "model": "SKW",
+      "flights": 11700
     },
     {
-      "model": "A321",
-      "flights": 3058
+      "model": "THY",
+      "flights": 10373
     },
     {
-      "model": "A319",
-      "flights": 2324
+      "model": "JBU",
+      "flights": 9202
     },
     {
-      "model": "B77L",
-      "flights": 1806
+      "model": "ASA",
+      "flights": 8024
     },
     {
-      "model": "B788",
-      "flights": 1726
+      "model": "EJA",
+      "flights": 7668
     },
     {
-      "model": "B789",
-      "flights": 1634
+      "model": "DLH",
+      "flights": 6949
     },
     {
-      "model": "A359",
-      "flights": 1400
+      "model": "RPA",
+      "flights": 6737
     },
     {
-      "model": "A333",
-      "flights": 1319
+      "model": "EZY",
+      "flights": 6692
     },
     {
-      "model": "AT76",
-      "flights": 1135
+      "model": "IGO",
+      "flights": 6518
     },
     {
-      "model": "B752",
-      "flights": 892
+      "model": "ACA",
+      "flights": 6280
     },
     {
-      "model": "GLEX",
-      "flights": 693
+      "model": "FFT",
+      "flights": 6087
     },
     {
-      "model": "A332",
-      "flights": 675
+      "model": "AFR",
+      "flights": 5810
     },
     {
-      "model": "E35L",
-      "flights": 669
+      "model": "KLM",
+      "flights": 5284
     },
     {
-      "model": "DH8D",
-      "flights": 632
+      "model": "BAW",
+      "flights": 5273
     },
     {
-      "model": "B772",
-      "flights": 560
+      "model": "UPS",
+      "flights": 5223
+    },
+    {
+      "model": "ENY",
+      "flights": 4876
+    },
+    {
+      "model": "EJU",
+      "flights": 4806
+    },
+    {
+      "model": "SAS",
+      "flights": 4562
+    },
+    {
+      "model": "FDX",
+      "flights": 4414
+    },
+    {
+      "model": "CXK",
+      "flights": 4359
+    },
+    {
+      "model": "WJA",
+      "flights": 4268
+    },
+    {
+      "model": "ANA",
+      "flights": 4147
+    },
+    {
+      "model": "VLG",
+      "flights": 4024
+    },
+    {
+      "model": "EDV",
+      "flights": 3957
+    },
+    {
+      "model": "N73",
+      "flights": 3902
     }
   ]
 }

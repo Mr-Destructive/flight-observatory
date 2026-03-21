@@ -28,7 +28,7 @@
         <section class="header-section">
           <div class="header-content">
             <h1>Historical Analysis</h1>
-            <p>Multi-year traffic patterns and trends</p>
+            <p id="dataDescription">Flight activity patterns over time</p>
           </div>
           <div class="header-info">
             <div class="info-box">
@@ -39,7 +39,15 @@
               <span class="label">Time Span</span>
               <span class="value" id="timeSpan">--</span>
             </div>
+            <div class="info-box">
+              <span class="label">Unique Aircraft</span>
+              <span class="value" id="uniqueAircraft">--</span>
+            </div>
           </div>
+        </section>
+
+        <section class="metrics-section">
+          <div class="metrics-grid" id="historicalMetrics"></div>
         </section>
 
         <section class="charts-section">
@@ -88,6 +96,10 @@
             <div class="chart-card wide">
               <h3>Hourly Activity Pattern</h3>
               <canvas id="hourlyPattern"></canvas>
+            </div>
+            <div class="chart-card">
+              <h3>Weekday Distribution</h3>
+              <canvas id="weekdayPattern"></canvas>
             </div>
             <div class="chart-card">
               <h3>Heading Distribution</h3>
