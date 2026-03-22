@@ -101,6 +101,75 @@ function renderMetrics(summary, flights) {
   `
     )
     .join("");
+
+  const derivedGrid = document.getElementById("liveDerivedMetrics");
+  if (!derivedGrid) return;
+
+  const groundDelay = flights.filter(
+    (f) =>
+      f.on_ground === true &&
+      typeof f.velocity === "number" &&
+      f.velocity === 0 &&
+      typeof f.altitude === "number" &&
+      f.altitude < 50
+  ).length;
+  const approach = flights.filter((f) => typeof f.altitude === "number" && f.altitude < 1500).length;
+  const cruise = flights.filter((f) => typeof f.altitude === "number" && f.altitude > 8000).length;
+  const approachRatio = cruise ? Math.round((approach / cruise) * 100) : null;
+
+  const headingBins = computeHeadingBins(flights);
+  const maxHeading = headingBins.reduce((best, b) => (b.count > best ? b.count : best), 0);
+  const headingShare = flights.length ? Math.round((maxHeading / flights.length) * 100) : null;
+
+  const altBins = computeBins(flights, "altitude", 1000);
+  const topBand = altBins.length
+    ? altBins.reduce((best, b) => (b.count > best.count ? b : best), altBins[0])
+    : null;
+  const cruiseDominance = topBand && flights.length ? Math.round((topBand.count / flights.length) * 100) : null;
+
+  const corridorCounts = new Map();
+  for (const f of flights) {
+    if (!f.airport || typeof f.altitude !== "number") continue;
+    const band = Math.floor(f.altitude / 1000) * 1000;
+    const key = `${f.airport} @ ${band}m`;
+    corridorCounts.set(key, (corridorCounts.get(key) || 0) + 1);
+  }
+  const topCorridor = Array.from(corridorCounts.entries()).sort((a, b) => b[1] - a[1])[0];
+
+  const derived = [
+    { label: "Ground Delay Index", value: groundDelay, color: "--accent-orange" },
+    {
+      label: "Approach/Cruise %",
+      value: approachRatio !== null ? `${approachRatio}%` : "--",
+      color: "--accent-cyan",
+    },
+    {
+      label: "Heading Dominance",
+      value: headingShare !== null ? `${headingShare}%` : "--",
+      color: "--accent-purple",
+    },
+    {
+      label: "Cruise Band Share",
+      value: cruiseDominance !== null ? `${cruiseDominance}%` : "--",
+      color: "--accent-green",
+    },
+    {
+      label: "Busy Corridor",
+      value: topCorridor ? topCorridor[0] : "--",
+      color: "--accent-pink",
+    },
+  ];
+
+  derivedGrid.innerHTML = derived
+    .map(
+      (m) => `
+      <div class="metric-card">
+        <div class="metric-label">${m.label}</div>
+        <div class="metric-value">${m.value}</div>
+      </div>
+    `
+    )
+    .join("");
 }
 
 function computePercentile(arr, p) {

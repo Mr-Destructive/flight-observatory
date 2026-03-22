@@ -4,7 +4,7 @@ import os
 import re
 import sqlite3
 import time
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from math import radians, cos, sin, sqrt, atan2, floor
 from typing import Dict, List
 
@@ -36,6 +36,19 @@ SKIP_AIRPORT_MAPPING = (os.getenv("SKIP_AIRPORT_MAPPING") or "false").lower() in
 FILTER_BBOX = os.getenv("FILTER_BBOX", "")
 PULL_COUNT = int(os.getenv("PULL_COUNT") or "1")
 PULL_INTERVAL_SEC = int(os.getenv("PULL_INTERVAL_SEC") or "10")
+MAX_GAP_MINUTES = int(os.getenv("MAX_GAP_MINUTES") or "120")
+ARCHIVE_DIR = os.getenv("ARCHIVE_DIR") or "archives"
+ARCHIVE_OLDER_THAN_DAYS = int(os.getenv("ARCHIVE_OLDER_THAN_DAYS") or "0")
+KEEP_LEGACY_TABLE = (os.getenv("KEEP_LEGACY_TABLE") or "false").lower() in (
+    "1",
+    "true",
+    "yes",
+)
+VACUUM_MAIN = (os.getenv("VACUUM_MAIN") or "true").lower() in (
+    "1",
+    "true",
+    "yes",
+)
 
 DATA_DIR = os.path.join("dashboard", "data")
 os.makedirs(DATA_DIR, exist_ok=True)
@@ -126,29 +139,129 @@ def safe_float(val):
 def init_db(conn: sqlite3.Connection):
     conn.execute(
         """
-        CREATE TABLE IF NOT EXISTS flights_adsb (
-            timestamp TEXT,
-            icao24 TEXT,
+        CREATE TABLE IF NOT EXISTS flights (
+            flight_id INTEGER PRIMARY KEY AUTOINCREMENT,
+            icao24 TEXT NOT NULL,
             callsign TEXT,
+            origin_country TEXT,
             airline TEXT,
+            origin_airport TEXT,
+            dest_airport TEXT,
+            first_seen TEXT NOT NULL,
+            last_seen TEXT NOT NULL,
+            UNIQUE (icao24, callsign, first_seen)
+        );
+        """
+    )
+    conn.execute(
+        """
+        CREATE TABLE IF NOT EXISTS flight_positions (
+            position_id INTEGER PRIMARY KEY AUTOINCREMENT,
+            flight_id INTEGER NOT NULL,
+            observed_at TEXT NOT NULL,
+            state_time TEXT,
             lat REAL,
             lon REAL,
             altitude REAL,
             velocity REAL,
             heading REAL,
-            nearest_airport TEXT
+            on_ground INTEGER,
+            nearest_airport TEXT,
+            FOREIGN KEY (flight_id) REFERENCES flights(flight_id),
+            UNIQUE (flight_id, observed_at)
         );
         """
+    )
+    conn.execute(
+        "CREATE INDEX IF NOT EXISTS idx_flights_icao_callsign ON flights(icao24, callsign)"
+    )
+    conn.execute(
+        "CREATE INDEX IF NOT EXISTS idx_flights_last_seen ON flights(last_seen)"
+    )
+    conn.execute(
+        "CREATE INDEX IF NOT EXISTS idx_positions_observed_at ON flight_positions(observed_at)"
+    )
+    conn.execute(
+        "CREATE INDEX IF NOT EXISTS idx_positions_flight_id ON flight_positions(flight_id)"
     )
     conn.commit()
 
 
-def insert_rows(conn: sqlite3.Connection, rows):
+def table_exists(conn: sqlite3.Connection, name: str) -> bool:
+    cur = conn.execute(
+        "SELECT 1 FROM sqlite_master WHERE type='table' AND name=?",
+        (name,),
+    )
+    return cur.fetchone() is not None
+
+
+def parse_iso(ts: str) -> datetime:
+    if ts.endswith("Z"):
+        ts = ts[:-1] + "+00:00"
+    return datetime.fromisoformat(ts)
+
+
+def find_or_create_flight(
+    conn: sqlite3.Connection,
+    icao24: str,
+    callsign: str,
+    origin_country: str,
+    airline: str,
+    observed_at: datetime,
+):
+    if not icao24:
+        return None
+    cutoff = observed_at.timestamp() - (MAX_GAP_MINUTES * 60)
+    cutoff_iso = datetime.fromtimestamp(cutoff, tz=timezone.utc).isoformat()
+    cur = conn.execute(
+        """
+        SELECT flight_id, airline, last_seen
+        FROM flights
+        WHERE icao24 = ? AND callsign = ? AND last_seen >= ?
+        ORDER BY last_seen DESC
+        LIMIT 1
+        """,
+        (icao24, callsign, cutoff_iso),
+    )
+    row = cur.fetchone()
+    if row:
+        flight_id, existing_airline, _ = row
+        if airline and (not existing_airline or existing_airline == "unknown"):
+            conn.execute(
+                "UPDATE flights SET airline = ?, last_seen = ? WHERE flight_id = ?",
+                (airline, observed_at.isoformat(), flight_id),
+            )
+        else:
+            conn.execute(
+                "UPDATE flights SET last_seen = ? WHERE flight_id = ?",
+                (observed_at.isoformat(), flight_id),
+            )
+        return flight_id
+
+    cur = conn.execute(
+        """
+        INSERT INTO flights (
+            icao24, callsign, origin_country, airline, first_seen, last_seen
+        ) VALUES (?, ?, ?, ?, ?, ?)
+        """,
+        (
+            icao24,
+            callsign,
+            origin_country,
+            airline,
+            observed_at.isoformat(),
+            observed_at.isoformat(),
+        ),
+    )
+    return cur.lastrowid
+
+
+def insert_positions(conn: sqlite3.Connection, rows):
     conn.executemany(
         """
-        INSERT INTO flights_adsb (
-            timestamp, icao24, callsign, airline, lat, lon, altitude, velocity,
-            heading, nearest_airport
+        INSERT OR IGNORE INTO flight_positions (
+            flight_id, observed_at, state_time, lat, lon, altitude, velocity,
+            heading, on_ground, nearest_airport
         ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         """,
         rows,
@@ -156,12 +269,69 @@ def insert_rows(conn: sqlite3.Connection, rows):
     conn.commit()
 
 
+def migrate_legacy_table(conn: sqlite3.Connection):
+    if not table_exists(conn, "flights_adsb"):
+        return
+    cur = conn.execute("SELECT COUNT(*) FROM flights")
+    if cur.fetchone()[0] > 0:
+        return
+
+    batch = []
+    batch_size = 2000
+    cur = conn.execute(
+        """
+        SELECT timestamp, icao24, callsign, airline, lat, lon, altitude, velocity,
+               heading, nearest_airport
+        FROM flights_adsb
+        ORDER BY timestamp ASC
+        """
+    )
+    for row in cur:
+        ts, icao24, callsign, airline, lat, lon, altitude, velocity, heading, airport = row
+        if not ts:
+            continue
+        observed_at = parse_iso(ts)
+        flight_id = find_or_create_flight(
+            conn,
+            icao24 or "",
+            callsign or "",
+            "",
+            airline or "",
+            observed_at,
+        )
+        if not flight_id:
+            continue
+        batch.append(
+            (
+                flight_id,
+                observed_at.isoformat(),
+                observed_at.isoformat(),
+                lat,
+                lon,
+                altitude,
+                velocity,
+                heading,
+                None,
+                airport,
+            )
+        )
+        if len(batch) >= batch_size:
+            insert_positions(conn, batch)
+            batch.clear()
+    if batch:
+        insert_positions(conn, batch)
+
+    if not KEEP_LEGACY_TABLE:
+        conn.execute("DROP TABLE flights_adsb")
+        conn.commit()
+
+
 def build_metrics(conn: sqlite3.Connection):
     cur = conn.cursor()
     top_airports = cur.execute(
         """
-        SELECT nearest_airport AS airport, COUNT(*) AS flights
-        FROM flights_adsb
+        SELECT fp.nearest_airport AS airport, COUNT(*) AS flights
+        FROM flight_positions fp
         GROUP BY nearest_airport
         ORDER BY flights DESC
         LIMIT 10
@@ -170,9 +340,9 @@ def build_metrics(conn: sqlite3.Connection):
 
     altitude_bands = cur.execute(
         """
-        SELECT CAST(floor(altitude / 1000) * 1000 AS INT) AS altitude_band_m,
+        SELECT CAST(floor(fp.altitude / 1000) * 1000 AS INT) AS altitude_band_m,
                COUNT(*) AS flights
-        FROM flights_adsb
+        FROM flight_positions fp
         WHERE altitude IS NOT NULL
         GROUP BY altitude_band_m
         ORDER BY altitude_band_m ASC
@@ -181,9 +351,9 @@ def build_metrics(conn: sqlite3.Connection):
 
     speed_bands = cur.execute(
         """
-        SELECT CAST(floor(velocity / 50) * 50 AS INT) AS speed_band_ms,
+        SELECT CAST(floor(fp.velocity / 50) * 50 AS INT) AS speed_band_ms,
                COUNT(*) AS flights
-        FROM flights_adsb
+        FROM flight_positions fp
         WHERE velocity IS NOT NULL
         GROUP BY speed_band_ms
         ORDER BY speed_band_ms ASC
@@ -192,9 +362,10 @@ def build_metrics(conn: sqlite3.Connection):
 
     top_airlines = cur.execute(
         """
-        SELECT airline, COUNT(*) AS flights
-        FROM flights_adsb
-        WHERE airline IS NOT NULL AND airline != ''
+        SELECT f.airline, COUNT(*) AS flights
+        FROM flight_positions fp
+        JOIN flights f ON f.flight_id = fp.flight_id
+        WHERE f.airline IS NOT NULL AND f.airline != ''
         GROUP BY airline
         ORDER BY flights DESC
         LIMIT 10
@@ -311,22 +482,125 @@ def update_minute_traffic(count: int, ts: datetime):
 def prune_old_rows(conn: sqlite3.Connection):
     if RETENTION_DAYS <= 0:
         return
-    cutoff = datetime.now(timezone.utc).timestamp() - (RETENTION_DAYS * 86400)
-    cutoff_iso = datetime.fromtimestamp(cutoff, tz=timezone.utc).isoformat()
+    today = datetime.now(timezone.utc).date()
+    cutoff_date = today - timedelta(days=RETENTION_DAYS - 1)
+    cutoff_iso = cutoff_date.isoformat()
     conn.execute(
-        "DELETE FROM flights_adsb WHERE timestamp < ?",
+        "DELETE FROM flight_positions WHERE substr(observed_at, 1, 10) < ?",
+        (cutoff_iso,),
+    )
+    conn.execute(
+        "DELETE FROM flights WHERE substr(last_seen, 1, 10) < ?",
         (cutoff_iso,),
     )
     conn.commit()
+    if VACUUM_MAIN:
+        conn.execute("VACUUM")
+
+
+def archive_old_rows(conn: sqlite3.Connection):
+    if ARCHIVE_OLDER_THAN_DAYS <= 0:
+        return
+    os.makedirs(ARCHIVE_DIR, exist_ok=True)
+    today = datetime.now(timezone.utc).date()
+    cutoff = today - timedelta(days=ARCHIVE_OLDER_THAN_DAYS - 1)
+    cur = conn.execute(
+        """
+        SELECT DISTINCT substr(observed_at, 1, 10) AS day
+        FROM flight_positions
+        WHERE substr(observed_at, 1, 10) < ?
+        ORDER BY day ASC
+        """,
+        (cutoff.isoformat(),),
+    )
+    days = [row[0] for row in cur.fetchall()]
+    for day in days:
+        archive_path = os.path.join(ARCHIVE_DIR, f"flights_{day}.sqlite")
+        archive_gz_path = archive_path + ".gz"
+        if os.path.exists(archive_gz_path) or os.path.exists(archive_path):
+            continue
+
+        archive_conn = sqlite3.connect(archive_path)
+        archive_conn.execute(
+            """
+            CREATE TABLE IF NOT EXISTS flight_positions_archive (
+                observed_at TEXT NOT NULL,
+                state_time TEXT,
+                icao24 TEXT NOT NULL,
+                callsign TEXT,
+                origin_country TEXT,
+                airline TEXT,
+                origin_airport TEXT,
+                dest_airport TEXT,
+                lat REAL,
+                lon REAL,
+                altitude REAL,
+                velocity REAL,
+                heading REAL,
+                on_ground INTEGER,
+                nearest_airport TEXT,
+                flight_first_seen TEXT,
+                flight_last_seen TEXT
+            );
+            """
+        )
+        archive_conn.execute(
+            "CREATE INDEX IF NOT EXISTS idx_archive_observed ON flight_positions_archive(observed_at)"
+        )
+
+        rows = conn.execute(
+            """
+            SELECT fp.observed_at, fp.state_time, f.icao24, f.callsign, f.origin_country,
+                   f.airline, f.origin_airport, f.dest_airport, fp.lat, fp.lon,
+                   fp.altitude, fp.velocity, fp.heading, fp.on_ground, fp.nearest_airport,
+                   f.first_seen, f.last_seen
+            FROM flight_positions fp
+            JOIN flights f ON f.flight_id = fp.flight_id
+            WHERE substr(fp.observed_at, 1, 10) = ?
+            """,
+            (day,),
+        ).fetchall()
+
+        archive_conn.executemany(
+            """
+            INSERT INTO flight_positions_archive (
+                observed_at, state_time, icao24, callsign, origin_country, airline,
+                origin_airport, dest_airport, lat, lon, altitude, velocity, heading,
+                on_ground, nearest_airport, flight_first_seen, flight_last_seen
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            """,
+            rows,
+        )
+        archive_conn.commit()
+        archive_conn.execute("VACUUM")
+        archive_conn.commit()
+        archive_conn.close()
+
+        import gzip
+        import shutil
+
+        with open(archive_path, "rb") as f_in, gzip.open(archive_gz_path, "wb") as f_out:
+            shutil.copyfileobj(f_in, f_out)
+        os.remove(archive_path)
+
+        conn.execute(
+            "DELETE FROM flight_positions WHERE substr(observed_at, 1, 10) = ?",
+            (day,),
+        )
+        conn.commit()
 
 
 def main():
     airports = [] if SKIP_AIRPORT_MAPPING else load_airports()
     airline_map = load_airlines() if INCLUDE_AIRLINE else {}
 
-    rows = []
+    position_rows = []
     snapshot = []
     now = datetime.now(timezone.utc)
+
+    conn = sqlite3.connect(SQLITE_PATH)
+    init_db(conn)
+    migrate_legacy_table(conn)
 
     bbox = None
     if FILTER_BBOX:
@@ -371,20 +645,29 @@ def main():
                 icao = m.group(1).upper() if m else ""
                 airline = airline_map.get(icao, "unknown") if icao else "unknown"
 
-            rows.append(
-                (
-                    ts.isoformat(),
-                    icao24,
-                    callsign,
-                    airline,
-                    lat,
-                    lon,
-                    altitude,
-                    velocity,
-                    heading,
-                    airport,
-                )
+            flight_id = find_or_create_flight(
+                conn,
+                icao24,
+                callsign,
+                origin_country,
+                airline,
+                pull_time,
             )
+            if flight_id:
+                position_rows.append(
+                    (
+                        flight_id,
+                        pull_time.isoformat(),
+                        ts.isoformat(),
+                        lat,
+                        lon,
+                        altitude,
+                        velocity,
+                        heading,
+                        1 if on_ground else 0,
+                        airport,
+                    )
+                )
             snapshot.append(
                 {
                     "timestamp": ts.isoformat(),
@@ -407,9 +690,9 @@ def main():
         if i < max(PULL_COUNT, 1) - 1:
             time.sleep(PULL_INTERVAL_SEC)
 
-    conn = sqlite3.connect(SQLITE_PATH)
-    init_db(conn)
-    insert_rows(conn, rows)
+    insert_positions(conn, position_rows)
+    if ARCHIVE_OLDER_THAN_DAYS > 0:
+        archive_old_rows(conn)
     prune_old_rows(conn)
     metrics = build_metrics(conn)
     conn.close()

@@ -29,14 +29,20 @@ jobs:
           MAX_AIRPORT_DISTANCE_KM: ${{ vars.MAX_AIRPORT_DISTANCE_KM }}
           INCLUDE_AIRLINE: ${{ vars.INCLUDE_AIRLINE }}
           MINUTE_HISTORY_LIMIT: ${{ vars.MINUTE_HISTORY_LIMIT }}
-          RETENTION_DAYS: ${{ vars.RETENTION_DAYS }}
+          RETENTION_DAYS: ${{ vars.RETENTION_DAYS || '1' }}
+          ARCHIVE_OLDER_THAN_DAYS: ${{ vars.ARCHIVE_OLDER_THAN_DAYS || '1' }}
+          ARCHIVE_DIR: ${{ vars.ARCHIVE_DIR || 'archives' }}
           DEFAULT_AIRPORT: ${{ vars.DEFAULT_AIRPORT }}
+          MAX_GAP_MINUTES: ${{ vars.MAX_GAP_MINUTES || '120' }}
 
       - name: Commit dashboard JSON + SQLite
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
           git add dashboard/data/*.json flights_adsb.sqlite
+          if compgen -G "archives/*.gz" > /dev/null; then
+            git add archives/*.gz
+          fi
           if git diff --cached --quiet; then
             echo "No changes to commit"
             exit 0

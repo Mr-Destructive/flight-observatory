@@ -1,4 +1,10 @@
 const charts = new Map();
+Chart.defaults.color = "#cbd5f5";
+Chart.defaults.font = {
+  family: "IBM Plex Sans, Inter, system-ui, sans-serif",
+  size: 11,
+};
+Chart.defaults.plugins.legend.labels.usePointStyle = true;
 
 async function fetchJson(path) {
   try {
@@ -40,8 +46,8 @@ function createChart(canvasId, type, labels, data, color, yLabel = "", options =
         fill: type === "line",
         tension: type === "line" ? 0.3 : 0,
         borderWidth: 2,
-        pointRadius: 3,
-        pointHoverRadius: 5,
+        pointRadius: 2,
+        pointHoverRadius: 4,
         pointBackgroundColor: color,
         spanGaps: true,
         ...options.dataset,
@@ -55,16 +61,23 @@ function createChart(canvasId, type, labels, data, color, yLabel = "", options =
         tooltip: {
           backgroundColor: "rgba(15, 23, 42, 0.95)",
           titleColor: "#f3f4f6",
-          bodyColor: "#9ca3af",
-          borderColor: "rgba(255, 255, 255, 0.1)",
+          bodyColor: "#cbd5f5",
+          borderColor: "rgba(148, 163, 184, 0.25)",
           borderWidth: 1,
           padding: 10,
           displayColors: false,
         },
       },
       scales: {
-        x: { ticks: { color: "#6b7280", maxRotation: 45 }, grid: { color: "rgba(255, 255, 255, 0.05)" } },
-        y: { beginAtZero: type === "bar", ticks: { color: "#6b7280" }, grid: { color: "rgba(255, 255, 255, 0.05)" } },
+        x: {
+          ticks: { color: "#9ca3af", maxRotation: 45 },
+          grid: { color: "rgba(148, 163, 184, 0.15)" },
+        },
+        y: {
+          beginAtZero: type === "bar",
+          ticks: { color: "#9ca3af" },
+          grid: { color: "rgba(148, 163, 184, 0.15)" },
+        },
       },
       ...options.chart,
     },
@@ -89,7 +102,6 @@ function renderInsights(elementId, insights) {
   
   el.innerHTML = insights.map(insight => `
     <article class="insight-card">
-      <div class="insight-icon">${insight.icon || '📊'}</div>
       <div class="insight-content">
         <h4>${insight.title}</h4>
         <p>${insight.detail}</p>
@@ -130,6 +142,59 @@ function renderQuickStats(summary, detailed, sky) {
       <div class="metric-value" style="color: var(${s.color})">${s.value}</div>
     </div>
   `).join('');
+}
+
+function renderDerivedStats(summary, detailed) {
+  const grid = document.getElementById("derivedStats");
+  if (!grid) return;
+
+  const hourly = detailed?.hourly_distribution || [];
+  const peak = hourly.reduce((best, h) => (h.count > (best?.count || 0) ? h : best), null);
+  const trough = hourly.reduce((best, h) => (best === null || h.count < best.count ? h : best), null);
+  const peakToTrough = peak && trough && trough.count > 0 ? (peak.count / trough.count) : null;
+
+  const mean = hourly.length ? hourly.reduce((s, h) => s + h.count, 0) / hourly.length : null;
+  const variance = hourly.length
+    ? hourly.reduce((s, h) => s + Math.pow(h.count - mean, 2), 0) / hourly.length
+    : null;
+  const volatility = variance !== null ? Math.sqrt(variance) : null;
+
+  const weekdays = detailed?.weekday_distribution || [];
+  const weekend = weekdays.filter((d) => d.day === "Sat" || d.day === "Sun")
+    .reduce((s, d) => s + d.count, 0);
+  const weekdayTotal = weekdays.filter((d) => d.day !== "Sat" && d.day !== "Sun")
+    .reduce((s, d) => s + d.count, 0);
+  const weekendPenalty = weekdayTotal ? Math.round((weekend / weekdayTotal) * 100) : null;
+
+  const altitudeBins = summary?.altitude_bins || [];
+  const topBand = altitudeBins.reduce(
+    (best, b) => (best === null || b.count > best.count ? b : best),
+    null
+  );
+  const cruiseDominance = topBand && summary?.total_rows
+    ? Math.round((topBand.count / summary.total_rows) * 100)
+    : null;
+
+  const heading = detailed?.heading_distribution || [];
+  const maxHeading = heading.reduce((best, h) => (best === null || h.count > best ? h.count : best), null);
+  const headingShare = maxHeading && summary?.total_rows
+    ? Math.round((maxHeading / summary.total_rows) * 100)
+    : null;
+
+  const derived = [
+    { label: "Peak/Trough Ratio", value: peakToTrough ? peakToTrough.toFixed(2) : "--" },
+    { label: "Hourly Volatility", value: volatility ? Math.round(volatility).toLocaleString() : "--" },
+    { label: "Weekend vs Weekday %", value: weekendPenalty !== null ? `${weekendPenalty}%` : "--" },
+    { label: "Cruise Band Share", value: cruiseDominance !== null ? `${cruiseDominance}%` : "--" },
+    { label: "Heading Dominance", value: headingShare !== null ? `${headingShare}%` : "--" },
+  ];
+
+  grid.innerHTML = derived.map(d => `
+    <div class="metric-card">
+      <div class="metric-label">${d.label}</div>
+      <div class="metric-value">${d.value}</div>
+    </div>
+  `).join("");
 }
 
 function renderSpeedLeaderboard(leaderboard) {
@@ -235,6 +300,7 @@ async function loadHistoricalDashboard() {
 
   // Quick stats
   renderQuickStats(summary, detailed, sky);
+  renderDerivedStats(summary, detailed);
 
   // Insights
   if (detailed?.insights?.length) {

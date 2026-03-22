@@ -15,12 +15,13 @@
     <div class="dashboard">
       <nav class="navbar">
         <div class="navbar-left">
-          <div class="logo">🛩️ Flight Observatory</div>
+          <div class="logo">Flight Observatory</div>
           <span class="badge">HISTORICAL</span>
         </div>
         <div class="navbar-right">
           <a href="./" class="nav-link">Live</a>
           <a href="./historical.html" class="nav-link active">Historical</a>
+          <a href="./history-lab.html" class="nav-link">History Lab</a>
         </div>
       </nav>
 
@@ -50,16 +51,19 @@
         <section class="metrics-section">
           <div class="metrics-grid" id="quickStats"></div>
         </section>
+        <section class="metrics-section">
+          <div class="metrics-grid" id="derivedStats"></div>
+        </section>
 
         <!-- Key Insights -->
         <section class="insights-section">
-          <h2 class="section-title">🔍 Key Insights</h2>
+          <h2 class="section-title">Key Insights</h2>
           <div class="insights-grid" id="insightsContainer"></div>
         </section>
 
         <!-- Sky Pulse Section -->
         <section class="charts-section">
-          <h2 class="section-title">⏱️ Sky Pulse Index</h2>
+          <h2 class="section-title">Sky Pulse Index</h2>
           <p class="section-desc">Traffic intensity relative to daily average (100%)</p>
           <div class="charts-grid">
             <div class="chart-card wide">
@@ -71,7 +75,7 @@
 
         <!-- Traffic Wave -->
         <section class="charts-section">
-          <h2 class="section-title">🌊 Traffic Wave</h2>
+          <h2 class="section-title">Traffic Wave</h2>
           <p class="section-desc">Flight volume across 24 hours</p>
           <div class="charts-grid">
             <div class="chart-card wide">
@@ -83,7 +87,7 @@
 
         <!-- Sky Real Estate -->
         <section class="charts-section">
-          <h2 class="section-title">🏠 Sky Real Estate</h2>
+          <h2 class="section-title">Altitude Tiers</h2>
           <p class="section-desc">Altitude band distribution - who's flying where</p>
           <div class="charts-grid">
             <div class="chart-card">
@@ -103,7 +107,7 @@
 
         <!-- Efficiency Curve -->
         <section class="charts-section">
-          <h2 class="section-title">📈 Cruise Efficiency</h2>
+          <h2 class="section-title">Cruise Efficiency</h2>
           <p class="section-desc">Speed/Altitude ratio - lower is more efficient</p>
           <div class="charts-grid">
             <div class="chart-card wide">
@@ -115,7 +119,7 @@
 
         <!-- In/Out Ratios -->
         <section class="charts-section">
-          <h2 class="section-title">✈️ Airport Traffic Flow</h2>
+          <h2 class="section-title">Airport Traffic Flow</h2>
           <p class="section-desc">Arrivals vs Departures - which airports are sinks vs sources</p>
           <div class="charts-grid">
             <div class="chart-card wide">
@@ -127,7 +131,7 @@
 
         <!-- Directional Traffic -->
         <section class="charts-section">
-          <h2 class="section-title">🧭 Directional Traffic</h2>
+          <h2 class="section-title">Directional Traffic</h2>
           <p class="section-desc">Compass distribution of flight paths</p>
           <div class="charts-grid">
             <div class="chart-card">
@@ -143,7 +147,7 @@
 
         <!-- Speed Analytics -->
         <section class="charts-section">
-          <h2 class="section-title">⚡ Speed Analytics</h2>
+          <h2 class="section-title">Speed Analytics</h2>
           <p class="section-desc">From crawl to supersonic</p>
           <div class="charts-grid">
             <div class="chart-card">
@@ -155,7 +159,7 @@
               <canvas id="windEffect"></canvas>
             </div>
             <div class="chart-card wide">
-              <h3>Top Speed Demons 🏆</h3>
+              <h3>Top Speed Records</h3>
               <div class="leaderboard" id="speedLeaderboard"></div>
             </div>
           </div>
@@ -163,7 +167,7 @@
 
         <!-- Ghost Fleet -->
         <section class="charts-section ghost-section">
-          <h2 class="section-title">👻 Ghost Fleet</h2>
+          <h2 class="section-title">Ghost Fleet</h2>
           <p class="section-desc">Aircraft with 0 velocity but altitude > 100m (likely parked)</p>
           <div class="charts-grid">
             <div class="chart-card">
@@ -183,7 +187,7 @@
 
         <!-- Holding Patterns -->
         <section class="charts-section">
-          <h2 class="section-title">🔄 Holding Pattern Watch</h2>
+          <h2 class="section-title">Holding Pattern Watch</h2>
           <p class="section-desc">Aircraft circling at low altitude (potential delays)</p>
           <div class="charts-grid">
             <div class="chart-card wide">
@@ -195,7 +199,7 @@
 
         <!-- Airline Altitude Preferences -->
         <section class="charts-section">
-          <h2 class="section-title">🏢 Airline Preferences</h2>
+          <h2 class="section-title">Airline Preferences</h2>
           <p class="section-desc">Which airlines fly highest (long-haul vs regional)</p>
           <div class="charts-grid">
             <div class="chart-card wide">
@@ -207,7 +211,7 @@
 
         <!-- Regional Density -->
         <section class="charts-section">
-          <h2 class="section-title">🗺️ Traffic Hotspots</h2>
+          <h2 class="section-title">Traffic Hotspots</h2>
           <p class="section-desc">Most congested 5°×5° grid cells</p>
           <div class="charts-grid">
             <div class="chart-card wide">
@@ -219,7 +223,7 @@
 
         <!-- Weekend vs Weekday -->
         <section class="charts-section">
-          <h2 class="section-title">📅 Weekday vs Weekend</h2>
+          <h2 class="section-title">Weekday vs Weekend</h2>
           <p class="section-desc">Traffic patterns differ by day type</p>
           <div class="charts-grid">
             <div class="chart-card wide">
@@ -231,7 +235,7 @@
 
         <!-- Traditional Charts -->
         <section class="charts-section">
-          <h2 class="section-title">📊 Classic Metrics</h2>
+          <h2 class="section-title">Classic Metrics</h2>
           <div class="charts-grid">
             <div class="chart-card">
               <h3>Ground vs Airborne</h3>
@@ -254,7 +258,7 @@
 
         <!-- Tables -->
         <section class="tables-section">
-          <h2 class="section-title">📋 Top Lists</h2>
+          <h2 class="section-title">Top Lists</h2>
           <div class="tables-grid wide">
             <div class="table-card">
               <h3>Top Airlines</h3>

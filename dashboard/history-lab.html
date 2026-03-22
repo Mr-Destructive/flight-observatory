@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Flight Observatory - History Lab</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.10.2/sql-wasm.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  </head>
+  <body class="history-lab">
+    <div class="dashboard">
+      <nav class="navbar lab-navbar">
+        <div class="navbar-left">
+          <div class="logo">Flight Observatory</div>
+          <span class="badge lab-badge">History Lab</span>
+        </div>
+        <div class="navbar-right">
+          <a href="./" class="nav-link">Live</a>
+          <a href="./historical.html" class="nav-link">Historical</a>
+          <a href="./history-lab.html" class="nav-link active">History Lab</a>
+        </div>
+      </nav>
+
+      <main class="lab-shell">
+        <section class="lab-hero">
+          <div class="lab-hero-copy">
+            <p class="lab-kicker">Historical Intelligence</p>
+            <h1>Trace the airspace, hour by hour</h1>
+            <p class="lab-subtitle">
+              A focused lens on long-range patterns with fast filters, crafted metrics,
+              and clean, high-signal visuals.
+            </p>
+          </div>
+          <div class="lab-hero-stats">
+            <div class="lab-stat">
+              <span class="lab-stat-label">Total Records</span>
+              <span class="lab-stat-value" id="labTotalRows">--</span>
+            </div>
+            <div class="lab-stat">
+              <span class="lab-stat-label">Time Span</span>
+              <span class="lab-stat-value" id="labSpan">--</span>
+            </div>
+            <div class="lab-stat">
+              <span class="lab-stat-label">Unique Aircraft</span>
+              <span class="lab-stat-value" id="labUnique">--</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="lab-filters">
+          <div class="filter-panel cockpit-panel">
+            <div class="filter-group">
+              <label for="monthSelect">Month</label>
+              <select id="monthSelect" class="filter-input"></select>
+            </div>
+            <div class="filter-group">
+              <label for="hourStart">Time Window (UTC)</label>
+              <div class="filter-range">
+                <input id="hourStart" type="range" min="0" max="23" value="0" />
+                <input id="hourEnd" type="range" min="0" max="23" value="23" />
+              </div>
+              <div class="filter-hint" id="hourRangeLabel">00:00 → 23:00</div>
+            </div>
+            <div class="filter-group">
+              <label for="altMin">Altitude Band (m)</label>
+              <div class="filter-range">
+                <input id="altMin" type="range" min="-1000" max="14000" step="500" value="-1000" />
+                <input id="altMax" type="range" min="-1000" max="14000" step="500" value="14000" />
+              </div>
+              <div class="filter-hint" id="altRangeLabel">-1,000m → 14,000m</div>
+            </div>
+            <div class="filter-group">
+              <label for="spdMin">Speed Band (m/s)</label>
+              <div class="filter-range">
+                <input id="spdMin" type="range" min="0" max="350" step="25" value="0" />
+                <input id="spdMax" type="range" min="0" max="350" step="25" value="350" />
+              </div>
+              <div class="filter-hint" id="spdRangeLabel">0m/s → 350m/s</div>
+            </div>
+            <div class="filter-group">
+              <label for="airlineFilter">Airline</label>
+              <select id="airlineFilter" class="filter-input">
+                <option value="">All Airlines</option>
+              </select>
+              <div class="filter-hint" id="airlineHint">From full history</div>
+            </div>
+            <div class="filter-group">
+              <label for="airportFilterLab">Nearest Airport</label>
+              <select id="airportFilterLab" class="filter-input">
+                <option value="">All Airports</option>
+              </select>
+              <div class="filter-hint" id="airportHint">From live airports</div>
+            </div>
+            <div class="filter-group filter-actions">
+              <button id="resetFilters" class="lab-btn lab-btn-secondary">Reset</button>
+              <button id="applyFilters" class="lab-btn">Apply</button>
+            </div>
+          </div>
+          <p class="filter-note">
+            Filters apply to single-day archives. For multi-day ranges, filters apply to the aggregated bins only.
+          </p>
+        </section>
+
+        <section class="lab-section">
+          <div class="section-head">
+            <div>
+              <h2>Past Day Explorer</h2>
+              <p>Load one or many daily SQLite snapshots directly in your browser.</p>
+            </div>
+          </div>
+          <div class="day-panel">
+            <div class="day-picker">
+              <label for="sqliteDate">Choose Day (UTC)</label>
+              <input id="sqliteDate" type="date" />
+            </div>
+            <div class="day-picker">
+              <label for="sqliteRangeStart">Range Start (UTC)</label>
+              <input id="sqliteRangeStart" type="date" />
+            </div>
+            <div class="day-picker">
+              <label for="sqliteRangeEnd">Range End (UTC)</label>
+              <input id="sqliteRangeEnd" type="date" />
+            </div>
+            <div class="day-actions">
+              <button id="loadSqliteDay" class="lab-btn">Load Day</button>
+              <button id="loadSqliteRange" class="lab-btn">Load Range</button>
+              <button id="clearSqliteDay" class="lab-btn lab-btn-secondary">Use Full History</button>
+            </div>
+            <div class="day-status" id="sqliteStatus">No day loaded.</div>
+          </div>
+        </section>
+
+        <section class="lab-metrics">
+          <div class="stat-grid" id="labMetricGrid"></div>
+        </section>
+
+        <section class="lab-section">
+          <div class="section-head">
+            <div>
+              <h2>Seasonal Flow</h2>
+              <p>Monthly volume and performance baselines.</p>
+            </div>
+            <div class="chip" id="monthChip">All Months</div>
+          </div>
+          <div class="chart-grid">
+            <div class="chart-panel wide">
+              <h3>Monthly Volume</h3>
+              <canvas id="monthVolume"></canvas>
+            </div>
+            <div class="chart-panel">
+              <h3>Altitude Baseline</h3>
+              <canvas id="monthAltitude"></canvas>
+            </div>
+            <div class="chart-panel">
+              <h3>Speed Baseline</h3>
+              <canvas id="monthSpeed"></canvas>
+            </div>
+          </div>
+        </section>
+
+        <section class="lab-section">
+          <div class="section-head">
+            <div>
+              <h2>Daily Pulse</h2>
+              <p>How traffic stacks across hours and weekdays.</p>
+            </div>
+            <div class="chip" id="hourChip">Full Day</div>
+          </div>
+          <div class="chart-grid">
+            <div class="chart-panel wide">
+              <h3>Hourly Distribution</h3>
+              <canvas id="hourlyDistribution"></canvas>
+            </div>
+            <div class="chart-panel">
+              <h3>Weekday Split</h3>
+              <canvas id="weekdaySplit"></canvas>
+            </div>
+          </div>
+        </section>
+
+        <section class="lab-section">
+          <div class="section-head">
+            <div>
+              <h2>Altitude & Speed</h2>
+              <p>Airspace tiers and velocity clusters under active filters.</p>
+            </div>
+            <div class="chip" id="bandChip">All Bands</div>
+          </div>
+          <div class="chart-grid">
+            <div class="chart-panel">
+              <h3>Altitude Bands</h3>
+              <canvas id="altitudeBandsLab"></canvas>
+            </div>
+            <div class="chart-panel">
+              <h3>Speed Bands</h3>
+              <canvas id="speedBandsLab"></canvas>
+            </div>
+          </div>
+        </section>
+
+        <section class="lab-section">
+          <div class="section-head">
+            <div>
+              <h2>Leaders</h2>
+              <p>Top contributors across airlines and aircraft models.</p>
+            </div>
+          </div>
+          <div class="chart-grid">
+            <div class="chart-panel">
+              <h3>Top Airlines</h3>
+              <canvas id="topAirlinesLab"></canvas>
+            </div>
+            <div class="chart-panel">
+              <h3>Top Aircraft Models</h3>
+              <div class="lab-table" id="topModelsLab"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="lab-section">
+          <div class="section-head">
+            <div>
+              <h2>Key Findings</h2>
+              <p>Highlights generated from the complete historical dataset.</p>
+            </div>
+          </div>
+          <div class="insight-grid" id="labInsights"></div>
+        </section>
+
+        <section class="lab-section">
+          <div class="section-head">
+            <div>
+              <h2>Query Console</h2>
+              <p>Run ad‑hoc SQL against the loaded archive (single day only).</p>
+            </div>
+          </div>
+          <div class="query-panel">
+            <textarea id="sqlQuery" rows="6" spellcheck="false">SELECT airline, COUNT(*) AS flights
+FROM flight_positions_archive
+GROUP BY airline
+ORDER BY flights DESC
+LIMIT 10;</textarea>
+            <div class="query-actions">
+              <button id="runSqlQuery" class="lab-btn">Run Query</button>
+              <button id="clearSqlQuery" class="lab-btn lab-btn-secondary">Clear</button>
+              <div class="query-status" id="sqlStatus">Load a day archive to enable querying.</div>
+            </div>
+            <div class="query-results" id="sqlResults"></div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="./history-lab.js"></script>
+  </body>
+</html>
