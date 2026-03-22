@@ -1,102 +1,102 @@
 [
   {
     "airline": "unknown",
-    "flights": 1219
-  },
-  {
-    "airline": "Ryanair",
-    "flights": 343
+    "flights": 1605
   },
   {
     "airline": "American Airlines",
-    "flights": 202
+    "flights": 323
   },
   {
-    "airline": "Southwest Airlines",
-    "flights": 180
+    "airline": "Ryanair",
+    "flights": 316
   },
   {
     "airline": "Delta Air Lines",
-    "flights": 163
+    "flights": 299
+  },
+  {
+    "airline": "Southwest Airlines",
+    "flights": 294
   },
   {
     "airline": "United Airlines",
-    "flights": 153
-  },
-  {
-    "airline": "easyJet",
-    "flights": 109
-  },
-  {
-    "airline": "IndiGo Airlines",
-    "flights": 98
-  },
-  {
-    "airline": "Lufthansa",
-    "flights": 92
-  },
-  {
-    "airline": "Turkish Airlines",
-    "flights": 90
+    "flights": 226
   },
   {
     "airline": "JetBlue Airways",
-    "flights": 83
+    "flights": 122
   },
   {
-    "airline": "Air France",
-    "flights": 76
+    "airline": "Turkish Airlines",
+    "flights": 119
   },
   {
-    "airline": "Scandinavian Airlines System",
-    "flights": 71
+    "airline": "easyJet",
+    "flights": 117
   },
   {
-    "airline": "All Nippon Airways",
-    "flights": 71
+    "airline": "Lufthansa",
+    "flights": 102
   },
   {
-    "airline": "British Airways",
-    "flights": 64
-  },
-  {
-    "airline": "Frontier Airlines",
-    "flights": 63
-  },
-  {
-    "airline": "Jet2.com",
-    "flights": 61
+    "airline": "IndiGo Airlines",
+    "flights": 84
   },
   {
     "airline": "Republic Airlines",
-    "flights": 60
-  },
-  {
-    "airline": "Japan Airlines Domestic",
-    "flights": 57
+    "flights": 79
   },
   {
     "airline": "KLM Royal Dutch Airlines",
-    "flights": 57
+    "flights": 79
   },
   {
-    "airline": "Emirates",
-    "flights": 54
+    "airline": "Jet2.com",
+    "flights": 74
   },
   {
-    "airline": "Air India Limited",
-    "flights": 53
+    "airline": "SkyWest",
+    "flights": 73
+  },
+  {
+    "airline": "Air France",
+    "flights": 70
+  },
+  {
+    "airline": "British Airways",
+    "flights": 70
+  },
+  {
+    "airline": "Envoy Air",
+    "flights": 65
+  },
+  {
+    "airline": "Frontier Airlines",
+    "flights": 64
+  },
+  {
+    "airline": "All Nippon Airways",
+    "flights": 63
+  },
+  {
+    "airline": "Vueling Airlines",
+    "flights": 63
   },
   {
     "airline": "Pegasus Airlines",
-    "flights": 53
+    "flights": 57
   },
   {
-    "airline": "Korean Air",
-    "flights": 52
+    "airline": "Scandinavian Airlines System",
+    "flights": 57
   },
   {
-    "airline": "Air Canada",
-    "flights": 51
+    "airline": "Allegiant Air",
+    "flights": 57
+  },
+  {
+    "airline": "PSA Airlines",
+    "flights": 54
   }
 ]
