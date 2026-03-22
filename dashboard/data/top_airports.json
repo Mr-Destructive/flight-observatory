@@ -1,42 +1,42 @@
 [
   {
     "airport": "unknown",
-    "flights": 14943
-  },
-  {
-    "airport": "CYYZ",
-    "flights": 81
-  },
-  {
-    "airport": "LSZH",
-    "flights": 69
-  },
-  {
-    "airport": "CYUL",
-    "flights": 66
+    "flights": 22060
   },
   {
     "airport": "KATL",
-    "flights": 64
+    "flights": 114
   },
   {
-    "airport": "EDDF",
-    "flights": 63
+    "airport": "CYYZ",
+    "flights": 105
   },
   {
-    "airport": "RJTT",
-    "flights": 62
+    "airport": "LSZH",
+    "flights": 96
+  },
+  {
+    "airport": "CYUL",
+    "flights": 93
   },
   {
     "airport": "KBOS",
-    "flights": 60
+    "flights": 87
+  },
+  {
+    "airport": "EDDF",
+    "flights": 82
+  },
+  {
+    "airport": "RJTT",
+    "flights": 75
   },
   {
     "airport": "VHHH",
-    "flights": 52
+    "flights": 68
   },
   {
     "airport": "EGKK",
-    "flights": 49
+    "flights": 64
   }
 ]
