@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 9034
-  },
-  {
-    "airport": "KATL",
-    "flights": 31
-  },
-  {
-    "airport": "KORD",
-    "flights": 28
-  },
-  {
-    "airport": "LSZH",
-    "flights": 27
-  },
-  {
-    "airport": "KPHX",
-    "flights": 24
-  },
-  {
-    "airport": "CYYZ",
-    "flights": 24
+    "flights": 9400
   },
   {
     "airport": "KDFW",
-    "flights": 20
+    "flights": 43
   },
   {
-    "airport": "EGKK",
-    "flights": 19
+    "airport": "KATL",
+    "flights": 30
+  },
+  {
+    "airport": "KPHX",
+    "flights": 29
+  },
+  {
+    "airport": "LSZH",
+    "flights": 28
   },
   {
     "airport": "CYUL",
-    "flights": 19
+    "flights": 27
+  },
+  {
+    "airport": "CYYZ",
+    "flights": 25
+  },
+  {
+    "airport": "KIAD",
+    "flights": 22
   },
   {
     "airport": "KLAX",
-    "flights": 17
-  },
-  {
-    "airport": "KBOS",
-    "flights": 17
-  },
-  {
-    "airport": "CYYC",
-    "flights": 16
-  },
-  {
-    "airport": "EHAM",
-    "flights": 16
+    "flights": 21
   },
   {
     "airport": "KDEN",
-    "flights": 15
+    "flights": 21
   },
   {
-    "airport": "KAUS",
-    "flights": 13
+    "airport": "CYYC",
+    "flights": 18
   },
   {
-    "airport": "VHHH",
-    "flights": 13
-  },
-  {
-    "airport": "EDDF",
-    "flights": 13
-  },
-  {
-    "airport": "KLAS",
-    "flights": 12
-  },
-  {
-    "airport": "KBNA",
-    "flights": 11
-  },
-  {
-    "airport": "SKBO",
-    "flights": 11
-  },
-  {
-    "airport": "LEBL",
-    "flights": 11
-  },
-  {
-    "airport": "KMCO",
-    "flights": 11
-  },
-  {
-    "airport": "ZGSZ",
-    "flights": 11
-  },
-  {
-    "airport": "CYVR",
-    "flights": 11
+    "airport": "KBOS",
+    "flights": 16
   },
   {
     "airport": "KLGA",
-    "flights": 11
+    "flights": 16
+  },
+  {
+    "airport": "SKBO",
+    "flights": 15
+  },
+  {
+    "airport": "KORD",
+    "flights": 15
+  },
+  {
+    "airport": "MMUN",
+    "flights": 15
+  },
+  {
+    "airport": "KJFK",
+    "flights": 14
+  },
+  {
+    "airport": "RJTT",
+    "flights": 14
+  },
+  {
+    "airport": "VIDP",
+    "flights": 13
+  },
+  {
+    "airport": "CYVR",
+    "flights": 13
+  },
+  {
+    "airport": "KSEA",
+    "flights": 13
+  },
+  {
+    "airport": "KMCO",
+    "flights": 13
+  },
+  {
+    "airport": "EHAM",
+    "flights": 13
+  },
+  {
+    "airport": "KSFO",
+    "flights": 13
+  },
+  {
+    "airport": "EGKK",
+    "flights": 13
   }
 ]
