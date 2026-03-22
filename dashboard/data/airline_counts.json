@@ -1,35 +1,35 @@
 [
   {
     "airline": "unknown",
-    "flights": 3531
-  },
-  {
-    "airline": "Delta Air Lines",
-    "flights": 493
-  },
-  {
-    "airline": "Southwest Airlines",
-    "flights": 487
+    "flights": 3162
   },
   {
     "airline": "American Airlines",
-    "flights": 476
+    "flights": 470
   },
   {
     "airline": "United Airlines",
-    "flights": 450
+    "flights": 462
   },
   {
-    "airline": "Ryanair",
-    "flights": 247
+    "airline": "Southwest Airlines",
+    "flights": 458
+  },
+  {
+    "airline": "Delta Air Lines",
+    "flights": 453
   },
   {
     "airline": "SkyWest",
-    "flights": 223
+    "flights": 210
+  },
+  {
+    "airline": "Ryanair",
+    "flights": 189
   },
   {
     "airline": "NetJets",
-    "flights": 184
+    "flights": 182
   },
   {
     "airline": "JetBlue Airways",
@@ -37,66 +37,66 @@
   },
   {
     "airline": "Republic Airlines",
-    "flights": 125
+    "flights": 127
   },
   {
     "airline": "Alaska Airlines",
-    "flights": 120
-  },
-  {
-    "airline": "easyJet",
-    "flights": 115
+    "flights": 124
   },
   {
     "airline": "Frontier Airlines",
-    "flights": 101
+    "flights": 104
   },
   {
     "airline": "Air Canada",
-    "flights": 93
+    "flights": 101
   },
   {
     "airline": "Envoy Air",
-    "flights": 90
+    "flights": 96
   },
   {
-    "airline": "Bombardier Business Jet Solutions",
-    "flights": 78
-  },
-  {
-    "airline": "United Parcel Service",
-    "flights": 77
-  },
-  {
-    "airline": "Lufthansa",
-    "flights": 77
-  },
-  {
-    "airline": "Allegiant Air",
-    "flights": 68
-  },
-  {
-    "airline": "PSA Airlines",
-    "flights": 64
+    "airline": "easyJet",
+    "flights": 83
   },
   {
     "airline": "WestJet",
-    "flights": 62
+    "flights": 80
   },
   {
-    "airline": "Virgin Australia",
-    "flights": 53
+    "airline": "Bombardier Business Jet Solutions",
+    "flights": 72
+  },
+  {
+    "airline": "Allegiant Air",
+    "flights": 66
+  },
+  {
+    "airline": "United Parcel Service",
+    "flights": 60
   },
   {
     "airline": "Spirit Airlines",
-    "flights": 51
+    "flights": 57
   },
   {
-    "airline": "British Airways",
+    "airline": "Lufthansa",
+    "flights": 55
+  },
+  {
+    "airline": "PSA Airlines",
+    "flights": 53
+  },
+  {
+    "airline": "Virgin Australia",
     "flights": 50
   },
   {
-    "airline": "Vueling Airlines",
-    "flights": 48
+    "airline": "Federal Express",
+    "flights": 47
+  },
+  {
+    "airline": "Qantas",
+    "flights": 45
   }
 ]
