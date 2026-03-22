@@ -1,102 +1,102 @@
 [
   {
     "airline": "unknown",
-    "flights": 4842
-  },
-  {
-    "airline": "Delta Air Lines",
-    "flights": 443
-  },
-  {
-    "airline": "Southwest Airlines",
-    "flights": 433
-  },
-  {
-    "airline": "United Airlines",
-    "flights": 422
-  },
-  {
-    "airline": "American Airlines",
-    "flights": 415
+    "flights": 1219
   },
   {
     "airline": "Ryanair",
-    "flights": 317
+    "flights": 343
   },
   {
-    "airline": "SkyWest",
-    "flights": 191
+    "airline": "American Airlines",
+    "flights": 202
   },
   {
-    "airline": "NetJets",
-    "flights": 146
+    "airline": "Southwest Airlines",
+    "flights": 180
   },
   {
-    "airline": "JetBlue Airways",
-    "flights": 140
+    "airline": "Delta Air Lines",
+    "flights": 163
   },
   {
-    "airline": "Alaska Airlines",
-    "flights": 122
-  },
-  {
-    "airline": "Republic Airlines",
-    "flights": 112
+    "airline": "United Airlines",
+    "flights": 153
   },
   {
     "airline": "easyJet",
-    "flights": 103
-  },
-  {
-    "airline": "Bombardier Business Jet Solutions",
-    "flights": 97
-  },
-  {
-    "airline": "Envoy Air",
-    "flights": 85
-  },
-  {
-    "airline": "Air Canada",
-    "flights": 85
-  },
-  {
-    "airline": "Turkish Airlines",
-    "flights": 83
-  },
-  {
-    "airline": "Lufthansa",
-    "flights": 79
-  },
-  {
-    "airline": "Frontier Airlines",
-    "flights": 76
+    "flights": 109
   },
   {
     "airline": "IndiGo Airlines",
-    "flights": 69
+    "flights": 98
   },
   {
-    "airline": "PSA Airlines",
-    "flights": 69
+    "airline": "Lufthansa",
+    "flights": 92
   },
   {
-    "airline": "WestJet",
-    "flights": 68
+    "airline": "Turkish Airlines",
+    "flights": 90
   },
   {
-    "airline": "KLM Royal Dutch Airlines",
-    "flights": 66
-  },
-  {
-    "airline": "Allegiant Air",
-    "flights": 66
-  },
-  {
-    "airline": "British Airways",
-    "flights": 65
+    "airline": "JetBlue Airways",
+    "flights": 83
   },
   {
     "airline": "Air France",
+    "flights": 76
+  },
+  {
+    "airline": "Scandinavian Airlines System",
+    "flights": 71
+  },
+  {
+    "airline": "All Nippon Airways",
+    "flights": 71
+  },
+  {
+    "airline": "British Airways",
+    "flights": 64
+  },
+  {
+    "airline": "Frontier Airlines",
+    "flights": 63
+  },
+  {
+    "airline": "Jet2.com",
     "flights": 61
+  },
+  {
+    "airline": "Republic Airlines",
+    "flights": 60
+  },
+  {
+    "airline": "Japan Airlines Domestic",
+    "flights": 57
+  },
+  {
+    "airline": "KLM Royal Dutch Airlines",
+    "flights": 57
+  },
+  {
+    "airline": "Emirates",
+    "flights": 54
+  },
+  {
+    "airline": "Air India Limited",
+    "flights": 53
+  },
+  {
+    "airline": "Pegasus Airlines",
+    "flights": 53
+  },
+  {
+    "airline": "Korean Air",
+    "flights": 52
+  },
+  {
+    "airline": "Air Canada",
+    "flights": 51
   }
 ]
