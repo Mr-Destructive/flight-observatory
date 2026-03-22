@@ -1,62 +1,54 @@
 [
   {
     "airport": "unknown",
-    "flights": 9343
+    "flights": 9176
   },
   {
     "airport": "KATL",
-    "flights": 32
+    "flights": 36
   },
   {
     "airport": "CYYZ",
-    "flights": 27
+    "flights": 31
   },
   {
     "airport": "KLAS",
     "flights": 27
   },
   {
-    "airport": "CYUL",
-    "flights": 26
+    "airport": "KLGA",
+    "flights": 24
   },
   {
-    "airport": "KBOS",
-    "flights": 21
-  },
-  {
-    "airport": "MGGT",
-    "flights": 18
-  },
-  {
-    "airport": "KMCO",
-    "flights": 17
+    "airport": "KDEN",
+    "flights": 23
   },
   {
     "airport": "KDFW",
-    "flights": 17
-  },
-  {
-    "airport": "EGKK",
-    "flights": 16
-  },
-  {
-    "airport": "LSZH",
-    "flights": 16
-  },
-  {
-    "airport": "MMUN",
-    "flights": 15
-  },
-  {
-    "airport": "CYYC",
-    "flights": 15
+    "flights": 22
   },
   {
     "airport": "KORD",
-    "flights": 15
+    "flights": 22
   },
   {
-    "airport": "EHAM",
+    "airport": "YSSY",
+    "flights": 22
+  },
+  {
+    "airport": "KPHX",
+    "flights": 21
+  },
+  {
+    "airport": "KBJC",
+    "flights": 19
+  },
+  {
+    "airport": "CYUL",
+    "flights": 16
+  },
+  {
+    "airport": "KBOS",
     "flights": 15
   },
   {
@@ -64,39 +56,47 @@
     "flights": 15
   },
   {
+    "airport": "CYYC",
+    "flights": 15
+  },
+  {
     "airport": "KAUS",
-    "flights": 14
-  },
-  {
-    "airport": "KLGA",
-    "flights": 14
-  },
-  {
-    "airport": "KPHX",
-    "flights": 14
+    "flights": 15
   },
   {
     "airport": "KSUA",
     "flights": 14
   },
   {
-    "airport": "KBNA",
+    "airport": "KSJC",
     "flights": 14
   },
   {
-    "airport": "VIDP",
+    "airport": "EGKK",
+    "flights": 14
+  },
+  {
+    "airport": "KSAN",
+    "flights": 14
+  },
+  {
+    "airport": "MMUN",
+    "flights": 14
+  },
+  {
+    "airport": "KSFO",
+    "flights": 14
+  },
+  {
+    "airport": "KBNA",
     "flights": 13
   },
   {
-    "airport": "SKBO",
+    "airport": "LSZH",
     "flights": 13
   },
   {
-    "airport": "LEBL",
-    "flights": 13
-  },
-  {
-    "airport": "KJFK",
+    "airport": "KSLC",
     "flights": 13
   }
 ]
