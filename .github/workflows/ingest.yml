@@ -48,4 +48,5 @@ jobs:
             exit 0
           fi
           git commit -m "Update dashboard data"
+          git pull --rebase
           git push
