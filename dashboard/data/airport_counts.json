@@ -1,78 +1,78 @@
 [
   {
     "airport": "unknown",
-    "flights": 9452
+    "flights": 9532
   },
   {
-    "airport": "KDFW",
-    "flights": 29
-  },
-  {
-    "airport": "KIAD",
-    "flights": 27
-  },
-  {
-    "airport": "LSZH",
-    "flights": 27
-  },
-  {
-    "airport": "KLGA",
-    "flights": 25
-  },
-  {
-    "airport": "CYYZ",
-    "flights": 23
+    "airport": "KDEN",
+    "flights": 39
   },
   {
     "airport": "KATL",
-    "flights": 23
+    "flights": 32
   },
   {
-    "airport": "KLAS",
-    "flights": 22
+    "airport": "KDFW",
+    "flights": 31
   },
   {
     "airport": "KPHX",
-    "flights": 20
+    "flights": 25
   },
   {
     "airport": "KORD",
-    "flights": 19
+    "flights": 21
+  },
+  {
+    "airport": "KLGA",
+    "flights": 20
+  },
+  {
+    "airport": "KLAS",
+    "flights": 18
   },
   {
     "airport": "MMUN",
-    "flights": 19
-  },
-  {
-    "airport": "KSLC",
-    "flights": 15
-  },
-  {
-    "airport": "KBNA",
-    "flights": 14
-  },
-  {
-    "airport": "CYUL",
-    "flights": 14
-  },
-  {
-    "airport": "KBOS",
-    "flights": 14
-  },
-  {
-    "airport": "EDDF",
-    "flights": 14
-  },
-  {
-    "airport": "KSEA",
-    "flights": 13
-  },
-  {
-    "airport": "CYYC",
-    "flights": 13
+    "flights": 18
   },
   {
     "airport": "KMCO",
+    "flights": 17
+  },
+  {
+    "airport": "CYVR",
+    "flights": 16
+  },
+  {
+    "airport": "EHAM",
+    "flights": 15
+  },
+  {
+    "airport": "CYYZ",
+    "flights": 14
+  },
+  {
+    "airport": "CYYC",
+    "flights": 14
+  },
+  {
+    "airport": "KJFK",
+    "flights": 13
+  },
+  {
+    "airport": "EGKK",
+    "flights": 13
+  },
+  {
+    "airport": "LEBL",
+    "flights": 13
+  },
+  {
+    "airport": "CYUL",
+    "flights": 13
+  },
+  {
+    "airport": "KAUS",
     "flights": 13
   },
   {
@@ -80,12 +80,12 @@
     "flights": 12
   },
   {
-    "airport": "KVNY",
+    "airport": "KTMB",
     "flights": 12
   },
   {
-    "airport": "ESSA",
-    "flights": 11
+    "airport": "KSJC",
+    "flights": 12
   },
   {
     "airport": "SKBO",
@@ -96,7 +96,7 @@
     "flights": 11
   },
   {
-    "airport": "LIMC",
+    "airport": "KTPA",
     "flights": 11
   }
 ]
