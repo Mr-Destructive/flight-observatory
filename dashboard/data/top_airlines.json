@@ -1,42 +1,42 @@
 [
   {
     "airline": "unknown",
-    "flights": 48152
+    "flights": 52335
   },
   {
     "airline": "American Airlines",
-    "flights": 5781
+    "flights": 6237
   },
   {
     "airline": "Southwest Airlines",
-    "flights": 5459
+    "flights": 5910
   },
   {
     "airline": "Delta Air Lines",
-    "flights": 5456
+    "flights": 5861
   },
   {
     "airline": "United Airlines",
-    "flights": 5278
+    "flights": 5709
   },
   {
     "airline": "Ryanair",
-    "flights": 4790
+    "flights": 5127
   },
   {
     "airline": "SkyWest",
-    "flights": 2443
+    "flights": 2661
   },
   {
     "airline": "NetJets",
-    "flights": 1859
+    "flights": 2049
   },
   {
     "airline": "JetBlue Airways",
-    "flights": 1786
+    "flights": 1922
   },
   {
     "airline": "Turkish Airlines",
-    "flights": 1552
+    "flights": 1675
   }
 ]
