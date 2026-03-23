@@ -1,10 +1,10 @@
 [
   {
     "airline": "unknown",
-    "flights": 3522
+    "flights": 3328
   },
   {
-    "airline": "Delta Air Lines",
+    "airline": "American Airlines",
     "flights": 490
   },
   {
@@ -12,91 +12,91 @@
     "flights": 472
   },
   {
-    "airline": "American Airlines",
-    "flights": 459
+    "airline": "Delta Air Lines",
+    "flights": 465
   },
   {
     "airline": "United Airlines",
-    "flights": 443
+    "flights": 450
   },
   {
     "airline": "Ryanair",
-    "flights": 289
+    "flights": 252
   },
   {
     "airline": "SkyWest",
-    "flights": 206
-  },
-  {
-    "airline": "NetJets",
-    "flights": 143
+    "flights": 216
   },
   {
     "airline": "JetBlue Airways",
-    "flights": 137
+    "flights": 141
   },
   {
     "airline": "Alaska Airlines",
-    "flights": 123
+    "flights": 126
   },
   {
-    "airline": "Republic Airlines",
-    "flights": 104
-  },
-  {
-    "airline": "easyJet",
-    "flights": 103
-  },
-  {
-    "airline": "Envoy Air",
-    "flights": 91
+    "airline": "NetJets",
+    "flights": 122
   },
   {
     "airline": "Frontier Airlines",
-    "flights": 91
+    "flights": 99
+  },
+  {
+    "airline": "Republic Airlines",
+    "flights": 97
+  },
+  {
+    "airline": "Envoy Air",
+    "flights": 95
   },
   {
     "airline": "Air Canada",
-    "flights": 89
+    "flights": 92
+  },
+  {
+    "airline": "easyJet",
+    "flights": 81
   },
   {
     "airline": "WestJet",
-    "flights": 73
-  },
-  {
-    "airline": "Lufthansa",
-    "flights": 72
+    "flights": 79
   },
   {
     "airline": "Allegiant Air",
-    "flights": 70
-  },
-  {
-    "airline": "Bombardier Business Jet Solutions",
-    "flights": 57
-  },
-  {
-    "airline": "Spirit Airlines",
-    "flights": 53
-  },
-  {
-    "airline": "Virgin Australia",
-    "flights": 53
+    "flights": 69
   },
   {
     "airline": "PSA Airlines",
-    "flights": 51
+    "flights": 68
   },
   {
-    "airline": "KLM Royal Dutch Airlines",
-    "flights": 51
+    "airline": "Bombardier Business Jet Solutions",
+    "flights": 63
+  },
+  {
+    "airline": "Spirit Airlines",
+    "flights": 58
+  },
+  {
+    "airline": "Virgin Australia",
+    "flights": 52
+  },
+  {
+    "airline": "Lufthansa",
+    "flights": 49
+  },
+  {
+    "airline": "All Nippon Airways",
+    "flights": 42
+  },
+  {
+    "airline": "TAM Brazilian Airlines",
+    "flights": 40
   },
   {
     "airline": "Vueling Airlines",
-    "flights": 48
-  },
-  {
-    "airline": "Air France",
-    "flights": 47
+    "flights": 38
   }
 ]
