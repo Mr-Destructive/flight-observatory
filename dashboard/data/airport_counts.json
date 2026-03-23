@@ -1,10 +1,18 @@
 [
   {
     "airport": "unknown",
-    "flights": 3908
+    "flights": 4387
   },
   {
-    "airport": "VHHH",
+    "airport": "KBOS",
+    "flights": 29
+  },
+  {
+    "airport": "RJTT",
+    "flights": 26
+  },
+  {
+    "airport": "EDDF",
     "flights": 25
   },
   {
@@ -12,59 +20,71 @@
     "flights": 24
   },
   {
-    "airport": "KBOS",
-    "flights": 22
+    "airport": "EHAM",
+    "flights": 21
   },
   {
-    "airport": "EDDF",
-    "flights": 19
-  },
-  {
-    "airport": "RJTT",
-    "flights": 19
+    "airport": "KATL",
+    "flights": 20
   },
   {
     "airport": "YSSY",
-    "flights": 18
+    "flights": 20
   },
   {
-    "airport": "YPPH",
-    "flights": 17
-  },
-  {
-    "airport": "EGKK",
-    "flights": 16
-  },
-  {
-    "airport": "VIDP",
-    "flights": 14
+    "airport": "CYYZ",
+    "flights": 19
   },
   {
     "airport": "LEBL",
-    "flights": 13
+    "flights": 16
   },
   {
-    "airport": "EHAM",
-    "flights": 13
+    "airport": "KEWR",
+    "flights": 15
   },
   {
     "airport": "KMCO",
-    "flights": 12
+    "flights": 15
   },
   {
-    "airport": "VECC",
-    "flights": 12
+    "airport": "YPPH",
+    "flights": 13
+  },
+  {
+    "airport": "EGKK",
+    "flights": 13
   },
   {
     "airport": "VTBS",
     "flights": 12
   },
   {
-    "airport": "ESSA",
+    "airport": "LOWW",
+    "flights": 12
+  },
+  {
+    "airport": "VHHH",
+    "flights": 11
+  },
+  {
+    "airport": "VIDP",
     "flights": 10
   },
   {
-    "airport": "CYYZ",
+    "airport": "SKBO",
+    "flights": 10
+  },
+  {
+    "airport": "KDCA",
+    "flights": 10
+  },
+  {
+    "airport": "CYUL",
+    "flights": 10
+  },
+  {
+    "airport": "KBNA",
     "flights": 10
   },
   {
@@ -72,31 +92,11 @@
     "flights": 10
   },
   {
-    "airport": "LKPR",
+    "airport": "ESSA",
     "flights": 9
   },
   {
-    "airport": "LOWW",
+    "airport": "LIMC",
     "flights": 9
-  },
-  {
-    "airport": "YBBN",
-    "flights": 9
-  },
-  {
-    "airport": "EGCC",
-    "flights": 8
-  },
-  {
-    "airport": "KLAS",
-    "flights": 8
-  },
-  {
-    "airport": "RJAA",
-    "flights": 8
-  },
-  {
-    "airport": "EDDH",
-    "flights": 7
   }
 ]

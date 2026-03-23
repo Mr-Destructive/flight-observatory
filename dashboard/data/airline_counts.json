@@ -1,70 +1,82 @@
 [
   {
     "airline": "unknown",
-    "flights": 1088
+    "flights": 1190
   },
   {
     "airline": "Ryanair",
-    "flights": 301
-  },
-  {
-    "airline": "United Airlines",
-    "flights": 121
+    "flights": 380
   },
   {
     "airline": "American Airlines",
-    "flights": 109
+    "flights": 172
   },
   {
     "airline": "Delta Air Lines",
-    "flights": 105
+    "flights": 143
   },
   {
-    "airline": "Turkish Airlines",
-    "flights": 103
+    "airline": "United Airlines",
+    "flights": 128
   },
   {
-    "airline": "IndiGo Airlines",
-    "flights": 100
-  },
-  {
-    "airline": "easyJet",
-    "flights": 98
-  },
-  {
-    "airline": "Lufthansa",
-    "flights": 86
+    "airline": "Southwest Airlines",
+    "flights": 118
   },
   {
     "airline": "Air France",
-    "flights": 66
+    "flights": 102
   },
   {
-    "airline": "British Airways",
-    "flights": 66
+    "airline": "easyJet",
+    "flights": 91
   },
   {
-    "airline": "All Nippon Airways",
-    "flights": 60
-  },
-  {
-    "airline": "Scandinavian Airlines System",
-    "flights": 56
-  },
-  {
-    "airline": "Air India Limited",
-    "flights": 55
-  },
-  {
-    "airline": "Jet2.com",
-    "flights": 54
+    "airline": "Lufthansa",
+    "flights": 85
   },
   {
     "airline": "KLM Royal Dutch Airlines",
-    "flights": 53
+    "flights": 85
+  },
+  {
+    "airline": "IndiGo Airlines",
+    "flights": 79
+  },
+  {
+    "airline": "Turkish Airlines",
+    "flights": 77
+  },
+  {
+    "airline": "Scandinavian Airlines System",
+    "flights": 65
+  },
+  {
+    "airline": "All Nippon Airways",
+    "flights": 63
+  },
+  {
+    "airline": "Japan Airlines Domestic",
+    "flights": 58
+  },
+  {
+    "airline": "JetBlue Airways",
+    "flights": 57
+  },
+  {
+    "airline": "British Airways",
+    "flights": 56
   },
   {
     "airline": "Pegasus Airlines",
+    "flights": 54
+  },
+  {
+    "airline": "Frontier Airlines",
+    "flights": 53
+  },
+  {
+    "airline": "Swissair",
     "flights": 52
   },
   {
@@ -72,31 +84,19 @@
     "flights": 50
   },
   {
-    "airline": "Japan Airlines Domestic",
-    "flights": 46
-  },
-  {
-    "airline": "Southwest Airlines",
-    "flights": 44
-  },
-  {
-    "airline": "JetBlue Airways",
-    "flights": 42
-  },
-  {
-    "airline": "Air Canada",
-    "flights": 42
-  },
-  {
-    "airline": "Cathay Pacific",
-    "flights": 40
+    "airline": "Jet2.com",
+    "flights": 49
   },
   {
     "airline": "Emirates",
-    "flights": 38
+    "flights": 46
   },
   {
-    "airline": "Swissair",
-    "flights": 38
+    "airline": "TAP Portugal",
+    "flights": 43
+  },
+  {
+    "airline": "Air Canada",
+    "flights": 41
   }
 ]
