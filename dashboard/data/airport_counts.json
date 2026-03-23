@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 4466
+    "flights": 3198
   },
   {
-    "airport": "KDFW",
-    "flights": 31
-  },
-  {
-    "airport": "KATL",
-    "flights": 30
-  },
-  {
-    "airport": "YSSY",
-    "flights": 27
-  },
-  {
-    "airport": "CYYZ",
-    "flights": 23
-  },
-  {
-    "airport": "YPPH",
+    "airport": "LSZH",
     "flights": 22
   },
   {
-    "airport": "KPHX",
+    "airport": "YSSY",
     "flights": 21
-  },
-  {
-    "airport": "KBOS",
-    "flights": 21
-  },
-  {
-    "airport": "KLAX",
-    "flights": 21
-  },
-  {
-    "airport": "RJTT",
-    "flights": 19
   },
   {
     "airport": "VHHH",
     "flights": 18
   },
   {
-    "airport": "CYUL",
+    "airport": "KBOS",
     "flights": 17
   },
   {
-    "airport": "KMCO",
-    "flights": 14
+    "airport": "VIDP",
+    "flights": 16
   },
   {
-    "airport": "ZGSZ",
+    "airport": "RJTT",
+    "flights": 16
+  },
+  {
+    "airport": "YPPH",
+    "flights": 16
+  },
+  {
+    "airport": "KLAS",
+    "flights": 15
+  },
+  {
+    "airport": "KPHX",
     "flights": 13
   },
   {
-    "airport": "SKBO",
+    "airport": "YPJT",
     "flights": 13
   },
   {
-    "airport": "KBNA",
+    "airport": "CYUL",
     "flights": 13
   },
   {
-    "airport": "KOAK",
-    "flights": 13
-  },
-  {
-    "airport": "KJFK",
-    "flights": 12
-  },
-  {
-    "airport": "VTBS",
-    "flights": 12
-  },
-  {
-    "airport": "KTPA",
-    "flights": 12
-  },
-  {
-    "airport": "KSLC",
+    "airport": "YMML",
     "flights": 12
   },
   {
     "airport": "KSAN",
-    "flights": 12
+    "flights": 11
   },
   {
-    "airport": "KLGA",
-    "flights": 12
+    "airport": "KLAX",
+    "flights": 11
   },
   {
-    "airport": "KDEN",
-    "flights": 12
+    "airport": "KSEA",
+    "flights": 10
   },
   {
-    "airport": "KLAS",
-    "flights": 12
+    "airport": "ZGSZ",
+    "flights": 10
+  },
+  {
+    "airport": "VTBS",
+    "flights": 9
+  },
+  {
+    "airport": "KMCO",
+    "flights": 9
+  },
+  {
+    "airport": "CYYZ",
+    "flights": 8
+  },
+  {
+    "airport": "KDFW",
+    "flights": 8
+  },
+  {
+    "airport": "LOWW",
+    "flights": 8
+  },
+  {
+    "airport": "RJAA",
+    "flights": 8
+  },
+  {
+    "airport": "YMMB",
+    "flights": 8
+  },
+  {
+    "airport": "VABB",
+    "flights": 7
   }
 ]
