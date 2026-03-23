@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 3681
-  },
-  {
-    "airport": "LSZH",
-    "flights": 30
+    "flights": 3742
   },
   {
     "airport": "YSSY",
-    "flights": 27
+    "flights": 30
   },
   {
-    "airport": "RJTT",
-    "flights": 26
-  },
-  {
-    "airport": "KLAS",
-    "flights": 23
-  },
-  {
-    "airport": "KPHX",
-    "flights": 18
-  },
-  {
-    "airport": "VIDP",
-    "flights": 17
+    "airport": "LSZH",
+    "flights": 20
   },
   {
     "airport": "EGKK",
-    "flights": 16
+    "flights": 20
+  },
+  {
+    "airport": "RJTT",
+    "flights": 19
   },
   {
     "airport": "KBOS",
-    "flights": 15
+    "flights": 18
+  },
+  {
+    "airport": "EDDF",
+    "flights": 18
   },
   {
     "airport": "EHAM",
     "flights": 15
   },
   {
-    "airport": "EDDF",
-    "flights": 13
+    "airport": "VHHH",
+    "flights": 14
   },
   {
-    "airport": "YMML",
-    "flights": 13
+    "airport": "KLAS",
+    "flights": 14
   },
   {
     "airport": "ESSA",
-    "flights": 12
-  },
-  {
-    "airport": "CYYC",
-    "flights": 12
-  },
-  {
-    "airport": "KLAX",
-    "flights": 11
-  },
-  {
-    "airport": "YPPH",
-    "flights": 11
-  },
-  {
-    "airport": "LEBL",
-    "flights": 11
-  },
-  {
-    "airport": "LOWW",
-    "flights": 11
-  },
-  {
-    "airport": "CYYZ",
-    "flights": 11
-  },
-  {
-    "airport": "CYUL",
-    "flights": 11
-  },
-  {
-    "airport": "VABB",
     "flights": 10
   },
   {
-    "airport": "RJBB",
+    "airport": "EBBR",
     "flights": 10
   },
   {
-    "airport": "ZGSZ",
+    "airport": "VTBS",
+    "flights": 10
+  },
+  {
+    "airport": "YMML",
+    "flights": 10
+  },
+  {
+    "airport": "EDDB",
     "flights": 9
   },
   {
-    "airport": "VHHH",
+    "airport": "YPJT",
     "flights": 9
   },
   {
     "airport": "EGCC",
     "flights": 9
+  },
+  {
+    "airport": "VGHS",
+    "flights": 8
+  },
+  {
+    "airport": "RJBB",
+    "flights": 8
+  },
+  {
+    "airport": "YPAD",
+    "flights": 8
+  },
+  {
+    "airport": "VABB",
+    "flights": 7
+  },
+  {
+    "airport": "VIDP",
+    "flights": 7
+  },
+  {
+    "airport": "LEBL",
+    "flights": 7
+  },
+  {
+    "airport": "LIMC",
+    "flights": 7
+  },
+  {
+    "airport": "KLAX",
+    "flights": 7
   }
 ]
