@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 3198
+    "flights": 3681
   },
   {
     "airport": "LSZH",
-    "flights": 22
+    "flights": 30
   },
   {
     "airport": "YSSY",
-    "flights": 21
-  },
-  {
-    "airport": "VHHH",
-    "flights": 18
-  },
-  {
-    "airport": "KBOS",
-    "flights": 17
-  },
-  {
-    "airport": "VIDP",
-    "flights": 16
+    "flights": 27
   },
   {
     "airport": "RJTT",
-    "flights": 16
-  },
-  {
-    "airport": "YPPH",
-    "flights": 16
+    "flights": 26
   },
   {
     "airport": "KLAS",
-    "flights": 15
+    "flights": 23
   },
   {
     "airport": "KPHX",
-    "flights": 13
+    "flights": 18
   },
   {
-    "airport": "YPJT",
-    "flights": 13
+    "airport": "VIDP",
+    "flights": 17
   },
   {
-    "airport": "CYUL",
+    "airport": "EGKK",
+    "flights": 16
+  },
+  {
+    "airport": "KBOS",
+    "flights": 15
+  },
+  {
+    "airport": "EHAM",
+    "flights": 15
+  },
+  {
+    "airport": "EDDF",
     "flights": 13
   },
   {
     "airport": "YMML",
+    "flights": 13
+  },
+  {
+    "airport": "ESSA",
     "flights": 12
   },
   {
-    "airport": "KSAN",
-    "flights": 11
+    "airport": "CYYC",
+    "flights": 12
   },
   {
     "airport": "KLAX",
     "flights": 11
   },
   {
-    "airport": "KSEA",
+    "airport": "YPPH",
+    "flights": 11
+  },
+  {
+    "airport": "LEBL",
+    "flights": 11
+  },
+  {
+    "airport": "LOWW",
+    "flights": 11
+  },
+  {
+    "airport": "CYYZ",
+    "flights": 11
+  },
+  {
+    "airport": "CYUL",
+    "flights": 11
+  },
+  {
+    "airport": "VABB",
+    "flights": 10
+  },
+  {
+    "airport": "RJBB",
     "flights": 10
   },
   {
     "airport": "ZGSZ",
-    "flights": 10
-  },
-  {
-    "airport": "VTBS",
     "flights": 9
   },
   {
-    "airport": "KMCO",
+    "airport": "VHHH",
     "flights": 9
   },
   {
-    "airport": "CYYZ",
-    "flights": 8
-  },
-  {
-    "airport": "KDFW",
-    "flights": 8
-  },
-  {
-    "airport": "LOWW",
-    "flights": 8
-  },
-  {
-    "airport": "RJAA",
-    "flights": 8
-  },
-  {
-    "airport": "YMMB",
-    "flights": 8
-  },
-  {
-    "airport": "VABB",
-    "flights": 7
+    "airport": "EGCC",
+    "flights": 9
   }
 ]
