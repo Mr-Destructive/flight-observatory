@@ -1,110 +1,74 @@
 [
   {
     "altitude_band_m": -1000,
-    "flights": 604
+    "flights": 20
   },
   {
     "altitude_band_m": 0,
-    "flights": 32173
+    "flights": 998
   },
   {
     "altitude_band_m": 1000,
-    "flights": 22040
+    "flights": 712
   },
   {
     "altitude_band_m": 2000,
-    "flights": 13504
+    "flights": 457
   },
   {
     "altitude_band_m": 3000,
-    "flights": 9225
+    "flights": 347
   },
   {
     "altitude_band_m": 4000,
-    "flights": 6706
+    "flights": 242
   },
   {
     "altitude_band_m": 5000,
-    "flights": 6424
+    "flights": 210
   },
   {
     "altitude_band_m": 6000,
-    "flights": 6804
+    "flights": 251
   },
   {
     "altitude_band_m": 7000,
-    "flights": 8186
+    "flights": 316
   },
   {
     "altitude_band_m": 8000,
-    "flights": 7895
+    "flights": 288
   },
   {
     "altitude_band_m": 9000,
-    "flights": 12968
+    "flights": 572
   },
   {
     "altitude_band_m": 10000,
-    "flights": 42618
+    "flights": 1584
   },
   {
     "altitude_band_m": 11000,
-    "flights": 24912
+    "flights": 831
   },
   {
     "altitude_band_m": 12000,
-    "flights": 7244
+    "flights": 223
   },
   {
     "altitude_band_m": 13000,
-    "flights": 4157
+    "flights": 123
   },
   {
     "altitude_band_m": 14000,
-    "flights": 279
+    "flights": 10
   },
   {
-    "altitude_band_m": 15000,
-    "flights": 3
-  },
-  {
-    "altitude_band_m": 18000,
+    "altitude_band_m": 28000,
     "flights": 1
   },
   {
-    "altitude_band_m": 20000,
-    "flights": 2
-  },
-  {
-    "altitude_band_m": 21000,
-    "flights": 2
-  },
-  {
-    "altitude_band_m": 22000,
-    "flights": 1
-  },
-  {
-    "altitude_band_m": 25000,
-    "flights": 1
-  },
-  {
-    "altitude_band_m": 26000,
-    "flights": 1
-  },
-  {
-    "altitude_band_m": 27000,
-    "flights": 2
-  },
-  {
-    "altitude_band_m": 32000,
-    "flights": 1
-  },
-  {
-    "altitude_band_m": 35000,
-    "flights": 1
-  },
-  {
-    "altitude_band_m": 37000,
+    "altitude_band_m": 31000,
     "flights": 1
   }
 ]
