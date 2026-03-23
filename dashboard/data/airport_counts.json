@@ -1,7 +1,7 @@
 [
   {
     "airport": "unknown",
-    "flights": 9238
+    "flights": 9076
   },
   {
     "airport": "KDFW",
@@ -9,14 +9,6 @@
   },
   {
     "airport": "KATL",
-    "flights": 28
-  },
-  {
-    "airport": "KORD",
-    "flights": 28
-  },
-  {
-    "airport": "KDEN",
     "flights": 26
   },
   {
@@ -24,39 +16,55 @@
     "flights": 25
   },
   {
-    "airport": "VIDP",
+    "airport": "KBOS",
+    "flights": 23
+  },
+  {
+    "airport": "LSZH",
     "flights": 22
   },
   {
-    "airport": "KPHX",
-    "flights": 22
-  },
-  {
-    "airport": "KSFO",
+    "airport": "SKBO",
     "flights": 20
   },
   {
-    "airport": "KIAD",
+    "airport": "KPHX",
+    "flights": 19
+  },
+  {
+    "airport": "MGGT",
     "flights": 18
   },
   {
-    "airport": "CYUL",
-    "flights": 18
+    "airport": "KLAX",
+    "flights": 17
   },
   {
-    "airport": "CYYC",
-    "flights": 18
+    "airport": "KORD",
+    "flights": 17
   },
   {
-    "airport": "KMCO",
+    "airport": "KVNY",
     "flights": 16
   },
   {
-    "airport": "KBOS",
+    "airport": "KTMB",
+    "flights": 16
+  },
+  {
+    "airport": "VIDP",
     "flights": 15
   },
   {
     "airport": "KLAS",
+    "flights": 15
+  },
+  {
+    "airport": "EHAM",
+    "flights": 14
+  },
+  {
+    "airport": "KDCA",
     "flights": 14
   },
   {
@@ -64,39 +72,31 @@
     "flights": 14
   },
   {
-    "airport": "CYVR",
+    "airport": "KIAD",
     "flights": 14
   },
   {
-    "airport": "KBJC",
-    "flights": 13
-  },
-  {
-    "airport": "MMUN",
-    "flights": 13
-  },
-  {
-    "airport": "EGKK",
-    "flights": 13
-  },
-  {
-    "airport": "LSZH",
-    "flights": 12
-  },
-  {
-    "airport": "MGGT",
-    "flights": 12
-  },
-  {
-    "airport": "KPVU",
-    "flights": 11
+    "airport": "CYYC",
+    "flights": 14
   },
   {
     "airport": "KBNA",
-    "flights": 11
+    "flights": 14
   },
   {
-    "airport": "KTPA",
-    "flights": 10
+    "airport": "KMCO",
+    "flights": 13
+  },
+  {
+    "airport": "KLGA",
+    "flights": 12
+  },
+  {
+    "airport": "KSFO",
+    "flights": 12
+  },
+  {
+    "airport": "KEWR",
+    "flights": 12
   }
 ]
