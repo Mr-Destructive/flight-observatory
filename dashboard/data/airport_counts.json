@@ -1,66 +1,74 @@
 [
   {
     "airport": "unknown",
-    "flights": 4194
+    "flights": 4666
   },
   {
-    "airport": "LSZH",
-    "flights": 28
+    "airport": "CYYZ",
+    "flights": 35
   },
   {
     "airport": "KBOS",
-    "flights": 25
+    "flights": 34
   },
   {
-    "airport": "EHAM",
-    "flights": 23
+    "airport": "LSZH",
+    "flights": 32
+  },
+  {
+    "airport": "EDDF",
+    "flights": 27
+  },
+  {
+    "airport": "YSSY",
+    "flights": 22
+  },
+  {
+    "airport": "KATL",
+    "flights": 20
+  },
+  {
+    "airport": "EGKK",
+    "flights": 20
   },
   {
     "airport": "RJTT",
     "flights": 18
   },
   {
-    "airport": "YSSY",
-    "flights": 16
-  },
-  {
-    "airport": "YPPH",
+    "airport": "EHAM",
     "flights": 15
   },
   {
-    "airport": "CYYZ",
+    "airport": "VHHH",
     "flights": 14
   },
   {
-    "airport": "KMCO",
-    "flights": 13
-  },
-  {
-    "airport": "EBBR",
-    "flights": 13
-  },
-  {
-    "airport": "EGKK",
-    "flights": 12
-  },
-  {
-    "airport": "VHHH",
-    "flights": 12
-  },
-  {
     "airport": "ESSA",
+    "flights": 13
+  },
+  {
+    "airport": "YPPH",
+    "flights": 13
+  },
+  {
+    "airport": "EGCC",
     "flights": 11
   },
   {
-    "airport": "LKPR",
+    "airport": "KDFW",
     "flights": 11
   },
   {
     "airport": "LEBL",
-    "flights": 11
+    "flights": 10
   },
   {
-    "airport": "VIDP",
+    "airport": "ZGSZ",
+    "flights": 10
+  },
+  {
+    "airport": "KMCO",
     "flights": 10
   },
   {
@@ -72,31 +80,23 @@
     "flights": 9
   },
   {
-    "airport": "ZGSZ",
+    "airport": "KLGA",
     "flights": 9
   },
   {
-    "airport": "EDDF",
+    "airport": "KEWR",
     "flights": 9
   },
   {
-    "airport": "KATL",
+    "airport": "VECC",
     "flights": 8
   },
   {
-    "airport": "VTBS",
+    "airport": "LFLL",
     "flights": 8
   },
   {
-    "airport": "KOAK",
+    "airport": "VIDP",
     "flights": 8
-  },
-  {
-    "airport": "WIII",
-    "flights": 7
-  },
-  {
-    "airport": "WMAU",
-    "flights": 7
   }
 ]
