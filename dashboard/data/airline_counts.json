@@ -1,102 +1,102 @@
 [
   {
     "airline": "unknown",
-    "flights": 4466
+    "flights": 4548
   },
   {
     "airline": "Southwest Airlines",
-    "flights": 480
+    "flights": 451
   },
   {
     "airline": "American Airlines",
-    "flights": 460
-  },
-  {
-    "airline": "United Airlines",
-    "flights": 445
+    "flights": 448
   },
   {
     "airline": "Delta Air Lines",
-    "flights": 439
+    "flights": 431
+  },
+  {
+    "airline": "United Airlines",
+    "flights": 427
   },
   {
     "airline": "Ryanair",
-    "flights": 246
+    "flights": 244
   },
   {
     "airline": "SkyWest",
-    "flights": 211
+    "flights": 192
   },
   {
     "airline": "NetJets",
-    "flights": 161
-  },
-  {
-    "airline": "Alaska Airlines",
-    "flights": 145
+    "flights": 173
   },
   {
     "airline": "Turkish Airlines",
-    "flights": 111
+    "flights": 129
+  },
+  {
+    "airline": "Alaska Airlines",
+    "flights": 126
   },
   {
     "airline": "JetBlue Airways",
-    "flights": 110
-  },
-  {
-    "airline": "Republic Airlines",
-    "flights": 99
+    "flights": 114
   },
   {
     "airline": "Air Canada",
-    "flights": 85
+    "flights": 97
+  },
+  {
+    "airline": "Republic Airlines",
+    "flights": 96
   },
   {
     "airline": "easyJet",
-    "flights": 83
-  },
-  {
-    "airline": "Envoy Air",
-    "flights": 82
-  },
-  {
-    "airline": "Lufthansa",
     "flights": 79
   },
   {
     "airline": "British Airways",
-    "flights": 72
+    "flights": 75
   },
   {
-    "airline": "WestJet",
-    "flights": 69
-  },
-  {
-    "airline": "Bombardier Business Jet Solutions",
+    "airline": "Envoy Air",
     "flights": 68
   },
   {
-    "airline": "KLM Royal Dutch Airlines",
-    "flights": 68
+    "airline": "PSA Airlines",
+    "flights": 65
   },
   {
     "airline": "Air France",
-    "flights": 67
+    "flights": 60
   },
   {
-    "airline": "Frontier Airlines",
-    "flights": 66
+    "airline": "Bombardier Business Jet Solutions",
+    "flights": 59
   },
   {
     "airline": "Scandinavian Airlines System",
-    "flights": 59
+    "flights": 58
+  },
+  {
+    "airline": "WestJet",
+    "flights": 57
   },
   {
     "airline": "Spirit Airlines",
     "flights": 54
   },
   {
-    "airline": "Allegiant Air",
-    "flights": 50
+    "airline": "Frontier Airlines",
+    "flights": 53
+  },
+  {
+    "airline": "Lufthansa",
+    "flights": 48
+  },
+  {
+    "airline": "United Parcel Service",
+    "flights": 47
   }
 ]
