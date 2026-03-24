@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 8466
-  },
-  {
-    "airport": "KDFW",
-    "flights": 63
+    "flights": 9471
   },
   {
     "airport": "KATL",
-    "flights": 54
+    "flights": 34
   },
   {
     "airport": "CYYZ",
-    "flights": 44
-  },
-  {
-    "airport": "KDEN",
-    "flights": 26
+    "flights": 25
   },
   {
     "airport": "KBOS",
-    "flights": 24
+    "flights": 20
   },
   {
-    "airport": "LSZH",
-    "flights": 22
-  },
-  {
-    "airport": "KORD",
+    "airport": "CYYC",
     "flights": 19
   },
   {
-    "airport": "EGKK",
+    "airport": "EDDF",
+    "flights": 19
+  },
+  {
+    "airport": "KDFW",
+    "flights": 19
+  },
+  {
+    "airport": "LSZH",
+    "flights": 16
+  },
+  {
+    "airport": "KORD",
+    "flights": 15
+  },
+  {
+    "airport": "KBJC",
+    "flights": 15
+  },
+  {
+    "airport": "KLAS",
     "flights": 15
   },
   {
     "airport": "KEWR",
-    "flights": 15
+    "flights": 14
+  },
+  {
+    "airport": "KLAX",
+    "flights": 14
   },
   {
     "airport": "KPHX",
-    "flights": 15
-  },
-  {
-    "airport": "VHHH",
-    "flights": 15
-  },
-  {
-    "airport": "KTPA",
-    "flights": 15
-  },
-  {
-    "airport": "KMCO",
     "flights": 14
   },
   {
-    "airport": "KSLC",
+    "airport": "KSEA",
     "flights": 14
   },
   {
-    "airport": "KBJC",
-    "flights": 12
+    "airport": "KLGA",
+    "flights": 13
   },
   {
     "airport": "ESSA",
-    "flights": 12
+    "flights": 13
+  },
+  {
+    "airport": "SKBO",
+    "flights": 13
+  },
+  {
+    "airport": "KSAN",
+    "flights": 13
+  },
+  {
+    "airport": "CYVR",
+    "flights": 13
   },
   {
     "airport": "EHAM",
+    "flights": 13
+  },
+  {
+    "airport": "VHHH",
+    "flights": 13
+  },
+  {
+    "airport": "KLGU",
     "flights": 12
   },
   {
-    "airport": "VIDP",
+    "airport": "MMUN",
+    "flights": 12
+  },
+  {
+    "airport": "KTEB",
     "flights": 11
-  },
-  {
-    "airport": "VECC",
-    "flights": 11
-  },
-  {
-    "airport": "EBBR",
-    "flights": 11
-  },
-  {
-    "airport": "KBNA",
-    "flights": 11
-  },
-  {
-    "airport": "VABB",
-    "flights": 10
-  },
-  {
-    "airport": "KOAK",
-    "flights": 10
-  },
-  {
-    "airport": "KLAS",
-    "flights": 10
   }
 ]
