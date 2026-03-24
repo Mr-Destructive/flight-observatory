@@ -1,102 +1,102 @@
 [
   {
     "airline": "unknown",
-    "flights": 4548
-  },
-  {
-    "airline": "Southwest Airlines",
-    "flights": 451
+    "flights": 4417
   },
   {
     "airline": "American Airlines",
-    "flights": 448
+    "flights": 473
+  },
+  {
+    "airline": "Southwest Airlines",
+    "flights": 463
   },
   {
     "airline": "Delta Air Lines",
-    "flights": 431
+    "flights": 444
   },
   {
     "airline": "United Airlines",
-    "flights": 427
-  },
-  {
-    "airline": "Ryanair",
-    "flights": 244
+    "flights": 435
   },
   {
     "airline": "SkyWest",
-    "flights": 192
+    "flights": 243
+  },
+  {
+    "airline": "Ryanair",
+    "flights": 221
   },
   {
     "airline": "NetJets",
-    "flights": 173
-  },
-  {
-    "airline": "Turkish Airlines",
-    "flights": 129
+    "flights": 172
   },
   {
     "airline": "Alaska Airlines",
-    "flights": 126
+    "flights": 129
   },
   {
     "airline": "JetBlue Airways",
-    "flights": 114
-  },
-  {
-    "airline": "Air Canada",
-    "flights": 97
+    "flights": 116
   },
   {
     "airline": "Republic Airlines",
-    "flights": 96
+    "flights": 108
   },
   {
     "airline": "easyJet",
-    "flights": 79
+    "flights": 96
   },
   {
-    "airline": "British Airways",
-    "flights": 75
+    "airline": "Turkish Airlines",
+    "flights": 93
   },
   {
     "airline": "Envoy Air",
-    "flights": 68
+    "flights": 89
   },
   {
-    "airline": "PSA Airlines",
-    "flights": 65
+    "airline": "Air Canada",
+    "flights": 87
   },
   {
-    "airline": "Air France",
-    "flights": 60
-  },
-  {
-    "airline": "Bombardier Business Jet Solutions",
-    "flights": 59
-  },
-  {
-    "airline": "Scandinavian Airlines System",
-    "flights": 58
+    "airline": "United Parcel Service",
+    "flights": 86
   },
   {
     "airline": "WestJet",
+    "flights": 74
+  },
+  {
+    "airline": "British Airways",
+    "flights": 73
+  },
+  {
+    "airline": "Air France",
+    "flights": 72
+  },
+  {
+    "airline": "Scandinavian Airlines System",
+    "flights": 62
+  },
+  {
+    "airline": "Bombardier Business Jet Solutions",
+    "flights": 58
+  },
+  {
+    "airline": "PSA Airlines",
     "flights": 57
+  },
+  {
+    "airline": "Frontier Airlines",
+    "flights": 54
   },
   {
     "airline": "Spirit Airlines",
     "flights": 54
   },
   {
-    "airline": "Frontier Airlines",
-    "flights": 53
-  },
-  {
-    "airline": "Lufthansa",
-    "flights": 48
-  },
-  {
-    "airline": "United Parcel Service",
-    "flights": 47
+    "airline": "KLM Royal Dutch Airlines",
+    "flights": 52
   }
 ]
