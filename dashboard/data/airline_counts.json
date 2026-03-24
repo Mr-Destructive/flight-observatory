@@ -1,102 +1,102 @@
 [
   {
     "airline": "unknown",
-    "flights": 2621
+    "flights": 2050
   },
   {
     "airline": "American Airlines",
-    "flights": 495
-  },
-  {
-    "airline": "Delta Air Lines",
-    "flights": 479
+    "flights": 504
   },
   {
     "airline": "Southwest Airlines",
-    "flights": 465
+    "flights": 453
+  },
+  {
+    "airline": "Delta Air Lines",
+    "flights": 451
   },
   {
     "airline": "United Airlines",
-    "flights": 464
+    "flights": 410
   },
   {
     "airline": "SkyWest",
-    "flights": 224
+    "flights": 193
   },
   {
     "airline": "JetBlue Airways",
-    "flights": 133
+    "flights": 138
   },
   {
     "airline": "Alaska Airlines",
-    "flights": 132
+    "flights": 119
   },
   {
     "airline": "Republic Airlines",
-    "flights": 124
-  },
-  {
-    "airline": "Frontier Airlines",
     "flights": 105
   },
   {
-    "airline": "Envoy Air",
-    "flights": 87
-  },
-  {
     "airline": "Air Canada",
-    "flights": 85
+    "flights": 101
   },
   {
-    "airline": "NetJets",
-    "flights": 84
-  },
-  {
-    "airline": "WestJet",
-    "flights": 75
-  },
-  {
-    "airline": "Allegiant Air",
-    "flights": 72
-  },
-  {
-    "airline": "All Nippon Airways",
-    "flights": 66
-  },
-  {
-    "airline": "Ryanair",
-    "flights": 66
-  },
-  {
-    "airline": "Spirit Airlines",
-    "flights": 59
+    "airline": "Frontier Airlines",
+    "flights": 100
   },
   {
     "airline": "Turkish Airlines",
-    "flights": 55
+    "flights": 85
   },
   {
-    "airline": "PSA Airlines",
-    "flights": 51
+    "airline": "Envoy Air",
+    "flights": 74
   },
   {
-    "airline": "Virgin Australia",
-    "flights": 51
-  },
-  {
-    "airline": "TAM Brazilian Airlines",
-    "flights": 50
-  },
-  {
-    "airline": "Japan Airlines Domestic",
-    "flights": 49
-  },
-  {
-    "airline": "Bombardier Business Jet Solutions",
-    "flights": 40
+    "airline": "All Nippon Airways",
+    "flights": 69
   },
   {
     "airline": "IndiGo Airlines",
+    "flights": 64
+  },
+  {
+    "airline": "WestJet",
+    "flights": 63
+  },
+  {
+    "airline": "Allegiant Air",
+    "flights": 60
+  },
+  {
+    "airline": "PSA Airlines",
+    "flights": 52
+  },
+  {
+    "airline": "NetJets",
+    "flights": 49
+  },
+  {
+    "airline": "Japan Airlines Domestic",
+    "flights": 45
+  },
+  {
+    "airline": "Spirit Airlines",
+    "flights": 41
+  },
+  {
+    "airline": "Virgin Australia",
     "flights": 37
+  },
+  {
+    "airline": "Cathay Pacific",
+    "flights": 36
+  },
+  {
+    "airline": "British Airways",
+    "flights": 34
+  },
+  {
+    "airline": "Korean Air",
+    "flights": 34
   }
 ]

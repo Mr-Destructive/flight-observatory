@@ -1,114 +1,74 @@
 [
   {
     "altitude_band_m": -1000,
-    "flights": 616
+    "flights": 30
   },
   {
     "altitude_band_m": 0,
-    "flights": 29673
+    "flights": 1151
   },
   {
     "altitude_band_m": 1000,
-    "flights": 17793
+    "flights": 759
   },
   {
     "altitude_band_m": 2000,
-    "flights": 9957
+    "flights": 369
   },
   {
     "altitude_band_m": 3000,
-    "flights": 7511
+    "flights": 276
   },
   {
     "altitude_band_m": 4000,
-    "flights": 5653
+    "flights": 215
   },
   {
     "altitude_band_m": 5000,
-    "flights": 5561
+    "flights": 221
   },
   {
     "altitude_band_m": 6000,
-    "flights": 5819
+    "flights": 204
   },
   {
     "altitude_band_m": 7000,
-    "flights": 6961
+    "flights": 254
   },
   {
     "altitude_band_m": 8000,
-    "flights": 7507
+    "flights": 309
   },
   {
     "altitude_band_m": 9000,
-    "flights": 11751
+    "flights": 560
   },
   {
     "altitude_band_m": 10000,
-    "flights": 34604
+    "flights": 1392
   },
   {
     "altitude_band_m": 11000,
-    "flights": 21580
+    "flights": 765
   },
   {
     "altitude_band_m": 12000,
-    "flights": 5700
+    "flights": 211
   },
   {
     "altitude_band_m": 13000,
-    "flights": 2656
+    "flights": 63
   },
   {
     "altitude_band_m": 14000,
-    "flights": 171
+    "flights": 2
   },
   {
     "altitude_band_m": 15000,
-    "flights": 14
-  },
-  {
-    "altitude_band_m": 16000,
-    "flights": 2
-  },
-  {
-    "altitude_band_m": 17000,
     "flights": 1
   },
   {
-    "altitude_band_m": 18000,
-    "flights": 4
-  },
-  {
-    "altitude_band_m": 19000,
-    "flights": 3
-  },
-  {
-    "altitude_band_m": 22000,
+    "altitude_band_m": 37000,
     "flights": 1
-  },
-  {
-    "altitude_band_m": 23000,
-    "flights": 2
-  },
-  {
-    "altitude_band_m": 28000,
-    "flights": 1
-  },
-  {
-    "altitude_band_m": 29000,
-    "flights": 1
-  },
-  {
-    "altitude_band_m": 31000,
-    "flights": 1
-  },
-  {
-    "altitude_band_m": 32000,
-    "flights": 1
-  },
-  {
-    "altitude_band_m": 36000,
-    "flights": 2
   }
 ]
