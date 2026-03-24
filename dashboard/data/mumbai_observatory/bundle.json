@@ -1,0 +1,2053 @@
+{
+  "dataset": {
+    "source": "ADS-B Exchange readsb-hist samples",
+    "scope": "BOM / VABB center with 1500 km radius",
+    "start_month": "2016-07",
+    "end_month": "2026-03",
+    "months": 117
+  },
+  "totals": {
+    "snapshots": 10221,
+    "points": 1404516,
+    "unique_hex": 9766,
+    "unique_callsigns": 42389,
+    "avg_speed": 386.1014006150216,
+    "median_speed": 433.8,
+    "p90_speed": 508.0,
+    "avg_altitude": 26427.460942338996,
+    "avg_distance_km": 873.4848479049011
+  },
+  "human": {
+    "busiest_local_hour": 8,
+    "quietest_local_hour": 4,
+    "peak_hour_points": 71718,
+    "quiet_hour_points": 43744,
+    "peak_to_quiet_ratio": 1.6394934162399415,
+    "busiest_weekday": "Sun",
+    "weekend_share": 0.31722814122445026,
+    "morning_share": 0.27002469177994415,
+    "afternoon_share": 0.2590607725365891,
+    "evening_share": 0.23213334700352292,
+    "night_share": 0.17922544136200655,
+    "night_speed": 418.29481457940216,
+    "morning_speed": 386.8218679301998,
+    "afternoon_speed": 373.1855860164076,
+    "evening_speed": 374.85799868112315,
+    "night_afternoon_speed_gap": 45.10922856299453,
+    "level_share": 0.5010993110794039,
+    "climb_share": 0.02378826585101202,
+    "descent_share": 0.027227172919354427,
+    "strong_climb_share": 0.14998689940164442,
+    "strong_descent_share": 0.18000435737293133,
+    "near_airport_visible_avg_50km": 6.93133610321452,
+    "near_airport_visible_avg_100km": 11.586243611584328,
+    "covid_drop_2020_vs_2019_pct": -11.482381530984204,
+    "covid_rebound_2021_vs_2020_pct": 33.96515720147782,
+    "peak_month": "2025-12",
+    "quiet_month": "2016-09",
+    "peak_month_points": 30405,
+    "quiet_month_points": 0,
+    "peak_month_snapshots": 86,
+    "quiet_month_snapshots": 0,
+    "fastest_distance_band": "250-500 km",
+    "slowest_distance_band": "0-50 km",
+    "fastest_altitude_band": "12k+ m",
+    "slowest_altitude_band": "0-1k m",
+    "fastest_sector": "NW",
+    "slowest_sector": "N",
+    "strongest_climb_points": 210659,
+    "strongest_descent_points": 252819,
+    "top_regular_months_seen": 87,
+    "top_regular_closest_km": 0.28,
+    "likely_airline_count": 48,
+    "top_likely_airline": "IndiGo",
+    "top_likely_airline_code": "IGO",
+    "top_likely_airline_points": 407052,
+    "top_flow_route": "N\u2192N",
+    "top_flow_trips": 15641,
+    "inbound_share": 0.3773597067236031,
+    "outbound_share": 0.38825283003665956,
+    "crossing_share": 0.23438746323973733,
+    "slowest_zone": {
+      "lat": 19.0,
+      "lon": 73.0,
+      "avg_speed": 189.62975614572022,
+      "points": 20258
+    }
+  },
+  "time_profiles": {
+    "local_hour": [
+      {
+        "hour": 0,
+        "points": 43776,
+        "avg_speed": 405.7520901864035
+      },
+      {
+        "hour": 1,
+        "points": 42535,
+        "avg_speed": 423.54000705301513
+      },
+      {
+        "hour": 2,
+        "points": 41850,
+        "avg_speed": 425.09086977299876
+      },
+      {
+        "hour": 3,
+        "points": 42963,
+        "avg_speed": 430.5107604217583
+      },
+      {
+        "hour": 4,
+        "points": 39857,
+        "avg_speed": 417.5915472815315
+      },
+      {
+        "hour": 5,
+        "points": 42629,
+        "avg_speed": 408.45478664758735
+      },
+      {
+        "hour": 6,
+        "points": 51168,
+        "avg_speed": 400.6369391025641
+      },
+      {
+        "hour": 7,
+        "points": 62524,
+        "avg_speed": 397.6299532979336
+      },
+      {
+        "hour": 8,
+        "points": 68220,
+        "avg_speed": 386.4815919085312
+      },
+      {
+        "hour": 9,
+        "points": 65159,
+        "avg_speed": 383.2296735677343
+      },
+      {
+        "hour": 10,
+        "points": 67807,
+        "avg_speed": 379.51340274602916
+      },
+      {
+        "hour": 11,
+        "points": 66747,
+        "avg_speed": 376.91215485340166
+      },
+      {
+        "hour": 12,
+        "points": 62539,
+        "avg_speed": 376.44904619517416
+      },
+      {
+        "hour": 13,
+        "points": 61533,
+        "avg_speed": 378.096631076008
+      },
+      {
+        "hour": 14,
+        "points": 61569,
+        "avg_speed": 374.2011986551674
+      },
+      {
+        "hour": 15,
+        "points": 61257,
+        "avg_speed": 372.7777821310218
+      },
+      {
+        "hour": 16,
+        "points": 60094,
+        "avg_speed": 370.0719123373382
+      },
+      {
+        "hour": 17,
+        "points": 58999,
+        "avg_speed": 366.46375362294276
+      },
+      {
+        "hour": 18,
+        "points": 58000,
+        "avg_speed": 367.4386655172414
+      },
+      {
+        "hour": 19,
+        "points": 57232,
+        "avg_speed": 370.9002271456528
+      },
+      {
+        "hour": 20,
+        "points": 55898,
+        "avg_speed": 368.5755858885828
+      },
+      {
+        "hour": 21,
+        "points": 52401,
+        "avg_speed": 376.66365909047533
+      },
+      {
+        "hour": 22,
+        "points": 53741,
+        "avg_speed": 381.16593103961594
+      },
+      {
+        "hour": 23,
+        "points": 50561,
+        "avg_speed": 386.40076936769447
+      }
+    ],
+    "weekday": [
+      {
+        "weekday": 0,
+        "label": "Mon",
+        "points": 211867
+      },
+      {
+        "weekday": 1,
+        "label": "Tue",
+        "points": 171379
+      },
+      {
+        "weekday": 2,
+        "label": "Wed",
+        "points": 196551
+      },
+      {
+        "weekday": 3,
+        "label": "Thu",
+        "points": 189210
+      },
+      {
+        "weekday": 4,
+        "label": "Fri",
+        "points": 189957
+      },
+      {
+        "weekday": 5,
+        "label": "Sat",
+        "points": 210413
+      },
+      {
+        "weekday": 6,
+        "label": "Sun",
+        "points": 235139
+      }
+    ],
+    "local_hour_snapshot": [
+      {
+        "hour": 0,
+        "points": 47464
+      },
+      {
+        "hour": 1,
+        "points": 46344
+      },
+      {
+        "hour": 2,
+        "points": 44944
+      },
+      {
+        "hour": 3,
+        "points": 45993
+      },
+      {
+        "hour": 4,
+        "points": 43744
+      },
+      {
+        "hour": 5,
+        "points": 47773
+      },
+      {
+        "hour": 6,
+        "points": 56780
+      },
+      {
+        "hour": 7,
+        "points": 67270
+      },
+      {
+        "hour": 8,
+        "points": 71718
+      },
+      {
+        "hour": 9,
+        "points": 67714
+      },
+      {
+        "hour": 10,
+        "points": 70195
+      },
+      {
+        "hour": 11,
+        "points": 69515
+      },
+      {
+        "hour": 12,
+        "points": 66154
+      },
+      {
+        "hour": 13,
+        "points": 65448
+      },
+      {
+        "hour": 14,
+        "points": 64871
+      },
+      {
+        "hour": 15,
+        "points": 63777
+      },
+      {
+        "hour": 16,
+        "points": 62140
+      },
+      {
+        "hour": 17,
+        "points": 60976
+      },
+      {
+        "hour": 18,
+        "points": 60041
+      },
+      {
+        "hour": 19,
+        "points": 59198
+      },
+      {
+        "hour": 20,
+        "points": 57996
+      },
+      {
+        "hour": 21,
+        "points": 54479
+      },
+      {
+        "hour": 22,
+        "points": 56318
+      },
+      {
+        "hour": 23,
+        "points": 53664
+      }
+    ],
+    "daypart": [
+      {
+        "bucket": "Night",
+        "points": 251725,
+        "avg_speed": 418.29481457940216,
+        "avg_altitude": 29213.122737113914
+      },
+      {
+        "bucket": "Morning",
+        "points": 379254,
+        "avg_speed": 386.8218679301998,
+        "avg_altitude": 25974.881098155853
+      },
+      {
+        "bucket": "Afternoon",
+        "points": 363855,
+        "avg_speed": 373.1855860164076,
+        "avg_altitude": 25148.173901691607
+      },
+      {
+        "bucket": "Evening",
+        "points": 326035,
+        "avg_speed": 374.85799868112315,
+        "avg_altitude": 25309.435986933917
+      }
+    ],
+    "vertical_phase": [
+      {
+        "phase": "Strong descent",
+        "points": 252819,
+        "avg_speed": 312.30541810544304,
+        "avg_altitude": 16016.80690138004
+      },
+      {
+        "phase": "Descent",
+        "points": 38241,
+        "avg_speed": 333.48770429643577,
+        "avg_altitude": 21518.95931068748
+      },
+      {
+        "phase": "Level",
+        "points": 703802,
+        "avg_speed": 441.8275338802675,
+        "avg_altitude": 33224.59548708302
+      },
+      {
+        "phase": "Climb",
+        "points": 33411,
+        "avg_speed": 410.81122983448563,
+        "avg_altitude": 29884.145850169105
+      },
+      {
+        "phase": "Strong climb",
+        "points": 210659,
+        "avg_speed": 377.8010832672708,
+        "avg_altitude": 20811.6824536336
+      }
+    ]
+  },
+  "radius_bands": [
+    {
+      "radius_km": 50,
+      "points": 31697,
+      "aircraft": 2844,
+      "active_snapshots": 4573,
+      "avg_visible_per_snapshot": 6.93133610321452,
+      "avg_speed": 231.08235795185664,
+      "avg_altitude": 8945.589712691064
+    },
+    {
+      "radius_km": 100,
+      "points": 54409,
+      "aircraft": 3609,
+      "active_snapshots": 4696,
+      "avg_visible_per_snapshot": 11.586243611584328,
+      "avg_speed": 283.0563307541032,
+      "avg_altitude": 13675.02861887628
+    },
+    {
+      "radius_km": 250,
+      "points": 118909,
+      "aircraft": 4601,
+      "active_snapshots": 4788,
+      "avg_visible_per_snapshot": 24.834795321637426,
+      "avg_speed": 353.7289851903556,
+      "avg_altitude": 21606.993033036077
+    },
+    {
+      "radius_km": 500,
+      "points": 237027,
+      "aircraft": 5412,
+      "active_snapshots": 5693,
+      "avg_visible_per_snapshot": 41.63481468470051,
+      "avg_speed": 391.12279318389886,
+      "avg_altitude": 26424.3699775319
+    },
+    {
+      "radius_km": 1000,
+      "points": 712496,
+      "aircraft": 7465,
+      "active_snapshots": 8566,
+      "avg_visible_per_snapshot": 83.17721223441512,
+      "avg_speed": 402.0647722934585,
+      "avg_altitude": 27886.341359627535
+    },
+    {
+      "radius_km": 1500,
+      "points": 1329059,
+      "aircraft": 9618,
+      "active_snapshots": 10181,
+      "avg_visible_per_snapshot": 130.54307042530203,
+      "avg_speed": 386.1014006150216,
+      "avg_altitude": 26200.02563009655
+    }
+  ],
+  "distance_bands": [
+    {
+      "band": "0-50 km",
+      "points": 31692,
+      "avg_speed": 231.0646188312508,
+      "avg_altitude": 8943.831107868946
+    },
+    {
+      "band": "50-100 km",
+      "points": 22713,
+      "avg_speed": 355.5848720996786,
+      "avg_altitude": 20255.348159915276
+    },
+    {
+      "band": "100-250 km",
+      "points": 64501,
+      "avg_speed": 413.3420117517558,
+      "avg_altitude": 28300.22906480645
+    },
+    {
+      "band": "250-500 km",
+      "points": 118118,
+      "avg_speed": 428.7661711170186,
+      "avg_altitude": 31280.358607010912
+    },
+    {
+      "band": "500-1000 km",
+      "points": 475452,
+      "avg_speed": 407.5197466831562,
+      "avg_altitude": 28615.37858912356
+    },
+    {
+      "band": "1000-1500 km",
+      "points": 616583,
+      "avg_speed": 367.65559219115676,
+      "avg_altitude": 24246.08112622286
+    }
+  ],
+  "altitude_bands": [
+    {
+      "band": "0-1k m",
+      "points": 66538,
+      "avg_speed": 29.44818449607743
+    },
+    {
+      "band": "1k-3k m",
+      "points": 35256,
+      "avg_speed": 158.83807295212162
+    },
+    {
+      "band": "3k-6k m",
+      "points": 56873,
+      "avg_speed": 197.42627081391873
+    },
+    {
+      "band": "6k-9k m",
+      "points": 54023,
+      "avg_speed": 238.58999500212875
+    },
+    {
+      "band": "9k-12k m",
+      "points": 55432,
+      "avg_speed": 279.3395457497474
+    },
+    {
+      "band": "12k+ m",
+      "points": 1052747,
+      "avg_speed": 439.6497279973251
+    }
+  ],
+  "sector_bands": [
+    {
+      "sector": "N",
+      "points": 360171,
+      "avg_speed": 341.5310283171049,
+      "avg_altitude": 22157.04041467811
+    },
+    {
+      "sector": "NE",
+      "points": 243009,
+      "avg_speed": 416.48791361636813,
+      "avg_altitude": 28997.153416905563
+    },
+    {
+      "sector": "E",
+      "points": 161950,
+      "avg_speed": 398.389630132757,
+      "avg_altitude": 28257.452401126422
+    },
+    {
+      "sector": "SE",
+      "points": 332957,
+      "avg_speed": 375.9804941779269,
+      "avg_altitude": 24475.989902520603
+    },
+    {
+      "sector": "S",
+      "points": 68048,
+      "avg_speed": 403.3465333294145,
+      "avg_altitude": 26905.402490733875
+    },
+    {
+      "sector": "SW",
+      "points": 7680,
+      "avg_speed": 409.84071614583337,
+      "avg_altitude": 27816.991555614197
+    },
+    {
+      "sector": "W",
+      "points": 35574,
+      "avg_speed": 419.8405914431888,
+      "avg_altitude": 30105.225497779687
+    },
+    {
+      "sector": "NW",
+      "points": 119670,
+      "avg_speed": 448.71069775215176,
+      "avg_altitude": 33149.339033362936
+    }
+  ],
+  "yearly": [
+    {
+      "year": "2016",
+      "points": 1172,
+      "snapshots": 188,
+      "avg_speed": 488.1606619854216,
+      "avg_altitude": 35614.25902983729,
+      "yoy_pct": null
+    },
+    {
+      "year": "2017",
+      "points": 7809,
+      "snapshots": 927,
+      "avg_speed": 439.4044055992126,
+      "avg_altitude": 29489.64114833331,
+      "yoy_pct": 566.2969283276451
+    },
+    {
+      "year": "2018",
+      "points": 27201,
+      "snapshots": 1101,
+      "avg_speed": 407.27871544751633,
+      "avg_altitude": 27033.07651851555,
+      "yoy_pct": 248.3288513253938
+    },
+    {
+      "year": "2019",
+      "points": 77362,
+      "snapshots": 1143,
+      "avg_speed": 365.4374856743223,
+      "avg_altitude": 23878.044073195448,
+      "yoy_pct": 184.40866144627034
+    },
+    {
+      "year": "2020",
+      "points": 68479,
+      "snapshots": 1150,
+      "avg_speed": 380.7367475310366,
+      "avg_altitude": 26724.9429151829,
+      "yoy_pct": -11.482381530984204
+    },
+    {
+      "year": "2021",
+      "points": 91738,
+      "snapshots": 1137,
+      "avg_speed": 380.0169977934657,
+      "avg_altitude": 26697.762097003302,
+      "yoy_pct": 33.96515720147782
+    },
+    {
+      "year": "2022",
+      "points": 208779,
+      "snapshots": 1112,
+      "avg_speed": 395.21981808638196,
+      "avg_altitude": 27630.311416889275,
+      "yoy_pct": 127.58180906494583
+    },
+    {
+      "year": "2023",
+      "points": 242668,
+      "snapshots": 1074,
+      "avg_speed": 389.2025219372554,
+      "avg_altitude": 26545.019126975112,
+      "yoy_pct": 16.23199651305926
+    },
+    {
+      "year": "2024",
+      "points": 278567,
+      "snapshots": 1084,
+      "avg_speed": 378.9361191515101,
+      "avg_altitude": 25550.627178132087,
+      "yoy_pct": 14.793462673282015
+    },
+    {
+      "year": "2025",
+      "points": 320283,
+      "snapshots": 1045,
+      "avg_speed": 393.63007281654745,
+      "avg_altitude": 27047.46692976337,
+      "yoy_pct": 14.97521242645396
+    },
+    {
+      "year": "2026",
+      "points": 80458,
+      "snapshots": 260,
+      "avg_speed": 382.5549545968429,
+      "avg_altitude": 25989.18601692015,
+      "yoy_pct": -74.87909130362836
+    }
+  ],
+  "recurring_aircraft": [
+    {
+      "hex": "8008c2",
+      "months_seen": 87,
+      "points": 1984,
+      "avg_speed": 369.62692506459945,
+      "closest_km": 0.28
+    },
+    {
+      "hex": "800b44",
+      "months_seen": 86,
+      "points": 1841,
+      "avg_speed": 352.8520088057237,
+      "closest_km": 1.03
+    },
+    {
+      "hex": "800b80",
+      "months_seen": 86,
+      "points": 1756,
+      "avg_speed": 340.2691322073384,
+      "closest_km": 6.79
+    },
+    {
+      "hex": "800b62",
+      "months_seen": 86,
+      "points": 1701,
+      "avg_speed": 365.1227976190477,
+      "closest_km": 0.11
+    },
+    {
+      "hex": "800b45",
+      "months_seen": 86,
+      "points": 766,
+      "avg_speed": 347.9624178712221,
+      "closest_km": 1.16
+    },
+    {
+      "hex": "800c0b",
+      "months_seen": 85,
+      "points": 1967,
+      "avg_speed": 355.4181392931393,
+      "closest_km": 0.1
+    },
+    {
+      "hex": "800b12",
+      "months_seen": 85,
+      "points": 1684,
+      "avg_speed": 374.00263319044706,
+      "closest_km": 0.49
+    },
+    {
+      "hex": "800c3c",
+      "months_seen": 85,
+      "points": 1664,
+      "avg_speed": 359.4120460048426,
+      "closest_km": 0.56
+    },
+    {
+      "hex": "8007b2",
+      "months_seen": 85,
+      "points": 1613,
+      "avg_speed": 372.35104895104894,
+      "closest_km": 0.11
+    },
+    {
+      "hex": "800b61",
+      "months_seen": 85,
+      "points": 1325,
+      "avg_speed": 357.31533180778035,
+      "closest_km": 0.33
+    },
+    {
+      "hex": "800bd4",
+      "months_seen": 84,
+      "points": 1758,
+      "avg_speed": 357.6404651162791,
+      "closest_km": 0.64
+    },
+    {
+      "hex": "800cba",
+      "months_seen": 84,
+      "points": 1750,
+      "avg_speed": 361.62189655172415,
+      "closest_km": 0.11
+    },
+    {
+      "hex": "800cb9",
+      "months_seen": 84,
+      "points": 1706,
+      "avg_speed": 357.6229681978799,
+      "closest_km": 0.1
+    },
+    {
+      "hex": "800b13",
+      "months_seen": 84,
+      "points": 1270,
+      "avg_speed": 365.710547184774,
+      "closest_km": 0.96
+    },
+    {
+      "hex": "800be7",
+      "months_seen": 84,
+      "points": 1086,
+      "avg_speed": 362.5099165894347,
+      "closest_km": 0.5
+    },
+    {
+      "hex": "800c64",
+      "months_seen": 83,
+      "points": 1926,
+      "avg_speed": 350.53857218966436,
+      "closest_km": 0.24
+    },
+    {
+      "hex": "800c74",
+      "months_seen": 83,
+      "points": 1800,
+      "avg_speed": 366.9499141385232,
+      "closest_km": 0.34
+    },
+    {
+      "hex": "800c08",
+      "months_seen": 83,
+      "points": 1704,
+      "avg_speed": 367.7602279544092,
+      "closest_km": 0.3
+    },
+    {
+      "hex": "800c4b",
+      "months_seen": 83,
+      "points": 1550,
+      "avg_speed": 376.3791201575837,
+      "closest_km": 0.25
+    },
+    {
+      "hex": "800bef",
+      "months_seen": 82,
+      "points": 1751,
+      "avg_speed": 367.9569347319347,
+      "closest_km": 0.09
+    }
+  ],
+  "slow_zones": [
+    {
+      "cell_lat": 19.0,
+      "cell_lon": 73.0,
+      "points": 20258,
+      "avg_speed": 189.62975614572022,
+      "avg_altitude": 6537.389562022048,
+      "manhattan": 0.2240000000000002
+    },
+    {
+      "cell_lat": 18.5,
+      "cell_lon": 74.0,
+      "points": 4791,
+      "avg_speed": 242.08812356501772,
+      "avg_altitude": 10640.170373478808,
+      "manhattan": 1.7240000000000002
+    },
+    {
+      "cell_lat": 22.0,
+      "cell_lon": 72.0,
+      "points": 476,
+      "avg_speed": 242.37899159663866,
+      "avg_altitude": 14977.453191489361,
+      "manhattan": 3.776
+    },
+    {
+      "cell_lat": 19.0,
+      "cell_lon": 73.5,
+      "points": 6436,
+      "avg_speed": 275.4159105034183,
+      "avg_altitude": 12900.53017308592,
+      "manhattan": 0.7240000000000002
+    },
+    {
+      "cell_lat": 19.0,
+      "cell_lon": 72.5,
+      "points": 4445,
+      "avg_speed": 309.44767154105733,
+      "avg_altitude": 12988.040036190907,
+      "manhattan": 0.4552000000000014
+    },
+    {
+      "cell_lat": 22.5,
+      "cell_lon": 73.0,
+      "points": 1147,
+      "avg_speed": 311.05806451612904,
+      "avg_altitude": 17473.804195804194,
+      "manhattan": 3.5447999999999986
+    },
+    {
+      "cell_lat": 15.5,
+      "cell_lon": 74.0,
+      "points": 204,
+      "avg_speed": 313.15245098039213,
+      "avg_altitude": 17525.247524752474,
+      "manhattan": 4.724
+    },
+    {
+      "cell_lat": 22.0,
+      "cell_lon": 71.0,
+      "points": 233,
+      "avg_speed": 338.4587982832618,
+      "avg_altitude": 17102.70562770563,
+      "manhattan": 4.776
+    },
+    {
+      "cell_lat": 19.5,
+      "cell_lon": 73.0,
+      "points": 6582,
+      "avg_speed": 339.4157398966879,
+      "avg_altitude": 16623.042122871047,
+      "manhattan": 0.5447999999999986
+    },
+    {
+      "cell_lat": 19.0,
+      "cell_lon": 74.0,
+      "points": 955,
+      "avg_speed": 339.5415706806283,
+      "avg_altitude": 17582.08937960042,
+      "manhattan": 1.2240000000000002
+    },
+    {
+      "cell_lat": 19.5,
+      "cell_lon": 72.5,
+      "points": 1998,
+      "avg_speed": 345.02952952952955,
+      "avg_altitude": 18240.788152610443,
+      "manhattan": 0.7759999999999998
+    },
+    {
+      "cell_lat": 18.5,
+      "cell_lon": 73.5,
+      "points": 2514,
+      "avg_speed": 357.7437151949085,
+      "avg_altitude": 21489.12129703763,
+      "manhattan": 1.2240000000000002
+    },
+    {
+      "cell_lat": 18.5,
+      "cell_lon": 72.5,
+      "points": 743,
+      "avg_speed": 361.51036339165546,
+      "avg_altitude": 21543.301759133963,
+      "manhattan": 0.9552000000000014
+    },
+    {
+      "cell_lat": 21.5,
+      "cell_lon": 71.5,
+      "points": 206,
+      "avg_speed": 365.6077669902912,
+      "avg_altitude": 23420.731707317074,
+      "manhattan": 3.776
+    },
+    {
+      "cell_lat": 19.5,
+      "cell_lon": 72.0,
+      "points": 967,
+      "avg_speed": 366.1055842812823,
+      "avg_altitude": 23038.640706126687,
+      "manhattan": 1.2759999999999998
+    }
+  ],
+  "likely_airlines": [
+    {
+      "code": "IGO",
+      "airline": "IndiGo",
+      "points": 407052,
+      "callsigns": 8140,
+      "speed_sum": 145029660.172706,
+      "altitude_sum": 9334894184.987333,
+      "avg_speed": 356.2927099552539,
+      "avg_altitude": 22932.927942836133
+    },
+    {
+      "code": "AIC",
+      "airline": "Air India",
+      "points": 131931,
+      "callsigns": 1884,
+      "speed_sum": 48301908.77814549,
+      "altitude_sum": 3137471044.9476304,
+      "avg_speed": 366.1149296082459,
+      "avg_altitude": 23781.151093735592
+    },
+    {
+      "code": "UAE",
+      "airline": "Emirates",
+      "points": 45117,
+      "callsigns": 745,
+      "speed_sum": 21342298.615782153,
+      "altitude_sum": 1504905334.7180717,
+      "avg_speed": 473.0433897595619,
+      "avg_altitude": 33355.61616947208
+    },
+    {
+      "code": "EK",
+      "airline": "Emirates",
+      "points": 16740,
+      "callsigns": 467,
+      "speed_sum": 6018478.367521356,
+      "altitude_sum": 588938479.0583119,
+      "avg_speed": 359.52678420079786,
+      "avg_altitude": 35181.51009906284
+    },
+    {
+      "code": "THY",
+      "airline": "Turkish Airlines",
+      "points": 14522,
+      "callsigns": 447,
+      "speed_sum": 6778200.242586562,
+      "altitude_sum": 494370304.3772813,
+      "avg_speed": 466.7539073534336,
+      "avg_altitude": 34042.85252563568
+    },
+    {
+      "code": "THA",
+      "airline": "Thai Airways",
+      "points": 10837,
+      "callsigns": 148,
+      "speed_sum": 4954718.059338439,
+      "altitude_sum": 353170929.1942735,
+      "avg_speed": 457.20384417628856,
+      "avg_altitude": 32589.36321807451
+    },
+    {
+      "code": "OMA",
+      "airline": "Oman Air",
+      "points": 10708,
+      "callsigns": 206,
+      "speed_sum": 4640444.390222431,
+      "altitude_sum": 336740660.615925,
+      "avg_speed": 433.36238235173994,
+      "avg_altitude": 31447.577569660534
+    },
+    {
+      "code": "BAW",
+      "airline": "British Airways",
+      "points": 5208,
+      "callsigns": 71,
+      "speed_sum": 2297719.484006462,
+      "altitude_sum": 158805404.46474513,
+      "avg_speed": 441.190377113376,
+      "avg_altitude": 30492.589182938773
+    },
+    {
+      "code": "DLH",
+      "airline": "Lufthansa",
+      "points": 5072,
+      "callsigns": 60,
+      "speed_sum": 2260026.6660229196,
+      "altitude_sum": 156069227.18264186,
+      "avg_speed": 445.58885371114343,
+      "avg_altitude": 30770.746684274814
+    },
+    {
+      "code": "AF",
+      "airline": "Air France",
+      "points": 4282,
+      "callsigns": 109,
+      "speed_sum": 1873591.5203890891,
+      "altitude_sum": 140448866.6854327,
+      "avg_speed": 437.55056524733516,
+      "avg_altitude": 32799.8287448465
+    },
+    {
+      "code": "KLM",
+      "airline": "KLM",
+      "points": 3358,
+      "callsigns": 60,
+      "speed_sum": 1572406.1845273743,
+      "altitude_sum": 103832360.47510798,
+      "avg_speed": 468.2567553684855,
+      "avg_altitude": 30920.89353040738
+    },
+    {
+      "code": "AFR",
+      "airline": "Air France",
+      "points": 3327,
+      "callsigns": 72,
+      "speed_sum": 1483423.7064400013,
+      "altitude_sum": 99883280.19408832,
+      "avg_speed": 445.8742730507969,
+      "avg_altitude": 30022.025907450654
+    },
+    {
+      "code": "AI",
+      "airline": "Air India",
+      "points": 3031,
+      "callsigns": 215,
+      "speed_sum": 1319977.1161811277,
+      "altitude_sum": 96029442.4943706,
+      "avg_speed": 435.4922851141959,
+      "avg_altitude": 31682.429064457472
+    },
+    {
+      "code": "FI",
+      "airline": "Icelandair",
+      "points": 2401,
+      "callsigns": 41,
+      "speed_sum": 1136220.6298293371,
+      "altitude_sum": 86201051.67284407,
+      "avg_speed": 473.2280840605319,
+      "avg_altitude": 35902.14563633656
+    },
+    {
+      "code": "SWR",
+      "airline": "SWISS",
+      "points": 2118,
+      "callsigns": 17,
+      "speed_sum": 981009.451687795,
+      "altitude_sum": 64038667.220187336,
+      "avg_speed": 463.1772670858333,
+      "avg_altitude": 30235.44250244917
+    },
+    {
+      "code": "TGW",
+      "airline": "Scoot",
+      "points": 2105,
+      "callsigns": 69,
+      "speed_sum": 928946.1492019135,
+      "altitude_sum": 66418850.99465745,
+      "avg_speed": 441.3045839439019,
+      "avg_altitude": 31552.898334754133
+    },
+    {
+      "code": "BA",
+      "airline": "British Airways",
+      "points": 1678,
+      "callsigns": 58,
+      "speed_sum": 604320.2818383841,
+      "altitude_sum": 59840043.069824785,
+      "avg_speed": 360.143195374484,
+      "avg_altitude": 35661.52745519952
+    },
+    {
+      "code": "TK",
+      "airline": "Turkish Airlines",
+      "points": 1312,
+      "callsigns": 138,
+      "speed_sum": 475854.31169304496,
+      "altitude_sum": 47196304.66666667,
+      "avg_speed": 362.69383513189405,
+      "avg_altitude": 35972.79319105692
+    },
+    {
+      "code": "JAL",
+      "airline": "Japan Airlines",
+      "points": 1102,
+      "callsigns": 10,
+      "speed_sum": 461470.06845807965,
+      "altitude_sum": 32202197.3362575,
+      "avg_speed": 418.7568679292919,
+      "avg_altitude": 29221.594678999547
+    },
+    {
+      "code": "WY",
+      "airline": "Oman Air",
+      "points": 941,
+      "callsigns": 48,
+      "speed_sum": 397176.51834635955,
+      "altitude_sum": 36159811.0,
+      "avg_speed": 422.0791905912429,
+      "avg_altitude": 38427.00425079702
+    },
+    {
+      "code": "UAL",
+      "airline": "United Airlines",
+      "points": 901,
+      "callsigns": 24,
+      "speed_sum": 329637.4447525305,
+      "altitude_sum": 19530675.0,
+      "avg_speed": 365.8573193701781,
+      "avg_altitude": 21676.664816870143
+    },
+    {
+      "code": "ACA",
+      "airline": "Air Canada",
+      "points": 885,
+      "callsigns": 20,
+      "speed_sum": 317712.78,
+      "altitude_sum": 18759204.129032258,
+      "avg_speed": 358.99749152542375,
+      "avg_altitude": 21196.840823765262
+    },
+    {
+      "code": "LH",
+      "airline": "Lufthansa",
+      "points": 492,
+      "callsigns": 37,
+      "speed_sum": 177224.78203933744,
+      "altitude_sum": 17087920.869090907,
+      "avg_speed": 360.2129716246696,
+      "avg_altitude": 34731.54648189209
+    },
+    {
+      "code": "LX",
+      "airline": "SWISS",
+      "points": 344,
+      "callsigns": 36,
+      "speed_sum": 119924.41103174603,
+      "altitude_sum": 11952941.777930403,
+      "avg_speed": 348.6174739294943,
+      "avg_altitude": 34746.923773053495
+    },
+    {
+      "code": "KL",
+      "airline": "KLM",
+      "points": 343,
+      "callsigns": 31,
+      "speed_sum": 145342.68232600734,
+      "altitude_sum": 11661487.0,
+      "avg_speed": 423.7395986180972,
+      "avg_altitude": 33998.50437317784
+    },
+    {
+      "code": "TR",
+      "airline": "Scoot",
+      "points": 272,
+      "callsigns": 38,
+      "speed_sum": 61722.41512445887,
+      "altitude_sum": 5689347.0,
+      "avg_speed": 226.92064383992232,
+      "avg_altitude": 20916.716911764706
+    },
+    {
+      "code": "TG",
+      "airline": "Thai Airways",
+      "points": 262,
+      "callsigns": 34,
+      "speed_sum": 92630.63241626792,
+      "altitude_sum": 9200852.2,
+      "avg_speed": 353.55203212316,
+      "avg_altitude": 35117.75648854962
+    },
+    {
+      "code": "AC",
+      "airline": "Air Canada",
+      "points": 204,
+      "callsigns": 24,
+      "speed_sum": 78067.4,
+      "altitude_sum": 6833294.0,
+      "avg_speed": 382.6833333333333,
+      "avg_altitude": 33496.53921568627
+    },
+    {
+      "code": "JL",
+      "airline": "Japan Airlines",
+      "points": 185,
+      "callsigns": 56,
+      "speed_sum": 70233.55,
+      "altitude_sum": 5095856.0,
+      "avg_speed": 379.6408108108108,
+      "avg_altitude": 27545.16756756757
+    },
+    {
+      "code": "SAS",
+      "airline": "Scandinavian Airlines",
+      "points": 111,
+      "callsigns": 6,
+      "speed_sum": 55920.670000000006,
+      "altitude_sum": 4246475.0,
+      "avg_speed": 503.78981981981985,
+      "avg_altitude": 38256.53153153153
+    },
+    {
+      "code": "UA",
+      "airline": "United Airlines",
+      "points": 88,
+      "callsigns": 12,
+      "speed_sum": 32155.6,
+      "altitude_sum": 2888145.833333333,
+      "avg_speed": 365.4045454545454,
+      "avg_altitude": 32819.83901515151
+    },
+    {
+      "code": "AR",
+      "airline": "Aerol\u00edneas Argentinas",
+      "points": 84,
+      "callsigns": 13,
+      "speed_sum": 33195.6,
+      "altitude_sum": 2436716.666666667,
+      "avg_speed": 395.18571428571425,
+      "avg_altitude": 29008.53174603175
+    },
+    {
+      "code": "EWG",
+      "airline": "Eurowings",
+      "points": 60,
+      "callsigns": 8,
+      "speed_sum": 29587.500000000004,
+      "altitude_sum": 2275950.0,
+      "avg_speed": 493.12500000000006,
+      "avg_altitude": 37932.5
+    },
+    {
+      "code": "EW",
+      "airline": "Eurowings",
+      "points": 40,
+      "callsigns": 9,
+      "speed_sum": 17850.7,
+      "altitude_sum": 1386929.0,
+      "avg_speed": 446.26750000000004,
+      "avg_altitude": 34673.225
+    },
+    {
+      "code": "AS",
+      "airline": "Alaska Airlines",
+      "points": 36,
+      "callsigns": 10,
+      "speed_sum": 14130.22,
+      "altitude_sum": 1091900.0,
+      "avg_speed": 392.50611111111107,
+      "avg_altitude": 30330.555555555555
+    },
+    {
+      "code": "ARG",
+      "airline": "Aerol\u00edneas Argentinas",
+      "points": 32,
+      "callsigns": 4,
+      "speed_sum": 8704.40119047619,
+      "altitude_sum": 649625.0,
+      "avg_speed": 272.01253720238094,
+      "avg_altitude": 20300.78125
+    },
+    {
+      "code": "AV",
+      "airline": "avianca",
+      "points": 24,
+      "callsigns": 3,
+      "speed_sum": 8362.8,
+      "altitude_sum": 530700.0,
+      "avg_speed": 348.45,
+      "avg_altitude": 22112.5
+    },
+    {
+      "code": "SWA",
+      "airline": "Southwest Airlines",
+      "points": 11,
+      "callsigns": 1,
+      "speed_sum": 2531.6,
+      "altitude_sum": 158425.0,
+      "avg_speed": 230.14545454545453,
+      "avg_altitude": 14402.272727272728
+    },
+    {
+      "code": "A3",
+      "airline": "Aegean Airlines",
+      "points": 7,
+      "callsigns": 6,
+      "speed_sum": 311.0,
+      "altitude_sum": 93950.0,
+      "avg_speed": 44.42857142857143,
+      "avg_altitude": 13421.42857142857
+    },
+    {
+      "code": "UX",
+      "airline": "Air Europa",
+      "points": 6,
+      "callsigns": 1,
+      "speed_sum": 0.0,
+      "altitude_sum": 221988.0,
+      "avg_speed": 0.0,
+      "avg_altitude": 36998.0
+    },
+    {
+      "code": "AM",
+      "airline": "Aerom\u00e9xico",
+      "points": 6,
+      "callsigns": 2,
+      "speed_sum": 2442.0,
+      "altitude_sum": 161325.0,
+      "avg_speed": 407.0,
+      "avg_altitude": 26887.5
+    },
+    {
+      "code": "FR",
+      "airline": "Ryanair",
+      "points": 4,
+      "callsigns": 1,
+      "speed_sum": 1807.1,
+      "altitude_sum": 127375.0,
+      "avg_speed": 451.775,
+      "avg_altitude": 31843.75
+    },
+    {
+      "code": "ICE",
+      "airline": "Icelandair",
+      "points": 4,
+      "callsigns": 2,
+      "speed_sum": 1806.8,
+      "altitude_sum": 131850.0,
+      "avg_speed": 451.7,
+      "avg_altitude": 32962.5
+    },
+    {
+      "code": "AEA",
+      "airline": "Air Europa",
+      "points": 3,
+      "callsigns": 1,
+      "speed_sum": 1504.9,
+      "altitude_sum": 110950.0,
+      "avg_speed": 501.6333333333334,
+      "avg_altitude": 36983.333333333336
+    },
+    {
+      "code": "6E",
+      "airline": "IndiGo",
+      "points": 3,
+      "callsigns": 2,
+      "speed_sum": 670.8,
+      "altitude_sum": 19750.0,
+      "avg_speed": 223.6,
+      "avg_altitude": 6583.333333333333
+    },
+    {
+      "code": "RYR",
+      "airline": "Ryanair",
+      "points": 2,
+      "callsigns": 2,
+      "speed_sum": 988.0,
+      "altitude_sum": 44728.0,
+      "avg_speed": 494.0,
+      "avg_altitude": 22364.0
+    },
+    {
+      "code": "AEE",
+      "airline": "Aegean Airlines",
+      "points": 1,
+      "callsigns": 1,
+      "speed_sum": 480.0,
+      "altitude_sum": 37000.0,
+      "avg_speed": 480.0,
+      "avg_altitude": 37000.0
+    },
+    {
+      "code": "TS",
+      "airline": "Air Transat",
+      "points": 1,
+      "callsigns": 1,
+      "speed_sum": 210.0,
+      "altitude_sum": 7925.0,
+      "avg_speed": 210.0,
+      "avg_altitude": 7925.0
+    }
+  ],
+  "flow_routes": [
+    {
+      "origin_sector": "N",
+      "origin_zone": "1000+ km",
+      "destination_sector": "N",
+      "destination_zone": "1000+ km",
+      "origin_label": "N | 1000+ km",
+      "destination_label": "N | 1000+ km",
+      "trips": 15641,
+      "avg_distance_change_km_sum": 77911.5899999994,
+      "avg_start_speed_sum": 5437254.099999999,
+      "avg_end_speed_sum": 4833864.999999989,
+      "direction_inbound": 3514,
+      "direction_outbound": 4442,
+      "direction_crossing": 7685,
+      "avg_distance_change_km": 4.981240969247453,
+      "avg_start_speed": 347.62829102998523,
+      "avg_end_speed": 309.0508918867073,
+      "inbound_share": 0.22466594207531487,
+      "outbound_share": 0.28399718688063424,
+      "crossing_share": 0.4913368710440509
+    },
+    {
+      "origin_sector": "SE",
+      "origin_zone": "500-1000 km",
+      "destination_sector": "SE",
+      "destination_zone": "500-1000 km",
+      "origin_label": "SE | 500-1000 km",
+      "destination_label": "SE | 500-1000 km",
+      "trips": 8329,
+      "avg_distance_change_km_sum": 34980.62999999994,
+      "avg_start_speed_sum": 3048722.7000000034,
+      "avg_end_speed_sum": 2661506.2000000062,
+      "direction_inbound": 2695,
+      "direction_outbound": 3163,
+      "direction_crossing": 2471,
+      "avg_distance_change_km": 4.199859526954008,
+      "avg_start_speed": 366.03706327290234,
+      "avg_end_speed": 319.5469083923648,
+      "inbound_share": 0.3235682554928563,
+      "outbound_share": 0.37975747388642095,
+      "crossing_share": 0.29667427062072277
+    },
+    {
+      "origin_sector": "NW",
+      "origin_zone": "1000+ km",
+      "destination_sector": "NW",
+      "destination_zone": "1000+ km",
+      "origin_label": "NW | 1000+ km",
+      "destination_label": "NW | 1000+ km",
+      "trips": 5629,
+      "avg_distance_change_km_sum": 56175.43000000007,
+      "avg_start_speed_sum": 2768254.300000005,
+      "avg_end_speed_sum": 2542877.2000000007,
+      "direction_inbound": 1807,
+      "direction_outbound": 2153,
+      "direction_crossing": 1669,
+      "avg_distance_change_km": 9.979646473618773,
+      "avg_start_speed": 491.78438443773405,
+      "avg_end_speed": 451.74581630840305,
+      "inbound_share": 0.3210161662817552,
+      "outbound_share": 0.382483567241073,
+      "crossing_share": 0.2965002664771718
+    },
+    {
+      "origin_sector": "SE",
+      "origin_zone": "1000+ km",
+      "destination_sector": "SE",
+      "destination_zone": "1000+ km",
+      "origin_label": "SE | 1000+ km",
+      "destination_label": "SE | 1000+ km",
+      "trips": 5485,
+      "avg_distance_change_km_sum": -3064.1000000000195,
+      "avg_start_speed_sum": 2251080.4000000004,
+      "avg_end_speed_sum": 2157743.3000000077,
+      "direction_inbound": 1732,
+      "direction_outbound": 1669,
+      "direction_crossing": 2084,
+      "avg_distance_change_km": -0.5586326344576152,
+      "avg_start_speed": 410.4066362807658,
+      "avg_end_speed": 393.3898450319066,
+      "inbound_share": 0.31577028258887874,
+      "outbound_share": 0.30428441203281675,
+      "crossing_share": 0.37994530537830445
+    },
+    {
+      "origin_sector": "N",
+      "origin_zone": "1000+ km",
+      "destination_sector": "NE",
+      "destination_zone": "1000+ km",
+      "origin_label": "N | 1000+ km",
+      "destination_label": "NE | 1000+ km",
+      "trips": 4571,
+      "avg_distance_change_km_sum": 139182.42999999985,
+      "avg_start_speed_sum": 1826765.8999999997,
+      "avg_end_speed_sum": 1978120.0000000033,
+      "direction_inbound": 1337,
+      "direction_outbound": 2196,
+      "direction_crossing": 1038,
+      "avg_distance_change_km": 30.449011157295963,
+      "avg_start_speed": 399.6425071100415,
+      "avg_end_speed": 432.75432071756796,
+      "inbound_share": 0.29249617151607965,
+      "outbound_share": 0.48042003937869177,
+      "crossing_share": 0.2270837891052286
+    },
+    {
+      "origin_sector": "NE",
+      "origin_zone": "1000+ km",
+      "destination_sector": "N",
+      "destination_zone": "1000+ km",
+      "origin_label": "NE | 1000+ km",
+      "destination_label": "N | 1000+ km",
+      "trips": 3723,
+      "avg_distance_change_km_sum": -37438.36000000025,
+      "avg_start_speed_sum": 1543892.499999999,
+      "avg_end_speed_sum": 1146923.5999999996,
+      "direction_inbound": 1579,
+      "direction_outbound": 1394,
+      "direction_crossing": 750,
+      "avg_distance_change_km": -10.055965619124429,
+      "avg_start_speed": 414.69043781896295,
+      "avg_end_speed": 308.06435670158464,
+      "inbound_share": 0.42412033306473274,
+      "outbound_share": 0.3744292237442922,
+      "crossing_share": 0.20145044319097502
+    },
+    {
+      "origin_sector": "NE",
+      "origin_zone": "1000+ km",
+      "destination_sector": "NE",
+      "destination_zone": "1000+ km",
+      "origin_label": "NE | 1000+ km",
+      "destination_label": "NE | 1000+ km",
+      "trips": 3575,
+      "avg_distance_change_km_sum": -21774.6,
+      "avg_start_speed_sum": 1439044.7000000032,
+      "avg_end_speed_sum": 1509459.9000000025,
+      "direction_inbound": 1150,
+      "direction_outbound": 863,
+      "direction_crossing": 1562,
+      "avg_distance_change_km": -6.090797202797202,
+      "avg_start_speed": 402.5299860139869,
+      "avg_end_speed": 422.22654545454617,
+      "inbound_share": 0.32167832167832167,
+      "outbound_share": 0.2413986013986014,
+      "crossing_share": 0.4369230769230769
+    },
+    {
+      "origin_sector": "E",
+      "origin_zone": "1000+ km",
+      "destination_sector": "E",
+      "destination_zone": "1000+ km",
+      "origin_label": "E | 1000+ km",
+      "destination_label": "E | 1000+ km",
+      "trips": 3464,
+      "avg_distance_change_km_sum": 3059.8800000000056,
+      "avg_start_speed_sum": 1503481.1999999988,
+      "avg_end_speed_sum": 1579869.5999999985,
+      "direction_inbound": 1119,
+      "direction_outbound": 1078,
+      "direction_crossing": 1267,
+      "avg_distance_change_km": 0.8833371824480386,
+      "avg_start_speed": 434.0303695150112,
+      "avg_end_speed": 456.08244803695106,
+      "inbound_share": 0.32303695150115475,
+      "outbound_share": 0.3112009237875289,
+      "crossing_share": 0.3657621247113164
+    },
+    {
+      "origin_sector": "S",
+      "origin_zone": "1000+ km",
+      "destination_sector": "S",
+      "destination_zone": "1000+ km",
+      "origin_label": "S | 1000+ km",
+      "destination_label": "S | 1000+ km",
+      "trips": 3344,
+      "avg_distance_change_km_sum": -12197.789999999983,
+      "avg_start_speed_sum": 1190620.0999999999,
+      "avg_end_speed_sum": 1185662.600000003,
+      "direction_inbound": 500,
+      "direction_outbound": 467,
+      "direction_crossing": 2377,
+      "avg_distance_change_km": -3.6476644736842054,
+      "avg_start_speed": 356.04668062200955,
+      "avg_end_speed": 354.5641746411492,
+      "inbound_share": 0.14952153110047847,
+      "outbound_share": 0.1396531100478469,
+      "crossing_share": 0.7108253588516746
+    },
+    {
+      "origin_sector": "NW",
+      "origin_zone": "500-1000 km",
+      "destination_sector": "NW",
+      "destination_zone": "500-1000 km",
+      "origin_label": "NW | 500-1000 km",
+      "destination_label": "NW | 500-1000 km",
+      "trips": 2178,
+      "avg_distance_change_km_sum": -21370.20999999999,
+      "avg_start_speed_sum": 864177.2000000002,
+      "avg_end_speed_sum": 821947.5999999997,
+      "direction_inbound": 489,
+      "direction_outbound": 366,
+      "direction_crossing": 1323,
+      "avg_distance_change_km": -9.81185032139577,
+      "avg_start_speed": 396.7755739210285,
+      "avg_end_speed": 377.3864095500458,
+      "inbound_share": 0.22451790633608815,
+      "outbound_share": 0.16804407713498623,
+      "crossing_share": 0.6074380165289256
+    },
+    {
+      "origin_sector": "SE",
+      "origin_zone": "1000+ km",
+      "destination_sector": "SE",
+      "destination_zone": "500-1000 km",
+      "origin_label": "SE | 1000+ km",
+      "destination_label": "SE | 500-1000 km",
+      "trips": 1757,
+      "avg_distance_change_km_sum": -665405.8899999992,
+      "avg_start_speed_sum": 733066.4999999994,
+      "avg_end_speed_sum": 733521.1999999996,
+      "direction_inbound": 1739,
+      "direction_outbound": 0,
+      "direction_crossing": 18,
+      "avg_distance_change_km": -378.7170688673871,
+      "avg_start_speed": 417.22623790552046,
+      "avg_end_speed": 417.48503130335774,
+      "inbound_share": 0.9897552646556631,
+      "outbound_share": 0.0,
+      "crossing_share": 0.010244735344336939
+    },
+    {
+      "origin_sector": "SE",
+      "origin_zone": "500-1000 km",
+      "destination_sector": "SE",
+      "destination_zone": "1000+ km",
+      "origin_label": "SE | 500-1000 km",
+      "destination_label": "SE | 1000+ km",
+      "trips": 1737,
+      "avg_distance_change_km_sum": 557532.5299999987,
+      "avg_start_speed_sum": 717621.8999999987,
+      "avg_end_speed_sum": 613384.6000000004,
+      "direction_inbound": 0,
+      "direction_outbound": 1719,
+      "direction_crossing": 18,
+      "avg_distance_change_km": 320.9743983880246,
+      "avg_start_speed": 413.1386873920545,
+      "avg_end_speed": 353.1287276914222,
+      "inbound_share": 0.0,
+      "outbound_share": 0.9896373056994818,
+      "crossing_share": 0.010362694300518135
+    },
+    {
+      "origin_sector": "N",
+      "origin_zone": "1000+ km",
+      "destination_sector": "NW",
+      "destination_zone": "1000+ km",
+      "origin_label": "N | 1000+ km",
+      "destination_label": "NW | 1000+ km",
+      "trips": 1443,
+      "avg_distance_change_km_sum": 195019.03999999998,
+      "avg_start_speed_sum": 585712.6,
+      "avg_end_speed_sum": 637059.6000000009,
+      "direction_inbound": 304,
+      "direction_outbound": 992,
+      "direction_crossing": 147,
+      "avg_distance_change_km": 135.14832986832985,
+      "avg_start_speed": 405.8992376992377,
+      "avg_end_speed": 441.48274428274493,
+      "inbound_share": 0.21067221067221067,
+      "outbound_share": 0.6874566874566874,
+      "crossing_share": 0.10187110187110188
+    },
+    {
+      "origin_sector": "S",
+      "origin_zone": "500-1000 km",
+      "destination_sector": "S",
+      "destination_zone": "500-1000 km",
+      "origin_label": "S | 500-1000 km",
+      "destination_label": "S | 500-1000 km",
+      "trips": 1379,
+      "avg_distance_change_km_sum": 14273.580000000005,
+      "avg_start_speed_sum": 604594.5999999996,
+      "avg_end_speed_sum": 613971.8999999989,
+      "direction_inbound": 379,
+      "direction_outbound": 423,
+      "direction_crossing": 577,
+      "avg_distance_change_km": 10.350674401740395,
+      "avg_start_speed": 438.4297316896299,
+      "avg_end_speed": 445.2298042059455,
+      "inbound_share": 0.27483683828861494,
+      "outbound_share": 0.3067440174039159,
+      "crossing_share": 0.4184191443074692
+    },
+    {
+      "origin_sector": "W",
+      "origin_zone": "1000+ km",
+      "destination_sector": "W",
+      "destination_zone": "1000+ km",
+      "origin_label": "W | 1000+ km",
+      "destination_label": "W | 1000+ km",
+      "trips": 1247,
+      "avg_distance_change_km_sum": 4895.560000000005,
+      "avg_start_speed_sum": 594697.4999999994,
+      "avg_end_speed_sum": 569930.6000000002,
+      "direction_inbound": 276,
+      "direction_outbound": 316,
+      "direction_crossing": 655,
+      "avg_distance_change_km": 3.925870088211712,
+      "avg_start_speed": 476.9025661587806,
+      "avg_end_speed": 457.041379310345,
+      "inbound_share": 0.22133119486768243,
+      "outbound_share": 0.25340817963111467,
+      "crossing_share": 0.5252606255012029
+    },
+    {
+      "origin_sector": "NW",
+      "origin_zone": "1000+ km",
+      "destination_sector": "N",
+      "destination_zone": "1000+ km",
+      "origin_label": "NW | 1000+ km",
+      "destination_label": "N | 1000+ km",
+      "trips": 1193,
+      "avg_distance_change_km_sum": -129674.71999999997,
+      "avg_start_speed_sum": 606520.4999999988,
+      "avg_end_speed_sum": 414675.20000000007,
+      "direction_inbound": 758,
+      "direction_outbound": 301,
+      "direction_crossing": 134,
+      "avg_distance_change_km": -108.69632858340316,
+      "avg_start_speed": 508.3994132439219,
+      "avg_end_speed": 347.59027661357925,
+      "inbound_share": 0.6353730092204526,
+      "outbound_share": 0.25230511316010057,
+      "crossing_share": 0.11232187761944677
+    },
+    {
+      "origin_sector": "NW",
+      "origin_zone": "1000+ km",
+      "destination_sector": "E",
+      "destination_zone": "1000+ km",
+      "origin_label": "NW | 1000+ km",
+      "destination_label": "E | 1000+ km",
+      "trips": 1170,
+      "avg_distance_change_km_sum": -11416.009999999993,
+      "avg_start_speed_sum": 606665.6999999993,
+      "avg_end_speed_sum": 587557.5999999997,
+      "direction_inbound": 521,
+      "direction_outbound": 463,
+      "direction_crossing": 186,
+      "avg_distance_change_km": -9.757273504273499,
+      "avg_start_speed": 518.5176923076916,
+      "avg_end_speed": 502.1859829059827,
+      "inbound_share": 0.44529914529914527,
+      "outbound_share": 0.3957264957264957,
+      "crossing_share": 0.15897435897435896
+    },
+    {
+      "origin_sector": "E",
+      "origin_zone": "1000+ km",
+      "destination_sector": "NW",
+      "destination_zone": "1000+ km",
+      "origin_label": "E | 1000+ km",
+      "destination_label": "NW | 1000+ km",
+      "trips": 1125,
+      "avg_distance_change_km_sum": 1254.7399999999857,
+      "avg_start_speed_sum": 538166.5000000001,
+      "avg_end_speed_sum": 519569.09999999934,
+      "direction_inbound": 444,
+      "direction_outbound": 524,
+      "direction_crossing": 157,
+      "avg_distance_change_km": 1.1153244444444317,
+      "avg_start_speed": 478.3702222222223,
+      "avg_end_speed": 461.83919999999944,
+      "inbound_share": 0.39466666666666667,
+      "outbound_share": 0.4657777777777778,
+      "crossing_share": 0.13955555555555554
+    },
+    {
+      "origin_sector": "SE",
+      "origin_zone": "500-1000 km",
+      "destination_sector": "N",
+      "destination_zone": "1000+ km",
+      "origin_label": "SE | 500-1000 km",
+      "destination_label": "N | 1000+ km",
+      "trips": 1107,
+      "avg_distance_change_km_sum": 376545.3300000004,
+      "avg_start_speed_sum": 429383.8,
+      "avg_end_speed_sum": 200437.30000000005,
+      "direction_inbound": 0,
+      "direction_outbound": 1107,
+      "direction_crossing": 0,
+      "avg_distance_change_km": 340.1493495934963,
+      "avg_start_speed": 387.88057813911473,
+      "avg_end_speed": 181.06350496838306,
+      "inbound_share": 0.0,
+      "outbound_share": 1.0,
+      "crossing_share": 0.0
+    },
+    {
+      "origin_sector": "N",
+      "origin_zone": "1000+ km",
+      "destination_sector": "SE",
+      "destination_zone": "500-1000 km",
+      "origin_label": "N | 1000+ km",
+      "destination_label": "SE | 500-1000 km",
+      "trips": 988,
+      "avg_distance_change_km_sum": -330398.29000000027,
+      "avg_start_speed_sum": 258909.50000000026,
+      "avg_end_speed_sum": 309750.29999999964,
+      "direction_inbound": 988,
+      "direction_outbound": 0,
+      "direction_crossing": 0,
+      "avg_distance_change_km": -334.41122469635656,
+      "avg_start_speed": 262.05414979757114,
+      "avg_end_speed": 313.5124493927122,
+      "inbound_share": 1.0,
+      "outbound_share": 0.0,
+      "crossing_share": 0.0
+    },
+    {
+      "origin_sector": "N",
+      "origin_zone": "1000+ km",
+      "destination_sector": "E",
+      "destination_zone": "1000+ km",
+      "origin_label": "N | 1000+ km",
+      "destination_label": "E | 1000+ km",
+      "trips": 954,
+      "avg_distance_change_km_sum": 133496.47000000012,
+      "avg_start_speed_sum": 419081.69999999984,
+      "avg_end_speed_sum": 469839.3,
+      "direction_inbound": 131,
+      "direction_outbound": 711,
+      "direction_crossing": 112,
+      "avg_distance_change_km": 139.9334067085955,
+      "avg_start_speed": 439.28899371069167,
+      "avg_end_speed": 492.49402515723267,
+      "inbound_share": 0.13731656184486374,
+      "outbound_share": 0.7452830188679245,
+      "crossing_share": 0.11740041928721175
+    },
+    {
+      "origin_sector": "E",
+      "origin_zone": "1000+ km",
+      "destination_sector": "N",
+      "destination_zone": "1000+ km",
+      "origin_label": "E | 1000+ km",
+      "destination_label": "N | 1000+ km",
+      "trips": 836,
+      "avg_distance_change_km_sum": -84824.35999999996,
+      "avg_start_speed_sum": 390213.4000000003,
+      "avg_end_speed_sum": 304329.9000000002,
+      "direction_inbound": 552,
+      "direction_outbound": 172,
+      "direction_crossing": 112,
+      "avg_distance_change_km": -101.4645454545454,
+      "avg_start_speed": 466.76244019138795,
+      "avg_end_speed": 364.03098086124425,
+      "inbound_share": 0.6602870813397129,
+      "outbound_share": 0.20574162679425836,
+      "crossing_share": 0.1339712918660287
+    },
+    {
+      "origin_sector": "N",
+      "origin_zone": "1000+ km",
+      "destination_sector": "N",
+      "destination_zone": "500-1000 km",
+      "origin_label": "N | 1000+ km",
+      "destination_label": "N | 500-1000 km",
+      "trips": 803,
+      "avg_distance_change_km_sum": -240239.38999999996,
+      "avg_start_speed_sum": 251657.1000000001,
+      "avg_end_speed_sum": 339899.09999999986,
+      "direction_inbound": 799,
+      "direction_outbound": 0,
+      "direction_crossing": 4,
+      "avg_distance_change_km": -299.17732254047314,
+      "avg_start_speed": 313.39613947696154,
+      "avg_end_speed": 423.2865504358653,
+      "inbound_share": 0.9950186799501868,
+      "outbound_share": 0.0,
+      "crossing_share": 0.0049813200498132005
+    },
+    {
+      "origin_sector": "NW",
+      "origin_zone": "1000+ km",
+      "destination_sector": "NW",
+      "destination_zone": "500-1000 km",
+      "origin_label": "NW | 1000+ km",
+      "destination_label": "NW | 500-1000 km",
+      "trips": 795,
+      "avg_distance_change_km_sum": -432690.60000000003,
+      "avg_start_speed_sum": 405223.8999999998,
+      "avg_end_speed_sum": 327293.2000000001,
+      "direction_inbound": 795,
+      "direction_outbound": 0,
+      "direction_crossing": 0,
+      "avg_distance_change_km": -544.2649056603774,
+      "avg_start_speed": 509.7155974842765,
+      "avg_end_speed": 411.6895597484278,
+      "inbound_share": 1.0,
+      "outbound_share": 0.0,
+      "crossing_share": 0.0
+    },
+    {
+      "origin_sector": "NW",
+      "origin_zone": "500-1000 km",
+      "destination_sector": "NW",
+      "destination_zone": "1000+ km",
+      "origin_label": "NW | 500-1000 km",
+      "destination_label": "NW | 1000+ km",
+      "trips": 783,
+      "avg_distance_change_km_sum": 418448.45,
+      "avg_start_speed_sum": 335950.1999999998,
+      "avg_end_speed_sum": 348654.29999999976,
+      "direction_inbound": 0,
+      "direction_outbound": 783,
+      "direction_crossing": 0,
+      "avg_distance_change_km": 534.4169220945083,
+      "avg_start_speed": 429.05517241379283,
+      "avg_end_speed": 445.28007662835216,
+      "inbound_share": 0.0,
+      "outbound_share": 1.0,
+      "crossing_share": 0.0
+    },
+    {
+      "origin_sector": "N",
+      "origin_zone": "500-1000 km",
+      "destination_sector": "N",
+      "destination_zone": "1000+ km",
+      "origin_label": "N | 500-1000 km",
+      "destination_label": "N | 1000+ km",
+      "trips": 780,
+      "avg_distance_change_km_sum": 244180.11000000007,
+      "avg_start_speed_sum": 347254.3000000001,
+      "avg_end_speed_sum": 168356.89999999997,
+      "direction_inbound": 0,
+      "direction_outbound": 775,
+      "direction_crossing": 5,
+      "avg_distance_change_km": 313.0514230769232,
+      "avg_start_speed": 445.19782051282067,
+      "avg_end_speed": 215.84217948717944,
+      "inbound_share": 0.0,
+      "outbound_share": 0.9935897435897436,
+      "crossing_share": 0.00641025641025641
+    },
+    {
+      "origin_sector": "N",
+      "origin_zone": "500-1000 km",
+      "destination_sector": "N",
+      "destination_zone": "500-1000 km",
+      "origin_label": "N | 500-1000 km",
+      "destination_label": "N | 500-1000 km",
+      "trips": 777,
+      "avg_distance_change_km_sum": 1848.5300000000007,
+      "avg_start_speed_sum": 330661.69999999955,
+      "avg_end_speed_sum": 310908.6000000002,
+      "direction_inbound": 203,
+      "direction_outbound": 234,
+      "direction_crossing": 340,
+      "avg_distance_change_km": 2.37906048906049,
+      "avg_start_speed": 425.5620334620329,
+      "avg_end_speed": 400.13976833976864,
+      "inbound_share": 0.26126126126126126,
+      "outbound_share": 0.30115830115830117,
+      "crossing_share": 0.4375804375804376
+    },
+    {
+      "origin_sector": "E",
+      "origin_zone": "500-1000 km",
+      "destination_sector": "E",
+      "destination_zone": "500-1000 km",
+      "origin_label": "E | 500-1000 km",
+      "destination_label": "E | 500-1000 km",
+      "trips": 685,
+      "avg_distance_change_km_sum": -4133.849999999997,
+      "avg_start_speed_sum": 195438.70000000033,
+      "avg_end_speed_sum": 169498.80000000013,
+      "direction_inbound": 223,
+      "direction_outbound": 176,
+      "direction_crossing": 286,
+      "avg_distance_change_km": -6.03481751824817,
+      "avg_start_speed": 285.3119708029202,
+      "avg_end_speed": 247.44350364963523,
+      "inbound_share": 0.32554744525547447,
+      "outbound_share": 0.2569343065693431,
+      "crossing_share": 0.41751824817518246
+    },
+    {
+      "origin_sector": "S",
+      "origin_zone": "500-1000 km",
+      "destination_sector": "SE",
+      "destination_zone": "1000+ km",
+      "origin_label": "S | 500-1000 km",
+      "destination_label": "SE | 1000+ km",
+      "trips": 677,
+      "avg_distance_change_km_sum": 323640.93000000017,
+      "avg_start_speed_sum": 322730.90000000014,
+      "avg_end_speed_sum": 305254.39999999997,
+      "direction_inbound": 0,
+      "direction_outbound": 677,
+      "direction_crossing": 0,
+      "avg_distance_change_km": 478.05159527326464,
+      "avg_start_speed": 476.70738552437246,
+      "avg_end_speed": 450.89276218611514,
+      "inbound_share": 0.0,
+      "outbound_share": 1.0,
+      "crossing_share": 0.0
+    },
+    {
+      "origin_sector": "SE",
+      "origin_zone": "1000+ km",
+      "destination_sector": "S",
+      "destination_zone": "1000+ km",
+      "origin_label": "SE | 1000+ km",
+      "destination_label": "S | 1000+ km",
+      "trips": 670,
+      "avg_distance_change_km_sum": -127714.28000000004,
+      "avg_start_speed_sum": 317326.39999999997,
+      "avg_end_speed_sum": 314882.89999999997,
+      "direction_inbound": 533,
+      "direction_outbound": 84,
+      "direction_crossing": 53,
+      "avg_distance_change_km": -190.61832835820903,
+      "avg_start_speed": 473.6214925373134,
+      "avg_end_speed": 469.97447761194024,
+      "inbound_share": 0.7955223880597015,
+      "outbound_share": 0.1253731343283582,
+      "crossing_share": 0.0791044776119403
+    }
+  ],
+  "flow_direction": [
+    {
+      "label": "Inbound",
+      "points": 46836
+    },
+    {
+      "label": "Outbound",
+      "points": 48188
+    },
+    {
+      "label": "Crossing",
+      "points": 29091
+    }
+  ]
+}

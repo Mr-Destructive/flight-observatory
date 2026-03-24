@@ -119,7 +119,7 @@ body.history-lab {
 }
 
 .lab-shell {
-  max-width: 1280px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 32px 24px 64px;
 }
@@ -407,6 +407,13 @@ body.history-lab {
 
 .lab-section {
   margin-top: 36px;
+}
+
+.lab-section-note {
+  margin-top: 12px;
+  color: var(--text-secondary);
+  font-size: 13px;
+  line-height: 1.6;
 }
 
 .section-head {

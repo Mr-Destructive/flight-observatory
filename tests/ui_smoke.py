@@ -45,6 +45,30 @@ def main():
         ],
     )
 
+    assert_contains(
+        root / "research.html",
+        [
+            'id="takeawayCards"',
+            'id="insightCards"',
+            'id="likelyAirlineTable"',
+            'id="flowDirectionTable"',
+            'id="flowRoutesTable"',
+            'id="queryInput"',
+            'id="querySchema"',
+            'id="queryResult"',
+            'data/mumbai_observatory/bundle.json',
+            'data/mumbai_observatory/query.sqlite',
+            'monthly_trend.svg',
+            'yearly_trend.svg',
+            'likely_airlines.svg',
+            'flow_direction.svg',
+            'flow_routes.svg',
+        ],
+    )
+
+    if not (root / "data/mumbai_observatory/query.sqlite").exists():
+        raise AssertionError("research query sqlite missing")
+
     print("UI smoke checks passed.")
 
 
