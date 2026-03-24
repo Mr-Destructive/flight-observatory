@@ -1,78 +1,66 @@
 [
   {
     "airport": "unknown",
-    "flights": 3378
-  },
-  {
-    "airport": "LSZH",
-    "flights": 29
-  },
-  {
-    "airport": "YPPH",
-    "flights": 24
-  },
-  {
-    "airport": "EDDF",
-    "flights": 20
+    "flights": 3598
   },
   {
     "airport": "YSSY",
+    "flights": 26
+  },
+  {
+    "airport": "LSZH",
+    "flights": 25
+  },
+  {
+    "airport": "EDDF",
     "flights": 19
   },
   {
-    "airport": "KLAS",
+    "airport": "RJTT",
     "flights": 18
   },
   {
-    "airport": "CYYC",
-    "flights": 17
-  },
-  {
-    "airport": "CYVR",
-    "flights": 15
+    "airport": "EHAM",
+    "flights": 18
   },
   {
     "airport": "KBOS",
-    "flights": 15
-  },
-  {
-    "airport": "KLAX",
-    "flights": 15
-  },
-  {
-    "airport": "RJTT",
-    "flights": 15
-  },
-  {
-    "airport": "KSFO",
-    "flights": 14
-  },
-  {
-    "airport": "LEBL",
-    "flights": 14
-  },
-  {
-    "airport": "EHAM",
-    "flights": 14
+    "flights": 16
   },
   {
     "airport": "VIDP",
-    "flights": 13
+    "flights": 14
   },
   {
     "airport": "LOWW",
-    "flights": 11
+    "flights": 13
   },
   {
     "airport": "VHHH",
+    "flights": 13
+  },
+  {
+    "airport": "EBBR",
+    "flights": 12
+  },
+  {
+    "airport": "KLAX",
+    "flights": 12
+  },
+  {
+    "airport": "EGKK",
+    "flights": 12
+  },
+  {
+    "airport": "YPPH",
     "flights": 11
   },
   {
-    "airport": "CYYZ",
+    "airport": "YMML",
     "flights": 11
   },
   {
-    "airport": "EGLL",
+    "airport": "VABB",
     "flights": 10
   },
   {
@@ -80,23 +68,35 @@
     "flights": 10
   },
   {
-    "airport": "YMML",
+    "airport": "CYYC",
     "flights": 10
   },
   {
-    "airport": "EGKK",
-    "flights": 10
-  },
-  {
-    "airport": "YPJT",
-    "flights": 10
-  },
-  {
-    "airport": "VABB",
+    "airport": "VECC",
     "flights": 9
   },
   {
-    "airport": "UUEE",
+    "airport": "LHBP",
+    "flights": 9
+  },
+  {
+    "airport": "CYYZ",
+    "flights": 9
+  },
+  {
+    "airport": "ESSA",
+    "flights": 9
+  },
+  {
+    "airport": "KSFO",
+    "flights": 9
+  },
+  {
+    "airport": "ZGSZ",
+    "flights": 9
+  },
+  {
+    "airport": "LFPG",
     "flights": 9
   }
 ]
