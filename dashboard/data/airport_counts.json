@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 5520
+    "flights": 6290
+  },
+  {
+    "airport": "KDFW",
+    "flights": 53
   },
   {
     "airport": "KATL",
-    "flights": 40
-  },
-  {
-    "airport": "CYYZ",
-    "flights": 36
+    "flights": 49
   },
   {
     "airport": "KBOS",
-    "flights": 29
+    "flights": 39
+  },
+  {
+    "airport": "CYYZ",
+    "flights": 34
+  },
+  {
+    "airport": "KORD",
+    "flights": 23
   },
   {
     "airport": "LSZH",
     "flights": 23
   },
   {
-    "airport": "EDDF",
-    "flights": 22
-  },
-  {
-    "airport": "VHHH",
+    "airport": "RJTT",
     "flights": 19
   },
   {
-    "airport": "YSSY",
-    "flights": 18
-  },
-  {
-    "airport": "RJTT",
-    "flights": 17
-  },
-  {
-    "airport": "EHAM",
-    "flights": 17
-  },
-  {
     "airport": "KEWR",
-    "flights": 17
-  },
-  {
-    "airport": "CYUL",
-    "flights": 16
-  },
-  {
-    "airport": "EGKK",
-    "flights": 14
-  },
-  {
-    "airport": "KBNA",
-    "flights": 14
-  },
-  {
-    "airport": "KLGA",
-    "flights": 12
+    "flights": 19
   },
   {
     "airport": "VIDP",
+    "flights": 17
+  },
+  {
+    "airport": "EGKK",
+    "flights": 16
+  },
+  {
+    "airport": "VHHH",
+    "flights": 16
+  },
+  {
+    "airport": "KDCA",
+    "flights": 15
+  },
+  {
+    "airport": "EHAM",
+    "flights": 15
+  },
+  {
+    "airport": "SKBO",
+    "flights": 14
+  },
+  {
+    "airport": "KDEN",
+    "flights": 13
+  },
+  {
+    "airport": "CYYC",
+    "flights": 13
+  },
+  {
+    "airport": "LOWW",
+    "flights": 13
+  },
+  {
+    "airport": "ESSA",
+    "flights": 13
+  },
+  {
+    "airport": "YPPH",
+    "flights": 12
+  },
+  {
+    "airport": "YSSY",
+    "flights": 12
+  },
+  {
+    "airport": "KMCO",
+    "flights": 11
+  },
+  {
+    "airport": "EBBR",
+    "flights": 11
+  },
+  {
+    "airport": "EDDF",
     "flights": 11
   },
   {
     "airport": "LEBL",
-    "flights": 11
-  },
-  {
-    "airport": "KDCA",
-    "flights": 11
-  },
-  {
-    "airport": "ZGSZ",
-    "flights": 11
-  },
-  {
-    "airport": "KMCO",
     "flights": 10
-  },
-  {
-    "airport": "KDFW",
-    "flights": 10
-  },
-  {
-    "airport": "VECC",
-    "flights": 9
-  },
-  {
-    "airport": "VTBS",
-    "flights": 9
-  },
-  {
-    "airport": "KORD",
-    "flights": 9
-  },
-  {
-    "airport": "YPPH",
-    "flights": 9
   }
 ]
