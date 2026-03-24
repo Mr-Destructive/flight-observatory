@@ -1,70 +1,78 @@
 [
   {
     "altitude_band_m": -1000,
-    "flights": 30
-  },
-  {
-    "altitude_band_m": 0,
-    "flights": 1151
-  },
-  {
-    "altitude_band_m": 1000,
-    "flights": 759
-  },
-  {
-    "altitude_band_m": 2000,
-    "flights": 369
-  },
-  {
-    "altitude_band_m": 3000,
-    "flights": 276
-  },
-  {
-    "altitude_band_m": 4000,
-    "flights": 215
-  },
-  {
-    "altitude_band_m": 5000,
-    "flights": 221
-  },
-  {
-    "altitude_band_m": 6000,
-    "flights": 204
-  },
-  {
-    "altitude_band_m": 7000,
-    "flights": 254
-  },
-  {
-    "altitude_band_m": 8000,
-    "flights": 309
-  },
-  {
-    "altitude_band_m": 9000,
-    "flights": 560
-  },
-  {
-    "altitude_band_m": 10000,
-    "flights": 1392
-  },
-  {
-    "altitude_band_m": 11000,
-    "flights": 765
-  },
-  {
-    "altitude_band_m": 12000,
-    "flights": 211
-  },
-  {
-    "altitude_band_m": 13000,
     "flights": 63
   },
   {
+    "altitude_band_m": 0,
+    "flights": 1855
+  },
+  {
+    "altitude_band_m": 1000,
+    "flights": 1190
+  },
+  {
+    "altitude_band_m": 2000,
+    "flights": 640
+  },
+  {
+    "altitude_band_m": 3000,
+    "flights": 497
+  },
+  {
+    "altitude_band_m": 4000,
+    "flights": 398
+  },
+  {
+    "altitude_band_m": 5000,
+    "flights": 403
+  },
+  {
+    "altitude_band_m": 6000,
+    "flights": 383
+  },
+  {
+    "altitude_band_m": 7000,
+    "flights": 463
+  },
+  {
+    "altitude_band_m": 8000,
+    "flights": 561
+  },
+  {
+    "altitude_band_m": 9000,
+    "flights": 977
+  },
+  {
+    "altitude_band_m": 10000,
+    "flights": 2520
+  },
+  {
+    "altitude_band_m": 11000,
+    "flights": 1553
+  },
+  {
+    "altitude_band_m": 12000,
+    "flights": 422
+  },
+  {
+    "altitude_band_m": 13000,
+    "flights": 98
+  },
+  {
     "altitude_band_m": 14000,
-    "flights": 2
+    "flights": 6
   },
   {
     "altitude_band_m": 15000,
+    "flights": 1
+  },
+  {
+    "altitude_band_m": 17000,
+    "flights": 1
+  },
+  {
+    "altitude_band_m": 23000,
     "flights": 1
   },
   {
