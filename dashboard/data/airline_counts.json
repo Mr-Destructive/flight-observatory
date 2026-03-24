@@ -1,102 +1,102 @@
 [
   {
     "airline": "unknown",
-    "flights": 3379
-  },
-  {
-    "airline": "Delta Air Lines",
-    "flights": 458
-  },
-  {
-    "airline": "American Airlines",
-    "flights": 457
-  },
-  {
-    "airline": "United Airlines",
-    "flights": 448
+    "flights": 2868
   },
   {
     "airline": "Southwest Airlines",
-    "flights": 437
+    "flights": 491
+  },
+  {
+    "airline": "American Airlines",
+    "flights": 478
+  },
+  {
+    "airline": "United Airlines",
+    "flights": 465
+  },
+  {
+    "airline": "Delta Air Lines",
+    "flights": 446
   },
   {
     "airline": "SkyWest",
-    "flights": 177
-  },
-  {
-    "airline": "JetBlue Airways",
-    "flights": 131
+    "flights": 210
   },
   {
     "airline": "Alaska Airlines",
-    "flights": 130
+    "flights": 133
+  },
+  {
+    "airline": "JetBlue Airways",
+    "flights": 128
   },
   {
     "airline": "NetJets",
-    "flights": 130
+    "flights": 108
   },
   {
     "airline": "Republic Airlines",
-    "flights": 89
+    "flights": 96
   },
   {
     "airline": "Air Canada",
-    "flights": 87
-  },
-  {
-    "airline": "WestJet",
-    "flights": 73
-  },
-  {
-    "airline": "United Parcel Service",
-    "flights": 72
+    "flights": 92
   },
   {
     "airline": "Envoy Air",
-    "flights": 72
+    "flights": 83
   },
   {
-    "airline": "Federal Express",
-    "flights": 63
+    "airline": "WestJet",
+    "flights": 67
   },
   {
     "airline": "Frontier Airlines",
-    "flights": 57
+    "flights": 61
   },
   {
     "airline": "Spirit Airlines",
-    "flights": 56
+    "flights": 57
   },
   {
     "airline": "All Nippon Airways",
-    "flights": 55
-  },
-  {
-    "airline": "Ryanair",
-    "flights": 55
+    "flights": 56
   },
   {
     "airline": "Virgin Australia",
+    "flights": 55
+  },
+  {
+    "airline": "Turkish Airlines",
+    "flights": 55
+  },
+  {
+    "airline": "PSA Airlines",
+    "flights": 54
+  },
+  {
+    "airline": "Federal Express",
     "flights": 51
   },
   {
     "airline": "Japan Airlines Domestic",
-    "flights": 50
+    "flights": 47
   },
   {
-    "airline": "Bombardier Business Jet Solutions",
-    "flights": 50
+    "airline": "United Parcel Service",
+    "flights": 44
   },
   {
-    "airline": "PSA Airlines",
-    "flights": 46
-  },
-  {
-    "airline": "European Air Transport",
-    "flights": 41
+    "airline": "TAM Brazilian Airlines",
+    "flights": 43
   },
   {
     "airline": "Qantas",
-    "flights": 39
+    "flights": 40
+  },
+  {
+    "airline": "British Airways",
+    "flights": 38
   }
 ]
