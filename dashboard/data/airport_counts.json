@@ -1,50 +1,54 @@
 [
   {
     "airport": "unknown",
-    "flights": 4586
-  },
-  {
-    "airport": "CYYZ",
-    "flights": 30
-  },
-  {
-    "airport": "KDFW",
-    "flights": 28
-  },
-  {
-    "airport": "YSSY",
-    "flights": 24
-  },
-  {
-    "airport": "KATL",
-    "flights": 23
+    "flights": 3207
   },
   {
     "airport": "YPPH",
-    "flights": 23
+    "flights": 26
   },
   {
-    "airport": "RJTT",
-    "flights": 22
+    "airport": "YSSY",
+    "flights": 20
   },
   {
-    "airport": "KPHX",
-    "flights": 18
-  },
-  {
-    "airport": "KJFK",
-    "flights": 16
-  },
-  {
-    "airport": "SKBO",
-    "flights": 14
-  },
-  {
-    "airport": "KBOS",
-    "flights": 14
+    "airport": "LSZH",
+    "flights": 20
   },
   {
     "airport": "KLAS",
+    "flights": 18
+  },
+  {
+    "airport": "KLAX",
+    "flights": 18
+  },
+  {
+    "airport": "KBOS",
+    "flights": 17
+  },
+  {
+    "airport": "RJTT",
+    "flights": 16
+  },
+  {
+    "airport": "CYYZ",
+    "flights": 16
+  },
+  {
+    "airport": "CYYC",
+    "flights": 15
+  },
+  {
+    "airport": "RJBB",
+    "flights": 15
+  },
+  {
+    "airport": "YMML",
+    "flights": 15
+  },
+  {
+    "airport": "VIDP",
     "flights": 14
   },
   {
@@ -52,51 +56,47 @@
     "flights": 14
   },
   {
-    "airport": "VIDP",
-    "flights": 13
-  },
-  {
     "airport": "CYVR",
     "flights": 12
   },
   {
-    "airport": "KDEN",
-    "flights": 12
+    "airport": "VTBS",
+    "flights": 10
+  },
+  {
+    "airport": "KSEA",
+    "flights": 9
+  },
+  {
+    "airport": "KPHX",
+    "flights": 9
+  },
+  {
+    "airport": "VGHS",
+    "flights": 9
+  },
+  {
+    "airport": "EFHK",
+    "flights": 9
+  },
+  {
+    "airport": "EDDF",
+    "flights": 9
+  },
+  {
+    "airport": "VABB",
+    "flights": 8
+  },
+  {
+    "airport": "KSAN",
+    "flights": 8
   },
   {
     "airport": "ZGSZ",
-    "flights": 12
+    "flights": 8
   },
   {
-    "airport": "KBNA",
-    "flights": 12
-  },
-  {
-    "airport": "KSLC",
-    "flights": 11
-  },
-  {
-    "airport": "VTBS",
-    "flights": 11
-  },
-  {
-    "airport": "KLAX",
-    "flights": 11
-  },
-  {
-    "airport": "VECC",
-    "flights": 10
-  },
-  {
-    "airport": "KMCO",
-    "flights": 10
-  },
-  {
-    "airport": "KAUS",
-    "flights": 9
-  },
-  {
-    "airport": "RJBB",
-    "flights": 9
+    "airport": "ESSA",
+    "flights": 8
   }
 ]
