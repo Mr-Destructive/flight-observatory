@@ -2,6 +2,7 @@ import csv
 import json
 import os
 import re
+import shutil
 import sqlite3
 import time
 from datetime import datetime, timezone, timedelta
@@ -38,6 +39,7 @@ PULL_COUNT = int(os.getenv("PULL_COUNT") or "1")
 PULL_INTERVAL_SEC = int(os.getenv("PULL_INTERVAL_SEC") or "10")
 MAX_GAP_MINUTES = int(os.getenv("MAX_GAP_MINUTES") or "120")
 ARCHIVE_DIR = os.getenv("ARCHIVE_DIR") or "archives"
+DASHBOARD_ARCHIVE_DIR = os.path.join("dashboard", "archives")
 ARCHIVE_OLDER_THAN_DAYS = int(os.getenv("ARCHIVE_OLDER_THAN_DAYS") or "0")
 KEEP_LEGACY_TABLE = (os.getenv("KEEP_LEGACY_TABLE") or "false").lower() in (
     "1",
@@ -582,6 +584,10 @@ def archive_old_rows(conn: sqlite3.Connection):
         with open(archive_path, "rb") as f_in, gzip.open(archive_gz_path, "wb") as f_out:
             shutil.copyfileobj(f_in, f_out)
         os.remove(archive_path)
+
+        os.makedirs(DASHBOARD_ARCHIVE_DIR, exist_ok=True)
+        dashboard_copy = os.path.join(DASHBOARD_ARCHIVE_DIR, os.path.basename(archive_gz_path))
+        shutil.copy2(archive_gz_path, dashboard_copy)
 
         conn.execute(
             "DELETE FROM flight_positions WHERE substr(observed_at, 1, 10) = ?",

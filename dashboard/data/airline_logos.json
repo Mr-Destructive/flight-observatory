@@ -1,0 +1,1586 @@
+{
+  "byIata": {
+    "6E": {
+      "iata": "6E",
+      "icao": "IGO",
+      "kind": "real",
+      "logo": "./assets/airline-logos/indigo/logo.svg",
+      "name": "IndiGo",
+      "slug": "indigo"
+    },
+    "A3": {
+      "iata": "A3",
+      "icao": "AEE",
+      "kind": "real",
+      "logo": "./assets/airline-logos/aegean-airlines/logo.svg",
+      "name": "Aegean Airlines",
+      "slug": "aegean-airlines"
+    },
+    "AC": {
+      "iata": "AC",
+      "icao": "ACA",
+      "kind": "real",
+      "logo": "./assets/airline-logos/air-canada/logo.svg",
+      "name": "Air Canada",
+      "slug": "air-canada"
+    },
+    "AF": {
+      "iata": "AF",
+      "icao": "AFR",
+      "kind": "real",
+      "logo": "./assets/airline-logos/air-france/logo.svg",
+      "name": "Air France",
+      "slug": "air-france"
+    },
+    "AI": {
+      "iata": "AI",
+      "icao": "AIC",
+      "kind": "real",
+      "logo": "./assets/airline-logos/air-india/logo.svg",
+      "name": "Air India",
+      "slug": "air-india"
+    },
+    "AM": {
+      "iata": "AM",
+      "icao": "AMX",
+      "kind": "real",
+      "logo": "./assets/airline-logos/aeromexico/logo.svg",
+      "name": "Aerom\u00e9xico",
+      "slug": "aeromexico"
+    },
+    "AR": {
+      "iata": "AR",
+      "icao": "ARG",
+      "kind": "real",
+      "logo": "./assets/airline-logos/aerolineas-argentinas/logo.svg",
+      "name": "Aerol\u00edneas Argentinas",
+      "slug": "aerolineas-argentinas"
+    },
+    "AS": {
+      "iata": "AS",
+      "icao": "ASA",
+      "kind": "real",
+      "logo": "./assets/airline-logos/alaska-airlines/logo.svg",
+      "name": "Alaska Airlines",
+      "slug": "alaska-airlines"
+    },
+    "AV": {
+      "iata": "AV",
+      "icao": "AVA",
+      "kind": "real",
+      "logo": "./assets/airline-logos/avianca/logo.svg",
+      "name": "avianca",
+      "slug": "avianca"
+    },
+    "BA": {
+      "iata": "BA",
+      "icao": "BAW",
+      "kind": "real",
+      "logo": "./assets/airline-logos/british-airways/logo.svg",
+      "name": "British Airways",
+      "slug": "british-airways"
+    },
+    "EK": {
+      "iata": "EK",
+      "icao": "UAE",
+      "kind": "real",
+      "logo": "./assets/airline-logos/emirates/logo.svg",
+      "name": "Emirates",
+      "slug": "emirates"
+    },
+    "EW": {
+      "iata": "EW",
+      "icao": "EWG",
+      "kind": "real",
+      "logo": "./assets/airline-logos/eurowings/logo.svg",
+      "name": "Eurowings",
+      "slug": "eurowings"
+    },
+    "FI": {
+      "iata": "FI",
+      "icao": "ICE",
+      "kind": "real",
+      "logo": "./assets/airline-logos/icelandair/logo.svg",
+      "name": "Icelandair",
+      "slug": "icelandair"
+    },
+    "FR": {
+      "iata": "FR",
+      "icao": "RYR",
+      "kind": "real",
+      "logo": "./assets/airline-logos/ryanair/logo.svg",
+      "name": "Ryanair",
+      "slug": "ryanair"
+    },
+    "JL": {
+      "iata": "JL",
+      "icao": "JAL",
+      "kind": "real",
+      "logo": "./assets/airline-logos/japan-airlines/logo.svg",
+      "name": "Japan Airlines",
+      "slug": "japan-airlines"
+    },
+    "KL": {
+      "iata": "KL",
+      "icao": "KLM",
+      "kind": "real",
+      "logo": "./assets/airline-logos/klm/logo.svg",
+      "name": "KLM",
+      "slug": "klm"
+    },
+    "LH": {
+      "iata": "LH",
+      "icao": "DLH",
+      "kind": "real",
+      "logo": "./assets/airline-logos/lufthansa/logo.svg",
+      "name": "Lufthansa",
+      "slug": "lufthansa"
+    },
+    "LX": {
+      "iata": "LX",
+      "icao": "SWR",
+      "kind": "real",
+      "logo": "./assets/airline-logos/swiss/logo.svg",
+      "name": "SWISS",
+      "slug": "swiss"
+    },
+    "SK": {
+      "iata": "SK",
+      "icao": "SAS",
+      "kind": "real",
+      "logo": "./assets/airline-logos/scandinavian-airlines/logo.svg",
+      "name": "Scandinavian Airlines",
+      "slug": "scandinavian-airlines"
+    },
+    "TG": {
+      "iata": "TG",
+      "icao": "THA",
+      "kind": "real",
+      "logo": "./assets/airline-logos/thai-airways/logo.svg",
+      "name": "Thai Airways",
+      "slug": "thai-airways"
+    },
+    "TK": {
+      "iata": "TK",
+      "icao": "THY",
+      "kind": "real",
+      "logo": "./assets/airline-logos/turkish-airlines/logo.svg",
+      "name": "Turkish Airlines",
+      "slug": "turkish-airlines"
+    },
+    "TR": {
+      "iata": "TR",
+      "icao": "TGW",
+      "kind": "real",
+      "logo": "./assets/airline-logos/scoot/logo.svg",
+      "name": "Scoot",
+      "slug": "scoot"
+    },
+    "TS": {
+      "iata": "TS",
+      "icao": "TSC",
+      "kind": "real",
+      "logo": "./assets/airline-logos/air-transat/logo.svg",
+      "name": "Air Transat",
+      "slug": "air-transat"
+    },
+    "UA": {
+      "iata": "UA",
+      "icao": "UAL",
+      "kind": "real",
+      "logo": "./assets/airline-logos/united-airlines/logo.svg",
+      "name": "United Airlines",
+      "slug": "united-airlines"
+    },
+    "UX": {
+      "iata": "UX",
+      "icao": "AEA",
+      "kind": "real",
+      "logo": "./assets/airline-logos/air-europa/logo.svg",
+      "name": "Air Europa",
+      "slug": "air-europa"
+    },
+    "W6": {
+      "iata": "W6",
+      "icao": "WZZ",
+      "kind": "real",
+      "logo": "./assets/airline-logos/wizz-air/logo.svg",
+      "name": "Wizz Air",
+      "slug": "wizz-air"
+    },
+    "WN": {
+      "iata": "WN",
+      "icao": "SWA",
+      "kind": "real",
+      "logo": "./assets/airline-logos/southwest-airlines/logo.svg",
+      "name": "Southwest Airlines",
+      "slug": "southwest-airlines"
+    },
+    "WS": {
+      "iata": "WS",
+      "icao": "WJA",
+      "kind": "real",
+      "logo": "./assets/airline-logos/westjet/logo.svg",
+      "name": "WestJet",
+      "slug": "westjet"
+    },
+    "WY": {
+      "iata": "WY",
+      "icao": "OMA",
+      "kind": "real",
+      "logo": "./assets/airline-logos/oman-air/logo.svg",
+      "name": "Oman Air",
+      "slug": "oman-air"
+    }
+  },
+  "byIcao": {
+    "ACA": {
+      "iata": "AC",
+      "icao": "ACA",
+      "kind": "real",
+      "logo": "./assets/airline-logos/air-canada/logo.svg",
+      "name": "Air Canada",
+      "slug": "air-canada"
+    },
+    "AEA": {
+      "iata": "UX",
+      "icao": "AEA",
+      "kind": "real",
+      "logo": "./assets/airline-logos/air-europa/logo.svg",
+      "name": "Air Europa",
+      "slug": "air-europa"
+    },
+    "AEE": {
+      "iata": "A3",
+      "icao": "AEE",
+      "kind": "real",
+      "logo": "./assets/airline-logos/aegean-airlines/logo.svg",
+      "name": "Aegean Airlines",
+      "slug": "aegean-airlines"
+    },
+    "AFR": {
+      "iata": "AF",
+      "icao": "AFR",
+      "kind": "real",
+      "logo": "./assets/airline-logos/air-france/logo.svg",
+      "name": "Air France",
+      "slug": "air-france"
+    },
+    "AIC": {
+      "iata": "AI",
+      "icao": "AIC",
+      "kind": "real",
+      "logo": "./assets/airline-logos/air-india/logo.svg",
+      "name": "Air India",
+      "slug": "air-india"
+    },
+    "AMX": {
+      "iata": "AM",
+      "icao": "AMX",
+      "kind": "real",
+      "logo": "./assets/airline-logos/aeromexico/logo.svg",
+      "name": "Aerom\u00e9xico",
+      "slug": "aeromexico"
+    },
+    "ARG": {
+      "iata": "AR",
+      "icao": "ARG",
+      "kind": "real",
+      "logo": "./assets/airline-logos/aerolineas-argentinas/logo.svg",
+      "name": "Aerol\u00edneas Argentinas",
+      "slug": "aerolineas-argentinas"
+    },
+    "ASA": {
+      "iata": "AS",
+      "icao": "ASA",
+      "kind": "real",
+      "logo": "./assets/airline-logos/alaska-airlines/logo.svg",
+      "name": "Alaska Airlines",
+      "slug": "alaska-airlines"
+    },
+    "AVA": {
+      "iata": "AV",
+      "icao": "AVA",
+      "kind": "real",
+      "logo": "./assets/airline-logos/avianca/logo.svg",
+      "name": "avianca",
+      "slug": "avianca"
+    },
+    "BAW": {
+      "iata": "BA",
+      "icao": "BAW",
+      "kind": "real",
+      "logo": "./assets/airline-logos/british-airways/logo.svg",
+      "name": "British Airways",
+      "slug": "british-airways"
+    },
+    "DLH": {
+      "iata": "LH",
+      "icao": "DLH",
+      "kind": "real",
+      "logo": "./assets/airline-logos/lufthansa/logo.svg",
+      "name": "Lufthansa",
+      "slug": "lufthansa"
+    },
+    "EWG": {
+      "iata": "EW",
+      "icao": "EWG",
+      "kind": "real",
+      "logo": "./assets/airline-logos/eurowings/logo.svg",
+      "name": "Eurowings",
+      "slug": "eurowings"
+    },
+    "ICE": {
+      "iata": "FI",
+      "icao": "ICE",
+      "kind": "real",
+      "logo": "./assets/airline-logos/icelandair/logo.svg",
+      "name": "Icelandair",
+      "slug": "icelandair"
+    },
+    "IGO": {
+      "iata": "6E",
+      "icao": "IGO",
+      "kind": "real",
+      "logo": "./assets/airline-logos/indigo/logo.svg",
+      "name": "IndiGo",
+      "slug": "indigo"
+    },
+    "JAL": {
+      "iata": "JL",
+      "icao": "JAL",
+      "kind": "real",
+      "logo": "./assets/airline-logos/japan-airlines/logo.svg",
+      "name": "Japan Airlines",
+      "slug": "japan-airlines"
+    },
+    "KLM": {
+      "iata": "KL",
+      "icao": "KLM",
+      "kind": "real",
+      "logo": "./assets/airline-logos/klm/logo.svg",
+      "name": "KLM",
+      "slug": "klm"
+    },
+    "OMA": {
+      "iata": "WY",
+      "icao": "OMA",
+      "kind": "real",
+      "logo": "./assets/airline-logos/oman-air/logo.svg",
+      "name": "Oman Air",
+      "slug": "oman-air"
+    },
+    "RYR": {
+      "iata": "FR",
+      "icao": "RYR",
+      "kind": "real",
+      "logo": "./assets/airline-logos/ryanair/logo.svg",
+      "name": "Ryanair",
+      "slug": "ryanair"
+    },
+    "SAS": {
+      "iata": "SK",
+      "icao": "SAS",
+      "kind": "real",
+      "logo": "./assets/airline-logos/scandinavian-airlines/logo.svg",
+      "name": "Scandinavian Airlines",
+      "slug": "scandinavian-airlines"
+    },
+    "SWA": {
+      "iata": "WN",
+      "icao": "SWA",
+      "kind": "real",
+      "logo": "./assets/airline-logos/southwest-airlines/logo.svg",
+      "name": "Southwest Airlines",
+      "slug": "southwest-airlines"
+    },
+    "SWR": {
+      "iata": "LX",
+      "icao": "SWR",
+      "kind": "real",
+      "logo": "./assets/airline-logos/swiss/logo.svg",
+      "name": "SWISS",
+      "slug": "swiss"
+    },
+    "TGW": {
+      "iata": "TR",
+      "icao": "TGW",
+      "kind": "real",
+      "logo": "./assets/airline-logos/scoot/logo.svg",
+      "name": "Scoot",
+      "slug": "scoot"
+    },
+    "THA": {
+      "iata": "TG",
+      "icao": "THA",
+      "kind": "real",
+      "logo": "./assets/airline-logos/thai-airways/logo.svg",
+      "name": "Thai Airways",
+      "slug": "thai-airways"
+    },
+    "THY": {
+      "iata": "TK",
+      "icao": "THY",
+      "kind": "real",
+      "logo": "./assets/airline-logos/turkish-airlines/logo.svg",
+      "name": "Turkish Airlines",
+      "slug": "turkish-airlines"
+    },
+    "TSC": {
+      "iata": "TS",
+      "icao": "TSC",
+      "kind": "real",
+      "logo": "./assets/airline-logos/air-transat/logo.svg",
+      "name": "Air Transat",
+      "slug": "air-transat"
+    },
+    "UAE": {
+      "iata": "EK",
+      "icao": "UAE",
+      "kind": "real",
+      "logo": "./assets/airline-logos/emirates/logo.svg",
+      "name": "Emirates",
+      "slug": "emirates"
+    },
+    "UAL": {
+      "iata": "UA",
+      "icao": "UAL",
+      "kind": "real",
+      "logo": "./assets/airline-logos/united-airlines/logo.svg",
+      "name": "United Airlines",
+      "slug": "united-airlines"
+    },
+    "WJA": {
+      "iata": "WS",
+      "icao": "WJA",
+      "kind": "real",
+      "logo": "./assets/airline-logos/westjet/logo.svg",
+      "name": "WestJet",
+      "slug": "westjet"
+    },
+    "WZZ": {
+      "iata": "W6",
+      "icao": "WZZ",
+      "kind": "real",
+      "logo": "./assets/airline-logos/wizz-air/logo.svg",
+      "name": "Wizz Air",
+      "slug": "wizz-air"
+    }
+  },
+  "byKey": {
+    "aegeanairlines": {
+      "iata": "A3",
+      "icao": "AEE",
+      "kind": "real",
+      "logo": "./assets/airline-logos/aegean-airlines/logo.svg",
+      "name": "Aegean Airlines",
+      "slug": "aegean-airlines"
+    },
+    "aerocalifornia": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-aerocalifornia/logo.svg",
+      "name": "Aero California",
+      "slug": "generated-aerocalifornia"
+    },
+    "aeroenlacesnacionales": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-aeroenlacesnacionales/logo.svg",
+      "name": "Aeroenlaces Nacionales",
+      "slug": "generated-aeroenlacesnacionales"
+    },
+    "aerolineasargentinas": {
+      "iata": "AR",
+      "icao": "ARG",
+      "kind": "real",
+      "logo": "./assets/airline-logos/aerolineas-argentinas/logo.svg",
+      "name": "Aerol\u00edneas Argentinas",
+      "slug": "aerolineas-argentinas"
+    },
+    "aeromedicareltd": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-aeromedicareltd/logo.svg",
+      "name": "Aeromedicare Ltd.",
+      "slug": "generated-aeromedicareltd"
+    },
+    "aeromexico": {
+      "iata": "AM",
+      "icao": "AMX",
+      "kind": "real",
+      "logo": "./assets/airline-logos/aeromexico/logo.svg",
+      "name": "Aerom\u00e9xico",
+      "slug": "aeromexico"
+    },
+    "afraairlines": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-afraairlines/logo.svg",
+      "name": "Afra Airlines",
+      "slug": "generated-afraairlines"
+    },
+    "africanairlines": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-africanairlines/logo.svg",
+      "name": "African Airlines",
+      "slug": "generated-africanairlines"
+    },
+    "aircairo": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-aircairo/logo.svg",
+      "name": "Air Cairo",
+      "slug": "generated-aircairo"
+    },
+    "aircanada": {
+      "iata": "AC",
+      "icao": "ACA",
+      "kind": "real",
+      "logo": "./assets/airline-logos/air-canada/logo.svg",
+      "name": "Air Canada",
+      "slug": "air-canada"
+    },
+    "aires": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-aires/logo.svg",
+      "name": "Aires",
+      "slug": "generated-aires"
+    },
+    "aireuropa": {
+      "iata": "UX",
+      "icao": "AEA",
+      "kind": "real",
+      "logo": "./assets/airline-logos/air-europa/logo.svg",
+      "name": "Air Europa",
+      "slug": "air-europa"
+    },
+    "airevex": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-airevex/logo.svg",
+      "name": "Air Evex",
+      "slug": "generated-airevex"
+    },
+    "airfrance": {
+      "iata": "AF",
+      "icao": "AFR",
+      "kind": "real",
+      "logo": "./assets/airline-logos/air-france/logo.svg",
+      "name": "Air France",
+      "slug": "air-france"
+    },
+    "airindia": {
+      "iata": "AI",
+      "icao": "AIC",
+      "kind": "real",
+      "logo": "./assets/airline-logos/air-india/logo.svg",
+      "name": "Air India",
+      "slug": "air-india"
+    },
+    "airindiaexpress": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-airindiaexpress/logo.svg",
+      "name": "Air India Express",
+      "slug": "generated-airindiaexpress"
+    },
+    "airindialimited": {
+      "iata": "AI",
+      "icao": "AIC",
+      "kind": "real",
+      "logo": "./assets/airline-logos/air-india/logo.svg",
+      "name": "Air India",
+      "slug": "air-india"
+    },
+    "airtransat": {
+      "iata": "TS",
+      "icao": "TSC",
+      "kind": "real",
+      "logo": "./assets/airline-logos/air-transat/logo.svg",
+      "name": "Air Transat",
+      "slug": "air-transat"
+    },
+    "airvip": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-airvip/logo.svg",
+      "name": "Air VIP",
+      "slug": "generated-airvip"
+    },
+    "alaskaairlines": {
+      "iata": "AS",
+      "icao": "ASA",
+      "kind": "real",
+      "logo": "./assets/airline-logos/alaska-airlines/logo.svg",
+      "name": "Alaska Airlines",
+      "slug": "alaska-airlines"
+    },
+    "allegiantair": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-allegiantair/logo.svg",
+      "name": "Allegiant Air",
+      "slug": "generated-allegiantair"
+    },
+    "allianceair": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-allianceair/logo.svg",
+      "name": "Alliance Air",
+      "slug": "generated-allianceair"
+    },
+    "allnipponairways": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-allnipponairways/logo.svg",
+      "name": "All Nippon Airways",
+      "slug": "generated-allnipponairways"
+    },
+    "almasriauniversalairlines": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-almasriauniversalairlines/logo.svg",
+      "name": "AlMasria Universal Airlines",
+      "slug": "generated-almasriauniversalairlines"
+    },
+    "americanairlines": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-americanairlines/logo.svg",
+      "name": "American Airlines",
+      "slug": "generated-americanairlines"
+    },
+    "amerijetinternational": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-amerijetinternational/logo.svg",
+      "name": "Amerijet International",
+      "slug": "generated-amerijetinternational"
+    },
+    "andeslineasaereas": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-andeslineasaereas/logo.svg",
+      "name": "Andes Lineas Aereas",
+      "slug": "generated-andeslineasaereas"
+    },
+    "arkefly": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-arkefly/logo.svg",
+      "name": "Arkefly",
+      "slug": "generated-arkefly"
+    },
+    "arkiaisraelairlines": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-arkiaisraelairlines/logo.svg",
+      "name": "Arkia Israel Airlines",
+      "slug": "generated-arkiaisraelairlines"
+    },
+    "atlasair": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-atlasair/logo.svg",
+      "name": "Atlas Air",
+      "slug": "generated-atlasair"
+    },
+    "austrianairlines": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-austrianairlines/logo.svg",
+      "name": "Austrian Airlines",
+      "slug": "generated-austrianairlines"
+    },
+    "aviacaotransportesaereosecargas": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-aviacaotransportesaereosecargas/logo.svg",
+      "name": "Aviacao Transportes Aereos e Cargas",
+      "slug": "generated-aviacaotransportesaereosecargas"
+    },
+    "aviancaaeroviasnacionalesdecolombia": {
+      "iata": "AV",
+      "icao": "AVA",
+      "kind": "real",
+      "logo": "./assets/airline-logos/avianca/logo.svg",
+      "name": "avianca",
+      "slug": "avianca"
+    },
+    "aviationdefenseservice": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-aviationdefenseservice/logo.svg",
+      "name": "Aviation Defense Service",
+      "slug": "generated-aviationdefenseservice"
+    },
+    "aviostartas": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-aviostartas/logo.svg",
+      "name": "Aviostart AS",
+      "slug": "generated-aviostartas"
+    },
+    "bimanbangladeshairlines": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-bimanbangladeshairlines/logo.svg",
+      "name": "Biman Bangladesh Airlines",
+      "slug": "generated-bimanbangladeshairlines"
+    },
+    "britishairways": {
+      "iata": "BA",
+      "icao": "BAW",
+      "kind": "real",
+      "logo": "./assets/airline-logos/british-airways/logo.svg",
+      "name": "British Airways",
+      "slug": "british-airways"
+    },
+    "britishairwaysshuttle": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-britishairwaysshuttle/logo.svg",
+      "name": "British Airways Shuttle",
+      "slug": "generated-britishairwaysshuttle"
+    },
+    "cargaexpressinternacional": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-cargaexpressinternacional/logo.svg",
+      "name": "Carga Express Internacional",
+      "slug": "generated-cargaexpressinternacional"
+    },
+    "cargojetairways": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-cargojetairways/logo.svg",
+      "name": "Cargojet Airways",
+      "slug": "generated-cargojetairways"
+    },
+    "chchelikopterservice": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-chchelikopterservice/logo.svg",
+      "name": "CHC Helikopter Service",
+      "slug": "generated-chchelikopterservice"
+    },
+    "chilcotincaribouaviation": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-chilcotincaribouaviation/logo.svg",
+      "name": "Chilcotin Caribou Aviation",
+      "slug": "generated-chilcotincaribouaviation"
+    },
+    "chinacargoairlines": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-chinacargoairlines/logo.svg",
+      "name": "China Cargo Airlines",
+      "slug": "generated-chinacargoairlines"
+    },
+    "chinaeasternairlines": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-chinaeasternairlines/logo.svg",
+      "name": "China Eastern Airlines",
+      "slug": "generated-chinaeasternairlines"
+    },
+    "christophorusflugrettungsverein": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-christophorusflugrettungsverein/logo.svg",
+      "name": "Christophorus Flugrettungsverein",
+      "slug": "generated-christophorusflugrettungsverein"
+    },
+    "condorflugdienst": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-condorflugdienst/logo.svg",
+      "name": "Condor Flugdienst",
+      "slug": "generated-condorflugdienst"
+    },
+    "congressionalair": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-congressionalair/logo.svg",
+      "name": "Congressional Air",
+      "slug": "generated-congressionalair"
+    },
+    "corendonairlines": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-corendonairlines/logo.svg",
+      "name": "Corendon Airlines",
+      "slug": "generated-corendonairlines"
+    },
+    "datenterpriselimited": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-datenterpriselimited/logo.svg",
+      "name": "DAT Enterprise Limited",
+      "slug": "generated-datenterpriselimited"
+    },
+    "deltaairlines": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-deltaairlines/logo.svg",
+      "name": "Delta Air Lines",
+      "slug": "generated-deltaairlines"
+    },
+    "detaair": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-detaair/logo.svg",
+      "name": "DETA Air",
+      "slug": "generated-detaair"
+    },
+    "ducair": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-ducair/logo.svg",
+      "name": "Ducair",
+      "slug": "generated-ducair"
+    },
+    "easyjet": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-easyjet/logo.svg",
+      "name": "easyJet",
+      "slug": "generated-easyjet"
+    },
+    "elalisraelairlines": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-elalisraelairlines/logo.svg",
+      "name": "El Al Israel Airlines",
+      "slug": "generated-elalisraelairlines"
+    },
+    "elburaqairtransport": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-elburaqairtransport/logo.svg",
+      "name": "El-Buraq Air Transport",
+      "slug": "generated-elburaqairtransport"
+    },
+    "emirates": {
+      "iata": "EK",
+      "icao": "UAE",
+      "kind": "real",
+      "logo": "./assets/airline-logos/emirates/logo.svg",
+      "name": "Emirates",
+      "slug": "emirates"
+    },
+    "envoyair": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-envoyair/logo.svg",
+      "name": "Envoy Air",
+      "slug": "generated-envoyair"
+    },
+    "escueladepilotosareaviacion": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-escueladepilotosareaviacion/logo.svg",
+      "name": "Escuela De Pilotos Are Aviacion",
+      "slug": "generated-escueladepilotosareaviacion"
+    },
+    "eurowings": {
+      "iata": "EW",
+      "icao": "EWG",
+      "kind": "real",
+      "logo": "./assets/airline-logos/eurowings/logo.svg",
+      "name": "Eurowings",
+      "slug": "eurowings"
+    },
+    "executiveairshare": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-executiveairshare/logo.svg",
+      "name": "Executive AirShare",
+      "slug": "generated-executiveairshare"
+    },
+    "federalexpress": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-federalexpress/logo.svg",
+      "name": "Federal Express",
+      "slug": "generated-federalexpress"
+    },
+    "freedomair": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-freedomair/logo.svg",
+      "name": "Freedom Air",
+      "slug": "generated-freedomair"
+    },
+    "frontierairlines": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-frontierairlines/logo.svg",
+      "name": "Frontier Airlines",
+      "slug": "generated-frontierairlines"
+    },
+    "goltransportesaereos": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-goltransportesaereos/logo.svg",
+      "name": "Gol Transportes A\u00e9reos",
+      "slug": "generated-goltransportesaereos"
+    },
+    "hellenicairforce": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-hellenicairforce/logo.svg",
+      "name": "Hellenic Air Force",
+      "slug": "generated-hellenicairforce"
+    },
+    "hokkaidointernationalairlines": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-hokkaidointernationalairlines/logo.svg",
+      "name": "Hokkaido International Airlines",
+      "slug": "generated-hokkaidointernationalairlines"
+    },
+    "homerair": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-homerair/logo.svg",
+      "name": "Homer Air",
+      "slug": "generated-homerair"
+    },
+    "hydroquebec": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-hydroquebec/logo.svg",
+      "name": "Hydro-Qu\u00e9bec",
+      "slug": "generated-hydroquebec"
+    },
+    "iberiaexpress": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-iberiaexpress/logo.svg",
+      "name": "Iberia Express",
+      "slug": "generated-iberiaexpress"
+    },
+    "icelandair": {
+      "iata": "FI",
+      "icao": "ICE",
+      "kind": "real",
+      "logo": "./assets/airline-logos/icelandair/logo.svg",
+      "name": "Icelandair",
+      "slug": "icelandair"
+    },
+    "indigo": {
+      "iata": "6E",
+      "icao": "IGO",
+      "kind": "real",
+      "logo": "./assets/airline-logos/indigo/logo.svg",
+      "name": "IndiGo",
+      "slug": "indigo"
+    },
+    "indigoairlines": {
+      "iata": "6E",
+      "icao": "IGO",
+      "kind": "real",
+      "logo": "./assets/airline-logos/indigo/logo.svg",
+      "name": "IndiGo",
+      "slug": "indigo"
+    },
+    "indonesiaairasia": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-indonesiaairasia/logo.svg",
+      "name": "Indonesia AirAsia",
+      "slug": "generated-indonesiaairasia"
+    },
+    "japanairlinesdomestic": {
+      "iata": "JL",
+      "icao": "JAL",
+      "kind": "real",
+      "logo": "./assets/airline-logos/japan-airlines/logo.svg",
+      "name": "Japan Airlines",
+      "slug": "japan-airlines"
+    },
+    "jazeeraairways": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-jazeeraairways/logo.svg",
+      "name": "Jazeera Airways",
+      "slug": "generated-jazeeraairways"
+    },
+    "jet2com": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-jet2com/logo.svg",
+      "name": "Jet2.com",
+      "slug": "generated-jet2com"
+    },
+    "jetairfly": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-jetairfly/logo.svg",
+      "name": "Jetairfly",
+      "slug": "generated-jetairfly"
+    },
+    "jetblueairways": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-jetblueairways/logo.svg",
+      "name": "JetBlue Airways",
+      "slug": "generated-jetblueairways"
+    },
+    "jetstarjapan": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-jetstarjapan/logo.svg",
+      "name": "Jetstar Japan",
+      "slug": "generated-jetstarjapan"
+    },
+    "jordanaviation": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-jordanaviation/logo.svg",
+      "name": "Jordan Aviation",
+      "slug": "generated-jordanaviation"
+    },
+    "klmroyaldutchairlines": {
+      "iata": "KL",
+      "icao": "KLM",
+      "kind": "real",
+      "logo": "./assets/airline-logos/klm/logo.svg",
+      "name": "KLM",
+      "slug": "klm"
+    },
+    "lanperu": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-lanperu/logo.svg",
+      "name": "LAN Peru",
+      "slug": "generated-lanperu"
+    },
+    "lufthansa": {
+      "iata": "LH",
+      "icao": "DLH",
+      "kind": "real",
+      "logo": "./assets/airline-logos/lufthansa/logo.svg",
+      "name": "Lufthansa",
+      "slug": "lufthansa"
+    },
+    "mngairlines": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-mngairlines/logo.svg",
+      "name": "MNG Airlines",
+      "slug": "generated-mngairlines"
+    },
+    "morningstarairexpress": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-morningstarairexpress/logo.svg",
+      "name": "Morningstar Air Express",
+      "slug": "generated-morningstarairexpress"
+    },
+    "nadaairservice": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-nadaairservice/logo.svg",
+      "name": "Nada Air Service",
+      "slug": "generated-nadaairservice"
+    },
+    "nasair": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-nasair/logo.svg",
+      "name": "Nas Air",
+      "slug": "generated-nasair"
+    },
+    "nationwideairlines": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-nationwideairlines/logo.svg",
+      "name": "Nationwide Airlines",
+      "slug": "generated-nationwideairlines"
+    },
+    "nesmaairlines": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-nesmaairlines/logo.svg",
+      "name": "Nesma Airlines",
+      "slug": "generated-nesmaairlines"
+    },
+    "netjets": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-netjets/logo.svg",
+      "name": "NetJets",
+      "slug": "generated-netjets"
+    },
+    "nurmanaviaindopura": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-nurmanaviaindopura/logo.svg",
+      "name": "Nurman Avia Indopura",
+      "slug": "generated-nurmanaviaindopura"
+    },
+    "omanair": {
+      "iata": "WY",
+      "icao": "OMA",
+      "kind": "real",
+      "logo": "./assets/airline-logos/oman-air/logo.svg",
+      "name": "Oman Air",
+      "slug": "oman-air"
+    },
+    "omniflys": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-omniflys/logo.svg",
+      "name": "Omniflys",
+      "slug": "generated-omniflys"
+    },
+    "orientthaiairlines": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-orientthaiairlines/logo.svg",
+      "name": "Orient Thai Airlines",
+      "slug": "generated-orientthaiairlines"
+    },
+    "orionaircharter": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-orionaircharter/logo.svg",
+      "name": "Orion Air Charter",
+      "slug": "generated-orionaircharter"
+    },
+    "paccair": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-paccair/logo.svg",
+      "name": "Paccair",
+      "slug": "generated-paccair"
+    },
+    "pakistaninternationalairlines": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-pakistaninternationalairlines/logo.svg",
+      "name": "Pakistan International Airlines",
+      "slug": "generated-pakistaninternationalairlines"
+    },
+    "pegasusairlines": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-pegasusairlines/logo.svg",
+      "name": "Pegasus Airlines",
+      "slug": "generated-pegasusairlines"
+    },
+    "piedmontairlines19481989": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-piedmontairlines19481989/logo.svg",
+      "name": "Piedmont Airlines (1948-1989)",
+      "slug": "generated-piedmontairlines19481989"
+    },
+    "reddingaeroenterprises": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-reddingaeroenterprises/logo.svg",
+      "name": "Redding Aero Enterprises",
+      "slug": "generated-reddingaeroenterprises"
+    },
+    "republicairlines": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-republicairlines/logo.svg",
+      "name": "Republic Airlines",
+      "slug": "generated-republicairlines"
+    },
+    "royalflight": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-royalflight/logo.svg",
+      "name": "Royal Flight",
+      "slug": "generated-royalflight"
+    },
+    "royaljordanian": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-royaljordanian/logo.svg",
+      "name": "Royal Jordanian",
+      "slug": "generated-royaljordanian"
+    },
+    "ryanair": {
+      "iata": "FR",
+      "icao": "RYR",
+      "kind": "real",
+      "logo": "./assets/airline-logos/ryanair/logo.svg",
+      "name": "Ryanair",
+      "slug": "ryanair"
+    },
+    "safair": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-safair/logo.svg",
+      "name": "Safair",
+      "slug": "generated-safair"
+    },
+    "samcolombia": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-samcolombia/logo.svg",
+      "name": "SAM Colombia",
+      "slug": "generated-samcolombia"
+    },
+    "scandinavianairlinessystem": {
+      "iata": "SK",
+      "icao": "SAS",
+      "kind": "real",
+      "logo": "./assets/airline-logos/scandinavian-airlines/logo.svg",
+      "name": "Scandinavian Airlines",
+      "slug": "scandinavian-airlines"
+    },
+    "scatair": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-scatair/logo.svg",
+      "name": "Scat Air",
+      "slug": "generated-scatair"
+    },
+    "shanxiairlines": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-shanxiairlines/logo.svg",
+      "name": "Shanxi Airlines",
+      "slug": "generated-shanxiairlines"
+    },
+    "sierrapacificairlines": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-sierrapacificairlines/logo.svg",
+      "name": "Sierra Pacific Airlines",
+      "slug": "generated-sierrapacificairlines"
+    },
+    "skyexpress": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-skyexpress/logo.svg",
+      "name": "Sky Express",
+      "slug": "generated-skyexpress"
+    },
+    "skynetasiaairways": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-skynetasiaairways/logo.svg",
+      "name": "Skynet Asia Airways",
+      "slug": "generated-skynetasiaairways"
+    },
+    "skywest": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-skywest/logo.svg",
+      "name": "SkyWest",
+      "slug": "generated-skywest"
+    },
+    "southafricanairways": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-southafricanairways/logo.svg",
+      "name": "South African Airways",
+      "slug": "generated-southafricanairways"
+    },
+    "southernfrontierairtransport": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-southernfrontierairtransport/logo.svg",
+      "name": "Southern Frontier Air Transport",
+      "slug": "generated-southernfrontierairtransport"
+    },
+    "southwestairlines": {
+      "iata": "WN",
+      "icao": "SWA",
+      "kind": "real",
+      "logo": "./assets/airline-logos/southwest-airlines/logo.svg",
+      "name": "Southwest Airlines",
+      "slug": "southwest-airlines"
+    },
+    "speedwings": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-speedwings/logo.svg",
+      "name": "Speedwings",
+      "slug": "generated-speedwings"
+    },
+    "spicejet": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-spicejet/logo.svg",
+      "name": "SpiceJet",
+      "slug": "generated-spicejet"
+    },
+    "starflyer": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-starflyer/logo.svg",
+      "name": "Star Flyer",
+      "slug": "generated-starflyer"
+    },
+    "swissair": {
+      "iata": "LX",
+      "icao": "SWR",
+      "kind": "real",
+      "logo": "./assets/airline-logos/swiss/logo.svg",
+      "name": "SWISS",
+      "slug": "swiss"
+    },
+    "swissairambulance": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-swissairambulance/logo.svg",
+      "name": "Swiss Air-Ambulance",
+      "slug": "generated-swissairambulance"
+    },
+    "syrianpearlairlines": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-syrianpearlairlines/logo.svg",
+      "name": "Syrian Pearl Airlines",
+      "slug": "generated-syrianpearlairlines"
+    },
+    "tambrazilianairlines": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-tambrazilianairlines/logo.svg",
+      "name": "TAM Brazilian Airlines",
+      "slug": "generated-tambrazilianairlines"
+    },
+    "taxiaereocozatl": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-taxiaereocozatl/logo.svg",
+      "name": "Taxi Aereo Cozatl",
+      "slug": "generated-taxiaereocozatl"
+    },
+    "thaiairwaysinternational": {
+      "iata": "TG",
+      "icao": "THA",
+      "kind": "real",
+      "logo": "./assets/airline-logos/thai-airways/logo.svg",
+      "name": "Thai Airways",
+      "slug": "thai-airways"
+    },
+    "tigerairwaysaustralia": {
+      "iata": "TR",
+      "icao": "TGW",
+      "kind": "real",
+      "logo": "./assets/airline-logos/scoot/logo.svg",
+      "name": "Scoot",
+      "slug": "scoot"
+    },
+    "towerair": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-towerair/logo.svg",
+      "name": "Tower Air",
+      "slug": "generated-towerair"
+    },
+    "transaviafrance": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-transaviafrance/logo.svg",
+      "name": "Transavia France",
+      "slug": "generated-transaviafrance"
+    },
+    "transportesaereosircrusoe": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-transportesaereosircrusoe/logo.svg",
+      "name": "Transportes Aereos I.R. Crusoe",
+      "slug": "generated-transportesaereosircrusoe"
+    },
+    "tuiflynordic": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-tuiflynordic/logo.svg",
+      "name": "TUIfly Nordic",
+      "slug": "generated-tuiflynordic"
+    },
+    "turkishairlines": {
+      "iata": "TK",
+      "icao": "THY",
+      "kind": "real",
+      "logo": "./assets/airline-logos/turkish-airlines/logo.svg",
+      "name": "Turkish Airlines",
+      "slug": "turkish-airlines"
+    },
+    "unitedairlines": {
+      "iata": "UA",
+      "icao": "UAL",
+      "kind": "real",
+      "logo": "./assets/airline-logos/united-airlines/logo.svg",
+      "name": "United Airlines",
+      "slug": "united-airlines"
+    },
+    "unitedparcelservice": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-unitedparcelservice/logo.svg",
+      "name": "United Parcel Service",
+      "slug": "generated-unitedparcelservice"
+    },
+    "usbanglaairlines": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-usbanglaairlines/logo.svg",
+      "name": "US-Bangla Airlines",
+      "slug": "generated-usbanglaairlines"
+    },
+    "volaris": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-volaris/logo.svg",
+      "name": "Volaris",
+      "slug": "generated-volaris"
+    },
+    "vuelingairlines": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-vuelingairlines/logo.svg",
+      "name": "Vueling Airlines",
+      "slug": "generated-vuelingairlines"
+    },
+    "westjet": {
+      "iata": "WS",
+      "icao": "WJA",
+      "kind": "real",
+      "logo": "./assets/airline-logos/westjet/logo.svg",
+      "name": "WestJet",
+      "slug": "westjet"
+    },
+    "wizzair": {
+      "iata": "W6",
+      "icao": "WZZ",
+      "kind": "real",
+      "logo": "./assets/airline-logos/wizz-air/logo.svg",
+      "name": "Wizz Air",
+      "slug": "wizz-air"
+    },
+    "xlairwaysfrance": {
+      "iata": "",
+      "icao": "",
+      "kind": "generated",
+      "logo": "./assets/airline-logos/generated-xlairwaysfrance/logo.svg",
+      "name": "XL Airways France",
+      "slug": "generated-xlairwaysfrance"
+    }
+  },
+  "count": 139,
+  "source": "anhthang/soaring-symbols"
+}

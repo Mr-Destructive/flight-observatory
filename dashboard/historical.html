@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Flight Observatory - Historical Analysis</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <link rel="stylesheet" href="./styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
   </head>
@@ -25,13 +26,14 @@
         </div>
       </nav>
 
-      <main class="main-container">
-        <section class="header-section">
-          <div class="header-content">
+      <main class="main-container page-shell">
+        <section class="hero-banner hero-banner-historical">
+          <div class="hero-copy">
+            <p class="hero-kicker">Historical Observatory</p>
             <h1>Sky Analytics</h1>
-            <p id="dataDescription">Deep dive into flight patterns and airspace insights</p>
+            <p class="hero-subtitle" id="dataDescription">Deep dive into flight patterns and airspace insights.</p>
           </div>
-          <div class="header-info">
+          <div class="hero-stack">
             <div class="info-box">
               <span class="label">Total Records</span>
               <span class="value" id="totalRows">--</span>
@@ -45,6 +47,22 @@
               <span class="value" id="uniqueAircraft">--</span>
             </div>
           </div>
+        </section>
+
+        <section class="map-section">
+          <div class="map-header">
+            <div>
+              <h2>Archive Map</h2>
+              <p>Pick a day, then click any point to reveal that flight's route.</p>
+            </div>
+            <div class="map-controls">
+              <button id="historicalDensityToggle" class="lab-btn lab-btn-secondary map-toggle" type="button">Density: On</button>
+              <label for="historicalMapDate">Select Day</label>
+              <input type="date" id="historicalMapDate" />
+              <div class="map-status" id="historicalMapStatus">No day loaded yet.</div>
+            </div>
+          </div>
+          <div id="historicalMap" class="map-panel"></div>
         </section>
 
         <!-- Quick Stats Cards -->
@@ -274,6 +292,10 @@
       </main>
     </div>
 
-    <script src="./historical.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.10.2/sql-wasm.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="./airline-logos.js"></script>
+    <script type="module" src="./historical.js"></script>
   </body>
 </html>

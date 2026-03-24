@@ -2,14 +2,15 @@ import {
   loadArchiveDb,
   loadArchiveDbRaw,
   mergeHistorical,
+  summarizeDb,
   summarizeDbWithFilters,
-  decompressGzip,
 } from "./history-archive.mjs";
 
+const ARCHIVE_BASE_DIR = "archives";
 const charts = new Map();
-Chart.defaults.color = "#cbd5f5";
+Chart.defaults.color = "#dce3f0";
 Chart.defaults.font = {
-  family: "IBM Plex Sans, Inter, system-ui, sans-serif",
+  family: "Space Grotesk, Inter, system-ui, sans-serif",
   size: 11,
 };
 Chart.defaults.plugins.legend.labels.usePointStyle = true;
@@ -34,6 +35,30 @@ const state = {
     spdMax: 350,
   },
 };
+let labMap;
+let labLayer;
+let labAirportLayer;
+let labTraceLayer;
+let labClusterLayer;
+let labTraceIndex = new Map();
+let labCurrentArchiveDay = null;
+let labArchiveDb = null;
+const labArchiveCache = new Map();
+let labFilterTimer = null;
+let labLoadingCount = 0;
+let labDensityVisible = true;
+let labLastRows = [];
+let labLastDay = null;
+let labSelectedTraceKey = null;
+
+function nextFrame() {
+  return new Promise((resolve) => requestAnimationFrame(() => resolve()));
+}
+
+async function flushUi() {
+  await nextFrame();
+  await nextFrame();
+}
 
 async function fetchJson(path) {
   try {
@@ -53,6 +78,15 @@ function fmtNum(val, digits = 0) {
   return Number(val).toLocaleString(undefined, { maximumFractionDigits: digits });
 }
 
+function isUnknownLabel(value) {
+  const text = String(value ?? "").trim().toLowerCase();
+  return !text || text === "unknown" || text === "unkonw" || text === "n/a" || text === "na" || text === "none";
+}
+
+function cleanLabel(value, fallback = "--") {
+  return isUnknownLabel(value) ? fallback : String(value);
+}
+
 function parseBand(label) {
   if (!label) return null;
   const match = String(label).match(/-?\d+(\.\d+)?/);
@@ -64,11 +98,41 @@ function updateLabel(id, text) {
   if (el) el.textContent = text;
 }
 
+function setLabLoading(visible, title = "Loading data", text = "Preparing archive and rebuilding the lab view.") {
+  const overlay = document.getElementById("labLoadingOverlay");
+  const titleEl = document.getElementById("labLoadingTitle");
+  const textEl = document.getElementById("labLoadingText");
+  if (!overlay) return;
+  if (titleEl) titleEl.textContent = title;
+  if (textEl) textEl.textContent = text;
+  overlay.classList.toggle("is-visible", visible);
+  overlay.setAttribute("aria-hidden", visible ? "false" : "true");
+}
+
+function beginLabLoading(title, text) {
+  labLoadingCount += 1;
+  setLabLoading(true, title, text);
+}
+
+function endLabLoading() {
+  labLoadingCount = Math.max(0, labLoadingCount - 1);
+  if (labLoadingCount === 0) {
+    setLabLoading(false);
+  }
+}
+
 function createChart(canvasId, type, labels, data, color, options = {}) {
   const canvas = document.getElementById(canvasId);
   if (!canvas) return null;
 
+  const existing = Chart.getChart(canvas) || charts.get(canvasId);
+  if (existing) {
+    existing.destroy();
+    charts.delete(canvasId);
+  }
+
   const ctx = canvas.getContext("2d");
+  canvas.style.display = "";
   const chart = new Chart(ctx, {
     type,
     data: {
@@ -95,7 +159,7 @@ function createChart(canvasId, type, labels, data, color, options = {}) {
           backgroundColor: "rgba(15, 23, 42, 0.95)",
           titleColor: "#f8fafc",
           bodyColor: "#cbd5f5",
-          borderColor: "rgba(255, 255, 255, 0.1)",
+          borderColor: "rgba(0, 218, 243, 0.2)",
           borderWidth: 1,
           padding: 10,
           displayColors: false,
@@ -126,11 +190,15 @@ function upsertChart(id, type, labels, data, color, options = {}) {
 
 function renderHero(summary, detailed) {
   updateLabel("labTotalRows", fmtNum(summary?.total_rows));
-  if (summary?.date_range?.length === 2) {
-    const start = new Date(summary.date_range[0]).toLocaleString();
-    const end = new Date(summary.date_range[1]).toLocaleString();
-    updateLabel("labSpan", `${start} → ${end}`);
-  }
+  const scopeLabel =
+    state.sqliteMode
+      ? state.sqliteScope === "day"
+        ? `Day archive - ${labCurrentArchiveDay || "loaded"}`
+        : state.sqliteScope === "range"
+          ? `Range archive - ${state.rangeDays?.length || 0} days`
+          : "Full history"
+      : "Full history";
+  updateLabel("labSpan", scopeLabel);
   updateLabel("labUnique", fmtNum(detailed?.unique_aircraft || detailed?.metrics?.unique_aircraft));
 }
 
@@ -171,19 +239,29 @@ function renderMetrics(summary, detailed) {
   const cruiseDominance = topBand && summary?.total_rows
     ? Math.round((topBand.count / summary.total_rows) * 100)
     : null;
+  const topAirline = (summary?.top_airlines || []).find((row) => !isUnknownLabel(row?.airline)) || null;
+  const topAirlineShare = topAirline && summary?.total_rows
+    ? Math.round((topAirline.count / summary.total_rows) * 100)
+    : null;
+  const onGround = summary?.metrics?.on_ground ?? detailed?.metrics?.on_ground;
+  const airborne = summary?.metrics?.airborne ?? detailed?.metrics?.airborne;
+  const airborneShare = typeof airborne === "number" && typeof onGround === "number" && airborne + onGround > 0
+    ? Math.round((airborne / (airborne + onGround)) * 100)
+    : null;
 
   const cards = [
     { label: "Peak Hour", value: busiest ? `${String(busiest.hour).padStart(2, "0")}:00` : "--" },
-    { label: "Peak Weekday", value: peakDay?.day || "--" },
+    { label: "Busiest Day", value: peakDay?.day || "--" },
+    { label: "Largest Band", value: topBand?.altitude_band || "--" },
+    { label: "Cruise Share", value: cruiseDominance !== null ? `${cruiseDominance}%` : "--" },
+    { label: "Top Airline", value: cleanLabel(topAirline?.airline, "--") },
+    { label: "Top Airline %", value: topAirlineShare !== null ? `${topAirlineShare}%` : "--" },
+    { label: "Airborne Share", value: airborneShare !== null ? `${airborneShare}%` : "--" },
     { label: "Median Altitude", value: altitude.median ? `${Math.round(altitude.median)}m` : "--" },
     { label: "P90 Altitude", value: altitude.p90 ? `${Math.round(altitude.p90)}m` : "--" },
     { label: "Median Speed", value: speed.median ? `${Math.round(speed.median)}m/s` : "--" },
     { label: "P90 Speed", value: speed.p90 ? `${Math.round(speed.p90)}m/s` : "--" },
-    { label: "Data Completeness", value: detailed?.metrics?.data_completeness_all_fields ? `${detailed.metrics.data_completeness_all_fields.toFixed(1)}%` : "--" },
     { label: "Ghost Fleet", value: detailed?.ghost_planes?.aircraft ? fmtNum(detailed.ghost_planes.aircraft) : "--" },
-    { label: "Peak/Trough Ratio", value: peakToTrough ? peakToTrough.toFixed(2) : "--" },
-    { label: "Hourly Volatility", value: volatility ? Math.round(volatility).toLocaleString() : "--" },
-    { label: "Cruise Band Share", value: cruiseDominance !== null ? `${cruiseDominance}%` : "--" },
   ];
 
   grid.innerHTML = cards
@@ -251,15 +329,37 @@ function renderBands(summary, filters) {
 
 function renderLeaders(summary) {
   const airlines = summary?.top_airlines || [];
-  const labels = airlines.map((a) => a.airline || "Unknown");
+  const labels = airlines.map((a) => cleanLabel(a.airline, "Other"));
   const counts = airlines.map((a) => a.count);
   upsertChart("topAirlinesLab", "bar", labels, counts, "#60a5fa", {
     indexAxis: "y",
   });
 
+  const list = document.getElementById("topAirlinesLabList");
+  if (list) {
+    const topRows = airlines.slice(0, 8);
+    list.innerHTML = topRows.length
+      ? topRows
+          .map(
+            (row, i) => `
+              <div class="airline-leaderboard-item">
+                <span class="airline-rank">#${i + 1}</span>
+                ${window.AirlineLogos?.render ? window.AirlineLogos.render(cleanLabel(row.airline, "Other"), { compact: true }) : `<span class="airline-name">${cleanLabel(row.airline, "Other")}</span>`}
+                <span class="airline-count">${fmtNum(row.count)}</span>
+              </div>
+            `,
+          )
+          .join("")
+      : '<div class="hint">No airline data for this selection.</div>';
+  }
+
   const models = summary?.top_models || [];
   const table = document.getElementById("topModelsLab");
   if (!table) return;
+  if (!models.length) {
+    table.innerHTML = `<div class="hint">Aircraft model data is not available for this selection.</div>`;
+    return;
+  }
   table.innerHTML = `
     <table>
       <thead>
@@ -284,15 +384,22 @@ function renderLeaders(summary) {
   `;
 }
 
-function renderInsights(insights) {
+function renderInsights(summary, detailed) {
   const container = document.getElementById("labInsights");
-  if (!container || !insights?.length) return;
-  container.innerHTML = insights
-    .slice(0, 8)
+  if (!container) return;
+  const scoped = (detailed?.insights || [])
+    .filter((insight) => {
+      const title = String(insight?.title || "").toLowerCase();
+      const detail = String(insight?.detail || "").toLowerCase();
+      return !title.includes("unknown") && !title.includes("unkonw") && !detail.includes("unknown") && !detail.includes("unkonw");
+    })
+    .slice(0, 8);
+  const finalInsights = scoped.length ? scoped : buildFallbackInsights(summary, detailed);
+  container.innerHTML = finalInsights
     .map(
       (insight) => `
       <article class="insight-card">
-        <div class="insight-icon">${insight.icon || "📌"}</div>
+        <div class="insight-icon">${insight.icon || "•"}</div>
         <div>
           <h4>${insight.title}</h4>
           <p>${insight.detail}</p>
@@ -301,6 +408,79 @@ function renderInsights(insights) {
     `,
     )
     .join("");
+}
+
+function buildFallbackInsights(summary, detailed) {
+  const hourly = detailed?.hourly_distribution || [];
+  const topHour = hourly.reduce((best, h) => (h.count > (best?.count || 0) ? h : best), null);
+  const topAirline = (summary?.top_airlines || []).find((row) => !isUnknownLabel(row?.airline)) || null;
+  const topBand = (summary?.altitude_bins || []).reduce((best, b) => (best === null || b.count > best.count ? b : best), null);
+  const scopeLabel = state.sqliteMode
+    ? state.sqliteScope === "day"
+      ? `day ${labCurrentArchiveDay || "loaded"}`
+      : state.sqliteScope === "range"
+        ? "the loaded range"
+        : "full history"
+    : "full history";
+  const selectedAirline = state.filters?.airline || "";
+  const selectedAirport = state.filters?.airport || "";
+  const totalRecords = summary?.total_rows || detailed?.metrics?.total_records;
+  const uniqueAircraft = detailed?.unique_aircraft || detailed?.metrics?.unique_aircraft;
+  const airborne = detailed?.metrics?.airborne;
+  const onGround = detailed?.metrics?.on_ground;
+  const airborneShare = typeof airborne === "number" && typeof onGround === "number" && airborne + onGround > 0
+    ? Math.round((airborne / (airborne + onGround)) * 100)
+    : null;
+
+  return [
+    {
+      icon: "•",
+      title: "Current view",
+      detail: `You are looking at ${scopeLabel}.`,
+    },
+    {
+      icon: "✦",
+      title: "Scale",
+      detail: totalRecords && uniqueAircraft
+        ? `${fmtNum(totalRecords)} records across ${fmtNum(uniqueAircraft)} aircraft.`
+        : "This selection is too small to judge cleanly.",
+    },
+    {
+      icon: "⏱",
+      title: "Traffic rhythm",
+      detail: topHour
+        ? `The busiest hour is ${String(topHour.hour).padStart(2, "0")}:00.`
+        : "The selected dataset is too sparse to call a clear peak hour.",
+    },
+    {
+      icon: "✈",
+      title: "Main carrier",
+      detail: topAirline
+        ? `${topAirline.airline} carries the largest share of the current selection.`
+        : "No carrier clearly stands out in this selection.",
+    },
+    {
+      icon: "↟",
+      title: "Altitude shape",
+      detail: topBand
+        ? `The densest altitude band sits around ${topBand.altitude_band}.`
+        : "Altitude data is too thin to summarize cleanly here.",
+    },
+    {
+      icon: "•",
+      title: "Filters",
+      detail: selectedAirline || selectedAirport
+        ? `Filtered to ${selectedAirline || "all airlines"}${selectedAirport ? ` near ${selectedAirport}` : ""}.`
+        : "No extra filter is applied.",
+    },
+    {
+      icon: "≈",
+      title: "Airborne share",
+      detail: airborneShare !== null
+        ? `${airborneShare}% of the loaded rows are airborne.`
+        : "Airborne share is unavailable for this selection.",
+    },
+  ];
 }
 
 function syncFilterLabels(filters) {
@@ -355,6 +535,16 @@ function loadFiltersFromUI() {
   syncFilterLabels(state.filters);
 }
 
+function scheduleLabRender() {
+  window.clearTimeout(labFilterTimer);
+  labFilterTimer = window.setTimeout(() => {
+    if (state.sqliteDb && state.sqliteMode && state.sqliteScope === "day") {
+      state.sqlite = summarizeDbWithFilters(state.sqliteDb, state.filters);
+    }
+    renderAll();
+  }, 120);
+}
+
 function resetFilters() {
   document.getElementById("hourStart").value = 0;
   document.getElementById("hourEnd").value = 23;
@@ -381,7 +571,7 @@ function renderAll() {
   renderHourWeekday(detailed, state.filters);
   renderBands(summary, state.filters);
   renderLeaders(summary);
-  renderInsights(detailed?.insights || []);
+  renderInsights(summary, detailed);
 }
 
 function initControls(monthly) {
@@ -408,6 +598,14 @@ function initControls(monthly) {
   ["hourStart", "hourEnd", "altMin", "altMax", "spdMin", "spdMax"].forEach((id) => {
     document.getElementById(id)?.addEventListener("input", () => {
       loadFiltersFromUI();
+      scheduleLabRender();
+    });
+  });
+
+  ["monthSelect", "airlineFilter", "airportFilterLab"].forEach((id) => {
+    document.getElementById(id)?.addEventListener("change", () => {
+      loadFiltersFromUI();
+      scheduleLabRender();
     });
   });
 }
@@ -415,19 +613,15 @@ function initControls(monthly) {
 async function loadSqliteDay(day) {
   const status = document.getElementById("sqliteStatus");
   status.textContent = "Loading archive...";
+  beginLabLoading("Loading day archive", `Fetching ${day} and rebuilding charts, filters, and trace paths.`);
+  labSelectedTraceKey = null;
   try {
-    const { summary, detailed } = await loadArchiveDb(day, {
+    await flushUi();
+    const archiveDb = await loadArchiveDbRaw(day, {
       initSqlJs,
-      baseDir: "../archives",
+      baseDir: ARCHIVE_BASE_DIR,
     });
-    const res = await fetch(`../archives/flights_${day}.sqlite.gz`);
-    const gzBuffer = await res.arrayBuffer();
-    const buffer = await decompressGzip(gzBuffer);
-    const SQL = await initSqlJs({
-      locateFile: (file) =>
-        `https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.10.2/${file}`,
-    });
-    const archiveDb = new SQL.Database(new Uint8Array(buffer));
+    const { summary, detailed } = summarizeDb(archiveDb);
     const table = archiveDb.exec(
       "SELECT name FROM sqlite_master WHERE type='table' AND name='flight_positions_archive'"
     );
@@ -438,18 +632,25 @@ async function loadSqliteDay(day) {
     state.sqlite = { summary, detailed };
     state.sqliteMode = true;
     state.sqliteScope = "day";
+    labCurrentArchiveDay = day;
     status.textContent = `Loaded ${day} archive (${fmtNum(summary.total_rows)} records).`;
     await hydrateSqliteFilters();
     enableQueryConsole(true);
     renderAll();
+    endLabLoading();
+    void updateLabMapForDb(day, archiveDb);
   } catch (err) {
     console.error(err);
     state.sqliteMode = false;
     state.sqliteScope = "full";
     state.sqliteDb = null;
+    state.sqlite = { summary: state.summary, detailed: state.detailed };
     applyBaseFilterOptions();
-    enableQueryConsole(false);
-    status.textContent = "No archive found for that day.";
+    enableQueryConsole(true);
+    status.textContent = "Using full history (archive unavailable).";
+    renderAll();
+  } finally {
+    if (labLoadingCount > 0) endLabLoading();
   }
 }
 
@@ -467,18 +668,31 @@ function eachDay(start, end) {
 async function loadSqliteRange(startDay, endDay) {
   const status = document.getElementById("sqliteStatus");
   status.textContent = "Loading archives...";
+  beginLabLoading("Loading archive range", `Fetching ${startDay} through ${endDay} and merging the dataset.`);
+  labSelectedTraceKey = null;
   try {
+    await flushUi();
     const days = eachDay(startDay, endDay);
     const results = [];
     const missing = [];
+    const mapRows = [];
     for (const day of days) {
       status.textContent = `Loading ${day}...`;
       try {
-        const item = await loadArchiveDb(day, {
+        const db = await loadArchiveDbRaw(day, {
           initSqlJs,
-          baseDir: "../archives",
+          baseDir: ARCHIVE_BASE_DIR,
         });
+        const item = summarizeDb(db);
         results.push(item);
+        const rows = db.exec(`
+          SELECT icao24, callsign, airline, lat, lon, altitude, velocity, observed_at, nearest_airport
+          FROM flight_positions_archive
+          WHERE lat IS NOT NULL AND lon IS NOT NULL
+          ORDER BY icao24 ASC, observed_at ASC
+          LIMIT 1200
+        `);
+        mapRows.push(...(rows?.[0]?.values || []));
       } catch (err) {
         console.warn(`Archive missing for ${day}`, err);
         missing.push(day);
@@ -499,15 +713,310 @@ async function loadSqliteRange(startDay, endDay) {
     state.sqliteScope = "range";
     state.sqliteDb = null;
     state.rangeDays = days;
+    labCurrentArchiveDay = `${startDay} → ${endDay}`;
     applyRangeFilterOptions(merged);
     enableQueryConsole(true);
     const suffix = missing.length ? ` (${missing.length} missing)` : "";
     status.textContent = `Loaded ${results.length} days (${fmtNum(merged.summary.total_rows)} records)${suffix}.`;
     renderAll();
+    endLabLoading();
+    labArchiveDb = null;
+    renderLabMap(mapRows, `${startDay} → ${endDay}`);
   } catch (err) {
     console.error(err);
     status.textContent = "Range load failed.";
+  } finally {
+    if (labLoadingCount > 0) endLabLoading();
   }
+}
+
+function updateLabMapStatus(text) {
+  const el = document.getElementById("labMapStatus");
+  if (el) el.textContent = text;
+}
+
+function initLabMap() {
+  if (labMap || typeof L === "undefined") return;
+  const mapEl = document.getElementById("labMap");
+  if (!mapEl) return;
+  labMap = L.map(mapEl, {
+    zoomControl: true,
+    attributionControl: false,
+  }).setView([20, 0], 2);
+  labMap.createPane("densityPane");
+  labMap.getPane("densityPane").style.zIndex = 350;
+  labMap.createPane("tracePane");
+  labMap.getPane("tracePane").style.zIndex = 450;
+  labMap.createPane("markerPane");
+  labMap.getPane("markerPane").style.zIndex = 650;
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    maxZoom: 12,
+    minZoom: 2,
+  }).addTo(labMap);
+  labLayer = L.layerGroup().addTo(labMap);
+  labAirportLayer = L.layerGroup().addTo(labMap);
+  labTraceLayer = L.layerGroup().addTo(labMap);
+  labClusterLayer = L.layerGroup().addTo(labMap);
+  L.control.scale({ imperial: false }).addTo(labMap);
+  labMap.on("click", () => {
+    labSelectedTraceKey = null;
+    labTraceLayer?.clearLayers();
+  });
+  const toggle = document.getElementById("labDensityToggle");
+  toggle?.addEventListener("click", () => {
+    labDensityVisible = !labDensityVisible;
+    toggle.textContent = `Density: ${labDensityVisible ? "On" : "Off"}`;
+    if (!labMap || !labClusterLayer) return;
+    if (labDensityVisible) {
+      labMap.addLayer(labClusterLayer);
+      if (labLastRows.length && labLastDay) {
+        renderLabMap(labLastRows, labLastDay);
+      }
+    } else {
+      labMap.removeLayer(labClusterLayer);
+    }
+  });
+}
+
+function clearLabMapLayers() {
+  labLayer?.clearLayers();
+  labAirportLayer?.clearLayers();
+  labTraceLayer?.clearLayers();
+  labClusterLayer?.clearLayers();
+}
+
+function renderLabMap(rows, day) {
+  initLabMap();
+  if (!labLayer) return;
+  clearLabMapLayers();
+  labTraceIndex = new Map();
+  const bounds = [];
+  const airportClusters = new Map();
+  const markers = [];
+  const trailsByFlight = new Map();
+
+  rows.forEach((row, index) => {
+    const [icao, callsign, airline, lat, lon, altitude, velocity, observed, airport] = row;
+    const latNum = Number(lat);
+    const lonNum = Number(lon);
+    if (!Number.isFinite(latNum) || !Number.isFinite(lonNum)) return;
+    const marker = L.circleMarker([latNum, lonNum], {
+      radius: 7,
+      fillColor: "#22d3ee",
+      color: "#ebffe2",
+      weight: 2,
+      opacity: 0.95,
+      fillOpacity: 1,
+      pane: "markerPane",
+    });
+    const label = [callsign, airline, icao].filter(Boolean).join(" | ");
+    marker.bindPopup(
+      `<strong>${label || icao || "Unknown"}</strong><br/>${new Date(observed).toLocaleString()}<br/>${Math.round(
+        altitude || 0
+      )}m - ${Math.round(velocity || 0)}m/s`
+    );
+    const trailKey = icao || callsign || `flight-${index}`;
+    marker.on("click", () => highlightLabTrace(trailKey));
+    marker.addTo(labLayer);
+    markers.push(marker);
+    bounds.push([latNum, lonNum]);
+
+    const trail = trailsByFlight.get(trailKey) || [];
+    trail.push({
+      lat: latNum,
+      lon: lonNum,
+      observed: observed ? Date.parse(observed) || index : index,
+    });
+    trailsByFlight.set(trailKey, trail);
+
+    if (airport && !isUnknownLabel(airport)) {
+      const cluster = airportClusters.get(airport) || { count: 0, latSum: 0, lonSum: 0 };
+      cluster.count += 1;
+      cluster.latSum += latNum;
+      cluster.lonSum += lonNum;
+      airportClusters.set(airport, cluster);
+    }
+  });
+
+  if (labDensityVisible) {
+    airportClusters.forEach((cluster, airport) => {
+      const latAvg = cluster.latSum / cluster.count;
+      const lonAvg = cluster.lonSum / cluster.count;
+      addHeatBlob(labClusterLayer, latAvg, lonAvg, cluster.count, airport);
+    });
+  }
+  if (labAirportLayer) {
+    airportClusters.forEach((cluster, airport) => {
+      const latAvg = cluster.latSum / cluster.count;
+      const lonAvg = cluster.lonSum / cluster.count;
+      addAirportMarker(labAirportLayer, latAvg, lonAvg, `${airport} airport`);
+    });
+  }
+
+  trailsByFlight.forEach((trail, key) => {
+    const points = trail
+      .slice()
+      .sort((a, b) => a.observed - b.observed)
+      .map(({ lat, lon }) => [lat, lon]);
+    labTraceIndex.set(key, points);
+  });
+
+  if (labSelectedTraceKey && labTraceIndex.has(labSelectedTraceKey)) {
+    drawRoute(labTraceLayer, labTraceIndex.get(labSelectedTraceKey), "#38bdf8");
+  }
+
+  markers.forEach((marker) => marker.bringToFront?.());
+
+  if (bounds.length && labMap) {
+    labMap.fitBounds(bounds, { padding: [60, 60], maxZoom: 7 });
+  }
+  updateLabMapStatus(`Map: ${rows.length} positions - ${day}`);
+  labLastRows = rows;
+  labLastDay = day;
+}
+
+async function fetchLabArchiveDb(day) {
+  if (!day) return null;
+  if (labArchiveCache.has(day)) return labArchiveCache.get(day);
+  const db = await loadArchiveDbRaw(day, { initSqlJs, baseDir: ARCHIVE_BASE_DIR });
+  labArchiveCache.set(day, db);
+  return db;
+}
+
+async function updateLabMapForDb(day, db) {
+  if (!day || !db) {
+    clearLabMapLayers();
+    updateLabMapStatus("No archive loaded.");
+    return;
+  }
+  labArchiveDb = db;
+  labCurrentArchiveDay = day;
+  const res = db.exec(`
+    SELECT icao24, callsign, airline, lat, lon, altitude, velocity, observed_at, nearest_airport
+    FROM flight_positions_archive
+    WHERE lat IS NOT NULL AND lon IS NOT NULL
+    ORDER BY icao24 ASC, observed_at ASC
+    LIMIT 1200
+  `);
+  labLastRows = res?.[0]?.values || [];
+  labLastDay = day;
+  renderLabMap(labLastRows, day);
+}
+
+async function updateLabMapForRange(day) {
+  if (!day) return;
+  try {
+    const db = await fetchLabArchiveDb(day);
+    await updateLabMapForDb(day, db);
+    updateLabMapStatus(`Map preview based on ${day}`);
+  } catch (err) {
+    console.warn("Range map load failed", err);
+    updateLabMapStatus("Unable to build map for range.");
+  }
+}
+
+function highlightLabTrace(icao) {
+  if (!labTraceLayer || !icao) return;
+  labSelectedTraceKey = icao;
+  labTraceLayer.clearLayers();
+  const indexed = labTraceIndex.get(icao);
+  if (indexed?.length >= 2) {
+    drawRoute(labTraceLayer, indexed, "#38bdf8");
+    return;
+  }
+  if (!labArchiveDb) return;
+  const res = labArchiveDb.exec(
+    "SELECT lat, lon FROM flight_positions_archive WHERE icao24 = ? AND lat IS NOT NULL AND lon IS NOT NULL ORDER BY observed_at ASC",
+    [icao]
+  );
+  const points = (res?.[0]?.values || [])
+    .map(([lat, lon]) => [Number(lat), Number(lon)])
+    .filter(([lat, lon]) => Number.isFinite(lat) && Number.isFinite(lon));
+  if (points.length < 2) return;
+  drawRoute(labTraceLayer, points, "#38bdf8");
+}
+
+function drawRoute(layer, points, color) {
+  if (!layer || !Array.isArray(points) || points.length < 2) return;
+  const route = points
+    .map((point) => [Number(point[0]), Number(point[1])])
+    .filter(([lat, lon]) => Number.isFinite(lat) && Number.isFinite(lon));
+  if (route.length < 2) return;
+  L.polyline(route, {
+    color: "rgba(8, 15, 24, 0.95)",
+    weight: 6,
+    opacity: 0.8,
+    lineCap: "round",
+    lineJoin: "round",
+    smoothFactor: 1.25,
+    pane: "tracePane",
+  }).addTo(layer);
+  L.polyline(route, {
+    color,
+    weight: 3,
+    opacity: 0.95,
+    lineCap: "round",
+    lineJoin: "round",
+    smoothFactor: 1.25,
+    pane: "tracePane",
+  }).addTo(layer);
+  const start = route[0];
+  const end = route[route.length - 1];
+  L.circleMarker(start, {
+    radius: 3.5,
+    color: "#0d141d",
+    fillColor: "#00e639",
+    fillOpacity: 1,
+    weight: 1,
+    pane: "tracePane",
+  }).addTo(layer);
+  L.circleMarker(end, {
+    radius: 3.5,
+    color: "#0d141d",
+    fillColor: "#fbbc00",
+    fillOpacity: 1,
+    weight: 1,
+    pane: "tracePane",
+  }).addTo(layer);
+}
+
+function addHeatBlob(layer, lat, lon, count, label, pane = "densityPane") {
+  const base = Math.min(26000, Math.max(4000, count * 140));
+  const rings = [
+    { radius: base * 1.35, color: "rgba(239,68,68,0.12)", fill: "rgba(239,68,68,0.08)", opacity: 0.08, fillOpacity: 0.04 },
+    { radius: base * 0.9, color: "rgba(251,113,133,0.24)", fill: "rgba(251,113,133,0.16)", opacity: 0.16, fillOpacity: 0.1 },
+    { radius: base * 0.45, color: "rgba(255,255,255,0.26)", fill: "rgba(255,99,99,0.42)", opacity: 0.34, fillOpacity: 0.24 },
+  ];
+  rings.forEach((ring, idx) => {
+    L.circle([lat, lon], {
+      radius: ring.radius,
+      weight: 1,
+      color: ring.color,
+      fillColor: ring.fill,
+      fillOpacity: ring.fillOpacity,
+      opacity: ring.opacity,
+      pane,
+      interactive: false,
+      className: idx === 2 ? "density-heat-core" : "density-heat-ring",
+    })
+      .bindTooltip(`${label} | ${count} pts`, { direction: "top", permanent: false })
+      .addTo(layer);
+  });
+}
+
+function addAirportMarker(layer, lat, lon, label) {
+  if (!layer || !Number.isFinite(lat) || !Number.isFinite(lon)) return;
+  L.circleMarker([lat, lon], {
+    radius: 4,
+    fillColor: "#ffffff",
+    color: "#ef4444",
+    weight: 2,
+    opacity: 0.95,
+    fillOpacity: 1,
+    pane: "markerPane",
+  })
+    .bindTooltip(`${label}`, { direction: "top" })
+    .addTo(layer);
 }
 
 async function hydrateSqliteFilters() {
@@ -641,16 +1150,23 @@ function initSqliteControls() {
     loadSqliteRange(startDay, endDay);
   });
 
-  clearBtn.addEventListener("click", () => {
+  clearBtn.addEventListener("click", async () => {
+    beginLabLoading("Restoring full history", "Rebuilding the lab view from the full dataset.");
+    await flushUi();
     state.sqliteMode = false;
     state.sqliteScope = "full";
-    state.sqliteDb = buildTempDbFromJson();
+    state.sqliteDb = null;
     state.rangeDays = [];
     applyBaseFilterOptions();
     enableQueryConsole(true);
     status.textContent = "Using full history.";
     renderAll();
+    clearLabMapLayers();
+    updateLabMapStatus("Map disabled in full history view.");
+    window.setTimeout(() => endLabLoading(), 0);
   });
+
+  loadSqliteDay(defaultDay);
 }
 
 function enableQueryConsole(enabled) {
@@ -692,12 +1208,24 @@ async function runSqlQuery(query, resultsEl, statusEl) {
       renderSqlResults(res, resultsEl);
       return;
     }
+    if (state.sqliteScope === "full") {
+      if (statusEl) statusEl.textContent = "Preparing full-history query database...";
+      beginLabLoading("Preparing SQL database", "Building the queryable database from the full history summary.");
+      await flushUi();
+      state.sqliteDb = buildTempDbFromJson();
+      endLabLoading();
+      if (state.sqliteDb) {
+        const res = state.sqliteDb.exec(query);
+        renderSqlResults(res, resultsEl);
+        return;
+      }
+    }
     if (state.sqliteScope === "range" && state.rangeDays.length) {
       const rows = [];
       let columns = null;
       for (const day of state.rangeDays) {
         try {
-          const db = await loadArchiveDbRaw(day, { initSqlJs, baseDir: "../archives" });
+          const db = await loadArchiveDbRaw(day, { initSqlJs, baseDir: ARCHIVE_BASE_DIR });
           const res = db.exec(query);
           if (res.length) {
             if (!columns) columns = res[0].columns;
@@ -847,12 +1375,16 @@ function buildTempDbFromJson() {
       FROM flight_positions
       WHERE nearest_airport IS NOT NULL
       GROUP BY nearest_airport;
+    CREATE VIEW flight_positions_archive AS
+      SELECT * FROM flight_positions;
   `);
 
   return db;
 }
 
 async function init() {
+  beginLabLoading("Loading history lab", "Fetching datasets and rebuilding the workspace.");
+  await flushUi();
   const [summary, monthly, detailed, airportCounts] = await Promise.all([
     fetchJson("data/historical_summary.json"),
     fetchJson("data/historical_monthly.json"),
@@ -869,7 +1401,7 @@ async function init() {
     locateFile: (file) =>
       `https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.10.2/${file}`,
   });
-  state.sqliteDb = buildTempDbFromJson();
+  state.sqliteDb = null;
 
   initControls(state.monthly);
   initSqliteControls();
@@ -879,6 +1411,7 @@ async function init() {
   loadFiltersFromUI();
   updateLabel("monthChip", "All Months");
   renderAll();
+  setLabLoading(false);
 }
 
 init();

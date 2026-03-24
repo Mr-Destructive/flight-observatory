@@ -2,6 +2,17 @@ const REFRESH_INTERVAL = 60000; // 60 seconds
 const STALE_THRESHOLD = 30 * 60000; // 30 minutes
 let currentAirportFilter = "";
 let charts = new Map();
+let liveMap;
+let liveFlightLayer;
+let liveAirportLayer;
+let liveDensityLayer;
+let liveTraceLayer;
+const liveTrails = new Map();
+let airportFilterTimer;
+let liveDensityVisible = true;
+let lastLiveFlights = [];
+let lastLiveSummary = null;
+let liveSelectedTraceKey = null;
 
 // ============================================================================
 // Data Fetching
@@ -129,7 +140,7 @@ function renderMetrics(summary, flights) {
 
   const corridorCounts = new Map();
   for (const f of flights) {
-    if (!f.airport || typeof f.altitude !== "number") continue;
+    if (!f.airport || isUnknownLabel(f.airport) || typeof f.altitude !== "number") continue;
     const band = Math.floor(f.altitude / 1000) * 1000;
     const key = `${f.airport} @ ${band}m`;
     corridorCounts.set(key, (corridorCounts.get(key) || 0) + 1);
@@ -155,7 +166,7 @@ function renderMetrics(summary, flights) {
     },
     {
       label: "Busy Corridor",
-      value: topCorridor ? topCorridor[0] : "--",
+      value: topCorridor ? cleanLabel(topCorridor[0], "--") : "--",
       color: "--accent-pink",
     },
   ];
@@ -186,6 +197,52 @@ function formatNumber(val) {
     return val.toFixed(1);
   }
   return String(val);
+}
+
+function escapeHtml(value) {
+  return String(value ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
+function isUnknownLabel(value) {
+  const text = String(value ?? "").trim().toLowerCase();
+  return !text || text === "unknown" || text === "unkonw" || text === "n/a" || text === "na" || text === "none";
+}
+
+function cleanLabel(value, fallback = "--") {
+  return isUnknownLabel(value) ? fallback : String(value);
+}
+
+function buildSnapshotSummary(flights, generatedAt) {
+  const altitudes = (flights || []).map((r) => r.altitude).filter((v) => typeof v === "number");
+  const speeds = (flights || []).map((r) => r.velocity).filter((v) => typeof v === "number");
+  return {
+    total_flights: flights.length,
+    unique_aircraft: new Set(flights.map((r) => r.icao24).filter(Boolean)).size,
+    unique_airlines: new Set(flights.map((r) => r.airline).filter(Boolean)).size,
+    unique_airports: new Set(flights.map((r) => r.airport).filter(Boolean)).size,
+    airborne: flights.filter((r) => !r.on_ground).length,
+    on_ground: flights.filter((r) => r.on_ground).length,
+    altitude_avg: altitudes.length ? altitudes.reduce((a, b) => a + b, 0) / altitudes.length : null,
+    altitude_median: computeMedian(altitudes),
+    speed_avg: speeds.length ? speeds.reduce((a, b) => a + b, 0) / speeds.length : null,
+    speed_median: computeMedian(speeds),
+    generated_at: generatedAt || new Date().toISOString(),
+  };
+}
+
+function filterFlightsByAirport(flights, filter) {
+  const query = (filter || "").trim().toUpperCase();
+  if (!query) return flights;
+  return flights.filter((flight) => {
+    const airport = String(flight.airport || "").toUpperCase();
+    const nearest = String(flight.nearest_airport || "").toUpperCase();
+    return airport.includes(query) || nearest.includes(query);
+  });
 }
 
 // ============================================================================
@@ -234,24 +291,26 @@ function createChart(canvasId, type, labels, data, label, color, options = {}) {
       plugins: {
         legend: { display: false },
         tooltip: {
-          backgroundColor: "rgba(15, 23, 42, 0.95)",
-          titleColor: "#f3f4f6",
-          bodyColor: "#9ca3af",
-          borderColor: "rgba(255, 255, 255, 0.1)",
+          backgroundColor: "rgba(13, 20, 29, 0.96)",
+          titleColor: "#dce3f0",
+          bodyColor: "#b9ccb2",
+          borderColor: "rgba(0, 218, 243, 0.2)",
           borderWidth: 1,
-          padding: 10,
+          padding: 12,
           displayColors: false,
+          titleFont: { family: "'Space Grotesk', 'Inter', sans-serif", size: 11 },
+          bodyFont: { family: "'Space Grotesk', 'Inter', sans-serif", size: 11 },
         },
       },
       interaction: { mode: "index", intersect: false },
       scales: {
         x: {
-          ticks: { color: "#6b7280", maxRotation: 0 },
-          grid: { color: "rgba(255, 255, 255, 0.05)", drawBorder: false },
+          ticks: { color: "#84967e", maxRotation: 0, font: { family: "'Space Grotesk', 'Inter', sans-serif", size: 10 } },
+          grid: { color: "rgba(148, 163, 184, 0.06)", drawBorder: false },
         },
         y: {
-          ticks: { color: "#6b7280" },
-          grid: { color: "rgba(255, 255, 255, 0.05)", drawBorder: false },
+          ticks: { color: "#84967e", font: { family: "'Space Grotesk', 'Inter', sans-serif", size: 10 } },
+          grid: { color: "rgba(148, 163, 184, 0.06)", drawBorder: false },
         },
       },
       ...options,
@@ -279,7 +338,14 @@ function renderTable(elementId, rows, columns) {
   const body = rows
     .map(
       (r) =>
-        `<tr>${columns.map((c) => `<td>${formatNumber(r[c])}</td>`).join("")}</tr>`
+        `<tr>${columns
+          .map((c) => {
+            if (c === "airline") {
+              return `<td>${window.AirlineLogos?.render ? window.AirlineLogos.render(r[c]) : escapeHtml(formatNumber(r[c]))}</td>`;
+            }
+            return `<td>${escapeHtml(formatNumber(r[c]))}</td>`;
+          })
+          .join("")}</tr>`
     )
     .join("");
 
@@ -329,12 +395,266 @@ function computeHeadingBins(rows) {
   return directions.map((d) => ({ direction: d, count: bins.get(d) || 0 }));
 }
 
+function normalizeForCharts(items = []) {
+  return items
+    .map(([label, count]) => {
+      const normalized = (label || "unknown").toString();
+      const isUnknown = normalized.toLowerCase() === "unknown";
+      const chartValue = isUnknown ? Math.max(1, Math.round(count * 0.15)) : count;
+      return { label: normalized, count, chartValue, isUnknown };
+    })
+    .sort((a, b) => {
+      if (a.isUnknown && !b.isUnknown) return 1;
+      if (!a.isUnknown && b.isUnknown) return -1;
+      return b.chartValue - a.chartValue;
+    });
+}
+
+function updateLiveMapStatus(text) {
+  const el = document.getElementById("liveMapStatus");
+  if (el) el.textContent = text;
+}
+
+function drawRoute(layer, points, color) {
+  if (!layer || !Array.isArray(points) || points.length < 2) return;
+  const route = points
+    .map((point) => [Number(point[0]), Number(point[1])])
+    .filter(([lat, lon]) => Number.isFinite(lat) && Number.isFinite(lon));
+  if (route.length < 2) return;
+
+  L.polyline(route, {
+    color: "rgba(8, 15, 24, 0.95)",
+    weight: 6,
+    opacity: 0.8,
+    lineCap: "round",
+    lineJoin: "round",
+    smoothFactor: 1.25,
+    pane: "tracePane",
+  }).addTo(layer);
+  L.polyline(route, {
+    color,
+    weight: 3,
+    opacity: 0.95,
+    lineCap: "round",
+    lineJoin: "round",
+    smoothFactor: 1.25,
+    pane: "tracePane",
+  }).addTo(layer);
+
+  const start = route[0];
+  const end = route[route.length - 1];
+  L.circleMarker(start, {
+    radius: 3.5,
+    color: "#0d141d",
+    fillColor: "#00e639",
+    fillOpacity: 1,
+    weight: 1,
+    pane: "tracePane",
+  }).addTo(layer);
+  L.circleMarker(end, {
+    radius: 3.5,
+    color: "#0d141d",
+    fillColor: "#fbbc00",
+    fillOpacity: 1,
+    weight: 1,
+    pane: "tracePane",
+  }).addTo(layer);
+}
+
+function addHeatBlob(layer, lat, lon, count, label, pane = "densityPane") {
+  const base = Math.min(26000, Math.max(4000, count * 140));
+  const rings = [
+    { radius: base * 1.35, color: "rgba(239,68,68,0.12)", fill: "rgba(239,68,68,0.08)", opacity: 0.08, fillOpacity: 0.04 },
+    { radius: base * 0.9, color: "rgba(251,113,133,0.24)", fill: "rgba(251,113,133,0.16)", opacity: 0.16, fillOpacity: 0.1 },
+    { radius: base * 0.45, color: "rgba(255,255,255,0.26)", fill: "rgba(255,99,99,0.42)", opacity: 0.34, fillOpacity: 0.24 },
+  ];
+  rings.forEach((ring, idx) => {
+    L.circle([lat, lon], {
+      radius: ring.radius,
+      weight: 1,
+      color: ring.color,
+      fillColor: ring.fill,
+      fillOpacity: ring.fillOpacity,
+      opacity: ring.opacity,
+      pane,
+      interactive: false,
+      className: idx === 2 ? "density-heat-core" : "density-heat-ring",
+    })
+      .bindTooltip(`${label} | ${count} flights`, { direction: "top", permanent: false })
+      .addTo(layer);
+  });
+}
+
+function addAirportMarker(layer, lat, lon, label) {
+  if (!layer || !Number.isFinite(lat) || !Number.isFinite(lon)) return;
+  L.circleMarker([lat, lon], {
+    radius: 4,
+    fillColor: "#ffffff",
+    color: "#ef4444",
+    weight: 2,
+    opacity: 0.95,
+    fillOpacity: 1,
+    pane: "markerPane",
+  })
+    .bindTooltip(`${label}`, { direction: "top" })
+    .addTo(layer);
+}
+
+function highlightLiveTrace(key) {
+  if (!liveTraceLayer) return;
+  liveSelectedTraceKey = key || null;
+  liveTraceLayer.clearLayers();
+  const trail = liveTrails.get(key);
+  if (!trail || trail.length < 2) return;
+  drawRoute(liveTraceLayer, trail.slice(-20), "#67e8f9");
+}
+
+function initLiveMap() {
+  if (liveMap || typeof L === "undefined") return;
+  const mapEl = document.getElementById("liveMap");
+  if (!mapEl) return;
+  liveMap = L.map(mapEl, {
+    zoomControl: true,
+    attributionControl: false,
+  }).setView([20, 0], 2);
+  liveMap.createPane("densityPane");
+  liveMap.getPane("densityPane").style.zIndex = 350;
+  liveMap.createPane("tracePane");
+  liveMap.getPane("tracePane").style.zIndex = 450;
+  liveMap.createPane("markerPane");
+  liveMap.getPane("markerPane").style.zIndex = 650;
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    maxZoom: 12,
+    minZoom: 2,
+  }).addTo(liveMap);
+  liveFlightLayer = L.layerGroup().addTo(liveMap);
+  liveAirportLayer = L.layerGroup().addTo(liveMap);
+  liveDensityLayer = L.layerGroup().addTo(liveMap);
+  liveTraceLayer = L.layerGroup().addTo(liveMap);
+  L.control.scale({ imperial: false }).addTo(liveMap);
+  liveMap.on("click", () => {
+    liveSelectedTraceKey = null;
+    liveTraceLayer?.clearLayers();
+  });
+  const toggle = document.getElementById("liveDensityToggle");
+  toggle?.addEventListener("click", () => {
+    liveDensityVisible = !liveDensityVisible;
+    toggle.textContent = `Density: ${liveDensityVisible ? "On" : "Off"}`;
+    if (!liveMap || !liveDensityLayer) return;
+    if (liveDensityVisible) {
+      liveMap.addLayer(liveDensityLayer);
+    } else {
+      liveMap.removeLayer(liveDensityLayer);
+    }
+    if (lastLiveFlights.length) {
+      updateLiveMap(lastLiveFlights, lastLiveSummary);
+    }
+  });
+}
+
+function updateLiveMap(flights, summary) {
+  initLiveMap();
+  if (!liveMap || !liveFlightLayer || !Array.isArray(flights)) return;
+  liveFlightLayer.clearLayers();
+  liveAirportLayer && liveAirportLayer.clearLayers();
+  liveDensityLayer && liveDensityLayer.clearLayers();
+  liveTraceLayer && liveTraceLayer.clearLayers();
+  const bounds = [];
+  const airportClusters = new Map();
+  const activeTrails = [];
+  const markers = [];
+
+  flights.forEach((flight, index) => {
+    const lat = Number(flight.lat);
+    const lon = Number(flight.lon);
+    if (!Number.isFinite(lat) || !Number.isFinite(lon)) return;
+    const color = flight.on_ground ? "#fbbc00" : "#00daf3";
+    const marker = L.circleMarker([lat, lon], {
+      radius: 8,
+      fillColor: color,
+      color: "#ebffe2",
+      weight: 2,
+      opacity: 0.95,
+      fillOpacity: 1,
+      pane: "markerPane",
+    });
+    const label = [flight.callsign, flight.airline, flight.icao24].filter(Boolean).join(" | ");
+    marker.bindPopup(
+      `<strong>${label || flight.icao24 || "Unknown"}</strong><br/>${Math.round(flight.altitude || 0)}m - ${Math.round(
+        flight.velocity || 0
+      )}m/s`
+    );
+    marker.on("click", () => {
+      const key = flight.icao24 || flight.callsign || `flight-${index}`;
+      highlightLiveTrace(key);
+    });
+    liveFlightLayer.addLayer(marker);
+    markers.push(marker);
+    bounds.push([lat, lon]);
+
+    const traceKey = flight.icao24 || flight.callsign || `flight-${index}`;
+    const trail = liveTrails.get(traceKey) || [];
+    trail.push([lat, lon]);
+    if (trail.length > 10) trail.shift();
+    liveTrails.set(traceKey, trail);
+    if (trail.length > 1) activeTrails.push(trail.slice());
+
+    const airportName = flight.airport || flight.nearest_airport;
+    if (airportName && !isUnknownLabel(airportName)) {
+      const cluster = airportClusters.get(airportName) || { count: 0, latSum: 0, lonSum: 0 };
+      cluster.count += 1;
+      cluster.latSum += lat;
+      cluster.lonSum += lon;
+      airportClusters.set(airportName, cluster);
+    }
+  });
+
+  if (liveDensityLayer) {
+    liveDensityLayer.clearLayers();
+    if (liveDensityVisible && !liveMap.hasLayer(liveDensityLayer)) {
+      liveMap.addLayer(liveDensityLayer);
+    }
+    if (!liveDensityVisible) {
+      liveMap.removeLayer(liveDensityLayer);
+    }
+  }
+  if (liveDensityVisible && liveDensityLayer) {
+    airportClusters.forEach((cluster, airport) => {
+      const lat = cluster.latSum / cluster.count;
+      const lon = cluster.lonSum / cluster.count;
+      addHeatBlob(liveDensityLayer, lat, lon, cluster.count, airport);
+    });
+  }
+  if (liveAirportLayer) {
+    airportClusters.forEach((cluster, airport) => {
+      const lat = cluster.latSum / cluster.count;
+      const lon = cluster.lonSum / cluster.count;
+      addAirportMarker(liveAirportLayer, lat, lon, `${airport} airport`);
+    });
+  }
+
+  if (liveSelectedTraceKey && liveTrails.has(liveSelectedTraceKey)) {
+    drawRoute(liveTraceLayer, liveTrails.get(liveSelectedTraceKey), "#67e8f9");
+  }
+
+  markers.forEach((marker) => marker.bringToFront?.());
+
+  if (bounds.length) {
+    liveMap.fitBounds(bounds, { padding: [60, 60], maxZoom: 7 });
+    updateLiveMapStatus(`Live: ${flights.length} aircraft - ${summary?.total_flights || flights.length} total`);
+  } else {
+    liveMap.setView([20, 0], 2);
+    updateLiveMapStatus("No live aircraft available right now.");
+  }
+}
+
 // ============================================================================
 // Main Load Function
 // ============================================================================
 
 async function loadDashboard() {
   destroyCharts();
+  await window.AirlineLogos?.load?.();
 
   const [latest, snapshot, minuteTraffic] = await Promise.all([
     fetchJson("./data/latest.json", true),
@@ -343,34 +663,10 @@ async function loadDashboard() {
   ]);
 
   const flights = latest?.flights || snapshot || [];
-
-  const altitudes = flights.map((r) => r.altitude).filter((v) => typeof v === "number");
-  const speeds = flights.map((r) => r.velocity).filter((v) => typeof v === "number");
-
-  const summary =
-    latest?.summary ||
-    (snapshot && snapshot.length
-      ? {
-          total_flights: snapshot.length,
-          unique_aircraft: new Set(snapshot.map((r) => r.icao24)).size,
-          unique_airlines: new Set(snapshot.map((r) => r.airline)).size,
-          unique_airports: new Set(snapshot.map((r) => r.airport)).size,
-          airborne: snapshot.filter((r) => !r.on_ground).length,
-          on_ground: snapshot.filter((r) => r.on_ground).length,
-          altitude_avg: altitudes.length ? altitudes.reduce((a, b) => a + b, 0) / altitudes.length : null,
-          altitude_median: computeMedian(altitudes),
-          speed_avg: speeds.length ? speeds.reduce((a, b) => a + b, 0) / speeds.length : null,
-          speed_median: computeMedian(speeds),
-          generated_at: new Date().toISOString(),
-        }
-      : null);
-
-  const filtered = currentAirportFilter
-    ? flights.filter(
-        (f) =>
-          (f.airport || "").toUpperCase() === currentAirportFilter.toUpperCase()
-      )
-    : flights;
+  const filtered = filterFlightsByAirport(flights, currentAirportFilter);
+  const summary = buildSnapshotSummary(filtered, latest?.summary?.generated_at);
+  lastLiveFlights = filtered;
+  lastLiveSummary = summary;
 
   // Update timestamp
   const lastUpdatedEl = document.getElementById("lastUpdated");
@@ -383,7 +679,7 @@ async function loadDashboard() {
   }
 
   // Render metrics
-  renderMetrics(summary, flights);
+  renderMetrics(summary, filtered);
 
   // Build charts
   if (minuteTraffic && Array.isArray(minuteTraffic) && minuteTraffic.length > 0) {
@@ -393,19 +689,19 @@ async function loadDashboard() {
       minuteTraffic.map((d) => new Date(d.minute).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })),
       minuteTraffic.map((d) => d.flights),
       "Flights",
-      "rgb(6, 182, 212)"
+      "rgb(34,211,238)"
     );
   }
 
   if (flights.length > 0) {
-    const topAirports = computeTopN(flights, "airport", 12);
+    const topAirportsChart = normalizeForCharts(computeTopN(filtered, "airport", 12));
     createChart(
       "topAirports",
       "bar",
-      topAirports.map((t) => t[0]),
-      topAirports.map((t) => t[1]),
+      topAirportsChart.map((t) => t.label),
+      topAirportsChart.map((t) => t.chartValue),
       "Flights",
-      "rgb(249, 115, 22)"
+      "rgb(245,158,11)"
     );
 
     const altBins = computeBins(filtered, "altitude", 1000);
@@ -415,7 +711,7 @@ async function loadDashboard() {
       altBins.map((d) => `${d.bin}m`),
       altBins.map((d) => d.count),
       "Flights",
-      "rgb(168, 85, 247)"
+      "rgb(167,139,250)"
     );
 
     const speedBins = computeBins(filtered, "velocity", 50);
@@ -425,17 +721,17 @@ async function loadDashboard() {
       speedBins.map((d) => `${d.bin}m/s`),
       speedBins.map((d) => d.count),
       "Flights",
-      "rgb(236, 72, 153)"
+      "rgb(251,113,133)"
     );
 
-    const topAirlines = computeTopN(filtered, "airline", 12);
+    const topAirlinesChart = normalizeForCharts(computeTopN(filtered, "airline", 12));
     createChart(
       "topAirlines",
       "bar",
-      topAirlines.map((t) => t[0]),
-      topAirlines.map((t) => t[1]),
+      topAirlinesChart.map((t) => t.label),
+      topAirlinesChart.map((t) => t.chartValue),
       "Flights",
-      "rgb(16, 185, 129)"
+      "rgb(52,211,153)"
     );
 
     const headingBins = computeHeadingBins(filtered);
@@ -445,7 +741,7 @@ async function loadDashboard() {
       headingBins.map((d) => d.direction),
       headingBins.map((d) => d.count),
       "Flights",
-      "rgb(59, 130, 246)"
+      "rgb(245,158,11)"
     );
   }
 
@@ -465,13 +761,15 @@ async function loadDashboard() {
       ["airline", "flights"]
     );
 
-    const topCountries = computeTopN(flights, "origin_country", 15);
+    const topCountries = computeTopN(filtered, "origin_country", 15);
     renderTable(
       "countryTable",
       topCountries.map(([c, n]) => ({ country: c, flights: n })),
       ["country", "flights"]
     );
   }
+
+  updateLiveMap(filtered, summary);
 }
 
 function computeMedian(arr) {
@@ -487,24 +785,37 @@ function computeMedian(arr) {
 // Event Listeners & Initialization
 // ============================================================================
 
-document.getElementById("applyFilter").addEventListener("click", () => {
-  currentAirportFilter = document
-    .getElementById("airportFilter")
-    .value.trim()
-    .toUpperCase();
+function applyAirportFilter() {
+  const input = document.getElementById("airportFilter");
+  currentAirportFilter = input ? input.value.trim() : "";
+  const hint = document.getElementById("airportFilterHint");
+  if (hint) {
+    hint.textContent = currentAirportFilter
+      ? `Showing matches for ${currentAirportFilter.toUpperCase()}.`
+      : "Leave blank to show all airports.";
+  }
   loadDashboard();
-});
+}
+
+document.getElementById("applyFilter").addEventListener("click", applyAirportFilter);
 
 document.getElementById("clearFilter").addEventListener("click", () => {
   currentAirportFilter = "";
   document.getElementById("airportFilter").value = "";
+  const hint = document.getElementById("airportFilterHint");
+  if (hint) hint.textContent = "Leave blank to show all airports.";
   loadDashboard();
 });
 
 document.getElementById("airportFilter").addEventListener("keypress", (e) => {
   if (e.key === "Enter") {
-    document.getElementById("applyFilter").click();
+    applyAirportFilter();
   }
+});
+
+document.getElementById("airportFilter").addEventListener("input", () => {
+  window.clearTimeout(airportFilterTimer);
+  airportFilterTimer = window.setTimeout(applyAirportFilter, 180);
 });
 
 // Initial load and periodic refresh

@@ -1,10 +1,33 @@
+import { loadArchiveDbRaw, summarizeDb } from "./history-archive.mjs";
+
 const charts = new Map();
-Chart.defaults.color = "#cbd5f5";
+Chart.defaults.color = "#dce3f0";
 Chart.defaults.font = {
-  family: "IBM Plex Sans, Inter, system-ui, sans-serif",
+  family: "Space Grotesk, Inter, system-ui, sans-serif",
   size: 11,
 };
 Chart.defaults.plugins.legend.labels.usePointStyle = true;
+
+const sqlArchiveLoader = () =>
+  initSqlJs({
+    locateFile: (file) => `https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.10.2/${file}`,
+  });
+const archiveDbCache = new Map();
+let historicalMap;
+let historicalLayer;
+let historicalAirportLayer;
+let historicalTraceLayer;
+let historicalClusterLayer;
+let historicalTraceIndex = new Map();
+let currentArchiveDb = null;
+let historicalDensityVisible = true;
+let historicalLastRows = [];
+let historicalLastDay = null;
+let historicalSelectedTraceKey = null;
+let historicalSummary = null;
+let historicalDetailed = null;
+let historicalSky = null;
+let historicalScopeLabel = "Full history";
 
 async function fetchJson(path) {
   try {
@@ -23,6 +46,12 @@ function createChart(canvasId, type, labels, data, color, yLabel = "", options =
   const canvas = document.getElementById(canvasId);
   if (!canvas) return null;
 
+  const existing = Chart.getChart(canvas) || charts.get(canvasId);
+  if (existing) {
+    existing.destroy();
+    charts.delete(canvasId);
+  }
+
   const hasData = data && data.length > 0 && data.some(v => v !== null && v !== undefined);
   
   if (!hasData) {
@@ -34,6 +63,7 @@ function createChart(canvasId, type, labels, data, color, yLabel = "", options =
   }
 
   const ctx = canvas.getContext("2d");
+  canvas.style.display = "";
   const chart = new Chart(ctx, {
     type,
     data: {
@@ -87,6 +117,15 @@ function createChart(canvasId, type, labels, data, color, yLabel = "", options =
   return chart;
 }
 
+function upsertChart(canvasId, type, labels, data, color, yLabel = "", options = {}) {
+  const existing = charts.get(canvasId);
+  if (existing) {
+    existing.destroy();
+    charts.delete(canvasId);
+  }
+  return createChart(canvasId, type, labels, data, color, yLabel, options);
+}
+
 function formatNumber(val) {
   if (val === null || val === undefined) return "--";
   if (typeof val === "number") {
@@ -96,11 +135,34 @@ function formatNumber(val) {
   return String(val);
 }
 
-function renderInsights(elementId, insights) {
+function escapeHtml(value) {
+  return String(value ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
+function isUnknownLabel(value) {
+  const text = String(value ?? "").trim().toLowerCase();
+  return !text || text === "unknown" || text === "unkonw" || text === "n/a" || text === "na" || text === "none";
+}
+
+function cleanLabel(value, fallback = "--") {
+  return isUnknownLabel(value) ? fallback : String(value);
+}
+
+function renderInsights(elementId, insights, summary, detailed) {
   const el = document.getElementById(elementId);
-  if (!el || !insights?.length) return;
-  
-  el.innerHTML = insights.map(insight => `
+  if (!el) return;
+  const scoped = (insights || []).filter((insight) => {
+    const title = String(insight?.title || "").toLowerCase();
+    const detail = String(insight?.detail || "").toLowerCase();
+    return !title.includes("unknown") && !title.includes("unkonw") && !detail.includes("unknown") && !detail.includes("unkonw");
+  });
+  const finalInsights = scoped.length ? scoped : buildFallbackInsights(summary, detailed);
+  el.innerHTML = finalInsights.map(insight => `
     <article class="insight-card">
       <div class="insight-content">
         <h4>${insight.title}</h4>
@@ -108,6 +170,68 @@ function renderInsights(elementId, insights) {
       </div>
     </article>
   `).join('');
+}
+
+function buildFallbackInsights(summary, detailed) {
+  const hourly = detailed?.hourly_distribution || [];
+  const peak = hourly.reduce((best, h) => (h.count > (best?.count || 0) ? h : best), null);
+  const topAirline = (summary?.top_airlines || []).find((row) => !isUnknownLabel(row?.airline)) || null;
+  const topBand = (summary?.altitude_bins || []).reduce((best, b) => (best === null || b.count > best.count ? b : best), null);
+  const totalRecords = summary?.total_rows || detailed?.metrics?.total_records;
+  const uniqueAircraft = detailed?.unique_aircraft || detailed?.metrics?.unique_aircraft;
+  const airborne = detailed?.metrics?.airborne ?? detailed?.ground_airborne?.airborne;
+  const onGround = detailed?.metrics?.on_ground ?? detailed?.ground_airborne?.on_ground;
+  const airborneShare = typeof airborne === "number" && typeof onGround === "number" && airborne + onGround > 0
+    ? Math.round((airborne / (airborne + onGround)) * 100)
+    : null;
+
+  return [
+    {
+      icon: "•",
+      title: "Current view",
+      detail: `You are looking at ${historicalScopeLabel}.`,
+    },
+    {
+      icon: "✦",
+      title: "Scale",
+      detail: totalRecords && uniqueAircraft
+        ? `${formatNumber(totalRecords)} records across ${formatNumber(uniqueAircraft)} aircraft.`
+        : "This selection is too small to read confidently.",
+    },
+    {
+      icon: "⏱",
+      title: "Traffic rhythm",
+      detail: peak
+        ? `The busiest hour is ${String(peak.hour).padStart(2, "0")}:00.`
+        : "The selected dataset is too sparse to call a clear peak hour.",
+    },
+    {
+      icon: "✈",
+      title: "Main carrier",
+      detail: topAirline
+        ? `${topAirline.airline} carries the largest share of the current selection.`
+        : "No carrier clearly stands out in this selection.",
+    },
+    {
+      icon: "↟",
+      title: "Altitude shape",
+      detail: topBand
+        ? `The densest altitude band sits around ${topBand.altitude_band}.`
+        : "Altitude data is too thin to summarize cleanly here.",
+    },
+    {
+      icon: "•",
+      title: "Filters",
+      detail: "No extra filter is applied on the historical page.",
+    },
+    {
+      icon: "≈",
+      title: "Airborne share",
+      detail: airborneShare !== null
+        ? `${airborneShare}% of the loaded rows are airborne.`
+        : "Airborne share is unavailable for this selection.",
+    },
+  ];
 }
 
 function renderQuickStats(summary, detailed, sky) {
@@ -235,7 +359,13 @@ function renderTable(elementId, rows, columns) {
 
   const header = columns.map(c => `<th>${c.toUpperCase()}</th>`).join("");
   const body = rows.map(r => 
-    `<tr>${columns.map(c => `<td>${formatNumber(r[c])}</td>`).join('')}</tr>`
+    `<tr>${columns.map(c => {
+      if (c === "airline") {
+        const airline = cleanLabel(r[c], "Other");
+        return `<td>${window.AirlineLogos?.render ? window.AirlineLogos.render(airline) : escapeHtml(airline)}</td>`;
+      }
+      return `<td>${escapeHtml(formatNumber(r[c]))}</td>`;
+    }).join('')}</tr>`
   ).join("");
 
   el.innerHTML = `<table><thead><tr>${header}</tr></thead><tbody>${body}</tbody></table>`;
@@ -245,8 +375,13 @@ function renderGroundAirborne(data) {
   if (!data) return;
   const ctx = document.getElementById("groundAirborne");
   if (!ctx) return;
+  const existing = charts.get("groundAirborne");
+  if (existing) {
+    existing.destroy();
+    charts.delete("groundAirborne");
+  }
   
-  new Chart(ctx.getContext("2d"), {
+  const chart = new Chart(ctx.getContext("2d"), {
     type: "doughnut",
     data: {
       labels: ["On Ground", "Airborne"],
@@ -264,9 +399,442 @@ function renderGroundAirborne(data) {
       },
     },
   });
+  charts.set("groundAirborne", chart);
+}
+
+function renderHistoricalPage(summary, detailed, sky, scopeLabel = "Full history") {
+  historicalSummary = summary;
+  historicalDetailed = detailed;
+  historicalSky = sky;
+  historicalScopeLabel = scopeLabel;
+
+  const description = document.getElementById("dataDescription");
+  if (description) {
+    description.textContent = scopeLabel === "Full history"
+      ? "Deep dive into flight patterns and airspace insights."
+      : `Viewing ${scopeLabel.toLowerCase()}.`;
+  }
+  if (summary?.total_rows) {
+    document.getElementById("totalRows").textContent = summary.total_rows.toLocaleString();
+  }
+  document.getElementById("timeSpan").textContent = scopeLabel;
+  if (detailed?.unique_aircraft || detailed?.metrics?.unique_aircraft) {
+    document.getElementById("uniqueAircraft").textContent = formatNumber(
+      detailed.unique_aircraft || detailed.metrics.unique_aircraft,
+    );
+  }
+
+  renderQuickStats(summary, detailed, sky);
+  renderDerivedStats(summary, detailed);
+  renderInsights("insightsContainer", detailed?.insights, summary, detailed);
+
+  if (detailed?.hourly_distribution?.length) {
+    upsertChart(
+      "trafficWave",
+      "line",
+      detailed.hourly_distribution.map((d) => `${d.hour}:00`),
+      detailed.hourly_distribution.map((d) => d.count),
+      "rgb(6, 182, 212)",
+      "Flights"
+    );
+  }
+  if (summary?.altitude_bins?.length) {
+    upsertChart(
+      "altitudeDistribution",
+      "bar",
+      summary.altitude_bins.map((d) => d.altitude_band),
+      summary.altitude_bins.map((d) => d.count),
+      "rgb(168, 85, 247)",
+      "Flights"
+    );
+  }
+  if (summary?.speed_bins?.length) {
+    upsertChart(
+      "speedDistribution",
+      "bar",
+      summary.speed_bins.map((d) => d.speed_band),
+      summary.speed_bins.map((d) => d.count),
+      "rgb(236, 72, 153)",
+      "Flights"
+    );
+  }
+  if (detailed?.weekday_distribution?.length) {
+    upsertChart(
+      "weekdayPattern",
+      "bar",
+      detailed.weekday_distribution.map((d) => d.day),
+      detailed.weekday_distribution.map((d) => d.count),
+      "rgb(139, 92, 246)",
+      "Flights"
+    );
+  }
+  if (detailed?.metrics) {
+    upsertChart(
+      "dataQuality",
+      "bar",
+      ["Altitude", "Speed", "Track", "Position", "Time"],
+      [
+        detailed.metrics.data_completeness_altitude ?? 0,
+        detailed.metrics.data_completeness_speed ?? 0,
+        detailed.metrics.data_completeness_track ?? 0,
+        detailed.metrics.data_completeness_position ?? 0,
+        detailed.metrics.data_completeness_time ?? 0,
+      ],
+      "rgb(251, 146, 60)",
+      "Completeness %"
+    );
+  }
+  if (detailed?.heading_distribution?.length) {
+    upsertChart(
+      "headingDistribution",
+      "bar",
+      detailed.heading_distribution.map((d) => d.direction),
+      detailed.heading_distribution.map((d) => d.count),
+      "rgb(59, 130, 246)",
+      "Flights"
+    );
+  }
+
+  if (detailed?.ground_airborne || detailed?.metrics) {
+    renderGroundAirborne(
+      detailed.ground_airborne || {
+        airborne: detailed.metrics?.airborne || 0,
+        on_ground: detailed.metrics?.on_ground || 0,
+      },
+    );
+  }
+
+  if (sky?.speed_leaderboard?.length) {
+    renderSpeedLeaderboard(sky.speed_leaderboard);
+  } else {
+    const leaderboard = document.getElementById("speedLeaderboard");
+    if (leaderboard) leaderboard.innerHTML = '<div class="hint">No speed records for this selection.</div>';
+  }
+
+  const ghostAircraft = document.getElementById("ghostAircraft");
+  const ghostSightings = document.getElementById("ghostSightings");
+  if (detailed?.ghost_planes) {
+    if (ghostAircraft) ghostAircraft.textContent = formatNumber(detailed.ghost_planes.aircraft);
+    if (ghostSightings) ghostSightings.textContent = formatNumber(detailed.ghost_planes.sightings);
+  } else {
+    if (ghostAircraft) ghostAircraft.textContent = "--";
+    if (ghostSightings) ghostSightings.textContent = "--";
+  }
+
+  if (summary?.top_airlines?.length) {
+    renderTable("topAirlines", summary.top_airlines.slice(0, 15), ["airline", "flights"]);
+  } else {
+    const topAirlines = document.getElementById("topAirlines");
+    if (topAirlines) topAirlines.innerHTML = '<div class="hint">No airline data for this selection.</div>';
+  }
+
+  if (summary?.top_models?.length) {
+    renderTable("topModels", summary.top_models.slice(0, 15), ["model", "flights"]);
+  } else {
+    const topModels = document.getElementById("topModels");
+    if (topModels) topModels.innerHTML = '<div class="hint">Aircraft model data is not available for this selection.</div>';
+  }
+}
+
+function initHistoricalMap() {
+  if (historicalMap || typeof L === "undefined") return;
+  const mapEl = document.getElementById("historicalMap");
+  if (!mapEl) return;
+  historicalMap = L.map(mapEl, {
+    zoomControl: true,
+    attributionControl: false,
+  }).setView([20, 0], 2);
+  historicalMap.createPane("densityPane");
+  historicalMap.getPane("densityPane").style.zIndex = 350;
+  historicalMap.createPane("tracePane");
+  historicalMap.getPane("tracePane").style.zIndex = 450;
+  historicalMap.createPane("markerPane");
+  historicalMap.getPane("markerPane").style.zIndex = 650;
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    maxZoom: 12,
+    minZoom: 2,
+  }).addTo(historicalMap);
+  historicalLayer = L.layerGroup().addTo(historicalMap);
+  historicalAirportLayer = L.layerGroup().addTo(historicalMap);
+  historicalTraceLayer = L.layerGroup().addTo(historicalMap);
+  historicalClusterLayer = L.layerGroup().addTo(historicalMap);
+  L.control.scale({ imperial: false }).addTo(historicalMap);
+  historicalMap.on("click", () => {
+    historicalSelectedTraceKey = null;
+    historicalTraceLayer?.clearLayers();
+  });
+  const toggle = document.getElementById("historicalDensityToggle");
+  toggle?.addEventListener("click", () => {
+    historicalDensityVisible = !historicalDensityVisible;
+    toggle.textContent = `Density: ${historicalDensityVisible ? "On" : "Off"}`;
+    if (!historicalMap || !historicalClusterLayer) return;
+    if (historicalDensityVisible) {
+      historicalMap.addLayer(historicalClusterLayer);
+      if (historicalLastRows.length && historicalLastDay) {
+        renderHistoricalMap(historicalLastRows, historicalLastDay);
+      }
+    } else {
+      historicalMap.removeLayer(historicalClusterLayer);
+    }
+  });
+}
+
+async function getArchiveDb(day) {
+  if (archiveDbCache.has(day)) return archiveDbCache.get(day);
+  const db = await loadArchiveDbRaw(day, {
+    initSqlJs: sqlArchiveLoader,
+    baseDir: "archives",
+  });
+  archiveDbCache.set(day, db);
+  return db;
+}
+
+async function loadHistoricalArchive(day) {
+  if (!day) return;
+  const status = document.getElementById("historicalMapStatus");
+  if (status) status.textContent = `Loading ${day}...`;
+  historicalSelectedTraceKey = null;
+  try {
+    const db = await getArchiveDb(day);
+    currentArchiveDb = db;
+    const res = db.exec(`
+      SELECT icao24, callsign, airline, lat, lon, altitude, velocity, observed_at, nearest_airport
+      FROM flight_positions_archive
+      WHERE lat IS NOT NULL AND lon IS NOT NULL
+      ORDER BY icao24 ASC, observed_at ASC
+      LIMIT 1200
+    `);
+    historicalLastRows = res?.[0]?.values || [];
+    historicalLastDay = day;
+    const selection = summarizeDb(db);
+    const scopedSummary = {
+      ...selection.summary,
+      top_models: selection.summary?.top_models?.length
+        ? selection.summary.top_models
+        : historicalSummary?.top_models || [],
+    };
+    renderHistoricalPage(scopedSummary, selection.detailed, historicalSky || null, `Day archive - ${day}`);
+    renderHistoricalMap(historicalLastRows, day);
+  } catch (err) {
+    console.warn("Archive load failed", err);
+  historicalLayer?.clearLayers();
+  historicalTraceLayer?.clearLayers();
+  historicalClusterLayer?.clearLayers();
+  if (status) status.textContent = `Archive ${day} unavailable`;
+  renderHistoricalPage(historicalSummary, historicalDetailed, historicalSky, "Full history");
+  }
+}
+
+function renderHistoricalMap(rows, day) {
+  initHistoricalMap();
+  if (!historicalLayer) return;
+  historicalLayer.clearLayers();
+  historicalAirportLayer?.clearLayers();
+  historicalTraceLayer?.clearLayers();
+  historicalClusterLayer?.clearLayers();
+  historicalTraceIndex = new Map();
+  const bounds = [];
+  const airportClusters = new Map();
+  const markers = [];
+  const trailsByFlight = new Map();
+
+  rows.forEach((row, index) => {
+    const [icao, callsign, airline, lat, lon, altitude, velocity, observed, airport] = row;
+    const latNum = Number(lat);
+    const lonNum = Number(lon);
+    if (!Number.isFinite(latNum) || !Number.isFinite(lonNum)) return;
+    const marker = L.circleMarker([latNum, lonNum], {
+      radius: 7,
+      fillColor: "#fb7185",
+      color: "#ebffe2",
+      weight: 2,
+      opacity: 0.95,
+      fillOpacity: 1,
+      pane: "markerPane",
+    });
+    const label = [callsign, airline, icao].filter(Boolean).join(" | ");
+    marker.bindPopup(
+      `<strong>${label || icao || "Unknown"}</strong><br/>${new Date(observed).toLocaleString()}<br/>${Math.round(
+        altitude || 0
+      )}m - ${Math.round(velocity || 0)}m/s`
+    );
+    const trailKey = icao || callsign || `flight-${index}`;
+    marker.on("click", () => highlightHistoricalTrace(trailKey));
+    marker.addTo(historicalLayer);
+    markers.push(marker);
+    bounds.push([latNum, lonNum]);
+
+    const trail = trailsByFlight.get(trailKey) || [];
+    trail.push({
+      lat: latNum,
+      lon: lonNum,
+      observed: observed ? Date.parse(observed) || index : index,
+    });
+    trailsByFlight.set(trailKey, trail);
+
+    if (airport && !isUnknownLabel(airport)) {
+      const cluster = airportClusters.get(airport) || { count: 0, latSum: 0, lonSum: 0 };
+      cluster.count += 1;
+      cluster.latSum += latNum;
+      cluster.lonSum += lonNum;
+      airportClusters.set(airport, cluster);
+    }
+  });
+
+  if (historicalDensityVisible) {
+    airportClusters.forEach((cluster, airport) => {
+      const latAvg = cluster.latSum / cluster.count;
+      const lonAvg = cluster.lonSum / cluster.count;
+      addHeatBlob(historicalClusterLayer, latAvg, lonAvg, cluster.count, airport);
+    });
+  }
+  if (historicalAirportLayer) {
+    airportClusters.forEach((cluster, airport) => {
+      const latAvg = cluster.latSum / cluster.count;
+      const lonAvg = cluster.lonSum / cluster.count;
+      addAirportMarker(historicalAirportLayer, latAvg, lonAvg, `${airport} airport`);
+    });
+  }
+
+  trailsByFlight.forEach((trail, key) => {
+    const points = trail
+      .slice()
+      .sort((a, b) => a.observed - b.observed)
+      .map(({ lat, lon }) => [lat, lon]);
+    historicalTraceIndex.set(key, points);
+  });
+
+  if (historicalSelectedTraceKey && historicalTraceIndex.has(historicalSelectedTraceKey)) {
+    drawRoute(historicalTraceLayer, historicalTraceIndex.get(historicalSelectedTraceKey), "#fb7185");
+  }
+
+  markers.forEach((marker) => marker.bringToFront?.());
+
+  if (bounds.length && historicalMap) {
+    historicalMap.fitBounds(bounds, { padding: [60, 60], maxZoom: 7 });
+  }
+  const status = document.getElementById("historicalMapStatus");
+  if (status) status.textContent = `Loaded ${rows.length} points - ${day}`;
+  historicalLastRows = rows;
+  historicalLastDay = day;
+}
+
+function highlightHistoricalTrace(key) {
+  if (!key || !historicalTraceLayer) return;
+  historicalSelectedTraceKey = key;
+  historicalTraceLayer.clearLayers();
+  const indexed = historicalTraceIndex.get(key);
+  if (indexed?.length >= 2) {
+    drawRoute(historicalTraceLayer, indexed, "#fb7185");
+    return;
+  }
+  if (!currentArchiveDb) return;
+  const res = currentArchiveDb.exec(
+    "SELECT lat, lon FROM flight_positions_archive WHERE icao24 = ? AND lat IS NOT NULL AND lon IS NOT NULL ORDER BY observed_at ASC",
+    [key]
+  );
+  const points = (res?.[0]?.values || [])
+    .map(([lat, lon]) => [Number(lat), Number(lon)])
+    .filter(([lat, lon]) => Number.isFinite(lat) && Number.isFinite(lon));
+  if (points.length < 2) return;
+  drawRoute(historicalTraceLayer, points, "#fb7185");
+}
+
+function drawRoute(layer, points, color) {
+  if (!layer || !Array.isArray(points) || points.length < 2) return;
+  const route = points
+    .map((point) => [Number(point[0]), Number(point[1])])
+    .filter(([lat, lon]) => Number.isFinite(lat) && Number.isFinite(lon));
+  if (route.length < 2) return;
+  L.polyline(route, {
+    color: "rgba(8, 15, 24, 0.95)",
+    weight: 6,
+    opacity: 0.8,
+    lineCap: "round",
+    lineJoin: "round",
+    smoothFactor: 1.25,
+    pane: "tracePane",
+  }).addTo(layer);
+  L.polyline(route, {
+    color,
+    weight: 3,
+    opacity: 0.95,
+    lineCap: "round",
+    lineJoin: "round",
+    smoothFactor: 1.25,
+    pane: "tracePane",
+  }).addTo(layer);
+  const start = route[0];
+  const end = route[route.length - 1];
+  L.circleMarker(start, {
+    radius: 3.5,
+    color: "#0d141d",
+    fillColor: "#00e639",
+    fillOpacity: 1,
+    weight: 1,
+    pane: "tracePane",
+  }).addTo(layer);
+  L.circleMarker(end, {
+    radius: 3.5,
+    color: "#0d141d",
+    fillColor: "#fbbc00",
+    fillOpacity: 1,
+    weight: 1,
+    pane: "tracePane",
+  }).addTo(layer);
+}
+
+function addHeatBlob(layer, lat, lon, count, label, pane = "densityPane") {
+  const base = Math.min(26000, Math.max(4000, count * 140));
+  const rings = [
+    { radius: base * 1.35, color: "rgba(239,68,68,0.12)", fill: "rgba(239,68,68,0.08)", opacity: 0.08, fillOpacity: 0.04 },
+    { radius: base * 0.9, color: "rgba(251,113,133,0.24)", fill: "rgba(251,113,133,0.16)", opacity: 0.16, fillOpacity: 0.1 },
+    { radius: base * 0.45, color: "rgba(255,255,255,0.26)", fill: "rgba(255,99,99,0.42)", opacity: 0.34, fillOpacity: 0.24 },
+  ];
+  rings.forEach((ring, idx) => {
+    L.circle([lat, lon], {
+      radius: ring.radius,
+      weight: 1,
+      color: ring.color,
+      fillColor: ring.fill,
+      fillOpacity: ring.fillOpacity,
+      opacity: ring.opacity,
+      pane,
+      interactive: false,
+      className: idx === 2 ? "density-heat-core" : "density-heat-ring",
+    })
+      .bindTooltip(`${label} | ${count} pts`, { direction: "top" })
+      .addTo(layer);
+  });
+}
+
+function addAirportMarker(layer, lat, lon, label) {
+  if (!layer || !Number.isFinite(lat) || !Number.isFinite(lon)) return;
+  L.circleMarker([lat, lon], {
+    radius: 4,
+    fillColor: "#ffffff",
+    color: "#ef4444",
+    weight: 2,
+    opacity: 0.95,
+    fillOpacity: 1,
+    pane: "markerPane",
+  })
+    .bindTooltip(`${label}`, { direction: "top" })
+    .addTo(layer);
+}
+
+function setupHistoricalMapControls() {
+  const input = document.getElementById("historicalMapDate");
+  if (!input) return;
+  const now = new Date();
+  const yesterday = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() - 1));
+  input.value = yesterday.toISOString().slice(0, 10);
+  input.addEventListener("change", () => loadHistoricalArchive(input.value));
+  loadHistoricalArchive(input.value);
 }
 
 async function loadHistoricalDashboard() {
+  await window.AirlineLogos?.load?.();
   const [monthly, summary, detailed, sky] = await Promise.all([
     fetchJson("./data/historical_monthly.json"),
     fetchJson("./data/historical_summary.json"),
@@ -298,14 +866,7 @@ async function loadHistoricalDashboard() {
     }
   }
 
-  // Quick stats
-  renderQuickStats(summary, detailed, sky);
-  renderDerivedStats(summary, detailed);
-
-  // Insights
-  if (detailed?.insights?.length) {
-    renderInsights("insightsContainer", detailed.insights);
-  }
+  renderHistoricalPage(summary, detailed, sky, "Full history");
 
   // Ghost Fleet
   if (detailed?.ghost_planes) {
@@ -406,8 +967,8 @@ async function loadHistoricalDashboard() {
           maintainAspectRatio: false,
           plugins: { legend: { display: true, position: "bottom", labels: { color: "#9ca3af" } } },
           scales: {
-            x: { ticks: { color: "#6b7280" }, grid: { color: "rgba(255, 255, 255, 0.05)" } },
-            y: { ticks: { color: "#6b7280" }, grid: { color: "rgba(255, 255, 255, 0.05)" } },
+            x: { ticks: { color: "#84967e" }, grid: { color: "rgba(148, 163, 184, 0.06)" } },
+            y: { ticks: { color: "#84967e" }, grid: { color: "rgba(148, 163, 184, 0.06)" } },
           },
         },
       });
@@ -547,13 +1108,7 @@ async function loadHistoricalDashboard() {
     );
   }
 
-  // Tables
-  if (summary?.top_airlines?.length) {
-    renderTable("topAirlines", summary.top_airlines.slice(0, 15), ["airline", "flights"]);
-  }
-  if (summary?.top_models?.length) {
-    renderTable("topModels", summary.top_models.slice(0, 15), ["model", "flights"]);
-  }
+  setupHistoricalMapControls();
 }
 
 loadHistoricalDashboard();

@@ -46,6 +46,14 @@ export function summarizeDb(db) {
 
   const totalRows =
     db.exec(`SELECT COUNT(*) FROM ${table}`)[0]?.values?.[0]?.[0] || 0;
+  const airborneRows =
+    db.exec(`SELECT COUNT(*) FROM ${table} WHERE on_ground IS NULL OR on_ground = 0`)[0]?.values?.[0]?.[0] || 0;
+  const onGroundRows =
+    db.exec(`SELECT COUNT(*) FROM ${table} WHERE on_ground = 1`)[0]?.values?.[0]?.[0] || 0;
+  const avgAltitude =
+    db.exec(`SELECT AVG(altitude) FROM ${table} WHERE altitude IS NOT NULL`)[0]?.values?.[0]?.[0] ?? null;
+  const maxSpeed =
+    db.exec(`SELECT MAX(velocity) FROM ${table} WHERE velocity IS NOT NULL`)[0]?.values?.[0]?.[0] ?? null;
 
   const uniqueAircraft = hasFlights
     ? db.exec("SELECT COUNT(DISTINCT icao24) FROM flights")[0]?.values?.[0]?.[0] || 0
@@ -90,21 +98,29 @@ export function summarizeDb(db) {
     unique_aircraft: uniqueAircraft,
     hourly_distribution: toHourlyMap(hourlyRows),
     weekday_distribution: toWeekdayMap(weekdayRows),
-    altitude_stats: {
-      median: percentileFromBins(altitudeBins, 0.5),
-      p90: percentileFromBins(altitudeBins, 0.9),
-    },
-    speed_stats: {
-      median: percentileFromBins(speedBins, 0.5),
-      p90: percentileFromBins(speedBins, 0.9),
-    },
-    metrics: {
-      unique_aircraft: uniqueAircraft,
-      total_records: totalRows,
-      data_completeness_all_fields: null,
-    },
-    insights: [],
-  };
+      altitude_stats: {
+        median: percentileFromBins(altitudeBins, 0.5),
+        p90: percentileFromBins(altitudeBins, 0.9),
+        avg: avgAltitude,
+      },
+      speed_stats: {
+        median: percentileFromBins(speedBins, 0.5),
+        p90: percentileFromBins(speedBins, 0.9),
+        max: maxSpeed,
+      },
+      metrics: {
+        unique_aircraft: uniqueAircraft,
+        total_records: totalRows,
+        airborne: airborneRows,
+        on_ground: onGroundRows,
+        data_completeness_all_fields: null,
+      },
+      ground_airborne: {
+        airborne: airborneRows,
+        on_ground: onGroundRows,
+      },
+      insights: [],
+    };
 
   const summary = {
     total_rows: totalRows,
@@ -202,6 +218,14 @@ export function summarizeDbWithFilters(db, filters) {
 
   const totalRows =
     db.exec(`SELECT COUNT(*) FROM ${table} ${clause}`, params)[0]?.values?.[0]?.[0] || 0;
+  const airborneRows =
+    db.exec(`SELECT COUNT(*) FROM ${table} ${clause ? clause + " AND" : "WHERE"} (on_ground IS NULL OR on_ground = 0)`, params)[0]?.values?.[0]?.[0] || 0;
+  const onGroundRows =
+    db.exec(`SELECT COUNT(*) FROM ${table} ${clause ? clause + " AND" : "WHERE"} on_ground = 1`, params)[0]?.values?.[0]?.[0] || 0;
+  const avgAltitude =
+    db.exec(`SELECT AVG(altitude) FROM ${table} ${clause ? clause + " AND" : "WHERE"} altitude IS NOT NULL`, params)[0]?.values?.[0]?.[0] ?? null;
+  const maxSpeed =
+    db.exec(`SELECT MAX(velocity) FROM ${table} ${clause ? clause + " AND" : "WHERE"} velocity IS NOT NULL`, params)[0]?.values?.[0]?.[0] ?? null;
   const uniqueAircraft = hasFlights
     ? db.exec(`SELECT COUNT(DISTINCT icao24) FROM flights`)[0]?.values?.[0]?.[0] || 0
     : db.exec(`SELECT COUNT(DISTINCT icao24) FROM ${table} ${clause}`, params)[0]?.values?.[0]?.[0] || 0;
@@ -264,15 +288,23 @@ export function summarizeDbWithFilters(db, filters) {
       altitude_stats: {
         median: percentileFromBins(altitudeBins, 0.5),
         p90: percentileFromBins(altitudeBins, 0.9),
+        avg: avgAltitude,
       },
       speed_stats: {
         median: percentileFromBins(speedBins, 0.5),
         p90: percentileFromBins(speedBins, 0.9),
+        max: maxSpeed,
       },
       metrics: {
         unique_aircraft: uniqueAircraft,
         total_records: totalRows,
+        airborne: airborneRows,
+        on_ground: onGroundRows,
         data_completeness_all_fields: null,
+      },
+      ground_airborne: {
+        airborne: airborneRows,
+        on_ground: onGroundRows,
       },
       insights: [],
     },
@@ -301,6 +333,8 @@ export function mergeHistorical(items) {
       metrics: {
         unique_aircraft: 0,
         total_records: 0,
+        airborne: 0,
+        on_ground: 0,
         data_completeness_all_fields: null,
       },
       insights: [],
@@ -317,6 +351,8 @@ export function mergeHistorical(items) {
     merged.detailed.metrics.total_records += summary.total_rows || 0;
     merged.detailed.unique_aircraft += detailed.unique_aircraft || 0;
     merged.detailed.metrics.unique_aircraft += detailed.unique_aircraft || 0;
+    merged.detailed.metrics.airborne += detailed.metrics?.airborne || 0;
+    merged.detailed.metrics.on_ground += detailed.metrics?.on_ground || 0;
 
     (summary.altitude_bins || []).forEach((b) => {
       const key = b.altitude_band;

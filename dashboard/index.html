@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Flight Observatory - Live Dashboard</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <link rel="stylesheet" href="./styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
   </head>
@@ -25,13 +26,14 @@
         </div>
       </nav>
 
-      <main class="main-container">
-        <section class="header-section">
-          <div class="header-content">
+      <main class="main-container page-shell">
+        <section class="hero-banner hero-banner-live">
+          <div class="hero-copy">
+            <p class="hero-kicker">Live Observability</p>
             <h1>Live Flight Tracking</h1>
-            <p>Real-time aircraft surveillance from OpenSky Network</p>
+            <p class="hero-subtitle">Real-time aircraft surveillance from OpenSky Network.</p>
           </div>
-          <div class="header-info">
+          <div class="hero-stack">
             <div class="info-box">
               <span class="label">Last Updated</span>
               <span class="value" id="lastUpdated">--:--:--</span>
@@ -43,80 +45,121 @@
           </div>
         </section>
 
-        <section class="metrics-section">
-          <div class="metrics-grid" id="metricsGrid"></div>
-        </section>
-        <section class="metrics-section">
-          <div class="metrics-grid" id="liveDerivedMetrics"></div>
-        </section>
+        <div class="command-grid command-grid-live">
+          <section class="panel panel-map panel-span-8">
+            <div class="map-header">
+              <div>
+                <h2>Live Map</h2>
+                <p>Every aircraft in the current snapshot, click to inspect and trace recent movement.</p>
+              </div>
+              <div class="map-controls">
+                <button id="liveDensityToggle" class="lab-btn lab-btn-secondary map-toggle" type="button">Density: On</button>
+                <div class="map-status" id="liveMapStatus">Loading live positions...</div>
+              </div>
+            </div>
+            <div id="liveMap" class="map-panel"></div>
+          </section>
 
-        <section class="filter-section">
-          <div class="filter-container">
-            <label for="airportFilter">Filter by Airport</label>
-            <div class="filter-input-group">
-              <input
-                id="airportFilter"
-                type="text"
-                placeholder="e.g., VABB, EGLL"
-                autocomplete="off"
-              />
-              <button id="applyFilter" class="btn-primary">Apply</button>
-              <button id="clearFilter" class="btn-secondary">Clear</button>
-            </div>
-            <p class="filter-hint">Leave blank to show all airports</p>
-          </div>
-        </section>
+          <aside class="panel panel-stack panel-span-4">
+            <section class="metrics-section">
+              <div class="section-head section-head-tight">
+                <div>
+                  <h2>Live Metrics</h2>
+                  <p>Current snapshot and derived telemetry.</p>
+                </div>
+              </div>
+              <div class="metrics-grid" id="metricsGrid"></div>
+            </section>
+            <section class="metrics-section">
+              <div class="section-head section-head-tight">
+                <div>
+                  <h2>Derived Signals</h2>
+                  <p>Ground delay and operational drift.</p>
+                </div>
+              </div>
+              <div class="metrics-grid" id="liveDerivedMetrics"></div>
+            </section>
+            <section class="filter-section filter-section-compact">
+              <div class="filter-container">
+                <label for="airportFilter">Filter by Airport</label>
+                <div class="filter-input-group">
+                  <input
+                    id="airportFilter"
+                    type="text"
+                    placeholder="e.g., VABB, EGLL"
+                    autocomplete="off"
+                  />
+                  <button id="applyFilter" class="btn-primary">Apply</button>
+                  <button id="clearFilter" class="btn-secondary">Clear</button>
+                </div>
+                <p class="filter-hint" id="airportFilterHint">Leave blank to show all airports.</p>
+              </div>
+            </section>
+          </aside>
 
-        <section class="charts-section">
-          <h2 class="section-title">Traffic Analysis</h2>
-          <div class="charts-grid">
-            <div class="chart-card">
-              <h3>Flights by Minute (60m)</h3>
-              <canvas id="minuteTraffic"></canvas>
+          <section class="panel panel-span-12">
+            <div class="section-head">
+              <div>
+                <h2>Traffic Analysis</h2>
+                <p>Live movement patterns, altitude spread, and carrier mix.</p>
+              </div>
             </div>
-            <div class="chart-card">
-              <h3>Top Airports</h3>
-              <canvas id="topAirports"></canvas>
+            <div class="charts-grid charts-grid-compact">
+              <div class="chart-card">
+                <h3>Flights by Minute (60m)</h3>
+                <canvas id="minuteTraffic"></canvas>
+              </div>
+              <div class="chart-card">
+                <h3>Top Airports</h3>
+                <canvas id="topAirports"></canvas>
+              </div>
+              <div class="chart-card">
+                <h3>Altitude Distribution</h3>
+                <canvas id="altitudeBands"></canvas>
+              </div>
+              <div class="chart-card">
+                <h3>Speed Distribution</h3>
+                <canvas id="speedBands"></canvas>
+              </div>
+              <div class="chart-card">
+                <h3>Top Airlines</h3>
+                <canvas id="topAirlines"></canvas>
+              </div>
+              <div class="chart-card">
+                <h3>Heading Distribution</h3>
+                <canvas id="headingBins"></canvas>
+              </div>
             </div>
-            <div class="chart-card">
-              <h3>Altitude Distribution</h3>
-              <canvas id="altitudeBands"></canvas>
-            </div>
-            <div class="chart-card">
-              <h3>Speed Distribution</h3>
-              <canvas id="speedBands"></canvas>
-            </div>
-            <div class="chart-card">
-              <h3>Top Airlines</h3>
-              <canvas id="topAirlines"></canvas>
-            </div>
-            <div class="chart-card">
-              <h3>Heading Distribution</h3>
-              <canvas id="headingBins"></canvas>
-            </div>
-          </div>
-        </section>
+          </section>
 
-        <section class="tables-section">
-          <h2 class="section-title">Top Categories</h2>
-          <div class="tables-grid">
-            <div class="table-card">
-              <h3>Airports</h3>
-              <div class="table-wrapper" id="airportTable"></div>
+          <section class="panel panel-span-12">
+            <div class="section-head">
+              <div>
+                <h2>Top Categories</h2>
+                <p>High-signal lists for airports, airlines, and countries.</p>
+              </div>
             </div>
-            <div class="table-card">
-              <h3>Airlines</h3>
-              <div class="table-wrapper" id="airlineTable"></div>
+            <div class="tables-grid tables-grid-compact">
+              <div class="table-card">
+                <h3>Airports</h3>
+                <div class="table-wrapper" id="airportTable"></div>
+              </div>
+              <div class="table-card">
+                <h3>Airlines</h3>
+                <div class="table-wrapper" id="airlineTable"></div>
+              </div>
+              <div class="table-card">
+                <h3>Countries</h3>
+                <div class="table-wrapper" id="countryTable"></div>
+              </div>
             </div>
-            <div class="table-card">
-              <h3>Countries</h3>
-              <div class="table-wrapper" id="countryTable"></div>
-            </div>
-          </div>
-        </section>
+          </section>
+        </div>
       </main>
     </div>
 
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="./airline-logos.js"></script>
     <script src="./app.js"></script>
   </body>
 </html>
