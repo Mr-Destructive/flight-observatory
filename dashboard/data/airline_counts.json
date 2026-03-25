@@ -1,102 +1,102 @@
 [
   {
     "airline": "unknown",
-    "flights": 4547
-  },
-  {
-    "airline": "Southwest Airlines",
-    "flights": 465
-  },
-  {
-    "airline": "American Airlines",
-    "flights": 464
+    "flights": 4200
   },
   {
     "airline": "Delta Air Lines",
-    "flights": 453
+    "flights": 498
+  },
+  {
+    "airline": "Southwest Airlines",
+    "flights": 468
+  },
+  {
+    "airline": "American Airlines",
+    "flights": 448
   },
   {
     "airline": "United Airlines",
-    "flights": 411
+    "flights": 441
   },
   {
     "airline": "SkyWest",
-    "flights": 213
-  },
-  {
-    "airline": "Ryanair",
-    "flights": 186
+    "flights": 198
   },
   {
     "airline": "NetJets",
-    "flights": 162
+    "flights": 166
   },
   {
     "airline": "JetBlue Airways",
-    "flights": 127
+    "flights": 132
   },
   {
-    "airline": "Alaska Airlines",
-    "flights": 108
-  },
-  {
-    "airline": "easyJet",
-    "flights": 106
-  },
-  {
-    "airline": "Republic Airlines",
-    "flights": 102
+    "airline": "Ryanair",
+    "flights": 129
   },
   {
     "airline": "United Parcel Service",
-    "flights": 98
+    "flights": 124
   },
   {
-    "airline": "Envoy Air",
-    "flights": 93
+    "airline": "Alaska Airlines",
+    "flights": 113
   },
   {
-    "airline": "Bombardier Business Jet Solutions",
-    "flights": 85
+    "airline": "Republic Airlines",
+    "flights": 104
   },
   {
-    "airline": "Air France",
-    "flights": 82
+    "airline": "easyJet",
+    "flights": 100
   },
   {
     "airline": "Air Canada",
-    "flights": 76
+    "flights": 87
   },
   {
-    "airline": "KLM Royal Dutch Airlines",
-    "flights": 74
+    "airline": "Envoy Air",
+    "flights": 81
   },
   {
     "airline": "Lufthansa",
-    "flights": 66
+    "flights": 81
   },
   {
-    "airline": "British Airways",
-    "flights": 64
+    "airline": "Bombardier Business Jet Solutions",
+    "flights": 75
   },
   {
-    "airline": "Turkish Airlines",
-    "flights": 55
-  },
-  {
-    "airline": "Scandinavian Airlines System",
-    "flights": 54
+    "airline": "Federal Express",
+    "flights": 69
   },
   {
     "airline": "WestJet",
-    "flights": 54
+    "flights": 67
   },
   {
     "airline": "Frontier Airlines",
-    "flights": 53
+    "flights": 61
   },
   {
     "airline": "PSA Airlines",
-    "flights": 52
+    "flights": 60
+  },
+  {
+    "airline": "KLM Royal Dutch Airlines",
+    "flights": 58
+  },
+  {
+    "airline": "Spirit Airlines",
+    "flights": 55
+  },
+  {
+    "airline": "Air France",
+    "flights": 54
+  },
+  {
+    "airline": "British Airways",
+    "flights": 49
   }
 ]
