@@ -1,74 +1,90 @@
 [
   {
     "airport": "unknown",
-    "flights": 4011
+    "flights": 4490
   },
   {
     "airport": "LSZH",
-    "flights": 32
-  },
-  {
-    "airport": "RJTT",
-    "flights": 24
-  },
-  {
-    "airport": "EHAM",
-    "flights": 24
-  },
-  {
-    "airport": "YMML",
-    "flights": 20
-  },
-  {
-    "airport": "EGKK",
-    "flights": 18
-  },
-  {
-    "airport": "EDDF",
-    "flights": 17
-  },
-  {
-    "airport": "KBOS",
-    "flights": 16
-  },
-  {
-    "airport": "EBBR",
-    "flights": 16
+    "flights": 37
   },
   {
     "airport": "CYYZ",
-    "flights": 16
+    "flights": 37
   },
   {
-    "airport": "YSSY",
-    "flights": 16
+    "airport": "EDDF",
+    "flights": 25
+  },
+  {
+    "airport": "RJTT",
+    "flights": 21
+  },
+  {
+    "airport": "EHAM",
+    "flights": 21
+  },
+  {
+    "airport": "EGKK",
+    "flights": 20
   },
   {
     "airport": "VHHH",
-    "flights": 15
+    "flights": 20
   },
   {
-    "airport": "VIDP",
-    "flights": 14
+    "airport": "KBOS",
+    "flights": 19
   },
   {
-    "airport": "YPPH",
-    "flights": 13
-  },
-  {
-    "airport": "LEBL",
-    "flights": 13
-  },
-  {
-    "airport": "ESSA",
-    "flights": 11
-  },
-  {
-    "airport": "RJAA",
-    "flights": 11
+    "airport": "YSSY",
+    "flights": 17
   },
   {
     "airport": "KMIA",
+    "flights": 16
+  },
+  {
+    "airport": "KATL",
+    "flights": 15
+  },
+  {
+    "airport": "KLGA",
+    "flights": 13
+  },
+  {
+    "airport": "VIDP",
+    "flights": 12
+  },
+  {
+    "airport": "YMML",
+    "flights": 12
+  },
+  {
+    "airport": "ESSA",
+    "flights": 12
+  },
+  {
+    "airport": "VABB",
+    "flights": 11
+  },
+  {
+    "airport": "WMKK",
+    "flights": 10
+  },
+  {
+    "airport": "VTBS",
+    "flights": 10
+  },
+  {
+    "airport": "KMCO",
+    "flights": 10
+  },
+  {
+    "airport": "CYUL",
+    "flights": 10
+  },
+  {
+    "airport": "YPPH",
     "flights": 10
   },
   {
@@ -76,27 +92,11 @@
     "flights": 10
   },
   {
-    "airport": "VABB",
-    "flights": 9
+    "airport": "EBBR",
+    "flights": 10
   },
   {
-    "airport": "KATL",
-    "flights": 9
-  },
-  {
-    "airport": "KMCO",
-    "flights": 9
-  },
-  {
-    "airport": "SBSP",
-    "flights": 9
-  },
-  {
-    "airport": "EDDM",
-    "flights": 9
-  },
-  {
-    "airport": "VTBS",
-    "flights": 8
+    "airport": "KJFK",
+    "flights": 10
   }
 ]
