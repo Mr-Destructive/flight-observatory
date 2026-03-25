@@ -1,31 +1,31 @@
 [
   {
     "speed_band_ms": 0,
-    "flights": 5143
+    "flights": 5978
   },
   {
     "speed_band_ms": 50,
-    "flights": 3874
+    "flights": 4467
   },
   {
     "speed_band_ms": 100,
-    "flights": 3191
+    "flights": 3758
   },
   {
     "speed_band_ms": 150,
-    "flights": 4061
+    "flights": 4787
   },
   {
     "speed_band_ms": 200,
-    "flights": 10805
+    "flights": 12830
   },
   {
     "speed_band_ms": 250,
-    "flights": 3905
+    "flights": 4636
   },
   {
     "speed_band_ms": 300,
-    "flights": 195
+    "flights": 207
   },
   {
     "speed_band_ms": 350,
@@ -33,7 +33,7 @@
   },
   {
     "speed_band_ms": 400,
-    "flights": 5
+    "flights": 6
   },
   {
     "speed_band_ms": 450,
@@ -41,11 +41,11 @@
   },
   {
     "speed_band_ms": 500,
-    "flights": 1
+    "flights": 2
   },
   {
     "speed_band_ms": 550,
-    "flights": 3
+    "flights": 4
   },
   {
     "speed_band_ms": 600,
