@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 9338
-  },
-  {
-    "airport": "YSSY",
-    "flights": 34
+    "flights": 9251
   },
   {
     "airport": "CYYC",
-    "flights": 33
+    "flights": 46
   },
   {
-    "airport": "KIAD",
-    "flights": 30
+    "airport": "YSSY",
+    "flights": 29
   },
   {
     "airport": "KATL",
-    "flights": 29
+    "flights": 28
   },
   {
-    "airport": "KDEN",
-    "flights": 29
+    "airport": "KJFK",
+    "flights": 26
   },
   {
     "airport": "KDFW",
-    "flights": 24
+    "flights": 21
   },
   {
-    "airport": "KBOS",
-    "flights": 23
-  },
-  {
-    "airport": "KBNA",
-    "flights": 20
+    "airport": "KTPA",
+    "flights": 19
   },
   {
     "airport": "CYYZ",
-    "flights": 20
+    "flights": 19
   },
   {
-    "airport": "LSZH",
-    "flights": 18
+    "airport": "KAUS",
+    "flights": 17
   },
   {
     "airport": "EDDF",
     "flights": 17
   },
   {
-    "airport": "KPHX",
+    "airport": "KMCO",
     "flights": 17
   },
   {
-    "airport": "KLAS",
+    "airport": "KBOS",
     "flights": 17
   },
   {
-    "airport": "KEWR",
-    "flights": 15
+    "airport": "YMML",
+    "flights": 17
   },
   {
-    "airport": "KTPA",
-    "flights": 15
-  },
-  {
-    "airport": "EHAM",
-    "flights": 14
+    "airport": "VIDP",
+    "flights": 16
   },
   {
     "airport": "SKBO",
+    "flights": 16
+  },
+  {
+    "airport": "EHAM",
+    "flights": 16
+  },
+  {
+    "airport": "KORD",
+    "flights": 15
+  },
+  {
+    "airport": "KDCA",
     "flights": 14
   },
   {
-    "airport": "MGGT",
+    "airport": "KDEN",
     "flights": 14
   },
   {
-    "airport": "KJFK",
-    "flights": 14
-  },
-  {
-    "airport": "CYVR",
+    "airport": "KOAK",
     "flights": 13
   },
   {
-    "airport": "KSFO",
+    "airport": "KLAX",
     "flights": 13
   },
   {
-    "airport": "KMCO",
+    "airport": "KIAD",
     "flights": 13
   },
   {
-    "airport": "KSJC",
+    "airport": "KVNY",
     "flights": 13
   },
   {
-    "airport": "KLGA",
-    "flights": 13
+    "airport": "MMUN",
+    "flights": 12
+  },
+  {
+    "airport": "KPHX",
+    "flights": 12
   }
 ]
