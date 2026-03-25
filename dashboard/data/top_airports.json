@@ -1,42 +1,42 @@
 [
   {
     "airport": "unknown",
-    "flights": 16147
+    "flights": 19681
   },
   {
     "airport": "YSSY",
-    "flights": 92
+    "flights": 123
   },
   {
     "airport": "YPPH",
-    "flights": 83
-  },
-  {
-    "airport": "CYYZ",
-    "flights": 78
-  },
-  {
-    "airport": "RJTT",
-    "flights": 74
+    "flights": 98
   },
   {
     "airport": "VHHH",
-    "flights": 73
+    "flights": 92
+  },
+  {
+    "airport": "RJTT",
+    "flights": 92
+  },
+  {
+    "airport": "CYYZ",
+    "flights": 85
   },
   {
     "airport": "KBOS",
-    "flights": 60
+    "flights": 71
+  },
+  {
+    "airport": "LSZH",
+    "flights": 69
+  },
+  {
+    "airport": "KLAS",
+    "flights": 59
   },
   {
     "airport": "KDFW",
     "flights": 59
-  },
-  {
-    "airport": "KORD",
-    "flights": 52
-  },
-  {
-    "airport": "KLAS",
-    "flights": 52
   }
 ]
