@@ -1,94 +1,62 @@
 [
   {
     "airport": "unknown",
-    "flights": 4101
-  },
-  {
-    "airport": "YSSY",
-    "flights": 26
-  },
-  {
-    "airport": "CYYZ",
-    "flights": 25
-  },
-  {
-    "airport": "VHHH",
-    "flights": 24
-  },
-  {
-    "airport": "RJTT",
-    "flights": 23
-  },
-  {
-    "airport": "SKBO",
-    "flights": 18
-  },
-  {
-    "airport": "KPHX",
-    "flights": 17
+    "flights": 2957
   },
   {
     "airport": "YPPH",
+    "flights": 23
+  },
+  {
+    "airport": "LSZH",
+    "flights": 22
+  },
+  {
+    "airport": "YSSY",
+    "flights": 18
+  },
+  {
+    "airport": "RJTT",
     "flights": 17
   },
   {
-    "airport": "KBOS",
-    "flights": 16
+    "airport": "VHHH",
+    "flights": 17
   },
   {
-    "airport": "KSEA",
-    "flights": 16
-  },
-  {
-    "airport": "KLAS",
-    "flights": 15
-  },
-  {
-    "airport": "CYYC",
-    "flights": 15
-  },
-  {
-    "airport": "KSLC",
-    "flights": 13
-  },
-  {
-    "airport": "KSFO",
-    "flights": 12
-  },
-  {
-    "airport": "KDFW",
-    "flights": 12
-  },
-  {
-    "airport": "YMML",
-    "flights": 12
-  },
-  {
-    "airport": "KJFK",
-    "flights": 11
-  },
-  {
-    "airport": "VABB",
-    "flights": 11
-  },
-  {
-    "airport": "KORD",
-    "flights": 11
-  },
-  {
-    "airport": "KLAX",
-    "flights": 10
-  },
-  {
-    "airport": "VECC",
-    "flights": 10
+    "airport": "CYVR",
+    "flights": 14
   },
   {
     "airport": "VIDP",
+    "flights": 13
+  },
+  {
+    "airport": "KBOS",
+    "flights": 13
+  },
+  {
+    "airport": "CYYZ",
+    "flights": 13
+  },
+  {
+    "airport": "YMML",
+    "flights": 13
+  },
+  {
+    "airport": "KPHX",
+    "flights": 12
+  },
+  {
+    "airport": "KLAS",
+    "flights": 11
+  },
+  {
+    "airport": "KSFO",
     "flights": 10
   },
   {
-    "airport": "VTBS",
+    "airport": "EDDF",
     "flights": 10
   },
   {
@@ -96,7 +64,39 @@
     "flights": 10
   },
   {
-    "airport": "KMCO",
-    "flights": 10
+    "airport": "KLAX",
+    "flights": 9
+  },
+  {
+    "airport": "ZGSZ",
+    "flights": 9
+  },
+  {
+    "airport": "VTBS",
+    "flights": 8
+  },
+  {
+    "airport": "KSAN",
+    "flights": 8
+  },
+  {
+    "airport": "YSBK",
+    "flights": 8
+  },
+  {
+    "airport": "EFHK",
+    "flights": 8
+  },
+  {
+    "airport": "VABB",
+    "flights": 7
+  },
+  {
+    "airport": "LHBP",
+    "flights": 7
+  },
+  {
+    "airport": "EYVI",
+    "flights": 7
   }
 ]
