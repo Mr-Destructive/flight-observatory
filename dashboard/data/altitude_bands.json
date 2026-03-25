@@ -1,114 +1,74 @@
 [
   {
     "altitude_band_m": -1000,
-    "flights": 898
+    "flights": 47
   },
   {
     "altitude_band_m": 0,
-    "flights": 33125
+    "flights": 1226
   },
   {
     "altitude_band_m": 1000,
-    "flights": 19115
+    "flights": 778
   },
   {
     "altitude_band_m": 2000,
-    "flights": 9913
+    "flights": 384
   },
   {
     "altitude_band_m": 3000,
-    "flights": 6983
+    "flights": 274
   },
   {
     "altitude_band_m": 4000,
-    "flights": 5583
+    "flights": 183
   },
   {
     "altitude_band_m": 5000,
-    "flights": 5273
+    "flights": 184
   },
   {
     "altitude_band_m": 6000,
-    "flights": 5345
+    "flights": 229
   },
   {
     "altitude_band_m": 7000,
-    "flights": 6465
+    "flights": 242
   },
   {
     "altitude_band_m": 8000,
-    "flights": 6557
+    "flights": 236
   },
   {
     "altitude_band_m": 9000,
-    "flights": 10386
+    "flights": 379
   },
   {
     "altitude_band_m": 10000,
-    "flights": 32073
+    "flights": 1348
   },
   {
     "altitude_band_m": 11000,
-    "flights": 21137
+    "flights": 776
   },
   {
     "altitude_band_m": 12000,
-    "flights": 5553
+    "flights": 215
   },
   {
     "altitude_band_m": 13000,
-    "flights": 2223
+    "flights": 94
   },
   {
     "altitude_band_m": 14000,
-    "flights": 118
-  },
-  {
-    "altitude_band_m": 15000,
-    "flights": 4
-  },
-  {
-    "altitude_band_m": 17000,
-    "flights": 4
-  },
-  {
-    "altitude_band_m": 18000,
-    "flights": 15
-  },
-  {
-    "altitude_band_m": 20000,
-    "flights": 1
-  },
-  {
-    "altitude_band_m": 21000,
     "flights": 7
   },
   {
-    "altitude_band_m": 22000,
-    "flights": 4
-  },
-  {
-    "altitude_band_m": 23000,
-    "flights": 3
-  },
-  {
-    "altitude_band_m": 26000,
+    "altitude_band_m": 18000,
     "flights": 1
   },
   {
-    "altitude_band_m": 28000,
+    "altitude_band_m": 24000,
     "flights": 1
-  },
-  {
-    "altitude_band_m": 29000,
-    "flights": 1
-  },
-  {
-    "altitude_band_m": 30000,
-    "flights": 1
-  },
-  {
-    "altitude_band_m": 37000,
-    "flights": 2
   }
 ]
