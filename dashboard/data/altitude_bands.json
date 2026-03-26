@@ -1,114 +1,74 @@
 [
   {
     "altitude_band_m": -1000,
-    "flights": 887
+    "flights": 43
   },
   {
     "altitude_band_m": 0,
-    "flights": 30487
+    "flights": 1104
   },
   {
     "altitude_band_m": 1000,
-    "flights": 18612
+    "flights": 679
   },
   {
     "altitude_band_m": 2000,
-    "flights": 10119
+    "flights": 377
   },
   {
     "altitude_band_m": 3000,
-    "flights": 7293
+    "flights": 267
   },
   {
     "altitude_band_m": 4000,
-    "flights": 5586
+    "flights": 207
   },
   {
     "altitude_band_m": 5000,
-    "flights": 5260
+    "flights": 185
   },
   {
     "altitude_band_m": 6000,
-    "flights": 5653
+    "flights": 214
   },
   {
     "altitude_band_m": 7000,
-    "flights": 6995
+    "flights": 236
   },
   {
     "altitude_band_m": 8000,
-    "flights": 7207
+    "flights": 239
   },
   {
     "altitude_band_m": 9000,
-    "flights": 10578
+    "flights": 442
   },
   {
     "altitude_band_m": 10000,
-    "flights": 33029
+    "flights": 1429
   },
   {
     "altitude_band_m": 11000,
-    "flights": 20315
+    "flights": 803
   },
   {
     "altitude_band_m": 12000,
-    "flights": 5590
+    "flights": 216
   },
   {
     "altitude_band_m": 13000,
-    "flights": 2780
+    "flights": 88
   },
   {
     "altitude_band_m": 14000,
-    "flights": 153
+    "flights": 7
   },
   {
     "altitude_band_m": 15000,
-    "flights": 10
-  },
-  {
-    "altitude_band_m": 16000,
-    "flights": 2
-  },
-  {
-    "altitude_band_m": 17000,
     "flights": 1
-  },
-  {
-    "altitude_band_m": 18000,
-    "flights": 1
-  },
-  {
-    "altitude_band_m": 19000,
-    "flights": 18
   },
   {
     "altitude_band_m": 20000,
-    "flights": 3
-  },
-  {
-    "altitude_band_m": 21000,
-    "flights": 1
-  },
-  {
-    "altitude_band_m": 24000,
-    "flights": 3
-  },
-  {
-    "altitude_band_m": 28000,
-    "flights": 1
-  },
-  {
-    "altitude_band_m": 29000,
-    "flights": 1
-  },
-  {
-    "altitude_band_m": 30000,
-    "flights": 3
-  },
-  {
-    "altitude_band_m": 38000,
     "flights": 1
   }
 ]
