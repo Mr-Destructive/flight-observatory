@@ -1,94 +1,66 @@
 [
   {
     "airport": "unknown",
-    "flights": 3706
-  },
-  {
-    "airport": "CYYC",
-    "flights": 29
-  },
-  {
-    "airport": "CYUL",
-    "flights": 23
+    "flights": 3199
   },
   {
     "airport": "YPPH",
-    "flights": 23
+    "flights": 32
   },
   {
-    "airport": "YSSY",
-    "flights": 22
+    "airport": "CYYC",
+    "flights": 27
   },
   {
     "airport": "RJTT",
-    "flights": 20
+    "flights": 19
   },
   {
-    "airport": "KBOS",
+    "airport": "CYUL",
+    "flights": 19
+  },
+  {
+    "airport": "VHHH",
+    "flights": 18
+  },
+  {
+    "airport": "ESSA",
     "flights": 17
   },
   {
-    "airport": "SKBO",
-    "flights": 15
-  },
-  {
-    "airport": "CYYZ",
-    "flights": 14
-  },
-  {
     "airport": "VIDP",
-    "flights": 13
-  },
-  {
-    "airport": "VGHS",
-    "flights": 13
-  },
-  {
-    "airport": "CYVR",
-    "flights": 12
-  },
-  {
-    "airport": "ZGSZ",
-    "flights": 12
+    "flights": 16
   },
   {
     "airport": "KLAX",
-    "flights": 12
+    "flights": 16
   },
   {
-    "airport": "KSFO",
-    "flights": 11
+    "airport": "LSZH",
+    "flights": 16
   },
   {
-    "airport": "VTBS",
-    "flights": 11
-  },
-  {
-    "airport": "YMML",
-    "flights": 11
-  },
-  {
-    "airport": "KLGA",
-    "flights": 10
-  },
-  {
-    "airport": "KDEN",
-    "flights": 10
-  },
-  {
-    "airport": "EDDF",
-    "flights": 10
+    "airport": "YSSY",
+    "flights": 15
   },
   {
     "airport": "KLAS",
-    "flights": 10
+    "flights": 13
   },
   {
-    "airport": "KPHX",
-    "flights": 10
+    "airport": "KBOS",
+    "flights": 11
   },
   {
-    "airport": "RJBB",
+    "airport": "KDEN",
+    "flights": 11
+  },
+  {
+    "airport": "CYVR",
+    "flights": 11
+  },
+  {
+    "airport": "KJFK",
     "flights": 10
   },
   {
@@ -98,5 +70,33 @@
   {
     "airport": "VECC",
     "flights": 9
+  },
+  {
+    "airport": "CYYZ",
+    "flights": 9
+  },
+  {
+    "airport": "EDDF",
+    "flights": 9
+  },
+  {
+    "airport": "VTBS",
+    "flights": 8
+  },
+  {
+    "airport": "KLGA",
+    "flights": 8
+  },
+  {
+    "airport": "LIMC",
+    "flights": 8
+  },
+  {
+    "airport": "KSFO",
+    "flights": 8
+  },
+  {
+    "airport": "EBBR",
+    "flights": 8
   }
 ]
