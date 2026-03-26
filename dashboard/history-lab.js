@@ -87,6 +87,16 @@ function cleanLabel(value, fallback = "--") {
   return isUnknownLabel(value) ? fallback : String(value);
 }
 
+async function getLatestArchiveDay() {
+  const manifest = await fetchJson("data/archive_days.json");
+  if (Array.isArray(manifest) && manifest.length) {
+    return manifest[0];
+  }
+  const now = new Date();
+  const yesterday = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() - 1));
+  return yesterday.toISOString().slice(0, 10);
+}
+
 function parseBand(label) {
   if (!label) return null;
   const match = String(label).match(/-?\d+(\.\d+)?/);
@@ -1111,7 +1121,7 @@ function applyRangeFilterOptions(merged) {
   }
 }
 
-function initSqliteControls() {
+async function initSqliteControls() {
   const input = document.getElementById("sqliteDate");
   const startInput = document.getElementById("sqliteRangeStart");
   const endInput = document.getElementById("sqliteRangeEnd");
@@ -1122,11 +1132,7 @@ function initSqliteControls() {
 
   if (!input || !loadBtn || !clearBtn) return;
 
-  const now = new Date();
-  const today = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()));
-  const yesterday = new Date(today);
-  yesterday.setUTCDate(yesterday.getUTCDate() - 1);
-  const defaultDay = yesterday.toISOString().slice(0, 10);
+  const defaultDay = await getLatestArchiveDay();
   input.value = defaultDay;
   if (startInput) startInput.value = defaultDay;
   if (endInput) endInput.value = defaultDay;
@@ -1404,7 +1410,7 @@ async function init() {
   state.sqliteDb = null;
 
   initControls(state.monthly);
-  initSqliteControls();
+  await initSqliteControls();
   applyBaseFilterOptions();
   initQueryConsole();
   enableQueryConsole(true);

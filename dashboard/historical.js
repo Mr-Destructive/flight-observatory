@@ -158,6 +158,16 @@ function cleanLabel(value, fallback = "--") {
   return isUnknownLabel(value) ? fallback : String(value);
 }
 
+async function getLatestArchiveDay() {
+  const manifest = await fetchJson("./data/archive_days.json");
+  if (Array.isArray(manifest) && manifest.length) {
+    return manifest[0];
+  }
+  const now = new Date();
+  const yesterday = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() - 1));
+  return yesterday.toISOString().slice(0, 10);
+}
+
 function renderInsights(elementId, insights, summary, detailed) {
   const el = document.getElementById(elementId);
   if (!el) return;
@@ -843,11 +853,11 @@ function addAirportMarker(layer, lat, lon, label) {
 function setupHistoricalMapControls() {
   const input = document.getElementById("historicalMapDate");
   if (!input) return;
-  const now = new Date();
-  const yesterday = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() - 1));
-  input.value = yesterday.toISOString().slice(0, 10);
-  input.addEventListener("change", () => loadHistoricalArchive(input.value));
-  loadHistoricalArchive(input.value);
+  getLatestArchiveDay().then((defaultDay) => {
+    input.value = defaultDay;
+    input.addEventListener("change", () => loadHistoricalArchive(input.value));
+    loadHistoricalArchive(input.value);
+  });
 }
 
 async function loadHistoricalDashboard() {
