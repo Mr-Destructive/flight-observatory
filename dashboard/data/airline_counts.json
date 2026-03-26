@@ -1,102 +1,102 @@
 [
   {
     "airline": "unknown",
-    "flights": 889
+    "flights": 908
   },
   {
     "airline": "Ryanair",
-    "flights": 292
+    "flights": 289
   },
   {
     "airline": "Turkish Airlines",
-    "flights": 132
-  },
-  {
-    "airline": "Delta Air Lines",
-    "flights": 105
-  },
-  {
-    "airline": "United Airlines",
-    "flights": 105
-  },
-  {
-    "airline": "American Airlines",
-    "flights": 96
-  },
-  {
-    "airline": "Lufthansa",
-    "flights": 92
+    "flights": 127
   },
   {
     "airline": "easyJet",
-    "flights": 87
+    "flights": 113
+  },
+  {
+    "airline": "Delta Air Lines",
+    "flights": 111
+  },
+  {
+    "airline": "United Airlines",
+    "flights": 102
+  },
+  {
+    "airline": "American Airlines",
+    "flights": 99
   },
   {
     "airline": "IndiGo Airlines",
+    "flights": 87
+  },
+  {
+    "airline": "Scandinavian Airlines System",
     "flights": 86
   },
   {
-    "airline": "Air France",
+    "airline": "Lufthansa",
+    "flights": 83
+  },
+  {
+    "airline": "United Parcel Service",
     "flights": 69
   },
   {
-    "airline": "Vueling Airlines",
-    "flights": 68
-  },
-  {
-    "airline": "KLM Royal Dutch Airlines",
-    "flights": 63
+    "airline": "British Airways",
+    "flights": 69
   },
   {
     "airline": "All Nippon Airways",
     "flights": 57
   },
   {
-    "airline": "British Airways",
-    "flights": 56
-  },
-  {
-    "airline": "Swissair",
+    "airline": "Air France",
     "flights": 51
   },
   {
-    "airline": "Scandinavian Airlines System",
-    "flights": 47
+    "airline": "KLM Royal Dutch Airlines",
+    "flights": 49
+  },
+  {
+    "airline": "Federal Express",
+    "flights": 48
+  },
+  {
+    "airline": "Virgin Australia",
+    "flights": 48
   },
   {
     "airline": "Japan Airlines Domestic",
-    "flights": 47
-  },
-  {
-    "airline": "Alaska Airlines",
-    "flights": 41
-  },
-  {
-    "airline": "Air India Limited",
-    "flights": 40
-  },
-  {
-    "airline": "Southwest Airlines",
-    "flights": 39
-  },
-  {
-    "airline": "Eurowings",
-    "flights": 38
+    "flights": 46
   },
   {
     "airline": "Air Canada",
-    "flights": 38
+    "flights": 42
   },
   {
-    "airline": "LOT Polish Airlines",
+    "airline": "Vueling Airlines",
+    "flights": 42
+  },
+  {
+    "airline": "Alaska Airlines",
     "flights": 38
   },
   {
     "airline": "Pegasus Airlines",
-    "flights": 37
+    "flights": 38
   },
   {
-    "airline": "Austrian Airlines",
-    "flights": 37
+    "airline": "Finnair",
+    "flights": 38
+  },
+  {
+    "airline": "Qantas",
+    "flights": 38
+  },
+  {
+    "airline": "Korean Air",
+    "flights": 36
   }
 ]

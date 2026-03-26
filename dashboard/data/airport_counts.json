@@ -1,26 +1,38 @@
 [
   {
     "airport": "unknown",
-    "flights": 3665
-  },
-  {
-    "airport": "RJTT",
-    "flights": 24
-  },
-  {
-    "airport": "YPPH",
-    "flights": 21
-  },
-  {
-    "airport": "EDDF",
-    "flights": 20
-  },
-  {
-    "airport": "CYYC",
-    "flights": 19
+    "flights": 3778
   },
   {
     "airport": "YSSY",
+    "flights": 25
+  },
+  {
+    "airport": "RJTT",
+    "flights": 23
+  },
+  {
+    "airport": "EDDF",
+    "flights": 23
+  },
+  {
+    "airport": "LSZH",
+    "flights": 23
+  },
+  {
+    "airport": "CYYC",
+    "flights": 22
+  },
+  {
+    "airport": "EGKK",
+    "flights": 21
+  },
+  {
+    "airport": "VHHH",
+    "flights": 18
+  },
+  {
+    "airport": "EBBR",
     "flights": 18
   },
   {
@@ -28,75 +40,63 @@
     "flights": 17
   },
   {
-    "airport": "LSZH",
-    "flights": 16
-  },
-  {
-    "airport": "VHHH",
-    "flights": 16
-  },
-  {
-    "airport": "CYUL",
-    "flights": 16
-  },
-  {
-    "airport": "EGKK",
-    "flights": 15
-  },
-  {
-    "airport": "ESSA",
+    "airport": "VTBS",
     "flights": 14
-  },
-  {
-    "airport": "EBBR",
-    "flights": 14
-  },
-  {
-    "airport": "KLAX",
-    "flights": 11
   },
   {
     "airport": "KBOS",
-    "flights": 10
+    "flights": 13
   },
   {
-    "airport": "LOWW",
-    "flights": 10
+    "airport": "YPPH",
+    "flights": 13
   },
   {
-    "airport": "VGHS",
-    "flights": 10
+    "airport": "ESSA",
+    "flights": 12
   },
   {
-    "airport": "VECC",
-    "flights": 10
+    "airport": "CYUL",
+    "flights": 12
   },
   {
-    "airport": "EGCC",
-    "flights": 10
+    "airport": "LHBP",
+    "flights": 12
   },
   {
     "airport": "YMML",
-    "flights": 10
+    "flights": 12
   },
   {
-    "airport": "VIDP",
-    "flights": 9
-  },
-  {
-    "airport": "VTBS",
-    "flights": 9
-  },
-  {
-    "airport": "KLAS",
-    "flights": 9
-  },
-  {
-    "airport": "CYYZ",
-    "flights": 9
+    "airport": "LOWW",
+    "flights": 11
   },
   {
     "airport": "VABB",
+    "flights": 10
+  },
+  {
+    "airport": "ZGSZ",
     "flights": 8
+  },
+  {
+    "airport": "PANC",
+    "flights": 8
+  },
+  {
+    "airport": "EFHK",
+    "flights": 7
+  },
+  {
+    "airport": "RJAA",
+    "flights": 7
+  },
+  {
+    "airport": "VOBL",
+    "flights": 6
+  },
+  {
+    "airport": "VECC",
+    "flights": 6
   }
 ]
