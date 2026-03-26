@@ -1,102 +1,102 @@
 [
   {
     "airline": "unknown",
-    "flights": 4348
-  },
-  {
-    "airline": "Southwest Airlines",
-    "flights": 458
+    "flights": 4000
   },
   {
     "airline": "American Airlines",
-    "flights": 446
-  },
-  {
-    "airline": "United Airlines",
-    "flights": 431
+    "flights": 468
   },
   {
     "airline": "Delta Air Lines",
-    "flights": 424
+    "flights": 449
+  },
+  {
+    "airline": "Southwest Airlines",
+    "flights": 444
+  },
+  {
+    "airline": "United Airlines",
+    "flights": 427
   },
   {
     "airline": "Ryanair",
-    "flights": 300
+    "flights": 285
   },
   {
     "airline": "SkyWest",
-    "flights": 209
+    "flights": 242
   },
   {
     "airline": "NetJets",
-    "flights": 178
-  },
-  {
-    "airline": "Alaska Airlines",
-    "flights": 134
-  },
-  {
-    "airline": "Turkish Airlines",
-    "flights": 130
+    "flights": 184
   },
   {
     "airline": "JetBlue Airways",
-    "flights": 125
+    "flights": 130
   },
   {
-    "airline": "Republic Airlines",
-    "flights": 106
-  },
-  {
-    "airline": "Bombardier Business Jet Solutions",
-    "flights": 104
-  },
-  {
-    "airline": "Air Canada",
-    "flights": 93
+    "airline": "Alaska Airlines",
+    "flights": 118
   },
   {
     "airline": "Envoy Air",
-    "flights": 90
+    "flights": 106
+  },
+  {
+    "airline": "Republic Airlines",
+    "flights": 103
+  },
+  {
+    "airline": "Bombardier Business Jet Solutions",
+    "flights": 95
   },
   {
     "airline": "easyJet",
-    "flights": 81
+    "flights": 92
   },
   {
-    "airline": "Frontier Airlines",
-    "flights": 80
+    "airline": "Turkish Airlines",
+    "flights": 92
+  },
+  {
+    "airline": "Air Canada",
+    "flights": 88
   },
   {
     "airline": "British Airways",
-    "flights": 69
+    "flights": 85
   },
   {
-    "airline": "Air France",
-    "flights": 67
+    "airline": "United Parcel Service",
+    "flights": 84
   },
   {
-    "airline": "Scandinavian Airlines System",
-    "flights": 66
-  },
-  {
-    "airline": "WestJet",
-    "flights": 65
-  },
-  {
-    "airline": "Lufthansa",
-    "flights": 63
-  },
-  {
-    "airline": "PSA Airlines",
-    "flights": 62
+    "airline": "Frontier Airlines",
+    "flights": 83
   },
   {
     "airline": "Allegiant Air",
-    "flights": 59
+    "flights": 81
+  },
+  {
+    "airline": "Air France",
+    "flights": 76
+  },
+  {
+    "airline": "WestJet",
+    "flights": 74
+  },
+  {
+    "airline": "PSA Airlines",
+    "flights": 63
+  },
+  {
+    "airline": "Scandinavian Airlines System",
+    "flights": 62
   },
   {
     "airline": "Vueling Airlines",
-    "flights": 57
+    "flights": 58
   }
 ]
