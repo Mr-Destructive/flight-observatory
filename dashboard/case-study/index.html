@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Flight Observatory - Case Studies</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles.css" />
+    <style>
+      .case-study-shell { display: grid; gap: 18px; }
+      .case-study-grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 16px; }
+      .case-study-card {
+        grid-column: span 6;
+        padding: 20px;
+        border-radius: 18px;
+        border: 1px solid rgba(148, 163, 184, 0.1);
+        background: linear-gradient(180deg, rgba(36, 42, 52, 0.96), rgba(21, 28, 38, 0.94));
+        box-shadow: 0 18px 38px rgba(0, 0, 0, 0.18);
+      }
+      .case-study-card.wide { grid-column: span 12; }
+      .case-study-card h3 {
+        font-family: var(--font-display);
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        color: var(--text-secondary);
+        margin-bottom: 10px;
+      }
+      .case-study-card p { color: var(--text-secondary); line-height: 1.7; }
+      .case-study-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 14px;
+        padding: 10px 14px;
+        border-radius: 999px;
+        background: rgba(0, 230, 57, 0.14);
+        border: 1px solid rgba(0, 230, 57, 0.2);
+        color: var(--text-primary);
+        text-decoration: none;
+        font-family: var(--font-display);
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+      .case-study-link:hover { background: rgba(34, 211, 238, 0.08); border-color: rgba(34, 211, 238, 0.3); }
+      @media (max-width: 900px) {
+        .case-study-card,
+        .case-study-card.wide { grid-column: span 12; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dashboard">
+      <nav class="navbar">
+        <div class="navbar-left">
+          <div class="logo">Flight Observatory</div>
+          <span class="badge">CASE STUDIES</span>
+        </div>
+        <div class="navbar-right">
+          <a href="../" class="nav-link">Live</a>
+          <a href="../historical.html" class="nav-link">Archive</a>
+          <a href="../history-lab.html" class="nav-link">Lab</a>
+          <a href="./" class="nav-link active">Case Studies</a>
+        </div>
+      </nav>
+
+      <main class="main-container page-shell case-study-shell">
+        <section class="hero-banner">
+          <div class="hero-copy">
+            <p class="hero-kicker">Case Study Library</p>
+            <h1>Focused investigations</h1>
+            <p class="hero-subtitle">Short, human-readable studies that sit on top of the observatory data. Mumbai is the first one.</p>
+          </div>
+          <div class="hero-stack">
+            <div class="info-box"><span class="label">Studies</span><span class="value">1 live</span></div>
+            <div class="info-box"><span class="label">Format</span><span class="value">Narrative + tables</span></div>
+            <div class="info-box"><span class="label">Status</span><span class="value">Expandable</span></div>
+          </div>
+        </section>
+
+        <section class="case-study-grid">
+          <article class="case-study-card wide">
+            <h3>Mumbai</h3>
+            <p>
+              The first case study looks at the sky around Mumbai using monthly-first-day samples, a local-time rhythm view,
+              and a trimmed query console for fast exploration.
+            </p>
+            <a class="case-study-link" href="./mumbai/">Open Mumbai case study</a>
+            <a class="case-study-link" href="../mumbai-case-study/" style="margin-left: 10px;">Short link</a>
+          </article>
+          <article class="case-study-card">
+            <h3>What this section is for</h3>
+            <p>
+              This is the place for single-purpose studies that deserve more room than a dashboard tab but do not need a separate app.
+            </p>
+          </article>
+          <article class="case-study-card">
+            <h3>Next studies</h3>
+            <p>
+              Future studies can live here as sibling folders under <code>/case-study/</code> without changing the rest of the site.
+            </p>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

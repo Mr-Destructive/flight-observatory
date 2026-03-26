@@ -1,6 +1,7 @@
 import { loadArchiveDbRaw, summarizeDb } from "./history-archive.mjs";
 
 const charts = new Map();
+const MAX_REALISTIC_SPEED = 500;
 Chart.defaults.color = "#dce3f0";
 Chart.defaults.font = {
   family: "Space Grotesk, Inter, system-ui, sans-serif",
@@ -149,6 +150,10 @@ function isUnknownLabel(value) {
   return !text || text === "unknown" || text === "unkonw" || text === "n/a" || text === "na" || text === "none";
 }
 
+function isRealisticSpeed(speed) {
+  return Number.isFinite(speed) && speed >= 0 && speed <= MAX_REALISTIC_SPEED;
+}
+
 function cleanLabel(value, fallback = "--") {
   return isUnknownLabel(value) ? fallback : String(value);
 }
@@ -159,7 +164,8 @@ function renderInsights(elementId, insights, summary, detailed) {
   const scoped = (insights || []).filter((insight) => {
     const title = String(insight?.title || "").toLowerCase();
     const detail = String(insight?.detail || "").toLowerCase();
-    return !title.includes("unknown") && !title.includes("unkonw") && !detail.includes("unknown") && !detail.includes("unkonw");
+    const badSpeedStory = title.includes("speed record") || title.includes("mach") || detail.includes("mach") || detail.includes("supersonic") || detail.includes("ft on average");
+    return !title.includes("unknown") && !title.includes("unkonw") && !detail.includes("unknown") && !detail.includes("unkonw") && !badSpeedStory;
   });
   const finalInsights = scoped.length ? scoped : buildFallbackInsights(summary, detailed);
   el.innerHTML = finalInsights.map(insight => `
@@ -247,7 +253,12 @@ function renderQuickStats(summary, detailed, sky) {
     stats.push({ label: "Avg Altitude", value: Math.round(detailed.altitude_stats.avg) + "m", color: "--accent-orange" });
   }
   if (detailed?.speed_stats?.max) {
-    stats.push({ label: "Max Speed", value: Math.round(detailed.speed_stats.max) + "m/s", color: "--accent-cyan" });
+    if (isRealisticSpeed(detailed.speed_stats.max)) {
+      stats.push({ label: "Max Speed", value: Math.round(detailed.speed_stats.max) + "m/s", color: "--accent-cyan" });
+    } else if (sky?.speed_leaderboard?.some((item) => isRealisticSpeed(item.max_speed))) {
+      const safe = sky.speed_leaderboard.find((item) => isRealisticSpeed(item.max_speed));
+      stats.push({ label: "Max Speed", value: Math.round(safe.max_speed) + "m/s", color: "--accent-cyan" });
+    }
   }
   if (sky?.busiest_corridors?.[0]) {
     stats.push({ label: "Busiest FL", value: Math.round(sky.busiest_corridors[0].altitude_band / 1000) + "km", color: "--accent-green" });
@@ -257,7 +268,7 @@ function renderQuickStats(summary, detailed, sky) {
     stats.push({ label: "Airborne %", value: pct + "%", color: "--accent-pink" });
   }
   if (detailed?.ghost_planes) {
-    stats.push({ label: "Ghost Fleet", value: formatNumber(detailed.ghost_planes.aircraft), color: "--accent-purple" });
+    stats.push({ label: "Stationary Aircraft", value: formatNumber(detailed.ghost_planes.aircraft), color: "--accent-purple" });
   }
 
   grid.innerHTML = stats.map(s => `
@@ -324,6 +335,12 @@ function renderDerivedStats(summary, detailed) {
 function renderSpeedLeaderboard(leaderboard) {
   const el = document.getElementById("speedLeaderboard");
   if (!el || !leaderboard?.length) return;
+  const safeLeaderboard = leaderboard.filter((item) => isRealisticSpeed(item.max_speed)).slice(0, 15);
+
+  if (!safeLeaderboard.length) {
+    el.innerHTML = '<div class="hint">No realistic speed records in this selection.</div>';
+    return;
+  }
 
   el.innerHTML = `
     <table class="leaderboard-table">
@@ -338,7 +355,7 @@ function renderSpeedLeaderboard(leaderboard) {
         </tr>
       </thead>
       <tbody>
-        ${leaderboard.map((item, i) => `
+        ${safeLeaderboard.map((item, i) => `
           <tr>
             <td class="rank">#${i + 1}</td>
             <td class="icao">${item.icao24?.toUpperCase() || '--'}</td>
@@ -360,7 +377,7 @@ function renderTable(elementId, rows, columns) {
   const header = columns.map(c => `<th>${c.toUpperCase()}</th>`).join("");
   const body = rows.map(r => 
     `<tr>${columns.map(c => {
-      if (c === "airline") {
+      if (c === "airline" || c === "model" || c === "region") {
         const airline = cleanLabel(r[c], "Other");
         return `<td>${window.AirlineLogos?.render ? window.AirlineLogos.render(airline) : escapeHtml(airline)}</td>`;
       }
@@ -692,7 +709,7 @@ function renderHistoricalMap(rows, day) {
     airportClusters.forEach((cluster, airport) => {
       const latAvg = cluster.latSum / cluster.count;
       const lonAvg = cluster.lonSum / cluster.count;
-      addAirportMarker(historicalAirportLayer, latAvg, lonAvg, `${airport} airport`);
+      addAirportMarker(historicalAirportLayer, latAvg, lonAvg, airport);
     });
   }
 
@@ -811,7 +828,7 @@ function addHeatBlob(layer, lat, lon, count, label, pane = "densityPane") {
 function addAirportMarker(layer, lat, lon, label) {
   if (!layer || !Number.isFinite(lat) || !Number.isFinite(lon)) return;
   L.circleMarker([lat, lon], {
-    radius: 4,
+    radius: 5,
     fillColor: "#ffffff",
     color: "#ef4444",
     weight: 2,
@@ -868,7 +885,7 @@ async function loadHistoricalDashboard() {
 
   renderHistoricalPage(summary, detailed, sky, "Full history");
 
-  // Ghost Fleet
+  // Stationary aircraft
   if (detailed?.ghost_planes) {
     document.getElementById("ghostAircraft").textContent = formatNumber(detailed.ghost_planes.aircraft);
     document.getElementById("ghostSightings").textContent = formatNumber(detailed.ghost_planes.sightings);
@@ -890,7 +907,7 @@ async function loadHistoricalDashboard() {
     );
   }
 
-  // Traffic Wave
+  // Hourly traffic
   if (detailed?.hourly_distribution?.length) {
     createChart(
       "trafficWave", "line",
@@ -901,7 +918,7 @@ async function loadHistoricalDashboard() {
     );
   }
 
-  // Altitude Tiers
+  // Altitude distribution
   if (sky?.altitude_tiers?.length) {
     createChart(
       "altitudeTiers", "doughnut",
@@ -986,7 +1003,7 @@ async function loadHistoricalDashboard() {
     );
   }
 
-  // Directional Traffic Stats
+  // Heading distribution stats
   if (sky?.directional_traffic?.length) {
     createChart(
       "directionalTraffic", "bar",
@@ -1030,7 +1047,7 @@ async function loadHistoricalDashboard() {
     );
   }
 
-  // Airline Preferences
+  // Airline altitude mix
   if (sky?.airline_preferences?.length) {
     createChart(
       "airlinePreferences", "bar",

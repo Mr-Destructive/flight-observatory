@@ -340,8 +340,12 @@ function renderTable(elementId, rows, columns) {
       (r) =>
         `<tr>${columns
           .map((c) => {
-            if (c === "airline") {
-              return `<td>${window.AirlineLogos?.render ? window.AirlineLogos.render(r[c]) : escapeHtml(formatNumber(r[c]))}</td>`;
+            if (c === "airline" || c === "airport" || c === "country") {
+              const value = cleanLabel(r[c], "Other");
+              if (c === "airline" && window.AirlineLogos?.render) {
+                return `<td>${window.AirlineLogos.render(value)}</td>`;
+              }
+              return `<td>${escapeHtml(value)}</td>`;
             }
             return `<td>${escapeHtml(formatNumber(r[c]))}</td>`;
           })
@@ -488,7 +492,7 @@ function addHeatBlob(layer, lat, lon, count, label, pane = "densityPane") {
 function addAirportMarker(layer, lat, lon, label) {
   if (!layer || !Number.isFinite(lat) || !Number.isFinite(lon)) return;
   L.circleMarker([lat, lon], {
-    radius: 4,
+    radius: 5,
     fillColor: "#ffffff",
     color: "#ef4444",
     weight: 2,
@@ -496,7 +500,13 @@ function addAirportMarker(layer, lat, lon, label) {
     fillOpacity: 1,
     pane: "markerPane",
   })
-    .bindTooltip(`${label}`, { direction: "top" })
+    .bindTooltip(`${label}`, {
+      direction: "bottom",
+      permanent: true,
+      className: "airport-label",
+      offset: [0, 8],
+      opacity: 1,
+    })
     .addTo(layer);
 }
 
@@ -523,9 +533,11 @@ function initLiveMap() {
   liveMap.getPane("tracePane").style.zIndex = 450;
   liveMap.createPane("markerPane");
   liveMap.getPane("markerPane").style.zIndex = 650;
-  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png", {
     maxZoom: 12,
     minZoom: 2,
+    subdomains: "abcd",
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
   }).addTo(liveMap);
   liveFlightLayer = L.layerGroup().addTo(liveMap);
   liveAirportLayer = L.layerGroup().addTo(liveMap);
@@ -629,7 +641,7 @@ function updateLiveMap(flights, summary) {
     airportClusters.forEach((cluster, airport) => {
       const lat = cluster.latSum / cluster.count;
       const lon = cluster.lonSum / cluster.count;
-      addAirportMarker(liveAirportLayer, lat, lon, `${airport} airport`);
+      addAirportMarker(liveAirportLayer, lat, lon, airport);
     });
   }
 

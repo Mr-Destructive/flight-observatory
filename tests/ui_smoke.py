@@ -46,7 +46,7 @@ def main():
     )
 
     assert_contains(
-        root / "research.html",
+        root / "case-study" / "mumbai" / "index.html",
         [
             'id="takeawayCards"',
             'id="insightCards"',
@@ -63,6 +63,31 @@ def main():
             'likely_airlines.svg',
             'flow_direction.svg',
             'flow_routes.svg',
+        ],
+    )
+
+    assert_contains(
+        root / "case-study" / "index.html",
+        [
+            'href="./mumbai/"',
+            'Case Studies',
+            'Mumbai',
+        ],
+    )
+
+    assert_contains(
+        root / "research.html",
+        [
+            'url=./case-study/mumbai/',
+            "window.location.replace('./case-study/mumbai/');",
+        ],
+    )
+
+    assert_contains(
+        root / "mumbai-case-study" / "index.html",
+        [
+            'url=../case-study/mumbai/',
+            "window.location.replace('../case-study/mumbai/');",
         ],
     )
 

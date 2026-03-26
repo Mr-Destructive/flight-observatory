@@ -849,7 +849,7 @@ function renderLabMap(rows, day) {
     airportClusters.forEach((cluster, airport) => {
       const latAvg = cluster.latSum / cluster.count;
       const lonAvg = cluster.lonSum / cluster.count;
-      addAirportMarker(labAirportLayer, latAvg, lonAvg, `${airport} airport`);
+      addAirportMarker(labAirportLayer, latAvg, lonAvg, airport);
     });
   }
 
@@ -1007,7 +1007,7 @@ function addHeatBlob(layer, lat, lon, count, label, pane = "densityPane") {
 function addAirportMarker(layer, lat, lon, label) {
   if (!layer || !Number.isFinite(lat) || !Number.isFinite(lon)) return;
   L.circleMarker([lat, lon], {
-    radius: 4,
+    radius: 5,
     fillColor: "#ffffff",
     color: "#ef4444",
     weight: 2,

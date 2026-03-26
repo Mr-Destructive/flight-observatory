@@ -21,18 +21,18 @@
         </div>
         <div class="navbar-right">
           <a href="./" class="nav-link">Live</a>
-          <a href="./historical.html" class="nav-link active">Historical</a>
-          <a href="./history-lab.html" class="nav-link">History Lab</a>
-          <a href="./research.html" class="nav-link">Case Study</a>
+          <a href="./historical.html" class="nav-link active">Archive</a>
+          <a href="./history-lab.html" class="nav-link">Lab</a>
+          <a href="./case-study/" class="nav-link">Case Studies</a>
         </div>
       </nav>
 
       <main class="main-container page-shell">
         <section class="hero-banner hero-banner-historical">
           <div class="hero-copy">
-            <p class="hero-kicker">Historical Observatory</p>
-            <h1>Sky Analytics</h1>
-            <p class="hero-subtitle" id="dataDescription">Deep dive into flight patterns and airspace insights.</p>
+            <p class="hero-kicker">Archive Observatory</p>
+            <h1>Archive Analysis</h1>
+            <p class="hero-subtitle" id="dataDescription">Historical flight patterns, daily rhythms, and the broader shape of the airspace.</p>
           </div>
           <div class="hero-stack">
             <div class="info-box">
@@ -47,6 +47,18 @@
               <span class="label">Unique Aircraft</span>
               <span class="value" id="uniqueAircraft">--</span>
             </div>
+          </div>
+        </section>
+
+        <section class="mode-switch">
+          <div>
+            <span class="mode-kicker">Archive modes</span>
+            <h2>Overview and lab, in one archive family.</h2>
+            <p>The overview keeps the main patterns readable. The lab is where you dig into slices, filters, and SQL.</p>
+          </div>
+          <div class="mode-switch-links">
+            <a href="./historical.html" class="mode-link active">Overview</a>
+            <a href="./history-lab.html" class="mode-link">Lab</a>
           </div>
         </section>
 
@@ -80,10 +92,10 @@
           <div class="insights-grid" id="insightsContainer"></div>
         </section>
 
-        <!-- Sky Pulse Section -->
+        <!-- Hourly Rhythm -->
         <section class="charts-section">
-          <h2 class="section-title">Sky Pulse Index</h2>
-          <p class="section-desc">Traffic intensity relative to daily average (100%)</p>
+          <h2 class="section-title">Hourly Rhythm</h2>
+          <p class="section-desc">Traffic intensity relative to the daily average.</p>
           <div class="charts-grid">
             <div class="chart-card wide">
               <h3>Hourly Traffic Pulse</h3>
@@ -92,9 +104,9 @@
           </div>
         </section>
 
-        <!-- Traffic Wave -->
+        <!-- Hourly Traffic -->
         <section class="charts-section">
-          <h2 class="section-title">Traffic Wave</h2>
+          <h2 class="section-title">Hourly Traffic</h2>
           <p class="section-desc">Flight volume across 24 hours</p>
           <div class="charts-grid">
             <div class="chart-card wide">
@@ -104,13 +116,13 @@
           </div>
         </section>
 
-        <!-- Sky Real Estate -->
+        <!-- Altitude Distribution -->
         <section class="charts-section">
-          <h2 class="section-title">Altitude Tiers</h2>
-          <p class="section-desc">Altitude band distribution - who's flying where</p>
+          <h2 class="section-title">Altitude Distribution</h2>
+          <p class="section-desc">How traffic is spread across altitude bands.</p>
           <div class="charts-grid">
             <div class="chart-card">
-              <h3>Altitude Tiers</h3>
+              <h3>Altitude Bands</h3>
               <canvas id="altitudeTiers"></canvas>
             </div>
             <div class="chart-card">
@@ -124,22 +136,22 @@
           </div>
         </section>
 
-        <!-- Efficiency Curve -->
+        <!-- Speed by Altitude -->
         <section class="charts-section">
-          <h2 class="section-title">Cruise Efficiency</h2>
-          <p class="section-desc">Speed/Altitude ratio - lower is more efficient</p>
+          <h2 class="section-title">Speed by Altitude</h2>
+          <p class="section-desc">Typical speed patterns across altitude bands.</p>
           <div class="charts-grid">
             <div class="chart-card wide">
-              <h3>Efficiency Curve by Altitude</h3>
+              <h3>Speed Curve by Altitude</h3>
               <canvas id="efficiencyCurve"></canvas>
             </div>
           </div>
         </section>
 
-        <!-- In/Out Ratios -->
+        <!-- Airport Balance -->
         <section class="charts-section">
-          <h2 class="section-title">Airport Traffic Flow</h2>
-          <p class="section-desc">Arrivals vs Departures - which airports are sinks vs sources</p>
+          <h2 class="section-title">Airport Balance</h2>
+          <p class="section-desc">Arrivals vs departures by airport.</p>
           <div class="charts-grid">
             <div class="chart-card wide">
               <h3>In/Out Ratio</h3>
@@ -148,10 +160,10 @@
           </div>
         </section>
 
-        <!-- Directional Traffic -->
+        <!-- Heading Distribution -->
         <section class="charts-section">
-          <h2 class="section-title">Directional Traffic</h2>
-          <p class="section-desc">Compass distribution of flight paths</p>
+          <h2 class="section-title">Heading Distribution</h2>
+          <p class="section-desc">Compass distribution of flight paths.</p>
           <div class="charts-grid">
             <div class="chart-card">
               <h3>Heading Distribution</h3>
@@ -164,10 +176,10 @@
           </div>
         </section>
 
-        <!-- Speed Analytics -->
+        <!-- Speed Overview -->
         <section class="charts-section">
-          <h2 class="section-title">Speed Analytics</h2>
-          <p class="section-desc">From crawl to supersonic</p>
+          <h2 class="section-title">Speed Overview</h2>
+          <p class="section-desc">Typical speeds and the outliers we filter out.</p>
           <div class="charts-grid">
             <div class="chart-card">
               <h3>Speed Tiers</h3>
@@ -184,10 +196,10 @@
           </div>
         </section>
 
-        <!-- Ghost Fleet -->
+        <!-- Stationary Aircraft -->
         <section class="charts-section ghost-section">
-          <h2 class="section-title">Ghost Fleet</h2>
-          <p class="section-desc">Aircraft with 0 velocity but altitude > 100m (likely parked)</p>
+          <h2 class="section-title">Stationary Aircraft</h2>
+          <p class="section-desc">Aircraft with no motion but still reporting position.</p>
           <div class="charts-grid">
             <div class="chart-card">
               <div class="ghost-counter">
@@ -206,8 +218,8 @@
 
         <!-- Holding Patterns -->
         <section class="charts-section">
-          <h2 class="section-title">Holding Pattern Watch</h2>
-          <p class="section-desc">Aircraft circling at low altitude (potential delays)</p>
+          <h2 class="section-title">Holding Patterns</h2>
+          <p class="section-desc">Aircraft circling at low altitude.</p>
           <div class="charts-grid">
             <div class="chart-card wide">
               <h3>Top Holding Locations</h3>
@@ -216,10 +228,10 @@
           </div>
         </section>
 
-        <!-- Airline Altitude Preferences -->
+        <!-- Airline Altitude Mix -->
         <section class="charts-section">
-          <h2 class="section-title">Airline Preferences</h2>
-          <p class="section-desc">Which airlines fly highest (long-haul vs regional)</p>
+          <h2 class="section-title">Airline Altitude Mix</h2>
+          <p class="section-desc">Which airlines spend more time high or low.</p>
           <div class="charts-grid">
             <div class="chart-card wide">
               <h3>Altitude by Airline</h3>
@@ -228,10 +240,10 @@
           </div>
         </section>
 
-        <!-- Regional Density -->
+        <!-- Density Hotspots -->
         <section class="charts-section">
-          <h2 class="section-title">Traffic Hotspots</h2>
-          <p class="section-desc">Most congested 5°×5° grid cells</p>
+          <h2 class="section-title">Density Hotspots</h2>
+          <p class="section-desc">The most crowded grid cells in the sample.</p>
           <div class="charts-grid">
             <div class="chart-card wide">
               <h3>Regional Density</h3>
@@ -240,10 +252,10 @@
           </div>
         </section>
 
-        <!-- Weekend vs Weekday -->
+        <!-- Weekday Split -->
         <section class="charts-section">
-          <h2 class="section-title">Weekday vs Weekend</h2>
-          <p class="section-desc">Traffic patterns differ by day type</p>
+          <h2 class="section-title">Weekday Split</h2>
+          <p class="section-desc">How traffic shifts between weekdays and weekends.</p>
           <div class="charts-grid">
             <div class="chart-card wide">
               <h3>Weekday Distribution</h3>
@@ -252,9 +264,9 @@
           </div>
         </section>
 
-        <!-- Traditional Charts -->
+        <!-- Core Metrics -->
         <section class="charts-section">
-          <h2 class="section-title">Classic Metrics</h2>
+          <h2 class="section-title">Core Metrics</h2>
           <div class="charts-grid">
             <div class="chart-card">
               <h3>Ground vs Airborne</h3>
@@ -275,9 +287,9 @@
           </div>
         </section>
 
-        <!-- Tables -->
+        <!-- Leaderboards -->
         <section class="tables-section">
-          <h2 class="section-title">Top Lists</h2>
+          <h2 class="section-title">Leaderboards</h2>
           <div class="tables-grid wide">
             <div class="table-card">
               <h3>Top Airlines</h3>
