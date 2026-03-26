@@ -1,90 +1,82 @@
 [
   {
     "airport": "unknown",
-    "flights": 6482
+    "flights": 8474
   },
   {
     "airport": "KDFW",
-    "flights": 44
+    "flights": 60
   },
   {
     "airport": "KATL",
-    "flights": 36
-  },
-  {
-    "airport": "CYYZ",
-    "flights": 34
-  },
-  {
-    "airport": "KBOS",
-    "flights": 30
-  },
-  {
-    "airport": "VHHH",
-    "flights": 25
+    "flights": 48
   },
   {
     "airport": "CYYC",
-    "flights": 23
+    "flights": 34
   },
   {
-    "airport": "LSZH",
-    "flights": 21
-  },
-  {
-    "airport": "RJTT",
-    "flights": 19
-  },
-  {
-    "airport": "KEWR",
-    "flights": 17
-  },
-  {
-    "airport": "EDDF",
-    "flights": 17
-  },
-  {
-    "airport": "KLGA",
-    "flights": 17
-  },
-  {
-    "airport": "KORD",
-    "flights": 17
-  },
-  {
-    "airport": "VIDP",
-    "flights": 16
-  },
-  {
-    "airport": "CYUL",
-    "flights": 15
-  },
-  {
-    "airport": "KMCO",
-    "flights": 13
-  },
-  {
-    "airport": "YSSY",
-    "flights": 13
-  },
-  {
-    "airport": "EGKK",
-    "flights": 13
-  },
-  {
-    "airport": "SKBO",
-    "flights": 12
-  },
-  {
-    "airport": "VECC",
-    "flights": 12
+    "airport": "CYYZ",
+    "flights": 32
   },
   {
     "airport": "KDEN",
-    "flights": 12
+    "flights": 28
   },
   {
-    "airport": "LOWW",
+    "airport": "LSZH",
+    "flights": 24
+  },
+  {
+    "airport": "KBOS",
+    "flights": 22
+  },
+  {
+    "airport": "KORD",
+    "flights": 21
+  },
+  {
+    "airport": "KEWR",
+    "flights": 19
+  },
+  {
+    "airport": "KLAS",
+    "flights": 18
+  },
+  {
+    "airport": "VHHH",
+    "flights": 16
+  },
+  {
+    "airport": "EGKK",
+    "flights": 15
+  },
+  {
+    "airport": "KJFK",
+    "flights": 14
+  },
+  {
+    "airport": "KIAD",
+    "flights": 13
+  },
+  {
+    "airport": "KSLC",
+    "flights": 13
+  },
+  {
+    "airport": "ESSA",
+    "flights": 13
+  },
+  {
+    "airport": "KLAX",
+    "flights": 13
+  },
+  {
+    "airport": "CYUL",
+    "flights": 13
+  },
+  {
+    "airport": "VECC",
     "flights": 12
   },
   {
@@ -92,11 +84,19 @@
     "flights": 12
   },
   {
-    "airport": "KTPA",
+    "airport": "EBBR",
+    "flights": 12
+  },
+  {
+    "airport": "LOWW",
     "flights": 11
   },
   {
-    "airport": "ESSA",
+    "airport": "CYVR",
+    "flights": 11
+  },
+  {
+    "airport": "KMCO",
     "flights": 11
   }
 ]
