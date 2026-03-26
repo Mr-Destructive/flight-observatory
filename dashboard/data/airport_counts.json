@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 9504
-  },
-  {
-    "airport": "KATL",
-    "flights": 48
-  },
-  {
-    "airport": "CYYC",
-    "flights": 45
+    "flights": 9534
   },
   {
     "airport": "KDFW",
-    "flights": 31
-  },
-  {
-    "airport": "CYYZ",
-    "flights": 21
-  },
-  {
-    "airport": "KBNA",
-    "flights": 20
-  },
-  {
-    "airport": "KBOS",
-    "flights": 19
-  },
-  {
-    "airport": "EDDF",
-    "flights": 17
-  },
-  {
-    "airport": "KAUS",
-    "flights": 17
-  },
-  {
-    "airport": "KIAD",
-    "flights": 16
-  },
-  {
-    "airport": "KDEN",
-    "flights": 16
-  },
-  {
-    "airport": "CYVR",
-    "flights": 16
-  },
-  {
-    "airport": "SKBO",
-    "flights": 15
-  },
-  {
-    "airport": "KLAS",
-    "flights": 15
-  },
-  {
-    "airport": "KSEA",
-    "flights": 15
-  },
-  {
-    "airport": "KLAX",
-    "flights": 13
-  },
-  {
-    "airport": "KMCO",
-    "flights": 13
-  },
-  {
-    "airport": "MGGT",
-    "flights": 13
-  },
-  {
-    "airport": "KEWR",
-    "flights": 13
-  },
-  {
-    "airport": "KTPA",
-    "flights": 13
-  },
-  {
-    "airport": "KORD",
-    "flights": 13
-  },
-  {
-    "airport": "LSZH",
-    "flights": 13
-  },
-  {
-    "airport": "VIDP",
-    "flights": 12
-  },
-  {
-    "airport": "ESSA",
-    "flights": 12
+    "flights": 36
   },
   {
     "airport": "KPHX",
+    "flights": 30
+  },
+  {
+    "airport": "CYYC",
+    "flights": 30
+  },
+  {
+    "airport": "LSZH",
+    "flights": 30
+  },
+  {
+    "airport": "KORD",
+    "flights": 28
+  },
+  {
+    "airport": "CYYZ",
+    "flights": 27
+  },
+  {
+    "airport": "KATL",
+    "flights": 25
+  },
+  {
+    "airport": "KLAS",
+    "flights": 22
+  },
+  {
+    "airport": "KIAD",
+    "flights": 20
+  },
+  {
+    "airport": "KLAX",
+    "flights": 18
+  },
+  {
+    "airport": "CYVR",
+    "flights": 18
+  },
+  {
+    "airport": "KBNA",
+    "flights": 16
+  },
+  {
+    "airport": "EDDF",
+    "flights": 15
+  },
+  {
+    "airport": "LOWW",
+    "flights": 15
+  },
+  {
+    "airport": "MMUN",
+    "flights": 15
+  },
+  {
+    "airport": "KEWR",
+    "flights": 14
+  },
+  {
+    "airport": "KBJC",
+    "flights": 13
+  },
+  {
+    "airport": "KOAK",
+    "flights": 13
+  },
+  {
+    "airport": "EHAM",
+    "flights": 13
+  },
+  {
+    "airport": "KAUS",
     "flights": 12
+  },
+  {
+    "airport": "MGGT",
+    "flights": 12
+  },
+  {
+    "airport": "ZGSZ",
+    "flights": 11
+  },
+  {
+    "airport": "SKBO",
+    "flights": 11
+  },
+  {
+    "airport": "KTMB",
+    "flights": 11
   }
 ]
