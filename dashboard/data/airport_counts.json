@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 5424
-  },
-  {
-    "airport": "LSZH",
-    "flights": 31
-  },
-  {
-    "airport": "CYYZ",
-    "flights": 29
-  },
-  {
-    "airport": "KBOS",
-    "flights": 27
-  },
-  {
-    "airport": "YSSY",
-    "flights": 26
-  },
-  {
-    "airport": "EDDF",
-    "flights": 25
-  },
-  {
-    "airport": "VHHH",
-    "flights": 24
-  },
-  {
-    "airport": "KIAD",
-    "flights": 23
-  },
-  {
-    "airport": "EGKK",
-    "flights": 23
-  },
-  {
-    "airport": "KATL",
-    "flights": 20
+    "flights": 6482
   },
   {
     "airport": "KDFW",
-    "flights": 18
+    "flights": 44
+  },
+  {
+    "airport": "KATL",
+    "flights": 36
+  },
+  {
+    "airport": "CYYZ",
+    "flights": 34
+  },
+  {
+    "airport": "KBOS",
+    "flights": 30
+  },
+  {
+    "airport": "VHHH",
+    "flights": 25
+  },
+  {
+    "airport": "CYYC",
+    "flights": 23
+  },
+  {
+    "airport": "LSZH",
+    "flights": 21
   },
   {
     "airport": "RJTT",
-    "flights": 18
-  },
-  {
-    "airport": "KLGA",
-    "flights": 18
+    "flights": 19
   },
   {
     "airport": "KEWR",
     "flights": 17
   },
   {
-    "airport": "EBBR",
-    "flights": 16
+    "airport": "EDDF",
+    "flights": 17
   },
   {
-    "airport": "KMCO",
-    "flights": 15
-  },
-  {
-    "airport": "KJFK",
-    "flights": 15
-  },
-  {
-    "airport": "VIDP",
-    "flights": 13
+    "airport": "KLGA",
+    "flights": 17
   },
   {
     "airport": "KORD",
+    "flights": 17
+  },
+  {
+    "airport": "VIDP",
+    "flights": 16
+  },
+  {
+    "airport": "CYUL",
+    "flights": 15
+  },
+  {
+    "airport": "KMCO",
     "flights": 13
   },
   {
-    "airport": "CYYC",
+    "airport": "YSSY",
     "flights": 13
   },
   {
-    "airport": "KTPA",
+    "airport": "EGKK",
+    "flights": 13
+  },
+  {
+    "airport": "SKBO",
     "flights": 12
   },
   {
-    "airport": "YPPH",
+    "airport": "VECC",
+    "flights": 12
+  },
+  {
+    "airport": "KDEN",
     "flights": 12
   },
   {
     "airport": "LOWW",
+    "flights": 12
+  },
+  {
+    "airport": "EHAM",
+    "flights": 12
+  },
+  {
+    "airport": "KTPA",
     "flights": 11
   },
   {
-    "airport": "CYUL",
-    "flights": 10
-  },
-  {
-    "airport": "ZGSZ",
-    "flights": 10
+    "airport": "ESSA",
+    "flights": 11
   }
 ]
