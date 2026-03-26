@@ -1,62 +1,66 @@
 [
   {
     "airport": "unknown",
-    "flights": 7623
+    "flights": 7211
   },
   {
     "airport": "KATL",
-    "flights": 39
-  },
-  {
-    "airport": "KDFW",
-    "flights": 38
-  },
-  {
-    "airport": "YPPH",
-    "flights": 29
-  },
-  {
-    "airport": "CYYZ",
-    "flights": 24
-  },
-  {
-    "airport": "CYYC",
-    "flights": 23
-  },
-  {
-    "airport": "YSSY",
-    "flights": 23
-  },
-  {
-    "airport": "KIAD",
-    "flights": 20
-  },
-  {
-    "airport": "KAUS",
-    "flights": 20
+    "flights": 43
   },
   {
     "airport": "KBOS",
+    "flights": 37
+  },
+  {
+    "airport": "CYYZ",
+    "flights": 35
+  },
+  {
+    "airport": "YSSY",
+    "flights": 32
+  },
+  {
+    "airport": "CYYC",
+    "flights": 27
+  },
+  {
+    "airport": "YPPH",
+    "flights": 27
+  },
+  {
+    "airport": "RJTT",
+    "flights": 25
+  },
+  {
+    "airport": "KSFO",
+    "flights": 20
+  },
+  {
+    "airport": "YMML",
     "flights": 19
   },
   {
-    "airport": "KEWR",
+    "airport": "KAUS",
     "flights": 18
+  },
+  {
+    "airport": "KDFW",
+    "flights": 18
+  },
+  {
+    "airport": "KIAD",
+    "flights": 17
   },
   {
     "airport": "KORD",
     "flights": 17
   },
   {
-    "airport": "KVNY",
-    "flights": 17
+    "airport": "KSJC",
+    "flights": 16
   },
   {
-    "airport": "YMML",
-    "flights": 17
-  },
-  {
-    "airport": "RJTT",
+    "airport": "KEWR",
     "flights": 16
   },
   {
@@ -64,39 +68,35 @@
     "flights": 16
   },
   {
-    "airport": "KLAS",
+    "airport": "KLGA",
     "flights": 16
   },
   {
     "airport": "KBNA",
-    "flights": 16
-  },
-  {
-    "airport": "KPHX",
-    "flights": 15
-  },
-  {
-    "airport": "KSJC",
-    "flights": 15
-  },
-  {
-    "airport": "CYUL",
     "flights": 14
   },
   {
-    "airport": "CYVR",
+    "airport": "KLAS",
     "flights": 14
   },
   {
-    "airport": "KOAK",
-    "flights": 13
-  },
-  {
-    "airport": "KLGA",
+    "airport": "SKBO",
     "flights": 13
   },
   {
     "airport": "KSEA",
     "flights": 13
+  },
+  {
+    "airport": "SBSP",
+    "flights": 12
+  },
+  {
+    "airport": "KVNY",
+    "flights": 12
+  },
+  {
+    "airport": "KSAN",
+    "flights": 12
   }
 ]
