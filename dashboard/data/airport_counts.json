@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 7211
+    "flights": 6772
   },
   {
     "airport": "KATL",
-    "flights": 43
-  },
-  {
-    "airport": "KBOS",
-    "flights": 37
-  },
-  {
-    "airport": "CYYZ",
-    "flights": 35
-  },
-  {
-    "airport": "YSSY",
-    "flights": 32
-  },
-  {
-    "airport": "CYYC",
-    "flights": 27
-  },
-  {
-    "airport": "YPPH",
-    "flights": 27
-  },
-  {
-    "airport": "RJTT",
-    "flights": 25
-  },
-  {
-    "airport": "KSFO",
-    "flights": 20
-  },
-  {
-    "airport": "YMML",
-    "flights": 19
-  },
-  {
-    "airport": "KAUS",
-    "flights": 18
+    "flights": 45
   },
   {
     "airport": "KDFW",
-    "flights": 18
+    "flights": 38
   },
   {
-    "airport": "KIAD",
-    "flights": 17
-  },
-  {
-    "airport": "KORD",
-    "flights": 17
-  },
-  {
-    "airport": "KSJC",
-    "flights": 16
-  },
-  {
-    "airport": "KEWR",
-    "flights": 16
+    "airport": "CYYZ",
+    "flights": 33
   },
   {
     "airport": "KDEN",
-    "flights": 16
+    "flights": 33
   },
   {
-    "airport": "KLGA",
-    "flights": 16
+    "airport": "KBOS",
+    "flights": 31
   },
   {
-    "airport": "KBNA",
-    "flights": 14
+    "airport": "CYYC",
+    "flights": 24
+  },
+  {
+    "airport": "KORD",
+    "flights": 22
+  },
+  {
+    "airport": "KJFK",
+    "flights": 21
+  },
+  {
+    "airport": "KSFO",
+    "flights": 19
+  },
+  {
+    "airport": "YSSY",
+    "flights": 18
+  },
+  {
+    "airport": "KEWR",
+    "flights": 17
+  },
+  {
+    "airport": "RJTT",
+    "flights": 17
   },
   {
     "airport": "KLAS",
-    "flights": 14
+    "flights": 17
+  },
+  {
+    "airport": "YPPH",
+    "flights": 17
+  },
+  {
+    "airport": "CYVR",
+    "flights": 13
+  },
+  {
+    "airport": "KAUS",
+    "flights": 13
+  },
+  {
+    "airport": "KSJC",
+    "flights": 13
+  },
+  {
+    "airport": "YMML",
+    "flights": 13
   },
   {
     "airport": "SKBO",
-    "flights": 13
-  },
-  {
-    "airport": "KSEA",
-    "flights": 13
-  },
-  {
-    "airport": "SBSP",
     "flights": 12
   },
   {
-    "airport": "KVNY",
+    "airport": "VHHH",
     "flights": 12
   },
   {
-    "airport": "KSAN",
+    "airport": "CYUL",
+    "flights": 12
+  },
+  {
+    "airport": "KBNA",
+    "flights": 12
+  },
+  {
+    "airport": "KSLC",
+    "flights": 12
+  },
+  {
+    "airport": "KPHX",
     "flights": 12
   }
 ]
