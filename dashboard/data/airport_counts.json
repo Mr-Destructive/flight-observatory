@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 4459
-  },
-  {
-    "airport": "LSZH",
-    "flights": 29
+    "flights": 5086
   },
   {
     "airport": "KBOS",
-    "flights": 26
+    "flights": 30
+  },
+  {
+    "airport": "CYYZ",
+    "flights": 27
   },
   {
     "airport": "EDDF",
     "flights": 23
   },
   {
-    "airport": "RJTT",
+    "airport": "KATL",
     "flights": 22
   },
   {
-    "airport": "EHAM",
+    "airport": "VHHH",
     "flights": 21
   },
   {
+    "airport": "RJTT",
+    "flights": 19
+  },
+  {
+    "airport": "LSZH",
+    "flights": 19
+  },
+  {
     "airport": "YSSY",
-    "flights": 20
-  },
-  {
-    "airport": "EGKK",
-    "flights": 19
-  },
-  {
-    "airport": "VHHH",
-    "flights": 19
-  },
-  {
-    "airport": "CYYZ",
-    "flights": 15
-  },
-  {
-    "airport": "LOWW",
-    "flights": 14
+    "flights": 18
   },
   {
     "airport": "CYYC",
-    "flights": 14
+    "flights": 17
+  },
+  {
+    "airport": "EGKK",
+    "flights": 16
+  },
+  {
+    "airport": "VTBS",
+    "flights": 16
+  },
+  {
+    "airport": "KDFW",
+    "flights": 15
+  },
+  {
+    "airport": "EHAM",
+    "flights": 15
   },
   {
     "airport": "YMML",
-    "flights": 11
+    "flights": 15
   },
   {
-    "airport": "VABB",
-    "flights": 10
+    "airport": "LEBL",
+    "flights": 14
   },
   {
-    "airport": "VECC",
-    "flights": 10
+    "airport": "KDCA",
+    "flights": 14
+  },
+  {
+    "airport": "KMCO",
+    "flights": 13
+  },
+  {
+    "airport": "LOWW",
+    "flights": 13
+  },
+  {
+    "airport": "KLGA",
+    "flights": 13
+  },
+  {
+    "airport": "LIMC",
+    "flights": 12
+  },
+  {
+    "airport": "YPPH",
+    "flights": 12
   },
   {
     "airport": "VIDP",
     "flights": 10
   },
   {
-    "airport": "EGCC",
+    "airport": "KAUS",
     "flights": 10
   },
   {
-    "airport": "YPPH",
+    "airport": "KEWR",
     "flights": 10
-  },
-  {
-    "airport": "RJAA",
-    "flights": 10
-  },
-  {
-    "airport": "LFLL",
-    "flights": 9
-  },
-  {
-    "airport": "VTBS",
-    "flights": 9
-  },
-  {
-    "airport": "KMCO",
-    "flights": 9
-  },
-  {
-    "airport": "ESSA",
-    "flights": 8
-  },
-  {
-    "airport": "LEBL",
-    "flights": 8
-  },
-  {
-    "airport": "ZGSZ",
-    "flights": 8
   }
 ]
