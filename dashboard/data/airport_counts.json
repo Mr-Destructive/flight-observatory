@@ -1,62 +1,70 @@
 [
   {
     "airport": "unknown",
-    "flights": 3547
+    "flights": 3749
   },
   {
     "airport": "LSZH",
-    "flights": 24
-  },
-  {
-    "airport": "VHHH",
-    "flights": 19
-  },
-  {
-    "airport": "YSSY",
-    "flights": 19
-  },
-  {
-    "airport": "YPPH",
-    "flights": 18
-  },
-  {
-    "airport": "KLAS",
-    "flights": 17
-  },
-  {
-    "airport": "RJTT",
-    "flights": 17
-  },
-  {
-    "airport": "YMML",
-    "flights": 16
+    "flights": 44
   },
   {
     "airport": "CYYC",
-    "flights": 13
+    "flights": 26
   },
   {
-    "airport": "KPHX",
-    "flights": 13
+    "airport": "KLAS",
+    "flights": 24
   },
   {
     "airport": "VIDP",
+    "flights": 20
+  },
+  {
+    "airport": "RJTT",
+    "flights": 18
+  },
+  {
+    "airport": "YMML",
+    "flights": 18
+  },
+  {
+    "airport": "KLAX",
+    "flights": 16
+  },
+  {
+    "airport": "EHAM",
+    "flights": 16
+  },
+  {
+    "airport": "VHHH",
+    "flights": 16
+  },
+  {
+    "airport": "YSSY",
+    "flights": 16
+  },
+  {
+    "airport": "YPPH",
+    "flights": 14
+  },
+  {
+    "airport": "EGKK",
+    "flights": 13
+  },
+  {
+    "airport": "EDDF",
     "flights": 12
   },
   {
-    "airport": "KBOS",
-    "flights": 12
-  },
-  {
-    "airport": "KSFO",
+    "airport": "RJAA",
     "flights": 11
   },
   {
-    "airport": "KORD",
+    "airport": "KPHX",
     "flights": 11
   },
   {
-    "airport": "ZGSZ",
+    "airport": "CYVR",
     "flights": 11
   },
   {
@@ -64,39 +72,31 @@
     "flights": 11
   },
   {
-    "airport": "KSJC",
-    "flights": 11
-  },
-  {
-    "airport": "CYUL",
-    "flights": 11
-  },
-  {
-    "airport": "EDDP",
+    "airport": "KSFO",
     "flights": 10
-  },
-  {
-    "airport": "KOAK",
-    "flights": 10
-  },
-  {
-    "airport": "KSLC",
-    "flights": 10
-  },
-  {
-    "airport": "KDEN",
-    "flights": 9
-  },
-  {
-    "airport": "VECC",
-    "flights": 9
   },
   {
     "airport": "EBBR",
+    "flights": 10
+  },
+  {
+    "airport": "WIII",
     "flights": 9
   },
   {
-    "airport": "KLAX",
+    "airport": "LOWW",
+    "flights": 9
+  },
+  {
+    "airport": "KBOS",
+    "flights": 9
+  },
+  {
+    "airport": "EGCC",
+    "flights": 9
+  },
+  {
+    "airport": "KORD",
     "flights": 9
   }
 ]
