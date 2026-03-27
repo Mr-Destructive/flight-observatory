@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 3927
-  },
-  {
-    "airport": "LSZH",
-    "flights": 31
+    "flights": 4142
   },
   {
     "airport": "RJTT",
-    "flights": 22
-  },
-  {
-    "airport": "EGKK",
-    "flights": 19
-  },
-  {
-    "airport": "EDDF",
-    "flights": 19
+    "flights": 25
   },
   {
     "airport": "VHHH",
-    "flights": 17
+    "flights": 22
   },
   {
-    "airport": "EHAM",
-    "flights": 15
+    "airport": "LSZH",
+    "flights": 18
   },
   {
     "airport": "YSSY",
+    "flights": 17
+  },
+  {
+    "airport": "EGKK",
+    "flights": 16
+  },
+  {
+    "airport": "EHAM",
+    "flights": 16
+  },
+  {
+    "airport": "EDDF",
+    "flights": 13
+  },
+  {
+    "airport": "KBOS",
     "flights": 12
   },
   {
-    "airport": "EGCC",
-    "flights": 12
-  },
-  {
-    "airport": "YMML",
+    "airport": "VECC",
     "flights": 11
   },
   {
-    "airport": "RJBB",
+    "airport": "LOWW",
     "flights": 11
+  },
+  {
+    "airport": "VTBS",
+    "flights": 11
+  },
+  {
+    "airport": "CYYC",
+    "flights": 10
   },
   {
     "airport": "YPPH",
     "flights": 10
   },
   {
-    "airport": "ZGSZ",
-    "flights": 9
-  },
-  {
-    "airport": "LFPG",
-    "flights": 9
-  },
-  {
-    "airport": "VIDP",
+    "airport": "LEBL",
     "flights": 8
   },
   {
-    "airport": "VABB",
+    "airport": "LEAL",
     "flights": 8
   },
   {
-    "airport": "KSFO",
-    "flights": 8
-  },
-  {
-    "airport": "KBOS",
+    "airport": "EDDM",
     "flights": 8
   },
   {
     "airport": "ESSA",
-    "flights": 7
-  },
-  {
-    "airport": "CYYC",
-    "flights": 7
+    "flights": 8
   },
   {
     "airport": "WIII",
     "flights": 7
   },
   {
-    "airport": "LEBL",
+    "airport": "LHBP",
     "flights": 7
   },
   {
-    "airport": "KLAS",
+    "airport": "LKPR",
     "flights": 7
   },
   {
-    "airport": "VTBS",
+    "airport": "LIMC",
     "flights": 7
   },
   {
-    "airport": "LOWW",
+    "airport": "KMCO",
+    "flights": 7
+  },
+  {
+    "airport": "ESCF",
+    "flights": 7
+  },
+  {
+    "airport": "PANC",
     "flights": 7
   }
 ]

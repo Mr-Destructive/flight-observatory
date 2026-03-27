@@ -1,42 +1,42 @@
 [
   {
     "airport": "unknown",
-    "flights": 16062
+    "flights": 20204
   },
   {
     "airport": "LSZH",
-    "flights": 105
+    "flights": 123
   },
   {
     "airport": "RJTT",
-    "flights": 74
-  },
-  {
-    "airport": "YSSY",
-    "flights": 72
+    "flights": 99
   },
   {
     "airport": "VHHH",
-    "flights": 71
+    "flights": 93
+  },
+  {
+    "airport": "YSSY",
+    "flights": 89
   },
   {
     "airport": "YPPH",
-    "flights": 67
-  },
-  {
-    "airport": "YMML",
-    "flights": 64
+    "flights": 77
   },
   {
     "airport": "CYYC",
-    "flights": 64
+    "flights": 74
+  },
+  {
+    "airport": "YMML",
+    "flights": 70
   },
   {
     "airport": "KLAS",
-    "flights": 63
+    "flights": 68
   },
   {
-    "airport": "VIDP",
-    "flights": 51
+    "airport": "KBOS",
+    "flights": 59
   }
 ]
