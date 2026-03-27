@@ -1,102 +1,102 @@
 [
   {
     "airline": "unknown",
-    "flights": 3917
-  },
-  {
-    "airline": "Delta Air Lines",
-    "flights": 500
+    "flights": 3528
   },
   {
     "airline": "American Airlines",
-    "flights": 473
+    "flights": 472
   },
   {
     "airline": "Southwest Airlines",
-    "flights": 469
+    "flights": 468
   },
   {
     "airline": "United Airlines",
-    "flights": 456
+    "flights": 467
+  },
+  {
+    "airline": "Delta Air Lines",
+    "flights": 466
   },
   {
     "airline": "Ryanair",
-    "flights": 301
+    "flights": 282
   },
   {
     "airline": "SkyWest",
-    "flights": 213
+    "flights": 224
   },
   {
     "airline": "NetJets",
-    "flights": 179
+    "flights": 149
   },
   {
     "airline": "JetBlue Airways",
-    "flights": 143
-  },
-  {
-    "airline": "easyJet",
-    "flights": 117
+    "flights": 144
   },
   {
     "airline": "Alaska Airlines",
-    "flights": 106
+    "flights": 126
   },
   {
     "airline": "Republic Airlines",
-    "flights": 103
+    "flights": 102
   },
   {
     "airline": "Frontier Airlines",
-    "flights": 94
+    "flights": 98
   },
   {
     "airline": "Air Canada",
-    "flights": 93
-  },
-  {
-    "airline": "Lufthansa",
-    "flights": 91
+    "flights": 95
   },
   {
     "airline": "Envoy Air",
-    "flights": 85
+    "flights": 89
   },
   {
-    "airline": "Allegiant Air",
-    "flights": 84
+    "airline": "easyJet",
+    "flights": 82
   },
   {
     "airline": "Bombardier Business Jet Solutions",
-    "flights": 77
+    "flights": 73
+  },
+  {
+    "airline": "Allegiant Air",
+    "flights": 73
   },
   {
     "airline": "United Parcel Service",
-    "flights": 72
+    "flights": 71
   },
   {
     "airline": "WestJet",
-    "flights": 72
+    "flights": 71
   },
   {
     "airline": "PSA Airlines",
-    "flights": 61
+    "flights": 70
   },
   {
-    "airline": "KLM Royal Dutch Airlines",
-    "flights": 59
-  },
-  {
-    "airline": "Vueling Airlines",
-    "flights": 56
-  },
-  {
-    "airline": "British Airways",
-    "flights": 54
+    "airline": "Lufthansa",
+    "flights": 70
   },
   {
     "airline": "Spirit Airlines",
-    "flights": 53
+    "flights": 49
+  },
+  {
+    "airline": "Vueling Airlines",
+    "flights": 47
+  },
+  {
+    "airline": "All Nippon Airways",
+    "flights": 44
+  },
+  {
+    "airline": "AeroM\u00e9xico",
+    "flights": 42
   }
 ]
