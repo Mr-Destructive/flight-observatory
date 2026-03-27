@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 9893
+    "flights": 9725
   },
   {
     "airport": "KDFW",
     "flights": 37
   },
   {
-    "airport": "KDEN",
-    "flights": 33
-  },
-  {
-    "airport": "CYYC",
-    "flights": 32
-  },
-  {
     "airport": "KATL",
-    "flights": 27
-  },
-  {
-    "airport": "LSZH",
-    "flights": 24
+    "flights": 29
   },
   {
     "airport": "CYYZ",
-    "flights": 23
+    "flights": 27
+  },
+  {
+    "airport": "KSFO",
+    "flights": 26
+  },
+  {
+    "airport": "CYYC",
+    "flights": 25
+  },
+  {
+    "airport": "KDEN",
+    "flights": 21
   },
   {
     "airport": "KBOS",
     "flights": 20
   },
   {
-    "airport": "KJFK",
+    "airport": "LSZH",
+    "flights": 20
+  },
+  {
+    "airport": "KLGA",
     "flights": 19
   },
   {
-    "airport": "MMUN",
-    "flights": 19
-  },
-  {
-    "airport": "KPHX",
-    "flights": 19
+    "airport": "KSJC",
+    "flights": 18
   },
   {
     "airport": "KLAS",
     "flights": 18
   },
   {
-    "airport": "KLGA",
+    "airport": "MGGT",
     "flights": 17
   },
   {
-    "airport": "CYUL",
-    "flights": 15
+    "airport": "EDDF",
+    "flights": 16
   },
   {
-    "airport": "KSLC",
-    "flights": 15
+    "airport": "MMUN",
+    "flights": 16
   },
   {
     "airport": "LOWW",
-    "flights": 14
+    "flights": 16
   },
   {
-    "airport": "KIAD",
-    "flights": 14
+    "airport": "KAUS",
+    "flights": 15
   },
   {
-    "airport": "KOAK",
-    "flights": 14
+    "airport": "KJFK",
+    "flights": 15
   },
   {
-    "airport": "LEBL",
-    "flights": 14
+    "airport": "KPHX",
+    "flights": 15
   },
   {
-    "airport": "VIDP",
-    "flights": 13
+    "airport": "EHAM",
+    "flights": 15
+  },
+  {
+    "airport": "KVNY",
+    "flights": 14
   },
   {
     "airport": "KEWR",
     "flights": 13
   },
   {
-    "airport": "KSFO",
+    "airport": "LEBL",
     "flights": 13
   },
   {
-    "airport": "KORD",
+    "airport": "VHHH",
     "flights": 13
   },
   {
-    "airport": "KVNY",
+    "airport": "EGKK",
     "flights": 13
-  },
-  {
-    "airport": "EDDF",
-    "flights": 12
   }
 ]
