@@ -1,1 +1,34 @@
-[]
+[
+  {
+    "speed_band_ms": 0,
+    "flights": 1082
+  },
+  {
+    "speed_band_ms": 50,
+    "flights": 714
+  },
+  {
+    "speed_band_ms": 100,
+    "flights": 564
+  },
+  {
+    "speed_band_ms": 150,
+    "flights": 800
+  },
+  {
+    "speed_band_ms": 200,
+    "flights": 2279
+  },
+  {
+    "speed_band_ms": 250,
+    "flights": 740
+  },
+  {
+    "speed_band_ms": 300,
+    "flights": 30
+  },
+  {
+    "speed_band_ms": 350,
+    "flights": 1
+  }
+]
