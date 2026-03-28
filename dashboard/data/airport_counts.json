@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 3945
-  },
-  {
-    "airport": "LSZH",
-    "flights": 24
-  },
-  {
-    "airport": "RJTT",
-    "flights": 23
+    "flights": 4324
   },
   {
     "airport": "EDDF",
-    "flights": 23
-  },
-  {
-    "airport": "EGKK",
     "flights": 22
   },
   {
-    "airport": "LOWW",
-    "flights": 18
-  },
-  {
-    "airport": "VHHH",
-    "flights": 15
+    "airport": "RJTT",
+    "flights": 22
   },
   {
     "airport": "KBOS",
-    "flights": 13
+    "flights": 22
+  },
+  {
+    "airport": "LSZH",
+    "flights": 22
   },
   {
     "airport": "EHAM",
-    "flights": 13
+    "flights": 17
+  },
+  {
+    "airport": "EGKK",
+    "flights": 17
+  },
+  {
+    "airport": "VIDP",
+    "flights": 16
   },
   {
     "airport": "YSSY",
+    "flights": 15
+  },
+  {
+    "airport": "VHHH",
+    "flights": 14
+  },
+  {
+    "airport": "LOWW",
     "flights": 13
   },
   {
-    "airport": "VTBS",
-    "flights": 12
-  },
-  {
-    "airport": "LFLL",
-    "flights": 11
-  },
-  {
-    "airport": "ZGSZ",
-    "flights": 11
-  },
-  {
-    "airport": "LEBL",
-    "flights": 11
-  },
-  {
-    "airport": "KMCO",
-    "flights": 11
-  },
-  {
-    "airport": "UUEE",
-    "flights": 10
-  },
-  {
-    "airport": "EBBR",
-    "flights": 9
-  },
-  {
-    "airport": "LEAL",
-    "flights": 8
-  },
-  {
-    "airport": "VECC",
-    "flights": 8
-  },
-  {
     "airport": "EGCC",
-    "flights": 8
-  },
-  {
-    "airport": "YMML",
-    "flights": 8
-  },
-  {
-    "airport": "LIMC",
-    "flights": 8
-  },
-  {
-    "airport": "VOBL",
-    "flights": 7
-  },
-  {
-    "airport": "WIII",
-    "flights": 7
+    "flights": 13
   },
   {
     "airport": "CYYZ",
-    "flights": 7
+    "flights": 12
+  },
+  {
+    "airport": "EBBR",
+    "flights": 12
+  },
+  {
+    "airport": "LEBL",
+    "flights": 10
+  },
+  {
+    "airport": "CYYC",
+    "flights": 10
+  },
+  {
+    "airport": "KATL",
+    "flights": 9
+  },
+  {
+    "airport": "EDDM",
+    "flights": 9
+  },
+  {
+    "airport": "UBBQ",
+    "flights": 9
+  },
+  {
+    "airport": "VTBS",
+    "flights": 8
+  },
+  {
+    "airport": "LKPR",
+    "flights": 8
+  },
+  {
+    "airport": "KMCO",
+    "flights": 8
+  },
+  {
+    "airport": "EFHK",
+    "flights": 8
+  },
+  {
+    "airport": "ZGSZ",
+    "flights": 8
+  },
+  {
+    "airport": "RJAA",
+    "flights": 8
   }
 ]
