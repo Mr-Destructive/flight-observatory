@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 3274
+    "flights": 3467
   },
   {
-    "airport": "VHHH",
+    "airport": "EDDF",
     "flights": 23
   },
   {
-    "airport": "YSSY",
+    "airport": "LSZH",
+    "flights": 23
+  },
+  {
+    "airport": "CYYC",
+    "flights": 20
+  },
+  {
+    "airport": "KSFO",
+    "flights": 18
+  },
+  {
+    "airport": "VHHH",
     "flights": 18
   },
   {
     "airport": "KLAS",
-    "flights": 18
-  },
-  {
-    "airport": "CYYC",
-    "flights": 17
-  },
-  {
-    "airport": "KSLC",
     "flights": 16
   },
   {
-    "airport": "CYYZ",
-    "flights": 14
-  },
-  {
-    "airport": "KLAX",
-    "flights": 13
-  },
-  {
-    "airport": "KBOS",
-    "flights": 13
-  },
-  {
-    "airport": "RJTT",
-    "flights": 12
-  },
-  {
-    "airport": "KMCO",
-    "flights": 11
-  },
-  {
-    "airport": "EFHK",
-    "flights": 11
-  },
-  {
-    "airport": "LSZH",
-    "flights": 11
-  },
-  {
-    "airport": "VGHS",
-    "flights": 10
-  },
-  {
     "airport": "VIDP",
-    "flights": 10
+    "flights": 15
   },
   {
-    "airport": "CYVR",
-    "flights": 10
+    "airport": "YMML",
+    "flights": 15
+  },
+  {
+    "airport": "YSSY",
+    "flights": 15
   },
   {
     "airport": "VTBS",
-    "flights": 10
+    "flights": 14
   },
   {
-    "airport": "KSEA",
-    "flights": 10
+    "airport": "LOWW",
+    "flights": 12
   },
   {
-    "airport": "KOAK",
-    "flights": 9
+    "airport": "UUEE",
+    "flights": 12
+  },
+  {
+    "airport": "RJTT",
+    "flights": 11
   },
   {
     "airport": "EHAM",
-    "flights": 9
+    "flights": 11
+  },
+  {
+    "airport": "VABB",
+    "flights": 11
+  },
+  {
+    "airport": "KLAX",
+    "flights": 11
   },
   {
     "airport": "WIII",
-    "flights": 9
+    "flights": 10
   },
   {
-    "airport": "ZGSZ",
-    "flights": 9
-  },
-  {
-    "airport": "SKBO",
-    "flights": 9
+    "airport": "KDEN",
+    "flights": 10
   },
   {
     "airport": "RJBB",
+    "flights": 10
+  },
+  {
+    "airport": "CYYZ",
     "flights": 9
   },
   {
-    "airport": "KPHX",
+    "airport": "LEBL",
     "flights": 9
+  },
+  {
+    "airport": "KBOS",
+    "flights": 9
+  },
+  {
+    "airport": "EGKK",
+    "flights": 9
+  },
+  {
+    "airport": "LIMC",
+    "flights": 8
   }
 ]
