@@ -1,74 +1,82 @@
 [
   {
     "altitude_band_m": -1000,
-    "flights": 44
+    "flights": 56
   },
   {
     "altitude_band_m": 0,
-    "flights": 1969
+    "flights": 2446
   },
   {
     "altitude_band_m": 1000,
-    "flights": 1247
+    "flights": 1547
   },
   {
     "altitude_band_m": 2000,
-    "flights": 702
+    "flights": 901
   },
   {
     "altitude_band_m": 3000,
-    "flights": 564
+    "flights": 753
   },
   {
     "altitude_band_m": 4000,
-    "flights": 415
+    "flights": 558
   },
   {
     "altitude_band_m": 5000,
-    "flights": 397
+    "flights": 529
   },
   {
     "altitude_band_m": 6000,
-    "flights": 450
+    "flights": 577
   },
   {
     "altitude_band_m": 7000,
-    "flights": 490
+    "flights": 651
   },
   {
     "altitude_band_m": 8000,
-    "flights": 478
+    "flights": 622
   },
   {
     "altitude_band_m": 9000,
-    "flights": 926
+    "flights": 1200
   },
   {
     "altitude_band_m": 10000,
-    "flights": 2757
+    "flights": 3659
   },
   {
     "altitude_band_m": 11000,
-    "flights": 1725
+    "flights": 2304
   },
   {
     "altitude_band_m": 12000,
-    "flights": 398
+    "flights": 557
   },
   {
     "altitude_band_m": 13000,
-    "flights": 126
+    "flights": 153
   },
   {
     "altitude_band_m": 14000,
-    "flights": 10
+    "flights": 13
   },
   {
     "altitude_band_m": 15000,
-    "flights": 3
+    "flights": 4
   },
   {
     "altitude_band_m": 22000,
+    "flights": 1
+  },
+  {
+    "altitude_band_m": 25000,
+    "flights": 1
+  },
+  {
+    "altitude_band_m": 37000,
     "flights": 1
   }
 ]
