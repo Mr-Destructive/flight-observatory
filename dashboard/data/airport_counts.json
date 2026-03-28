@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 9372
+    "flights": 9199
   },
   {
     "airport": "KDFW",
-    "flights": 32
-  },
-  {
-    "airport": "KATL",
-    "flights": 29
-  },
-  {
-    "airport": "KIAD",
-    "flights": 26
+    "flights": 31
   },
   {
     "airport": "KPHX",
-    "flights": 25
-  },
-  {
-    "airport": "KLAX",
-    "flights": 25
-  },
-  {
-    "airport": "LSZH",
-    "flights": 23
+    "flights": 30
   },
   {
     "airport": "CYYZ",
-    "flights": 21
-  },
-  {
-    "airport": "KDEN",
-    "flights": 20
-  },
-  {
-    "airport": "EGKK",
-    "flights": 17
-  },
-  {
-    "airport": "KLAS",
-    "flights": 17
-  },
-  {
-    "airport": "KLGA",
-    "flights": 16
-  },
-  {
-    "airport": "MMUN",
-    "flights": 15
-  },
-  {
-    "airport": "KORD",
-    "flights": 15
-  },
-  {
-    "airport": "EDDF",
-    "flights": 14
-  },
-  {
-    "airport": "KBJC",
-    "flights": 14
-  },
-  {
-    "airport": "KSFO",
-    "flights": 13
-  },
-  {
-    "airport": "KRSW",
-    "flights": 13
-  },
-  {
-    "airport": "KBOS",
-    "flights": 13
-  },
-  {
-    "airport": "EGCC",
-    "flights": 13
+    "flights": 23
   },
   {
     "airport": "MGGT",
-    "flights": 13
+    "flights": 22
   },
   {
-    "airport": "KVNY",
-    "flights": 12
+    "airport": "KATL",
+    "flights": 22
+  },
+  {
+    "airport": "EDDF",
+    "flights": 20
+  },
+  {
+    "airport": "KBOS",
+    "flights": 20
+  },
+  {
+    "airport": "CYYC",
+    "flights": 19
+  },
+  {
+    "airport": "KSLC",
+    "flights": 19
+  },
+  {
+    "airport": "MMUN",
+    "flights": 18
+  },
+  {
+    "airport": "KIAD",
+    "flights": 17
+  },
+  {
+    "airport": "KORD",
+    "flights": 17
+  },
+  {
+    "airport": "LSZH",
+    "flights": 16
+  },
+  {
+    "airport": "SKBO",
+    "flights": 15
+  },
+  {
+    "airport": "EGKK",
+    "flights": 14
+  },
+  {
+    "airport": "KDEN",
+    "flights": 14
   },
   {
     "airport": "VIDP",
-    "flights": 12
+    "flights": 13
   },
   {
-    "airport": "KLGU",
-    "flights": 12
+    "airport": "VHHH",
+    "flights": 13
   },
   {
-    "airport": "KVGT",
+    "airport": "KLAS",
+    "flights": 13
+  },
+  {
+    "airport": "KBJC",
     "flights": 11
+  },
+  {
+    "airport": "KSJC",
+    "flights": 11
+  },
+  {
+    "airport": "EGCC",
+    "flights": 11
+  },
+  {
+    "airport": "KSEA",
+    "flights": 10
+  },
+  {
+    "airport": "KRSW",
+    "flights": 10
   }
 ]
