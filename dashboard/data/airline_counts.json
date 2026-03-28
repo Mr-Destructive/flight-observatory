@@ -1,102 +1,102 @@
 [
   {
     "airline": "unknown",
-    "flights": 2904
+    "flights": 2585
   },
   {
     "airline": "Delta Air Lines",
-    "flights": 496
+    "flights": 481
   },
   {
     "airline": "Southwest Airlines",
-    "flights": 465
+    "flights": 472
   },
   {
     "airline": "United Airlines",
-    "flights": 464
+    "flights": 465
   },
   {
     "airline": "American Airlines",
-    "flights": 461
+    "flights": 458
   },
   {
     "airline": "Ryanair",
-    "flights": 252
+    "flights": 203
   },
   {
     "airline": "SkyWest",
-    "flights": 200
-  },
-  {
-    "airline": "NetJets",
-    "flights": 129
-  },
-  {
-    "airline": "JetBlue Airways",
-    "flights": 128
+    "flights": 183
   },
   {
     "airline": "Alaska Airlines",
-    "flights": 114
+    "flights": 131
   },
   {
-    "airline": "Republic Airlines",
-    "flights": 101
+    "airline": "JetBlue Airways",
+    "flights": 122
   },
   {
-    "airline": "Envoy Air",
-    "flights": 98
+    "airline": "NetJets",
+    "flights": 112
   },
   {
     "airline": "Air Canada",
-    "flights": 97
+    "flights": 91
   },
   {
     "airline": "Frontier Airlines",
     "flights": 90
   },
   {
-    "airline": "easyJet",
-    "flights": 89
+    "airline": "Republic Airlines",
+    "flights": 83
+  },
+  {
+    "airline": "Envoy Air",
+    "flights": 77
   },
   {
     "airline": "WestJet",
-    "flights": 71
+    "flights": 72
   },
   {
-    "airline": "PSA Airlines",
-    "flights": 68
-  },
-  {
-    "airline": "Bombardier Business Jet Solutions",
-    "flights": 63
+    "airline": "easyJet",
+    "flights": 67
   },
   {
     "airline": "Allegiant Air",
-    "flights": 60
+    "flights": 61
   },
   {
-    "airline": "Lufthansa",
+    "airline": "PSA Airlines",
     "flights": 58
   },
   {
+    "airline": "Bombardier Business Jet Solutions",
+    "flights": 57
+  },
+  {
+    "airline": "All Nippon Airways",
+    "flights": 56
+  },
+  {
     "airline": "Spirit Airlines",
-    "flights": 53
+    "flights": 55
   },
   {
-    "airline": "TAM Brazilian Airlines",
-    "flights": 48
-  },
-  {
-    "airline": "United Parcel Service",
+    "airline": "Japan Airlines Domestic",
     "flights": 47
   },
   {
-    "airline": "Jet2.com",
-    "flights": 40
+    "airline": "Azul",
+    "flights": 39
   },
   {
-    "airline": "Vueling Airlines",
-    "flights": 39
+    "airline": "AeroM\u00e9xico",
+    "flights": 37
+  },
+  {
+    "airline": "Lufthansa",
+    "flights": 37
   }
 ]
