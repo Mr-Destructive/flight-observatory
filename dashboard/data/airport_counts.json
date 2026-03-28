@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 7499
+    "flights": 7257
   },
   {
     "airport": "KDFW",
-    "flights": 28
-  },
-  {
-    "airport": "KATL",
-    "flights": 27
-  },
-  {
-    "airport": "KIAD",
-    "flights": 27
-  },
-  {
-    "airport": "YSSY",
-    "flights": 24
-  },
-  {
-    "airport": "KPHX",
-    "flights": 23
-  },
-  {
-    "airport": "MMUN",
-    "flights": 22
-  },
-  {
-    "airport": "LSZH",
-    "flights": 22
-  },
-  {
-    "airport": "KBOS",
-    "flights": 20
-  },
-  {
-    "airport": "KMCO",
-    "flights": 20
+    "flights": 35
   },
   {
     "airport": "KDEN",
-    "flights": 20
+    "flights": 27
   },
   {
-    "airport": "KEWR",
-    "flights": 18
-  },
-  {
-    "airport": "KORD",
-    "flights": 17
-  },
-  {
-    "airport": "CYYZ",
-    "flights": 17
+    "airport": "KATL",
+    "flights": 24
   },
   {
     "airport": "CYYC",
-    "flights": 15
+    "flights": 21
   },
   {
-    "airport": "KJFK",
-    "flights": 15
-  },
-  {
-    "airport": "KBNA",
-    "flights": 14
-  },
-  {
-    "airport": "RJTT",
-    "flights": 13
-  },
-  {
-    "airport": "KBJC",
-    "flights": 12
+    "airport": "KBOS",
+    "flights": 21
   },
   {
     "airport": "KSLC",
+    "flights": 18
+  },
+  {
+    "airport": "RJTT",
+    "flights": 18
+  },
+  {
+    "airport": "CYYZ",
+    "flights": 18
+  },
+  {
+    "airport": "MMUN",
+    "flights": 18
+  },
+  {
+    "airport": "YSSY",
+    "flights": 17
+  },
+  {
+    "airport": "KEWR",
+    "flights": 16
+  },
+  {
+    "airport": "KIAD",
+    "flights": 16
+  },
+  {
+    "airport": "KPHX",
+    "flights": 15
+  },
+  {
+    "airport": "KMCO",
+    "flights": 14
+  },
+  {
+    "airport": "KBNA",
+    "flights": 12
+  },
+  {
+    "airport": "KRSW",
     "flights": 12
   },
   {
     "airport": "KLAX",
-    "flights": 11
+    "flights": 12
   },
   {
-    "airport": "KVNY",
-    "flights": 11
+    "airport": "KLGA",
+    "flights": 12
+  },
+  {
+    "airport": "LSZH",
+    "flights": 12
   },
   {
     "airport": "KSFO",
     "flights": 11
   },
   {
-    "airport": "KSJC",
+    "airport": "KJFK",
     "flights": 11
   },
   {
-    "airport": "KLGA",
+    "airport": "YMML",
+    "flights": 11
+  },
+  {
+    "airport": "SKBO",
+    "flights": 10
+  },
+  {
+    "airport": "EGKK",
     "flights": 10
   }
 ]
