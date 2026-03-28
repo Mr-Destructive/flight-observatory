@@ -1,27 +1,27 @@
 [
   {
     "airline": "unknown",
-    "flights": 4302
-  },
-  {
-    "airline": "Southwest Airlines",
-    "flights": 446
+    "flights": 4324
   },
   {
     "airline": "American Airlines",
-    "flights": 443
+    "flights": 471
+  },
+  {
+    "airline": "Southwest Airlines",
+    "flights": 457
   },
   {
     "airline": "Delta Air Lines",
-    "flights": 443
+    "flights": 455
   },
   {
     "airline": "United Airlines",
-    "flights": 409
+    "flights": 449
   },
   {
     "airline": "Ryanair",
-    "flights": 328
+    "flights": 345
   },
   {
     "airline": "SkyWest",
@@ -29,74 +29,74 @@
   },
   {
     "airline": "NetJets",
-    "flights": 157
+    "flights": 156
   },
   {
     "airline": "JetBlue Airways",
-    "flights": 138
+    "flights": 143
   },
   {
     "airline": "Alaska Airlines",
-    "flights": 121
+    "flights": 136
   },
   {
     "airline": "Republic Airlines",
-    "flights": 110
+    "flights": 109
   },
   {
     "airline": "easyJet",
-    "flights": 107
+    "flights": 109
   },
   {
-    "airline": "Turkish Airlines",
-    "flights": 104
+    "airline": "Air Canada",
+    "flights": 95
   },
   {
     "airline": "Lufthansa",
     "flights": 95
   },
   {
-    "airline": "Air Canada",
-    "flights": 90
-  },
-  {
-    "airline": "Air France",
-    "flights": 83
-  },
-  {
-    "airline": "Frontier Airlines",
-    "flights": 82
-  },
-  {
-    "airline": "Bombardier Business Jet Solutions",
-    "flights": 76
-  },
-  {
-    "airline": "IndiGo Airlines",
-    "flights": 72
+    "airline": "Turkish Airlines",
+    "flights": 93
   },
   {
     "airline": "Envoy Air",
-    "flights": 72
+    "flights": 87
   },
   {
-    "airline": "Scandinavian Airlines System",
-    "flights": 69
+    "airline": "Bombardier Business Jet Solutions",
+    "flights": 85
   },
   {
-    "airline": "WestJet",
-    "flights": 69
+    "airline": "IndiGo Airlines",
+    "flights": 78
+  },
+  {
+    "airline": "Air France",
+    "flights": 76
+  },
+  {
+    "airline": "Frontier Airlines",
+    "flights": 74
   },
   {
     "airline": "Jet2.com",
-    "flights": 68
+    "flights": 71
+  },
+  {
+    "airline": "Scandinavian Airlines System",
+    "flights": 67
   },
   {
     "airline": "PSA Airlines",
-    "flights": 65
+    "flights": 64
   },
   {
-    "airline": "British Airways",
-    "flights": 61
+    "airline": "WestJet",
+    "flights": 62
+  },
+  {
+    "airline": "Pegasus Airlines",
+    "flights": 59
   }
 ]

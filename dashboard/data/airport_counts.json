@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 9377
+    "flights": 9361
   },
   {
     "airport": "KDFW",
-    "flights": 47
-  },
-  {
-    "airport": "KATL",
-    "flights": 44
-  },
-  {
-    "airport": "KBOS",
-    "flights": 25
-  },
-  {
-    "airport": "CYYZ",
-    "flights": 25
-  },
-  {
-    "airport": "KIAD",
-    "flights": 21
-  },
-  {
-    "airport": "KLGA",
-    "flights": 20
-  },
-  {
-    "airport": "EDDF",
-    "flights": 19
-  },
-  {
-    "airport": "KLAX",
-    "flights": 18
+    "flights": 40
   },
   {
     "airport": "KDEN",
-    "flights": 16
+    "flights": 35
+  },
+  {
+    "airport": "KATL",
+    "flights": 28
   },
   {
     "airport": "KPHX",
-    "flights": 16
+    "flights": 27
   },
   {
-    "airport": "VHHH",
-    "flights": 15
-  },
-  {
-    "airport": "EGKK",
-    "flights": 15
-  },
-  {
-    "airport": "KSAN",
-    "flights": 14
-  },
-  {
-    "airport": "MGGT",
-    "flights": 14
-  },
-  {
-    "airport": "LSZH",
-    "flights": 14
-  },
-  {
-    "airport": "LFPO",
-    "flights": 13
-  },
-  {
-    "airport": "VIDP",
-    "flights": 13
-  },
-  {
-    "airport": "KMCO",
-    "flights": 13
-  },
-  {
-    "airport": "CYYC",
-    "flights": 13
-  },
-  {
-    "airport": "CYVR",
-    "flights": 13
-  },
-  {
-    "airport": "MMUN",
-    "flights": 11
+    "airport": "CYYZ",
+    "flights": 24
   },
   {
     "airport": "KORD",
-    "flights": 11
+    "flights": 22
+  },
+  {
+    "airport": "KSLC",
+    "flights": 22
+  },
+  {
+    "airport": "LSZH",
+    "flights": 22
+  },
+  {
+    "airport": "KLAX",
+    "flights": 21
+  },
+  {
+    "airport": "CYYC",
+    "flights": 20
+  },
+  {
+    "airport": "EGKK",
+    "flights": 18
+  },
+  {
+    "airport": "MGGT",
+    "flights": 17
+  },
+  {
+    "airport": "KBOS",
+    "flights": 15
+  },
+  {
+    "airport": "KEWR",
+    "flights": 14
+  },
+  {
+    "airport": "VIDP",
+    "flights": 14
+  },
+  {
+    "airport": "KLAS",
+    "flights": 13
+  },
+  {
+    "airport": "KIAD",
+    "flights": 13
   },
   {
     "airport": "KBJC",
+    "flights": 12
+  },
+  {
+    "airport": "SKBO",
+    "flights": 12
+  },
+  {
+    "airport": "EDDF",
+    "flights": 12
+  },
+  {
+    "airport": "CYVR",
+    "flights": 12
+  },
+  {
+    "airport": "KJFK",
+    "flights": 12
+  },
+  {
+    "airport": "ZGSZ",
     "flights": 11
   },
   {
-    "airport": "KCOS",
-    "flights": 10
+    "airport": "VABB",
+    "flights": 11
   }
 ]
