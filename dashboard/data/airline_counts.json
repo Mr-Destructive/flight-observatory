@@ -1,43 +1,43 @@
 [
   {
     "airline": "unknown",
-    "flights": 1065
+    "flights": 1140
   },
   {
     "airline": "Ryanair",
-    "flights": 343
+    "flights": 336
   },
   {
     "airline": "American Airlines",
-    "flights": 124
+    "flights": 163
   },
   {
     "airline": "Delta Air Lines",
-    "flights": 107
-  },
-  {
-    "airline": "Federal Express",
-    "flights": 103
+    "flights": 148
   },
   {
     "airline": "United Airlines",
-    "flights": 100
+    "flights": 146
   },
   {
-    "airline": "IndiGo Airlines",
-    "flights": 98
+    "airline": "Southwest Airlines",
+    "flights": 133
   },
   {
     "airline": "easyJet",
-    "flights": 97
+    "flights": 100
+  },
+  {
+    "airline": "Federal Express",
+    "flights": 96
   },
   {
     "airline": "Lufthansa",
-    "flights": 92
+    "flights": 93
   },
   {
-    "airline": "KLM Royal Dutch Airlines",
-    "flights": 87
+    "airline": "IndiGo Airlines",
+    "flights": 90
   },
   {
     "airline": "Air France",
@@ -48,55 +48,55 @@
     "flights": 84
   },
   {
-    "airline": "Southwest Airlines",
-    "flights": 79
-  },
-  {
     "airline": "Scandinavian Airlines System",
     "flights": 76
+  },
+  {
+    "airline": "JetBlue Airways",
+    "flights": 71
+  },
+  {
+    "airline": "KLM Royal Dutch Airlines",
+    "flights": 71
+  },
+  {
+    "airline": "Japan Airlines Domestic",
+    "flights": 69
+  },
+  {
+    "airline": "All Nippon Airways",
+    "flights": 69
   },
   {
     "airline": "United Parcel Service",
     "flights": 68
   },
   {
-    "airline": "All Nippon Airways",
-    "flights": 65
-  },
-  {
-    "airline": "Japan Airlines Domestic",
-    "flights": 60
-  },
-  {
-    "airline": "British Airways",
-    "flights": 59
+    "airline": "Vueling Airlines",
+    "flights": 61
   },
   {
     "airline": "SunExpress",
-    "flights": 55
-  },
-  {
-    "airline": "Air India Limited",
-    "flights": 54
-  },
-  {
-    "airline": "Vueling Airlines",
-    "flights": 54
+    "flights": 61
   },
   {
     "airline": "Pegasus Airlines",
+    "flights": 57
+  },
+  {
+    "airline": "Frontier Airlines",
     "flights": 53
   },
   {
-    "airline": "Jet2.com",
+    "airline": "British Airways",
     "flights": 52
   },
   {
-    "airline": "Swissair",
-    "flights": 49
+    "airline": "Air India Limited",
+    "flights": 50
   },
   {
-    "airline": "TAP Portugal",
-    "flights": 48
+    "airline": "Jet2.com",
+    "flights": 49
   }
 ]
