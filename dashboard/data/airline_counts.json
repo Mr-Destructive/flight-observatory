@@ -1,102 +1,102 @@
 [
   {
     "airline": "unknown",
-    "flights": 2266
+    "flights": 2059
   },
   {
     "airline": "American Airlines",
+    "flights": 500
+  },
+  {
+    "airline": "Southwest Airlines",
     "flights": 471
   },
   {
     "airline": "United Airlines",
-    "flights": 466
-  },
-  {
-    "airline": "Southwest Airlines",
-    "flights": 454
+    "flights": 468
   },
   {
     "airline": "Delta Air Lines",
-    "flights": 435
+    "flights": 410
   },
   {
     "airline": "SkyWest",
-    "flights": 195
+    "flights": 188
   },
   {
     "airline": "JetBlue Airways",
-    "flights": 127
+    "flights": 131
   },
   {
     "airline": "Alaska Airlines",
-    "flights": 125
-  },
-  {
-    "airline": "Frontier Airlines",
-    "flights": 94
-  },
-  {
-    "airline": "Ryanair",
-    "flights": 88
+    "flights": 118
   },
   {
     "airline": "Air Canada",
-    "flights": 87
+    "flights": 99
   },
   {
-    "airline": "Republic Airlines",
-    "flights": 85
+    "airline": "Frontier Airlines",
+    "flights": 98
   },
   {
     "airline": "Envoy Air",
-    "flights": 82
+    "flights": 98
+  },
+  {
+    "airline": "Republic Airlines",
+    "flights": 75
   },
   {
     "airline": "NetJets",
-    "flights": 78
+    "flights": 70
   },
   {
     "airline": "Allegiant Air",
-    "flights": 66
-  },
-  {
-    "airline": "WestJet",
-    "flights": 60
-  },
-  {
-    "airline": "Spirit Airlines",
-    "flights": 57
-  },
-  {
-    "airline": "All Nippon Airways",
-    "flights": 55
-  },
-  {
-    "airline": "easyJet",
-    "flights": 54
+    "flights": 70
   },
   {
     "airline": "Turkish Airlines",
-    "flights": 54
+    "flights": 67
+  },
+  {
+    "airline": "WestJet",
+    "flights": 61
+  },
+  {
+    "airline": "All Nippon Airways",
+    "flights": 56
+  },
+  {
+    "airline": "Spirit Airlines",
+    "flights": 51
   },
   {
     "airline": "Japan Airlines Domestic",
-    "flights": 52
+    "flights": 50
   },
   {
-    "airline": "Virgin Australia",
-    "flights": 48
-  },
-  {
-    "airline": "Jetstar Airways",
-    "flights": 42
-  },
-  {
-    "airline": "Bombardier Business Jet Solutions",
-    "flights": 40
+    "airline": "Ryanair",
+    "flights": 49
   },
   {
     "airline": "IndiGo Airlines",
-    "flights": 37
+    "flights": 44
+  },
+  {
+    "airline": "Virgin Australia",
+    "flights": 42
+  },
+  {
+    "airline": "TAM Brazilian Airlines",
+    "flights": 40
+  },
+  {
+    "airline": "easyJet",
+    "flights": 40
+  },
+  {
+    "airline": "PSA Airlines",
+    "flights": 39
   }
 ]
