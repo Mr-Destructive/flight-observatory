@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 9264
-  },
-  {
-    "airport": "KDFW",
-    "flights": 48
-  },
-  {
-    "airport": "KPHX",
-    "flights": 37
+    "flights": 9355
   },
   {
     "airport": "KDEN",
-    "flights": 35
+    "flights": 48
+  },
+  {
+    "airport": "KDFW",
+    "flights": 42
+  },
+  {
+    "airport": "KPHX",
+    "flights": 36
+  },
+  {
+    "airport": "KSLC",
+    "flights": 30
   },
   {
     "airport": "KATL",
     "flights": 28
   },
   {
-    "airport": "CYYC",
-    "flights": 24
-  },
-  {
     "airport": "KORD",
-    "flights": 24
+    "flights": 26
   },
   {
-    "airport": "KSFO",
-    "flights": 23
+    "airport": "CYYZ",
+    "flights": 22
   },
   {
-    "airport": "KSLC",
+    "airport": "KLAX",
+    "flights": 22
+  },
+  {
+    "airport": "LSZH",
     "flights": 21
   },
   {
-    "airport": "KIAD",
-    "flights": 21
+    "airport": "MMUN",
+    "flights": 18
+  },
+  {
+    "airport": "SKBO",
+    "flights": 17
   },
   {
     "airport": "KBOS",
     "flights": 17
   },
   {
-    "airport": "VHHH",
-    "flights": 17
-  },
-  {
-    "airport": "CYYZ",
-    "flights": 17
-  },
-  {
-    "airport": "CYVR",
+    "airport": "KMCO",
     "flights": 16
   },
   {
-    "airport": "KBNA",
+    "airport": "VHHH",
+    "flights": 16
+  },
+  {
+    "airport": "CYYC",
+    "flights": 16
+  },
+  {
+    "airport": "VIDP",
+    "flights": 15
+  },
+  {
+    "airport": "KSFO",
+    "flights": 15
+  },
+  {
+    "airport": "KLAS",
     "flights": 14
   },
   {
-    "airport": "KMCO",
+    "airport": "LGAV",
     "flights": 14
   },
   {
     "airport": "EGKK",
-    "flights": 14
-  },
-  {
-    "airport": "EHAM",
-    "flights": 14
-  },
-  {
-    "airport": "LSZH",
-    "flights": 14
-  },
-  {
-    "airport": "KBJC",
     "flights": 13
   },
   {
-    "airport": "KLGA",
+    "airport": "MGGT",
     "flights": 13
   },
   {
-    "airport": "ZGSZ",
-    "flights": 13
+    "airport": "KEWR",
+    "flights": 12
   },
   {
-    "airport": "MMUN",
-    "flights": 13
+    "airport": "KBNA",
+    "flights": 12
   },
   {
-    "airport": "CYUL",
-    "flights": 13
-  },
-  {
-    "airport": "KLAX",
-    "flights": 13
+    "airport": "ESSA",
+    "flights": 11
   }
 ]
