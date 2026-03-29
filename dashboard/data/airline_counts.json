@@ -1,46 +1,46 @@
 [
   {
     "airline": "unknown",
-    "flights": 4011
+    "flights": 3785
   },
   {
     "airline": "American Airlines",
-    "flights": 478
+    "flights": 486
   },
   {
     "airline": "Southwest Airlines",
-    "flights": 472
+    "flights": 483
   },
   {
     "airline": "Delta Air Lines",
-    "flights": 446
+    "flights": 471
   },
   {
     "airline": "United Airlines",
-    "flights": 421
+    "flights": 410
   },
   {
     "airline": "Ryanair",
-    "flights": 358
+    "flights": 349
   },
   {
     "airline": "SkyWest",
-    "flights": 229
+    "flights": 209
   },
   {
     "airline": "NetJets",
-    "flights": 223
+    "flights": 205
   },
   {
     "airline": "JetBlue Airways",
-    "flights": 135
+    "flights": 130
   },
   {
     "airline": "Alaska Airlines",
-    "flights": 118
+    "flights": 114
   },
   {
-    "airline": "Republic Airlines",
+    "airline": "easyJet",
     "flights": 114
   },
   {
@@ -48,55 +48,55 @@
     "flights": 107
   },
   {
-    "airline": "Frontier Airlines",
-    "flights": 101
+    "airline": "Republic Airlines",
+    "flights": 104
   },
   {
     "airline": "Lufthansa",
-    "flights": 99
+    "flights": 93
   },
   {
-    "airline": "easyJet",
-    "flights": 98
-  },
-  {
-    "airline": "Envoy Air",
-    "flights": 95
+    "airline": "Frontier Airlines",
+    "flights": 92
   },
   {
     "airline": "Air Canada",
-    "flights": 89
+    "flights": 91
   },
   {
-    "airline": "KLM Royal Dutch Airlines",
-    "flights": 86
+    "airline": "Envoy Air",
+    "flights": 90
   },
   {
     "airline": "British Airways",
-    "flights": 83
-  },
-  {
-    "airline": "Turkish Airlines",
-    "flights": 83
-  },
-  {
-    "airline": "Air France",
-    "flights": 75
+    "flights": 79
   },
   {
     "airline": "Allegiant Air",
-    "flights": 71
+    "flights": 75
   },
   {
     "airline": "WestJet",
     "flights": 67
   },
   {
+    "airline": "KLM Royal Dutch Airlines",
+    "flights": 61
+  },
+  {
     "airline": "PSA Airlines",
     "flights": 59
   },
   {
-    "airline": "Scandinavian Airlines System",
-    "flights": 55
+    "airline": "United Parcel Service",
+    "flights": 58
+  },
+  {
+    "airline": "Turkish Airlines",
+    "flights": 53
+  },
+  {
+    "airline": "Vueling Airlines",
+    "flights": 52
   }
 ]
