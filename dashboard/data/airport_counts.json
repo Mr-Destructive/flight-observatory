@@ -1,62 +1,62 @@
 [
   {
     "airport": "unknown",
-    "flights": 9660
+    "flights": 9764
   },
   {
-    "airport": "KIAD",
+    "airport": "KSFO",
     "flights": 34
   },
   {
-    "airport": "KATL",
+    "airport": "KDFW",
     "flights": 33
   },
   {
-    "airport": "KDFW",
-    "flights": 27
+    "airport": "KDEN",
+    "flights": 32
   },
   {
-    "airport": "CYYZ",
+    "airport": "KLAS",
     "flights": 26
   },
   {
-    "airport": "EGKK",
-    "flights": 22
-  },
-  {
-    "airport": "KSLC",
-    "flights": 22
-  },
-  {
-    "airport": "KBOS",
-    "flights": 21
-  },
-  {
-    "airport": "MMUN",
-    "flights": 19
-  },
-  {
-    "airport": "KDEN",
-    "flights": 18
+    "airport": "CYYC",
+    "flights": 23
   },
   {
     "airport": "KPHX",
+    "flights": 22
+  },
+  {
+    "airport": "KORD",
+    "flights": 21
+  },
+  {
+    "airport": "KBOS",
     "flights": 18
   },
   {
-    "airport": "KMCO",
+    "airport": "KATL",
+    "flights": 17
+  },
+  {
+    "airport": "KJFK",
+    "flights": 17
+  },
+  {
+    "airport": "MGGT",
     "flights": 16
   },
   {
-    "airport": "EHAM",
-    "flights": 16
-  },
-  {
-    "airport": "CYYC",
+    "airport": "LGAV",
     "flights": 15
   },
   {
-    "airport": "KBJC",
+    "airport": "EDDF",
+    "flights": 15
+  },
+  {
+    "airport": "MMUN",
     "flights": 15
   },
   {
@@ -64,39 +64,39 @@
     "flights": 14
   },
   {
-    "airport": "ESSA",
+    "airport": "KRSW",
+    "flights": 14
+  },
+  {
+    "airport": "CYYZ",
+    "flights": 14
+  },
+  {
+    "airport": "VIDP",
     "flights": 13
   },
   {
-    "airport": "KLGA",
-    "flights": 13
-  },
-  {
-    "airport": "KLAS",
+    "airport": "KMCO",
     "flights": 13
   },
   {
     "airport": "KSEA",
+    "flights": 13
+  },
+  {
+    "airport": "KVNY",
+    "flights": 13
+  },
+  {
+    "airport": "LFPO",
     "flights": 12
   },
   {
-    "airport": "KSAN",
+    "airport": "EBBR",
     "flights": 12
   },
   {
-    "airport": "KRSW",
+    "airport": "KLGA",
     "flights": 12
-  },
-  {
-    "airport": "SKBO",
-    "flights": 11
-  },
-  {
-    "airport": "EDDF",
-    "flights": 11
-  },
-  {
-    "airport": "LGAV",
-    "flights": 11
   }
 ]
