@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 9547
+    "flights": 9157
   },
   {
     "airport": "KATL",
-    "flights": 29
-  },
-  {
-    "airport": "KDFW",
-    "flights": 27
-  },
-  {
-    "airport": "KLAS",
-    "flights": 26
-  },
-  {
-    "airport": "EDDF",
-    "flights": 26
-  },
-  {
-    "airport": "CYYC",
-    "flights": 24
+    "flights": 34
   },
   {
     "airport": "CYYZ",
-    "flights": 22
+    "flights": 28
   },
   {
-    "airport": "KBOS",
+    "airport": "KLAS",
+    "flights": 25
+  },
+  {
+    "airport": "EDDF",
+    "flights": 24
+  },
+  {
+    "airport": "YSSY",
+    "flights": 23
+  },
+  {
+    "airport": "KDFW",
     "flights": 21
-  },
-  {
-    "airport": "KDEN",
-    "flights": 21
-  },
-  {
-    "airport": "EGKK",
-    "flights": 20
-  },
-  {
-    "airport": "KORD",
-    "flights": 20
-  },
-  {
-    "airport": "KMCO",
-    "flights": 20
-  },
-  {
-    "airport": "LFPO",
-    "flights": 19
-  },
-  {
-    "airport": "KPHX",
-    "flights": 19
-  },
-  {
-    "airport": "KAUS",
-    "flights": 18
-  },
-  {
-    "airport": "KBNA",
-    "flights": 17
   },
   {
     "airport": "LSZH",
-    "flights": 16
+    "flights": 20
+  },
+  {
+    "airport": "CYYC",
+    "flights": 20
+  },
+  {
+    "airport": "MMUN",
+    "flights": 18
+  },
+  {
+    "airport": "EGKK",
+    "flights": 18
   },
   {
     "airport": "EHAM",
-    "flights": 15
+    "flights": 17
   },
   {
-    "airport": "KMDW",
-    "flights": 14
+    "airport": "KMCO",
+    "flights": 17
   },
   {
     "airport": "KSFO",
-    "flights": 14
+    "flights": 17
   },
   {
-    "airport": "CYVR",
-    "flights": 13
+    "airport": "KJFK",
+    "flights": 16
   },
   {
-    "airport": "VIDP",
-    "flights": 12
+    "airport": "KBOS",
+    "flights": 16
   },
   {
-    "airport": "LOWW",
-    "flights": 11
+    "airport": "KEWR",
+    "flights": 16
   },
   {
-    "airport": "KSLC",
-    "flights": 11
+    "airport": "KORD",
+    "flights": 15
   },
   {
     "airport": "KVNY",
-    "flights": 11
+    "flights": 15
+  },
+  {
+    "airport": "KIAD",
+    "flights": 14
+  },
+  {
+    "airport": "KLAX",
+    "flights": 14
+  },
+  {
+    "airport": "KSEA",
+    "flights": 14
+  },
+  {
+    "airport": "KPHX",
+    "flights": 14
+  },
+  {
+    "airport": "KBJC",
+    "flights": 13
+  },
+  {
+    "airport": "KAUS",
+    "flights": 13
   }
 ]
