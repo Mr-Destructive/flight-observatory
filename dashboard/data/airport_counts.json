@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 9157
+    "flights": 9172
   },
   {
-    "airport": "KATL",
-    "flights": 34
-  },
-  {
-    "airport": "CYYZ",
+    "airport": "KDEN",
     "flights": 28
   },
   {
     "airport": "KLAS",
-    "flights": 25
+    "flights": 27
   },
   {
-    "airport": "EDDF",
-    "flights": 24
+    "airport": "CYYZ",
+    "flights": 27
   },
   {
-    "airport": "YSSY",
-    "flights": 23
+    "airport": "KATL",
+    "flights": 26
   },
   {
     "airport": "KDFW",
+    "flights": 24
+  },
+  {
+    "airport": "CYYC",
     "flights": 21
+  },
+  {
+    "airport": "YSSY",
+    "flights": 21
+  },
+  {
+    "airport": "KIAD",
+    "flights": 20
   },
   {
     "airport": "LSZH",
     "flights": 20
   },
   {
-    "airport": "CYYC",
-    "flights": 20
-  },
-  {
-    "airport": "MMUN",
-    "flights": 18
-  },
-  {
-    "airport": "EGKK",
-    "flights": 18
-  },
-  {
-    "airport": "EHAM",
-    "flights": 17
+    "airport": "KAUS",
+    "flights": 19
   },
   {
     "airport": "KMCO",
-    "flights": 17
-  },
-  {
-    "airport": "KSFO",
-    "flights": 17
+    "flights": 18
   },
   {
     "airport": "KJFK",
-    "flights": 16
+    "flights": 18
+  },
+  {
+    "airport": "KPHX",
+    "flights": 18
+  },
+  {
+    "airport": "LFPO",
+    "flights": 17
   },
   {
     "airport": "KBOS",
+    "flights": 17
+  },
+  {
+    "airport": "EGKK",
     "flights": 16
   },
   {
-    "airport": "KEWR",
+    "airport": "KSFO",
     "flights": 16
+  },
+  {
+    "airport": "KSLC",
+    "flights": 15
   },
   {
     "airport": "KORD",
     "flights": 15
   },
   {
-    "airport": "KVNY",
-    "flights": 15
-  },
-  {
-    "airport": "KIAD",
+    "airport": "MMUN",
     "flights": 14
   },
   {
-    "airport": "KLAX",
+    "airport": "KLGA",
     "flights": 14
   },
   {
-    "airport": "KSEA",
-    "flights": 14
-  },
-  {
-    "airport": "KPHX",
-    "flights": 14
-  },
-  {
-    "airport": "KBJC",
+    "airport": "EDDF",
     "flights": 13
   },
   {
-    "airport": "KAUS",
+    "airport": "EHAM",
     "flights": 13
+  },
+  {
+    "airport": "LGAV",
+    "flights": 12
   }
 ]
