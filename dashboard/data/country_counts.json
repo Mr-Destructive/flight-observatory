@@ -1,102 +1,102 @@
 [
   {
     "country": "United States",
-    "flights": 791
+    "flights": 921
   },
   {
     "country": "United Kingdom",
-    "flights": 415
+    "flights": 435
   },
   {
     "country": "Germany",
-    "flights": 315
+    "flights": 358
   },
   {
     "country": "Ireland",
-    "flights": 305
+    "flights": 306
   },
   {
     "country": "Turkey",
-    "flights": 241
+    "flights": 239
   },
   {
     "country": "China",
-    "flights": 214
-  },
-  {
-    "country": "France",
-    "flights": 213
-  },
-  {
-    "country": "Australia",
-    "flights": 202
+    "flights": 205
   },
   {
     "country": "Japan",
-    "flights": 196
-  },
-  {
-    "country": "India",
-    "flights": 176
+    "flights": 185
   },
   {
     "country": "Malta",
-    "flights": 173
+    "flights": 176
+  },
+  {
+    "country": "France",
+    "flights": 168
+  },
+  {
+    "country": "India",
+    "flights": 168
+  },
+  {
+    "country": "Australia",
+    "flights": 168
   },
   {
     "country": "Spain",
     "flights": 165
   },
   {
-    "country": "Kingdom of the Netherlands",
-    "flights": 137
-  },
-  {
-    "country": "Poland",
-    "flights": 128
-  },
-  {
     "country": "Austria",
+    "flights": 126
+  },
+  {
+    "country": "Kingdom of the Netherlands",
     "flights": 120
   },
   {
     "country": "Canada",
-    "flights": 97
+    "flights": 115
   },
   {
-    "country": "Switzerland",
-    "flights": 97
+    "country": "Poland",
+    "flights": 108
   },
   {
     "country": "Republic of Korea",
-    "flights": 84
+    "flights": 92
   },
   {
-    "country": "Portugal",
-    "flights": 79
-  },
-  {
-    "country": "Brazil",
-    "flights": 74
-  },
-  {
-    "country": "United Arab Emirates",
-    "flights": 74
+    "country": "Switzerland",
+    "flights": 86
   },
   {
     "country": "Sweden",
-    "flights": 69
+    "flights": 78
+  },
+  {
+    "country": "Brazil",
+    "flights": 77
+  },
+  {
+    "country": "United Arab Emirates",
+    "flights": 71
+  },
+  {
+    "country": "Portugal",
+    "flights": 71
+  },
+  {
+    "country": "Hungary",
+    "flights": 58
   },
   {
     "country": "Taiwan",
-    "flights": 61
-  },
-  {
-    "country": "Greece",
     "flights": 56
   },
   {
-    "country": "Malaysia",
-    "flights": 55
+    "country": "Norway",
+    "flights": 53
   }
 ]

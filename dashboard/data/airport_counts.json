@@ -1,94 +1,90 @@
 [
   {
     "airport": "unknown",
-    "flights": 4085
-  },
-  {
-    "airport": "RJTT",
-    "flights": 33
+    "flights": 4177
   },
   {
     "airport": "LSZH",
-    "flights": 24
-  },
-  {
-    "airport": "YSSY",
-    "flights": 20
-  },
-  {
-    "airport": "VIDP",
-    "flights": 17
+    "flights": 28
   },
   {
     "airport": "EDDF",
-    "flights": 16
+    "flights": 23
   },
   {
-    "airport": "LOWW",
-    "flights": 15
-  },
-  {
-    "airport": "EHAM",
-    "flights": 15
+    "airport": "CYYC",
+    "flights": 20
   },
   {
     "airport": "VHHH",
-    "flights": 15
-  },
-  {
-    "airport": "YMML",
-    "flights": 13
-  },
-  {
-    "airport": "EBBR",
-    "flights": 12
+    "flights": 20
   },
   {
     "airport": "EGKK",
-    "flights": 12
+    "flights": 18
   },
   {
-    "airport": "VTBS",
-    "flights": 12
+    "airport": "RJTT",
+    "flights": 17
   },
   {
-    "airport": "KMCO",
-    "flights": 11
+    "airport": "VIDP",
+    "flights": 16
   },
   {
-    "airport": "LFPG",
-    "flights": 11
+    "airport": "YSSY",
+    "flights": 15
   },
   {
-    "airport": "LGAV",
-    "flights": 10
-  },
-  {
-    "airport": "YPPH",
-    "flights": 10
-  },
-  {
-    "airport": "VECC",
-    "flights": 9
-  },
-  {
-    "airport": "LFPO",
-    "flights": 9
+    "airport": "KBOS",
+    "flights": 15
   },
   {
     "airport": "LIMC",
+    "flights": 14
+  },
+  {
+    "airport": "LFPO",
+    "flights": 13
+  },
+  {
+    "airport": "LOWW",
+    "flights": 13
+  },
+  {
+    "airport": "LGAV",
+    "flights": 12
+  },
+  {
+    "airport": "CYYZ",
+    "flights": 11
+  },
+  {
+    "airport": "VOBL",
+    "flights": 10
+  },
+  {
+    "airport": "KLGA",
+    "flights": 9
+  },
+  {
+    "airport": "EGCC",
+    "flights": 9
+  },
+  {
+    "airport": "YPPH",
     "flights": 9
   },
   {
     "airport": "WIII",
-    "flights": 9
+    "flights": 8
   },
   {
-    "airport": "CYYC",
-    "flights": 9
+    "airport": "VTBS",
+    "flights": 8
   },
   {
-    "airport": "VOBL",
+    "airport": "LQVI",
     "flights": 8
   },
   {
@@ -96,7 +92,11 @@
     "flights": 8
   },
   {
-    "airport": "ESSA",
-    "flights": 7
+    "airport": "YMML",
+    "flights": 8
+  },
+  {
+    "airport": "RJAA",
+    "flights": 8
   }
 ]
