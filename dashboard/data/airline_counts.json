@@ -1,43 +1,47 @@
 [
   {
     "airline": "unknown",
-    "flights": 3429
+    "flights": 3825
   },
   {
     "airline": "Delta Air Lines",
-    "flights": 470
+    "flights": 484
   },
   {
     "airline": "American Airlines",
-    "flights": 462
-  },
-  {
-    "airline": "United Airlines",
-    "flights": 424
+    "flights": 459
   },
   {
     "airline": "Southwest Airlines",
-    "flights": 390
+    "flights": 457
+  },
+  {
+    "airline": "United Airlines",
+    "flights": 433
   },
   {
     "airline": "Ryanair",
-    "flights": 350
+    "flights": 346
   },
   {
     "airline": "SkyWest",
-    "flights": 191
+    "flights": 214
   },
   {
     "airline": "NetJets",
-    "flights": 141
-  },
-  {
-    "airline": "Turkish Airlines",
-    "flights": 140
+    "flights": 161
   },
   {
     "airline": "JetBlue Airways",
-    "flights": 134
+    "flights": 139
+  },
+  {
+    "airline": "Turkish Airlines",
+    "flights": 130
+  },
+  {
+    "airline": "Alaska Airlines",
+    "flights": 120
   },
   {
     "airline": "easyJet",
@@ -45,42 +49,26 @@
   },
   {
     "airline": "Lufthansa",
-    "flights": 116
-  },
-  {
-    "airline": "Republic Airlines",
-    "flights": 111
+    "flights": 113
   },
   {
     "airline": "Frontier Airlines",
-    "flights": 106
+    "flights": 94
   },
   {
-    "airline": "Alaska Airlines",
-    "flights": 103
-  },
-  {
-    "airline": "IndiGo Airlines",
-    "flights": 90
-  },
-  {
-    "airline": "Air Canada",
-    "flights": 87
-  },
-  {
-    "airline": "Scandinavian Airlines System",
-    "flights": 83
+    "airline": "Republic Airlines",
+    "flights": 92
   },
   {
     "airline": "Air France",
-    "flights": 83
+    "flights": 85
   },
   {
-    "airline": "Envoy Air",
-    "flights": 78
+    "airline": "Air Canada",
+    "flights": 85
   },
   {
-    "airline": "British Airways",
+    "airline": "Bombardier Business Jet Solutions",
     "flights": 73
   },
   {
@@ -88,15 +76,27 @@
     "flights": 72
   },
   {
-    "airline": "WestJet",
+    "airline": "Envoy Air",
     "flights": 71
   },
   {
-    "airline": "Bombardier Business Jet Solutions",
+    "airline": "British Airways",
     "flights": 68
   },
   {
-    "airline": "Eurowings",
-    "flights": 56
+    "airline": "WestJet",
+    "flights": 64
+  },
+  {
+    "airline": "IndiGo Airlines",
+    "flights": 62
+  },
+  {
+    "airline": "Scandinavian Airlines System",
+    "flights": 62
+  },
+  {
+    "airline": "Jet2.com",
+    "flights": 60
   }
 ]
