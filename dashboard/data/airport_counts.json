@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 5997
+    "flights": 7154
   },
   {
     "airport": "KATL",
-    "flights": 38
+    "flights": 46
   },
   {
     "airport": "CYYC",
-    "flights": 31
-  },
-  {
-    "airport": "LSZH",
-    "flights": 31
-  },
-  {
-    "airport": "CYYZ",
-    "flights": 26
-  },
-  {
-    "airport": "KBOS",
-    "flights": 23
-  },
-  {
-    "airport": "EHAM",
-    "flights": 21
+    "flights": 33
   },
   {
     "airport": "EDDF",
-    "flights": 20
+    "flights": 29
   },
   {
-    "airport": "YSSY",
-    "flights": 20
+    "airport": "KBOS",
+    "flights": 25
   },
   {
-    "airport": "RJTT",
-    "flights": 19
+    "airport": "KIAD",
+    "flights": 25
   },
   {
-    "airport": "KLGA",
-    "flights": 18
+    "airport": "CYYZ",
+    "flights": 25
   },
   {
     "airport": "KDFW",
-    "flights": 18
-  },
-  {
-    "airport": "KEWR",
-    "flights": 17
-  },
-  {
-    "airport": "EGKK",
-    "flights": 17
-  },
-  {
-    "airport": "LFPO",
-    "flights": 16
-  },
-  {
-    "airport": "VHHH",
-    "flights": 16
-  },
-  {
-    "airport": "ESSA",
-    "flights": 14
-  },
-  {
-    "airport": "KMCO",
-    "flights": 14
-  },
-  {
-    "airport": "YMML",
-    "flights": 13
-  },
-  {
-    "airport": "KDCA",
-    "flights": 12
-  },
-  {
-    "airport": "SKBO",
-    "flights": 12
+    "flights": 23
   },
   {
     "airport": "KORD",
-    "flights": 12
+    "flights": 22
   },
   {
-    "airport": "VTBS",
-    "flights": 11
+    "airport": "EHAM",
+    "flights": 19
+  },
+  {
+    "airport": "KDEN",
+    "flights": 19
+  },
+  {
+    "airport": "LSZH",
+    "flights": 19
+  },
+  {
+    "airport": "KBNA",
+    "flights": 17
   },
   {
     "airport": "LGAV",
-    "flights": 10
+    "flights": 17
   },
   {
-    "airport": "YPPH",
-    "flights": 10
+    "airport": "SKBO",
+    "flights": 16
+  },
+  {
+    "airport": "KAUS",
+    "flights": 14
+  },
+  {
+    "airport": "KLGA",
+    "flights": 14
+  },
+  {
+    "airport": "VHHH",
+    "flights": 14
+  },
+  {
+    "airport": "LFPO",
+    "flights": 13
+  },
+  {
+    "airport": "CYUL",
+    "flights": 13
+  },
+  {
+    "airport": "EGKK",
+    "flights": 13
+  },
+  {
+    "airport": "ZGSZ",
+    "flights": 13
+  },
+  {
+    "airport": "KJFK",
+    "flights": 12
+  },
+  {
+    "airport": "KDCA",
+    "flights": 11
+  },
+  {
+    "airport": "LEBL",
+    "flights": 11
   }
 ]
