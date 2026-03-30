@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 4964
+    "flights": 5997
   },
   {
-    "airport": "CYYZ",
-    "flights": 43
+    "airport": "KATL",
+    "flights": 38
   },
   {
     "airport": "CYYC",
-    "flights": 22
+    "flights": 31
   },
   {
     "airport": "LSZH",
-    "flights": 22
+    "flights": 31
+  },
+  {
+    "airport": "CYYZ",
+    "flights": 26
+  },
+  {
+    "airport": "KBOS",
+    "flights": 23
+  },
+  {
+    "airport": "EHAM",
+    "flights": 21
   },
   {
     "airport": "EDDF",
     "flights": 20
   },
   {
-    "airport": "VHHH",
+    "airport": "YSSY",
     "flights": 20
   },
   {
-    "airport": "EHAM",
+    "airport": "RJTT",
     "flights": 19
   },
   {
-    "airport": "EGKK",
+    "airport": "KLGA",
     "flights": 18
-  },
-  {
-    "airport": "RJTT",
-    "flights": 18
-  },
-  {
-    "airport": "YSSY",
-    "flights": 17
-  },
-  {
-    "airport": "KBOS",
-    "flights": 16
-  },
-  {
-    "airport": "LEBL",
-    "flights": 16
-  },
-  {
-    "airport": "KATL",
-    "flights": 15
-  },
-  {
-    "airport": "YMML",
-    "flights": 14
-  },
-  {
-    "airport": "LGAV",
-    "flights": 13
-  },
-  {
-    "airport": "YPPH",
-    "flights": 12
-  },
-  {
-    "airport": "VECC",
-    "flights": 11
-  },
-  {
-    "airport": "SKBO",
-    "flights": 11
   },
   {
     "airport": "KDFW",
-    "flights": 11
+    "flights": 18
+  },
+  {
+    "airport": "KEWR",
+    "flights": 17
+  },
+  {
+    "airport": "EGKK",
+    "flights": 17
+  },
+  {
+    "airport": "LFPO",
+    "flights": 16
+  },
+  {
+    "airport": "VHHH",
+    "flights": 16
+  },
+  {
+    "airport": "ESSA",
+    "flights": 14
   },
   {
     "airport": "KMCO",
-    "flights": 11
+    "flights": 14
   },
   {
-    "airport": "LHBP",
-    "flights": 10
+    "airport": "YMML",
+    "flights": 13
   },
   {
-    "airport": "KJFK",
-    "flights": 9
+    "airport": "KDCA",
+    "flights": 12
+  },
+  {
+    "airport": "SKBO",
+    "flights": 12
   },
   {
     "airport": "KORD",
-    "flights": 9
+    "flights": 12
   },
   {
-    "airport": "KIAD",
-    "flights": 9
+    "airport": "VTBS",
+    "flights": 11
   },
   {
-    "airport": "EGCC",
-    "flights": 9
+    "airport": "LGAV",
+    "flights": 10
+  },
+  {
+    "airport": "YPPH",
+    "flights": 10
   }
 ]
