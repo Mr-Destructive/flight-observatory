@@ -1,74 +1,70 @@
 [
   {
     "airport": "unknown",
-    "flights": 7016
-  },
-  {
-    "airport": "KDFW",
-    "flights": 46
-  },
-  {
-    "airport": "YPPH",
-    "flights": 35
-  },
-  {
-    "airport": "KBOS",
-    "flights": 31
-  },
-  {
-    "airport": "YSSY",
-    "flights": 31
-  },
-  {
-    "airport": "CYYZ",
-    "flights": 30
+    "flights": 6483
   },
   {
     "airport": "KATL",
-    "flights": 28
+    "flights": 45
   },
   {
-    "airport": "KPHX",
-    "flights": 25
-  },
-  {
-    "airport": "KJFK",
-    "flights": 25
+    "airport": "YSSY",
+    "flights": 39
   },
   {
     "airport": "KORD",
-    "flights": 21
+    "flights": 37
+  },
+  {
+    "airport": "KDFW",
+    "flights": 29
+  },
+  {
+    "airport": "CYYZ",
+    "flights": 29
+  },
+  {
+    "airport": "KDEN",
+    "flights": 29
+  },
+  {
+    "airport": "YPPH",
+    "flights": 28
+  },
+  {
+    "airport": "KBOS",
+    "flights": 27
   },
   {
     "airport": "CYYC",
-    "flights": 21
-  },
-  {
-    "airport": "KEWR",
-    "flights": 19
-  },
-  {
-    "airport": "YMMB",
-    "flights": 19
-  },
-  {
-    "airport": "RJTT",
-    "flights": 18
+    "flights": 26
   },
   {
     "airport": "YMML",
-    "flights": 18
+    "flights": 22
   },
   {
     "airport": "KMCO",
-    "flights": 17
+    "flights": 22
+  },
+  {
+    "airport": "KSFO",
+    "flights": 19
+  },
+  {
+    "airport": "KBNA",
+    "flights": 18
   },
   {
     "airport": "KLAS",
-    "flights": 16
+    "flights": 17
   },
   {
     "airport": "KAUS",
+    "flights": 15
+  },
+  {
+    "airport": "RJTT",
     "flights": 15
   },
   {
@@ -76,27 +72,31 @@
     "flights": 14
   },
   {
-    "airport": "LFPO",
+    "airport": "KEWR",
     "flights": 14
   },
   {
-    "airport": "KBNA",
+    "airport": "KPHX",
     "flights": 14
   },
   {
-    "airport": "YSBK",
+    "airport": "PHNL",
     "flights": 13
   },
   {
-    "airport": "YBBN",
+    "airport": "KSLC",
+    "flights": 13
+  },
+  {
+    "airport": "YMMB",
+    "flights": 13
+  },
+  {
+    "airport": "KJFK",
     "flights": 12
   },
   {
-    "airport": "KDEN",
+    "airport": "CYUL",
     "flights": 12
-  },
-  {
-    "airport": "SKBO",
-    "flights": 11
   }
 ]
