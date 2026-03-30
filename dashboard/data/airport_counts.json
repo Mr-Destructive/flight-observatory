@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 9165
-  },
-  {
-    "airport": "KATL",
-    "flights": 33
+    "flights": 9191
   },
   {
     "airport": "KDFW",
-    "flights": 29
-  },
-  {
-    "airport": "KLAS",
-    "flights": 27
+    "flights": 32
   },
   {
     "airport": "CYYC",
-    "flights": 21
+    "flights": 28
   },
   {
-    "airport": "KIAD",
-    "flights": 20
+    "airport": "KDEN",
+    "flights": 28
+  },
+  {
+    "airport": "KATL",
+    "flights": 28
+  },
+  {
+    "airport": "KSEA",
+    "flights": 25
   },
   {
     "airport": "KSFO",
-    "flights": 20
-  },
-  {
-    "airport": "CYYZ",
-    "flights": 20
-  },
-  {
-    "airport": "LSZH",
-    "flights": 20
+    "flights": 22
   },
   {
     "airport": "KPHX",
+    "flights": 22
+  },
+  {
+    "airport": "CYYZ",
+    "flights": 21
+  },
+  {
+    "airport": "KBOS",
+    "flights": 21
+  },
+  {
+    "airport": "KLAS",
     "flights": 19
   },
   {
-    "airport": "CYVR",
-    "flights": 16
-  },
-  {
     "airport": "EHAM",
-    "flights": 15
+    "flights": 18
   },
   {
     "airport": "KORD",
-    "flights": 15
+    "flights": 17
   },
   {
-    "airport": "KSAN",
-    "flights": 14
+    "airport": "KMCO",
+    "flights": 16
+  },
+  {
+    "airport": "MMUN",
+    "flights": 16
   },
   {
     "airport": "EGKK",
     "flights": 14
   },
   {
-    "airport": "MMUN",
+    "airport": "KAUS",
     "flights": 13
   },
   {
-    "airport": "MGGT",
+    "airport": "EDDF",
     "flights": 13
   },
   {
-    "airport": "KJFK",
+    "airport": "KLGA",
     "flights": 12
   },
   {
-    "airport": "KBOS",
+    "airport": "KLGU",
     "flights": 12
   },
   {
-    "airport": "KAUO",
+    "airport": "YSSY",
     "flights": 12
-  },
-  {
-    "airport": "KSJC",
-    "flights": 11
-  },
-  {
-    "airport": "KTPA",
-    "flights": 11
-  },
-  {
-    "airport": "KBNA",
-    "flights": 11
-  },
-  {
-    "airport": "KDEN",
-    "flights": 11
   },
   {
     "airport": "KOAK",
+    "flights": 11
+  },
+  {
+    "airport": "LOWW",
+    "flights": 11
+  },
+  {
+    "airport": "LGAV",
+    "flights": 11
+  },
+  {
+    "airport": "KIAD",
     "flights": 11
   }
 ]
