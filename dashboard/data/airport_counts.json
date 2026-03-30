@@ -1,86 +1,94 @@
 [
   {
     "airport": "unknown",
-    "flights": 7154
+    "flights": 8665
   },
   {
     "airport": "KATL",
-    "flights": 46
-  },
-  {
-    "airport": "CYYC",
-    "flights": 33
-  },
-  {
-    "airport": "EDDF",
-    "flights": 29
-  },
-  {
-    "airport": "KBOS",
-    "flights": 25
-  },
-  {
-    "airport": "KIAD",
-    "flights": 25
+    "flights": 56
   },
   {
     "airport": "CYYZ",
-    "flights": 25
+    "flights": 37
   },
   {
-    "airport": "KDFW",
-    "flights": 23
+    "airport": "CYYC",
+    "flights": 36
+  },
+  {
+    "airport": "KDEN",
+    "flights": 33
   },
   {
     "airport": "KORD",
+    "flights": 27
+  },
+  {
+    "airport": "KDFW",
+    "flights": 26
+  },
+  {
+    "airport": "EDDF",
     "flights": 22
+  },
+  {
+    "airport": "KPHX",
+    "flights": 19
   },
   {
     "airport": "EHAM",
     "flights": 19
   },
   {
-    "airport": "KDEN",
+    "airport": "KMCO",
     "flights": 19
   },
   {
-    "airport": "LSZH",
-    "flights": 19
-  },
-  {
-    "airport": "KBNA",
+    "airport": "KBOS",
     "flights": 17
   },
   {
-    "airport": "LGAV",
-    "flights": 17
-  },
-  {
-    "airport": "SKBO",
+    "airport": "CYVR",
     "flights": 16
   },
   {
-    "airport": "KAUS",
-    "flights": 14
-  },
-  {
-    "airport": "KLGA",
-    "flights": 14
+    "airport": "KSFO",
+    "flights": 16
   },
   {
     "airport": "VHHH",
-    "flights": 14
+    "flights": 16
+  },
+  {
+    "airport": "LSZH",
+    "flights": 16
   },
   {
     "airport": "LFPO",
+    "flights": 15
+  },
+  {
+    "airport": "KLAS",
+    "flights": 15
+  },
+  {
+    "airport": "YMML",
+    "flights": 15
+  },
+  {
+    "airport": "KSLC",
+    "flights": 14
+  },
+  {
+    "airport": "KJFK",
+    "flights": 14
+  },
+  {
+    "airport": "SKBO",
     "flights": 13
   },
   {
-    "airport": "CYUL",
-    "flights": 13
-  },
-  {
-    "airport": "EGKK",
+    "airport": "KSAN",
     "flights": 13
   },
   {
@@ -88,15 +96,7 @@
     "flights": 13
   },
   {
-    "airport": "KJFK",
-    "flights": 12
-  },
-  {
-    "airport": "KDCA",
-    "flights": 11
-  },
-  {
-    "airport": "LEBL",
-    "flights": 11
+    "airport": "LOWW",
+    "flights": 13
   }
 ]
