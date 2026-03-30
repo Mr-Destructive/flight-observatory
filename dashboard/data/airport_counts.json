@@ -1,50 +1,62 @@
 [
   {
     "airport": "unknown",
-    "flights": 8665
-  },
-  {
-    "airport": "KATL",
-    "flights": 56
-  },
-  {
-    "airport": "CYYZ",
-    "flights": 37
+    "flights": 9215
   },
   {
     "airport": "CYYC",
-    "flights": 36
-  },
-  {
-    "airport": "KDEN",
-    "flights": 33
-  },
-  {
-    "airport": "KORD",
-    "flights": 27
+    "flights": 45
   },
   {
     "airport": "KDFW",
-    "flights": 26
+    "flights": 44
   },
   {
-    "airport": "EDDF",
-    "flights": 22
+    "airport": "KDEN",
+    "flights": 41
   },
   {
     "airport": "KPHX",
-    "flights": 19
+    "flights": 35
   },
   {
-    "airport": "EHAM",
-    "flights": 19
+    "airport": "LSZH",
+    "flights": 32
+  },
+  {
+    "airport": "KSLC",
+    "flights": 26
+  },
+  {
+    "airport": "KATL",
+    "flights": 23
+  },
+  {
+    "airport": "KSEA",
+    "flights": 22
   },
   {
     "airport": "KMCO",
-    "flights": 19
+    "flights": 21
+  },
+  {
+    "airport": "EDDF",
+    "flights": 20
+  },
+  {
+    "airport": "KORD",
+    "flights": 20
+  },
+  {
+    "airport": "KSFO",
+    "flights": 20
   },
   {
     "airport": "KBOS",
+    "flights": 20
+  },
+  {
+    "airport": "KLAS",
     "flights": 17
   },
   {
@@ -52,51 +64,39 @@
     "flights": 16
   },
   {
-    "airport": "KSFO",
-    "flights": 16
-  },
-  {
-    "airport": "VHHH",
-    "flights": 16
-  },
-  {
-    "airport": "LSZH",
-    "flights": 16
-  },
-  {
-    "airport": "LFPO",
+    "airport": "EGCC",
     "flights": 15
   },
   {
-    "airport": "KLAS",
+    "airport": "CYYZ",
     "flights": 15
-  },
-  {
-    "airport": "YMML",
-    "flights": 15
-  },
-  {
-    "airport": "KSLC",
-    "flights": 14
-  },
-  {
-    "airport": "KJFK",
-    "flights": 14
-  },
-  {
-    "airport": "SKBO",
-    "flights": 13
   },
   {
     "airport": "KSAN",
+    "flights": 14
+  },
+  {
+    "airport": "KAUS",
+    "flights": 14
+  },
+  {
+    "airport": "KLGA",
+    "flights": 14
+  },
+  {
+    "airport": "KIAD",
+    "flights": 14
+  },
+  {
+    "airport": "KBNA",
+    "flights": 14
+  },
+  {
+    "airport": "ESSA",
     "flights": 13
   },
   {
-    "airport": "ZGSZ",
-    "flights": 13
-  },
-  {
-    "airport": "LOWW",
+    "airport": "KBJC",
     "flights": 13
   }
 ]
