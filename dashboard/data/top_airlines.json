@@ -1,42 +1,42 @@
 [
   {
     "airline": "unknown",
-    "flights": 2021
-  },
-  {
-    "airline": "Southwest Airlines",
-    "flights": 579
-  },
-  {
-    "airline": "Delta Air Lines",
-    "flights": 479
-  },
-  {
-    "airline": "American Airlines",
-    "flights": 459
-  },
-  {
-    "airline": "United Airlines",
-    "flights": 395
+    "flights": 3034
   },
   {
     "airline": "Ryanair",
-    "flights": 326
+    "flights": 693
   },
   {
-    "airline": "SkyWest",
-    "flights": 198
+    "airline": "Southwest Airlines",
+    "flights": 636
   },
   {
-    "airline": "Alaska Airlines",
-    "flights": 193
+    "airline": "Delta Air Lines",
+    "flights": 587
+  },
+  {
+    "airline": "American Airlines",
+    "flights": 561
+  },
+  {
+    "airline": "United Airlines",
+    "flights": 511
   },
   {
     "airline": "Turkish Airlines",
-    "flights": 170
+    "flights": 286
   },
   {
     "airline": "IndiGo Airlines",
-    "flights": 167
+    "flights": 262
+  },
+  {
+    "airline": "Lufthansa",
+    "flights": 253
+  },
+  {
+    "airline": "Alaska Airlines",
+    "flights": 232
   }
 ]
