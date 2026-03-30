@@ -1,1 +1,42 @@
-[]
+[
+  {
+    "airline": "unknown",
+    "flights": 1059
+  },
+  {
+    "airline": "Southwest Airlines",
+    "flights": 432
+  },
+  {
+    "airline": "Delta Air Lines",
+    "flights": 344
+  },
+  {
+    "airline": "American Airlines",
+    "flights": 336
+  },
+  {
+    "airline": "United Airlines",
+    "flights": 276
+  },
+  {
+    "airline": "SkyWest",
+    "flights": 160
+  },
+  {
+    "airline": "Alaska Airlines",
+    "flights": 115
+  },
+  {
+    "airline": "Frontier Airlines",
+    "flights": 94
+  },
+  {
+    "airline": "JetBlue Airways",
+    "flights": 90
+  },
+  {
+    "airline": "IndiGo Airlines",
+    "flights": 82
+  }
+]
