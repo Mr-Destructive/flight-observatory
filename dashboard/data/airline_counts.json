@@ -1,54 +1,74 @@
 [
   {
     "airline": "unknown",
-    "flights": 1050
+    "flights": 1237
   },
   {
     "airline": "Ryanair",
-    "flights": 381
+    "flights": 355
   },
   {
     "airline": "American Airlines",
-    "flights": 129
+    "flights": 208
   },
   {
-    "airline": "United Airlines",
-    "flights": 125
+    "airline": "Southwest Airlines",
+    "flights": 204
   },
   {
     "airline": "Delta Air Lines",
-    "flights": 122
+    "flights": 193
   },
   {
-    "airline": "easyJet",
-    "flights": 111
-  },
-  {
-    "airline": "Turkish Airlines",
-    "flights": 105
+    "airline": "United Airlines",
+    "flights": 160
   },
   {
     "airline": "Lufthansa",
-    "flights": 96
+    "flights": 112
   },
   {
-    "airline": "Air France",
-    "flights": 92
+    "airline": "Turkish Airlines",
+    "flights": 112
+  },
+  {
+    "airline": "easyJet",
+    "flights": 107
   },
   {
     "airline": "IndiGo Airlines",
-    "flights": 85
+    "flights": 94
   },
   {
-    "airline": "KLM Royal Dutch Airlines",
-    "flights": 78
+    "airline": "JetBlue Airways",
+    "flights": 89
   },
   {
-    "airline": "Scandinavian Airlines System",
-    "flights": 71
+    "airline": "Republic Airlines",
+    "flights": 82
   },
   {
     "airline": "British Airways",
+    "flights": 81
+  },
+  {
+    "airline": "Jet2.com",
+    "flights": 70
+  },
+  {
+    "airline": "Frontier Airlines",
+    "flights": 67
+  },
+  {
+    "airline": "KLM Royal Dutch Airlines",
+    "flights": 67
+  },
+  {
+    "airline": "Air France",
+    "flights": 67
+  },
+  {
+    "airline": "Vueling Airlines",
     "flights": 64
   },
   {
@@ -56,47 +76,27 @@
     "flights": 63
   },
   {
-    "airline": "Southwest Airlines",
-    "flights": 56
-  },
-  {
-    "airline": "Swissair",
-    "flights": 56
-  },
-  {
-    "airline": "Vueling Airlines",
-    "flights": 55
-  },
-  {
-    "airline": "Jet2.com",
-    "flights": 52
-  },
-  {
     "airline": "Japan Airlines Domestic",
-    "flights": 51
+    "flights": 60
   },
   {
-    "airline": "TAP Portugal",
-    "flights": 48
+    "airline": "Scandinavian Airlines System",
+    "flights": 58
   },
   {
     "airline": "Pegasus Airlines",
-    "flights": 46
+    "flights": 55
+  },
+  {
+    "airline": "Air Canada",
+    "flights": 55
   },
   {
     "airline": "Air India Limited",
-    "flights": 43
+    "flights": 52
   },
   {
-    "airline": "LOT Polish Airlines",
-    "flights": 43
-  },
-  {
-    "airline": "Wizz Air",
-    "flights": 42
-  },
-  {
-    "airline": "JetBlue Airways",
-    "flights": 41
+    "airline": "Emirates",
+    "flights": 51
   }
 ]
