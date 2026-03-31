@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 3878
-  },
-  {
-    "airport": "LSZH",
-    "flights": 38
-  },
-  {
-    "airport": "KLAS",
-    "flights": 24
-  },
-  {
-    "airport": "YPPH",
-    "flights": 24
-  },
-  {
-    "airport": "YSSY",
-    "flights": 24
-  },
-  {
-    "airport": "VHHH",
-    "flights": 22
-  },
-  {
-    "airport": "CYYC",
-    "flights": 19
-  },
-  {
-    "airport": "UUEE",
-    "flights": 17
-  },
-  {
-    "airport": "YPJT",
-    "flights": 15
-  },
-  {
-    "airport": "EHAM",
-    "flights": 15
+    "flights": 3851
   },
   {
     "airport": "EDDF",
-    "flights": 15
+    "flights": 25
   },
   {
     "airport": "RJTT",
-    "flights": 14
+    "flights": 23
+  },
+  {
+    "airport": "EGKK",
+    "flights": 23
+  },
+  {
+    "airport": "LSZH",
+    "flights": 23
+  },
+  {
+    "airport": "YSSY",
+    "flights": 23
   },
   {
     "airport": "LGAV",
-    "flights": 14
+    "flights": 21
   },
   {
-    "airport": "KSFO",
+    "airport": "YPPH",
+    "flights": 17
+  },
+  {
+    "airport": "YMML",
+    "flights": 16
+  },
+  {
+    "airport": "VHHH",
+    "flights": 15
+  },
+  {
+    "airport": "CYYC",
     "flights": 13
   },
   {
-    "airport": "KPHX",
-    "flights": 13
-  },
-  {
-    "airport": "CYYZ",
+    "airport": "EBBR",
     "flights": 13
   },
   {
     "airport": "LFPO",
-    "flights": 12
-  },
-  {
-    "airport": "EGKK",
-    "flights": 12
-  },
-  {
-    "airport": "ZGSZ",
     "flights": 11
   },
   {
-    "airport": "CYVR",
-    "flights": 11
-  },
-  {
-    "airport": "YMMB",
+    "airport": "LOWW",
     "flights": 10
   },
   {
-    "airport": "KBOS",
+    "airport": "KLAS",
     "flights": 9
   },
   {
-    "airport": "KDEN",
+    "airport": "YPJT",
     "flights": 9
   },
   {
-    "airport": "LIMC",
-    "flights": 9
-  },
-  {
-    "airport": "KORD",
+    "airport": "VABB",
     "flights": 8
+  },
+  {
+    "airport": "VGHS",
+    "flights": 8
+  },
+  {
+    "airport": "EGCC",
+    "flights": 8
+  },
+  {
+    "airport": "KSFO",
+    "flights": 8
+  },
+  {
+    "airport": "LHBP",
+    "flights": 8
+  },
+  {
+    "airport": "LEMD",
+    "flights": 7
+  },
+  {
+    "airport": "CYVR",
+    "flights": 7
+  },
+  {
+    "airport": "LFPG",
+    "flights": 7
+  },
+  {
+    "airport": "YBBN",
+    "flights": 7
   }
 ]
