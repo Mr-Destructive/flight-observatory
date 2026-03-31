@@ -1,58 +1,62 @@
 [
   {
     "airport": "unknown",
-    "flights": 8542
+    "flights": 8288
   },
   {
     "airport": "KATL",
-    "flights": 30
+    "flights": 46
   },
   {
     "airport": "CYYZ",
-    "flights": 25
+    "flights": 32
   },
   {
-    "airport": "EDDF",
-    "flights": 24
-  },
-  {
-    "airport": "LSZH",
-    "flights": 23
-  },
-  {
-    "airport": "KDFW",
-    "flights": 22
-  },
-  {
-    "airport": "CYYC",
-    "flights": 22
+    "airport": "YSSY",
+    "flights": 26
   },
   {
     "airport": "KBOS",
-    "flights": 21
-  },
-  {
-    "airport": "KORD",
-    "flights": 21
-  },
-  {
-    "airport": "KLAS",
-    "flights": 21
-  },
-  {
-    "airport": "MMUN",
-    "flights": 18
+    "flights": 25
   },
   {
     "airport": "KDEN",
-    "flights": 16
+    "flights": 25
   },
   {
-    "airport": "LFPO",
-    "flights": 15
+    "airport": "KIAD",
+    "flights": 25
   },
   {
-    "airport": "KBNA",
+    "airport": "KORD",
+    "flights": 25
+  },
+  {
+    "airport": "KDFW",
+    "flights": 24
+  },
+  {
+    "airport": "KLAS",
+    "flights": 18
+  },
+  {
+    "airport": "KSFO",
+    "flights": 17
+  },
+  {
+    "airport": "KLGA",
+    "flights": 17
+  },
+  {
+    "airport": "KJFK",
+    "flights": 17
+  },
+  {
+    "airport": "LSZH",
+    "flights": 17
+  },
+  {
+    "airport": "CYYC",
     "flights": 15
   },
   {
@@ -60,23 +64,19 @@
     "flights": 15
   },
   {
-    "airport": "MGGT",
-    "flights": 14
+    "airport": "YMML",
+    "flights": 15
   },
   {
-    "airport": "KLGA",
+    "airport": "KBJC",
     "flights": 14
-  },
-  {
-    "airport": "KVNY",
-    "flights": 13
   },
   {
     "airport": "KPHX",
-    "flights": 13
+    "flights": 14
   },
   {
-    "airport": "SKBO",
+    "airport": "KBNA",
     "flights": 13
   },
   {
@@ -84,19 +84,19 @@
     "flights": 13
   },
   {
-    "airport": "KSFO",
+    "airport": "MMUN",
+    "flights": 13
+  },
+  {
+    "airport": "KOAK",
+    "flights": 13
+  },
+  {
+    "airport": "LFPO",
     "flights": 12
   },
   {
-    "airport": "KAUS",
-    "flights": 12
-  },
-  {
-    "airport": "VHHH",
-    "flights": 12
-  },
-  {
-    "airport": "KBJC",
+    "airport": "EGKK",
     "flights": 12
   }
 ]
