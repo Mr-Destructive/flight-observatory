@@ -1,38 +1,34 @@
 [
   {
     "airport": "unknown",
-    "flights": 3851
-  },
-  {
-    "airport": "EDDF",
-    "flights": 25
+    "flights": 4084
   },
   {
     "airport": "RJTT",
-    "flights": 23
-  },
-  {
-    "airport": "EGKK",
-    "flights": 23
+    "flights": 29
   },
   {
     "airport": "LSZH",
-    "flights": 23
+    "flights": 25
   },
   {
-    "airport": "YSSY",
-    "flights": 23
-  },
-  {
-    "airport": "LGAV",
-    "flights": 21
-  },
-  {
-    "airport": "YPPH",
-    "flights": 17
+    "airport": "LFPO",
+    "flights": 20
   },
   {
     "airport": "YMML",
+    "flights": 20
+  },
+  {
+    "airport": "YSSY",
+    "flights": 18
+  },
+  {
+    "airport": "EHAM",
+    "flights": 16
+  },
+  {
+    "airport": "EGKK",
     "flights": 16
   },
   {
@@ -40,35 +36,47 @@
     "flights": 15
   },
   {
-    "airport": "CYYC",
-    "flights": 13
+    "airport": "LGAV",
+    "flights": 15
   },
   {
     "airport": "EBBR",
-    "flights": 13
+    "flights": 12
   },
   {
-    "airport": "LFPO",
+    "airport": "EDDF",
     "flights": 11
   },
   {
-    "airport": "LOWW",
+    "airport": "YPPH",
+    "flights": 11
+  },
+  {
+    "airport": "EDDM",
     "flights": 10
   },
   {
-    "airport": "KLAS",
+    "airport": "LOWW",
     "flights": 9
   },
   {
-    "airport": "YPJT",
+    "airport": "CYYC",
     "flights": 9
   },
   {
-    "airport": "VABB",
+    "airport": "VTBS",
+    "flights": 9
+  },
+  {
+    "airport": "KBOS",
     "flights": 8
   },
   {
-    "airport": "VGHS",
+    "airport": "LFLL",
+    "flights": 8
+  },
+  {
+    "airport": "YPJT",
     "flights": 8
   },
   {
@@ -76,27 +84,19 @@
     "flights": 8
   },
   {
-    "airport": "KSFO",
+    "airport": "LFBO",
     "flights": 8
   },
   {
-    "airport": "LHBP",
-    "flights": 8
-  },
-  {
-    "airport": "LEMD",
+    "airport": "VECC",
     "flights": 7
   },
   {
-    "airport": "CYVR",
+    "airport": "KMCO",
     "flights": 7
   },
   {
-    "airport": "LFPG",
-    "flights": 7
-  },
-  {
-    "airport": "YBBN",
+    "airport": "YPAD",
     "flights": 7
   }
 ]
