@@ -1,114 +1,66 @@
 [
   {
     "altitude_band_m": -1000,
-    "flights": 1028
+    "flights": 42
   },
   {
     "altitude_band_m": 0,
-    "flights": 24209
+    "flights": 1091
   },
   {
     "altitude_band_m": 1000,
-    "flights": 14118
+    "flights": 708
   },
   {
     "altitude_band_m": 2000,
-    "flights": 8332
+    "flights": 358
   },
   {
     "altitude_band_m": 3000,
-    "flights": 6168
+    "flights": 264
   },
   {
     "altitude_band_m": 4000,
-    "flights": 4717
+    "flights": 199
   },
   {
     "altitude_band_m": 5000,
-    "flights": 4590
+    "flights": 194
   },
   {
     "altitude_band_m": 6000,
-    "flights": 4805
+    "flights": 230
   },
   {
     "altitude_band_m": 7000,
-    "flights": 5711
+    "flights": 238
   },
   {
     "altitude_band_m": 8000,
-    "flights": 5658
+    "flights": 268
   },
   {
     "altitude_band_m": 9000,
-    "flights": 9445
+    "flights": 463
   },
   {
     "altitude_band_m": 10000,
-    "flights": 30420
+    "flights": 1429
   },
   {
     "altitude_band_m": 11000,
-    "flights": 19339
+    "flights": 878
   },
   {
     "altitude_band_m": 12000,
-    "flights": 5199
+    "flights": 208
   },
   {
     "altitude_band_m": 13000,
-    "flights": 2015
+    "flights": 46
   },
   {
     "altitude_band_m": 14000,
-    "flights": 122
-  },
-  {
-    "altitude_band_m": 15000,
-    "flights": 2
-  },
-  {
-    "altitude_band_m": 17000,
-    "flights": 2
-  },
-  {
-    "altitude_band_m": 21000,
-    "flights": 2
-  },
-  {
-    "altitude_band_m": 22000,
-    "flights": 1
-  },
-  {
-    "altitude_band_m": 24000,
-    "flights": 3
-  },
-  {
-    "altitude_band_m": 26000,
-    "flights": 1
-  },
-  {
-    "altitude_band_m": 29000,
-    "flights": 1
-  },
-  {
-    "altitude_band_m": 32000,
-    "flights": 1
-  },
-  {
-    "altitude_band_m": 33000,
-    "flights": 2
-  },
-  {
-    "altitude_band_m": 34000,
-    "flights": 2
-  },
-  {
-    "altitude_band_m": 35000,
-    "flights": 1
-  },
-  {
-    "altitude_band_m": 38000,
-    "flights": 2
+    "flights": 4
   }
 ]
