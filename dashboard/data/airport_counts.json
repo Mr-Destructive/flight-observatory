@@ -1,27 +1,23 @@
 [
   {
     "airport": "unknown",
-    "flights": 5838
+    "flights": 6959
   },
   {
     "airport": "KATL",
-    "flights": 38
-  },
-  {
-    "airport": "KBOS",
-    "flights": 28
+    "flights": 60
   },
   {
     "airport": "CYYZ",
-    "flights": 28
+    "flights": 36
   },
   {
-    "airport": "LSZH",
-    "flights": 27
+    "airport": "KORD",
+    "flights": 22
   },
   {
-    "airport": "RJTT",
-    "flights": 23
+    "airport": "CYYC",
+    "flights": 21
   },
   {
     "airport": "KLGA",
@@ -32,35 +28,23 @@
     "flights": 20
   },
   {
-    "airport": "KMCO",
+    "airport": "KIAD",
+    "flights": 19
+  },
+  {
+    "airport": "KBOS",
     "flights": 18
   },
   {
-    "airport": "LFPO",
-    "flights": 17
-  },
-  {
-    "airport": "KEWR",
-    "flights": 17
-  },
-  {
-    "airport": "EHAM",
-    "flights": 17
-  },
-  {
-    "airport": "YSSY",
-    "flights": 17
-  },
-  {
-    "airport": "CYYC",
+    "airport": "RJTT",
     "flights": 15
   },
   {
-    "airport": "EGKK",
-    "flights": 15
+    "airport": "KDEN",
+    "flights": 14
   },
   {
-    "airport": "VECC",
+    "airport": "LSZH",
     "flights": 14
   },
   {
@@ -68,11 +52,35 @@
     "flights": 14
   },
   {
-    "airport": "YMML",
+    "airport": "KDFW",
+    "flights": 14
+  },
+  {
+    "airport": "EHAM",
     "flights": 13
   },
   {
-    "airport": "LOWW",
+    "airport": "KEWR",
+    "flights": 13
+  },
+  {
+    "airport": "YPPH",
+    "flights": 13
+  },
+  {
+    "airport": "SKBO",
+    "flights": 12
+  },
+  {
+    "airport": "KBNA",
+    "flights": 12
+  },
+  {
+    "airport": "KMCO",
+    "flights": 12
+  },
+  {
+    "airport": "CYUL",
     "flights": 12
   },
   {
@@ -80,23 +88,15 @@
     "flights": 11
   },
   {
-    "airport": "EBBR",
+    "airport": "KAUS",
     "flights": 11
   },
   {
-    "airport": "YPPH",
+    "airport": "LOWW",
     "flights": 11
   },
   {
-    "airport": "KDFW",
-    "flights": 10
-  },
-  {
-    "airport": "VTBS",
-    "flights": 10
-  },
-  {
-    "airport": "CYUL",
-    "flights": 10
+    "airport": "KORL",
+    "flights": 11
   }
 ]
