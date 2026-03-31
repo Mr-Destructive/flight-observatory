@@ -1,66 +1,82 @@
 [
   {
     "airport": "unknown",
-    "flights": 4084
-  },
-  {
-    "airport": "RJTT",
-    "flights": 29
+    "flights": 4463
   },
   {
     "airport": "LSZH",
-    "flights": 25
+    "flights": 34
   },
   {
-    "airport": "LFPO",
-    "flights": 20
+    "airport": "RJTT",
+    "flights": 26
   },
   {
-    "airport": "YMML",
+    "airport": "EDDF",
+    "flights": 23
+  },
+  {
+    "airport": "VHHH",
     "flights": 20
   },
   {
     "airport": "YSSY",
-    "flights": 18
+    "flights": 20
   },
   {
     "airport": "EHAM",
+    "flights": 17
+  },
+  {
+    "airport": "KBOS",
     "flights": 16
   },
   {
     "airport": "EGKK",
-    "flights": 16
+    "flights": 14
   },
   {
-    "airport": "VHHH",
-    "flights": 15
-  },
-  {
-    "airport": "LGAV",
-    "flights": 15
-  },
-  {
-    "airport": "EBBR",
-    "flights": 12
-  },
-  {
-    "airport": "EDDF",
-    "flights": 11
-  },
-  {
-    "airport": "YPPH",
-    "flights": 11
-  },
-  {
-    "airport": "EDDM",
-    "flights": 10
+    "airport": "YMML",
+    "flights": 13
   },
   {
     "airport": "LOWW",
-    "flights": 9
+    "flights": 12
+  },
+  {
+    "airport": "YPPH",
+    "flights": 12
+  },
+  {
+    "airport": "CYYZ",
+    "flights": 12
+  },
+  {
+    "airport": "ESSA",
+    "flights": 11
+  },
+  {
+    "airport": "LGAV",
+    "flights": 11
   },
   {
     "airport": "CYYC",
+    "flights": 11
+  },
+  {
+    "airport": "EBBR",
+    "flights": 11
+  },
+  {
+    "airport": "LFPO",
+    "flights": 9
+  },
+  {
+    "airport": "SBSP",
+    "flights": 9
+  },
+  {
+    "airport": "KMCO",
     "flights": 9
   },
   {
@@ -68,35 +84,19 @@
     "flights": 9
   },
   {
-    "airport": "KBOS",
+    "airport": "KLGA",
+    "flights": 9
+  },
+  {
+    "airport": "KATL",
     "flights": 8
   },
   {
-    "airport": "LFLL",
+    "airport": "KTPA",
     "flights": 8
   },
   {
-    "airport": "YPJT",
+    "airport": "LIMC",
     "flights": 8
-  },
-  {
-    "airport": "EGCC",
-    "flights": 8
-  },
-  {
-    "airport": "LFBO",
-    "flights": 8
-  },
-  {
-    "airport": "VECC",
-    "flights": 7
-  },
-  {
-    "airport": "KMCO",
-    "flights": 7
-  },
-  {
-    "airport": "YPAD",
-    "flights": 7
   }
 ]
