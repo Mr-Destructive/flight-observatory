@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 5838
-  },
-  {
-    "airport": "KORD",
-    "flights": 52
-  },
-  {
-    "airport": "KATL",
-    "flights": 46
+    "flights": 4056
   },
   {
     "airport": "YSSY",
-    "flights": 34
+    "flights": 29
   },
   {
     "airport": "RJTT",
-    "flights": 31
-  },
-  {
-    "airport": "KIAD",
-    "flights": 30
-  },
-  {
-    "airport": "CYYZ",
-    "flights": 25
-  },
-  {
-    "airport": "KDFW",
-    "flights": 23
-  },
-  {
-    "airport": "KDEN",
-    "flights": 22
-  },
-  {
-    "airport": "KBOS",
-    "flights": 20
-  },
-  {
-    "airport": "KJFK",
-    "flights": 18
-  },
-  {
-    "airport": "YMML",
-    "flights": 18
-  },
-  {
-    "airport": "KLAS",
-    "flights": 17
+    "flights": 21
   },
   {
     "airport": "VHHH",
+    "flights": 20
+  },
+  {
+    "airport": "YPPH",
+    "flights": 19
+  },
+  {
+    "airport": "CYYZ",
+    "flights": 19
+  },
+  {
+    "airport": "KDFW",
+    "flights": 18
+  },
+  {
+    "airport": "KSLC",
     "flights": 17
   },
   {
-    "airport": "KMCO",
+    "airport": "LSZH",
     "flights": 17
   },
   {
-    "airport": "CYYC",
+    "airport": "YMML",
     "flights": 17
   },
   {
     "airport": "KPHX",
+    "flights": 16
+  },
+  {
+    "airport": "CYYC",
     "flights": 15
   },
   {
-    "airport": "KBNA",
-    "flights": 13
+    "airport": "LGAV",
+    "flights": 14
   },
   {
-    "airport": "YPPH",
-    "flights": 13
+    "airport": "KORD",
+    "flights": 14
   },
   {
-    "airport": "LFPO",
+    "airport": "YSBK",
+    "flights": 14
+  },
+  {
+    "airport": "KLAS",
     "flights": 12
   },
   {
-    "airport": "KEWR",
+    "airport": "KSAN",
     "flights": 11
   },
   {
-    "airport": "YPJT",
+    "airport": "KMCO",
     "flights": 11
   },
   {
-    "airport": "SKBO",
-    "flights": 10
+    "airport": "KBOS",
+    "flights": 11
   },
   {
     "airport": "CYVR",
+    "flights": 11
+  },
+  {
+    "airport": "LFPO",
     "flights": 10
   },
   {
-    "airport": "YMMB",
+    "airport": "ZGSZ",
     "flights": 10
+  },
+  {
+    "airport": "VGHS",
+    "flights": 10
+  },
+  {
+    "airport": "KSFO",
+    "flights": 9
+  },
+  {
+    "airport": "KATL",
+    "flights": 9
   }
 ]
