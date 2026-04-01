@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 4617
-  },
-  {
-    "airport": "LSZH",
-    "flights": 41
-  },
-  {
-    "airport": "KBOS",
-    "flights": 24
-  },
-  {
-    "airport": "VHHH",
-    "flights": 24
-  },
-  {
-    "airport": "YSSY",
-    "flights": 17
-  },
-  {
-    "airport": "EHAM",
-    "flights": 15
-  },
-  {
-    "airport": "LGAV",
-    "flights": 14
-  },
-  {
-    "airport": "RJTT",
-    "flights": 14
-  },
-  {
-    "airport": "LEBL",
-    "flights": 14
-  },
-  {
-    "airport": "YMML",
-    "flights": 14
-  },
-  {
-    "airport": "YPPH",
-    "flights": 14
+    "flights": 5063
   },
   {
     "airport": "CYYZ",
-    "flights": 13
+    "flights": 24
   },
   {
     "airport": "EDDF",
-    "flights": 12
+    "flights": 22
+  },
+  {
+    "airport": "LSZH",
+    "flights": 20
+  },
+  {
+    "airport": "RJTT",
+    "flights": 18
+  },
+  {
+    "airport": "EHAM",
+    "flights": 18
+  },
+  {
+    "airport": "YSSY",
+    "flights": 18
   },
   {
     "airport": "LFPO",
-    "flights": 11
+    "flights": 16
   },
   {
-    "airport": "RJAA",
-    "flights": 11
+    "airport": "KBOS",
+    "flights": 16
   },
   {
-    "airport": "VIDP",
-    "flights": 10
-  },
-  {
-    "airport": "LHBP",
-    "flights": 10
-  },
-  {
-    "airport": "ESSA",
-    "flights": 10
-  },
-  {
-    "airport": "EGKK",
-    "flights": 10
-  },
-  {
-    "airport": "LOWW",
-    "flights": 10
+    "airport": "VHHH",
+    "flights": 14
   },
   {
     "airport": "EBBR",
+    "flights": 13
+  },
+  {
+    "airport": "KEWR",
+    "flights": 13
+  },
+  {
+    "airport": "YMML",
+    "flights": 13
+  },
+  {
+    "airport": "EGKK",
+    "flights": 13
+  },
+  {
+    "airport": "SKBO",
+    "flights": 11
+  },
+  {
+    "airport": "YPPH",
+    "flights": 11
+  },
+  {
+    "airport": "SBSP",
+    "flights": 11
+  },
+  {
+    "airport": "KMCO",
     "flights": 10
   },
   {
-    "airport": "VABB",
+    "airport": "LEBL",
+    "flights": 10
+  },
+  {
+    "airport": "LFLL",
+    "flights": 10
+  },
+  {
+    "airport": "VECC",
     "flights": 9
   },
   {
-    "airport": "KATL",
+    "airport": "LGAV",
     "flights": 9
   },
   {
-    "airport": "LIMC",
+    "airport": "LOWW",
     "flights": 9
   },
   {
-    "airport": "KTPA",
+    "airport": "LHBP",
+    "flights": 9
+  },
+  {
+    "airport": "KJFK",
     "flights": 9
   }
 ]
