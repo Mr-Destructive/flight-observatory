@@ -1,1 +1,42 @@
-[]
+[
+  {
+    "airport": "unknown",
+    "flights": 4577
+  },
+  {
+    "airport": "YSSY",
+    "flights": 26
+  },
+  {
+    "airport": "CYYZ",
+    "flights": 24
+  },
+  {
+    "airport": "KPHX",
+    "flights": 23
+  },
+  {
+    "airport": "RJTT",
+    "flights": 21
+  },
+  {
+    "airport": "KSEA",
+    "flights": 21
+  },
+  {
+    "airport": "VHHH",
+    "flights": 18
+  },
+  {
+    "airport": "KBOS",
+    "flights": 18
+  },
+  {
+    "airport": "KSLC",
+    "flights": 17
+  },
+  {
+    "airport": "YPJT",
+    "flights": 16
+  }
+]
