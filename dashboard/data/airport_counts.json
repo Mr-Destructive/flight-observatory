@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 8752
-  },
-  {
-    "airport": "KATL",
-    "flights": 50
-  },
-  {
-    "airport": "KORD",
-    "flights": 37
-  },
-  {
-    "airport": "CYYZ",
-    "flights": 34
+    "flights": 8934
   },
   {
     "airport": "KDEN",
-    "flights": 33
-  },
-  {
-    "airport": "LSZH",
-    "flights": 28
+    "flights": 45
   },
   {
     "airport": "KDFW",
-    "flights": 19
+    "flights": 41
   },
   {
-    "airport": "KEWR",
-    "flights": 19
-  },
-  {
-    "airport": "KLGA",
-    "flights": 18
-  },
-  {
-    "airport": "KBOS",
-    "flights": 18
-  },
-  {
-    "airport": "EBBR",
-    "flights": 17
-  },
-  {
-    "airport": "VHHH",
-    "flights": 17
-  },
-  {
-    "airport": "KSLC",
-    "flights": 14
-  },
-  {
-    "airport": "KORL",
-    "flights": 14
-  },
-  {
-    "airport": "EGKK",
-    "flights": 13
-  },
-  {
-    "airport": "VIDP",
-    "flights": 13
-  },
-  {
-    "airport": "CYVR",
-    "flights": 13
-  },
-  {
-    "airport": "LFPO",
-    "flights": 12
-  },
-  {
-    "airport": "ZGSZ",
-    "flights": 12
-  },
-  {
-    "airport": "CYYC",
-    "flights": 12
-  },
-  {
-    "airport": "EDDF",
-    "flights": 12
+    "airport": "KORD",
+    "flights": 34
   },
   {
     "airport": "KPHX",
-    "flights": 10
+    "flights": 27
   },
   {
-    "airport": "KBJC",
-    "flights": 10
+    "airport": "LSZH",
+    "flights": 26
+  },
+  {
+    "airport": "CYYC",
+    "flights": 22
+  },
+  {
+    "airport": "CYYZ",
+    "flights": 20
+  },
+  {
+    "airport": "KATL",
+    "flights": 20
+  },
+  {
+    "airport": "LEBL",
+    "flights": 20
+  },
+  {
+    "airport": "KSLC",
+    "flights": 19
+  },
+  {
+    "airport": "KSFO",
+    "flights": 19
+  },
+  {
+    "airport": "CYVR",
+    "flights": 18
+  },
+  {
+    "airport": "KLGA",
+    "flights": 16
+  },
+  {
+    "airport": "SKBO",
+    "flights": 16
+  },
+  {
+    "airport": "KMCO",
+    "flights": 16
+  },
+  {
+    "airport": "KAUS",
+    "flights": 15
+  },
+  {
+    "airport": "EDDF",
+    "flights": 15
+  },
+  {
+    "airport": "CYUL",
+    "flights": 15
+  },
+  {
+    "airport": "EGKK",
+    "flights": 14
+  },
+  {
+    "airport": "KSEA",
+    "flights": 14
+  },
+  {
+    "airport": "EHAM",
+    "flights": 13
+  },
+  {
+    "airport": "PANC",
+    "flights": 12
   },
   {
     "airport": "KLAS",
-    "flights": 10
+    "flights": 12
   },
   {
-    "airport": "LKPR",
-    "flights": 9
+    "airport": "KBOS",
+    "flights": 11
   }
 ]
