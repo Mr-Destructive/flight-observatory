@@ -1,38 +1,30 @@
 [
   {
     "airport": "unknown",
-    "flights": 8678
+    "flights": 8563
   },
   {
     "airport": "KATL",
-    "flights": 44
+    "flights": 42
   },
   {
-    "airport": "KDFW",
-    "flights": 37
+    "airport": "KLAS",
+    "flights": 26
   },
   {
     "airport": "CYYZ",
-    "flights": 35
+    "flights": 25
   },
   {
     "airport": "KORD",
-    "flights": 29
-  },
-  {
-    "airport": "KDEN",
     "flights": 23
   },
   {
-    "airport": "LSZH",
+    "airport": "KAUS",
     "flights": 20
   },
   {
-    "airport": "KLGA",
-    "flights": 19
-  },
-  {
-    "airport": "KBOS",
+    "airport": "SKBO",
     "flights": 19
   },
   {
@@ -40,47 +32,55 @@
     "flights": 19
   },
   {
-    "airport": "VIDP",
-    "flights": 19
-  },
-  {
-    "airport": "EDDF",
-    "flights": 19
-  },
-  {
-    "airport": "KSFO",
+    "airport": "CYVR",
     "flights": 18
   },
   {
-    "airport": "CYYC",
+    "airport": "KSEA",
+    "flights": 18
+  },
+  {
+    "airport": "LSZH",
+    "flights": 18
+  },
+  {
+    "airport": "KBOS",
+    "flights": 18
+  },
+  {
+    "airport": "EHAM",
     "flights": 17
   },
   {
     "airport": "MMUN",
+    "flights": 17
+  },
+  {
+    "airport": "KDFW",
     "flights": 16
   },
   {
-    "airport": "EHAM",
+    "airport": "YSSY",
     "flights": 16
   },
   {
-    "airport": "LFPO",
+    "airport": "KLGA",
     "flights": 15
   },
   {
-    "airport": "KMCO",
+    "airport": "KDEN",
     "flights": 15
   },
   {
-    "airport": "KLAS",
+    "airport": "KSJC",
     "flights": 15
   },
   {
-    "airport": "KOAK",
+    "airport": "EDDF",
     "flights": 15
   },
   {
-    "airport": "KTEB",
+    "airport": "LEBL",
     "flights": 14
   },
   {
@@ -88,15 +88,15 @@
     "flights": 14
   },
   {
-    "airport": "KSLC",
-    "flights": 13
-  },
-  {
     "airport": "KIAD",
-    "flights": 13
+    "flights": 14
   },
   {
     "airport": "LGAV",
+    "flights": 12
+  },
+  {
+    "airport": "MGGT",
     "flights": 12
   }
 ]
