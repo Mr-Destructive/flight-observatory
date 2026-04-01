@@ -1,42 +1,42 @@
 [
   {
     "airline": "unknown",
-    "flights": 8357
+    "flights": 10908
   },
   {
     "airline": "Ryanair",
-    "flights": 2143
+    "flights": 2505
   },
   {
     "airline": "Delta Air Lines",
-    "flights": 1294
+    "flights": 1692
   },
   {
     "airline": "American Airlines",
-    "flights": 1236
+    "flights": 1635
   },
   {
     "airline": "United Airlines",
-    "flights": 1035
+    "flights": 1342
   },
   {
     "airline": "Southwest Airlines",
-    "flights": 982
+    "flights": 1322
   },
   {
     "airline": "Turkish Airlines",
-    "flights": 697
+    "flights": 804
   },
   {
     "airline": "Lufthansa",
-    "flights": 690
+    "flights": 796
+  },
+  {
+    "airline": "easyJet",
+    "flights": 721
   },
   {
     "airline": "Federal Express",
-    "flights": 621
-  },
-  {
-    "airline": "IndiGo Airlines",
-    "flights": 615
+    "flights": 671
   }
 ]

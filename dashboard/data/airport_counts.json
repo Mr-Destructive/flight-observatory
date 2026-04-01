@@ -1,62 +1,62 @@
 [
   {
     "airport": "unknown",
-    "flights": 6070
+    "flights": 7244
   },
   {
     "airport": "KATL",
-    "flights": 44
+    "flights": 39
   },
   {
-    "airport": "LSZH",
-    "flights": 34
+    "airport": "KORD",
+    "flights": 36
   },
   {
     "airport": "CYYZ",
-    "flights": 28
+    "flights": 33
   },
   {
     "airport": "KBOS",
-    "flights": 24
+    "flights": 23
   },
   {
-    "airport": "RJTT",
-    "flights": 21
-  },
-  {
-    "airport": "KLGA",
-    "flights": 19
-  },
-  {
-    "airport": "KDFW",
-    "flights": 19
-  },
-  {
-    "airport": "EBBR",
-    "flights": 18
-  },
-  {
-    "airport": "KMCO",
-    "flights": 18
-  },
-  {
-    "airport": "EGKK",
-    "flights": 18
-  },
-  {
-    "airport": "EHAM",
-    "flights": 18
-  },
-  {
-    "airport": "VHHH",
-    "flights": 17
-  },
-  {
-    "airport": "YSSY",
-    "flights": 16
+    "airport": "LSZH",
+    "flights": 22
   },
   {
     "airport": "KEWR",
+    "flights": 22
+  },
+  {
+    "airport": "KLGA",
+    "flights": 22
+  },
+  {
+    "airport": "KIAD",
+    "flights": 20
+  },
+  {
+    "airport": "EHAM",
+    "flights": 17
+  },
+  {
+    "airport": "CYYC",
+    "flights": 17
+  },
+  {
+    "airport": "EGKK",
+    "flights": 17
+  },
+  {
+    "airport": "RJTT",
+    "flights": 16
+  },
+  {
+    "airport": "SKBO",
+    "flights": 15
+  },
+  {
+    "airport": "KAUS",
     "flights": 14
   },
   {
@@ -64,39 +64,39 @@
     "flights": 14
   },
   {
-    "airport": "CYUL",
+    "airport": "VHHH",
+    "flights": 14
+  },
+  {
+    "airport": "KDEN",
+    "flights": 14
+  },
+  {
+    "airport": "EBBR",
     "flights": 13
   },
   {
-    "airport": "LOWW",
+    "airport": "KMCO",
     "flights": 12
   },
   {
-    "airport": "KJFK",
+    "airport": "KHWO",
+    "flights": 12
+  },
+  {
+    "airport": "LOWW",
     "flights": 11
-  },
-  {
-    "airport": "KDCA",
-    "flights": 11
-  },
-  {
-    "airport": "LFPO",
-    "flights": 10
-  },
-  {
-    "airport": "YPPH",
-    "flights": 10
   },
   {
     "airport": "EFHK",
-    "flights": 10
+    "flights": 11
   },
   {
-    "airport": "KAUS",
-    "flights": 9
+    "airport": "WIII",
+    "flights": 11
   },
   {
-    "airport": "SBSP",
-    "flights": 9
+    "airport": "ZGSZ",
+    "flights": 11
   }
 ]
