@@ -1,19 +1,19 @@
 [
   {
     "airport": "unknown",
-    "flights": 6305
-  },
-  {
-    "airport": "KATL",
-    "flights": 51
+    "flights": 6051
   },
   {
     "airport": "KORD",
-    "flights": 50
+    "flights": 84
   },
   {
-    "airport": "KJFK",
-    "flights": 36
+    "airport": "KDEN",
+    "flights": 64
+  },
+  {
+    "airport": "KATL",
+    "flights": 60
   },
   {
     "airport": "YSSY",
@@ -24,79 +24,79 @@
     "flights": 32
   },
   {
-    "airport": "RJTT",
-    "flights": 27
-  },
-  {
-    "airport": "CYYZ",
-    "flights": 27
+    "airport": "KJFK",
+    "flights": 32
   },
   {
     "airport": "KIAD",
-    "flights": 24
+    "flights": 26
   },
   {
-    "airport": "KDEN",
-    "flights": 24
+    "airport": "CYYZ",
+    "flights": 26
   },
   {
     "airport": "YPPH",
-    "flights": 22
-  },
-  {
-    "airport": "KPHX",
-    "flights": 21
-  },
-  {
-    "airport": "KLAS",
-    "flights": 20
-  },
-  {
-    "airport": "KBOS",
-    "flights": 20
+    "flights": 26
   },
   {
     "airport": "KLGA",
+    "flights": 19
+  },
+  {
+    "airport": "KMCO",
     "flights": 18
   },
   {
-    "airport": "KAUS",
-    "flights": 16
+    "airport": "KBOS",
+    "flights": 18
+  },
+  {
+    "airport": "KPHX",
+    "flights": 17
+  },
+  {
+    "airport": "KDCA",
+    "flights": 17
+  },
+  {
+    "airport": "RJTT",
+    "flights": 15
+  },
+  {
+    "airport": "CYYC",
+    "flights": 15
   },
   {
     "airport": "YMML",
     "flights": 15
   },
   {
-    "airport": "KDCA",
+    "airport": "VHHH",
     "flights": 14
   },
   {
-    "airport": "KVNY",
+    "airport": "KLAS",
     "flights": 13
   },
   {
-    "airport": "YBBN",
+    "airport": "KSFO",
     "flights": 13
   },
   {
-    "airport": "KMCO",
+    "airport": "VIDP",
     "flights": 12
   },
   {
-    "airport": "VHHH",
-    "flights": 12
-  },
-  {
-    "airport": "CYVR",
-    "flights": 12
-  },
-  {
-    "airport": "KMDW",
+    "airport": "KSTL",
     "flights": 11
   },
   {
-    "airport": "CYYC",
+    "airport": "KSJC",
+    "flights": 11
+  },
+  {
+    "airport": "CYUL",
     "flights": 11
   }
 ]
