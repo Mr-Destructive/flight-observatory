@@ -1,0 +1,817 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Flight Observatory - Archive</title>
+    <link rel="icon" type="image/svg+xml" href="/assets/flight-observatory-favicon.svg?v=8" />
+    <link rel="apple-touch-icon" href="/assets/flight-observatory-favicon.svg?v=8" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+    <style>
+      .archive-shell {
+        display: grid;
+        gap: 20px;
+      }
+
+      .archive-hero {
+        display: grid;
+        grid-template-columns: minmax(0, 1.4fr) minmax(280px, 0.84fr);
+        gap: 18px;
+        align-items: stretch;
+      }
+
+      .archive-hero-copy {
+        display: grid;
+        gap: 12px;
+      }
+
+      .archive-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 8px;
+      }
+
+      .archive-action {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 9px 14px;
+        border-radius: 999px;
+        border: 1px solid rgba(148, 163, 184, 0.14);
+        background: rgba(13, 20, 29, 0.6);
+        color: var(--text-primary);
+        font-family: var(--font-display);
+        font-size: 11px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+
+      .archive-action:hover {
+        border-color: rgba(0, 218, 243, 0.3);
+        background: rgba(0, 218, 243, 0.08);
+      }
+
+      .stat-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      .stat-box {
+        padding: 16px;
+        border-radius: 14px;
+        border: 1px solid rgba(148, 163, 184, 0.12);
+        background: rgba(13, 20, 29, 0.72);
+        min-height: 92px;
+        display: grid;
+        place-items: center;
+        text-align: center;
+      }
+
+      .stat-box .label {
+        font-family: var(--font-display);
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        color: var(--text-tertiary);
+      }
+
+      .stat-box .value {
+        font-family: var(--font-display);
+        font-size: 24px;
+        font-weight: 700;
+        color: var(--text-primary);
+        line-height: 1.1;
+        margin-top: 6px;
+      }
+
+      .archive-grid {
+        display: grid;
+        gap: 18px;
+      }
+
+      .archive-panel {
+        padding: 20px;
+        border-radius: 18px;
+        border: 1px solid rgba(148, 163, 184, 0.1);
+        background: linear-gradient(180deg, rgba(36, 42, 52, 0.96), rgba(21, 28, 38, 0.94));
+        box-shadow: 0 18px 38px rgba(0, 0, 0, 0.18);
+      }
+
+      .panel-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 16px;
+        margin-bottom: 16px;
+      }
+
+      .panel-head h2 {
+        font-family: var(--font-display);
+        font-size: 26px;
+        letter-spacing: -0.03em;
+        margin-bottom: 6px;
+      }
+
+      .panel-head p,
+      .archive-note {
+        color: var(--text-secondary);
+        line-height: 1.7;
+        max-width: 84ch;
+      }
+
+      .loading-progress {
+        margin-top: 4px;
+        color: var(--text-tertiary);
+        font-family: var(--font-display);
+        font-size: 11px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .section-pill-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 4px;
+      }
+
+      .section-pill {
+        padding: 7px 10px;
+        border-radius: 999px;
+        border: 1px solid rgba(148, 163, 184, 0.14);
+        background: rgba(13, 20, 29, 0.6);
+        color: var(--text-secondary);
+        font-size: 12px;
+      }
+
+      .metric-grid {
+        display: grid;
+        gap: 12px;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .metric-card {
+        padding: 14px;
+        border-radius: 14px;
+        border: 1px solid rgba(148, 163, 184, 0.12);
+        background: rgba(13, 20, 29, 0.72);
+      }
+
+      .metric-card .metric-label {
+        font-family: var(--font-display);
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        color: var(--text-tertiary);
+        margin-bottom: 8px;
+      }
+
+      .metric-card .metric-value {
+        font-family: var(--font-display);
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.1;
+        color: var(--text-primary);
+      }
+
+      .archive-subgrid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 14px;
+      }
+
+      .archive-subpanel {
+        padding: 16px;
+        border-radius: 16px;
+        border: 1px solid rgba(148, 163, 184, 0.12);
+        background: rgba(13, 20, 29, 0.72);
+      }
+
+      .lab-toolbar {
+        position: static;
+        z-index: 12;
+        display: grid;
+        gap: 14px;
+        padding: 16px;
+        border-radius: 18px;
+        border: 1px solid rgba(148, 163, 184, 0.12);
+        background: linear-gradient(180deg, rgba(18, 24, 34, 0.96), rgba(13, 20, 29, 0.92));
+        backdrop-filter: blur(10px);
+        box-shadow: 0 16px 32px rgba(0, 0, 0, 0.16);
+      }
+
+      .lab-toolbar,
+      .lab-toolbar .control-grid {
+        max-height: none;
+        overflow: visible;
+      }
+
+      .lab-toolbar h3 {
+        margin-bottom: 4px;
+      }
+
+      .lab-toolbar .control-grid {
+        margin-bottom: 0 !important;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      }
+
+      .archive-subpanel h3 {
+        font-family: var(--font-display);
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        color: var(--text-secondary);
+        margin-bottom: 12px;
+      }
+
+      .table-shell {
+        overflow-x: auto;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        border-bottom: 1px solid rgba(148, 163, 184, 0.12);
+        padding: 10px 8px;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      th {
+        font-family: var(--font-display);
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        color: var(--text-tertiary);
+        white-space: nowrap;
+      }
+
+      td {
+        color: var(--text-secondary);
+        font-size: 13px;
+        line-height: 1.6;
+      }
+
+      .chart-grid {
+        display: grid;
+        gap: 14px;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      }
+
+      .chart-card {
+        position: relative;
+      }
+
+      .chart-empty {
+        min-height: 220px;
+        display: grid;
+        place-items: center;
+        border-radius: 14px;
+        border: 1px dashed rgba(148, 163, 184, 0.18);
+        background: rgba(13, 20, 29, 0.36);
+        color: var(--text-tertiary);
+        font-family: var(--font-display);
+        font-size: 12px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .chart-card {
+        padding: 16px;
+        border-radius: 16px;
+        border: 1px solid rgba(148, 163, 184, 0.12);
+        background: rgba(13, 20, 29, 0.72);
+      }
+
+      .chart-card h3 {
+        font-family: var(--font-display);
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        color: var(--text-secondary);
+        margin-bottom: 10px;
+      }
+
+      .chart-card canvas {
+        width: 100%;
+        height: 260px;
+      }
+
+      .wide-chart canvas {
+        height: 320px;
+      }
+
+      .map-layout {
+        display: grid;
+        grid-template-columns: minmax(0, 1.1fr) minmax(300px, 0.9fr);
+        gap: 16px;
+        align-items: start;
+      }
+
+      .map-stage {
+        min-height: 620px;
+        border-radius: 16px;
+        overflow: hidden;
+        border: 1px solid rgba(148, 163, 184, 0.12);
+        background: rgba(13, 20, 29, 0.72);
+      }
+
+      #historicalMap,
+      #labMap {
+        width: 100%;
+        height: 620px;
+      }
+
+      .control-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      .control-card {
+        padding: 14px;
+        border-radius: 14px;
+        border: 1px solid rgba(148, 163, 184, 0.12);
+        background: rgba(13, 20, 29, 0.72);
+      }
+
+      .control-card .kicker {
+        font-family: var(--font-display);
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        color: var(--text-tertiary);
+        margin-bottom: 8px;
+      }
+
+      .control-row {
+        display: grid;
+        gap: 8px;
+      }
+
+      .control-row input,
+      .control-row select,
+      .sql-console textarea {
+        width: 100%;
+        border-radius: 12px;
+        border: 1px solid rgba(148, 163, 184, 0.16);
+        background: rgba(13, 20, 29, 0.86);
+        color: var(--text-primary);
+        padding: 10px 12px;
+        font: inherit;
+      }
+
+      .control-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .action-btn {
+        cursor: pointer;
+        border: 1px solid rgba(0, 218, 243, 0.18);
+        background: rgba(0, 218, 243, 0.08);
+        color: var(--text-primary);
+        padding: 10px 14px;
+        border-radius: 999px;
+        font-family: var(--font-display);
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .action-btn:hover {
+        background: rgba(0, 218, 243, 0.14);
+        border-color: rgba(0, 218, 243, 0.3);
+      }
+
+      .chip-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 10px;
+      }
+
+      .chip {
+        padding: 7px 10px;
+        border-radius: 999px;
+        border: 1px solid rgba(148, 163, 184, 0.12);
+        background: rgba(13, 20, 29, 0.72);
+        color: var(--text-secondary);
+        font-size: 12px;
+      }
+
+      .hint {
+        color: var(--text-tertiary);
+        font-size: 12px;
+        line-height: 1.6;
+      }
+
+      .sql-console {
+        display: grid;
+        gap: 12px;
+      }
+
+      .sql-console textarea {
+        min-height: 180px;
+        resize: vertical;
+      }
+
+      .lab-loading-overlay {
+        position: fixed;
+        inset: 0;
+        display: none;
+        place-items: center;
+        background: rgba(5, 10, 16, 0.72);
+        backdrop-filter: blur(12px);
+        z-index: 3000;
+        padding: 24px;
+      }
+
+      .lab-loading-overlay.is-visible {
+        display: grid;
+      }
+
+      .lab-loading-box {
+        max-width: 560px;
+        width: 100%;
+        padding: 24px;
+        border-radius: 18px;
+        border: 1px solid rgba(148, 163, 184, 0.16);
+        background: rgba(13, 20, 29, 0.96);
+        box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+      }
+
+      .lab-loading-box h3 {
+        font-family: var(--font-display);
+        font-size: 22px;
+        margin-bottom: 8px;
+      }
+
+      .lab-loading-box p {
+        color: var(--text-secondary);
+        line-height: 1.7;
+      }
+
+      @media (max-width: 1080px) {
+        .archive-hero,
+        .map-layout {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 900px) {
+        .metric-grid,
+        .stat-grid,
+        .control-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dashboard">
+      <nav class="navbar">
+      <div class="navbar-left">
+        <div class="logo">Flight Observatory</div>
+      </div>
+        <div class="navbar-right">
+          <a href="../" class="nav-link">Live</a>
+          <a href="./" class="nav-link active">Archive</a>
+          <a href="../case-study/" class="nav-link">Case Studies</a>
+        </div>
+      </nav>
+
+      <main class="main-container page-shell archive-shell">
+        <section class="hero-banner archive-hero">
+          <div class="archive-hero-copy">
+            <p class="hero-kicker">Archive</p>
+            <h1>Archive</h1>
+            <p class="hero-subtitle">
+              Browse the archive data, explore the map, and narrow it down with the same filters used throughout the page.
+            </p>
+            <div class="section-pill-row">
+              <span class="section-pill">Archive window</span>
+              <span class="section-pill">Date range</span>
+              <span class="section-pill">Map view</span>
+              <span class="section-pill">Filters</span>
+            </div>
+            <div class="archive-actions">
+              <a class="archive-action" href="#historical">Open archive overview</a>
+              <a class="archive-action" href="#lab">Open archive tools</a>
+            </div>
+            <p class="archive-note">
+              The page keeps the archive overview, the map, the charts, and the filters together so you can move from summary to detail without leaving the page.
+            </p>
+            <p class="loading-progress" id="archiveLoadProgress">Waiting for archive data.</p>
+          </div>
+          <div class="stat-grid">
+            <div class="stat-box">
+              <span class="label">Total rows</span>
+              <span class="value" id="totalRows">Loading…</span>
+            </div>
+            <div class="stat-box">
+              <span class="label">Time span</span>
+              <span class="value" id="timeSpan">Loading…</span>
+            </div>
+            <div class="stat-box">
+              <span class="label">Unique aircraft</span>
+              <span class="value" id="uniqueAircraft">Loading…</span>
+            </div>
+            <div class="stat-box">
+              <span class="label">Ghost fleet</span>
+              <span class="value" id="ghostAircraft">Loading…</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="archive-panel" id="historical">
+          <div class="panel-head">
+            <div>
+              <h2>Archive overview</h2>
+              <p id="dataDescription">
+                Flight patterns, movement mix, and airspace behavior from the archive.
+              </p>
+            </div>
+            <div class="chip-row">
+              <span class="chip">Sightings <strong id="ghostSightings">Loading…</strong></span>
+              <span class="chip">Map density</span>
+              <span class="chip">Full archive first</span>
+            </div>
+          </div>
+
+          <div class="archive-note" style="margin-bottom: 14px;">
+            The archive opens on the latest available snapshot. Use the controls below to change the archive day, switch density, or narrow the view.
+          </div>
+
+          <div class="metric-grid" style="margin-bottom: 14px;">
+            <div class="metric-card">
+              <div class="metric-label">Quick stats</div>
+              <div id="quickStats" class="archive-subgrid" style="grid-template-columns: repeat(2, minmax(0, 1fr));"></div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-label">Derived stats</div>
+              <div id="derivedStats" class="archive-subgrid" style="grid-template-columns: repeat(2, minmax(0, 1fr));"></div>
+            </div>
+          </div>
+
+          <div class="archive-subgrid" style="margin-bottom: 14px;">
+            <div class="archive-subpanel">
+              <h3>Ground / Airborne</h3>
+              <canvas id="groundAirborne"></canvas>
+            </div>
+            <div class="archive-subpanel">
+              <h3>Speed leaderboard</h3>
+              <div id="speedLeaderboard" class="table-shell"></div>
+            </div>
+          </div>
+
+          <div class="archive-subgrid" style="margin-bottom: 14px;">
+            <div class="archive-subpanel">
+              <h3>Airline leaders</h3>
+              <div id="topAirlines" class="table-shell"></div>
+            </div>
+            <div class="archive-subpanel">
+              <h3>Aircraft models</h3>
+              <div id="topModels" class="table-shell"></div>
+            </div>
+            <div class="archive-subpanel">
+              <h3>Signals and caveats</h3>
+              <div id="insightsContainer" class="archive-grid" style="gap: 12px;"></div>
+            </div>
+          </div>
+
+          <div class="archive-subpanel" style="margin-bottom: 14px;">
+            <h3>Archive map</h3>
+            <div class="map-layout">
+              <div class="map-stage">
+                <div id="historicalMap"></div>
+              </div>
+              <div class="archive-grid">
+                <p class="archive-note">
+                  The map starts from the latest available snapshot window and can shift between that weekly range and a single-day view.
+                  Click a marker to trace a specific movement path.
+                </p>
+                <p class="archive-note" id="archiveMapStats">Archive metrics will appear here once the selected data loads.</p>
+                <p class="archive-note" id="archiveFilterState">Current filters follow the controls above.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel-head" style="margin-top: 10px;">
+            <div>
+              <h2>Archive charts</h2>
+              <p>The archive view keeps the main charts on the same page so the pattern stays visible while you explore.</p>
+            </div>
+          </div>
+          <div class="chart-grid">
+            <div class="chart-card"><h3>Sky Pulse</h3><canvas id="skyPulse"></canvas></div>
+            <div class="chart-card"><h3>Traffic Wave</h3><canvas id="trafficWave"></canvas></div>
+            <div class="chart-card"><h3>Weekday Pattern</h3><canvas id="weekdayPattern"></canvas></div>
+            <div class="chart-card"><h3>Altitude Distribution</h3><canvas id="altitudeDistribution"></canvas></div>
+            <div class="chart-card"><h3>Speed Distribution</h3><canvas id="speedDistribution"></canvas></div>
+            <div class="chart-card"><h3>Heading Distribution</h3><canvas id="headingDistribution"></canvas></div>
+            <div class="chart-card"><h3>Data Quality</h3><canvas id="dataQuality"></canvas></div>
+            <div class="chart-card"><h3>Speed vs Altitude</h3><canvas id="inOutRatio"></canvas></div>
+            <div class="chart-card"><h3>Flight Phases</h3><canvas id="flightPhases"></canvas></div>
+            <div class="chart-card"><h3>Altitude Tiers</h3><canvas id="altitudeTiers"></canvas></div>
+            <div class="chart-card"><h3>Busiest Corridors</h3><canvas id="busiestCorridors"></canvas></div>
+            <div class="chart-card"><h3>Efficiency Curve</h3><canvas id="efficiencyCurve"></canvas></div>
+            <div class="chart-card"><h3>Directional Traffic</h3><canvas id="directionalTraffic"></canvas></div>
+            <div class="chart-card"><h3>Speed Tiers</h3><canvas id="speedTiers"></canvas></div>
+            <div class="chart-card"><h3>Wind Effect</h3><canvas id="windEffect"></canvas></div>
+            <div class="chart-card"><h3>Holding Patterns</h3><canvas id="holdingPatterns"></canvas></div>
+            <div class="chart-card"><h3>Airline Preferences</h3><canvas id="airlinePreferences"></canvas></div>
+            <div class="chart-card"><h3>Regional Density</h3><canvas id="regionalDensity"></canvas></div>
+          </div>
+        </section>
+
+        <section class="archive-panel" id="lab">
+          <div class="panel-head">
+            <div>
+              <h2>Archive tools</h2>
+              <p>
+                Load the latest snapshot window, then refine it with the same controls and ad-hoc queries.
+              </p>
+            </div>
+            <div class="chip-row">
+              <span class="chip">Month: <strong id="monthChip">All Months</strong></span>
+              <span class="chip">Hours: <strong id="hourChip">Full Day</strong></span>
+              <span class="chip">Bands: <strong id="bandChip">All Bands</strong></span>
+            </div>
+          </div>
+
+          <div class="lab-loading-overlay" id="labLoadingOverlay" aria-hidden="true">
+            <div class="lab-loading-box">
+              <h3 id="labLoadingTitle">Loading data</h3>
+              <p id="labLoadingText">Preparing archive and refreshing the views.</p>
+            </div>
+          </div>
+
+          <div class="lab-toolbar" style="margin-bottom: 16px;">
+            <div>
+              <h3>Browse controls</h3>
+              <p class="archive-note" style="margin-bottom: 0;">
+                Everything needed to inspect the archive lives here: choose the snapshot date, open a day or range, then narrow the charts with the filters below.
+              </p>
+            </div>
+            <div class="control-grid">
+              <div class="control-card">
+                <div class="kicker">Archive day</div>
+                <div class="control-row">
+                  <input id="historicalMapDate" type="date" />
+                  <button class="action-btn" id="historicalDensityToggle" type="button">Density: On</button>
+                  <div class="hint" id="historicalMapStatus">Waiting for archive selection...</div>
+                </div>
+              </div>
+              <div class="control-card">
+                <div class="kicker">Date range</div>
+                <div class="control-row">
+                  <input id="sqliteDate" type="date" />
+                  <div class="control-actions">
+                    <button class="action-btn" id="loadSqliteDay" type="button">Load day</button>
+                    <button class="action-btn" id="clearSqliteDay" type="button">Clear day</button>
+                  </div>
+                  <input id="sqliteRangeStart" type="date" />
+                  <input id="sqliteRangeEnd" type="date" />
+                  <button class="action-btn" id="loadSqliteRange" type="button">Load range</button>
+                  <div class="hint" id="sqliteStatus">Waiting for archive day...</div>
+                </div>
+              </div>
+              <div class="control-card">
+                <div class="kicker">Chart filters</div>
+                <div class="control-row">
+                  <select id="monthSelect"></select>
+                  <input id="airlineFilter" type="text" placeholder="Filter airline" disabled />
+                  <div class="hint" id="airlineHint">From full history</div>
+                  <input id="airportFilterLab" type="text" placeholder="Filter airport" disabled />
+                  <div class="hint" id="airportHint">From live airports</div>
+                  <label class="hint" for="hourStart">Hour band</label>
+                  <input id="hourStart" type="range" min="0" max="23" value="0" />
+                  <input id="hourEnd" type="range" min="0" max="23" value="23" />
+                  <label class="hint" for="altMin">Altitude band</label>
+                  <input id="altMin" type="range" min="-1000" max="14000" value="-1000" step="100" />
+                  <input id="altMax" type="range" min="-1000" max="14000" value="14000" step="100" />
+                  <label class="hint" for="spdMin">Speed band</label>
+                  <input id="spdMin" type="range" min="0" max="350" value="0" />
+                  <input id="spdMax" type="range" min="0" max="350" value="350" />
+                  <div class="control-actions">
+                    <button class="action-btn" id="applyFilters" type="button">Apply</button>
+                    <button class="action-btn" id="resetFilters" type="button">Reset</button>
+                  </div>
+                  <div class="chip-row">
+                    <span class="chip">Hour: <strong id="hourRangeLabel">00:00 → 23:00</strong></span>
+                    <span class="chip">Altitude: <strong id="altRangeLabel">-1000m → 14000m</strong></span>
+                    <span class="chip">Speed: <strong id="spdRangeLabel">0m/s → 350m/s</strong></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="metric-grid" style="margin-bottom: 14px;">
+            <div class="metric-card"><div class="metric-label">Focused metrics</div><div id="labMetricGrid" class="archive-subgrid" style="grid-template-columns: repeat(2, minmax(0, 1fr));"></div></div>
+            <div class="metric-card"><div class="metric-label">Archive notes</div><div id="labInsights" class="archive-grid" style="gap: 12px;"></div></div>
+          </div>
+
+          <div class="archive-subgrid" style="margin-bottom: 14px;">
+            <div class="archive-subpanel">
+              <h3>Month profile</h3>
+              <canvas id="monthVolume"></canvas>
+            </div>
+            <div class="archive-subpanel">
+              <h3>Monthly altitude</h3>
+              <canvas id="monthAltitude"></canvas>
+            </div>
+            <div class="archive-subpanel">
+              <h3>Monthly speed</h3>
+              <canvas id="monthSpeed"></canvas>
+            </div>
+            <div class="archive-subpanel">
+              <h3>Hourly distribution</h3>
+              <canvas id="hourlyDistribution"></canvas>
+            </div>
+            <div class="archive-subpanel">
+              <h3>Weekday split</h3>
+              <canvas id="weekdaySplit"></canvas>
+            </div>
+            <div class="archive-subpanel">
+              <h3>Altitude bands</h3>
+              <canvas id="altitudeBandsLab"></canvas>
+            </div>
+            <div class="archive-subpanel">
+              <h3>Speed bands</h3>
+              <canvas id="speedBandsLab"></canvas>
+            </div>
+            <div class="archive-subpanel">
+              <h3>Airline mix</h3>
+              <canvas id="topAirlinesLab"></canvas>
+              <div id="topAirlinesLabList" class="chip-row" style="margin-top: 12px;"></div>
+            </div>
+            <div class="archive-subpanel">
+              <h3>Models</h3>
+              <div id="topModelsLab" class="table-shell"></div>
+            </div>
+          </div>
+
+          <div class="archive-subpanel" style="margin-bottom: 14px;">
+            <h3>Archive map</h3>
+            <div class="map-layout">
+              <div class="map-stage">
+                <div id="labMap"></div>
+              </div>
+              <div class="archive-grid">
+              <div class="control-card">
+                <div class="kicker">Map status</div>
+                <div class="control-row">
+                  <button class="action-btn" id="labDensityToggle" type="button">Density: On</button>
+                  <div class="hint" id="labMapStatus">Waiting for archive data...</div>
+                </div>
+              </div>
+              <div class="control-card">
+                <div class="kicker">Filter state</div>
+                <div class="hint" id="labFilterState">Filters update with the selections above.</div>
+              </div>
+            </div>
+          </div>
+          </div>
+
+          <div class="archive-subpanel">
+            <h3>Query console</h3>
+            <div class="sql-console">
+              <div class="hint">Run custom queries against the currently loaded archive or the broader archive view.</div>
+              <pre id="querySchema" class="archive-note" style="margin: 0; white-space: pre-wrap;">Flight positions, flights, and archive views are available when the archive is loaded.</pre>
+              <textarea id="sqlQuery" placeholder="SELECT airline, COUNT(*) FROM flight_positions_archive GROUP BY airline ORDER BY COUNT(*) DESC LIMIT 10;"></textarea>
+              <div class="control-actions">
+                <button class="action-btn" id="runSqlQuery" type="button">Run SQL</button>
+                <button class="action-btn" id="clearSqlQuery" type="button">Clear</button>
+              </div>
+              <div class="hint" id="sqlStatus">Waiting for archive data.</div>
+              <div id="sqlResults" class="table-shell"></div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.10.2/sql-wasm.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pako@2.1.0/dist/pako.min.js"></script>
+    <script src="/chart-theme-fresh.js"></script>
+    <script src="/airline-logos-fresh.js"></script>
+    <script type="module" src="/archive-historical.js"></script>
+    <script type="module" src="/archive-lab.js"></script>
+  </body>
+</html>

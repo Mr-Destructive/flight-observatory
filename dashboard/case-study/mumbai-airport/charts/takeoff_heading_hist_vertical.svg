@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+<rect width="100%" height="100%" fill="#0b1020"/>
+<text x="30" y="34" font-family="Inter, Arial, sans-serif" font-size="24" fill="#f8fafc" font-weight="700">Takeoff heading profile</text>
+<text x="30" y="56" font-family="Inter, Arial, sans-serif" font-size="13" fill="#94a3b8">Heading sectors at takeoff points</text>
+<line x1="80" y1="90" x2="80" y2="620" stroke="#334155" stroke-width="1"/>
+<line x1="80" y1="620" x2="1170" y2="620" stroke="#334155" stroke-width="1"/>
+<text x="112.69999999999999" y="642" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="11" fill="#cbd5e1">000°</text>
+<rect x="86.0" y="607.0328171091445" width="65.39999999999999" height="12.967182890855458" fill="#a78bfa"/>
+<text x="88.0" y="599.0328171091445" font-family="Inter, Arial, sans-serif" font-size="12" fill="#e2e8f0">278</text>
+<text x="203.5333333333333" y="642" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="11" fill="#cbd5e1">030°</text>
+<rect x="176.83333333333331" y="616.7348820058997" width="65.39999999999999" height="3.265117994100295" fill="#a78bfa"/>
+<text x="178.83333333333331" y="608.7348820058997" font-family="Inter, Arial, sans-serif" font-size="12" fill="#e2e8f0">70</text>
+<text x="294.3666666666666" y="642" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="11" fill="#cbd5e1">060°</text>
+<rect x="267.66666666666663" y="617.7144174041298" width="65.39999999999999" height="2.2855825958702067" fill="#a78bfa"/>
+<text x="269.66666666666663" y="609.7144174041298" font-family="Inter, Arial, sans-serif" font-size="12" fill="#e2e8f0">49</text>
+<text x="385.2" y="642" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="11" fill="#cbd5e1">090°</text>
+<rect x="358.5" y="604.5606563421829" width="65.39999999999999" height="15.439343657817108" fill="#a78bfa"/>
+<text x="360.5" y="596.5606563421829" font-family="Inter, Arial, sans-serif" font-size="12" fill="#e2e8f0">331</text>
+<text x="476.0333333333333" y="642" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="11" fill="#cbd5e1">120°</text>
+<rect x="449.3333333333333" y="608.6653761061947" width="65.39999999999999" height="11.33462389380531" fill="#a78bfa"/>
+<text x="451.3333333333333" y="600.6653761061947" font-family="Inter, Arial, sans-serif" font-size="12" fill="#e2e8f0">243</text>
+<text x="566.8666666666667" y="642" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="11" fill="#cbd5e1">150°</text>
+<rect x="540.1666666666666" y="612.1637168141593" width="65.39999999999999" height="7.836283185840708" fill="#a78bfa"/>
+<text x="542.1666666666666" y="604.1637168141593" font-family="Inter, Arial, sans-serif" font-size="12" fill="#e2e8f0">168</text>
+<text x="657.7" y="642" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="11" fill="#cbd5e1">180°</text>
+<rect x="631.0" y="607.7324852507375" width="65.39999999999999" height="12.267514749262537" fill="#a78bfa"/>
+<text x="633.0" y="599.7324852507375" font-family="Inter, Arial, sans-serif" font-size="12" fill="#e2e8f0">263</text>
+<text x="748.5333333333333" y="642" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="11" fill="#cbd5e1">210°</text>
+<rect x="721.8333333333333" y="612.0704277286136" width="65.39999999999999" height="7.92957227138643" fill="#a78bfa"/>
+<text x="723.8333333333333" y="604.0704277286136" font-family="Inter, Arial, sans-serif" font-size="12" fill="#e2e8f0">170</text>
+<text x="839.3666666666667" y="642" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="11" fill="#cbd5e1">240°</text>
+<rect x="812.6666666666666" y="609.4583333333334" width="65.39999999999999" height="10.541666666666666" fill="#a78bfa"/>
+<text x="814.6666666666666" y="601.4583333333334" font-family="Inter, Arial, sans-serif" font-size="12" fill="#e2e8f0">226</text>
+<text x="930.2" y="642" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="11" fill="#cbd5e1">270°</text>
+<rect x="903.5" y="114.0" width="65.39999999999999" height="506.0" fill="#a78bfa"/>
+<text x="905.5" y="106.0" font-family="Inter, Arial, sans-serif" font-size="12" fill="#e2e8f0">10,848</text>
+<text x="1021.0333333333333" y="642" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="11" fill="#cbd5e1">300°</text>
+<rect x="994.3333333333333" y="595.1851032448377" width="65.39999999999999" height="24.81489675516224" fill="#a78bfa"/>
+<text x="996.3333333333333" y="587.1851032448377" font-family="Inter, Arial, sans-serif" font-size="12" fill="#e2e8f0">532</text>
+<text x="1111.8666666666666" y="642" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="11" fill="#cbd5e1">330°</text>
+<rect x="1085.1666666666665" y="609.8781342182891" width="65.39999999999999" height="10.121865781710914" fill="#a78bfa"/>
+<text x="1087.1666666666665" y="601.8781342182891" font-family="Inter, Arial, sans-serif" font-size="12" fill="#e2e8f0">217</text>
+</svg>

@@ -3,197 +3,836 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Flight Observatory - Live Dashboard</title>
-    <link rel="icon" type="image/svg+xml" href="./assets/flight-observatory-favicon.svg?v=8" />
-    <link rel="apple-touch-icon" href="./assets/flight-observatory-favicon.svg?v=8" />
+    <title>Airspace Observatory | Live Flight Surveillance</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/flight-observatory-favicon.svg" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <link rel="stylesheet" href="./styles.css" />
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <style>
+      /* Surgical overrides for the new product layout */
+      :root {
+        --color-landing: #00daf3;
+        --color-departing: #fbbc00;
+        --color-cruising: #00e639;
+        --color-ground: #84967e;
+        --panel-bg: rgba(13, 20, 29, 0.9);
+        --card-bg: var(--bg-secondary);
+        --text-color: var(--text-primary);
+        --border-color: rgba(148, 163, 184, 0.15);
+        --rail-width: 390px;
+      }
+
+      /* Light Mode Variables */
+      body.light-mode {
+        --bg-primary: #f8fafc;
+        --bg-secondary: #ffffff;
+        --bg-tertiary: #f1f5f9;
+        --text-primary: #0f172a;
+        --text-secondary: #475569;
+        --text-tertiary: #64748b;
+        --border-color: rgba(0, 0, 0, 0.08);
+        --panel-bg: rgba(255, 255, 255, 0.9);
+        --card-bg: #ffffff;
+      }
+
+      body {
+        background: var(--bg-primary);
+        color: var(--text-primary);
+        overflow: auto;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        transition: background 0.3s ease, color 0.3s ease;
+      }
+
+      .observatory-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 24px;
+        background: var(--panel-bg);
+        backdrop-filter: blur(12px);
+        border-bottom: 1px solid var(--border-color);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      .theme-toggle {
+        cursor: pointer;
+        padding: 0;
+        border-radius: 0;
+        border: 0;
+        background: transparent;
+        color: var(--text-secondary);
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-family: var(--font-display);
+        font-size: 11px;
+        font-weight: 600;
+        text-transform: uppercase;
+        transition: all 0.2s ease;
+      }
+
+      .theme-toggle:hover {
+        color: var(--text-primary);
+      }
+
+      .observatory-hero {
+        padding: 48px 24px 24px;
+        max-width: 1400px;
+        margin: 0 auto;
+      }
+
+      .observatory-page {
+        display: grid;
+        gap: 18px;
+      }
+
+      .dashboard-layout {
+        height: calc(100vh - 78px);
+        min-height: 0;
+        display: flex;
+        gap: 0;
+        max-width: none;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .live-rail {
+        flex: 0 0 var(--rail-width);
+        width: var(--rail-width);
+        min-width: 320px;
+        max-width: 520px;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        padding: 18px 18px 18px 24px;
+        border-right: 1px solid var(--border-color);
+        background: var(--bg-primary);
+      }
+
+      .live-rail .observatory-hero {
+        padding: 0;
+        margin: 0;
+        max-width: none;
+      }
+
+      .live-rail .airport-detail-bar {
+        margin: 0;
+        padding: 0;
+        max-width: none;
+        display: block;
+      }
+
+      .live-rail .summary-bar {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        margin: 0;
+        padding: 0;
+        max-width: none;
+        gap: 12px;
+      }
+
+      .live-rail .summary-card {
+        padding: 16px 18px;
+        min-height: 112px;
+      }
+
+      .live-rail .summary-card .value {
+        font-size: 30px;
+        font-variant-numeric: tabular-nums;
+        min-width: 3ch;
+      }
+
+      .live-rail .summary-card .label {
+        font-size: 11px;
+        line-height: 1.2;
+      }
+
+      .hero-title {
+        font-family: var(--font-display);
+        font-size: clamp(26px, 3.4vw, 38px);
+        font-weight: 700;
+        letter-spacing: -0.04em;
+        margin-bottom: 8px;
+        display: grid;
+        gap: 6px;
+        min-height: auto;
+      }
+
+      .hero-title-label {
+        white-space: nowrap;
+      }
+
+      .hero-location {
+        display: block;
+        min-height: 1.9em;
+        line-height: 1;
+        max-width: 100%;
+        word-break: break-word;
+        overflow-wrap: anywhere;
+        font-size: clamp(24px, 2.4vw, 34px);
+        font-variant-numeric: tabular-nums;
+      }
+
+      .hero-subtitle {
+        color: var(--text-secondary);
+        font-size: 16px;
+        max-width: 600px;
+      }
+
+      .live-indicator {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 11px;
+        font-family: var(--font-display);
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        margin-top: 16px;
+        width: fit-content;
+      }
+
+      .live-actions {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 16px;
+        flex-wrap: wrap;
+      }
+
+      .live-feed-button {
+        cursor: pointer;
+        border: 1px solid rgba(0, 218, 243, 0.18);
+        background: rgba(0, 218, 243, 0.08);
+        color: var(--text-primary);
+        padding: 10px 14px;
+        border-radius: 999px;
+        font-family: var(--font-display);
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        transition: all 0.2s ease;
+      }
+
+      .live-feed-button:hover {
+        background: rgba(0, 218, 243, 0.14);
+        border-color: rgba(0, 218, 243, 0.3);
+      }
+
+      .live-feed-button:disabled {
+        opacity: 0.55;
+        cursor: wait;
+      }
+
+      .dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--accent-green);
+        box-shadow: 0 0 12px var(--accent-green);
+      }
+      .dot.delayed { background: var(--warning); box-shadow: 0 0 12px var(--warning); }
+      .dot.updating { animation: pulse 1.5s infinite; }
+
+      @keyframes pulse {
+        0% { opacity: 1; transform: scale(1); }
+        50% { opacity: 0.5; transform: scale(1.2); }
+        100% { opacity: 1; transform: scale(1); }
+      }
+
+      /* Summary Bar */
+      .summary-bar {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 16px;
+        max-width: 1400px;
+        margin: 24px auto;
+        padding: 0 24px;
+      }
+
+      .summary-card {
+        padding: 24px;
+        background: var(--card-bg);
+        border: 1px solid var(--border-color);
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .summary-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+      }
+
+      .summary-card .value {
+        font-family: var(--font-display);
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 1;
+      }
+
+      .summary-card .label {
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        font-weight: 600;
+        color: var(--text-tertiary);
+      }
+
+      .summary-card[data-type="landing"] .value { color: var(--color-landing); }
+      .summary-card[data-type="departing"] .value { color: var(--color-departing); }
+      .summary-card[data-type="cruising"] .value { color: var(--color-cruising); }
+
+      /* Airport Detail Bar */
+      .airport-detail-bar {
+        max-width: 1400px;
+        margin: 0 auto 12px;
+        padding: 0 24px;
+        display: none; /* Shown by JS */
+      }
+
+      .airport-card {
+        background: var(--card-bg);
+        border: 1px solid var(--border-color);
+        border-radius: 12px;
+        padding: 16px 18px;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        align-items: start;
+        gap: 12px 16px;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.05);
+      }
+
+      .airport-main {
+        display: grid;
+        gap: 4px;
+        align-content: start;
+      }
+      .airport-code { font-family: var(--font-display); font-size: 24px; font-weight: 700; color: var(--accent-cyan); }
+      .airport-name { font-size: 14px; font-weight: 600; color: var(--text-secondary); }
+      
+      .airport-meta {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px 14px;
+        font-size: 12px;
+        color: var(--text-tertiary);
+        min-width: 0;
+      }
+      .meta-item {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        min-width: 0;
+      }
+      .meta-label { text-transform: uppercase; font-size: 10px; font-weight: 700; opacity: 0.6; }
+      .meta-value {
+        color: var(--text-primary);
+        font-weight: 600;
+        white-space: nowrap;
+      }
+
+      @media (max-width: 1220px) {
+        .live-rail {
+          min-width: 300px;
+          max-width: 440px;
+        }
+
+        .hero-location {
+          font-size: clamp(22px, 2.1vw, 30px);
+        }
+
+        .airport-code {
+          font-size: 22px;
+        }
+      }
+
+      .intensity-badge {
+        padding: 4px 10px;
+        border-radius: 6px;
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+        background: rgba(0, 218, 243, 0.1);
+        color: var(--accent-cyan);
+      }
+
+      /* Map and Main View */
+      .main-view {
+        position: relative;
+        flex: 1;
+        min-width: 0;
+        height: 100%;
+        padding: 18px 24px 24px 16px;
+        overflow: hidden;
+        max-width: none;
+        margin: 0;
+      }
+
+      #map {
+        height: 100%;
+        min-height: 0;
+        border-radius: 18px;
+        background: var(--bg-secondary);
+        border: 1px solid var(--border-color);
+        z-index: 1;
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      }
+
+      .splitter {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: var(--rail-width);
+        width: 10px;
+        cursor: col-resize;
+        z-index: 30;
+        background: linear-gradient(90deg, transparent, rgba(148, 163, 184, 0.15), transparent);
+        touch-action: none;
+      }
+
+      .splitter::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 2px;
+        height: 56px;
+        transform: translate(-50%, -50%);
+        border-radius: 999px;
+        background: rgba(148, 163, 184, 0.45);
+      }
+
+      body.is-resizing,
+      body.is-resizing * {
+        cursor: col-resize !important;
+        user-select: none !important;
+      }
+
+      .side-panel {
+        position: fixed;
+        right: -420px;
+        top: 0;
+        bottom: 0;
+        width: 400px;
+        background: var(--panel-bg);
+        backdrop-filter: blur(20px);
+        border-left: 1px solid var(--border-color);
+        z-index: 2000;
+        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        box-shadow: -10px 0 50px rgba(0,0,0,0.5);
+      }
+
+      .side-panel.active { transform: translateX(-420px); }
+
+      .side-panel-close {
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        cursor: pointer;
+        padding: 8px;
+        border-radius: 50%;
+        background: var(--bg-tertiary);
+        opacity: 0.8;
+        transition: all 0.2s ease;
+      }
+      .side-panel-close:hover { opacity: 1; transform: rotate(90deg); }
+
+      .summary-card .value,
+      .meta-value,
+      .airport-code,
+      .airport-name {
+        font-variant-numeric: tabular-nums;
+      }
+
+      .behavior-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 16px;
+      }
+
+      .behavior-card {
+        background: var(--card-bg);
+        border: 1px solid var(--border-color);
+        border-radius: 20px;
+        padding: 20px;
+        min-height: 300px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      }
+
+      .behavior-card h3 {
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        color: var(--text-tertiary);
+        margin-bottom: 24px;
+        font-weight: 700;
+      }
+
+      .behavior-card canvas { flex: 1; }
+
+      .analysis-overlay {
+        position: fixed;
+        inset: 0;
+        z-index: 1400;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.2s ease;
+      }
+
+      .analysis-backdrop {
+        position: absolute;
+        inset: 0;
+        background: rgba(2, 6, 23, 0.42);
+        backdrop-filter: blur(10px);
+      }
+
+      .behavior-section {
+        position: absolute;
+        right: 24px;
+        bottom: 24px;
+        width: min(1120px, calc(100vw - 48px));
+        max-height: calc(100vh - 126px);
+        padding: 20px;
+        background: var(--bg-secondary);
+        border: 1px solid var(--border-color);
+        border-radius: 24px;
+        box-shadow: 0 28px 60px rgba(0, 0, 0, 0.28);
+        overflow: auto;
+        transform: translateY(18px) scale(0.99);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .analysis-overlay .analysis-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 16px;
+        margin-bottom: 18px;
+      }
+
+      .analysis-kicker {
+        font-size: 11px;
+        font-family: var(--font-display);
+        text-transform: uppercase;
+        letter-spacing: 0.18em;
+        color: var(--text-tertiary);
+        margin-bottom: 6px;
+      }
+
+      .analysis-title {
+        font-family: var(--font-display);
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        margin: 0;
+      }
+
+      .analysis-focus {
+        display: grid;
+        gap: 4px;
+        margin-top: 10px;
+      }
+
+      .analysis-focus-location {
+        font-weight: 700;
+        color: var(--accent-cyan);
+        font-variant-numeric: tabular-nums;
+      }
+
+      .analysis-focus-summary {
+        color: var(--text-secondary);
+        font-size: 13px;
+      }
+
+      .analysis-actions {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+      }
+
+      .analysis-action-button {
+        border: 1px solid var(--border-color);
+        background: var(--bg-primary);
+        color: var(--text-primary);
+        border-radius: 12px;
+        padding: 10px 12px;
+        font-family: var(--font-display);
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        cursor: pointer;
+      }
+
+      .analysis-action-button:hover {
+        border-color: rgba(0, 218, 243, 0.35);
+      }
+
+      body.analysis-open .analysis-overlay {
+        opacity: 1;
+        pointer-events: auto;
+      }
+
+      body.analysis-open .behavior-section {
+        transform: translateY(0) scale(1);
+      }
+
+      body.light-mode .analysis-backdrop {
+        background: rgba(255, 255, 255, 0.38);
+      }
+
+      body.light-mode .analysis-action-button {
+        background: #fff;
+      }
+
+      /* Transitions */
+      * { transition: border-color 0.2s ease, box-shadow 0.2s ease; }
+
+      @media (max-width: 1024px) {
+        .airport-card { flex-wrap: wrap; gap: 16px; }
+        .airport-meta { width: 100%; justify-content: space-between; }
+        .live-rail { flex-basis: 350px; width: 350px; }
+      }
+
+      @media (max-width: 768px) {
+        .hero-title { font-size: 28px; }
+        .side-panel { width: 100%; right: -100%; }
+        .side-panel.active { transform: translateX(-100%); }
+        .behavior-grid { grid-template-columns: 1fr; }
+        body { overflow: auto; min-height: 100vh; }
+        .dashboard-layout { flex-direction: column; min-height: auto; overflow: visible; }
+        .live-rail {
+          width: 100%;
+          max-width: none;
+          height: auto;
+          border-right: 0;
+          border-bottom: 1px solid var(--border-color);
+        }
+        #map {
+          height: 62vh;
+        }
+        .splitter { display: none; }
+        .behavior-section {
+          inset: 12px;
+          width: auto;
+          max-height: calc(100vh - 24px);
+          right: 12px;
+          bottom: 12px;
+          left: 12px;
+        }
+        .analysis-overlay .analysis-header {
+          flex-direction: column;
+        }
+        .analysis-actions {
+          justify-content: flex-start;
+        }
+      }
+    </style>
   </head>
   <body>
-    <div class="dashboard">
-      <nav class="navbar">
-        <div class="navbar-left">
-          <div class="logo">Flight Observatory</div>
-          <span class="badge">LIVE</span>
-        </div>
-        <div class="navbar-right">
-          <a href="./" class="nav-link active">Live</a>
-          <a href="./historical.html" class="nav-link">Archive</a>
-          <a href="./history-lab.html" class="nav-link">Lab</a>
-          <a href="./case-study/" class="nav-link">Case Studies</a>
-        </div>
-      </nav>
+    <nav class="navbar">
+      <div class="navbar-left">
+        <div class="logo">Flight Observatory</div>
+      </div>
+      <div class="navbar-right">
+        <button class="theme-toggle" id="theme-toggle" data-theme-toggle type="button">
+          <span id="theme-icon">🌙</span>
+          <span id="theme-text">Dark Mode</span>
+        </button>
+        <a href="./" class="nav-link active">Live</a>
+        <a href="./archive/" class="nav-link">Archive</a>
+        <a href="./case-study/" class="nav-link">Case Studies</a>
+      </div>
+    </nav>
 
-      <main class="main-container page-shell">
-        <section class="hero-banner hero-banner-live">
-          <div class="hero-copy">
-            <p class="hero-kicker">Live Observability</p>
-            <h1>Live Flight Tracking</h1>
-            <p class="hero-subtitle">Real-time aircraft surveillance from OpenSky Network.</p>
+    <main class="observatory-page">
+    <div class="dashboard-layout">
+      <aside class="live-rail">
+        <header class="observatory-hero">
+          <div class="hero-title">
+            <span class="hero-title-label">Airspace over</span>
+            <span class="hero-location" id="view-location" style="color: var(--accent-cyan);">...</span>
           </div>
-          <div class="hero-stack">
-            <div class="info-box">
-              <span class="label">Last Updated</span>
-              <span class="value" id="lastUpdated">--:--:--</span>
+          <p class="hero-subtitle">
+            Explore real-time flight data and airspace patterns. 
+            Monitor live arrivals, departures, and transits as they happen across the globe.
+          </p>
+          <div class="live-indicator">
+            <div class="dot updating" id="status-dot"></div>
+            <span id="update-timer">Connecting...</span>
+            <span id="last-update-time" style="color: var(--text-tertiary); margin-left: 8px;"></span>
+          </div>
+          <div class="live-actions">
+            <button class="live-feed-button" id="live-feed-button" type="button">Update live feed</button>
+            <button class="live-feed-button" id="analysis-toggle" type="button">Analysis</button>
+          </div>
+        </header>
+
+        <div class="airport-detail-bar" id="airport-detail-bar">
+          <div class="airport-card">
+            <div class="airport-main">
+              <span class="airport-code" id="ap-code">---</span>
+              <span class="airport-name" id="ap-name">---</span>
             </div>
-            <div class="info-box">
-              <span class="label">Update Interval</span>
-              <span class="value">60s</span>
+            <div class="intensity-badge" id="ap-intensity">Light Traffic</div>
+            <div class="airport-meta">
+              <div class="meta-item">
+                <span class="label">Elevation</span>
+                <span class="meta-value" id="ap-elev">---</span>
+              </div>
+              <div class="meta-item">
+                <span class="label">Incoming</span>
+                <span class="meta-value" id="ap-in">0</span>
+              </div>
+              <div class="meta-item">
+                <span class="label">Outgoing</span>
+                <span class="meta-value" id="ap-out">0</span>
+              </div>
+              <div class="meta-item">
+                <span class="label">Coordinates</span>
+                <span class="meta-value" id="ap-coords">0.0, 0.0</span>
+              </div>
             </div>
+          </div>
+        </div>
+
+        <section class="summary-bar" id="summary-bar">
+          <div class="summary-card" data-type="total">
+            <span class="value" id="count-total">0</span>
+            <span class="label">Active Aircraft</span>
+          </div>
+          <div class="summary-card" data-type="landing">
+            <span class="value" id="count-landing">0</span>
+            <span class="label">Incoming (Finals)</span>
+          </div>
+          <div class="summary-card" data-type="departing">
+            <span class="value" id="count-departing">0</span>
+            <span class="label">Departures</span>
+          </div>
+          <div class="summary-card" data-type="cruising">
+            <span class="value" id="count-cruising">0</span>
+            <span class="label">Cruising Transits</span>
           </div>
         </section>
+      </aside>
 
-        <section class="tables-section">
-          <div class="section-head">
-            <div>
-              <h2>Start here</h2>
-              <p>Three ways to read the observatory, plus a focused case-study section.</p>
-            </div>
-          </div>
-          <div class="tables-grid">
-            <div class="table-card">
-              <h3>Live</h3>
-              <p>Current positions, live density, and the latest snapshot.</p>
-              <a href="./" class="nav-link" style="display:inline-flex;margin-top:10px;">Open live</a>
-            </div>
-            <div class="table-card">
-              <h3>Historical</h3>
-              <p>Archive trends, day-by-day maps, and operational summaries.</p>
-              <a href="./historical.html" class="nav-link" style="display:inline-flex;margin-top:10px;">Open historical</a>
-            </div>
-            <div class="table-card">
-              <h3>History Lab</h3>
-              <p>Scoped filters and a query console for ad hoc exploration.</p>
-              <a href="./history-lab.html" class="nav-link" style="display:inline-flex;margin-top:10px;">Open lab</a>
-            </div>
-            <div class="table-card wide">
-              <h3>Case Studies</h3>
-              <p>Mumbai shows monthly samples around BOM, local-time charts, route tables, and a query console.</p>
-              <a href="./case-study/" class="nav-link" style="display:inline-flex;margin-top:10px;">Open case studies</a>
-            </div>
-          </div>
-        </section>
+      <div class="splitter" id="rail-splitter" role="separator" aria-orientation="vertical" aria-label="Resize sidebar"></div>
 
-        <div class="command-grid command-grid-live">
-          <section class="panel panel-map panel-span-8">
-            <div class="map-header">
-              <div>
-                <h2>Live Map</h2>
-                <p>Every aircraft in the current snapshot, click to inspect and trace recent movement.</p>
-              </div>
-              <div class="map-controls">
-                <button id="liveDensityToggle" class="lab-btn lab-btn-secondary map-toggle" type="button">Density: On</button>
-                <div class="map-status" id="liveMapStatus">Loading live positions...</div>
-              </div>
-            </div>
-            <div id="liveMap" class="map-panel"></div>
-          </section>
-
-          <aside class="panel panel-stack panel-span-4">
-            <section class="metrics-section">
-              <div class="section-head section-head-tight">
-                <div>
-                  <h2>Live Metrics</h2>
-                  <p>Current snapshot and derived telemetry.</p>
-                </div>
-              </div>
-              <div class="metrics-grid" id="metricsGrid"></div>
-            </section>
-            <section class="metrics-section">
-              <div class="section-head section-head-tight">
-                <div>
-                  <h2>Derived Signals</h2>
-                  <p>Ground delay and operational drift.</p>
-                </div>
-              </div>
-              <div class="metrics-grid" id="liveDerivedMetrics"></div>
-            </section>
-            <section class="filter-section filter-section-compact">
-              <div class="filter-container">
-                <label for="airportFilter">Filter by Airport</label>
-                <div class="filter-input-group">
-                  <input
-                    id="airportFilter"
-                    type="text"
-                    placeholder="e.g., VABB, EGLL"
-                    autocomplete="off"
-                  />
-                  <button id="applyFilter" class="btn-primary">Apply</button>
-                  <button id="clearFilter" class="btn-secondary">Clear</button>
-                </div>
-                <p class="filter-hint" id="airportFilterHint">Leave blank to show all airports.</p>
-              </div>
-            </section>
-          </aside>
-
-          <section class="panel panel-span-12">
-            <div class="section-head">
-              <div>
-                <h2>Traffic Analysis</h2>
-                <p>Live movement patterns, altitude spread, and carrier mix.</p>
-              </div>
-            </div>
-            <div class="charts-grid charts-grid-compact">
-              <div class="chart-card">
-                <h3>Flights by Minute (60m)</h3>
-                <canvas id="minuteTraffic"></canvas>
-              </div>
-              <div class="chart-card">
-                <h3>Top Airports</h3>
-                <canvas id="topAirports"></canvas>
-              </div>
-              <div class="chart-card">
-                <h3>Altitude Distribution</h3>
-                <canvas id="altitudeBands"></canvas>
-              </div>
-              <div class="chart-card">
-                <h3>Speed Distribution</h3>
-                <canvas id="speedBands"></canvas>
-              </div>
-              <div class="chart-card">
-                <h3>Top Airlines</h3>
-                <canvas id="topAirlines"></canvas>
-              </div>
-              <div class="chart-card">
-                <h3>Heading Distribution</h3>
-                <canvas id="headingBins"></canvas>
-              </div>
-            </div>
-          </section>
-
-          <section class="panel panel-span-12">
-            <div class="section-head">
-              <div>
-                <h2>Top Categories</h2>
-                <p>High-signal lists for airports, airlines, and countries.</p>
-              </div>
-            </div>
-            <div class="tables-grid tables-grid-compact">
-              <div class="table-card">
-                <h3>Airports</h3>
-                <div class="table-wrapper" id="airportTable"></div>
-              </div>
-              <div class="table-card">
-                <h3>Airlines</h3>
-                <div class="table-wrapper" id="airlineTable"></div>
-              </div>
-              <div class="table-card">
-                <h3>Countries</h3>
-                <div class="table-wrapper" id="countryTable"></div>
-              </div>
-            </div>
-          </section>
-        </div>
+      <main class="main-view">
+        <div id="map"></div>
       </main>
     </div>
 
+    <div class="analysis-overlay" id="analysis-overlay" aria-hidden="true">
+      <div class="analysis-backdrop" id="analysis-backdrop"></div>
+      <section class="behavior-section" id="behavior-section" role="dialog" aria-modal="true" aria-labelledby="analysis-title">
+        <div class="analysis-header">
+          <div>
+            <div class="analysis-kicker">Analysis</div>
+            <h2 class="analysis-title" id="analysis-title">Global Airspace Behavior</h2>
+            <div class="analysis-focus">
+              <div class="analysis-focus-location" id="analysis-focus-location">Current map view</div>
+              <div class="analysis-focus-summary" id="analysis-focus-summary">0 aircraft visible in the current map view.</div>
+            </div>
+          </div>
+          <div class="analysis-actions">
+            <button class="analysis-action-button" id="analysis-download-json" type="button">Download JSON</button>
+            <button class="analysis-action-button" id="analysis-download-csv" type="button">Download CSV</button>
+            <button class="analysis-action-button" id="analysis-close" type="button">Close</button>
+          </div>
+        </div>
+        <div class="behavior-grid">
+          <div class="behavior-card">
+            <h3>Altitude Profile (meters)</h3>
+            <canvas id="chart-altitude"></canvas>
+          </div>
+          <div class="behavior-card">
+            <h3>Velocity Distribution (knots)</h3>
+            <canvas id="chart-speed"></canvas>
+          </div>
+          <div class="behavior-card">
+            <h3>Cardinal Directional Mix</h3>
+            <canvas id="chart-heading"></canvas>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    </main>
+
+    <aside class="side-panel" id="side-panel">
+      <div class="side-panel-close" onclick="closePanel()">✕</div>
+      <div class="detail-header">
+        <div class="label" style="font-size: 11px; text-transform: uppercase; color: var(--accent-cyan); margin-bottom: 6px; font-weight: 700;">Aircraft Intelligence</div>
+        <div class="callsign" id="panel-callsign">---</div>
+        <div class="status-pill" id="panel-status-pill" style="display: inline-block; padding: 4px 12px; border-radius: 8px; font-size: 11px; margin-top: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;">---</div>
+      </div>
+
+      <div class="detail-grid" style="margin-top: 24px; padding: 24px; background: var(--bg-primary); border-radius: 16px; border: 1px solid var(--border-color); display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+        <div class="detail-item">
+          <span class="label">Altitude</span>
+          <span class="value" id="panel-alt" style="font-size: 16px; font-family: var(--font-display);">---</span>
+        </div>
+        <div class="detail-item">
+          <span class="label">Ground Speed</span>
+          <span class="value" id="panel-speed" style="font-size: 16px; font-family: var(--font-display);">---</span>
+        </div>
+        <div class="detail-item">
+          <span class="label">True Heading</span>
+          <span class="value" id="panel-heading" style="font-size: 16px; font-family: var(--font-display);">---</span>
+        </div>
+        <div class="detail-item">
+          <span class="label">Vertical Rate</span>
+          <span class="value" id="panel-vrate" style="font-size: 16px; font-family: var(--font-display);">---</span>
+        </div>
+        <div class="detail-item">
+          <span class="label">Squawk</span>
+          <span class="value" id="panel-squawk" style="font-size: 16px; font-family: var(--font-display);">---</span>
+        </div>
+        <div class="detail-item">
+          <span class="label">Country</span>
+          <span class="value" id="panel-country" style="font-size: 14px; font-weight: 600;">---</span>
+        </div>
+        <div class="detail-item" style="grid-column: span 2;">
+          <span class="label">Category</span>
+          <span class="value" id="panel-category" style="font-size: 14px; font-weight: 600;">---</span>
+        </div>
+      </div>
+
+      <div class="insight-box" id="insight-box" style="padding: 24px; background: rgba(0, 218, 243, 0.08); border: 1px solid rgba(0, 218, 243, 0.15); border-radius: 16px;">
+        <div class="title" style="letter-spacing: 0.1em;">Behavioral Insight</div>
+        <p id="panel-insight" style="font-size: 14px; color: var(--text-secondary); line-height: 1.6; margin-top: 12px;">
+          Select an aircraft on the map to see behavioral insights and telemetry.
+        </p>
+      </div>
+    </aside>
+
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script src="./airline-logos.js"></script>
-    <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script src="/theme.js"></script>
+    <script src="./chart-theme-fresh.js"></script>
+    <script src="./live-observatory-fresh.js"></script>
   </body>
 </html>

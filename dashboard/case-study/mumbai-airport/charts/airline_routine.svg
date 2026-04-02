@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1026" viewBox="0 0 1100 1026">
+<rect width="100%" height="100%" fill="#0b1020"/>
+<text x="30" y="34" font-family="Inter, Arial, sans-serif" font-size="24" fill="#f8fafc" font-weight="700">Top airline prefixes by inferred movements</text>
+<text x="30" y="56" font-family="Inter, Arial, sans-serif" font-size="13" fill="#94a3b8">Mumbai airspace sample, grouped by callsign prefix</text>
+<text x="208" y="93.28" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="15" fill="#e2e8f0">IGO</text>
+<rect x="220" y="76" width="790.0" height="24" rx="5" fill="#38bdf8"/>
+<text x="1020.0" y="93.28" font-family="Inter, Arial, sans-serif" font-size="14" fill="#e2e8f0">55,050</text>
+<text x="208" y="129.28" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="15" fill="#e2e8f0">AIC</text>
+<rect x="220" y="112" width="299.8125340599455" height="24" rx="5" fill="#38bdf8"/>
+<text x="529.8125340599455" y="129.28" font-family="Inter, Arial, sans-serif" font-size="14" fill="#e2e8f0">20,892</text>
+<text x="208" y="165.28" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="15" fill="#e2e8f0">VTI</text>
+<rect x="220" y="148" width="140.47792915531335" height="24" rx="5" fill="#38bdf8"/>
+<text x="370.47792915531335" y="165.28" font-family="Inter, Arial, sans-serif" font-size="14" fill="#e2e8f0">9,789</text>
+<text x="208" y="201.28" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="15" fill="#e2e8f0">AKJ</text>
+<rect x="220" y="184" width="99.34913714804723" height="24" rx="5" fill="#38bdf8"/>
+<text x="329.34913714804725" y="201.28" font-family="Inter, Arial, sans-serif" font-size="14" fill="#e2e8f0">6,923</text>
+<text x="208" y="237.28" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="15" fill="#e2e8f0">UAE</text>
+<rect x="220" y="220" width="72.57093551316984" height="24" rx="5" fill="#38bdf8"/>
+<text x="302.57093551316984" y="237.28" font-family="Inter, Arial, sans-serif" font-size="14" fill="#e2e8f0">5,057</text>
+<text x="208" y="273.28" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="15" fill="#e2e8f0">SEJ</text>
+<rect x="220" y="256" width="69.87302452316077" height="24" rx="5" fill="#38bdf8"/>
+<text x="299.8730245231608" y="273.28" font-family="Inter, Arial, sans-serif" font-size="14" fill="#e2e8f0">4,869</text>
+<text x="208" y="309.28" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="15" fill="#e2e8f0">AXB</text>
+<rect x="220" y="292" width="64.77856494096277" height="24" rx="5" fill="#38bdf8"/>
+<text x="294.7785649409628" y="309.28" font-family="Inter, Arial, sans-serif" font-size="14" fill="#e2e8f0">4,514</text>
+<text x="208" y="345.28" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="15" fill="#e2e8f0">QTR</text>
+<rect x="220" y="328" width="53.49900090826522" height="24" rx="5" fill="#38bdf8"/>
+<text x="283.4990009082652" y="345.28" font-family="Inter, Arial, sans-serif" font-size="14" fill="#e2e8f0">3,728</text>
+<text x="208" y="381.28" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="15" fill="#e2e8f0">GOW</text>
+<rect x="220" y="364" width="31.442143505903726" height="24" rx="5" fill="#38bdf8"/>
+<text x="261.4421435059037" y="381.28" font-family="Inter, Arial, sans-serif" font-size="14" fill="#e2e8f0">2,191</text>
+<text x="208" y="417.28" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="15" fill="#e2e8f0">ETD</text>
+<rect x="220" y="400" width="31.37039055404178" height="24" rx="5" fill="#38bdf8"/>
+<text x="261.3703905540418" y="417.28" font-family="Inter, Arial, sans-serif" font-size="14" fill="#e2e8f0">2,186</text>
+<text x="208" y="453.28" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="15" fill="#e2e8f0">IAD</text>
+<rect x="220" y="436" width="30.868119891008174" height="24" rx="5" fill="#38bdf8"/>
+<text x="260.8681198910082" y="453.28" font-family="Inter, Arial, sans-serif" font-size="14" fill="#e2e8f0">2,151</text>
+<text x="208" y="489.28" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="15" fill="#e2e8f0">@@@</text>
+<rect x="220" y="472" width="24.510808356039963" height="24" rx="5" fill="#38bdf8"/>
+<text x="254.51080835603997" y="489.28" font-family="Inter, Arial, sans-serif" font-size="14" fill="#e2e8f0">1,708</text>
+<text x="208" y="525.28" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="15" fill="#e2e8f0">SVA</text>
+<rect x="220" y="508" width="23.821980018165306" height="24" rx="5" fill="#38bdf8"/>
+<text x="253.8219800181653" y="525.28" font-family="Inter, Arial, sans-serif" font-size="14" fill="#e2e8f0">1,660</text>
+<text x="208" y="561.28" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="15" fill="#e2e8f0">ABY</text>
+<rect x="220" y="544" width="22.128610354223433" height="24" rx="5" fill="#38bdf8"/>
+<text x="252.12861035422344" y="561.28" font-family="Inter, Arial, sans-serif" font-size="14" fill="#e2e8f0">1,542</text>
+<text x="208" y="597.28" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="15" fill="#e2e8f0">ETH</text>
+<rect x="220" y="580" width="21.58328792007266" height="24" rx="5" fill="#38bdf8"/>
+<text x="251.58328792007265" y="597.28" font-family="Inter, Arial, sans-serif" font-size="14" fill="#e2e8f0">1,504</text>
+<text x="208" y="633.28" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="15" fill="#e2e8f0">OMA</text>
+<rect x="220" y="616" width="21.224523160762942" height="24" rx="5" fill="#38bdf8"/>
+<text x="251.22452316076294" y="633.28" font-family="Inter, Arial, sans-serif" font-size="14" fill="#e2e8f0">1,479</text>
+<text x="208" y="669.28" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="15" fill="#e2e8f0">SDG</text>
+<rect x="220" y="652" width="20.77965485921889" height="24" rx="5" fill="#38bdf8"/>
+<text x="250.77965485921888" y="669.28" font-family="Inter, Arial, sans-serif" font-size="14" fill="#e2e8f0">1,448</text>
+<text x="208" y="705.28" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="15" fill="#e2e8f0">GFA</text>
+<rect x="220" y="688" width="17.421616712079928" height="24" rx="5" fill="#38bdf8"/>
+<text x="247.42161671207992" y="705.28" font-family="Inter, Arial, sans-serif" font-size="14" fill="#e2e8f0">1,214</text>
+<text x="208" y="741.28" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="15" fill="#e2e8f0">SIA</text>
+<rect x="220" y="724" width="14.049227974568574" height="24" rx="5" fill="#38bdf8"/>
+<text x="244.04922797456857" y="741.28" font-family="Inter, Arial, sans-serif" font-size="14" fill="#e2e8f0">979</text>
+<text x="208" y="777.28" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="15" fill="#e2e8f0">KAC</text>
+<rect x="220" y="760" width="11.839237057220709" height="24" rx="5" fill="#38bdf8"/>
+<text x="241.8392370572207" y="777.28" font-family="Inter, Arial, sans-serif" font-size="14" fill="#e2e8f0">825</text>
+<text x="208" y="813.28" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="15" fill="#e2e8f0">DLH</text>
+<rect x="220" y="796" width="11.064305177111716" height="24" rx="5" fill="#38bdf8"/>
+<text x="241.06430517711172" y="813.28" font-family="Inter, Arial, sans-serif" font-size="14" fill="#e2e8f0">771</text>
+<text x="208" y="849.28" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="15" fill="#e2e8f0">THY</text>
+<rect x="220" y="832" width="10.820345140781109" height="24" rx="5" fill="#38bdf8"/>
+<text x="240.82034514078111" y="849.28" font-family="Inter, Arial, sans-serif" font-size="14" fill="#e2e8f0">754</text>
+<text x="208" y="885.28" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="15" fill="#e2e8f0">MAS</text>
+<rect x="220" y="868" width="10.691189827429609" height="24" rx="5" fill="#38bdf8"/>
+<text x="240.6911898274296" y="885.28" font-family="Inter, Arial, sans-serif" font-size="14" fill="#e2e8f0">745</text>
+<text x="208" y="921.28" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="15" fill="#e2e8f0">BAW</text>
+<rect x="220" y="904" width="10.34677565849228" height="24" rx="5" fill="#38bdf8"/>
+<text x="240.34677565849228" y="921.28" font-family="Inter, Arial, sans-serif" font-size="14" fill="#e2e8f0">721</text>
+<text x="208" y="957.28" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="15" fill="#e2e8f0">FDB</text>
+<rect x="220" y="940" width="10.11716621253406" height="24" rx="5" fill="#38bdf8"/>
+<text x="240.11716621253407" y="957.28" font-family="Inter, Arial, sans-serif" font-size="14" fill="#e2e8f0">705</text>
+</svg>

@@ -1,4 +1,3 @@
-const REFRESH_INTERVAL = 60000; // 60 seconds
 const STALE_THRESHOLD = 30 * 60000; // 30 minutes
 let currentAirportFilter = "";
 let charts = new Map();
@@ -13,6 +12,23 @@ let liveDensityVisible = true;
 let lastLiveFlights = [];
 let lastLiveSummary = null;
 let liveSelectedTraceKey = null;
+let dashboardFlights = [];
+let dashboardSummary = null;
+let dashboardSourceLabel = "Archive view";
+let dashboardGeneratedAt = null;
+const OPENSKY_API = "https://opensky-network.org/api/states/all";
+
+async function fetchOpenSkyStates(bounds) {
+  const query = `?lamin=${bounds?.getSouth?.() ?? -90}&lomin=${bounds?.getWest?.() ?? -180}&lamax=${bounds?.getNorth?.() ?? 90}&lomax=${bounds?.getEast?.() ?? 180}`;
+  const url = `https://api.allorigins.win/get?disableCache=true&url=${encodeURIComponent(`${OPENSKY_API}${query}`)}`;
+  const res = await fetch(url, { cache: "no-store" });
+  if (!res.ok) throw new Error(`API Error: ${res.status}`);
+  const payload = await res.json();
+  if (payload?.contents) {
+    return JSON.parse(payload.contents);
+  }
+  throw new Error("Unable to fetch live data");
+}
 
 // ============================================================================
 // Data Fetching
@@ -20,8 +36,8 @@ let liveSelectedTraceKey = null;
 
 async function fetchJson(path, optional = false) {
   try {
-    const basePath = window.location.pathname.split('/').slice(0, -1).join('/');
-    const url = new URL(basePath + '/' + path, window.location.origin);
+    const normalized = String(path).replace(/^\.\//, "");
+    const url = new URL(`/data/${normalized.replace(/^data\//, "")}`, window.location.origin);
     url.searchParams.set("_t", Date.now());
     const res = await fetch(url.toString(), { cache: "no-store" });
     if (!res.ok) {
@@ -217,14 +233,92 @@ function cleanLabel(value, fallback = "--") {
   return isUnknownLabel(value) ? fallback : String(value);
 }
 
+function normalizeFlightRecord(record) {
+  if (!record) return null;
+
+  if (Array.isArray(record)) {
+    const [icao24, callsign, origin_country, _time_position, _last_contact, lon, lat, altitude, on_ground, velocity, heading, vertical_rate] = record;
+    const alt = typeof altitude === "number" ? altitude : null;
+    const spd = typeof velocity === "number" ? velocity : null;
+    const climb = typeof vertical_rate === "number" ? vertical_rate : null;
+    let status = "cruising";
+    if (on_ground || (alt !== null && alt < 150)) {
+      status = "ground";
+    } else if (alt !== null && alt < 4000) {
+      if (climb !== null) {
+        if (climb < -0.5) status = "landing";
+        else if (climb > 0.5) status = "departing";
+      } else if (spd !== null && spd < 120) {
+        status = "landing";
+      }
+    }
+    return {
+      icao24,
+      callsign: (callsign || "").trim(),
+      airline: record[13] || "",
+      origin_country,
+      lat,
+      lon,
+      altitude: alt,
+      on_ground: Boolean(on_ground),
+      velocity: spd,
+      heading,
+      status,
+    };
+  }
+
+  if (typeof record === "object") {
+    const alt = typeof record.altitude === "number" ? record.altitude : null;
+    const spd = typeof record.velocity === "number" ? record.velocity : null;
+    let status = String(record.status || "").toLowerCase();
+    if (!status) {
+      if (record.on_ground || (alt !== null && alt < 150)) {
+        status = "ground";
+      } else if (alt !== null && alt < 4000) {
+        if (spd !== null && spd < 120) status = "landing";
+        else if (spd !== null && spd >= 120) status = "departing";
+        else status = "cruising";
+      } else {
+        status = "cruising";
+      }
+    }
+    return {
+      ...record,
+      callsign: (record.callsign || "").trim(),
+      origin_country: record.origin_country || record.country || "",
+      lat: typeof record.lat === "number" ? record.lat : null,
+      lon: typeof record.lon === "number" ? record.lon : null,
+      altitude: alt,
+      on_ground: Boolean(record.on_ground),
+      velocity: spd,
+      heading: typeof record.heading === "number" ? record.heading : null,
+      status,
+    };
+  }
+
+  return null;
+}
+
+function normalizeFlights(records) {
+  return (records || []).map(normalizeFlightRecord).filter(Boolean);
+}
+
 function buildSnapshotSummary(flights, generatedAt) {
   const altitudes = (flights || []).map((r) => r.altitude).filter((v) => typeof v === "number");
   const speeds = (flights || []).map((r) => r.velocity).filter((v) => typeof v === "number");
   return {
     total_flights: flights.length,
     unique_aircraft: new Set(flights.map((r) => r.icao24).filter(Boolean)).size,
-    unique_airlines: new Set(flights.map((r) => r.airline).filter(Boolean)).size,
-    unique_airports: new Set(flights.map((r) => r.airport).filter(Boolean)).size,
+    unique_airlines: new Set(
+      flights
+        .map((r) => r.airline)
+        .filter((value) => value && !isUnknownLabel(value))
+    ).size,
+    unique_airports: new Set(
+      flights
+        .map((r) => r.airport || r.nearest_airport)
+        .filter((value) => value && !isUnknownLabel(value))
+    ).size,
     airborne: flights.filter((r) => !r.on_ground).length,
     on_ground: flights.filter((r) => r.on_ground).length,
     altitude_avg: altitudes.length ? altitudes.reduce((a, b) => a + b, 0) / altitudes.length : null,
@@ -263,6 +357,12 @@ function createChart(canvasId, type, labels, data, label, color, options = {}) {
   if (!canvas) return null;
 
   const ctx = canvas.getContext("2d");
+  
+  // Create gradient if it's a line chart
+  const background = type === 'line'
+    ? CHART_THEME.getGradient(ctx, color)
+    : CHART_THEME.withAlpha(color, 0.22);
+
   const chart = new Chart(ctx, {
     type,
     data: {
@@ -271,49 +371,27 @@ function createChart(canvasId, type, labels, data, label, color, options = {}) {
         {
           label,
           data,
-          borderColor: color,
-          backgroundColor:
-            type === "line"
-              ? color.replace(/[^,]+(?=\))/, "0.1")
-              : color + "40",
-          fill: type === "line",
-          tension: type === "line" ? 0.3 : 0,
-          borderWidth: 2,
-          pointRadius: 2,
-          pointHoverRadius: 4,
-          pointBackgroundColor: color,
+          ...CHART_THEME.applyDatasetDefaults(type, color),
+          backgroundColor: background,
+          ...options.dataset,
         },
       ],
     },
     options: {
-      responsive: true,
-      maintainAspectRatio: false,
-      plugins: {
-        legend: { display: false },
-        tooltip: {
-          backgroundColor: "rgba(13, 20, 29, 0.96)",
-          titleColor: "#dce3f0",
-          bodyColor: "#b9ccb2",
-          borderColor: "rgba(0, 218, 243, 0.2)",
-          borderWidth: 1,
-          padding: 12,
-          displayColors: false,
-          titleFont: { family: "'Space Grotesk', 'Inter', sans-serif", size: 11 },
-          bodyFont: { family: "'Space Grotesk', 'Inter', sans-serif", size: 11 },
-        },
-      },
-      interaction: { mode: "index", intersect: false },
-      scales: {
-        x: {
-          ticks: { color: "#84967e", maxRotation: 0, font: { family: "'Space Grotesk', 'Inter', sans-serif", size: 10 } },
-          grid: { color: "rgba(148, 163, 184, 0.06)", drawBorder: false },
-        },
-        y: {
-          ticks: { color: "#84967e", font: { family: "'Space Grotesk', 'Inter', sans-serif", size: 10 } },
-          grid: { color: "rgba(148, 163, 184, 0.06)", drawBorder: false },
-        },
-      },
+      ...CHART_THEME.defaults,
       ...options,
+      plugins: {
+        ...CHART_THEME.defaults.plugins,
+        ...(options.plugins || {}),
+        tooltip: {
+          ...CHART_THEME.defaults.plugins.tooltip,
+          ...(options.plugins?.tooltip || {}),
+        }
+      },
+      scales: {
+        ...CHART_THEME.defaults.scales,
+        ...(options.scales || {}),
+      }
     },
   });
 
@@ -360,10 +438,12 @@ function renderTable(elementId, rows, columns) {
 // Data Processing
 // ============================================================================
 
-function computeTopN(rows, key, limit = 10) {
+function computeTopN(rows, key, limit = 10, options = {}) {
+  const includeUnknown = Boolean(options.includeUnknown);
   const counts = new Map();
   for (const row of rows) {
     const val = String(row[key] || "unknown");
+    if (!includeUnknown && isUnknownLabel(val)) continue;
     counts.set(val, (counts.get(val) || 0) + 1);
   }
   return Array.from(counts.entries())
@@ -564,7 +644,7 @@ function initLiveMap() {
   });
 }
 
-function updateLiveMap(flights, summary) {
+function updateLiveMap(flights, summary, sourceLabel = "Live Feed") {
   initLiveMap();
   if (!liveMap || !liveFlightLayer || !Array.isArray(flights)) return;
   liveFlightLayer.clearLayers();
@@ -653,10 +733,10 @@ function updateLiveMap(flights, summary) {
 
   if (bounds.length) {
     liveMap.fitBounds(bounds, { padding: [60, 60], maxZoom: 7 });
-    updateLiveMapStatus(`Live: ${flights.length} aircraft - ${summary?.total_flights || flights.length} total`);
+    updateLiveMapStatus(`${sourceLabel}: ${flights.length} aircraft - ${summary?.total_flights || flights.length} total`);
   } else {
     liveMap.setView([20, 0], 2);
-    updateLiveMapStatus("No live aircraft available right now.");
+    updateLiveMapStatus(`${sourceLabel}: no aircraft available right now.`);
   }
 }
 
@@ -664,48 +744,35 @@ function updateLiveMap(flights, summary) {
 // Main Load Function
 // ============================================================================
 
-async function loadDashboard() {
+async function renderDashboard() {
   destroyCharts();
   await window.AirlineLogos?.load?.();
 
-  const [latest, snapshot, minuteTraffic] = await Promise.all([
-    fetchJson("./data/latest.json", true),
-    fetchJson("./data/snapshot.json", true),
-    fetchJson("./data/minute_traffic.json", true),
-  ]);
-
-  const flights = latest?.flights || snapshot || [];
-  const filtered = filterFlightsByAirport(flights, currentAirportFilter);
-  const summary = buildSnapshotSummary(filtered, latest?.summary?.generated_at);
+  const filtered = filterFlightsByAirport(dashboardFlights, currentAirportFilter);
+  const summary = buildSnapshotSummary(filtered, dashboardGeneratedAt || dashboardSummary?.generated_at);
   lastLiveFlights = filtered;
   lastLiveSummary = summary;
 
-  // Update timestamp
   const lastUpdatedEl = document.getElementById("lastUpdated");
   if (lastUpdatedEl && summary?.generated_at) {
     const date = new Date(summary.generated_at);
-    lastUpdatedEl.textContent = date.toLocaleTimeString(
-      [],
-      { hour: "2-digit", minute: "2-digit", second: "2-digit" }
-    );
+    lastUpdatedEl.textContent = date.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit", second: "2-digit" });
   }
 
-  // Render metrics
   renderMetrics(summary, filtered);
 
-  // Build charts
-  if (minuteTraffic && Array.isArray(minuteTraffic) && minuteTraffic.length > 0) {
+  if (Array.isArray(window.__minuteTraffic) && window.__minuteTraffic.length > 0) {
     createChart(
       "minuteTraffic",
       "line",
-      minuteTraffic.map((d) => new Date(d.minute).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })),
-      minuteTraffic.map((d) => d.flights),
+      window.__minuteTraffic.map((d) => new Date(d.minute).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })),
+      window.__minuteTraffic.map((d) => d.flights),
       "Flights",
       "rgb(34,211,238)"
     );
   }
 
-  if (flights.length > 0) {
+  if (dashboardFlights.length > 0) {
     const topAirportsChart = normalizeForCharts(computeTopN(filtered, "airport", 12));
     createChart(
       "topAirports",
@@ -717,24 +784,10 @@ async function loadDashboard() {
     );
 
     const altBins = computeBins(filtered, "altitude", 1000);
-    createChart(
-      "altitudeBands",
-      "bar",
-      altBins.map((d) => `${d.bin}m`),
-      altBins.map((d) => d.count),
-      "Flights",
-      "rgb(167,139,250)"
-    );
+    createChart("altitudeBands", "bar", altBins.map((d) => `${d.bin}m`), altBins.map((d) => d.count), "Flights", "rgb(167,139,250)");
 
     const speedBins = computeBins(filtered, "velocity", 50);
-    createChart(
-      "speedBands",
-      "bar",
-      speedBins.map((d) => `${d.bin}m/s`),
-      speedBins.map((d) => d.count),
-      "Flights",
-      "rgb(251,113,133)"
-    );
+    createChart("speedBands", "bar", speedBins.map((d) => `${d.bin}m/s`), speedBins.map((d) => d.count), "Flights", "rgb(251,113,133)");
 
     const topAirlinesChart = normalizeForCharts(computeTopN(filtered, "airline", 12));
     createChart(
@@ -747,41 +800,75 @@ async function loadDashboard() {
     );
 
     const headingBins = computeHeadingBins(filtered);
-    createChart(
-      "headingBins",
-      "bar",
-      headingBins.map((d) => d.direction),
-      headingBins.map((d) => d.count),
-      "Flights",
-      "rgb(245,158,11)"
-    );
+    createChart("headingBins", "bar", headingBins.map((d) => d.direction), headingBins.map((d) => d.count), "Flights", "rgb(245,158,11)");
   }
 
-  // Render tables
-  if (flights.length > 0) {
-    const topAirports = computeTopN(flights, "airport", 15);
-    renderTable(
-      "airportTable",
-      topAirports.map(([a, c]) => ({ airport: a, flights: c })),
-      ["airport", "flights"]
-    );
+  if (dashboardFlights.length > 0) {
+    const topAirports = computeTopN(filtered, "airport", 15);
+    renderTable("airportTable", topAirports.map(([a, c]) => ({ airport: a, flights: c })), ["airport", "flights"]);
 
     const topAirlines = computeTopN(filtered, "airline", 15);
-    renderTable(
-      "airlineTable",
-      topAirlines.map(([a, c]) => ({ airline: a, flights: c })),
-      ["airline", "flights"]
-    );
+    renderTable("airlineTable", topAirlines.map(([a, c]) => ({ airline: a, flights: c })), ["airline", "flights"]);
 
     const topCountries = computeTopN(filtered, "origin_country", 15);
-    renderTable(
-      "countryTable",
-      topCountries.map(([c, n]) => ({ country: c, flights: n })),
-      ["country", "flights"]
-    );
+    renderTable("countryTable", topCountries.map(([c, n]) => ({ country: c, flights: n })), ["country", "flights"]);
   }
 
-  updateLiveMap(filtered, summary);
+  updateLiveMap(filtered, summary, dashboardSourceLabel);
+}
+
+async function loadArchiveFallback() {
+  const [latest, snapshot, minuteTraffic] = await Promise.all([
+    fetchJson("./data/snapshot.json", true),
+    fetchJson("./data/latest.json", true),
+    fetchJson("./data/minute_traffic.json", true),
+  ]);
+
+  dashboardFlights = normalizeFlights(snapshot || latest?.flights || []);
+  dashboardSummary = latest?.summary || buildSnapshotSummary(dashboardFlights);
+  dashboardGeneratedAt = dashboardSummary?.generated_at || dashboardFlights[0]?.timestamp || new Date().toISOString();
+  dashboardSourceLabel = "Archive view";
+  window.__minuteTraffic = minuteTraffic || [];
+  document.getElementById("update-timer").textContent = "Archive view";
+  document.getElementById("status-dot")?.classList.remove("updating");
+  document.getElementById("status-dot")?.classList.remove("delayed");
+  await renderDashboard();
+}
+
+async function loadLiveFeed() {
+  const updateTimer = document.getElementById("update-timer");
+  const dot = document.getElementById("status-dot");
+  const button = document.getElementById("live-feed-button");
+
+  if (updateTimer) updateTimer.textContent = "Syncing live feed...";
+  dot?.classList.add("updating");
+  button && (button.disabled = true);
+
+  try {
+    initLiveMap();
+    const bounds = liveMap?.getBounds?.();
+    const data = await fetchOpenSkyStates(bounds);
+    const flights = normalizeFlights(data.states || []);
+    dashboardFlights = flights;
+    dashboardSummary = buildSnapshotSummary(flights, new Date().toISOString());
+    dashboardGeneratedAt = dashboardSummary.generated_at;
+    dashboardSourceLabel = "Live feed";
+    await renderDashboard();
+    if (updateTimer) updateTimer.textContent = "Live feed";
+    dot?.classList.remove("delayed");
+  } catch (err) {
+    console.error("Observatory Sync Error:", err.message);
+    dot?.classList.add("delayed");
+    if (!dashboardFlights.length) {
+      await loadArchiveFallback();
+    } else {
+      await renderDashboard();
+    }
+    if (updateTimer) updateTimer.textContent = dashboardFlights.length ? "Archive view" : "Offline";
+  } finally {
+    dot?.classList.remove("updating");
+    button && (button.disabled = false);
+  }
 }
 
 function computeMedian(arr) {
@@ -806,7 +893,7 @@ function applyAirportFilter() {
       ? `Showing matches for ${currentAirportFilter.toUpperCase()}.`
       : "Leave blank to show all airports.";
   }
-  loadDashboard();
+  renderDashboard();
 }
 
 document.getElementById("applyFilter").addEventListener("click", applyAirportFilter);
@@ -816,7 +903,7 @@ document.getElementById("clearFilter").addEventListener("click", () => {
   document.getElementById("airportFilter").value = "";
   const hint = document.getElementById("airportFilterHint");
   if (hint) hint.textContent = "Leave blank to show all airports.";
-  loadDashboard();
+  renderDashboard();
 });
 
 document.getElementById("airportFilter").addEventListener("keypress", (e) => {
@@ -830,6 +917,7 @@ document.getElementById("airportFilter").addEventListener("input", () => {
   airportFilterTimer = window.setTimeout(applyAirportFilter, 180);
 });
 
-// Initial load and periodic refresh
-loadDashboard();
-setInterval(loadDashboard, REFRESH_INTERVAL);
+document.getElementById("live-feed-button")?.addEventListener("click", loadLiveFeed);
+
+// Initial load from archive fallback. Live feed updates are manual.
+loadArchiveFallback();

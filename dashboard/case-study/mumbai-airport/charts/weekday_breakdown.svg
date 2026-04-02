@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="392" viewBox="0 0 1100 392">
+<rect width="100%" height="100%" fill="#0b1020"/>
+<text x="30" y="34" font-family="Inter, Arial, sans-serif" font-size="24" fill="#f8fafc" font-weight="700">Airport movements by weekday</text>
+<text x="30" y="56" font-family="Inter, Arial, sans-serif" font-size="13" fill="#94a3b8">Counts of airport-proximate events by day of week</text>
+<text x="158" y="94.72" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="15" fill="#e2e8f0">Sunday</text>
+<rect x="170" y="76" width="249.63161144268366" height="26" rx="5" fill="#38bdf8"/>
+<rect x="419.63161144268366" y="76" width="214.19222062152707" height="26" rx="0" fill="#f59e0b"/>
+<text x="643.8238320642107" y="94.72" font-family="Inter, Arial, sans-serif" font-size="14" fill="#e2e8f0">2,683</text>
+<text x="158" y="132.72" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="15" fill="#e2e8f0">Monday</text>
+<rect x="170" y="114" width="239.08623173492487" height="26" rx="5" fill="#38bdf8"/>
+<rect x="409.08623173492487" y="114" width="162.84832270014405" height="26" rx="0" fill="#f59e0b"/>
+<text x="581.9345544350689" y="132.72" font-family="Inter, Arial, sans-serif" font-size="14" fill="#e2e8f0">2,325</text>
+<text x="158" y="170.72" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="15" fill="#e2e8f0">Tuesday</text>
+<rect x="170" y="152" width="293.0232558139535" height="26" rx="5" fill="#38bdf8"/>
+<rect x="463.0232558139535" y="152" width="231.1339781848117" height="26" rx="0" fill="#f59e0b"/>
+<text x="704.1572339987652" y="170.72" font-family="Inter, Arial, sans-serif" font-size="14" fill="#e2e8f0">3,032</text>
+<text x="158" y="208.72" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="15" fill="#e2e8f0">Wednesday</text>
+<rect x="170" y="190" width="302.1856349043013" height="26" rx="5" fill="#38bdf8"/>
+<rect x="472.1856349043013" y="190" width="182.03745626672153" height="26" rx="0" fill="#f59e0b"/>
+<text x="664.2230911710228" y="208.72" font-family="Inter, Arial, sans-serif" font-size="14" fill="#e2e8f0">2,801</text>
+<text x="158" y="246.72" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="15" fill="#e2e8f0">Thursday</text>
+<rect x="170" y="228" width="312.0395143033546" height="26" rx="5" fill="#38bdf8"/>
+<rect x="482.0395143033546" y="228" width="213.67359538999793" height="26" rx="0" fill="#f59e0b"/>
+<text x="705.7131096933525" y="246.72" font-family="Inter, Arial, sans-serif" font-size="14" fill="#e2e8f0">3,041</text>
+<text x="158" y="284.72" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="15" fill="#e2e8f0">Friday</text>
+<rect x="170" y="266" width="321.3747684708788" height="26" rx="5" fill="#38bdf8"/>
+<rect x="491.3747684708788" y="266" width="228.71372710434247" height="26" rx="0" fill="#f59e0b"/>
+<text x="730.0884955752213" y="284.72" font-family="Inter, Arial, sans-serif" font-size="14" fill="#e2e8f0">3,182</text>
+<text x="158" y="322.72" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="15" fill="#e2e8f0">Saturday</text>
+<rect x="170" y="304" width="482.14859024490636" height="26" rx="5" fill="#38bdf8"/>
+<rect x="652.1485902449064" y="304" width="357.85140975509364" height="26" rx="0" fill="#f59e0b"/>
+<text x="1020.0" y="322.72" font-family="Inter, Arial, sans-serif" font-size="14" fill="#e2e8f0">4,859</text>
+</svg>

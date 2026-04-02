@@ -9,60 +9,78 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="../styles.css" />
     <style>
-      .case-study-shell { display: grid; gap: 18px; }
-      .case-study-grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 16px; }
-      .case-study-card {
-        grid-column: span 6;
-        padding: 20px;
-        border-radius: 18px;
-        border: 1px solid rgba(148, 163, 184, 0.1);
-        background: linear-gradient(180deg, rgba(36, 42, 52, 0.96), rgba(21, 28, 38, 0.94));
-        box-shadow: 0 18px 38px rgba(0, 0, 0, 0.18);
+      .case-study-shell { display: grid; gap: 22px; max-width: 1040px; }
+      .hero-banner {
+        background: transparent;
+        border: 0;
+        box-shadow: none;
+        padding: 0;
       }
-      .case-study-card.wide { grid-column: span 12; }
-      .case-study-card h3 {
+      .hero-copy { max-width: 760px; }
+      .study-list {
+        display: grid;
+        border-top: 1px solid rgba(148, 163, 184, 0.12);
+      }
+      .study-entry {
+        padding: 22px 0;
+        border-bottom: 1px solid rgba(148, 163, 184, 0.12);
+      }
+      .study-type {
         font-family: var(--font-display);
         font-size: 12px;
         text-transform: uppercase;
         letter-spacing: 0.14em;
-        color: var(--text-secondary);
+        color: var(--text-tertiary);
         margin-bottom: 10px;
       }
-      .case-study-card p { color: var(--text-secondary); line-height: 1.7; }
-      .case-study-link {
+      .study-title {
+        font-family: var(--font-display);
+        font-size: 22px;
+        letter-spacing: -0.03em;
+        margin-bottom: 8px;
+        color: var(--text-primary);
+      }
+      .study-copy {
+        color: var(--text-secondary);
+        line-height: 1.7;
+        max-width: 70ch;
+        margin-bottom: 16px;
+      }
+      .study-link {
         display: inline-flex;
         align-items: center;
         gap: 8px;
-        margin-top: 14px;
-        padding: 10px 14px;
-        border-radius: 999px;
-        background: rgba(0, 230, 57, 0.14);
-        border: 1px solid rgba(0, 230, 57, 0.2);
-        color: var(--text-primary);
+        padding: 0;
+        border-radius: 0;
+        background: transparent;
+        border: 0;
+        color: var(--accent-cyan);
         text-decoration: none;
         font-family: var(--font-display);
         font-size: 12px;
         text-transform: uppercase;
         letter-spacing: 0.08em;
       }
-      .case-study-link:hover { background: rgba(34, 211, 238, 0.08); border-color: rgba(34, 211, 238, 0.3); }
-      @media (max-width: 900px) {
-        .case-study-card,
-        .case-study-card.wide { grid-column: span 12; }
+      .study-link:hover { text-decoration: underline; }
+      .hero-meta {
+        margin-top: 18px;
+        font-family: var(--font-display);
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        color: var(--text-tertiary);
       }
     </style>
   </head>
   <body>
     <div class="dashboard">
       <nav class="navbar">
-        <div class="navbar-left">
-          <div class="logo">Flight Observatory</div>
-          <span class="badge">CASE STUDIES</span>
-        </div>
+      <div class="navbar-left">
+        <div class="logo">Flight Observatory</div>
+      </div>
         <div class="navbar-right">
           <a href="../" class="nav-link">Live</a>
-          <a href="../historical.html" class="nav-link">Archive</a>
-          <a href="../history-lab.html" class="nav-link">Lab</a>
+          <a href="../archive/" class="nav-link">Archive</a>
           <a href="./" class="nav-link active">Case Studies</a>
         </div>
       </nav>
@@ -70,37 +88,36 @@
       <main class="main-container page-shell case-study-shell">
         <section class="hero-banner">
           <div class="hero-copy">
-            <p class="hero-kicker">Case Study Library</p>
-            <h1>Detailed flight studies</h1>
-            <p class="hero-subtitle">Each study shows one place in detail with charts, tables, and a query console. Mumbai is the first study.</p>
-          </div>
-          <div class="hero-stack">
-            <div class="info-box"><span class="label">Studies</span><span class="value">1</span></div>
-            <div class="info-box"><span class="label">Format</span><span class="value">Narrative + tables</span></div>
-            <div class="info-box"><span class="label">Status</span><span class="value">Mumbai live</span></div>
+            <p class="hero-kicker">Case Study Index</p>
+            <h1>Flight studies</h1>
+            <p class="hero-subtitle">
+              Two Mumbai studies live here: the original case study and the archived snapshot.
+              Each one stays separate, with its own evidence, charts, and narrative.
+            </p>
+            <div class="hero-meta">2 studies, Original + archive, Mumbai only</div>
           </div>
         </section>
 
-        <section class="case-study-grid">
-          <article class="case-study-card wide">
-            <h3>Mumbai</h3>
-            <p>
-              Mumbai is a monthly sample around BOM. It includes local-time charts, distance and altitude breakdowns, inferred airline prefixes, and a query console.
-            </p>
-            <a class="case-study-link" href="./mumbai/">Open Mumbai case study</a>
-            <a class="case-study-link" href="../mumbai-case-study/" style="margin-left: 10px;">Short link</a>
+        <section class="study-list">
+          <article class="study-entry">
+            <div>
+              <div class="study-type">Original Mumbai case study</div>
+              <div class="study-title">Original Mumbai case study</div>
+              <p class="study-copy">
+                The main Mumbai page is the original case study: a longer report built from the ADS-B analysis with hourly rhythm, fleet mix, corridor maps, and turnover metrics.
+              </p>
+              <a class="study-link" href="./mumbai-airport/">Open study</a>
+            </div>
           </article>
-          <article class="case-study-card">
-            <h3>Layout</h3>
-            <p>
-              One place, one question, one page: charts, tables, notes, and the SQL console stay together here.
-            </p>
-          </article>
-          <article class="case-study-card">
-            <h3>More studies</h3>
-            <p>
-              Another city, airport, or corridor can use the same structure under <code>/case-study/</code>.
-            </p>
+          <article class="study-entry">
+            <div>
+              <div class="study-type">Archived Mumbai snapshot</div>
+              <div class="study-title">Archived Mumbai snapshot</div>
+              <p class="study-copy">
+                The archived page keeps the older 5-minute snapshot separate for reference. It stays available as a smaller historical study.
+              </p>
+              <a class="study-link" href="./archive/mumbai-5m-snapshot/">Open snapshot</a>
+            </div>
           </article>
         </section>
       </main>

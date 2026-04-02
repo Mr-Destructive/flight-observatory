@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="414" viewBox="0 0 1100 414">
+<rect width="100%" height="100%" fill="#0b1020"/>
+<text x="30" y="34" font-family="Inter, Arial, sans-serif" font-size="24" fill="#f8fafc" font-weight="700">Landing to next takeoff gap</text>
+<text x="30" y="56" font-family="Inter, Arial, sans-serif" font-size="13" fill="#94a3b8">Histogram of time gaps between a landing and the next takeoff</text>
+<text x="208" y="93.28" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="15" fill="#e2e8f0">0-1m</text>
+<rect x="220" y="76" width="790.0" height="24" rx="5" fill="#38bdf8"/>
+<text x="1020.0" y="93.28" font-family="Inter, Arial, sans-serif" font-size="14" fill="#e2e8f0">1,805</text>
+<text x="208" y="129.28" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="15" fill="#e2e8f0">2-5m</text>
+<rect x="220" y="112" width="744.9196675900276" height="24" rx="5" fill="#38bdf8"/>
+<text x="974.9196675900276" y="129.28" font-family="Inter, Arial, sans-serif" font-size="14" fill="#e2e8f0">1,702</text>
+<text x="208" y="165.28" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="15" fill="#e2e8f0">1-2m</text>
+<rect x="220" y="148" width="591.7340720221606" height="24" rx="5" fill="#38bdf8"/>
+<text x="821.7340720221606" y="165.28" font-family="Inter, Arial, sans-serif" font-size="14" fill="#e2e8f0">1,352</text>
+<text x="208" y="201.28" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="15" fill="#e2e8f0">5-10m</text>
+<rect x="220" y="184" width="171.56786703601108" height="24" rx="5" fill="#38bdf8"/>
+<text x="401.5678670360111" y="201.28" font-family="Inter, Arial, sans-serif" font-size="14" fill="#e2e8f0">392</text>
+<text x="208" y="237.28" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="15" fill="#e2e8f0">10-20m</text>
+<rect x="220" y="220" width="23.634349030470915" height="24" rx="5" fill="#38bdf8"/>
+<text x="253.6343490304709" y="237.28" font-family="Inter, Arial, sans-serif" font-size="14" fill="#e2e8f0">54</text>
+<text x="208" y="273.28" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="15" fill="#e2e8f0">3h+</text>
+<rect x="220" y="256" width="10.504155124653739" height="24" rx="5" fill="#38bdf8"/>
+<text x="240.50415512465375" y="273.28" font-family="Inter, Arial, sans-serif" font-size="14" fill="#e2e8f0">24</text>
+<text x="208" y="309.28" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="15" fill="#e2e8f0">20-60m</text>
+<rect x="220" y="292" width="4.376731301939058" height="24" rx="5" fill="#38bdf8"/>
+<text x="234.37673130193906" y="309.28" font-family="Inter, Arial, sans-serif" font-size="14" fill="#e2e8f0">10</text>
+<text x="208" y="345.28" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="15" fill="#e2e8f0">1-3h</text>
+<rect x="220" y="328" width="1" height="24" rx="5" fill="#38bdf8"/>
+<text x="231" y="345.28" font-family="Inter, Arial, sans-serif" font-size="14" fill="#e2e8f0">0</text>
+</svg>
