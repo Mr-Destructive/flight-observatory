@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 7561
-  },
-  {
-    "airport": "KDEN",
-    "flights": 32
+    "flights": 7173
   },
   {
     "airport": "KDFW",
-    "flights": 31
+    "flights": 50
   },
   {
     "airport": "CYYC",
-    "flights": 30
+    "flights": 37
+  },
+  {
+    "airport": "CYYZ",
+    "flights": 31
   },
   {
     "airport": "YSSY",
-    "flights": 30
+    "flights": 31
   },
   {
     "airport": "KATL",
-    "flights": 27
-  },
-  {
-    "airport": "KEWR",
-    "flights": 26
-  },
-  {
-    "airport": "KMCO",
-    "flights": 24
-  },
-  {
-    "airport": "KBOS",
-    "flights": 23
-  },
-  {
-    "airport": "YPPH",
-    "flights": 23
+    "flights": 29
   },
   {
     "airport": "KLGA",
-    "flights": 23
+    "flights": 25
   },
   {
-    "airport": "YMML",
+    "airport": "KBOS",
+    "flights": 22
+  },
+  {
+    "airport": "YPPH",
+    "flights": 21
+  },
+  {
+    "airport": "KMCO",
     "flights": 20
+  },
+  {
+    "airport": "KPHX",
+    "flights": 19
   },
   {
     "airport": "KLAS",
     "flights": 19
   },
   {
-    "airport": "CYYZ",
-    "flights": 19
+    "airport": "CYUL",
+    "flights": 18
   },
   {
     "airport": "RJTT",
-    "flights": 17
-  },
-  {
-    "airport": "MMUN",
-    "flights": 16
+    "flights": 18
   },
   {
     "airport": "KAUS",
-    "flights": 16
-  },
-  {
-    "airport": "KIAD",
-    "flights": 16
-  },
-  {
-    "airport": "KDCA",
     "flights": 15
   },
   {
-    "airport": "CYUL",
-    "flights": 15
+    "airport": "KDEN",
+    "flights": 14
+  },
+  {
+    "airport": "KEWR",
+    "flights": 14
+  },
+  {
+    "airport": "YMML",
+    "flights": 14
   },
   {
     "airport": "KSLC",
-    "flights": 15
+    "flights": 12
   },
   {
-    "airport": "KTPA",
-    "flights": 15
+    "airport": "KSJC",
+    "flights": 12
   },
   {
-    "airport": "KPHX",
-    "flights": 14
+    "airport": "KIAD",
+    "flights": 12
   },
   {
-    "airport": "CYVR",
-    "flights": 14
+    "airport": "KJFK",
+    "flights": 12
   },
   {
-    "airport": "VIDP",
-    "flights": 13
+    "airport": "PHNL",
+    "flights": 11
+  },
+  {
+    "airport": "KVNY",
+    "flights": 11
+  },
+  {
+    "airport": "VHHH",
+    "flights": 11
   }
 ]
