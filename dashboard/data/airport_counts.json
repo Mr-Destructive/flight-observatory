@@ -1,74 +1,66 @@
 [
   {
     "airport": "unknown",
-    "flights": 4760
+    "flights": 4022
   },
   {
-    "airport": "KATL",
-    "flights": 25
+    "airport": "LSZH",
+    "flights": 34
   },
   {
     "airport": "VHHH",
-    "flights": 22
+    "flights": 24
   },
   {
-    "airport": "KDFW",
-    "flights": 18
+    "airport": "LFPO",
+    "flights": 21
   },
   {
-    "airport": "CYVR",
-    "flights": 18
-  },
-  {
-    "airport": "KORD",
-    "flights": 18
+    "airport": "YPPH",
+    "flights": 20
   },
   {
     "airport": "YSSY",
-    "flights": 18
+    "flights": 19
   },
   {
-    "airport": "YMMB",
-    "flights": 18
+    "airport": "EDDF",
+    "flights": 17
+  },
+  {
+    "airport": "EHAM",
+    "flights": 17
   },
   {
     "airport": "RJTT",
     "flights": 17
   },
   {
-    "airport": "KDEN",
+    "airport": "YMML",
     "flights": 17
   },
   {
-    "airport": "CYYZ",
-    "flights": 17
-  },
-  {
-    "airport": "YPPH",
-    "flights": 16
-  },
-  {
-    "airport": "KJFK",
+    "airport": "LFPG",
     "flights": 15
   },
   {
-    "airport": "KPHX",
-    "flights": 15
-  },
-  {
-    "airport": "KLGA",
-    "flights": 15
-  },
-  {
-    "airport": "YPJT",
-    "flights": 15
-  },
-  {
-    "airport": "KSEA",
+    "airport": "LEBL",
     "flights": 14
   },
   {
-    "airport": "KIAD",
+    "airport": "YPJT",
+    "flights": 14
+  },
+  {
+    "airport": "CYYZ",
+    "flights": 14
+  },
+  {
+    "airport": "KDFW",
+    "flights": 13
+  },
+  {
+    "airport": "YMMB",
     "flights": 13
   },
   {
@@ -76,27 +68,35 @@
     "flights": 12
   },
   {
-    "airport": "SKBO",
+    "airport": "KDEN",
     "flights": 12
+  },
+  {
+    "airport": "KLAS",
+    "flights": 12
+  },
+  {
+    "airport": "EGKK",
+    "flights": 11
   },
   {
     "airport": "KBOS",
-    "flights": 12
-  },
-  {
-    "airport": "VTBS",
-    "flights": 12
-  },
-  {
-    "airport": "YMML",
-    "flights": 12
-  },
-  {
-    "airport": "CYYC",
-    "flights": 10
+    "flights": 11
   },
   {
     "airport": "KSLC",
+    "flights": 11
+  },
+  {
+    "airport": "KLGA",
+    "flights": 11
+  },
+  {
+    "airport": "KPHX",
+    "flights": 11
+  },
+  {
+    "airport": "LOWW",
     "flights": 10
   }
 ]
