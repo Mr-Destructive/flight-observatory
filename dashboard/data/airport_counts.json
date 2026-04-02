@@ -1,46 +1,50 @@
 [
   {
     "airport": "unknown",
-    "flights": 5094
+    "flights": 5210
   },
   {
     "airport": "LSZH",
-    "flights": 29
-  },
-  {
-    "airport": "CYYZ",
-    "flights": 24
-  },
-  {
-    "airport": "RJTT",
-    "flights": 22
-  },
-  {
-    "airport": "KLGA",
-    "flights": 20
-  },
-  {
-    "airport": "YSSY",
-    "flights": 20
+    "flights": 34
   },
   {
     "airport": "KBOS",
-    "flights": 18
+    "flights": 23
+  },
+  {
+    "airport": "CYYZ",
+    "flights": 22
+  },
+  {
+    "airport": "RJTT",
+    "flights": 21
   },
   {
     "airport": "KATL",
-    "flights": 17
+    "flights": 18
   },
   {
-    "airport": "YPPH",
-    "flights": 17
+    "airport": "YSSY",
+    "flights": 18
   },
   {
     "airport": "EDDF",
+    "flights": 17
+  },
+  {
+    "airport": "KLGA",
     "flights": 16
   },
   {
     "airport": "EGKK",
+    "flights": 16
+  },
+  {
+    "airport": "YPPH",
+    "flights": 15
+  },
+  {
+    "airport": "VHHH",
     "flights": 14
   },
   {
@@ -52,19 +56,15 @@
     "flights": 13
   },
   {
+    "airport": "VABB",
+    "flights": 13
+  },
+  {
+    "airport": "VTBS",
+    "flights": 13
+  },
+  {
     "airport": "LEBL",
-    "flights": 13
-  },
-  {
-    "airport": "VHHH",
-    "flights": 13
-  },
-  {
-    "airport": "LFPO",
-    "flights": 12
-  },
-  {
-    "airport": "EHAM",
     "flights": 12
   },
   {
@@ -72,31 +72,31 @@
     "flights": 11
   },
   {
-    "airport": "KJFK",
+    "airport": "EHAM",
     "flights": 11
   },
   {
-    "airport": "YMML",
+    "airport": "ZGSZ",
     "flights": 11
   },
   {
-    "airport": "LFLL",
-    "flights": 11
+    "airport": "KEWR",
+    "flights": 10
   },
   {
-    "airport": "VTBS",
+    "airport": "VECC",
     "flights": 10
   },
   {
     "airport": "WIII",
-    "flights": 9
+    "flights": 10
   },
   {
-    "airport": "VIDP",
-    "flights": 9
+    "airport": "LHBP",
+    "flights": 10
   },
   {
-    "airport": "KDFW",
-    "flights": 9
+    "airport": "KAUS",
+    "flights": 10
   }
 ]

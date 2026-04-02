@@ -1,75 +1,79 @@
 [
   {
     "airline": "unknown",
-    "flights": 1268
+    "flights": 1315
   },
   {
     "airline": "Ryanair",
-    "flights": 357
+    "flights": 350
   },
   {
     "airline": "American Airlines",
-    "flights": 175
+    "flights": 197
   },
   {
     "airline": "Delta Air Lines",
-    "flights": 174
-  },
-  {
-    "airline": "United Airlines",
-    "flights": 136
-  },
-  {
-    "airline": "Federal Express",
-    "flights": 133
+    "flights": 177
   },
   {
     "airline": "Southwest Airlines",
-    "flights": 127
+    "flights": 170
+  },
+  {
+    "airline": "United Airlines",
+    "flights": 150
+  },
+  {
+    "airline": "Federal Express",
+    "flights": 118
+  },
+  {
+    "airline": "Turkish Airlines",
+    "flights": 116
   },
   {
     "airline": "easyJet",
     "flights": 111
   },
   {
-    "airline": "Turkish Airlines",
-    "flights": 110
-  },
-  {
     "airline": "Lufthansa",
-    "flights": 108
-  },
-  {
-    "airline": "United Parcel Service",
-    "flights": 90
+    "flights": 103
   },
   {
     "airline": "IndiGo Airlines",
-    "flights": 83
+    "flights": 89
+  },
+  {
+    "airline": "United Parcel Service",
+    "flights": 88
+  },
+  {
+    "airline": "JetBlue Airways",
+    "flights": 81
   },
   {
     "airline": "Vueling Airlines",
-    "flights": 77
+    "flights": 74
   },
   {
     "airline": "Jet2.com",
-    "flights": 70
+    "flights": 74
   },
   {
     "airline": "British Airways",
-    "flights": 67
+    "flights": 72
+  },
+  {
+    "airline": "Republic Airlines",
+    "flights": 69
   },
   {
     "airline": "All Nippon Airways",
-    "flights": 66
+    "flights": 64
   },
   {
     "airline": "Scandinavian Airlines System",
-    "flights": 65
-  },
-  {
-    "airline": "Pegasus Airlines",
-    "flights": 63
+    "flights": 62
   },
   {
     "airline": "KLM Royal Dutch Airlines",
@@ -77,26 +81,22 @@
   },
   {
     "airline": "Air France",
-    "flights": 59
-  },
-  {
-    "airline": "JetBlue Airways",
-    "flights": 57
+    "flights": 60
   },
   {
     "airline": "Frontier Airlines",
-    "flights": 55
+    "flights": 60
+  },
+  {
+    "airline": "Pegasus Airlines",
+    "flights": 58
   },
   {
     "airline": "Japan Airlines Domestic",
-    "flights": 54
-  },
-  {
-    "airline": "Republic Airlines",
-    "flights": 51
-  },
-  {
-    "airline": "Emirates",
     "flights": 49
+  },
+  {
+    "airline": "Air India Limited",
+    "flights": 48
   }
 ]
