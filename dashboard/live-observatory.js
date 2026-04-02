@@ -44,14 +44,19 @@ const PLANE_SVG = (color) => `
 async function fetchJson(path, optional = false) {
   const normalized = String(path).replace(/^\.\//, "").replace(/^\/+/, "");
   const candidates = Array.from(new Set([
-    `/${normalized}`,
+    normalized,
+    `./${normalized}`,
+    `../${normalized}`,
+    `../../${normalized}`,
+    `/flight-observatory/${normalized}`,
     `/dashboard/${normalized}`,
+    `/${normalized}`,
   ]));
 
   try {
     for (const candidate of candidates) {
       try {
-        const res = await fetch(candidate, { cache: "no-store" });
+        const res = await fetch(new URL(candidate, window.location.href).toString(), { cache: "no-store" });
         if (res.ok) return await res.json();
       } catch (err) {
         // Try the next candidate.

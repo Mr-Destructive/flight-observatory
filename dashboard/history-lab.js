@@ -7,11 +7,11 @@ import {
 } from "./history-archive.mjs";
 
 const ASSET_ROOTS = window.location.pathname.includes("/archive/")
-  ? ["/", "/dashboard/"]
-  : ["./", "/", "/dashboard/"];
+  ? ["", "./", "../", "../../", "/flight-observatory/", "/dashboard/", "/"]
+  : ["", "./", "../", "../../", "/flight-observatory/", "/dashboard/", "/"];
 const ARCHIVE_BASE_DIRS = window.location.pathname.includes("/archive/")
-  ? ["/archives", "/dashboard/archives"]
-  : ["archives", "/archives", "/dashboard/archives"];
+  ? ["archives", "./archives", "../archives", "../../archives", "/flight-observatory/archives", "/dashboard/archives", "/archives"]
+  : ["archives", "./archives", "../archives", "../../archives", "/flight-observatory/archives", "/dashboard/archives", "/archives"];
 const charts = new Map();
 Chart.defaults.color = "#dce3f0";
 Chart.defaults.font = {
@@ -81,7 +81,7 @@ async function fetchJson(path) {
   try {
     const normalized = String(path).replace(/^\.\//, "");
     for (const root of ASSET_ROOTS) {
-      const candidate = new URL(`${root}${normalized}`.replace(/\/{2,}/g, "/"), window.location.origin).toString();
+      const candidate = new URL(`${root}${normalized}`.replace(/\/{2,}/g, "/"), window.location.href).toString();
       try {
         const res = await fetch(candidate);
         if (res.ok) return await res.json();
@@ -101,7 +101,7 @@ async function fetchArchiveDaysFromListing(limit = 7) {
   try {
     for (const baseDir of ARCHIVE_BASE_DIRS) {
       try {
-        const res = await fetch(new URL(`${baseDir}/`, window.location.origin).toString());
+        const res = await fetch(new URL(`${baseDir}/`, window.location.href).toString());
         if (!res.ok) continue;
         const html = await res.text();
         const matches = Array.from(html.matchAll(/flights_(\d{4}-\d{2}-\d{2})\.sqlite\.gz/g)).map((m) => m[1]);
