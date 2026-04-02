@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 9100
-  },
-  {
-    "airport": "KDEN",
-    "flights": 59
+    "flights": 8992
   },
   {
     "airport": "CYYC",
-    "flights": 43
-  },
-  {
-    "airport": "KPHX",
-    "flights": 41
+    "flights": 51
   },
   {
     "airport": "KDFW",
-    "flights": 38
+    "flights": 36
   },
   {
-    "airport": "KORD",
-    "flights": 38
-  },
-  {
-    "airport": "LSZH",
+    "airport": "KIAD",
     "flights": 31
   },
   {
-    "airport": "KSLC",
+    "airport": "KATL",
     "flights": 28
   },
   {
-    "airport": "KLGA",
-    "flights": 27
+    "airport": "KDEN",
+    "flights": 26
+  },
+  {
+    "airport": "KSLC",
+    "flights": 22
   },
   {
     "airport": "CYYZ",
-    "flights": 24
+    "flights": 21
+  },
+  {
+    "airport": "KLGA",
+    "flights": 19
   },
   {
     "airport": "MMUN",
     "flights": 19
   },
   {
-    "airport": "KAUS",
+    "airport": "LEBL",
     "flights": 18
   },
   {
-    "airport": "KSEA",
-    "flights": 17
+    "airport": "VIDP",
+    "flights": 16
   },
   {
-    "airport": "KLAS",
-    "flights": 17
-  },
-  {
-    "airport": "KATL",
+    "airport": "KBOS",
     "flights": 16
   },
   {
     "airport": "SKBO",
-    "flights": 13
+    "flights": 16
+  },
+  {
+    "airport": "KLAS",
+    "flights": 16
+  },
+  {
+    "airport": "KORD",
+    "flights": 16
+  },
+  {
+    "airport": "LSZH",
+    "flights": 16
+  },
+  {
+    "airport": "EGKK",
+    "flights": 15
+  },
+  {
+    "airport": "KSEA",
+    "flights": 15
+  },
+  {
+    "airport": "MGGT",
+    "flights": 15
+  },
+  {
+    "airport": "KPHX",
+    "flights": 14
   },
   {
     "airport": "KEWR",
     "flights": 13
   },
   {
-    "airport": "ZGSZ",
+    "airport": "KJFK",
     "flights": 13
   },
   {
-    "airport": "EGKK",
+    "airport": "EHAM",
     "flights": 13
   },
   {
-    "airport": "CYVR",
-    "flights": 13
-  },
-  {
-    "airport": "VIDP",
+    "airport": "KBJC",
     "flights": 12
-  },
-  {
-    "airport": "KTPA",
-    "flights": 12
-  },
-  {
-    "airport": "KBOS",
-    "flights": 12
-  },
-  {
-    "airport": "CYUL",
-    "flights": 12
-  },
-  {
-    "airport": "ESSA",
-    "flights": 11
   }
 ]

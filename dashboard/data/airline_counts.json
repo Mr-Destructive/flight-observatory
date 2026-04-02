@@ -1,102 +1,102 @@
 [
   {
     "airline": "unknown",
-    "flights": 3600
-  },
-  {
-    "airline": "Southwest Airlines",
-    "flights": 483
-  },
-  {
-    "airline": "American Airlines",
-    "flights": 469
+    "flights": 3608
   },
   {
     "airline": "Delta Air Lines",
-    "flights": 458
+    "flights": 500
+  },
+  {
+    "airline": "American Airlines",
+    "flights": 474
+  },
+  {
+    "airline": "Southwest Airlines",
+    "flights": 472
   },
   {
     "airline": "United Airlines",
-    "flights": 436
+    "flights": 451
   },
   {
     "airline": "Ryanair",
-    "flights": 394
+    "flights": 387
   },
   {
     "airline": "SkyWest",
-    "flights": 206
+    "flights": 212
   },
   {
     "airline": "NetJets",
-    "flights": 158
-  },
-  {
-    "airline": "Alaska Airlines",
-    "flights": 140
+    "flights": 162
   },
   {
     "airline": "JetBlue Airways",
-    "flights": 121
-  },
-  {
-    "airline": "Republic Airlines",
-    "flights": 113
+    "flights": 125
   },
   {
     "airline": "Lufthansa",
-    "flights": 102
+    "flights": 125
+  },
+  {
+    "airline": "Republic Airlines",
+    "flights": 111
   },
   {
     "airline": "easyJet",
-    "flights": 100
+    "flights": 106
+  },
+  {
+    "airline": "Alaska Airlines",
+    "flights": 105
+  },
+  {
+    "airline": "Turkish Airlines",
+    "flights": 102
   },
   {
     "airline": "Bombardier Business Jet Solutions",
-    "flights": 99
-  },
-  {
-    "airline": "IndiGo Airlines",
-    "flights": 97
+    "flights": 92
   },
   {
     "airline": "Frontier Airlines",
     "flights": 90
   },
   {
-    "airline": "Envoy Air",
-    "flights": 85
+    "airline": "Air France",
+    "flights": 86
   },
   {
-    "airline": "Scandinavian Airlines System",
-    "flights": 82
+    "airline": "IndiGo Airlines",
+    "flights": 83
   },
   {
     "airline": "Air Canada",
-    "flights": 77
+    "flights": 82
   },
   {
     "airline": "KLM Royal Dutch Airlines",
+    "flights": 79
+  },
+  {
+    "airline": "British Airways",
     "flights": 75
   },
   {
     "airline": "WestJet",
-    "flights": 73
+    "flights": 74
   },
   {
-    "airline": "Air France",
-    "flights": 70
-  },
-  {
-    "airline": "Turkish Airlines",
-    "flights": 67
-  },
-  {
-    "airline": "Jet2.com",
-    "flights": 67
+    "airline": "Envoy Air",
+    "flights": 71
   },
   {
     "airline": "Allegiant Air",
-    "flights": 66
+    "flights": 70
+  },
+  {
+    "airline": "Vueling Airlines",
+    "flights": 69
   }
 ]
