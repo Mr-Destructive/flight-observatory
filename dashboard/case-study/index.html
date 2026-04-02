@@ -10,20 +10,57 @@
     <link rel="stylesheet" href="../styles.css" />
     <style>
       .case-study-shell { display: grid; gap: 22px; max-width: 1040px; }
+      body.light-mode .dashboard {
+        background: var(--bg-primary);
+      }
+      body.light-mode .dashboard::before {
+        opacity: 0.15;
+      }
       .hero-banner {
         background: transparent;
         border: 0;
         box-shadow: none;
         padding: 0;
       }
+      body.light-mode .hero-banner {
+        background: transparent;
+      }
       .hero-copy { max-width: 760px; }
       .study-list {
         display: grid;
         border-top: 1px solid rgba(148, 163, 184, 0.12);
       }
+      body.light-mode .study-list {
+        border-top-color: rgba(15, 23, 42, 0.08);
+      }
       .study-entry {
         padding: 22px 0;
         border-bottom: 1px solid rgba(148, 163, 184, 0.12);
+      }
+      body.light-mode .study-entry {
+        border-bottom-color: rgba(15, 23, 42, 0.08);
+        background: transparent;
+      }
+      body.light-mode .case-study-shell {
+        color: var(--text-primary);
+      }
+      body.light-mode .hero-copy h1,
+      body.light-mode .study-title,
+      body.light-mode .hero-kicker {
+        color: var(--text-primary);
+      }
+      body.light-mode .hero-copy h1,
+      body.light-mode .study-title {
+        color: var(--text-primary);
+      }
+      body.light-mode .hero-subtitle,
+      body.light-mode .hero-meta,
+      body.light-mode .study-copy,
+      body.light-mode .study-type {
+        color: var(--text-secondary);
+      }
+      body.light-mode .study-link {
+        color: var(--accent-cyan);
       }
       .study-type {
         font-family: var(--font-display);
@@ -62,6 +99,12 @@
         letter-spacing: 0.08em;
       }
       .study-link:hover { text-decoration: underline; }
+      body.light-mode .study-link:hover {
+        color: var(--accent-cyan);
+      }
+      body.light-mode .study-link {
+        color: var(--accent-cyan);
+      }
       .hero-meta {
         margin-top: 18px;
         font-family: var(--font-display);
@@ -79,6 +122,10 @@
         <div class="logo">Flight Observatory</div>
       </div>
         <div class="navbar-right">
+          <button class="theme-toggle" id="theme-toggle" data-theme-toggle type="button" style="margin-right: 16px;">
+            <span id="theme-icon">🌙</span>
+            <span id="theme-text">Dark Mode</span>
+          </button>
           <a href="../" class="nav-link">Live</a>
           <a href="../archive/" class="nav-link">Archive</a>
           <a href="./" class="nav-link active">Case Studies</a>
@@ -122,5 +169,6 @@
         </section>
       </main>
     </div>
+    <script src="/theme.js"></script>
   </body>
 </html>

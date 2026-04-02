@@ -15,6 +15,107 @@
         gap: 20px;
       }
 
+      body.light-mode .study-hero,
+      body.light-mode .study-stat,
+      body.light-mode .study-strip .metric,
+      body.light-mode .study-section,
+      body.light-mode .summary-panel,
+      body.light-mode .chart-card,
+      body.light-mode .table-shell,
+      body.light-mode .figure-grid figure {
+        background: rgba(255, 255, 255, 0.98) !important;
+        border-color: rgba(15, 23, 42, 0.08) !important;
+      }
+
+      body.light-mode .study-table {
+        background: #ffffff !important;
+        border-color: rgba(15, 23, 42, 0.08) !important;
+      }
+
+      body.light-mode .study-table,
+      body.light-mode .callout {
+        background: #ffffff !important;
+        border-color: rgba(15, 23, 42, 0.08) !important;
+      }
+
+      body.light-mode .study-links a,
+      body.light-mode .study-nav a {
+        background: #ffffff;
+        color: var(--text-secondary);
+        border-color: rgba(15, 23, 42, 0.08);
+      }
+
+      body.light-mode .study-links a.active,
+      body.light-mode .study-nav a.active {
+        background: rgba(22, 163, 74, 0.09);
+        color: var(--accent-green);
+      }
+
+      body.light-mode .study-hero h1,
+      body.light-mode .section-head h2,
+      body.light-mode .figure-grid figcaption {
+        color: var(--text-primary);
+      }
+
+      body.light-mode .study-lede,
+      body.light-mode .study-stat .meta,
+      body.light-mode .study-strip .metric .hint,
+      body.light-mode .section-head p,
+      body.light-mode .section-note {
+        color: var(--text-secondary);
+      }
+
+      body.light-mode .study-hero {
+        background:
+          radial-gradient(circle at top right, rgba(2, 132, 199, 0.08), transparent 28%),
+          linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(241, 245, 249, 0.96));
+      }
+
+      body.light-mode .study-section,
+      body.light-mode .figure-grid figure {
+        box-shadow: 0 14px 30px rgba(15, 23, 42, 0.06);
+      }
+
+      body.light-mode .study-table th {
+        color: var(--text-tertiary);
+      }
+
+      body.light-mode .study-table td {
+        color: var(--text-primary);
+      }
+
+      body.light-mode .study-table tr:last-child td {
+        border-bottom: 0;
+      }
+
+      body.light-mode figure.chart-frame {
+        background: #ffffff !important;
+        border-color: rgba(15, 23, 42, 0.08) !important;
+      }
+
+      body.light-mode figure.chart-frame figcaption {
+        color: var(--text-secondary);
+      }
+
+      body.light-mode figure.chart-frame img {
+        filter: invert(1) hue-rotate(180deg) brightness(1.07) contrast(0.92) !important;
+        background: #ffffff !important;
+      }
+
+      body.light-mode figure.chart-frame img.theme-media-swap {
+        filter: saturate(0.92) contrast(1.04) brightness(0.98) !important;
+        background: #ffffff !important;
+      }
+
+      figure.chart-frame img.theme-media-swap {
+        filter: invert(1) hue-rotate(180deg) brightness(1.07) contrast(0.92);
+        background: #ffffff;
+      }
+
+      body.light-mode .summary-panel h3 {
+        color: var(--text-tertiary);
+      }
+
       .study-hero {
         display: grid;
         grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.8fr);
@@ -280,6 +381,12 @@
         background: rgba(21, 28, 38, 0.74);
       }
 
+      body.light-mode .study-hero h1,
+      body.light-mode .study-kicker,
+      body.light-mode .section-kicker {
+        color: var(--text-primary);
+      }
+
       .summary-panel h3 {
         font-family: var(--font-display);
         font-size: 13px;
@@ -373,6 +480,10 @@
         <div class="logo">Flight Observatory</div>
       </div>
         <div class="navbar-right">
+          <button class="theme-toggle" id="theme-toggle" data-theme-toggle type="button" style="margin-right: 16px;">
+            <span id="theme-icon">🌙</span>
+            <span id="theme-text">Dark Mode</span>
+          </button>
           <a href="../../" class="nav-link">Live</a>
           <a href="../../archive/" class="nav-link">Archive</a>
           <a href="../" class="nav-link active">Case Studies</a>
@@ -671,20 +782,20 @@
             </div>
           </div>
           <div class="figure-grid">
-            <figure class="chart-frame">
-              <img src="./charts/time_between_consecutive_landings_takeoffs.svg" alt="Spacing between consecutive landings and takeoffs" />
-              <figcaption>Same-type spacing stays in the low-minute range on both sides of the operation.</figcaption>
-            </figure>
-            <figure class="chart-frame">
-              <img src="./charts/turnaround_gap_refresh_clean_horizontal.png" alt="Landing to next takeoff turnaround gap" />
-              <figcaption>The landing-to-next-takeoff handoff is the shortest operational gap in the set.</figcaption>
-            </figure>
-          </div>
-          <div class="figure-grid">
-            <figure class="chart-frame">
-              <img src="./charts/special_same_aircraft_ground_gap.svg" alt="Ground time for the same aircraft returning to takeoff" />
-              <figcaption>The same aircraft usually comes back in roughly an hour and a half, which fits a high-frequency rotation airport.</figcaption>
-            </figure>
+          <figure class="chart-frame">
+            <img class="theme-media-swap" src="./charts/time_between_consecutive_landings_takeoffs.svg" alt="Spacing between consecutive landings and takeoffs" />
+            <figcaption>Same-type spacing stays in the low-minute range on both sides of the operation.</figcaption>
+          </figure>
+          <figure class="chart-frame">
+            <img src="./charts/turnaround_gap_refresh_clean_horizontal.png" alt="Landing to next takeoff turnaround gap" />
+            <figcaption>The landing-to-next-takeoff handoff is the shortest operational gap in the set.</figcaption>
+          </figure>
+        </div>
+        <div class="figure-grid">
+          <figure class="chart-frame">
+            <img class="theme-media-swap" src="./charts/special_same_aircraft_ground_gap.svg" alt="Ground time for the same aircraft returning to takeoff" />
+            <figcaption>The same aircraft usually comes back in roughly an hour and a half, which fits a high-frequency rotation airport.</figcaption>
+          </figure>
             <figure class="chart-frame">
               <img src="./charts/special_time_in_airspace.svg" alt="Time aircraft spend in the airport flow" />
               <figcaption>Landings stay visible longer than takeoffs, which matches the longer approach phase.</figcaption>
@@ -769,11 +880,11 @@
               <img src="./charts/weekday_breakdown_clean.svg" alt="Weekday breakdown of Mumbai airport movements" />
               <figcaption>Saturday leads the sample. Monday is the quietest weekday.</figcaption>
             </figure>
-            <figure class="chart-frame">
-              <img src="./charts/special_domestic_international_proxy.svg" alt="Indian-registered versus foreign-registered aircraft split" />
-              <figcaption>Registration is a proxy, not a route label, but it still makes the traffic mix easy to read.</figcaption>
-            </figure>
-          </div>
+          <figure class="chart-frame">
+            <img class="theme-media-swap" src="./charts/special_domestic_international_proxy.svg" alt="Indian-registered versus foreign-registered aircraft split" />
+            <figcaption>Registration is a proxy, not a route label, but it still makes the traffic mix easy to read.</figcaption>
+          </figure>
+        </div>
         </section>
 
         <section class="study-section" id="takeaway">
@@ -847,5 +958,6 @@
         </section>
       </main>
     </div>
+    <script src="/theme.js"></script>
   </body>
 </html>

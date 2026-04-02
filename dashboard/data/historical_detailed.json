@@ -340,8 +340,8 @@
   },
   "speed_stats": {
     "min": 0.0,
-    "max": 2222.16,
-    "avg": 150.9
+    "max": 300.0,
+    "avg": 150.2
   },
   "adsb_type_distribution": [
     {
@@ -392,20 +392,20 @@
     },
     {
       "category": "Records",
-      "title": "Speed Record: 2222m/s",
-      "detail": "That's 4320 knots (6.48 Mach) - the fastest aircraft recorded",
+      "title": "Speed Record: 300m/s",
+      "detail": "That's 583 knots (0.87 Mach) - the fastest aircraft recorded",
       "icon": "\u26a1"
     },
     {
       "category": "Operations",
       "title": "Avg Altitude: 6,454m",
-      "detail": "Aircraft cruise at 21ft on average",
+      "detail": "Aircraft cruise at about 21,175ft on average",
       "icon": "\ud83d\udeeb"
     },
     {
       "category": "Operations",
-      "title": "Avg Speed: 151m/s",
-      "detail": "Average ground speed is 293 knots",
+      "title": "Avg Speed: 150m/s",
+      "detail": "Average ground speed is 292 knots",
       "icon": "\ud83d\ude80"
     },
     {

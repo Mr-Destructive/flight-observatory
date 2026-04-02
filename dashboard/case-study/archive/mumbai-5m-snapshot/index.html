@@ -20,6 +20,74 @@
         gap: 18px;
       }
 
+      body.light-mode .research-hero,
+      body.light-mode .metrics-cluster,
+      body.light-mode .metric-card,
+      body.light-mode .research-panel,
+      body.light-mode .research-list li,
+      body.light-mode .identity-card,
+      body.light-mode .chart-card,
+      body.light-mode .table-shell,
+      body.light-mode .info-box {
+        background: rgba(255, 255, 255, 0.98) !important;
+        border-color: rgba(15, 23, 42, 0.08) !important;
+      }
+
+      body.light-mode .research-list li a,
+      body.light-mode .research-note,
+      body.light-mode .research-subnote,
+      body.light-mode .metrics-cluster-head p,
+      body.light-mode .section-head p,
+      body.light-mode .hero-subtitle {
+        color: var(--text-secondary);
+      }
+
+      body.light-mode .research-hero h1,
+      body.light-mode .metrics-cluster-head h3,
+      body.light-mode .research-panel .section-head h2,
+      body.light-mode .metric-card .metric-value {
+        color: var(--text-primary);
+      }
+
+      body.light-mode .research-meta .info-box,
+      body.light-mode .research-panel,
+      body.light-mode .metrics-cluster,
+      body.light-mode .identity-card {
+        box-shadow: 0 14px 30px rgba(15, 23, 42, 0.06);
+      }
+
+      body.light-mode .research-hero {
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(241, 245, 249, 0.96));
+      }
+
+      body.light-mode .metrics-cluster,
+      body.light-mode .research-panel,
+      body.light-mode .chart-card,
+      body.light-mode .identity-card {
+        box-shadow: 0 14px 30px rgba(15, 23, 42, 0.06);
+      }
+
+      body.light-mode .research-chart,
+      body.light-mode .research-chart.wide {
+        background: #ffffff !important;
+        border-color: rgba(15, 23, 42, 0.08) !important;
+      }
+
+      body.light-mode .research-chart {
+        box-shadow: 0 14px 30px rgba(15, 23, 42, 0.06);
+      }
+
+      body.light-mode .research-chart img {
+        filter: invert(1) hue-rotate(180deg) brightness(1.07) contrast(0.92) !important;
+        background: #ffffff !important;
+      }
+
+      body.light-mode .research-chart h3,
+      body.light-mode .research-note,
+      body.light-mode .research-subnote {
+        color: var(--text-secondary);
+      }
+
       .research-hero {
         grid-template-columns: minmax(0, 1.55fr) minmax(300px, 0.85fr);
       }
@@ -547,6 +615,10 @@
         <div class="logo">Flight Observatory</div>
       </div>
         <div class="navbar-right">
+          <button class="theme-toggle" id="theme-toggle" data-theme-toggle type="button" style="margin-right: 16px;">
+            <span id="theme-icon">🌙</span>
+            <span id="theme-text">Dark Mode</span>
+          </button>
           <a href="./" class="nav-link">Live</a>
           <a href="./archive/" class="nav-link">Archive</a>
           <a href="./case-study/" class="nav-link active">Case Studies</a>
@@ -1356,5 +1428,6 @@
         document.body.innerHTML = `<pre style="padding:24px;color:#fff;background:#0b1118">Failed to load bundle: ${err?.message ?? err}</pre>`;
       });
     </script>
+    <script src="/theme.js"></script>
   </body>
 </html>

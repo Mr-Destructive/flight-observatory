@@ -44,99 +44,94 @@
     },
     {
       "tier": "VFAST (300-400)",
-      "flights": 2813,
-      "avg_alt": 10747.0
-    },
-    {
-      "tier": "DEMON (>400)",
-      "flights": 191,
-      "avg_alt": 9012.0
+      "flights": 2,
+      "avg_alt": 10058.0
     }
   ],
   "efficiency_curve": [
     {
       "altitude": 1000,
-      "flights": 62382,
-      "avg_speed": 90.0,
-      "efficiency": 45.15
+      "flights": 78311,
+      "avg_speed": 80.0,
+      "efficiency": 40.11
     },
     {
       "altitude": 2000,
-      "flights": 40792,
-      "avg_speed": 112.0,
-      "efficiency": 37.49
+      "flights": 43574,
+      "avg_speed": 108.0,
+      "efficiency": 35.94
     },
     {
       "altitude": 3000,
-      "flights": 31404,
-      "avg_speed": 144.0,
-      "efficiency": 36.1
+      "flights": 31752,
+      "avg_speed": 143.0,
+      "efficiency": 35.75
     },
     {
       "altitude": 4000,
-      "flights": 24861,
-      "avg_speed": 165.0,
-      "efficiency": 33.05
+      "flights": 25035,
+      "avg_speed": 164.0,
+      "efficiency": 32.81
     },
     {
       "altitude": 5000,
-      "flights": 23179,
-      "avg_speed": 179.0,
-      "efficiency": 29.77
+      "flights": 23305,
+      "avg_speed": 178.0,
+      "efficiency": 29.6
     },
     {
       "altitude": 6000,
-      "flights": 24192,
-      "avg_speed": 190.0,
-      "efficiency": 27.15
+      "flights": 24323,
+      "avg_speed": 189.0,
+      "efficiency": 27.0
     },
     {
       "altitude": 7000,
-      "flights": 28694,
+      "flights": 28785,
       "avg_speed": 200.0,
-      "efficiency": 25.05
+      "efficiency": 24.97
     },
     {
       "altitude": 8000,
-      "flights": 27811,
-      "avg_speed": 218.0,
-      "efficiency": 24.18
+      "flights": 27874,
+      "avg_speed": 216.0,
+      "efficiency": 24.05
     },
     {
       "altitude": 9000,
-      "flights": 46040,
-      "avg_speed": 226.0,
-      "efficiency": 22.63
+      "flights": 46005,
+      "avg_speed": 224.0,
+      "efficiency": 22.43
     },
     {
       "altitude": 10000,
-      "flights": 150280,
-      "avg_speed": 233.0,
-      "efficiency": 21.14
+      "flights": 149804,
+      "avg_speed": 230.0,
+      "efficiency": 20.93
     },
     {
       "altitude": 11000,
-      "flights": 93084,
-      "avg_speed": 234.0,
-      "efficiency": 19.51
+      "flights": 92567,
+      "avg_speed": 232.0,
+      "efficiency": 19.33
     },
     {
       "altitude": 12000,
-      "flights": 22954,
-      "avg_speed": 232.0,
-      "efficiency": 17.81
+      "flights": 22909,
+      "avg_speed": 230.0,
+      "efficiency": 17.68
     },
     {
       "altitude": 13000,
-      "flights": 10246,
+      "flights": 10268,
       "avg_speed": 227.0,
-      "efficiency": 16.25
+      "efficiency": 16.2
     },
     {
       "altitude": 14000,
-      "flights": 662,
+      "flights": 664,
       "avg_speed": 241.0,
-      "efficiency": 16.09
+      "efficiency": 16.05
     }
   ],
   "busiest_corridors": [
@@ -211,119 +206,119 @@
   "directional_traffic": [
     {
       "direction": "WESTBOUND",
-      "flights": 205480,
+      "flights": 205421,
       "avg_speed": 164.0,
       "avg_alt": 6815.0
     },
     {
       "direction": "EASTBOUND",
-      "flights": 198689,
-      "avg_speed": 179.0,
-      "avg_alt": 6675.0
+      "flights": 196156,
+      "avg_speed": 177.0,
+      "avg_alt": 6622.0
     },
     {
       "direction": "SOUTHBOUND",
-      "flights": 169886,
-      "avg_speed": 160.0,
-      "avg_alt": 6064.0
+      "flights": 169688,
+      "avg_speed": 159.0,
+      "avg_alt": 6059.0
     },
     {
       "direction": "NORTHBOUND",
-      "flights": 169366,
+      "flights": 169154,
       "avg_speed": 157.0,
-      "avg_alt": 6148.0
+      "avg_alt": 6144.0
     }
   ],
   "speed_leaderboard": [
     {
-      "icao24": "155c0f",
-      "max_speed": 2222.16,
-      "avg_alt": null,
-      "region": "unknown"
-    },
-    {
-      "icao24": "06a14a",
-      "max_speed": 2111.33,
-      "avg_alt": 7043.0,
-      "region": "unknown"
-    },
-    {
-      "icao24": "507cba",
-      "max_speed": 1968.94,
-      "avg_alt": 10215.0,
-      "region": "unknown"
-    },
-    {
-      "icao24": "8990f4",
-      "max_speed": 1893.63,
-      "avg_alt": 3955.0,
-      "region": "unknown"
-    },
-    {
-      "icao24": "152040",
-      "max_speed": 1861.2,
-      "avg_alt": 6134.0,
-      "region": "unknown"
-    },
-    {
-      "icao24": "155c10",
-      "max_speed": 1841.43,
-      "avg_alt": null,
-      "region": "unknown"
-    },
-    {
-      "icao24": "151df2",
-      "max_speed": 1745.5,
-      "avg_alt": 9510.0,
-      "region": "unknown"
-    },
-    {
-      "icao24": "155c5c",
-      "max_speed": 1675.88,
-      "avg_alt": null,
-      "region": "unknown"
-    },
-    {
-      "icao24": "600854",
-      "max_speed": 1654.67,
-      "avg_alt": 4249.0,
-      "region": "unknown"
-    },
-    {
-      "icao24": "155be0",
-      "max_speed": 1587.9,
-      "avg_alt": null,
-      "region": "unknown"
-    },
-    {
-      "icao24": "155bd1",
-      "max_speed": 1568.47,
-      "avg_alt": 10058.0,
-      "region": "unknown"
-    },
-    {
-      "icao24": "60084e",
-      "max_speed": 1523.67,
-      "avg_alt": 10973.0,
-      "region": "unknown"
-    },
-    {
-      "icao24": "151e39",
-      "max_speed": 1455.02,
-      "avg_alt": 10051.0,
-      "region": "unknown"
-    },
-    {
-      "icao24": "155c54",
-      "max_speed": 1373.79,
-      "avg_alt": 2431.0,
-      "region": "unknown"
-    },
-    {
-      "icao24": "151dfc",
-      "max_speed": 1354.37,
+      "icao24": "7609b7",
+      "max_speed": 299.85,
       "avg_alt": 10668.0,
-      "region": "unknown"
+      "region": "EPRJ"
+    },
+    {
+      "icao24": "a5fff9",
+      "max_speed": 299.84,
+      "avg_alt": 10160.0,
+      "region": "YHML"
+    },
+    {
+      "icao24": "e06588",
+      "max_speed": 299.83,
+      "avg_alt": 10260.0,
+      "region": "FLEC"
+    },
+    {
+      "icao24": "c07fb9",
+      "max_speed": 299.72,
+      "avg_alt": 10668.0,
+      "region": "UEST"
+    },
+    {
+      "icao24": "3483c9",
+      "max_speed": 299.63,
+      "avg_alt": 11582.0,
+      "region": "FLKK"
+    },
+    {
+      "icao24": "aa01a2",
+      "max_speed": 299.49,
+      "avg_alt": 9641.0,
+      "region": "YHML"
+    },
+    {
+      "icao24": "346355",
+      "max_speed": 299.38,
+      "avg_alt": 11129.0,
+      "region": "FLEC"
+    },
+    {
+      "icao24": "0180b6",
+      "max_speed": 299.27,
+      "avg_alt": 8633.0,
+      "region": "HSAT"
+    },
+    {
+      "icao24": "868428",
+      "max_speed": 299.2,
+      "avg_alt": 8024.0,
+      "region": "YSRN"
+    },
+    {
+      "icao24": "495066",
+      "max_speed": 299.2,
+      "avg_alt": 11582.0,
+      "region": "FLKK"
+    },
+    {
+      "icao24": "7804c7",
+      "max_speed": 299.1,
+      "avg_alt": 9449.0,
+      "region": "YHML"
+    },
+    {
+      "icao24": "710122",
+      "max_speed": 299.09,
+      "avg_alt": 11765.0,
+      "region": "HABC"
+    },
+    {
+      "icao24": "3c4b2c",
+      "max_speed": 298.74,
+      "avg_alt": 10363.0,
+      "region": "FVGG"
+    },
+    {
+      "icao24": "3c4586",
+      "max_speed": 298.73,
+      "avg_alt": 10973.0,
+      "region": "FIMR"
+    },
+    {
+      "icao24": "48436c",
+      "max_speed": 298.65,
+      "avg_alt": 9936.0,
+      "region": "YBIR"
     }
   ],
   "holding_patterns": [
@@ -391,15 +386,15 @@
   "wind_effect": [
     {
       "route": "EASTBOUND (Tailwind)",
-      "flights": 397431,
+      "flights": 395807,
       "avg_speed": 153.0,
-      "avg_alt": 6430.0
+      "avg_alt": 6412.0
     },
     {
       "route": "WESTBOUND (Headwind)",
-      "flights": 401380,
-      "avg_speed": 157.0,
-      "avg_alt": 6498.0
+      "flights": 399958,
+      "avg_speed": 156.0,
+      "avg_alt": 6482.0
     }
   ],
   "regional_density": [

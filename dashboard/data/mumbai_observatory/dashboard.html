@@ -1,4 +1,48 @@
-{
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mumbai Airspace Observatory</title>
+<style>
+:root {
+  --bg: #0b1118;
+  --panel: rgba(15, 23, 36, 0.9);
+  --panel-2: rgba(18, 29, 44, 0.88);
+  --line: rgba(90, 112, 142, 0.28);
+  --text: #e5eef9;
+  --muted: #94a3b8;
+  --accent: #20e3b2;
+  --accent2: #22d3ee;
+  --warn: #f59e0b;
+}
+body { margin: 0; background: radial-gradient(circle at top left, rgba(34,211,238,.12), transparent 30%), radial-gradient(circle at 80% 10%, rgba(32,227,178,.08), transparent 20%), var(--bg); color: var(--text); font: 14px/1.5 Inter, system-ui, sans-serif; }
+main { max-width: 1440px; margin: 0 auto; padding: 24px; }
+header { display:flex; justify-content:space-between; gap:16px; align-items:flex-end; margin-bottom: 20px; }
+h1 { margin:0; font-size: 32px; letter-spacing: .02em; }
+.sub { color: var(--muted); margin-top: 6px; }
+.grid { display:grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 12px; }
+.card { background: linear-gradient(180deg, rgba(17,26,40,.95), rgba(12,18,28,.95)); border: 1px solid var(--line); border-radius: 18px; padding: 16px; box-shadow: 0 20px 50px rgba(0,0,0,.25); }
+.card .label { color: var(--muted); text-transform: uppercase; letter-spacing: .12em; font-size: 11px; }
+.card .value { font-size: 28px; font-weight: 800; margin-top: 8px; }
+.card .small { color: var(--muted); margin-top: 6px; }
+.section { margin-top: 18px; background: var(--panel); border: 1px solid var(--line); border-radius: 22px; overflow: hidden; }
+.section h2 { margin:0; padding: 18px 18px 0; font-size: 18px; }
+.section p { margin: 8px 18px 18px; color: var(--muted); }
+.band { display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 12px; padding: 0 18px 18px; }
+.band img { width: 100%; border-radius: 16px; border: 1px solid var(--line); background: #0f1724; }
+table { width:100%; border-collapse: collapse; }
+th, td { padding: 10px 12px; border-bottom: 1px solid rgba(148,163,184,.14); text-align: left; }
+th { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .08em; }
+.kpi-row { display:grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 12px; padding: 0 18px 18px; }
+.list { display:grid; gap: 8px; padding: 0 18px 18px; }
+.item { display:flex; justify-content:space-between; gap:12px; padding: 10px 12px; background: var(--panel-2); border:1px solid var(--line); border-radius: 14px; }
+@media (max-width: 1100px) { .grid { grid-template-columns: repeat(2, minmax(0,1fr)); } .band, .kpi-row { grid-template-columns: 1fr; } }
+@media (max-width: 700px) { main { padding: 14px; } .grid { grid-template-columns: 1fr; } header { flex-direction: column; align-items:flex-start; } }
+</style>
+</head>
+<body>
+<script id="bundle-data" type="application/json">{
   "dataset": {
     "source": "ADS-B Exchange readsb-hist samples",
     "scope": "BOM / VABB center with 1500 km radius",
@@ -4954,4 +4998,107 @@
       "points": 29591
     }
   ]
-}
+}</script>
+<main>
+  <header>
+    <div>
+      <h1>Mumbai Airspace Observatory</h1>
+      <div class="sub">A compact, human-readable view of the first-day monthly sample around BOM / VABB.</div>
+    </div>
+    <div class="sub">2016-07 - 2026-03</div>
+  </header>
+
+  <section class="grid" id="cards"></section>
+
+  <section class="section">
+    <h2>What matters if you live in Mumbai</h2>
+    <p>These cards translate the raw sample into something useful for a person on the ground.</p>
+    <div class="kpi-row" id="human-cards"></div>
+  </section>
+
+  <section class="section">
+    <h2>Traffic over time</h2>
+    <p>Monthly trend, local hour profile, and weekday pattern.</p>
+    <div class="band">
+      <img src="charts/monthly_trend.svg" alt="Monthly trend" />
+      <img src="charts/local_hour_points.svg" alt="Local hour points" />
+      <img src="charts/weekday_points.svg" alt="Weekday points" />
+      <img src="charts/speed_by_sector.svg" alt="Speed by sector" />
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Speed behavior</h2>
+    <p>Near-airport traffic slows down. High-altitude cruise stays fast. The corridor matters more than the city center.</p>
+    <div class="band">
+      <img src="charts/speed_by_distance.svg" alt="Speed by distance" />
+      <img src="charts/speed_by_altitude.svg" alt="Speed by altitude" />
+      <img src="charts/slow_cells.svg" alt="Slow cells" style="grid-column: 1 / -1;" />
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Distance bands</h2>
+    <table id="distance-table"></table>
+  </section>
+
+  <section class="section">
+    <h2>Altitude bands</h2>
+    <table id="altitude-table"></table>
+  </section>
+
+  <section class="section">
+    <h2>Recurring aircraft</h2>
+    <p>These hex codes keep showing up across multiple months in the sample.</p>
+    <div class="list" id="recurring-list"></div>
+  </section>
+</main>
+<script>
+(async () => {
+  const data = JSON.parse(document.getElementById('bundle-data').textContent);
+  const fmt = (value, digits = 1) => value == null ? '--' : Number(value).toFixed(digits);
+  const cards = [
+    ['Snapshots', data.totals.snapshots.toLocaleString(), 'All sample snapshots processed'],
+    ['Points', data.totals.points.toLocaleString(), 'Aircraft positions inside the Mumbai radius'],
+    ['Aircraft', data.totals.unique_hex.toLocaleString(), 'Unique aircraft hex codes'],
+    ['Callsigns', data.totals.unique_callsigns.toLocaleString(), 'Distinct callsigns seen'],
+    ['Avg speed', `${fmt(data.totals.avg_speed)} m/s`, 'Overall average speed'],
+    ['Median speed', `${fmt(data.totals.median_speed)} m/s`, 'Middle of the speed distribution'],
+    ['P90 speed', `${fmt(data.totals.p90_speed)} m/s`, 'Fast tail of the distribution'],
+    ['Avg altitude', `${fmt(data.totals.avg_altitude, 0)} m`, 'Mean barometric altitude'],
+  ];
+    document.getElementById('cards').innerHTML = cards.map(([label, value, small]) => `
+    <div class="card"><div class="label">${label}</div><div class="value">${value}</div><div class="small">${small}</div></div>
+  `).join('');
+
+  const human = [
+    [`${fmt(data.human.near_airport_visible_avg_50km)}`, 'Aircraft visible per active snapshot within 50 km'],
+    [`${fmt(data.human.near_airport_visible_avg_100km)}`, 'Aircraft visible per active snapshot within 100 km'],
+    [`${data.human.busiest_local_hour.toString().padStart(2, '0')}:00`, 'Busiest local hour in Mumbai time'],
+    [`${data.human.busiest_weekday}`, 'Busiest weekday'],
+    [`${fmt(data.human.weekend_share * 100)}%`, 'Weekend share of visible points'],
+    [`${fmt(data.human.covid_drop_2020_vs_2019_pct)}%`, '2020 drop vs 2019'],
+  ];
+  document.getElementById('human-cards').innerHTML = human.map(([value, label]) => `
+    <div class="card"><div class="value" style="font-size: 24px">${value}</div><div class="small">${label}</div></div>
+  `).join('');
+
+  const dist = data.distance_bands;
+  document.getElementById('distance-table').innerHTML = `
+    <thead><tr><th>Band</th><th>Points</th><th>Avg speed</th><th>Avg altitude</th></tr></thead>
+    <tbody>${dist.map(r => `<tr><td>${r.band}</td><td>${r.points.toLocaleString()}</td><td>${fmt(r.avg_speed)} m/s</td><td>${fmt(r.avg_altitude, 0)} m</td></tr>`).join('')}</tbody>
+  `;
+
+  const alt = data.altitude_bands;
+  document.getElementById('altitude-table').innerHTML = `
+    <thead><tr><th>Band</th><th>Points</th><th>Avg speed</th></tr></thead>
+    <tbody>${alt.map(r => `<tr><td>${r.band}</td><td>${r.points.toLocaleString()}</td><td>${fmt(r.avg_speed)} m/s</td></tr>`).join('')}</tbody>
+  `;
+
+  document.getElementById('recurring-list').innerHTML = data.recurring_aircraft.map(r => `
+    <div class="item"><span>${r.hex}</span><span>${r.months_seen} months | ${r.points.toLocaleString()} points | ${fmt(r.avg_speed)} m/s</span></div>
+  `).join('');
+})();
+</script>
+</body>
+</html>
