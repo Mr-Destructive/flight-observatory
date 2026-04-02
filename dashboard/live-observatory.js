@@ -41,24 +41,27 @@ const PLANE_SVG = (color) => `
   <path d="M21 16L21 14L13 9L13 3.5C13 2.67 12.33 2 11.5 2C10.67 2 10 2.67 10 3.5L10 9L2 14L2 16L10 13.5L10 19L8 20.5L8 22L11.5 21L15 22L15 20.5L13 19L13 13.5L21 16Z" fill="${color}"/>
 </svg>`;
 
-function resolveDataPath(path) {
-  const normalized = String(path).replace(/^\.\//, "");
-  if (normalized.startsWith("/")) return normalized;
-  return `/${normalized}`;
-}
-
 async function fetchJson(path, optional = false) {
+  const normalized = String(path).replace(/^\.\//, "").replace(/^\/+/, "");
+  const candidates = Array.from(new Set([
+    `/${normalized}`,
+    `/dashboard/${normalized}`,
+  ]));
+
   try {
-    const res = await fetch(resolveDataPath(path), { cache: "no-store" });
-    if (!res.ok) {
-      if (optional) return null;
-      throw new Error(`HTTP ${res.status}`);
+    for (const candidate of candidates) {
+      try {
+        const res = await fetch(candidate, { cache: "no-store" });
+        if (res.ok) return await res.json();
+      } catch (err) {
+        // Try the next candidate.
+      }
     }
-    return await res.json();
   } catch (err) {
     if (!optional) console.error(`Fetch error for ${path}:`, err);
-    return null;
   }
+  if (!optional) console.error(`Fetch error for ${path}:`, new Error("No archive data root matched"));
+  return null;
 }
 
 async function fetchOpenSkyStates(bounds) {
@@ -215,8 +218,10 @@ async function init() {
   applyTheme();
 
   try {
-    const res = await fetch("/data/airports_meta.json");
-    if (res.ok) state.airports = await res.json();
+    state.airports =
+      (await fetchJson("data/airports_meta.json", true)) ||
+      (await fetchJson("airports_meta.json", true)) ||
+      [];
   } catch (e) { console.error("Airport DB Load Error"); }
 
   initMap();

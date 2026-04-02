@@ -140,14 +140,26 @@ export async function loadArchiveDb(day, options) {
   const fetchFn = options?.fetchFn || fetch;
   const initSqlJs = options?.initSqlJs;
   const baseDir = options?.baseDir || "archives";
+  const baseDirs = Array.from(new Set([baseDir, ...(options?.baseDirs || [])].filter(Boolean)));
 
   if (!initSqlJs) {
     throw new Error("initSqlJs must be provided.");
   }
 
-  const url = buildArchivePath(day, baseDir);
-  const res = await fetchFn(url);
-  if (!res.ok) {
+  let res = null;
+  for (const dir of baseDirs) {
+    const url = buildArchivePath(day, dir);
+    try {
+      const candidate = await fetchFn(url);
+      if (candidate?.ok) {
+        res = candidate;
+        break;
+      }
+    } catch (err) {
+      // try next dir
+    }
+  }
+  if (!res) {
     throw new Error(`Archive not found: ${day}`);
   }
   const gzBuffer = await res.arrayBuffer();
@@ -164,14 +176,26 @@ export async function loadArchiveDbRaw(day, options) {
   const fetchFn = options?.fetchFn || fetch;
   const initSqlJs = options?.initSqlJs;
   const baseDir = options?.baseDir || "archives";
+  const baseDirs = Array.from(new Set([baseDir, ...(options?.baseDirs || [])].filter(Boolean)));
 
   if (!initSqlJs) {
     throw new Error("initSqlJs must be provided.");
   }
 
-  const url = buildArchivePath(day, baseDir);
-  const res = await fetchFn(url);
-  if (!res.ok) {
+  let res = null;
+  for (const dir of baseDirs) {
+    const url = buildArchivePath(day, dir);
+    try {
+      const candidate = await fetchFn(url);
+      if (candidate?.ok) {
+        res = candidate;
+        break;
+      }
+    } catch (err) {
+      // try next dir
+    }
+  }
+  if (!res) {
     throw new Error(`Archive not found: ${day}`);
   }
   const gzBuffer = await res.arrayBuffer();

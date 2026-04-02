@@ -13,8 +13,12 @@ const sqlArchiveLoader = () =>
   initSqlJs({
     locateFile: (file) => `https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.10.2/${file}`,
   });
-const ASSET_ROOT = window.location.pathname.includes("/archive/") ? "/" : "./";
-const ARCHIVE_BASE_DIR = window.location.pathname.includes("/archive/") ? "/archives" : "archives";
+const ASSET_ROOTS = window.location.pathname.includes("/archive/")
+  ? ["/", "/dashboard/"]
+  : ["./", "/", "/dashboard/"];
+const ARCHIVE_BASE_DIRS = window.location.pathname.includes("/archive/")
+  ? ["/archives", "/dashboard/archives"]
+  : ["archives", "/archives", "/dashboard/archives"];
 const archiveDbCache = new Map();
 let historicalMap;
 let historicalLayer;
@@ -45,9 +49,16 @@ window.addEventListener("themechange", refreshHistoricalTheme);
 async function fetchJson(path) {
   try {
     const normalized = String(path).replace(/^\.\//, "");
-    const res = await fetch(new URL(`${ASSET_ROOT}${normalized}`, window.location.origin).toString());
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    return await res.json();
+    for (const root of ASSET_ROOTS) {
+      const candidate = new URL(`${root}${normalized}`.replace(/\/{2,}/g, "/"), window.location.origin).toString();
+      try {
+        const res = await fetch(candidate);
+        if (res.ok) return await res.json();
+      } catch (err) {
+        // try next root
+      }
+    }
+    throw new Error("No matching asset root");
   } catch (err) {
     console.error(`Fetch error for ${path}:`, err);
     return null;
@@ -56,12 +67,19 @@ async function fetchJson(path) {
 
 async function fetchArchiveDaysFromListing() {
   try {
-    const res = await fetch(new URL(`${ARCHIVE_BASE_DIR}/`, window.location.origin).toString());
-    if (!res.ok) return [];
-    const html = await res.text();
-    const matches = Array.from(html.matchAll(/flights_(\d{4}-\d{2}-\d{2})\.sqlite\.gz/g)).map((m) => m[1]);
-    if (!matches.length) return [];
-    return Array.from(new Set(matches)).sort((a, b) => String(b).localeCompare(String(a)));
+    for (const baseDir of ARCHIVE_BASE_DIRS) {
+      try {
+        const res = await fetch(new URL(`${baseDir}/`, window.location.origin).toString());
+        if (!res.ok) continue;
+        const html = await res.text();
+        const matches = Array.from(html.matchAll(/flights_(\d{4}-\d{2}-\d{2})\.sqlite\.gz/g)).map((m) => m[1]);
+        if (!matches.length) continue;
+        return Array.from(new Set(matches)).sort((a, b) => String(b).localeCompare(String(a)));
+      } catch (err) {
+        continue;
+      }
+    }
+    return [];
   } catch (err) {
     console.warn("Archive listing lookup failed:", err);
     return [];
@@ -763,6 +781,7 @@ async function getArchiveDb(day) {
   const db = await loadArchiveDbRaw(day, {
     initSqlJs: sqlArchiveLoader,
     baseDir: ARCHIVE_BASE_DIR,
+    baseDirs: ["/dashboard/archives"],
   });
   archiveDbCache.set(day, db);
   return db;

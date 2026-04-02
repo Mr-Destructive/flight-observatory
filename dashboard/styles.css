@@ -1127,6 +1127,167 @@ body.light-mode .research-chart .chart-title {
   color: var(--text-secondary);
 }
 
+figure.chart-frame,
+.research-chart,
+.chart-card {
+  position: relative;
+}
+
+figure.chart-frame img,
+figure.chart-frame canvas,
+.research-chart img,
+.research-chart canvas,
+.chart-card canvas,
+.behavior-card canvas {
+  cursor: zoom-in;
+}
+
+.chart-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 6000;
+  display: none;
+}
+
+.chart-lightbox.is-visible {
+  display: grid;
+  place-items: center;
+}
+
+.chart-lightbox__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(2, 6, 23, 0.72);
+  backdrop-filter: blur(12px);
+}
+
+.chart-lightbox__panel {
+  position: relative;
+  width: min(94vw, 1400px);
+  max-height: calc(100vh - 48px);
+  margin: 24px;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 24px;
+  box-shadow: 0 28px 60px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+}
+
+body.light-mode .chart-lightbox__panel {
+  background: #ffffff;
+  border-color: rgba(15, 23, 42, 0.1);
+}
+
+.chart-lightbox__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 18px 20px 14px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.chart-lightbox__meta {
+  display: grid;
+  gap: 6px;
+}
+
+.chart-lightbox__kicker {
+  font-family: var(--font-display);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+}
+
+.chart-lightbox__title {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+
+.chart-lightbox__caption {
+  color: var(--text-secondary);
+  font-size: 12px;
+  line-height: 1.5;
+  max-width: 72ch;
+}
+
+.chart-lightbox__actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.chart-lightbox__button {
+  border: 1px solid var(--border-color);
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  border-radius: 12px;
+  padding: 9px 12px;
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.chart-lightbox__button:hover {
+  border-color: rgba(0, 218, 243, 0.35);
+}
+
+.chart-lightbox__close {
+  min-width: 40px;
+}
+
+.chart-lightbox__body {
+  flex: 1;
+  min-height: 0;
+  padding: 16px;
+  display: grid;
+  place-items: center;
+  overflow: auto;
+}
+
+.chart-lightbox__media {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.chart-lightbox__canvas-shell {
+  width: min(100%, 1320px);
+  height: min(72vh, 760px);
+  display: grid;
+  place-items: center;
+}
+
+.chart-lightbox__canvas-shell canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.chart-lightbox__placeholder {
+  display: block;
+  width: 100%;
+  min-height: 260px;
+}
+
+body.light-mode .chart-lightbox__backdrop {
+  background: rgba(255, 255, 255, 0.48);
+}
+
+body.light-mode .chart-lightbox__button {
+  background: #ffffff;
+}
+
 .chart-card.wide {
   grid-column: 1 / -1;
   min-height: 400px;

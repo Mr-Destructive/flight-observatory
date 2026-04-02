@@ -6,8 +6,12 @@ import {
   summarizeDbWithFilters,
 } from "./history-archive.mjs";
 
-const ASSET_ROOT = window.location.pathname.includes("/archive/") ? "/" : "./";
-const ARCHIVE_BASE_DIR = window.location.pathname.includes("/archive/") ? "/archives" : "archives";
+const ASSET_ROOTS = window.location.pathname.includes("/archive/")
+  ? ["/", "/dashboard/"]
+  : ["./", "/", "/dashboard/"];
+const ARCHIVE_BASE_DIRS = window.location.pathname.includes("/archive/")
+  ? ["/archives", "/dashboard/archives"]
+  : ["archives", "/archives", "/dashboard/archives"];
 const charts = new Map();
 Chart.defaults.color = "#dce3f0";
 Chart.defaults.font = {
@@ -76,9 +80,16 @@ async function flushUi() {
 async function fetchJson(path) {
   try {
     const normalized = String(path).replace(/^\.\//, "");
-    const res = await fetch(new URL(`${ASSET_ROOT}${normalized}`, window.location.origin).toString());
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    return await res.json();
+    for (const root of ASSET_ROOTS) {
+      const candidate = new URL(`${root}${normalized}`.replace(/\/{2,}/g, "/"), window.location.origin).toString();
+      try {
+        const res = await fetch(candidate);
+        if (res.ok) return await res.json();
+      } catch (err) {
+        // try next root
+      }
+    }
+    throw new Error("No matching asset root");
   } catch (err) {
     console.error(`Fetch error for ${path}:`, err);
     return null;
@@ -88,14 +99,21 @@ async function fetchJson(path) {
 async function fetchArchiveDaysFromListing(limit = 7) {
   const count = Math.max(1, limit);
   try {
-    const res = await fetch(new URL(`${ARCHIVE_BASE_DIR}/`, window.location.origin).toString());
-    if (!res.ok) return [];
-    const html = await res.text();
-    const matches = Array.from(html.matchAll(/flights_(\d{4}-\d{2}-\d{2})\.sqlite\.gz/g)).map((m) => m[1]);
-    if (!matches.length) return [];
-    return Array.from(new Set(matches))
-      .sort((a, b) => String(b).localeCompare(String(a)))
-      .slice(0, count);
+    for (const baseDir of ARCHIVE_BASE_DIRS) {
+      try {
+        const res = await fetch(new URL(`${baseDir}/`, window.location.origin).toString());
+        if (!res.ok) continue;
+        const html = await res.text();
+        const matches = Array.from(html.matchAll(/flights_(\d{4}-\d{2}-\d{2})\.sqlite\.gz/g)).map((m) => m[1]);
+        if (!matches.length) continue;
+        return Array.from(new Set(matches))
+          .sort((a, b) => String(b).localeCompare(String(a)))
+          .slice(0, count);
+      } catch (err) {
+        continue;
+      }
+    }
+    return [];
   } catch (err) {
     console.warn("Archive listing lookup failed:", err);
     return [];
@@ -863,6 +881,7 @@ async function loadSqliteDay(day) {
     const archiveDb = await loadArchiveDbRaw(day, {
       initSqlJs,
       baseDir: ARCHIVE_BASE_DIR,
+      baseDirs: ["/dashboard/archives"],
     });
     const { summary, detailed } = summarizeDb(archiveDb);
     const table = archiveDb.exec(
@@ -922,6 +941,7 @@ async function loadSqliteRange(startDay, endDay) {
         const db = await loadArchiveDbRaw(day, {
           initSqlJs,
           baseDir: ARCHIVE_BASE_DIR,
+          baseDirs: ["/dashboard/archives"],
         });
         const item = summarizeDb(db);
         results.push(item);
@@ -1124,7 +1144,7 @@ function renderLabMap(rows, day) {
 async function fetchLabArchiveDb(day) {
   if (!day) return null;
   if (labArchiveCache.has(day)) return labArchiveCache.get(day);
-  const db = await loadArchiveDbRaw(day, { initSqlJs, baseDir: ARCHIVE_BASE_DIR });
+  const db = await loadArchiveDbRaw(day, { initSqlJs, baseDir: ARCHIVE_BASE_DIR, baseDirs: ["/dashboard/archives"] });
   labArchiveCache.set(day, db);
   return db;
 }
@@ -1509,7 +1529,7 @@ async function runSqlQuery(query, resultsEl, statusEl) {
       let columns = null;
       for (const day of state.rangeDays) {
         try {
-          const db = await loadArchiveDbRaw(day, { initSqlJs, baseDir: ARCHIVE_BASE_DIR });
+          const db = await loadArchiveDbRaw(day, { initSqlJs, baseDir: ARCHIVE_BASE_DIR, baseDirs: ["/dashboard/archives"] });
           const res = db.exec(query);
           if (res.length) {
             if (!columns) columns = res[0].columns;
