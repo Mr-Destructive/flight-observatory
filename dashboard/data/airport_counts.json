@@ -1,70 +1,78 @@
 [
   {
     "airport": "unknown",
-    "flights": 8859
+    "flights": 8685
   },
   {
     "airport": "KATL",
-    "flights": 42
-  },
-  {
-    "airport": "CYYC",
     "flights": 40
   },
   {
-    "airport": "KDEN",
+    "airport": "CYYC",
     "flights": 32
   },
   {
-    "airport": "KDFW",
-    "flights": 30
-  },
-  {
-    "airport": "KSLC",
-    "flights": 26
-  },
-  {
-    "airport": "CYYZ",
+    "airport": "KDEN",
     "flights": 25
   },
   {
-    "airport": "LSZH",
+    "airport": "KBOS",
     "flights": 23
   },
   {
-    "airport": "KLGA",
-    "flights": 21
-  },
-  {
-    "airport": "KORD",
-    "flights": 21
+    "airport": "EGKK",
+    "flights": 22
   },
   {
     "airport": "KLAS",
-    "flights": 21
+    "flights": 22
   },
   {
-    "airport": "KBOS",
-    "flights": 20
+    "airport": "CYYZ",
+    "flights": 22
   },
   {
     "airport": "EDDF",
+    "flights": 21
+  },
+  {
+    "airport": "YSSY",
+    "flights": 21
+  },
+  {
+    "airport": "LSZH",
+    "flights": 20
+  },
+  {
+    "airport": "KLGA",
     "flights": 18
   },
   {
-    "airport": "EGKK",
+    "airport": "KAUS",
     "flights": 18
+  },
+  {
+    "airport": "YMML",
+    "flights": 18
+  },
+  {
+    "airport": "KDFW",
+    "flights": 18
+  },
+  {
+    "airport": "VIDP",
+    "flights": 17
+  },
+  {
+    "airport": "CYVR",
+    "flights": 16
   },
   {
     "airport": "MMUN",
-    "flights": 16
+    "flights": 15
   },
   {
-    "airport": "KJFK",
-    "flights": 16
-  },
-  {
-    "airport": "KBJC",
+    "airport": "KPHX",
     "flights": 15
   },
   {
@@ -72,31 +80,23 @@
     "flights": 14
   },
   {
-    "airport": "EBBR",
+    "airport": "KJFK",
+    "flights": 14
+  },
+  {
+    "airport": "KOAK",
     "flights": 13
+  },
+  {
+    "airport": "KMCO",
+    "flights": 12
   },
   {
     "airport": "KDCA",
     "flights": 12
   },
   {
-    "airport": "EHAM",
+    "airport": "KSEA",
     "flights": 12
-  },
-  {
-    "airport": "EGCC",
-    "flights": 11
-  },
-  {
-    "airport": "KMCO",
-    "flights": 11
-  },
-  {
-    "airport": "MGGT",
-    "flights": 11
-  },
-  {
-    "airport": "CYVR",
-    "flights": 11
   }
 ]

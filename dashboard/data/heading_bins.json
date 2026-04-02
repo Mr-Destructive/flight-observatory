@@ -1,50 +1,50 @@
 [
   {
     "heading_band": 0,
-    "flights": 881
-  },
-  {
-    "heading_band": 30,
-    "flights": 838
-  },
-  {
-    "heading_band": 60,
-    "flights": 928
-  },
-  {
-    "heading_band": 90,
-    "flights": 1133
-  },
-  {
-    "heading_band": 120,
-    "flights": 888
-  },
-  {
-    "heading_band": 150,
     "flights": 879
   },
   {
+    "heading_band": 30,
+    "flights": 885
+  },
+  {
+    "heading_band": 60,
+    "flights": 947
+  },
+  {
+    "heading_band": 90,
+    "flights": 1107
+  },
+  {
+    "heading_band": 120,
+    "flights": 916
+  },
+  {
+    "heading_band": 150,
+    "flights": 812
+  },
+  {
     "heading_band": 180,
-    "flights": 918
+    "flights": 865
   },
   {
     "heading_band": 210,
-    "flights": 920
+    "flights": 891
   },
   {
     "heading_band": 240,
-    "flights": 1049
+    "flights": 950
   },
   {
     "heading_band": 270,
-    "flights": 991
+    "flights": 1008
   },
   {
     "heading_band": 300,
-    "flights": 897
+    "flights": 865
   },
   {
     "heading_band": 330,
-    "flights": 767
+    "flights": 757
   }
 ]
