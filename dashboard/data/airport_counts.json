@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 5856
-  },
-  {
-    "airport": "KATL",
-    "flights": 43
+    "flights": 4376
   },
   {
     "airport": "KDFW",
-    "flights": 37
-  },
-  {
-    "airport": "KDEN",
-    "flights": 35
-  },
-  {
-    "airport": "CYYZ",
-    "flights": 35
-  },
-  {
-    "airport": "KMCO",
     "flights": 29
   },
   {
-    "airport": "YSSY",
-    "flights": 28
+    "airport": "KPHX",
+    "flights": 27
   },
   {
-    "airport": "KLGA",
+    "airport": "VHHH",
     "flights": 23
   },
   {
-    "airport": "KEWR",
-    "flights": 22
+    "airport": "CYYC",
+    "flights": 21
+  },
+  {
+    "airport": "KBOS",
+    "flights": 18
+  },
+  {
+    "airport": "CYYZ",
+    "flights": 18
+  },
+  {
+    "airport": "LGAV",
+    "flights": 18
   },
   {
     "airport": "RJTT",
-    "flights": 20
-  },
-  {
-    "airport": "KLAS",
     "flights": 17
   },
   {
     "airport": "YMML",
-    "flights": 17
-  },
-  {
-    "airport": "KPHX",
-    "flights": 17
-  },
-  {
-    "airport": "VHHH",
-    "flights": 17
-  },
-  {
-    "airport": "KDCA",
     "flights": 16
   },
   {
-    "airport": "KBOS",
-    "flights": 16
-  },
-  {
-    "airport": "KIAD",
-    "flights": 16
-  },
-  {
-    "airport": "CYVR",
+    "airport": "LIMC",
     "flights": 15
   },
   {
-    "airport": "KSAN",
-    "flights": 13
-  },
-  {
-    "airport": "KJFK",
-    "flights": 13
-  },
-  {
-    "airport": "KOAK",
-    "flights": 12
-  },
-  {
-    "airport": "CYYC",
-    "flights": 12
-  },
-  {
     "airport": "VIDP",
-    "flights": 10
+    "flights": 14
   },
   {
-    "airport": "KSEA",
-    "flights": 10
+    "airport": "KORD",
+    "flights": 14
+  },
+  {
+    "airport": "VTBS",
+    "flights": 14
+  },
+  {
+    "airport": "LFPO",
+    "flights": 13
   },
   {
     "airport": "SKBO",
+    "flights": 13
+  },
+  {
+    "airport": "KATL",
+    "flights": 13
+  },
+  {
+    "airport": "YSSY",
+    "flights": 12
+  },
+  {
+    "airport": "KDEN",
+    "flights": 12
+  },
+  {
+    "airport": "KSEA",
+    "flights": 12
+  },
+  {
+    "airport": "CYVR",
+    "flights": 11
+  },
+  {
+    "airport": "KMCO",
     "flights": 10
+  },
+  {
+    "airport": "YBBN",
+    "flights": 10
+  },
+  {
+    "airport": "VGHS",
+    "flights": 9
+  },
+  {
+    "airport": "YPPH",
+    "flights": 9
   }
 ]
