@@ -1,30 +1,34 @@
 [
   {
     "airport": "unknown",
-    "flights": 9167
+    "flights": 8973
   },
   {
     "airport": "KDEN",
-    "flights": 45
-  },
-  {
-    "airport": "CYYZ",
-    "flights": 23
+    "flights": 50
   },
   {
     "airport": "KDFW",
-    "flights": 22
-  },
-  {
-    "airport": "KLGA",
-    "flights": 21
+    "flights": 38
   },
   {
     "airport": "KATL",
+    "flights": 34
+  },
+  {
+    "airport": "KSFO",
+    "flights": 27
+  },
+  {
+    "airport": "CYYZ",
+    "flights": 24
+  },
+  {
+    "airport": "KBOS",
     "flights": 20
   },
   {
-    "airport": "LSZH",
+    "airport": "KORD",
     "flights": 20
   },
   {
@@ -32,71 +36,67 @@
     "flights": 19
   },
   {
-    "airport": "KORD",
-    "flights": 19
-  },
-  {
-    "airport": "KSFO",
-    "flights": 19
+    "airport": "EDDF",
+    "flights": 18
   },
   {
     "airport": "KLAS",
     "flights": 18
   },
   {
-    "airport": "EGKK",
-    "flights": 18
-  },
-  {
-    "airport": "KBOS",
-    "flights": 17
-  },
-  {
-    "airport": "VIDP",
+    "airport": "LSZH",
     "flights": 16
   },
   {
-    "airport": "KAUS",
+    "airport": "EHAM",
     "flights": 16
-  },
-  {
-    "airport": "CYYC",
-    "flights": 16
-  },
-  {
-    "airport": "KPHX",
-    "flights": 16
-  },
-  {
-    "airport": "VHHH",
-    "flights": 15
-  },
-  {
-    "airport": "KLGU",
-    "flights": 15
-  },
-  {
-    "airport": "KIAD",
-    "flights": 13
-  },
-  {
-    "airport": "EDDF",
-    "flights": 13
-  },
-  {
-    "airport": "LEBL",
-    "flights": 12
   },
   {
     "airport": "KJFK",
+    "flights": 16
+  },
+  {
+    "airport": "KSJC",
+    "flights": 16
+  },
+  {
+    "airport": "KLGA",
+    "flights": 16
+  },
+  {
+    "airport": "VIDP",
+    "flights": 14
+  },
+  {
+    "airport": "KPHX",
+    "flights": 14
+  },
+  {
+    "airport": "KMCO",
+    "flights": 14
+  },
+  {
+    "airport": "KAUS",
+    "flights": 13
+  },
+  {
+    "airport": "CYYC",
+    "flights": 13
+  },
+  {
+    "airport": "SKBO",
     "flights": 12
   },
   {
-    "airport": "CYVR",
+    "airport": "LIMC",
     "flights": 12
   },
   {
-    "airport": "LOWW",
-    "flights": 11
+    "airport": "KOAK",
+    "flights": 12
+  },
+  {
+    "airport": "KEWR",
+    "flights": 12
   }
 ]
