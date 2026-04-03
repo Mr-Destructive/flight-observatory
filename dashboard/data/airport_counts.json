@@ -1,50 +1,54 @@
 [
   {
     "airport": "unknown",
-    "flights": 7870
+    "flights": 7345
   },
   {
     "airport": "KORD",
-    "flights": 30
-  },
-  {
-    "airport": "CYYZ",
-    "flights": 29
-  },
-  {
-    "airport": "KLGA",
-    "flights": 28
+    "flights": 38
   },
   {
     "airport": "KATL",
-    "flights": 27
+    "flights": 36
   },
   {
-    "airport": "YSSY",
-    "flights": 26
-  },
-  {
-    "airport": "KBOS",
-    "flights": 25
-  },
-  {
-    "airport": "KDFW",
-    "flights": 25
+    "airport": "CYYZ",
+    "flights": 35
   },
   {
     "airport": "KIAD",
-    "flights": 23
+    "flights": 35
   },
   {
-    "airport": "KJFK",
-    "flights": 22
+    "airport": "KDFW",
+    "flights": 34
   },
   {
-    "airport": "KPHX",
-    "flights": 20
+    "airport": "YSSY",
+    "flights": 30
+  },
+  {
+    "airport": "KLGA",
+    "flights": 27
   },
   {
     "airport": "KDEN",
+    "flights": 26
+  },
+  {
+    "airport": "KMCO",
+    "flights": 24
+  },
+  {
+    "airport": "CYYC",
+    "flights": 22
+  },
+  {
+    "airport": "KEWR",
+    "flights": 20
+  },
+  {
+    "airport": "KBOS",
     "flights": 18
   },
   {
@@ -52,28 +56,16 @@
     "flights": 18
   },
   {
-    "airport": "YMML",
-    "flights": 18
-  },
-  {
     "airport": "KLAS",
-    "flights": 17
+    "flights": 15
   },
   {
-    "airport": "KMCO",
-    "flights": 16
+    "airport": "YMML",
+    "flights": 14
   },
   {
-    "airport": "CYUL",
-    "flights": 16
-  },
-  {
-    "airport": "VIDP",
-    "flights": 13
-  },
-  {
-    "airport": "MMUN",
-    "flights": 13
+    "airport": "CYVR",
+    "flights": 14
   },
   {
     "airport": "KAUS",
@@ -84,19 +76,27 @@
     "flights": 13
   },
   {
-    "airport": "KEWR",
+    "airport": "VHHH",
+    "flights": 13
+  },
+  {
+    "airport": "MMUN",
     "flights": 12
   },
   {
-    "airport": "KVNY",
+    "airport": "KSAN",
+    "flights": 12
+  },
+  {
+    "airport": "RJTT",
     "flights": 11
   },
   {
-    "airport": "KSEA",
-    "flights": 11
+    "airport": "VIDP",
+    "flights": 10
   },
   {
-    "airport": "CYVR",
-    "flights": 11
+    "airport": "LEBL",
+    "flights": 10
   }
 ]
