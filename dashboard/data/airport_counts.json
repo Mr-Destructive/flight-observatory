@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 8973
+    "flights": 8588
   },
   {
-    "airport": "KDEN",
-    "flights": 50
-  },
-  {
-    "airport": "KDFW",
+    "airport": "KORD",
     "flights": 38
   },
   {
     "airport": "KATL",
-    "flights": 34
-  },
-  {
-    "airport": "KSFO",
-    "flights": 27
+    "flights": 32
   },
   {
     "airport": "CYYZ",
+    "flights": 30
+  },
+  {
+    "airport": "KLAS",
     "flights": 24
   },
   {
-    "airport": "KBOS",
-    "flights": 20
+    "airport": "EDDF",
+    "flights": 24
   },
   {
-    "airport": "KORD",
+    "airport": "KDEN",
+    "flights": 22
+  },
+  {
+    "airport": "KAUS",
+    "flights": 21
+  },
+  {
+    "airport": "KDFW",
     "flights": 20
   },
   {
     "airport": "MMUN",
-    "flights": 19
-  },
-  {
-    "airport": "EDDF",
-    "flights": 18
-  },
-  {
-    "airport": "KLAS",
-    "flights": 18
-  },
-  {
-    "airport": "LSZH",
-    "flights": 16
-  },
-  {
-    "airport": "EHAM",
-    "flights": 16
-  },
-  {
-    "airport": "KJFK",
-    "flights": 16
-  },
-  {
-    "airport": "KSJC",
-    "flights": 16
+    "flights": 20
   },
   {
     "airport": "KLGA",
+    "flights": 20
+  },
+  {
+    "airport": "YSSY",
     "flights": 16
   },
   {
-    "airport": "VIDP",
+    "airport": "KEWR",
+    "flights": 15
+  },
+  {
+    "airport": "KBOS",
+    "flights": 15
+  },
+  {
+    "airport": "CYYC",
+    "flights": 15
+  },
+  {
+    "airport": "KSEA",
     "flights": 14
   },
   {
-    "airport": "KPHX",
+    "airport": "SKBO",
     "flights": 14
   },
   {
     "airport": "KMCO",
-    "flights": 14
-  },
-  {
-    "airport": "KAUS",
     "flights": 13
   },
   {
-    "airport": "CYYC",
+    "airport": "EHAM",
     "flights": 13
   },
   {
-    "airport": "SKBO",
+    "airport": "KSJC",
+    "flights": 13
+  },
+  {
+    "airport": "LSZH",
+    "flights": 13
+  },
+  {
+    "airport": "VIDP",
     "flights": 12
   },
   {
-    "airport": "LIMC",
+    "airport": "LEBL",
     "flights": 12
   },
   {
-    "airport": "KOAK",
+    "airport": "CYVR",
     "flights": 12
   },
   {
-    "airport": "KEWR",
+    "airport": "YMML",
     "flights": 12
   }
 ]
