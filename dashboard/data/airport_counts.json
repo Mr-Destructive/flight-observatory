@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 4009
+    "flights": 4138
   },
   {
-    "airport": "KLAS",
-    "flights": 25
+    "airport": "YSSY",
+    "flights": 32
   },
   {
     "airport": "LSZH",
-    "flights": 24
-  },
-  {
-    "airport": "EDDF",
-    "flights": 23
-  },
-  {
-    "airport": "EHAM",
-    "flights": 22
+    "flights": 31
   },
   {
     "airport": "EGKK",
     "flights": 21
   },
   {
-    "airport": "VHHH",
-    "flights": 20
-  },
-  {
-    "airport": "CYYC",
+    "airport": "EHAM",
     "flights": 19
   },
   {
-    "airport": "RJTT",
+    "airport": "LGAV",
     "flights": 17
   },
   {
-    "airport": "VIDP",
-    "flights": 16
+    "airport": "EDDF",
+    "flights": 17
   },
   {
-    "airport": "EBBR",
-    "flights": 16
-  },
-  {
-    "airport": "YSSY",
-    "flights": 16
+    "airport": "VHHH",
+    "flights": 17
   },
   {
     "airport": "YMML",
-    "flights": 15
+    "flights": 17
   },
   {
-    "airport": "LGAV",
-    "flights": 13
+    "airport": "RJTT",
+    "flights": 16
   },
   {
     "airport": "LFPO",
-    "flights": 13
+    "flights": 15
+  },
+  {
+    "airport": "LOWW",
+    "flights": 14
+  },
+  {
+    "airport": "CYYC",
+    "flights": 14
   },
   {
     "airport": "YPPH",
-    "flights": 11
-  },
-  {
-    "airport": "VABB",
-    "flights": 10
-  },
-  {
-    "airport": "ZGSZ",
-    "flights": 10
-  },
-  {
-    "airport": "LFPG",
-    "flights": 10
-  },
-  {
-    "airport": "WIII",
-    "flights": 9
-  },
-  {
-    "airport": "WMAU",
-    "flights": 9
-  },
-  {
-    "airport": "KPHX",
-    "flights": 9
-  },
-  {
-    "airport": "CYYZ",
-    "flights": 9
-  },
-  {
-    "airport": "KMDW",
-    "flights": 9
+    "flights": 14
   },
   {
     "airport": "LEBL",
+    "flights": 13
+  },
+  {
+    "airport": "EBBR",
+    "flights": 11
+  },
+  {
+    "airport": "VECC",
+    "flights": 11
+  },
+  {
+    "airport": "KBOS",
+    "flights": 10
+  },
+  {
+    "airport": "EGCC",
+    "flights": 10
+  },
+  {
+    "airport": "EDDM",
+    "flights": 10
+  },
+  {
+    "airport": "VTBS",
     "flights": 9
+  },
+  {
+    "airport": "RJAA",
+    "flights": 9
+  },
+  {
+    "airport": "WIII",
+    "flights": 8
+  },
+  {
+    "airport": "LEMD",
+    "flights": 8
+  },
+  {
+    "airport": "ZGSZ",
+    "flights": 8
   }
 ]
