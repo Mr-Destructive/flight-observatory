@@ -1,90 +1,90 @@
 [
   {
     "airport": "unknown",
-    "flights": 6948
+    "flights": 6532
+  },
+  {
+    "airport": "KATL",
+    "flights": 35
   },
   {
     "airport": "KDFW",
-    "flights": 43
+    "flights": 30
   },
   {
-    "airport": "CYYZ",
-    "flights": 33
+    "airport": "KORD",
+    "flights": 29
+  },
+  {
+    "airport": "KLGA",
+    "flights": 28
   },
   {
     "airport": "YSSY",
     "flights": 28
   },
   {
-    "airport": "KDEN",
-    "flights": 26
-  },
-  {
-    "airport": "KORD",
-    "flights": 26
-  },
-  {
-    "airport": "KBOS",
+    "airport": "RJTT",
     "flights": 25
   },
   {
-    "airport": "KATL",
-    "flights": 24
+    "airport": "KSLC",
+    "flights": 20
   },
   {
-    "airport": "KLGA",
+    "airport": "KEWR",
+    "flights": 20
+  },
+  {
+    "airport": "KDEN",
+    "flights": 19
+  },
+  {
+    "airport": "VIDP",
     "flights": 18
   },
   {
-    "airport": "KAUS",
+    "airport": "KBOS",
+    "flights": 18
+  },
+  {
+    "airport": "KSFO",
+    "flights": 17
+  },
+  {
+    "airport": "YMML",
     "flights": 17
   },
   {
     "airport": "CYUL",
-    "flights": 15
+    "flights": 16
   },
   {
-    "airport": "KEWR",
-    "flights": 15
+    "airport": "CYYZ",
+    "flights": 16
   },
   {
-    "airport": "CYYC",
-    "flights": 15
-  },
-  {
-    "airport": "YPPH",
-    "flights": 15
+    "airport": "MMMY",
+    "flights": 14
   },
   {
     "airport": "KPHX",
-    "flights": 13
+    "flights": 14
   },
   {
-    "airport": "PANC",
-    "flights": 13
-  },
-  {
-    "airport": "KOAK",
-    "flights": 13
-  },
-  {
-    "airport": "KLAS",
-    "flights": 13
-  },
-  {
-    "airport": "RJTT",
-    "flights": 12
-  },
-  {
-    "airport": "KSAN",
-    "flights": 12
+    "airport": "KMCO",
+    "flights": 14
   },
   {
     "airport": "YMMB",
     "flights": 12
   },
   {
-    "airport": "KIAD",
+    "airport": "KOAK",
+    "flights": 12
+  },
+  {
+    "airport": "KLAS",
     "flights": 12
   },
   {
@@ -92,11 +92,11 @@
     "flights": 12
   },
   {
-    "airport": "VIDP",
-    "flights": 11
+    "airport": "YPPH",
+    "flights": 12
   },
   {
-    "airport": "SKBO",
-    "flights": 11
+    "airport": "KLGU",
+    "flights": 10
   }
 ]
