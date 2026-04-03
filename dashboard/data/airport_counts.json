@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 4138
-  },
-  {
-    "airport": "YSSY",
-    "flights": 32
-  },
-  {
-    "airport": "LSZH",
-    "flights": 31
-  },
-  {
-    "airport": "EGKK",
-    "flights": 21
-  },
-  {
-    "airport": "EHAM",
-    "flights": 19
-  },
-  {
-    "airport": "LGAV",
-    "flights": 17
-  },
-  {
-    "airport": "EDDF",
-    "flights": 17
-  },
-  {
-    "airport": "VHHH",
-    "flights": 17
-  },
-  {
-    "airport": "YMML",
-    "flights": 17
+    "flights": 4585
   },
   {
     "airport": "RJTT",
-    "flights": 16
+    "flights": 24
   },
   {
-    "airport": "LFPO",
-    "flights": 15
+    "airport": "LSZH",
+    "flights": 23
   },
   {
-    "airport": "LOWW",
-    "flights": 14
+    "airport": "VHHH",
+    "flights": 22
   },
   {
-    "airport": "CYYC",
-    "flights": 14
+    "airport": "EDDF",
+    "flights": 20
   },
   {
-    "airport": "YPPH",
-    "flights": 14
-  },
-  {
-    "airport": "LEBL",
-    "flights": 13
-  },
-  {
-    "airport": "EBBR",
-    "flights": 11
-  },
-  {
-    "airport": "VECC",
-    "flights": 11
+    "airport": "YSSY",
+    "flights": 20
   },
   {
     "airport": "KBOS",
+    "flights": 18
+  },
+  {
+    "airport": "LEBL",
+    "flights": 16
+  },
+  {
+    "airport": "EBBR",
+    "flights": 15
+  },
+  {
+    "airport": "EHAM",
+    "flights": 15
+  },
+  {
+    "airport": "EGKK",
+    "flights": 14
+  },
+  {
+    "airport": "LFPO",
+    "flights": 14
+  },
+  {
+    "airport": "LOWW",
+    "flights": 12
+  },
+  {
+    "airport": "VECC",
     "flights": 10
   },
   {
-    "airport": "EGCC",
+    "airport": "YMML",
     "flights": 10
   },
   {
-    "airport": "EDDM",
-    "flights": 10
+    "airport": "CYYZ",
+    "flights": 9
+  },
+  {
+    "airport": "KMCO",
+    "flights": 9
+  },
+  {
+    "airport": "EDDS",
+    "flights": 9
   },
   {
     "airport": "VTBS",
-    "flights": 9
-  },
-  {
-    "airport": "RJAA",
-    "flights": 9
+    "flights": 8
   },
   {
     "airport": "WIII",
     "flights": 8
   },
   {
-    "airport": "LEMD",
+    "airport": "ZGSZ",
     "flights": 8
   },
   {
-    "airport": "ZGSZ",
+    "airport": "RKSS",
     "flights": 8
+  },
+  {
+    "airport": "VOBL",
+    "flights": 7
+  },
+  {
+    "airport": "VABB",
+    "flights": 7
+  },
+  {
+    "airport": "LKPR",
+    "flights": 7
   }
 ]
