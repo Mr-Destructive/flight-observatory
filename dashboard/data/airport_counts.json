@@ -1,86 +1,70 @@
 [
   {
     "airport": "unknown",
-    "flights": 6633
+    "flights": 6178
   },
   {
-    "airport": "KDEN",
-    "flights": 45
+    "airport": "CYYZ",
+    "flights": 28
   },
   {
     "airport": "KATL",
-    "flights": 33
+    "flights": 24
   },
   {
-    "airport": "KIAD",
-    "flights": 25
-  },
-  {
-    "airport": "KEWR",
+    "airport": "KDEN",
     "flights": 23
-  },
-  {
-    "airport": "KORD",
-    "flights": 23
-  },
-  {
-    "airport": "KMCO",
-    "flights": 22
-  },
-  {
-    "airport": "YSSY",
-    "flights": 22
   },
   {
     "airport": "KDFW",
     "flights": 21
   },
   {
-    "airport": "CYYZ",
-    "flights": 21
-  },
-  {
     "airport": "YMML",
-    "flights": 21
-  },
-  {
-    "airport": "KBOS",
     "flights": 20
   },
   {
-    "airport": "CYYC",
+    "airport": "KORD",
     "flights": 19
   },
   {
-    "airport": "RJTT",
-    "flights": 16
+    "airport": "YSSY",
+    "flights": 19
+  },
+  {
+    "airport": "KMCO",
+    "flights": 18
   },
   {
     "airport": "KLGA",
-    "flights": 16
+    "flights": 17
   },
   {
-    "airport": "KAUS",
-    "flights": 13
+    "airport": "KEWR",
+    "flights": 17
   },
   {
-    "airport": "KTPA",
-    "flights": 13
+    "airport": "RJTT",
+    "flights": 14
   },
   {
     "airport": "MMUN",
     "flights": 13
   },
   {
-    "airport": "KJFK",
+    "airport": "KBOS",
+    "flights": 13
+  },
+  {
+    "airport": "KVNY",
     "flights": 12
   },
   {
-    "airport": "CYUL",
-    "flights": 11
+    "airport": "PHNL",
+    "flights": 12
   },
   {
-    "airport": "KSFO",
+    "airport": "KAUS",
     "flights": 11
   },
   {
@@ -88,15 +72,31 @@
     "flights": 11
   },
   {
-    "airport": "CYVR",
+    "airport": "VIDP",
     "flights": 10
   },
   {
     "airport": "KPHX",
+    "flights": 10
+  },
+  {
+    "airport": "CYUL",
+    "flights": 10
+  },
+  {
+    "airport": "CYVR",
+    "flights": 10
+  },
+  {
+    "airport": "PANC",
     "flights": 9
   },
   {
-    "airport": "EGKK",
-    "flights": 8
+    "airport": "CYYC",
+    "flights": 9
+  },
+  {
+    "airport": "KJFK",
+    "flights": 9
   }
 ]
