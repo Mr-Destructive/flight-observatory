@@ -1,42 +1,42 @@
 [
   {
     "airport": "unknown",
-    "flights": 38140
+    "flights": 43729
   },
   {
     "airport": "LSZH",
-    "flights": 191
+    "flights": 216
   },
   {
     "airport": "RJTT",
-    "flights": 162
-  },
-  {
-    "airport": "EDDF",
-    "flights": 152
+    "flights": 187
   },
   {
     "airport": "VHHH",
-    "flights": 151
+    "flights": 169
   },
   {
-    "airport": "EHAM",
-    "flights": 120
+    "airport": "EDDF",
+    "flights": 168
   },
   {
     "airport": "CYYZ",
-    "flights": 118
+    "flights": 142
+  },
+  {
+    "airport": "KATL",
+    "flights": 141
+  },
+  {
+    "airport": "EHAM",
+    "flights": 140
   },
   {
     "airport": "LGAV",
-    "flights": 112
+    "flights": 128
   },
   {
-    "airport": "YSSY",
-    "flights": 110
-  },
-  {
-    "airport": "EGKK",
-    "flights": 108
+    "airport": "KBOS",
+    "flights": 127
   }
 ]
