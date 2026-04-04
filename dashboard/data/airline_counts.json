@@ -1,102 +1,102 @@
 [
   {
     "airline": "unknown",
-    "flights": 1413
+    "flights": 1608
   },
   {
     "airline": "Ryanair",
-    "flights": 371
-  },
-  {
-    "airline": "Delta Air Lines",
-    "flights": 281
+    "flights": 352
   },
   {
     "airline": "Southwest Airlines",
-    "flights": 278
+    "flights": 295
+  },
+  {
+    "airline": "Delta Air Lines",
+    "flights": 286
   },
   {
     "airline": "American Airlines",
-    "flights": 243
+    "flights": 279
   },
   {
     "airline": "United Airlines",
-    "flights": 189
+    "flights": 202
   },
   {
     "airline": "Lufthansa",
-    "flights": 137
+    "flights": 127
   },
   {
     "airline": "JetBlue Airways",
-    "flights": 128
-  },
-  {
-    "airline": "easyJet",
-    "flights": 105
+    "flights": 123
   },
   {
     "airline": "IndiGo Airlines",
-    "flights": 104
+    "flights": 105
   },
   {
-    "airline": "Scandinavian Airlines System",
+    "airline": "easyJet",
+    "flights": 101
+  },
+  {
+    "airline": "Jet2.com",
     "flights": 92
   },
   {
-    "airline": "Turkish Airlines",
+    "airline": "Scandinavian Airlines System",
     "flights": 91
   },
   {
     "airline": "Air France",
-    "flights": 90
+    "flights": 88
   },
   {
-    "airline": "Jet2.com",
-    "flights": 85
-  },
-  {
-    "airline": "British Airways",
-    "flights": 83
+    "airline": "Turkish Airlines",
+    "flights": 86
   },
   {
     "airline": "Republic Airlines",
     "flights": 80
   },
   {
-    "airline": "KLM Royal Dutch Airlines",
-    "flights": 72
-  },
-  {
     "airline": "Frontier Airlines",
-    "flights": 69
+    "flights": 75
   },
   {
-    "airline": "Swissair",
-    "flights": 68
+    "airline": "British Airways",
+    "flights": 74
   },
   {
     "airline": "Vueling Airlines",
     "flights": 63
   },
   {
-    "airline": "All Nippon Airways",
-    "flights": 61
-  },
-  {
-    "airline": "Pegasus Airlines",
-    "flights": 61
-  },
-  {
-    "airline": "Federal Express",
+    "airline": "SkyWest",
     "flights": 59
   },
   {
-    "airline": "Spirit Airlines",
-    "flights": 54
+    "airline": "KLM Royal Dutch Airlines",
+    "flights": 59
   },
   {
-    "airline": "Austrian Airlines",
-    "flights": 51
+    "airline": "All Nippon Airways",
+    "flights": 58
+  },
+  {
+    "airline": "Pegasus Airlines",
+    "flights": 58
+  },
+  {
+    "airline": "Federal Express",
+    "flights": 57
+  },
+  {
+    "airline": "Swissair",
+    "flights": 57
+  },
+  {
+    "airline": "Spirit Airlines",
+    "flights": 55
   }
 ]
