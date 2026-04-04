@@ -1,67 +1,67 @@
 [
   {
     "airline": "unknown",
-    "flights": 2062
-  },
-  {
-    "airline": "Southwest Airlines",
-    "flights": 461
+    "flights": 1849
   },
   {
     "airline": "American Airlines",
-    "flights": 457
+    "flights": 470
+  },
+  {
+    "airline": "Southwest Airlines",
+    "flights": 465
   },
   {
     "airline": "Delta Air Lines",
-    "flights": 447
+    "flights": 439
   },
   {
     "airline": "United Airlines",
-    "flights": 423
+    "flights": 439
   },
   {
     "airline": "SkyWest",
-    "flights": 196
-  },
-  {
-    "airline": "Ryanair",
-    "flights": 169
-  },
-  {
-    "airline": "Alaska Airlines",
-    "flights": 138
+    "flights": 173
   },
   {
     "airline": "JetBlue Airways",
-    "flights": 119
+    "flights": 129
+  },
+  {
+    "airline": "Alaska Airlines",
+    "flights": 123
+  },
+  {
+    "airline": "Frontier Airlines",
+    "flights": 97
   },
   {
     "airline": "Air Canada",
+    "flights": 97
+  },
+  {
+    "airline": "Ryanair",
     "flights": 91
   },
   {
     "airline": "easyJet",
-    "flights": 88
-  },
-  {
-    "airline": "Frontier Airlines",
-    "flights": 86
-  },
-  {
-    "airline": "Republic Airlines",
-    "flights": 85
+    "flights": 76
   },
   {
     "airline": "Envoy Air",
-    "flights": 82
+    "flights": 76
+  },
+  {
+    "airline": "Republic Airlines",
+    "flights": 73
   },
   {
     "airline": "WestJet",
-    "flights": 75
+    "flights": 72
   },
   {
     "airline": "NetJets",
-    "flights": 73
+    "flights": 64
   },
   {
     "airline": "Allegiant Air",
@@ -69,34 +69,34 @@
   },
   {
     "airline": "Jet2.com",
-    "flights": 62
-  },
-  {
-    "airline": "Spirit Airlines",
-    "flights": 58
-  },
-  {
-    "airline": "PSA Airlines",
-    "flights": 56
-  },
-  {
-    "airline": "All Nippon Airways",
-    "flights": 42
-  },
-  {
-    "airline": "British Airways",
-    "flights": 41
-  },
-  {
-    "airline": "Jetstar Airways",
-    "flights": 41
-  },
-  {
-    "airline": "Air France",
-    "flights": 39
+    "flights": 60
   },
   {
     "airline": "Japan Airlines Domestic",
-    "flights": 37
+    "flights": 57
+  },
+  {
+    "airline": "Turkish Airlines",
+    "flights": 55
+  },
+  {
+    "airline": "Spirit Airlines",
+    "flights": 54
+  },
+  {
+    "airline": "PSA Airlines",
+    "flights": 52
+  },
+  {
+    "airline": "All Nippon Airways",
+    "flights": 50
+  },
+  {
+    "airline": "British Airways",
+    "flights": 46
+  },
+  {
+    "airline": "Air Canada Jazz",
+    "flights": 43
   }
 ]
