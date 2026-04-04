@@ -1,23 +1,35 @@
 [
   {
     "airport": "unknown",
-    "flights": 4598
+    "flights": 4949
   },
   {
     "airport": "LSZH",
-    "flights": 32
+    "flights": 28
+  },
+  {
+    "airport": "CYYZ",
+    "flights": 27
   },
   {
     "airport": "KATL",
-    "flights": 30
-  },
-  {
-    "airport": "RJTT",
-    "flights": 23
+    "flights": 22
   },
   {
     "airport": "KBOS",
+    "flights": 22
+  },
+  {
+    "airport": "RJTT",
+    "flights": 21
+  },
+  {
+    "airport": "EDDF",
     "flights": 20
+  },
+  {
+    "airport": "EHAM",
+    "flights": 19
   },
   {
     "airport": "KMCO",
@@ -28,75 +40,63 @@
     "flights": 18
   },
   {
-    "airport": "EDDF",
+    "airport": "YSSY",
     "flights": 18
   },
   {
-    "airport": "CYYZ",
-    "flights": 17
-  },
-  {
-    "airport": "EHAM",
+    "airport": "SKBO",
     "flights": 16
   },
   {
-    "airport": "LFPO",
+    "airport": "KDCA",
+    "flights": 16
+  },
+  {
+    "airport": "KLGA",
     "flights": 15
   },
   {
-    "airport": "LOWW",
+    "airport": "KIAD",
+    "flights": 14
+  },
+  {
+    "airport": "EGKK",
+    "flights": 14
+  },
+  {
+    "airport": "KAUS",
     "flights": 13
+  },
+  {
+    "airport": "LFPO",
+    "flights": 12
+  },
+  {
+    "airport": "VIDP",
+    "flights": 12
+  },
+  {
+    "airport": "LGAV",
+    "flights": 12
   },
   {
     "airport": "EBBR",
     "flights": 12
   },
   {
-    "airport": "LEBL",
-    "flights": 12
-  },
-  {
-    "airport": "EGKK",
-    "flights": 12
-  },
-  {
-    "airport": "LGAV",
+    "airport": "KJFK",
     "flights": 11
   },
   {
-    "airport": "LEAL",
+    "airport": "ZGSZ",
+    "flights": 11
+  },
+  {
+    "airport": "EGCC",
+    "flights": 11
+  },
+  {
+    "airport": "LEBL",
     "flights": 10
-  },
-  {
-    "airport": "ESSA",
-    "flights": 10
-  },
-  {
-    "airport": "VIDP",
-    "flights": 9
-  },
-  {
-    "airport": "SKBO",
-    "flights": 9
-  },
-  {
-    "airport": "VECC",
-    "flights": 9
-  },
-  {
-    "airport": "LIMC",
-    "flights": 9
-  },
-  {
-    "airport": "KDFW",
-    "flights": 9
-  },
-  {
-    "airport": "YMML",
-    "flights": 9
-  },
-  {
-    "airport": "LPFR",
-    "flights": 8
   }
 ]
