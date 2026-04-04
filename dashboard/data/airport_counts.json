@@ -1,58 +1,50 @@
 [
   {
     "airport": "unknown",
-    "flights": 8758
+    "flights": 8689
   },
   {
-    "airport": "KDFW",
-    "flights": 28
+    "airport": "KDEN",
+    "flights": 43
   },
   {
     "airport": "KATL",
-    "flights": 28
+    "flights": 32
   },
   {
-    "airport": "KORD",
-    "flights": 27
-  },
-  {
-    "airport": "KIAD",
+    "airport": "KDFW",
     "flights": 26
   },
   {
     "airport": "KPHX",
-    "flights": 22
-  },
-  {
-    "airport": "MMUN",
-    "flights": 20
-  },
-  {
-    "airport": "KDEN",
-    "flights": 19
-  },
-  {
-    "airport": "KSJC",
-    "flights": 18
+    "flights": 24
   },
   {
     "airport": "CYYZ",
+    "flights": 22
+  },
+  {
+    "airport": "KSLC",
+    "flights": 20
+  },
+  {
+    "airport": "MGGT",
+    "flights": 19
+  },
+  {
+    "airport": "KSFO",
     "flights": 18
   },
   {
-    "airport": "EDDF",
+    "airport": "KORD",
+    "flights": 18
+  },
+  {
+    "airport": "MMUN",
     "flights": 16
   },
   {
-    "airport": "KBJC",
-    "flights": 16
-  },
-  {
-    "airport": "KBOS",
-    "flights": 15
-  },
-  {
-    "airport": "VHHH",
+    "airport": "LEBL",
     "flights": 15
   },
   {
@@ -60,43 +52,51 @@
     "flights": 15
   },
   {
-    "airport": "VIDP",
+    "airport": "LSZH",
     "flights": 14
   },
   {
-    "airport": "KSLC",
+    "airport": "KBJC",
+    "flights": 13
+  },
+  {
+    "airport": "KSJC",
     "flights": 13
   },
   {
     "airport": "KLAS",
+    "flights": 13
+  },
+  {
+    "airport": "KJFK",
+    "flights": 13
+  },
+  {
+    "airport": "LGAV",
     "flights": 12
   },
   {
-    "airport": "EGKK",
+    "airport": "KMCO",
     "flights": 12
   },
   {
-    "airport": "KEWR",
-    "flights": 12
-  },
-  {
-    "airport": "KVNY",
+    "airport": "VIDP",
     "flights": 11
   },
   {
-    "airport": "MGGT",
+    "airport": "KAUS",
+    "flights": 11
+  },
+  {
+    "airport": "CYUL",
     "flights": 11
   },
   {
     "airport": "CYYC",
-    "flights": 10
+    "flights": 11
   },
   {
-    "airport": "KSFB",
-    "flights": 10
-  },
-  {
-    "airport": "KLGA",
-    "flights": 10
+    "airport": "KPAO",
+    "flights": 11
   }
 ]
