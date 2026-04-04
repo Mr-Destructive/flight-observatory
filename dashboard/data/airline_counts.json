@@ -1,102 +1,102 @@
 [
   {
     "airline": "unknown",
-    "flights": 995
+    "flights": 1034
   },
   {
     "airline": "Ryanair",
-    "flights": 367
-  },
-  {
-    "airline": "United Airlines",
-    "flights": 123
+    "flights": 400
   },
   {
     "airline": "Delta Air Lines",
-    "flights": 120
+    "flights": 127
   },
   {
-    "airline": "American Airlines",
-    "flights": 111
+    "airline": "United Airlines",
+    "flights": 122
   },
   {
     "airline": "Lufthansa",
-    "flights": 99
+    "flights": 105
   },
   {
     "airline": "easyJet",
-    "flights": 97
+    "flights": 104
   },
   {
     "airline": "Turkish Airlines",
-    "flights": 94
+    "flights": 102
   },
   {
-    "airline": "Jet2.com",
-    "flights": 80
-  },
-  {
-    "airline": "British Airways",
-    "flights": 75
-  },
-  {
-    "airline": "IndiGo Airlines",
-    "flights": 70
-  },
-  {
-    "airline": "Scandinavian Airlines System",
-    "flights": 65
-  },
-  {
-    "airline": "Air France",
-    "flights": 65
-  },
-  {
-    "airline": "Vueling Airlines",
-    "flights": 65
-  },
-  {
-    "airline": "All Nippon Airways",
-    "flights": 64
+    "airline": "American Airlines",
+    "flights": 101
   },
   {
     "airline": "KLM Royal Dutch Airlines",
-    "flights": 60
+    "flights": 99
+  },
+  {
+    "airline": "Air France",
+    "flights": 93
+  },
+  {
+    "airline": "Scandinavian Airlines System",
+    "flights": 80
+  },
+  {
+    "airline": "IndiGo Airlines",
+    "flights": 79
+  },
+  {
+    "airline": "British Airways",
+    "flights": 67
+  },
+  {
+    "airline": "Jet2.com",
+    "flights": 67
+  },
+  {
+    "airline": "Vueling Airlines",
+    "flights": 63
+  },
+  {
+    "airline": "Pegasus Airlines",
+    "flights": 56
+  },
+  {
+    "airline": "Swissair",
+    "flights": 56
+  },
+  {
+    "airline": "All Nippon Airways",
+    "flights": 55
+  },
+  {
+    "airline": "Japan Airlines Domestic",
+    "flights": 55
   },
   {
     "airline": "Eurowings",
     "flights": 52
   },
   {
-    "airline": "Pegasus Airlines",
-    "flights": 51
-  },
-  {
-    "airline": "Southwest Airlines",
-    "flights": 50
-  },
-  {
-    "airline": "Swissair",
+    "airline": "TAP Portugal",
     "flights": 49
   },
   {
-    "airline": "Wizz Air",
+    "airline": "Transavia France",
     "flights": 46
   },
   {
-    "airline": "Japan Airlines Domestic",
+    "airline": "Emirates",
     "flights": 43
   },
   {
-    "airline": "Alaska Airlines",
+    "airline": "Wizz Air",
     "flights": 42
   },
   {
-    "airline": "SunExpress",
-    "flights": 41
-  },
-  {
-    "airline": "TAP Portugal",
-    "flights": 41
+    "airline": "Southwest Airlines",
+    "flights": 42
   }
 ]
