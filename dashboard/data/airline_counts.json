@@ -1,94 +1,86 @@
 [
   {
     "airline": "unknown",
-    "flights": 3672
+    "flights": 3539
   },
   {
     "airline": "United Airlines",
-    "flights": 497
+    "flights": 496
   },
   {
     "airline": "Southwest Airlines",
-    "flights": 475
-  },
-  {
-    "airline": "Delta Air Lines",
-    "flights": 453
+    "flights": 452
   },
   {
     "airline": "American Airlines",
-    "flights": 444
+    "flights": 443
+  },
+  {
+    "airline": "Delta Air Lines",
+    "flights": 413
   },
   {
     "airline": "Ryanair",
-    "flights": 387
+    "flights": 395
   },
   {
     "airline": "SkyWest",
-    "flights": 241
-  },
-  {
-    "airline": "NetJets",
-    "flights": 134
-  },
-  {
-    "airline": "JetBlue Airways",
-    "flights": 121
+    "flights": 229
   },
   {
     "airline": "Alaska Airlines",
-    "flights": 117
+    "flights": 140
+  },
+  {
+    "airline": "NetJets",
+    "flights": 139
   },
   {
     "airline": "Turkish Airlines",
-    "flights": 111
+    "flights": 123
+  },
+  {
+    "airline": "JetBlue Airways",
+    "flights": 120
   },
   {
     "airline": "easyJet",
-    "flights": 109
-  },
-  {
-    "airline": "Lufthansa",
-    "flights": 106
+    "flights": 112
   },
   {
     "airline": "Republic Airlines",
-    "flights": 103
+    "flights": 108
+  },
+  {
+    "airline": "Lufthansa",
+    "flights": 108
   },
   {
     "airline": "Frontier Airlines",
-    "flights": 94
-  },
-  {
-    "airline": "Envoy Air",
-    "flights": 93
+    "flights": 100
   },
   {
     "airline": "Air Canada",
-    "flights": 90
+    "flights": 96
   },
   {
-    "airline": "Jet2.com",
-    "flights": 82
+    "airline": "Envoy Air",
+    "flights": 86
   },
   {
     "airline": "British Airways",
-    "flights": 76
+    "flights": 77
   },
   {
     "airline": "WestJet",
     "flights": 74
   },
   {
-    "airline": "Air France",
-    "flights": 67
+    "airline": "Jet2.com",
+    "flights": 70
   },
   {
-    "airline": "Bombardier Business Jet Solutions",
-    "flights": 65
-  },
-  {
-    "airline": "KLM Royal Dutch Airlines",
+    "airline": "Vueling Airlines",
     "flights": 65
   },
   {
@@ -96,7 +88,15 @@
     "flights": 64
   },
   {
-    "airline": "Vueling Airlines",
-    "flights": 63
+    "airline": "Allegiant Air",
+    "flights": 59
+  },
+  {
+    "airline": "IndiGo Airlines",
+    "flights": 56
+  },
+  {
+    "airline": "Air France",
+    "flights": 56
   }
 ]
