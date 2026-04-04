@@ -1,102 +1,102 @@
 [
   {
     "airline": "unknown",
-    "flights": 2782
-  },
-  {
-    "airline": "American Airlines",
-    "flights": 462
+    "flights": 2581
   },
   {
     "airline": "Southwest Airlines",
-    "flights": 460
+    "flights": 461
+  },
+  {
+    "airline": "American Airlines",
+    "flights": 452
   },
   {
     "airline": "Delta Air Lines",
-    "flights": 443
+    "flights": 435
   },
   {
     "airline": "United Airlines",
-    "flights": 409
+    "flights": 430
   },
   {
     "airline": "Ryanair",
-    "flights": 319
+    "flights": 282
   },
   {
     "airline": "SkyWest",
-    "flights": 208
+    "flights": 202
   },
   {
     "airline": "JetBlue Airways",
-    "flights": 130
-  },
-  {
-    "airline": "NetJets",
-    "flights": 117
+    "flights": 132
   },
   {
     "airline": "Republic Airlines",
-    "flights": 115
-  },
-  {
-    "airline": "easyJet",
-    "flights": 114
+    "flights": 116
   },
   {
     "airline": "Alaska Airlines",
     "flights": 113
   },
   {
+    "airline": "easyJet",
+    "flights": 110
+  },
+  {
+    "airline": "NetJets",
+    "flights": 100
+  },
+  {
     "airline": "Envoy Air",
-    "flights": 92
+    "flights": 94
   },
   {
     "airline": "Frontier Airlines",
-    "flights": 91
-  },
-  {
-    "airline": "Lufthansa",
-    "flights": 91
-  },
-  {
-    "airline": "Air Canada",
-    "flights": 82
+    "flights": 93
   },
   {
     "airline": "WestJet",
-    "flights": 77
+    "flights": 81
   },
   {
-    "airline": "British Airways",
-    "flights": 62
-  },
-  {
-    "airline": "Turkish Airlines",
-    "flights": 59
-  },
-  {
-    "airline": "Bombardier Business Jet Solutions",
-    "flights": 58
-  },
-  {
-    "airline": "Allegiant Air",
-    "flights": 56
+    "airline": "Air Canada",
+    "flights": 80
   },
   {
     "airline": "Jet2.com",
-    "flights": 56
+    "flights": 68
   },
   {
-    "airline": "KLM Royal Dutch Airlines",
-    "flights": 54
-  },
-  {
-    "airline": "Vueling Airlines",
-    "flights": 53
+    "airline": "Allegiant Air",
+    "flights": 60
   },
   {
     "airline": "PSA Airlines",
+    "flights": 57
+  },
+  {
+    "airline": "Bombardier Business Jet Solutions",
+    "flights": 56
+  },
+  {
+    "airline": "Lufthansa",
     "flights": 53
+  },
+  {
+    "airline": "United Parcel Service",
+    "flights": 49
+  },
+  {
+    "airline": "TAM Brazilian Airlines",
+    "flights": 48
+  },
+  {
+    "airline": "British Airways",
+    "flights": 46
+  },
+  {
+    "airline": "Scandinavian Airlines System",
+    "flights": 41
   }
 ]
