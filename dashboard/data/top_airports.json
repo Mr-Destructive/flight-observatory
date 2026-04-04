@@ -1,1 +1,42 @@
-[]
+[
+  {
+    "airport": "unknown",
+    "flights": 4638
+  },
+  {
+    "airport": "KDEN",
+    "flights": 31
+  },
+  {
+    "airport": "KATL",
+    "flights": 31
+  },
+  {
+    "airport": "KDFW",
+    "flights": 26
+  },
+  {
+    "airport": "CYYZ",
+    "flights": 24
+  },
+  {
+    "airport": "SKBO",
+    "flights": 20
+  },
+  {
+    "airport": "YSSY",
+    "flights": 19
+  },
+  {
+    "airport": "KPHX",
+    "flights": 19
+  },
+  {
+    "airport": "VHHH",
+    "flights": 18
+  },
+  {
+    "airport": "RJTT",
+    "flights": 17
+  }
+]
