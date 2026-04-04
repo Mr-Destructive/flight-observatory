@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 3790
-  },
-  {
-    "airport": "EDDF",
-    "flights": 19
-  },
-  {
-    "airport": "EGKK",
-    "flights": 19
-  },
-  {
-    "airport": "EHAM",
-    "flights": 19
+    "flights": 3852
   },
   {
     "airport": "LSZH",
-    "flights": 18
-  },
-  {
-    "airport": "ESSA",
-    "flights": 14
-  },
-  {
-    "airport": "VHHH",
-    "flights": 14
-  },
-  {
-    "airport": "LOWW",
-    "flights": 13
-  },
-  {
-    "airport": "LGAV",
-    "flights": 13
-  },
-  {
-    "airport": "LFPO",
-    "flights": 12
+    "flights": 23
   },
   {
     "airport": "RJTT",
+    "flights": 22
+  },
+  {
+    "airport": "VHHH",
+    "flights": 18
+  },
+  {
+    "airport": "LGAV",
+    "flights": 17
+  },
+  {
+    "airport": "EHAM",
+    "flights": 17
+  },
+  {
+    "airport": "EGKK",
+    "flights": 17
+  },
+  {
+    "airport": "EDDF",
+    "flights": 17
+  },
+  {
+    "airport": "YSSY",
+    "flights": 15
+  },
+  {
+    "airport": "LEBL",
+    "flights": 13
+  },
+  {
+    "airport": "ESSA",
     "flights": 12
   },
   {
-    "airport": "KLAS",
-    "flights": 11
+    "airport": "EBBR",
+    "flights": 12
   },
   {
-    "airport": "CYYC",
-    "flights": 11
+    "airport": "VOBL",
+    "flights": 10
+  },
+  {
+    "airport": "LFPO",
+    "flights": 10
+  },
+  {
+    "airport": "VTBS",
+    "flights": 9
+  },
+  {
+    "airport": "KLAS",
+    "flights": 9
+  },
+  {
+    "airport": "EGCC",
+    "flights": 9
   },
   {
     "airport": "LFMN",
-    "flights": 10
+    "flights": 9
   },
   {
     "airport": "YMML",
-    "flights": 10
-  },
-  {
-    "airport": "LFPG",
     "flights": 9
   },
   {
-    "airport": "EBBR",
-    "flights": 9
+    "airport": "KLAX",
+    "flights": 8
   },
   {
-    "airport": "LIRF",
+    "airport": "CYYC",
+    "flights": 8
+  },
+  {
+    "airport": "LEAL",
+    "flights": 8
+  },
+  {
+    "airport": "LPFR",
+    "flights": 8
+  },
+  {
+    "airport": "EDDM",
     "flights": 8
   },
   {
     "airport": "VABB",
-    "flights": 8
-  },
-  {
-    "airport": "LEBL",
-    "flights": 8
-  },
-  {
-    "airport": "YSSY",
-    "flights": 8
-  },
-  {
-    "airport": "EGCC",
-    "flights": 8
-  },
-  {
-    "airport": "VOBL",
-    "flights": 7
-  },
-  {
-    "airport": "LEAL",
-    "flights": 7
-  },
-  {
-    "airport": "KBOS",
     "flights": 7
   }
 ]

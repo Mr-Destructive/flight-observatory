@@ -1,42 +1,42 @@
 [
   {
     "airport": "unknown",
-    "flights": 16178
+    "flights": 20030
   },
   {
     "airport": "VHHH",
-    "flights": 66
+    "flights": 84
   },
   {
     "airport": "LSZH",
-    "flights": 58
-  },
-  {
-    "airport": "KDEN",
-    "flights": 58
+    "flights": 81
   },
   {
     "airport": "RJTT",
-    "flights": 57
+    "flights": 79
   },
   {
     "airport": "EDDF",
-    "flights": 54
-  },
-  {
-    "airport": "KSFO",
-    "flights": 52
-  },
-  {
-    "airport": "KLAS",
-    "flights": 51
+    "flights": 71
   },
   {
     "airport": "YSSY",
-    "flights": 49
+    "flights": 64
   },
   {
-    "airport": "CYYZ",
-    "flights": 49
+    "airport": "KDEN",
+    "flights": 61
+  },
+  {
+    "airport": "KLAS",
+    "flights": 60
+  },
+  {
+    "airport": "EGKK",
+    "flights": 58
+  },
+  {
+    "airport": "LGAV",
+    "flights": 57
   }
 ]
