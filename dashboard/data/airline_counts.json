@@ -1,71 +1,67 @@
 [
   {
     "airline": "unknown",
-    "flights": 3584
-  },
-  {
-    "airline": "Delta Air Lines",
-    "flights": 457
+    "flights": 3684
   },
   {
     "airline": "Southwest Airlines",
-    "flights": 456
-  },
-  {
-    "airline": "American Airlines",
-    "flights": 442
+    "flights": 463
   },
   {
     "airline": "United Airlines",
-    "flights": 440
+    "flights": 461
+  },
+  {
+    "airline": "Delta Air Lines",
+    "flights": 458
+  },
+  {
+    "airline": "American Airlines",
+    "flights": 448
   },
   {
     "airline": "Ryanair",
-    "flights": 370
+    "flights": 365
   },
   {
     "airline": "SkyWest",
-    "flights": 185
+    "flights": 204
   },
   {
     "airline": "NetJets",
-    "flights": 134
-  },
-  {
-    "airline": "JetBlue Airways",
-    "flights": 134
+    "flights": 137
   },
   {
     "airline": "Alaska Airlines",
-    "flights": 128
+    "flights": 132
+  },
+  {
+    "airline": "JetBlue Airways",
+    "flights": 125
   },
   {
     "airline": "easyJet",
-    "flights": 118
-  },
-  {
-    "airline": "Lufthansa",
-    "flights": 112
+    "flights": 122
   },
   {
     "airline": "Republic Airlines",
-    "flights": 104
+    "flights": 112
   },
   {
-    "airline": "Turkish Airlines",
-    "flights": 97
-  },
-  {
-    "airline": "Frontier Airlines",
-    "flights": 88
+    "airline": "Lufthansa",
+    "flights": 105
   },
   {
     "airline": "Air Canada",
-    "flights": 88
+    "flights": 95
   },
   {
-    "airline": "Scandinavian Airlines System",
-    "flights": 83
+    "airline": "IndiGo Airlines",
+    "flights": 94
+  },
+  {
+    "airline": "Frontier Airlines",
+    "flights": 87
   },
   {
     "airline": "Jet2.com",
@@ -76,27 +72,31 @@
     "flights": 82
   },
   {
-    "airline": "IndiGo Airlines",
-    "flights": 80
+    "airline": "Turkish Airlines",
+    "flights": 81
   },
   {
     "airline": "Envoy Air",
-    "flights": 79
+    "flights": 80
   },
   {
     "airline": "British Airways",
     "flights": 79
   },
   {
+    "airline": "Scandinavian Airlines System",
+    "flights": 78
+  },
+  {
     "airline": "Air France",
     "flights": 73
   },
   {
-    "airline": "WestJet",
-    "flights": 65
+    "airline": "PSA Airlines",
+    "flights": 67
   },
   {
-    "airline": "Emirates",
-    "flights": 60
+    "airline": "WestJet",
+    "flights": 63
   }
 ]
