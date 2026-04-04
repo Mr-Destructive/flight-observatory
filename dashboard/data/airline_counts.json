@@ -1,102 +1,102 @@
 [
   {
     "airline": "unknown",
-    "flights": 1034
+    "flights": 1049
   },
   {
     "airline": "Ryanair",
-    "flights": 400
+    "flights": 373
   },
   {
     "airline": "Delta Air Lines",
-    "flights": 127
-  },
-  {
-    "airline": "United Airlines",
-    "flights": 122
-  },
-  {
-    "airline": "Lufthansa",
-    "flights": 105
-  },
-  {
-    "airline": "easyJet",
-    "flights": 104
-  },
-  {
-    "airline": "Turkish Airlines",
-    "flights": 102
+    "flights": 134
   },
   {
     "airline": "American Airlines",
-    "flights": 101
+    "flights": 133
   },
   {
-    "airline": "KLM Royal Dutch Airlines",
-    "flights": 99
+    "airline": "United Airlines",
+    "flights": 118
   },
   {
-    "airline": "Air France",
-    "flights": 93
+    "airline": "Lufthansa",
+    "flights": 113
   },
   {
-    "airline": "Scandinavian Airlines System",
-    "flights": 80
+    "airline": "easyJet",
+    "flights": 108
+  },
+  {
+    "airline": "Federal Express",
+    "flights": 103
+  },
+  {
+    "airline": "Turkish Airlines",
+    "flights": 98
+  },
+  {
+    "airline": "Southwest Airlines",
+    "flights": 90
   },
   {
     "airline": "IndiGo Airlines",
-    "flights": 79
+    "flights": 89
+  },
+  {
+    "airline": "Air France",
+    "flights": 84
+  },
+  {
+    "airline": "Scandinavian Airlines System",
+    "flights": 69
+  },
+  {
+    "airline": "Vueling Airlines",
+    "flights": 69
   },
   {
     "airline": "British Airways",
     "flights": 67
   },
   {
-    "airline": "Jet2.com",
-    "flights": 67
-  },
-  {
-    "airline": "Vueling Airlines",
+    "airline": "United Parcel Service",
     "flights": 63
   },
   {
-    "airline": "Pegasus Airlines",
-    "flights": 56
-  },
-  {
-    "airline": "Swissair",
-    "flights": 56
+    "airline": "KLM Royal Dutch Airlines",
+    "flights": 61
   },
   {
     "airline": "All Nippon Airways",
-    "flights": 55
+    "flights": 60
+  },
+  {
+    "airline": "Pegasus Airlines",
+    "flights": 60
+  },
+  {
+    "airline": "Jet2.com",
+    "flights": 59
   },
   {
     "airline": "Japan Airlines Domestic",
-    "flights": 55
+    "flights": 57
   },
   {
-    "airline": "Eurowings",
-    "flights": 52
-  },
-  {
-    "airline": "TAP Portugal",
+    "airline": "Emirates",
     "flights": 49
   },
   {
     "airline": "Transavia France",
-    "flights": 46
+    "flights": 47
   },
   {
-    "airline": "Emirates",
+    "airline": "JetBlue Airways",
+    "flights": 47
+  },
+  {
+    "airline": "Frontier Airlines",
     "flights": 43
-  },
-  {
-    "airline": "Wizz Air",
-    "flights": 42
-  },
-  {
-    "airline": "Southwest Airlines",
-    "flights": 42
   }
 ]
