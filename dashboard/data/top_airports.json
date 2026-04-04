@@ -1,42 +1,42 @@
 [
   {
     "airport": "unknown",
-    "flights": 154960
+    "flights": 161593
   },
   {
     "airport": "KATL",
-    "flights": 610
+    "flights": 643
   },
   {
     "airport": "KDEN",
-    "flights": 493
+    "flights": 538
   },
   {
     "airport": "CYYZ",
-    "flights": 466
+    "flights": 487
   },
   {
     "airport": "LSZH",
-    "flights": 450
+    "flights": 455
   },
   {
     "airport": "KBOS",
-    "flights": 378
-  },
-  {
-    "airport": "EDDF",
-    "flights": 365
+    "flights": 398
   },
   {
     "airport": "KORD",
-    "flights": 358
+    "flights": 381
   },
   {
-    "airport": "VHHH",
-    "flights": 338
+    "airport": "EDDF",
+    "flights": 366
   },
   {
     "airport": "KDFW",
-    "flights": 327
+    "flights": 348
+  },
+  {
+    "airport": "VHHH",
+    "flights": 344
   }
 ]
