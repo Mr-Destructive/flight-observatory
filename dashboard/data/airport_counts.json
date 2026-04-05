@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 4055
+    "flights": 4079
   },
   {
     "airport": "LSZH",
-    "flights": 26
+    "flights": 28
   },
   {
     "airport": "KBOS",
-    "flights": 23
+    "flights": 24
   },
   {
-    "airport": "EHAM",
-    "flights": 21
+    "airport": "YSSY",
+    "flights": 22
   },
   {
     "airport": "RJTT",
     "flights": 21
   },
   {
-    "airport": "YSSY",
+    "airport": "LEBL",
+    "flights": 20
+  },
+  {
+    "airport": "EHAM",
     "flights": 18
+  },
+  {
+    "airport": "LGAV",
+    "flights": 16
   },
   {
     "airport": "EDDF",
     "flights": 16
   },
   {
-    "airport": "LEBL",
-    "flights": 16
+    "airport": "CYYZ",
+    "flights": 15
   },
   {
-    "airport": "YMML",
-    "flights": 15
+    "airport": "VIDP",
+    "flights": 14
   },
   {
     "airport": "VHHH",
     "flights": 14
   },
   {
-    "airport": "EBBR",
+    "airport": "KMCO",
     "flights": 13
+  },
+  {
+    "airport": "KLGA",
+    "flights": 12
+  },
+  {
+    "airport": "EBBR",
+    "flights": 11
   },
   {
     "airport": "EGKK",
-    "flights": 13
-  },
-  {
-    "airport": "EGCC",
-    "flights": 13
-  },
-  {
-    "airport": "KMCO",
-    "flights": 12
-  },
-  {
-    "airport": "LGAV",
-    "flights": 12
-  },
-  {
-    "airport": "ZGSZ",
     "flights": 11
   },
   {
-    "airport": "VTBS",
+    "airport": "YMML",
     "flights": 11
-  },
-  {
-    "airport": "LEAL",
-    "flights": 11
-  },
-  {
-    "airport": "VIDP",
-    "flights": 10
   },
   {
     "airport": "LFPO",
     "flights": 10
   },
   {
+    "airport": "KATL",
+    "flights": 10
+  },
+  {
+    "airport": "WIII",
+    "flights": 9
+  },
+  {
+    "airport": "VTBS",
+    "flights": 9
+  },
+  {
+    "airport": "ESSA",
+    "flights": 9
+  },
+  {
+    "airport": "KEWR",
+    "flights": 9
+  },
+  {
     "airport": "LOWW",
-    "flights": 10
+    "flights": 9
   },
   {
-    "airport": "CYYC",
-    "flights": 10
-  },
-  {
-    "airport": "YPPH",
-    "flights": 10
-  },
-  {
-    "airport": "VABB",
-    "flights": 8
-  },
-  {
-    "airport": "VOBL",
+    "airport": "SKBO",
     "flights": 8
   }
 ]
