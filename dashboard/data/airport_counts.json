@@ -1,66 +1,70 @@
 [
   {
     "airport": "unknown",
-    "flights": 7839
-  },
-  {
-    "airport": "KDEN",
-    "flights": 54
-  },
-  {
-    "airport": "KDFW",
-    "flights": 48
-  },
-  {
-    "airport": "KORD",
-    "flights": 25
-  },
-  {
-    "airport": "MGGT",
-    "flights": 25
-  },
-  {
-    "airport": "LEBL",
-    "flights": 22
+    "flights": 7760
   },
   {
     "airport": "KATL",
-    "flights": 22
-  },
-  {
-    "airport": "KSFO",
-    "flights": 21
-  },
-  {
-    "airport": "KPHX",
-    "flights": 19
+    "flights": 33
   },
   {
     "airport": "CYYC",
-    "flights": 19
+    "flights": 25
   },
   {
-    "airport": "KJFK",
-    "flights": 17
+    "airport": "KLAS",
+    "flights": 23
+  },
+  {
+    "airport": "EDDF",
+    "flights": 23
+  },
+  {
+    "airport": "CYYZ",
+    "flights": 22
   },
   {
     "airport": "KLGA",
+    "flights": 22
+  },
+  {
+    "airport": "MGGT",
+    "flights": 22
+  },
+  {
+    "airport": "KBOS",
+    "flights": 21
+  },
+  {
+    "airport": "KDFW",
+    "flights": 21
+  },
+  {
+    "airport": "LSZH",
+    "flights": 21
+  },
+  {
+    "airport": "KJFK",
+    "flights": 20
+  },
+  {
+    "airport": "KORD",
     "flights": 17
   },
   {
     "airport": "EGKK",
-    "flights": 17
-  },
-  {
-    "airport": "KBOS",
     "flights": 16
   },
   {
-    "airport": "EDDF",
+    "airport": "KEWR",
     "flights": 15
   },
   {
-    "airport": "LGAV",
+    "airport": "KDEN",
+    "flights": 15
+  },
+  {
+    "airport": "KMCO",
     "flights": 14
   },
   {
@@ -68,7 +72,7 @@
     "flights": 14
   },
   {
-    "airport": "VIDP",
+    "airport": "LEBL",
     "flights": 13
   },
   {
@@ -76,27 +80,23 @@
     "flights": 13
   },
   {
-    "airport": "EHAM",
+    "airport": "KSFO",
     "flights": 13
   },
   {
-    "airport": "KLAS",
+    "airport": "KPHX",
     "flights": 13
   },
   {
-    "airport": "EGCC",
-    "flights": 12
+    "airport": "KAUS",
+    "flights": 13
   },
   {
-    "airport": "CYYZ",
-    "flights": 12
+    "airport": "SKBO",
+    "flights": 11
   },
   {
-    "airport": "LSZH",
-    "flights": 12
-  },
-  {
-    "airport": "KPAO",
+    "airport": "KSAN",
     "flights": 11
   }
 ]
