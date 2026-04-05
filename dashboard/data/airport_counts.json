@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 4079
-  },
-  {
-    "airport": "LSZH",
-    "flights": 28
-  },
-  {
-    "airport": "KBOS",
-    "flights": 24
-  },
-  {
-    "airport": "YSSY",
-    "flights": 22
-  },
-  {
-    "airport": "RJTT",
-    "flights": 21
-  },
-  {
-    "airport": "LEBL",
-    "flights": 20
-  },
-  {
-    "airport": "EHAM",
-    "flights": 18
-  },
-  {
-    "airport": "LGAV",
-    "flights": 16
-  },
-  {
-    "airport": "EDDF",
-    "flights": 16
+    "flights": 4808
   },
   {
     "airport": "CYYZ",
-    "flights": 15
+    "flights": 24
   },
   {
-    "airport": "VIDP",
-    "flights": 14
+    "airport": "RJTT",
+    "flights": 22
   },
   {
-    "airport": "VHHH",
-    "flights": 14
+    "airport": "LSZH",
+    "flights": 21
   },
   {
-    "airport": "KMCO",
-    "flights": 13
+    "airport": "KBOS",
+    "flights": 20
   },
   {
-    "airport": "KLGA",
-    "flights": 12
+    "airport": "EDDF",
+    "flights": 18
   },
   {
-    "airport": "EBBR",
-    "flights": 11
-  },
-  {
-    "airport": "EGKK",
-    "flights": 11
-  },
-  {
-    "airport": "YMML",
-    "flights": 11
+    "airport": "LEBL",
+    "flights": 17
   },
   {
     "airport": "LFPO",
-    "flights": 10
+    "flights": 16
+  },
+  {
+    "airport": "YSSY",
+    "flights": 16
+  },
+  {
+    "airport": "EGKK",
+    "flights": 16
+  },
+  {
+    "airport": "VHHH",
+    "flights": 16
+  },
+  {
+    "airport": "EHAM",
+    "flights": 15
+  },
+  {
+    "airport": "KEWR",
+    "flights": 12
+  },
+  {
+    "airport": "LOWW",
+    "flights": 12
   },
   {
     "airport": "KATL",
+    "flights": 11
+  },
+  {
+    "airport": "KLGA",
+    "flights": 11
+  },
+  {
+    "airport": "VIDP",
     "flights": 10
   },
   {
-    "airport": "WIII",
-    "flights": 9
+    "airport": "KDFW",
+    "flights": 10
   },
   {
-    "airport": "VTBS",
+    "airport": "SKBO",
+    "flights": 10
+  },
+  {
+    "airport": "LGAV",
+    "flights": 10
+  },
+  {
+    "airport": "KORD",
+    "flights": 10
+  },
+  {
+    "airport": "LEMD",
+    "flights": 10
+  },
+  {
+    "airport": "EGCC",
+    "flights": 10
+  },
+  {
+    "airport": "KMCO",
     "flights": 9
   },
   {
     "airport": "ESSA",
     "flights": 9
-  },
-  {
-    "airport": "KEWR",
-    "flights": 9
-  },
-  {
-    "airport": "LOWW",
-    "flights": 9
-  },
-  {
-    "airport": "SKBO",
-    "flights": 8
   }
 ]
