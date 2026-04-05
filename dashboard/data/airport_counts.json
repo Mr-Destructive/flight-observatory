@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 3756
-  },
-  {
-    "airport": "YSSY",
-    "flights": 23
-  },
-  {
-    "airport": "RJTT",
-    "flights": 18
-  },
-  {
-    "airport": "EGKK",
-    "flights": 18
-  },
-  {
-    "airport": "VHHH",
-    "flights": 16
+    "flights": 3914
   },
   {
     "airport": "LSZH",
-    "flights": 16
-  },
-  {
-    "airport": "LGAV",
-    "flights": 14
+    "flights": 25
   },
   {
     "airport": "EDDF",
-    "flights": 14
+    "flights": 21
   },
   {
     "airport": "LEBL",
-    "flights": 13
+    "flights": 21
+  },
+  {
+    "airport": "YSSY",
+    "flights": 21
+  },
+  {
+    "airport": "RJTT",
+    "flights": 19
+  },
+  {
+    "airport": "VHHH",
+    "flights": 19
+  },
+  {
+    "airport": "YMML",
+    "flights": 19
+  },
+  {
+    "airport": "EGKK",
+    "flights": 15
+  },
+  {
+    "airport": "LGAV",
+    "flights": 15
   },
   {
     "airport": "VIDP",
-    "flights": 12
+    "flights": 13
+  },
+  {
+    "airport": "EHAM",
+    "flights": 13
   },
   {
     "airport": "LFPO",
     "flights": 12
   },
   {
-    "airport": "LOWW",
-    "flights": 12
-  },
-  {
-    "airport": "EHAM",
-    "flights": 12
-  },
-  {
-    "airport": "EBBR",
-    "flights": 12
-  },
-  {
-    "airport": "CYYC",
-    "flights": 11
-  },
-  {
-    "airport": "YMML",
-    "flights": 11
-  },
-  {
-    "airport": "VABB",
+    "airport": "KBOS",
     "flights": 10
   },
   {
-    "airport": "KBOS",
+    "airport": "LOWW",
+    "flights": 10
+  },
+  {
+    "airport": "LEMD",
+    "flights": 10
+  },
+  {
+    "airport": "LHBP",
     "flights": 9
   },
   {
-    "airport": "LFPG",
+    "airport": "VTBS",
     "flights": 9
+  },
+  {
+    "airport": "EBBR",
+    "flights": 8
+  },
+  {
+    "airport": "EGCC",
+    "flights": 8
   },
   {
     "airport": "LEAL",
-    "flights": 9
+    "flights": 7
   },
   {
-    "airport": "KSFO",
-    "flights": 9
+    "airport": "LOLU",
+    "flights": 7
   },
   {
     "airport": "YPPH",
-    "flights": 9
+    "flights": 7
   },
   {
-    "airport": "ESSA",
-    "flights": 9
+    "airport": "LFPG",
+    "flights": 7
   },
   {
-    "airport": "UUEE",
-    "flights": 9
-  },
-  {
-    "airport": "WIII",
-    "flights": 8
+    "airport": "EFHK",
+    "flights": 7
   }
 ]
