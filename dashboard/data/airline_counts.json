@@ -1,102 +1,102 @@
 [
   {
     "airline": "unknown",
-    "flights": 944
+    "flights": 987
   },
   {
     "airline": "Ryanair",
-    "flights": 399
+    "flights": 397
   },
   {
     "airline": "United Airlines",
+    "flights": 117
+  },
+  {
+    "airline": "American Airlines",
     "flights": 114
   },
   {
     "airline": "Delta Air Lines",
-    "flights": 106
-  },
-  {
-    "airline": "American Airlines",
-    "flights": 105
-  },
-  {
-    "airline": "Turkish Airlines",
-    "flights": 101
+    "flights": 112
   },
   {
     "airline": "Lufthansa",
-    "flights": 100
+    "flights": 104
   },
   {
     "airline": "easyJet",
-    "flights": 92
+    "flights": 100
   },
   {
-    "airline": "IndiGo Airlines",
-    "flights": 86
+    "airline": "Turkish Airlines",
+    "flights": 98
   },
   {
     "airline": "Air France",
-    "flights": 85
+    "flights": 86
   },
   {
-    "airline": "Jet2.com",
-    "flights": 77
-  },
-  {
-    "airline": "Scandinavian Airlines System",
-    "flights": 74
+    "airline": "IndiGo Airlines",
+    "flights": 84
   },
   {
     "airline": "KLM Royal Dutch Airlines",
-    "flights": 72
+    "flights": 81
+  },
+  {
+    "airline": "Jet2.com",
+    "flights": 74
+  },
+  {
+    "airline": "Scandinavian Airlines System",
+    "flights": 70
   },
   {
     "airline": "British Airways",
     "flights": 69
   },
   {
+    "airline": "All Nippon Airways",
+    "flights": 67
+  },
+  {
     "airline": "Vueling Airlines",
-    "flights": 61
+    "flights": 64
   },
   {
     "airline": "Swissair",
-    "flights": 54
+    "flights": 59
   },
   {
     "airline": "Japan Airlines Domestic",
-    "flights": 49
+    "flights": 54
   },
   {
-    "airline": "Wizz Air",
+    "airline": "Pegasus Airlines",
+    "flights": 53
+  },
+  {
+    "airline": "Eurowings",
     "flights": 49
   },
   {
     "airline": "TAP Portugal",
-    "flights": 49
+    "flights": 47
+  },
+  {
+    "airline": "Southwest Airlines",
+    "flights": 46
   },
   {
     "airline": "Transavia France",
-    "flights": 46
-  },
-  {
-    "airline": "Pegasus Airlines",
-    "flights": 46
-  },
-  {
-    "airline": "Korean Air",
-    "flights": 45
-  },
-  {
-    "airline": "All Nippon Airways",
-    "flights": 44
-  },
-  {
-    "airline": "Eurowings",
     "flights": 44
   },
   {
     "airline": "Air India Limited",
+    "flights": 42
+  },
+  {
+    "airline": "Qantas",
     "flights": 39
   }
 ]
