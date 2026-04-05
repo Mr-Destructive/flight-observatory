@@ -1,42 +1,42 @@
 [
   {
     "airline": "unknown",
-    "flights": 36922
-  },
-  {
-    "airline": "Ryanair",
-    "flights": 7151
+    "flights": 39373
   },
   {
     "airline": "American Airlines",
-    "flights": 6942
+    "flights": 7400
+  },
+  {
+    "airline": "Ryanair",
+    "flights": 7379
   },
   {
     "airline": "Southwest Airlines",
-    "flights": 6619
+    "flights": 7070
   },
   {
     "airline": "Delta Air Lines",
-    "flights": 6428
+    "flights": 6896
   },
   {
     "airline": "United Airlines",
-    "flights": 6255
+    "flights": 6717
   },
   {
     "airline": "SkyWest",
-    "flights": 2648
+    "flights": 2877
   },
   {
     "airline": "JetBlue Airways",
-    "flights": 2164
+    "flights": 2288
   },
   {
     "airline": "easyJet",
-    "flights": 2119
+    "flights": 2211
   },
   {
-    "airline": "Turkish Airlines",
-    "flights": 2065
+    "airline": "Lufthansa",
+    "flights": 2105
   }
 ]
