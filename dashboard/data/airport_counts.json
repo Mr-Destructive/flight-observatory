@@ -1,43 +1,47 @@
 [
   {
     "airport": "unknown",
-    "flights": 3951
+    "flights": 5421
+  },
+  {
+    "airport": "CYYZ",
+    "flights": 36
   },
   {
     "airport": "LSZH",
-    "flights": 29
-  },
-  {
-    "airport": "RJTT",
-    "flights": 27
-  },
-  {
-    "airport": "YSSY",
-    "flights": 25
-  },
-  {
-    "airport": "LFPO",
-    "flights": 20
+    "flights": 28
   },
   {
     "airport": "EGKK",
+    "flights": 24
+  },
+  {
+    "airport": "YSSY",
+    "flights": 23
+  },
+  {
+    "airport": "KBOS",
+    "flights": 22
+  },
+  {
+    "airport": "RJTT",
     "flights": 19
   },
   {
-    "airport": "EDDF",
+    "airport": "LEBL",
     "flights": 18
   },
   {
-    "airport": "LGAV",
-    "flights": 17
+    "airport": "KATL",
+    "flights": 18
   },
   {
-    "airport": "EBBR",
-    "flights": 17
+    "airport": "CYYC",
+    "flights": 18
   },
   {
-    "airport": "VHHH",
-    "flights": 16
+    "airport": "YMML",
+    "flights": 17
   },
   {
     "airport": "LOWW",
@@ -45,22 +49,18 @@
   },
   {
     "airport": "EHAM",
-    "flights": 15
-  },
-  {
-    "airport": "VIDP",
     "flights": 14
   },
   {
-    "airport": "KLAS",
+    "airport": "KMCO",
     "flights": 14
   },
   {
-    "airport": "LEBL",
-    "flights": 12
+    "airport": "EDDF",
+    "flights": 13
   },
   {
-    "airport": "YMML",
+    "airport": "LGAV",
     "flights": 12
   },
   {
@@ -68,35 +68,35 @@
     "flights": 12
   },
   {
+    "airport": "VIDP",
+    "flights": 11
+  },
+  {
+    "airport": "LFPO",
+    "flights": 11
+  },
+  {
     "airport": "ESSA",
     "flights": 11
   },
   {
-    "airport": "KBOS",
+    "airport": "KAUS",
     "flights": 10
+  },
+  {
+    "airport": "VTBS",
+    "flights": 9
+  },
+  {
+    "airport": "SKBO",
+    "flights": 9
+  },
+  {
+    "airport": "VABB",
+    "flights": 9
   },
   {
     "airport": "ZGSZ",
-    "flights": 10
-  },
-  {
-    "airport": "VECC",
     "flights": 9
-  },
-  {
-    "airport": "UUEE",
-    "flights": 9
-  },
-  {
-    "airport": "CYYC",
-    "flights": 8
-  },
-  {
-    "airport": "EGCC",
-    "flights": 8
-  },
-  {
-    "airport": "EDDS",
-    "flights": 8
   }
 ]
