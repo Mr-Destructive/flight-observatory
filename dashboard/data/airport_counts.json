@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 6091
+    "flights": 3951
   },
   {
-    "airport": "KDEN",
-    "flights": 64
-  },
-  {
-    "airport": "KATL",
-    "flights": 46
-  },
-  {
-    "airport": "KDFW",
-    "flights": 33
-  },
-  {
-    "airport": "KLGA",
-    "flights": 30
-  },
-  {
-    "airport": "YSSY",
-    "flights": 28
-  },
-  {
-    "airport": "CYYZ",
-    "flights": 28
-  },
-  {
-    "airport": "KMCO",
-    "flights": 26
-  },
-  {
-    "airport": "KSFO",
-    "flights": 25
-  },
-  {
-    "airport": "KBOS",
-    "flights": 21
+    "airport": "LSZH",
+    "flights": 29
   },
   {
     "airport": "RJTT",
+    "flights": 27
+  },
+  {
+    "airport": "YSSY",
+    "flights": 25
+  },
+  {
+    "airport": "LFPO",
     "flights": 20
   },
   {
-    "airport": "YPPH",
-    "flights": 20
-  },
-  {
-    "airport": "YMML",
-    "flights": 20
-  },
-  {
-    "airport": "CYYC",
+    "airport": "EGKK",
     "flights": 19
   },
   {
-    "airport": "KPHX",
+    "airport": "EDDF",
     "flights": 18
   },
   {
-    "airport": "KORD",
+    "airport": "LGAV",
+    "flights": 17
+  },
+  {
+    "airport": "EBBR",
     "flights": 17
   },
   {
     "airport": "VHHH",
-    "flights": 17
+    "flights": 16
   },
   {
-    "airport": "KJFK",
+    "airport": "LOWW",
     "flights": 15
   },
   {
-    "airport": "KEWR",
-    "flights": 13
+    "airport": "EHAM",
+    "flights": 15
+  },
+  {
+    "airport": "VIDP",
+    "flights": 14
   },
   {
     "airport": "KLAS",
-    "flights": 13
+    "flights": 14
   },
   {
-    "airport": "KDCA",
+    "airport": "LEBL",
     "flights": 12
   },
   {
-    "airport": "CYVR",
+    "airport": "YMML",
     "flights": 12
   },
   {
-    "airport": "KTPA",
+    "airport": "YPPH",
+    "flights": 12
+  },
+  {
+    "airport": "ESSA",
     "flights": 11
   },
   {
-    "airport": "PHNL",
+    "airport": "KBOS",
     "flights": 10
   },
   {
-    "airport": "KTEB",
+    "airport": "ZGSZ",
     "flights": 10
+  },
+  {
+    "airport": "VECC",
+    "flights": 9
+  },
+  {
+    "airport": "UUEE",
+    "flights": 9
+  },
+  {
+    "airport": "CYYC",
+    "flights": 8
+  },
+  {
+    "airport": "EGCC",
+    "flights": 8
+  },
+  {
+    "airport": "EDDS",
+    "flights": 8
   }
 ]
