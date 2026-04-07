@@ -1,18 +1,34 @@
 [
   {
     "airport": "unknown",
-    "flights": 4182
-  },
-  {
-    "airport": "YSSY",
-    "flights": 37
+    "flights": 4749
   },
   {
     "airport": "LSZH",
+    "flights": 37
+  },
+  {
+    "airport": "YSSY",
     "flights": 26
   },
   {
+    "airport": "KBOS",
+    "flights": 22
+  },
+  {
+    "airport": "YPPH",
+    "flights": 21
+  },
+  {
+    "airport": "RJTT",
+    "flights": 21
+  },
+  {
     "airport": "VHHH",
+    "flights": 21
+  },
+  {
+    "airport": "YMML",
     "flights": 21
   },
   {
@@ -21,30 +37,18 @@
   },
   {
     "airport": "EHAM",
-    "flights": 18
-  },
-  {
-    "airport": "YPPH",
-    "flights": 18
-  },
-  {
-    "airport": "EBBR",
-    "flights": 18
-  },
-  {
-    "airport": "RJTT",
-    "flights": 17
-  },
-  {
-    "airport": "LEBL",
-    "flights": 17
-  },
-  {
-    "airport": "EGKK",
     "flights": 17
   },
   {
     "airport": "VIDP",
+    "flights": 16
+  },
+  {
+    "airport": "LEBL",
+    "flights": 16
+  },
+  {
+    "airport": "LGAV",
     "flights": 15
   },
   {
@@ -52,19 +56,35 @@
     "flights": 14
   },
   {
-    "airport": "LGAV",
+    "airport": "EBBR",
     "flights": 14
   },
   {
-    "airport": "KBOS",
-    "flights": 13
+    "airport": "EGKK",
+    "flights": 14
+  },
+  {
+    "airport": "KATL",
+    "flights": 11
   },
   {
     "airport": "ZGSZ",
+    "flights": 11
+  },
+  {
+    "airport": "VTBS",
+    "flights": 11
+  },
+  {
+    "airport": "LEMD",
     "flights": 10
   },
   {
-    "airport": "EDDM",
+    "airport": "CYYZ",
+    "flights": 10
+  },
+  {
+    "airport": "LOWW",
     "flights": 9
   },
   {
@@ -72,31 +92,11 @@
     "flights": 9
   },
   {
-    "airport": "VECC",
-    "flights": 9
-  },
-  {
-    "airport": "YMML",
-    "flights": 9
-  },
-  {
-    "airport": "LIRF",
-    "flights": 8
-  },
-  {
     "airport": "LIMC",
-    "flights": 8
+    "flights": 9
   },
   {
-    "airport": "EGCC",
-    "flights": 8
-  },
-  {
-    "airport": "LOWW",
-    "flights": 8
-  },
-  {
-    "airport": "YPJT",
-    "flights": 8
+    "airport": "LFLL",
+    "flights": 9
   }
 ]
