@@ -1,102 +1,102 @@
 [
   {
     "airline": "unknown",
-    "flights": 1327
+    "flights": 1964
   },
   {
     "airline": "Ryanair",
-    "flights": 396
-  },
-  {
-    "airline": "Federal Express",
-    "flights": 178
-  },
-  {
-    "airline": "United Parcel Service",
-    "flights": 130
+    "flights": 348
   },
   {
     "airline": "Delta Air Lines",
-    "flights": 118
-  },
-  {
-    "airline": "United Airlines",
-    "flights": 110
-  },
-  {
-    "airline": "easyJet",
-    "flights": 107
-  },
-  {
-    "airline": "Lufthansa",
-    "flights": 103
+    "flights": 273
   },
   {
     "airline": "American Airlines",
-    "flights": 100
+    "flights": 264
   },
   {
-    "airline": "Air France",
-    "flights": 92
+    "airline": "Southwest Airlines",
+    "flights": 222
   },
   {
-    "airline": "IndiGo Airlines",
-    "flights": 88
+    "airline": "United Airlines",
+    "flights": 176
+  },
+  {
+    "airline": "Lufthansa",
+    "flights": 127
+  },
+  {
+    "airline": "JetBlue Airways",
+    "flights": 118
   },
   {
     "airline": "Turkish Airlines",
-    "flights": 87
+    "flights": 98
+  },
+  {
+    "airline": "Republic Airlines",
+    "flights": 96
+  },
+  {
+    "airline": "IndiGo Airlines",
+    "flights": 91
+  },
+  {
+    "airline": "easyJet",
+    "flights": 90
+  },
+  {
+    "airline": "Air France",
+    "flights": 83
   },
   {
     "airline": "KLM Royal Dutch Airlines",
-    "flights": 85
+    "flights": 79
   },
   {
     "airline": "Scandinavian Airlines System",
-    "flights": 70
+    "flights": 78
   },
   {
     "airline": "British Airways",
-    "flights": 67
-  },
-  {
-    "airline": "All Nippon Airways",
-    "flights": 66
+    "flights": 76
   },
   {
     "airline": "Jet2.com",
-    "flights": 64
-  },
-  {
-    "airline": "Vueling Airlines",
-    "flights": 63
+    "flights": 74
   },
   {
     "airline": "Swissair",
-    "flights": 58
+    "flights": 68
   },
   {
-    "airline": "Japan Airlines Domestic",
-    "flights": 56
+    "airline": "All Nippon Airways",
+    "flights": 65
+  },
+  {
+    "airline": "United Parcel Service",
+    "flights": 62
+  },
+  {
+    "airline": "Vueling Airlines",
+    "flights": 62
+  },
+  {
+    "airline": "SkyWest",
+    "flights": 61
+  },
+  {
+    "airline": "Federal Express",
+    "flights": 59
+  },
+  {
+    "airline": "Spirit Airlines",
+    "flights": 59
   },
   {
     "airline": "Pegasus Airlines",
     "flights": 55
-  },
-  {
-    "airline": "Air India Limited",
-    "flights": 47
-  },
-  {
-    "airline": "Eurowings",
-    "flights": 47
-  },
-  {
-    "airline": "TAM Brazilian Airlines",
-    "flights": 46
-  },
-  {
-    "airline": "LOT Polish Airlines",
-    "flights": 45
   }
 ]
