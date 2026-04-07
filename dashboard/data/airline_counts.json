@@ -1,102 +1,102 @@
 [
   {
     "airline": "unknown",
-    "flights": 3929
-  },
-  {
-    "airline": "Southwest Airlines",
-    "flights": 459
+    "flights": 3739
   },
   {
     "airline": "Delta Air Lines",
-    "flights": 447
+    "flights": 484
+  },
+  {
+    "airline": "Southwest Airlines",
+    "flights": 482
   },
   {
     "airline": "American Airlines",
-    "flights": 445
+    "flights": 457
   },
   {
     "airline": "United Airlines",
-    "flights": 415
+    "flights": 418
   },
   {
     "airline": "Ryanair",
-    "flights": 348
+    "flights": 305
   },
   {
     "airline": "SkyWest",
-    "flights": 210
-  },
-  {
-    "airline": "NetJets",
-    "flights": 153
-  },
-  {
-    "airline": "Republic Airlines",
-    "flights": 128
-  },
-  {
-    "airline": "Alaska Airlines",
-    "flights": 123
+    "flights": 199
   },
   {
     "airline": "JetBlue Airways",
+    "flights": 138
+  },
+  {
+    "airline": "NetJets",
+    "flights": 123
+  },
+  {
+    "airline": "Republic Airlines",
     "flights": 121
   },
   {
+    "airline": "Alaska Airlines",
+    "flights": 113
+  },
+  {
     "airline": "easyJet",
-    "flights": 91
-  },
-  {
-    "airline": "Lufthansa",
-    "flights": 90
-  },
-  {
-    "airline": "Envoy Air",
-    "flights": 83
-  },
-  {
-    "airline": "Air Canada",
-    "flights": 80
-  },
-  {
-    "airline": "KLM Royal Dutch Airlines",
-    "flights": 79
+    "flights": 113
   },
   {
     "airline": "United Parcel Service",
-    "flights": 76
+    "flights": 107
   },
   {
-    "airline": "British Airways",
-    "flights": 74
+    "airline": "Air Canada",
+    "flights": 89
   },
   {
-    "airline": "Frontier Airlines",
-    "flights": 67
+    "airline": "Envoy Air",
+    "flights": 73
+  },
+  {
+    "airline": "Lufthansa",
+    "flights": 69
   },
   {
     "airline": "Bombardier Business Jet Solutions",
-    "flights": 62
+    "flights": 68
   },
   {
-    "airline": "PSA Airlines",
-    "flights": 62
+    "airline": "Frontier Airlines",
+    "flights": 65
   },
   {
-    "airline": "Air France",
+    "airline": "Federal Express",
     "flights": 60
   },
   {
-    "airline": "Vueling Airlines",
-    "flights": 58
+    "airline": "WestJet",
+    "flights": 59
   },
   {
-    "airline": "WestJet",
+    "airline": "PSA Airlines",
     "flights": 57
   },
   {
-    "airline": "Turkish Airlines",
-    "flights": 53
+    "airline": "KLM Royal Dutch Airlines",
+    "flights": 52
+  },
+  {
+    "airline": "Spirit Airlines",
+    "flights": 51
+  },
+  {
+    "airline": "TAM Brazilian Airlines",
+    "flights": 50
+  },
+  {
+    "airline": "Vueling Airlines",
+    "flights": 48
   }
 ]
