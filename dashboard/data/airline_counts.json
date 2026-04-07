@@ -1,102 +1,102 @@
 [
   {
     "airline": "unknown",
-    "flights": 1049
+    "flights": 1120
   },
   {
     "airline": "Ryanair",
-    "flights": 296
-  },
-  {
-    "airline": "Southwest Airlines",
-    "flights": 191
-  },
-  {
-    "airline": "American Airlines",
-    "flights": 163
-  },
-  {
-    "airline": "Delta Air Lines",
-    "flights": 161
-  },
-  {
-    "airline": "United Airlines",
-    "flights": 135
-  },
-  {
-    "airline": "Lufthansa",
-    "flights": 132
-  },
-  {
-    "airline": "Turkish Airlines",
-    "flights": 103
-  },
-  {
-    "airline": "KLM Royal Dutch Airlines",
-    "flights": 92
-  },
-  {
-    "airline": "Alaska Airlines",
-    "flights": 86
-  },
-  {
-    "airline": "IndiGo Airlines",
-    "flights": 85
-  },
-  {
-    "airline": "Air France",
-    "flights": 79
-  },
-  {
-    "airline": "Frontier Airlines",
-    "flights": 62
-  },
-  {
-    "airline": "All Nippon Airways",
-    "flights": 60
-  },
-  {
-    "airline": "JetBlue Airways",
-    "flights": 60
-  },
-  {
-    "airline": "Vueling Airlines",
-    "flights": 57
-  },
-  {
-    "airline": "Federal Express",
-    "flights": 53
-  },
-  {
-    "airline": "Japan Airlines Domestic",
-    "flights": 51
-  },
-  {
-    "airline": "Air India Limited",
-    "flights": 49
-  },
-  {
-    "airline": "Wizz Air",
-    "flights": 49
-  },
-  {
-    "airline": "SkyWest",
-    "flights": 49
-  },
-  {
-    "airline": "Scandinavian Airlines System",
-    "flights": 45
-  },
-  {
-    "airline": "Cathay Pacific",
-    "flights": 45
+    "flights": 365
   },
   {
     "airline": "easyJet",
+    "flights": 128
+  },
+  {
+    "airline": "Turkish Airlines",
+    "flights": 125
+  },
+  {
+    "airline": "Delta Air Lines",
+    "flights": 112
+  },
+  {
+    "airline": "American Airlines",
+    "flights": 108
+  },
+  {
+    "airline": "United Airlines",
+    "flights": 103
+  },
+  {
+    "airline": "Lufthansa",
+    "flights": 102
+  },
+  {
+    "airline": "IndiGo Airlines",
+    "flights": 88
+  },
+  {
+    "airline": "Scandinavian Airlines System",
+    "flights": 82
+  },
+  {
+    "airline": "Southwest Airlines",
+    "flights": 74
+  },
+  {
+    "airline": "British Airways",
+    "flights": 64
+  },
+  {
+    "airline": "All Nippon Airways",
+    "flights": 63
+  },
+  {
+    "airline": "Vueling Airlines",
+    "flights": 62
+  },
+  {
+    "airline": "Japan Airlines Domestic",
+    "flights": 60
+  },
+  {
+    "airline": "Air France",
+    "flights": 60
+  },
+  {
+    "airline": "Alaska Airlines",
+    "flights": 57
+  },
+  {
+    "airline": "Swissair",
+    "flights": 51
+  },
+  {
+    "airline": "KLM Royal Dutch Airlines",
+    "flights": 48
+  },
+  {
+    "airline": "LOT Polish Airlines",
     "flights": 44
   },
   {
-    "airline": "Virgin Australia",
-    "flights": 44
+    "airline": "JetBlue Airways",
+    "flights": 43
+  },
+  {
+    "airline": "Qantas",
+    "flights": 42
+  },
+  {
+    "airline": "Pegasus Airlines",
+    "flights": 37
+  },
+  {
+    "airline": "Aegean Airlines",
+    "flights": 37
+  },
+  {
+    "airline": "Transavia France",
+    "flights": 36
   }
 ]
