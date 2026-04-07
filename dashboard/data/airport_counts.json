@@ -1,62 +1,54 @@
 [
   {
     "airport": "unknown",
-    "flights": 4013
-  },
-  {
-    "airport": "LSZH",
-    "flights": 25
+    "flights": 4182
   },
   {
     "airport": "YSSY",
-    "flights": 24
+    "flights": 37
   },
   {
-    "airport": "VIDP",
-    "flights": 23
-  },
-  {
-    "airport": "RJTT",
-    "flights": 22
-  },
-  {
-    "airport": "EGKK",
-    "flights": 20
-  },
-  {
-    "airport": "YMML",
-    "flights": 19
-  },
-  {
-    "airport": "KLAS",
-    "flights": 18
-  },
-  {
-    "airport": "EDDF",
-    "flights": 17
+    "airport": "LSZH",
+    "flights": 26
   },
   {
     "airport": "VHHH",
-    "flights": 17
+    "flights": 21
   },
   {
-    "airport": "CYYZ",
-    "flights": 17
+    "airport": "EDDF",
+    "flights": 20
   },
   {
-    "airport": "YPJT",
-    "flights": 17
-  },
-  {
-    "airport": "LFPO",
-    "flights": 16
+    "airport": "EHAM",
+    "flights": 18
   },
   {
     "airport": "YPPH",
-    "flights": 16
+    "flights": 18
   },
   {
-    "airport": "KSFO",
+    "airport": "EBBR",
+    "flights": 18
+  },
+  {
+    "airport": "RJTT",
+    "flights": 17
+  },
+  {
+    "airport": "LEBL",
+    "flights": 17
+  },
+  {
+    "airport": "EGKK",
+    "flights": 17
+  },
+  {
+    "airport": "VIDP",
+    "flights": 15
+  },
+  {
+    "airport": "LFPO",
     "flights": 14
   },
   {
@@ -64,39 +56,47 @@
     "flights": 14
   },
   {
-    "airport": "VGHS",
-    "flights": 12
-  },
-  {
-    "airport": "PANC",
-    "flights": 12
-  },
-  {
-    "airport": "EBBR",
-    "flights": 12
-  },
-  {
     "airport": "KBOS",
-    "flights": 11
+    "flights": 13
   },
   {
-    "airport": "UUEE",
-    "flights": 11
-  },
-  {
-    "airport": "LEMD",
+    "airport": "ZGSZ",
     "flights": 10
   },
   {
-    "airport": "EHAM",
-    "flights": 10
+    "airport": "EDDM",
+    "flights": 9
+  },
+  {
+    "airport": "ESSA",
+    "flights": 9
   },
   {
     "airport": "VECC",
     "flights": 9
   },
   {
-    "airport": "ZGSZ",
+    "airport": "YMML",
     "flights": 9
+  },
+  {
+    "airport": "LIRF",
+    "flights": 8
+  },
+  {
+    "airport": "LIMC",
+    "flights": 8
+  },
+  {
+    "airport": "EGCC",
+    "flights": 8
+  },
+  {
+    "airport": "LOWW",
+    "flights": 8
+  },
+  {
+    "airport": "YPJT",
+    "flights": 8
   }
 ]
