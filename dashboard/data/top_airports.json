@@ -1,42 +1,42 @@
 [
   {
     "airport": "unknown",
-    "flights": 9502
-  },
-  {
-    "airport": "KORD",
-    "flights": 62
+    "flights": 4990
   },
   {
     "airport": "KDEN",
-    "flights": 59
+    "flights": 35
   },
   {
-    "airport": "YSSY",
-    "flights": 50
-  },
-  {
-    "airport": "CYYZ",
-    "flights": 47
+    "airport": "KORD",
+    "flights": 26
   },
   {
     "airport": "RJTT",
-    "flights": 43
-  },
-  {
-    "airport": "KATL",
-    "flights": 39
+    "flights": 25
   },
   {
     "airport": "YPPH",
-    "flights": 35
+    "flights": 24
   },
   {
-    "airport": "KLGA",
-    "flights": 35
+    "airport": "KPHX",
+    "flights": 20
+  },
+  {
+    "airport": "YSSY",
+    "flights": 19
+  },
+  {
+    "airport": "VHHH",
+    "flights": 16
   },
   {
     "airport": "KDFW",
-    "flights": 35
+    "flights": 14
+  },
+  {
+    "airport": "ZGSZ",
+    "flights": 12
   }
 ]
