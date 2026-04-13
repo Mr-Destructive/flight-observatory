@@ -1,102 +1,102 @@
 [
   {
     "airline": "unknown",
-    "flights": 859
-  },
-  {
-    "airline": "American Airlines",
-    "flights": 324
-  },
-  {
-    "airline": "United Airlines",
-    "flights": 259
-  },
-  {
-    "airline": "Delta Air Lines",
-    "flights": 246
+    "flights": 941
   },
   {
     "airline": "Southwest Airlines",
-    "flights": 169
+    "flights": 439
+  },
+  {
+    "airline": "Delta Air Lines",
+    "flights": 348
+  },
+  {
+    "airline": "American Airlines",
+    "flights": 322
+  },
+  {
+    "airline": "United Airlines",
+    "flights": 292
   },
   {
     "airline": "SkyWest",
-    "flights": 158
+    "flights": 177
   },
   {
     "airline": "Alaska Airlines",
-    "flights": 118
+    "flights": 115
   },
   {
     "airline": "JetBlue Airways",
-    "flights": 85
+    "flights": 101
   },
   {
     "airline": "Frontier Airlines",
-    "flights": 82
-  },
-  {
-    "airline": "IndiGo Airlines",
-    "flights": 79
+    "flights": 85
   },
   {
     "airline": "Air Canada",
-    "flights": 66
+    "flights": 68
   },
   {
-    "airline": "All Nippon Airways",
-    "flights": 57
+    "airline": "IndiGo Airlines",
+    "flights": 65
   },
   {
     "airline": "Envoy Air",
-    "flights": 57
+    "flights": 61
   },
   {
     "airline": "WestJet",
-    "flights": 55
+    "flights": 56
   },
   {
-    "airline": "Japan Airlines Domestic",
-    "flights": 47
+    "airline": "All Nippon Airways",
+    "flights": 53
   },
   {
-    "airline": "Lufthansa",
-    "flights": 47
+    "airline": "Virgin Australia",
+    "flights": 51
   },
   {
     "airline": "Spirit Airlines",
     "flights": 47
   },
   {
-    "airline": "Turkish Airlines",
-    "flights": 44
+    "airline": "Air France",
+    "flights": 46
   },
   {
-    "airline": "Air France",
-    "flights": 43
+    "airline": "Japan Airlines Domestic",
+    "flights": 45
   },
   {
     "airline": "Emirates",
-    "flights": 42
+    "flights": 44
+  },
+  {
+    "airline": "Turkish Airlines",
+    "flights": 40
   },
   {
     "airline": "Air India Limited",
     "flights": 37
   },
   {
-    "airline": "Virgin Australia",
-    "flights": 34
+    "airline": "British Airways",
+    "flights": 36
+  },
+  {
+    "airline": "Qantas",
+    "flights": 36
+  },
+  {
+    "airline": "NetJets",
+    "flights": 35
   },
   {
     "airline": "Jetstar Airways",
-    "flights": 33
-  },
-  {
-    "airline": "SunExpress",
-    "flights": 32
-  },
-  {
-    "airline": "British Airways",
-    "flights": 31
+    "flights": 35
   }
 ]
