@@ -1,94 +1,74 @@
 [
   {
     "airline": "unknown",
-    "flights": 1210
-  },
-  {
-    "airline": "Southwest Airlines",
-    "flights": 416
-  },
-  {
-    "airline": "Delta Air Lines",
-    "flights": 387
+    "flights": 941
   },
   {
     "airline": "American Airlines",
-    "flights": 366
+    "flights": 330
+  },
+  {
+    "airline": "Delta Air Lines",
+    "flights": 246
   },
   {
     "airline": "United Airlines",
-    "flights": 338
+    "flights": 224
+  },
+  {
+    "airline": "Southwest Airlines",
+    "flights": 146
   },
   {
     "airline": "SkyWest",
-    "flights": 148
+    "flights": 132
   },
   {
     "airline": "Alaska Airlines",
-    "flights": 121
+    "flights": 98
   },
   {
     "airline": "JetBlue Airways",
-    "flights": 113
-  },
-  {
-    "airline": "Frontier Airlines",
-    "flights": 85
-  },
-  {
-    "airline": "Federal Express",
-    "flights": 80
-  },
-  {
-    "airline": "Republic Airlines",
-    "flights": 74
-  },
-  {
-    "airline": "All Nippon Airways",
-    "flights": 74
-  },
-  {
-    "airline": "United Parcel Service",
-    "flights": 73
-  },
-  {
-    "airline": "WestJet",
-    "flights": 64
+    "flights": 78
   },
   {
     "airline": "IndiGo Airlines",
-    "flights": 60
+    "flights": 74
+  },
+  {
+    "airline": "Envoy Air",
+    "flights": 63
+  },
+  {
+    "airline": "Frontier Airlines",
+    "flights": 59
   },
   {
     "airline": "Air Canada",
     "flights": 59
   },
   {
+    "airline": "All Nippon Airways",
+    "flights": 57
+  },
+  {
     "airline": "Japan Airlines Domestic",
-    "flights": 52
+    "flights": 53
   },
   {
-    "airline": "Envoy Air",
-    "flights": 49
+    "airline": "Air France",
+    "flights": 51
   },
   {
-    "airline": "Spirit Airlines",
-    "flights": 46
-  },
-  {
-    "airline": "PSA Airlines",
+    "airline": "WestJet",
     "flights": 45
   },
   {
-    "airline": "Allegiant Air",
-    "flights": 43
+    "airline": "Jetstar Airways",
+    "flights": 42
   },
   {
-    "airline": "Virgin Australia",
-    "flights": 43
-  },
-  {
-    "airline": "Emirates",
+    "airline": "Qantas",
     "flights": 41
   },
   {
@@ -96,7 +76,27 @@
     "flights": 41
   },
   {
-    "airline": "Air France",
+    "airline": "Virgin Australia",
+    "flights": 40
+  },
+  {
+    "airline": "Emirates",
+    "flights": 39
+  },
+  {
+    "airline": "Air India Limited",
     "flights": 37
+  },
+  {
+    "airline": "Turkish Airlines",
+    "flights": 37
+  },
+  {
+    "airline": "Air New Zealand",
+    "flights": 35
+  },
+  {
+    "airline": "Lufthansa",
+    "flights": 34
   }
 ]
