@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 4428
-  },
-  {
-    "airport": "YSSY",
-    "flights": 24
-  },
-  {
-    "airport": "KDEN",
-    "flights": 24
+    "flights": 4755
   },
   {
     "airport": "KPHX",
-    "flights": 21
-  },
-  {
-    "airport": "KLAS",
-    "flights": 21
-  },
-  {
-    "airport": "YPPH",
-    "flights": 20
+    "flights": 24
   },
   {
     "airport": "RJTT",
+    "flights": 24
+  },
+  {
+    "airport": "YPPH",
+    "flights": 23
+  },
+  {
+    "airport": "KATL",
+    "flights": 21
+  },
+  {
+    "airport": "YSSY",
+    "flights": 21
+  },
+  {
+    "airport": "KDEN",
+    "flights": 19
+  },
+  {
+    "airport": "VHHH",
     "flights": 19
   },
   {
     "airport": "KBOS",
-    "flights": 18
-  },
-  {
-    "airport": "KLGA",
-    "flights": 18
-  },
-  {
-    "airport": "KDFW",
-    "flights": 18
-  },
-  {
-    "airport": "KATL",
-    "flights": 17
-  },
-  {
-    "airport": "VHHH",
-    "flights": 17
-  },
-  {
-    "airport": "YMML",
     "flights": 16
   },
   {
-    "airport": "VIDP",
-    "flights": 13
+    "airport": "CYYZ",
+    "flights": 16
   },
   {
-    "airport": "KSFO",
-    "flights": 13
+    "airport": "KDFW",
+    "flights": 16
+  },
+  {
+    "airport": "YMML",
+    "flights": 15
+  },
+  {
+    "airport": "KSJC",
+    "flights": 15
   },
   {
     "airport": "KSLC",
+    "flights": 14
+  },
+  {
+    "airport": "CYYC",
+    "flights": 14
+  },
+  {
+    "airport": "KLGA",
     "flights": 12
   },
   {
-    "airport": "CYYZ",
-    "flights": 12
-  },
-  {
-    "airport": "KORD",
-    "flights": 12
-  },
-  {
-    "airport": "YPJT",
-    "flights": 12
-  },
-  {
-    "airport": "YMMB",
+    "airport": "VIDP",
     "flights": 11
   },
   {
-    "airport": "KSAN",
+    "airport": "KSEA",
+    "flights": 11
+  },
+  {
+    "airport": "KOAK",
+    "flights": 11
+  },
+  {
+    "airport": "KMCO",
+    "flights": 11
+  },
+  {
+    "airport": "KJFK",
+    "flights": 11
+  },
+  {
+    "airport": "ZGSZ",
+    "flights": 11
+  },
+  {
+    "airport": "VECC",
     "flights": 10
   },
   {
-    "airport": "KAUS",
+    "airport": "CYVR",
     "flights": 10
   },
   {
-    "airport": "LSZH",
+    "airport": "KORD",
     "flights": 10
-  },
-  {
-    "airport": "EFHK",
-    "flights": 9
-  },
-  {
-    "airport": "VTBS",
-    "flights": 9
   }
 ]
