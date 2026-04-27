@@ -1,74 +1,74 @@
 [
   {
     "airline": "unknown",
-    "flights": 813
-  },
-  {
-    "airline": "American Airlines",
-    "flights": 311
-  },
-  {
-    "airline": "Delta Air Lines",
-    "flights": 258
-  },
-  {
-    "airline": "United Airlines",
-    "flights": 219
+    "flights": 946
   },
   {
     "airline": "Southwest Airlines",
-    "flights": 139
+    "flights": 428
+  },
+  {
+    "airline": "Delta Air Lines",
+    "flights": 331
+  },
+  {
+    "airline": "American Airlines",
+    "flights": 329
+  },
+  {
+    "airline": "United Airlines",
+    "flights": 263
   },
   {
     "airline": "SkyWest",
-    "flights": 136
+    "flights": 170
   },
   {
     "airline": "Alaska Airlines",
-    "flights": 100
-  },
-  {
-    "airline": "IndiGo Airlines",
-    "flights": 86
-  },
-  {
-    "airline": "JetBlue Airways",
-    "flights": 75
-  },
-  {
-    "airline": "All Nippon Airways",
-    "flights": 61
-  },
-  {
-    "airline": "Air Canada",
-    "flights": 58
-  },
-  {
-    "airline": "Envoy Air",
-    "flights": 57
+    "flights": 130
   },
   {
     "airline": "Frontier Airlines",
-    "flights": 54
+    "flights": 82
   },
   {
-    "airline": "Air India Limited",
+    "airline": "JetBlue Airways",
+    "flights": 78
+  },
+  {
+    "airline": "IndiGo Airlines",
+    "flights": 69
+  },
+  {
+    "airline": "Envoy Air",
+    "flights": 55
+  },
+  {
+    "airline": "Spirit Airlines",
     "flights": 50
   },
   {
-    "airline": "Japan Airlines Domestic",
-    "flights": 48
+    "airline": "All Nippon Airways",
+    "flights": 49
   },
   {
     "airline": "WestJet",
+    "flights": 48
+  },
+  {
+    "airline": "Japan Airlines Domestic",
     "flights": 47
   },
   {
-    "airline": "Emirates",
-    "flights": 44
+    "airline": "Air Canada",
+    "flights": 47
   },
   {
-    "airline": "Turkish Airlines",
+    "airline": "Lufthansa",
+    "flights": 45
+  },
+  {
+    "airline": "Emirates",
     "flights": 44
   },
   {
@@ -76,15 +76,11 @@
     "flights": 43
   },
   {
-    "airline": "Lufthansa",
-    "flights": 42
-  },
-  {
     "airline": "Air France",
-    "flights": 42
+    "flights": 41
   },
   {
-    "airline": "Jetstar Airways",
+    "airline": "Qantas",
     "flights": 39
   },
   {
@@ -92,11 +88,15 @@
     "flights": 37
   },
   {
-    "airline": "Cathay Pacific",
+    "airline": "Air India Limited",
     "flights": 35
   },
   {
-    "airline": "Qantas",
+    "airline": "Air New Zealand",
     "flights": 35
+  },
+  {
+    "airline": "China Eastern Airlines",
+    "flights": 33
   }
 ]
