@@ -1,50 +1,54 @@
 [
   {
     "airport": "unknown",
-    "flights": 4416
+    "flights": 4729
   },
   {
     "airport": "KDFW",
-    "flights": 30
+    "flights": 31
   },
   {
     "airport": "YSSY",
-    "flights": 25
-  },
-  {
-    "airport": "YPPH",
-    "flights": 21
-  },
-  {
-    "airport": "VHHH",
-    "flights": 19
-  },
-  {
-    "airport": "YPJT",
-    "flights": 18
-  },
-  {
-    "airport": "VIDP",
-    "flights": 17
-  },
-  {
-    "airport": "CYYC",
-    "flights": 17
-  },
-  {
-    "airport": "KBOS",
-    "flights": 17
-  },
-  {
-    "airport": "CYYZ",
-    "flights": 17
+    "flights": 28
   },
   {
     "airport": "YMML",
-    "flights": 14
+    "flights": 25
+  },
+  {
+    "airport": "RJTT",
+    "flights": 22
+  },
+  {
+    "airport": "CYYC",
+    "flights": 22
   },
   {
     "airport": "KPHX",
+    "flights": 20
+  },
+  {
+    "airport": "KLAS",
+    "flights": 17
+  },
+  {
+    "airport": "KDEN",
+    "flights": 16
+  },
+  {
+    "airport": "YPPH",
+    "flights": 16
+  },
+  {
+    "airport": "VHHH",
+    "flights": 14
+  },
+  {
+    "airport": "VIDP",
+    "flights": 13
+  },
+  {
+    "airport": "LGAV",
     "flights": 13
   },
   {
@@ -52,27 +56,19 @@
     "flights": 13
   },
   {
-    "airport": "KSLC",
+    "airport": "KBOS",
     "flights": 12
   },
   {
-    "airport": "RJTT",
-    "flights": 12
+    "airport": "EDDF",
+    "flights": 11
+  },
+  {
+    "airport": "KMCO",
+    "flights": 11
   },
   {
     "airport": "KLGA",
-    "flights": 11
-  },
-  {
-    "airport": "KLAS",
-    "flights": 11
-  },
-  {
-    "airport": "KORD",
-    "flights": 10
-  },
-  {
-    "airport": "LGAV",
     "flights": 10
   },
   {
@@ -80,23 +76,27 @@
     "flights": 10
   },
   {
-    "airport": "ZGSZ",
-    "flights": 10
-  },
-  {
-    "airport": "VTBS",
+    "airport": "EDDP",
     "flights": 9
   },
   {
-    "airport": "KAUS",
+    "airport": "CYYZ",
     "flights": 9
   },
   {
-    "airport": "VECC",
-    "flights": 8
+    "airport": "KSLC",
+    "flights": 9
   },
   {
-    "airport": "CYVR",
-    "flights": 8
+    "airport": "KATL",
+    "flights": 9
+  },
+  {
+    "airport": "KSJC",
+    "flights": 9
+  },
+  {
+    "airport": "LFPG",
+    "flights": 9
   }
 ]
