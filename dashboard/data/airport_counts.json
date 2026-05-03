@@ -1,86 +1,54 @@
 [
   {
     "airport": "unknown",
-    "flights": 4384
-  },
-  {
-    "airport": "RJTT",
-    "flights": 24
-  },
-  {
-    "airport": "KDFW",
-    "flights": 22
-  },
-  {
-    "airport": "KPHX",
-    "flights": 20
+    "flights": 3618
   },
   {
     "airport": "YSSY",
-    "flights": 20
-  },
-  {
-    "airport": "CYYZ",
-    "flights": 18
+    "flights": 22
   },
   {
     "airport": "VIDP",
-    "flights": 17
+    "flights": 16
   },
   {
-    "airport": "KDEN",
-    "flights": 17
+    "airport": "KDFW",
+    "flights": 16
   },
   {
-    "airport": "KORD",
-    "flights": 15
-  },
-  {
-    "airport": "KSEA",
-    "flights": 15
-  },
-  {
-    "airport": "VHHH",
-    "flights": 15
-  },
-  {
-    "airport": "KATL",
-    "flights": 14
+    "airport": "YMML",
+    "flights": 16
   },
   {
     "airport": "CYVR",
     "flights": 14
   },
   {
-    "airport": "KSJC",
+    "airport": "CYYC",
     "flights": 12
   },
   {
-    "airport": "KLGA",
+    "airport": "KBOS",
     "flights": 12
+  },
+  {
+    "airport": "RJTT",
+    "flights": 11
+  },
+  {
+    "airport": "CYYZ",
+    "flights": 11
+  },
+  {
+    "airport": "KPHX",
+    "flights": 11
   },
   {
     "airport": "KSLC",
-    "flights": 12
-  },
-  {
-    "airport": "VECC",
     "flights": 11
   },
   {
-    "airport": "KJFK",
-    "flights": 11
-  },
-  {
-    "airport": "KMCO",
-    "flights": 11
-  },
-  {
-    "airport": "YMML",
-    "flights": 11
-  },
-  {
-    "airport": "ZGSZ",
+    "airport": "VHHH",
     "flights": 11
   },
   {
@@ -88,15 +56,47 @@
     "flights": 10
   },
   {
-    "airport": "YPPH",
+    "airport": "YBBN",
     "flights": 10
   },
   {
-    "airport": "KBNA",
+    "airport": "LSZH",
+    "flights": 10
+  },
+  {
+    "airport": "KMSP",
     "flights": 9
   },
   {
-    "airport": "KEWR",
+    "airport": "KMCO",
     "flights": 9
+  },
+  {
+    "airport": "VOBL",
+    "flights": 8
+  },
+  {
+    "airport": "LLBG",
+    "flights": 8
+  },
+  {
+    "airport": "VGHS",
+    "flights": 8
+  },
+  {
+    "airport": "YPPH",
+    "flights": 8
+  },
+  {
+    "airport": "LGAV",
+    "flights": 7
+  },
+  {
+    "airport": "KLAS",
+    "flights": 7
+  },
+  {
+    "airport": "KSEA",
+    "flights": 7
   }
 ]
