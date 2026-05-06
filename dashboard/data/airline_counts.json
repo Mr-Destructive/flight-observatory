@@ -1,102 +1,102 @@
 [
   {
     "airline": "unknown",
-    "flights": 1054
-  },
-  {
-    "airline": "Southwest Airlines",
-    "flights": 381
+    "flights": 1093
   },
   {
     "airline": "Delta Air Lines",
-    "flights": 362
-  },
-  {
-    "airline": "American Airlines",
-    "flights": 300
+    "flights": 271
   },
   {
     "airline": "United Airlines",
-    "flights": 293
+    "flights": 236
   },
   {
-    "airline": "SkyWest",
-    "flights": 170
+    "airline": "Southwest Airlines",
+    "flights": 235
+  },
+  {
+    "airline": "American Airlines",
+    "flights": 205
   },
   {
     "airline": "Federal Express",
-    "flights": 161
+    "flights": 162
   },
   {
-    "airline": "Alaska Airlines",
-    "flights": 132
+    "airline": "SkyWest",
+    "flights": 126
   },
   {
     "airline": "United Parcel Service",
-    "flights": 128
+    "flights": 125
+  },
+  {
+    "airline": "Alaska Airlines",
+    "flights": 100
   },
   {
     "airline": "IndiGo Airlines",
-    "flights": 89
-  },
-  {
-    "airline": "Frontier Airlines",
-    "flights": 73
-  },
-  {
-    "airline": "JetBlue Airways",
-    "flights": 65
-  },
-  {
-    "airline": "Air Canada",
-    "flights": 59
+    "flights": 75
   },
   {
     "airline": "All Nippon Airways",
-    "flights": 52
+    "flights": 56
   },
   {
-    "airline": "Virgin Australia",
+    "airline": "Air Canada",
+    "flights": 54
+  },
+  {
+    "airline": "Frontier Airlines",
     "flights": 49
   },
   {
-    "airline": "Japan Airlines Domestic",
+    "airline": "Air India Limited",
     "flights": 48
   },
   {
-    "airline": "Envoy Air",
-    "flights": 47
-  },
-  {
-    "airline": "European Air Transport",
-    "flights": 47
-  },
-  {
-    "airline": "WestJet",
+    "airline": "Japan Airlines Domestic",
     "flights": 44
   },
   {
-    "airline": "Lufthansa",
-    "flights": 43
+    "airline": "Envoy Air",
+    "flights": 41
   },
   {
-    "airline": "Air France",
-    "flights": 42
-  },
-  {
-    "airline": "Turkish Airlines",
+    "airline": "European Air Transport",
     "flights": 40
   },
   {
-    "airline": "Cathay Pacific",
+    "airline": "Virgin Australia",
+    "flights": 40
+  },
+  {
+    "airline": "Lufthansa",
     "flights": 39
+  },
+  {
+    "airline": "JetBlue Airways",
+    "flights": 38
   },
   {
     "airline": "Qantas",
-    "flights": 39
+    "flights": 37
   },
   {
-    "airline": "Air India Limited",
-    "flights": 38
+    "airline": "British Airways",
+    "flights": 36
+  },
+  {
+    "airline": "Ryanair",
+    "flights": 35
+  },
+  {
+    "airline": "WestJet",
+    "flights": 34
+  },
+  {
+    "airline": "Turkish Airlines",
+    "flights": 34
   }
 ]
