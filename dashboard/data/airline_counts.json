@@ -1,102 +1,102 @@
 [
   {
     "airline": "unknown",
-    "flights": 1160
-  },
-  {
-    "airline": "Southwest Airlines",
-    "flights": 381
+    "flights": 1212
   },
   {
     "airline": "Delta Air Lines",
-    "flights": 294
+    "flights": 221
   },
   {
     "airline": "American Airlines",
-    "flights": 291
+    "flights": 211
   },
   {
     "airline": "United Airlines",
-    "flights": 246
+    "flights": 198
   },
   {
-    "airline": "SkyWest",
-    "flights": 154
+    "airline": "Southwest Airlines",
+    "flights": 185
   },
   {
     "airline": "Federal Express",
-    "flights": 148
+    "flights": 144
   },
   {
     "airline": "United Parcel Service",
-    "flights": 117
+    "flights": 112
+  },
+  {
+    "airline": "SkyWest",
+    "flights": 94
   },
   {
     "airline": "Alaska Airlines",
-    "flights": 110
+    "flights": 94
   },
   {
     "airline": "IndiGo Airlines",
-    "flights": 82
+    "flights": 89
   },
   {
-    "airline": "Frontier Airlines",
-    "flights": 70
+    "airline": "Ryanair",
+    "flights": 81
   },
   {
     "airline": "Air Canada",
-    "flights": 56
-  },
-  {
-    "airline": "All Nippon Airways",
     "flights": 55
   },
   {
-    "airline": "Envoy Air",
-    "flights": 52
+    "airline": "Japan Airlines Domestic",
+    "flights": 49
   },
   {
-    "airline": "Lufthansa",
+    "airline": "Frontier Airlines",
     "flights": 49
   },
   {
     "airline": "Air India Limited",
-    "flights": 48
-  },
-  {
-    "airline": "Japan Airlines Domestic",
-    "flights": 47
-  },
-  {
-    "airline": "WestJet",
-    "flights": 46
-  },
-  {
-    "airline": "JetBlue Airways",
     "flights": 44
   },
   {
-    "airline": "Cathay Pacific",
-    "flights": 41
+    "airline": "All Nippon Airways",
+    "flights": 44
   },
   {
-    "airline": "British Airways",
-    "flights": 39
-  },
-  {
-    "airline": "Air France",
-    "flights": 39
+    "airline": "Lufthansa",
+    "flights": 43
   },
   {
     "airline": "Virgin Australia",
-    "flights": 38
+    "flights": 43
   },
   {
-    "airline": "Ryanair",
+    "airline": "Cathay Pacific",
+    "flights": 42
+  },
+  {
+    "airline": "Air France",
+    "flights": 41
+  },
+  {
+    "airline": "Turkish Airlines",
+    "flights": 41
+  },
+  {
+    "airline": "Envoy Air",
+    "flights": 40
+  },
+  {
+    "airline": "European Air Transport",
+    "flights": 40
+  },
+  {
+    "airline": "British Airways",
     "flights": 37
   },
   {
-    "airline": "Qantas",
-    "flights": 35
+    "airline": "WestJet",
+    "flights": 36
   }
 ]

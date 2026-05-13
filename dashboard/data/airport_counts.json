@@ -1,66 +1,54 @@
 [
   {
     "airport": "unknown",
-    "flights": 4312
-  },
-  {
-    "airport": "KDFW",
-    "flights": 28
+    "flights": 3856
   },
   {
     "airport": "YPPH",
-    "flights": 24
-  },
-  {
-    "airport": "CYYZ",
     "flights": 23
   },
   {
-    "airport": "YSSY",
+    "airport": "CYYZ",
     "flights": 22
   },
   {
     "airport": "CYYC",
-    "flights": 21
-  },
-  {
-    "airport": "KPHX",
-    "flights": 18
-  },
-  {
-    "airport": "LGAV",
-    "flights": 17
+    "flights": 19
   },
   {
     "airport": "VIDP",
     "flights": 16
   },
   {
-    "airport": "KBOS",
-    "flights": 15
+    "airport": "YSSY",
+    "flights": 14
+  },
+  {
+    "airport": "YPJT",
+    "flights": 14
+  },
+  {
+    "airport": "LGAV",
+    "flights": 13
+  },
+  {
+    "airport": "KDFW",
+    "flights": 13
   },
   {
     "airport": "YMMB",
-    "flights": 15
-  },
-  {
-    "airport": "RJTT",
     "flights": 13
   },
   {
-    "airport": "KSJC",
+    "airport": "CYVR",
     "flights": 13
   },
   {
-    "airport": "KMSP",
+    "airport": "YMML",
     "flights": 12
   },
   {
-    "airport": "KSMF",
-    "flights": 12
-  },
-  {
-    "airport": "KDEN",
+    "airport": "LOWW",
     "flights": 12
   },
   {
@@ -68,35 +56,47 @@
     "flights": 12
   },
   {
-    "airport": "KSLC",
+    "airport": "RJTT",
     "flights": 11
   },
   {
-    "airport": "KORD",
+    "airport": "VECC",
     "flights": 11
-  },
-  {
-    "airport": "LSZH",
-    "flights": 10
-  },
-  {
-    "airport": "KJFK",
-    "flights": 10
-  },
-  {
-    "airport": "CYVR",
-    "flights": 10
   },
   {
     "airport": "VHHH",
+    "flights": 11
+  },
+  {
+    "airport": "KSMF",
     "flights": 10
   },
   {
-    "airport": "EDDF",
+    "airport": "KORD",
+    "flights": 10
+  },
+  {
+    "airport": "KBOS",
+    "flights": 10
+  },
+  {
+    "airport": "LSZH",
     "flights": 9
   },
   {
-    "airport": "YPJT",
+    "airport": "LFPG",
+    "flights": 9
+  },
+  {
+    "airport": "ZGSZ",
+    "flights": 9
+  },
+  {
+    "airport": "KSLC",
+    "flights": 9
+  },
+  {
+    "airport": "RJBB",
     "flights": 9
   }
 ]
