@@ -1,14 +1,18 @@
 [
   {
     "airline": "unknown",
-    "flights": 1196
+    "flights": 1296
   },
   {
-    "airline": "American Airlines",
-    "flights": 300
+    "airline": "Southwest Airlines",
+    "flights": 380
   },
   {
     "airline": "Delta Air Lines",
+    "flights": 273
+  },
+  {
+    "airline": "American Airlines",
     "flights": 267
   },
   {
@@ -16,87 +20,83 @@
     "flights": 247
   },
   {
-    "airline": "Southwest Airlines",
-    "flights": 213
+    "airline": "SkyWest",
+    "flights": 145
   },
   {
     "airline": "Federal Express",
-    "flights": 144
-  },
-  {
-    "airline": "SkyWest",
-    "flights": 125
+    "flights": 133
   },
   {
     "airline": "Alaska Airlines",
-    "flights": 112
+    "flights": 120
   },
   {
     "airline": "United Parcel Service",
-    "flights": 110
+    "flights": 108
   },
   {
     "airline": "Ryanair",
-    "flights": 84
+    "flights": 99
   },
   {
     "airline": "IndiGo Airlines",
     "flights": 80
   },
   {
+    "airline": "Frontier Airlines",
+    "flights": 65
+  },
+  {
     "airline": "Air Canada",
+    "flights": 58
+  },
+  {
+    "airline": "JetBlue Airways",
     "flights": 53
   },
   {
     "airline": "Turkish Airlines",
-    "flights": 52
+    "flights": 53
   },
   {
     "airline": "Lufthansa",
-    "flights": 51
-  },
-  {
-    "airline": "Envoy Air",
-    "flights": 51
-  },
-  {
-    "airline": "JetBlue Airways",
-    "flights": 48
-  },
-  {
-    "airline": "Air India Limited",
-    "flights": 46
+    "flights": 52
   },
   {
     "airline": "Japan Airlines Domestic",
+    "flights": 50
+  },
+  {
+    "airline": "Emirates",
+    "flights": 49
+  },
+  {
+    "airline": "Air India Limited",
+    "flights": 48
+  },
+  {
+    "airline": "Air France",
+    "flights": 47
+  },
+  {
+    "airline": "Envoy Air",
     "flights": 46
   },
   {
-    "airline": "Frontier Airlines",
+    "airline": "Virgin Australia",
     "flights": 46
   },
   {
     "airline": "All Nippon Airways",
-    "flights": 43
-  },
-  {
-    "airline": "Virgin Australia",
-    "flights": 41
-  },
-  {
-    "airline": "Qantas",
-    "flights": 39
-  },
-  {
-    "airline": "PSA Airlines",
-    "flights": 38
-  },
-  {
-    "airline": "Cathay Pacific",
-    "flights": 38
+    "flights": 44
   },
   {
     "airline": "WestJet",
-    "flights": 37
+    "flights": 42
+  },
+  {
+    "airline": "Qantas",
+    "flights": 36
   }
 ]

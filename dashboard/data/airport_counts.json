@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 4208
-  },
-  {
-    "airport": "KDFW",
-    "flights": 32
-  },
-  {
-    "airport": "YSSY",
-    "flights": 21
-  },
-  {
-    "airport": "RJTT",
-    "flights": 18
-  },
-  {
-    "airport": "CYYC",
-    "flights": 17
-  },
-  {
-    "airport": "KIAD",
-    "flights": 16
+    "flights": 4557
   },
   {
     "airport": "VHHH",
-    "flights": 16
+    "flights": 24
   },
   {
-    "airport": "VIDP",
-    "flights": 15
+    "airport": "YSSY",
+    "flights": 23
   },
   {
     "airport": "KPHX",
-    "flights": 15
+    "flights": 22
   },
   {
-    "airport": "YMML",
-    "flights": 14
+    "airport": "RJTT",
+    "flights": 21
   },
   {
-    "airport": "KBOS",
-    "flights": 14
+    "airport": "KDFW",
+    "flights": 21
   },
   {
-    "airport": "CYYZ",
-    "flights": 14
+    "airport": "CYYC",
+    "flights": 20
   },
   {
-    "airport": "RKSI",
-    "flights": 14
-  },
-  {
-    "airport": "YMMB",
-    "flights": 13
-  },
-  {
-    "airport": "KORD",
-    "flights": 13
+    "airport": "KMSP",
+    "flights": 20
   },
   {
     "airport": "YPPH",
-    "flights": 13
+    "flights": 19
   },
   {
-    "airport": "KMCO",
-    "flights": 12
+    "airport": "KBOS",
+    "flights": 18
+  },
+  {
+    "airport": "YMML",
+    "flights": 16
+  },
+  {
+    "airport": "CYYZ",
+    "flights": 15
+  },
+  {
+    "airport": "RKSI",
+    "flights": 15
   },
   {
     "airport": "KLAS",
-    "flights": 11
+    "flights": 13
   },
   {
-    "airport": "KDEN",
-    "flights": 10
+    "airport": "VOBL",
+    "flights": 12
   },
   {
-    "airport": "KJFK",
-    "flights": 10
+    "airport": "KSJC",
+    "flights": 12
   },
   {
-    "airport": "LSZH",
-    "flights": 9
-  },
-  {
-    "airport": "KDCA",
-    "flights": 9
-  },
-  {
-    "airport": "KSLC",
-    "flights": 9
+    "airport": "RJBB",
+    "flights": 12
   },
   {
     "airport": "CYVR",
-    "flights": 9
+    "flights": 12
   },
   {
-    "airport": "VECC",
-    "flights": 9
+    "airport": "VIDP",
+    "flights": 11
+  },
+  {
+    "airport": "KSMF",
+    "flights": 11
+  },
+  {
+    "airport": "SKBO",
+    "flights": 11
+  },
+  {
+    "airport": "KOAK",
+    "flights": 11
+  },
+  {
+    "airport": "KSAN",
+    "flights": 11
+  },
+  {
+    "airport": "LSZH",
+    "flights": 11
+  },
+  {
+    "airport": "YMMB",
+    "flights": 10
   }
 ]
