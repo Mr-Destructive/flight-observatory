@@ -1,70 +1,38 @@
 [
   {
     "airport": "unknown",
-    "flights": 4557
+    "flights": 3537
   },
   {
-    "airport": "VHHH",
-    "flights": 24
-  },
-  {
-    "airport": "YSSY",
-    "flights": 23
-  },
-  {
-    "airport": "KPHX",
-    "flights": 22
+    "airport": "KDFW",
+    "flights": 25
   },
   {
     "airport": "RJTT",
     "flights": 21
   },
   {
-    "airport": "KDFW",
-    "flights": 21
-  },
-  {
-    "airport": "CYYC",
-    "flights": 20
-  },
-  {
-    "airport": "KMSP",
-    "flights": 20
-  },
-  {
-    "airport": "YPPH",
-    "flights": 19
-  },
-  {
-    "airport": "KBOS",
-    "flights": 18
-  },
-  {
-    "airport": "YMML",
+    "airport": "YSSY",
     "flights": 16
   },
   {
-    "airport": "CYYZ",
-    "flights": 15
-  },
-  {
     "airport": "RKSI",
-    "flights": 15
+    "flights": 14
   },
   {
-    "airport": "KLAS",
-    "flights": 13
-  },
-  {
-    "airport": "VOBL",
+    "airport": "LGAV",
     "flights": 12
   },
   {
-    "airport": "KSJC",
+    "airport": "VIDP",
     "flights": 12
   },
   {
-    "airport": "RJBB",
+    "airport": "KMSP",
+    "flights": 12
+  },
+  {
+    "airport": "ZGSZ",
     "flights": 12
   },
   {
@@ -72,31 +40,63 @@
     "flights": 12
   },
   {
-    "airport": "VIDP",
+    "airport": "LIMC",
     "flights": 11
   },
   {
-    "airport": "KSMF",
+    "airport": "KPHX",
     "flights": 11
   },
   {
-    "airport": "SKBO",
+    "airport": "KSLC",
     "flights": 11
   },
   {
-    "airport": "KOAK",
-    "flights": 11
-  },
-  {
-    "airport": "KSAN",
-    "flights": 11
+    "airport": "KSFO",
+    "flights": 10
   },
   {
     "airport": "LSZH",
-    "flights": 11
+    "flights": 10
   },
   {
-    "airport": "YMMB",
-    "flights": 10
+    "airport": "VHHH",
+    "flights": 9
+  },
+  {
+    "airport": "YMML",
+    "flights": 9
+  },
+  {
+    "airport": "VOBL",
+    "flights": 8
+  },
+  {
+    "airport": "VTBS",
+    "flights": 8
+  },
+  {
+    "airport": "CYYZ",
+    "flights": 8
+  },
+  {
+    "airport": "SKBO",
+    "flights": 8
+  },
+  {
+    "airport": "KBOS",
+    "flights": 8
+  },
+  {
+    "airport": "KDEN",
+    "flights": 8
+  },
+  {
+    "airport": "KSEA",
+    "flights": 8
+  },
+  {
+    "airport": "RJBB",
+    "flights": 8
   }
 ]
