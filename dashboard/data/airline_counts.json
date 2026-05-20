@@ -1,70 +1,66 @@
 [
   {
     "airline": "unknown",
-    "flights": 1066
-  },
-  {
-    "airline": "Southwest Airlines",
-    "flights": 391
+    "flights": 1211
   },
   {
     "airline": "Delta Air Lines",
-    "flights": 302
+    "flights": 280
+  },
+  {
+    "airline": "Southwest Airlines",
+    "flights": 242
   },
   {
     "airline": "American Airlines",
-    "flights": 272
+    "flights": 222
   },
   {
     "airline": "United Airlines",
-    "flights": 257
-  },
-  {
-    "airline": "SkyWest",
-    "flights": 157
+    "flights": 207
   },
   {
     "airline": "Federal Express",
-    "flights": 130
+    "flights": 149
   },
   {
     "airline": "Ryanair",
-    "flights": 119
+    "flights": 133
+  },
+  {
+    "airline": "SkyWest",
+    "flights": 121
   },
   {
     "airline": "Alaska Airlines",
-    "flights": 111
+    "flights": 113
   },
   {
     "airline": "United Parcel Service",
-    "flights": 108
+    "flights": 99
   },
   {
     "airline": "IndiGo Airlines",
     "flights": 78
   },
   {
-    "airline": "Frontier Airlines",
-    "flights": 65
+    "airline": "Air Canada",
+    "flights": 62
   },
   {
     "airline": "Lufthansa",
-    "flights": 61
-  },
-  {
-    "airline": "Air France",
-    "flights": 54
-  },
-  {
-    "airline": "Air Canada",
-    "flights": 53
-  },
-  {
-    "airline": "Air India Limited",
-    "flights": 50
+    "flights": 58
   },
   {
     "airline": "All Nippon Airways",
+    "flights": 52
+  },
+  {
+    "airline": "Republic Airlines",
+    "flights": 51
+  },
+  {
+    "airline": "Japan Airlines Domestic",
     "flights": 50
   },
   {
@@ -72,31 +68,35 @@
     "flights": 49
   },
   {
-    "airline": "Japan Airlines Domestic",
-    "flights": 48
-  },
-  {
-    "airline": "WestJet",
-    "flights": 46
-  },
-  {
     "airline": "Turkish Airlines",
+    "flights": 49
+  },
+  {
+    "airline": "Air India Limited",
     "flights": 43
   },
   {
-    "airline": "Envoy Air",
+    "airline": "Frontier Airlines",
+    "flights": 41
+  },
+  {
+    "airline": "Air France",
     "flights": 41
   },
   {
     "airline": "Virgin Australia",
-    "flights": 37
+    "flights": 41
+  },
+  {
+    "airline": "Envoy Air",
+    "flights": 38
   },
   {
     "airline": "British Airways",
-    "flights": 35
+    "flights": 36
   },
   {
-    "airline": "European Air Transport",
-    "flights": 34
+    "airline": "KLM Royal Dutch Airlines",
+    "flights": 35
   }
 ]
