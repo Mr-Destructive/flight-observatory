@@ -1,82 +1,78 @@
 [
   {
     "airport": "unknown",
-    "flights": 4706
+    "flights": 4454
   },
   {
-    "airport": "RJTT",
-    "flights": 27
-  },
-  {
-    "airport": "KDEN",
-    "flights": 25
+    "airport": "KATL",
+    "flights": 62
   },
   {
     "airport": "KDFW",
-    "flights": 24
-  },
-  {
-    "airport": "VHHH",
-    "flights": 24
-  },
-  {
-    "airport": "CYYC",
-    "flights": 22
+    "flights": 23
   },
   {
     "airport": "YSSY",
-    "flights": 22
+    "flights": 21
   },
   {
-    "airport": "LSZH",
-    "flights": 21
+    "airport": "VIDP",
+    "flights": 19
+  },
+  {
+    "airport": "RJTT",
+    "flights": 19
+  },
+  {
+    "airport": "KDEN",
+    "flights": 19
   },
   {
     "airport": "LGAV",
     "flights": 18
   },
   {
-    "airport": "KPHX",
+    "airport": "OJAI",
     "flights": 18
   },
   {
-    "airport": "CYYZ",
+    "airport": "SKBO",
     "flights": 17
   },
   {
-    "airport": "YPPH",
-    "flights": 16
+    "airport": "CYYC",
+    "flights": 17
   },
   {
-    "airport": "YMMB",
+    "airport": "KLAS",
     "flights": 15
   },
   {
-    "airport": "CYVR",
-    "flights": 15
-  },
-  {
-    "airport": "OJAI",
+    "airport": "CYYZ",
     "flights": 14
   },
   {
-    "airport": "KAUS",
+    "airport": "RKSI",
     "flights": 13
   },
   {
-    "airport": "LFPO",
+    "airport": "KSJC",
     "flights": 12
   },
   {
-    "airport": "ESSA",
+    "airport": "KSLC",
     "flights": 12
   },
   {
-    "airport": "RKSI",
+    "airport": "KPHX",
     "flights": 12
   },
   {
-    "airport": "KMSP",
+    "airport": "KSEA",
+    "flights": 11
+  },
+  {
+    "airport": "VHHH",
     "flights": 11
   },
   {
@@ -88,15 +84,19 @@
     "flights": 11
   },
   {
-    "airport": "KLAS",
+    "airport": "CYVR",
     "flights": 11
   },
   {
-    "airport": "VIDP",
+    "airport": "EHAM",
     "flights": 10
   },
   {
-    "airport": "KORD",
+    "airport": "KLGA",
+    "flights": 10
+  },
+  {
+    "airport": "YMML",
     "flights": 10
   }
 ]
