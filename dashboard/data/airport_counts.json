@@ -1,58 +1,46 @@
 [
   {
     "airport": "unknown",
-    "flights": 3901
+    "flights": 3939
   },
   {
     "airport": "KDFW",
-    "flights": 29
-  },
-  {
-    "airport": "YSSY",
-    "flights": 21
-  },
-  {
-    "airport": "YPPH",
-    "flights": 19
-  },
-  {
-    "airport": "OJAI",
-    "flights": 18
-  },
-  {
-    "airport": "RJTT",
-    "flights": 17
-  },
-  {
-    "airport": "CYYC",
-    "flights": 17
-  },
-  {
-    "airport": "CYYZ",
-    "flights": 16
-  },
-  {
-    "airport": "LFPO",
-    "flights": 15
+    "flights": 40
   },
   {
     "airport": "LSZH",
-    "flights": 15
+    "flights": 22
   },
   {
-    "airport": "LGAV",
-    "flights": 15
-  },
-  {
-    "airport": "KBOS",
-    "flights": 14
+    "airport": "YSSY",
+    "flights": 19
   },
   {
     "airport": "VHHH",
+    "flights": 16
+  },
+  {
+    "airport": "KMSP",
+    "flights": 16
+  },
+  {
+    "airport": "YPPH",
+    "flights": 15
+  },
+  {
+    "airport": "RJTT",
+    "flights": 15
+  },
+  {
+    "airport": "KPHX",
+    "flights": 15
+  },
+  {
+    "airport": "YPJT",
     "flights": 14
   },
   {
-    "airport": "RKSI",
+    "airport": "CYYC",
     "flights": 14
   },
   {
@@ -60,43 +48,55 @@
     "flights": 12
   },
   {
-    "airport": "EDDF",
-    "flights": 12
-  },
-  {
-    "airport": "VIDP",
+    "airport": "LEBL",
     "flights": 11
   },
   {
-    "airport": "YMML",
+    "airport": "KSLC",
+    "flights": 11
+  },
+  {
+    "airport": "CYVR",
+    "flights": 11
+  },
+  {
+    "airport": "CYYZ",
+    "flights": 11
+  },
+  {
+    "airport": "LHBP",
     "flights": 10
   },
   {
-    "airport": "KMCO",
+    "airport": "KATL",
     "flights": 10
   },
   {
-    "airport": "KORD",
+    "airport": "SKBO",
     "flights": 10
-  },
-  {
-    "airport": "KMSP",
-    "flights": 10
-  },
-  {
-    "airport": "EFHK",
-    "flights": 10
-  },
-  {
-    "airport": "LOWW",
-    "flights": 9
   },
   {
     "airport": "KSFO",
+    "flights": 10
+  },
+  {
+    "airport": "LFPO",
+    "flights": 10
+  },
+  {
+    "airport": "RKSI",
+    "flights": 10
+  },
+  {
+    "airport": "KDEN",
     "flights": 9
   },
   {
-    "airport": "YPJT",
+    "airport": "LGAV",
+    "flights": 9
+  },
+  {
+    "airport": "LOWW",
     "flights": 9
   }
 ]
