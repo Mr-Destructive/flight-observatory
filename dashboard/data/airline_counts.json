@@ -1,102 +1,102 @@
 [
   {
     "airline": "unknown",
-    "flights": 1161
-  },
-  {
-    "airline": "United Airlines",
-    "flights": 274
-  },
-  {
-    "airline": "American Airlines",
-    "flights": 270
-  },
-  {
-    "airline": "Delta Air Lines",
-    "flights": 250
+    "flights": 1119
   },
   {
     "airline": "Southwest Airlines",
-    "flights": 229
+    "flights": 358
   },
   {
-    "airline": "Federal Express",
-    "flights": 146
+    "airline": "Delta Air Lines",
+    "flights": 291
   },
   {
-    "airline": "Ryanair",
-    "flights": 146
+    "airline": "United Airlines",
+    "flights": 289
+  },
+  {
+    "airline": "American Airlines",
+    "flights": 288
   },
   {
     "airline": "SkyWest",
-    "flights": 110
+    "flights": 147
   },
   {
     "airline": "Alaska Airlines",
-    "flights": 106
+    "flights": 112
   },
   {
-    "airline": "United Parcel Service",
-    "flights": 97
+    "airline": "Federal Express",
+    "flights": 95
   },
   {
     "airline": "IndiGo Airlines",
-    "flights": 88
+    "flights": 91
   },
   {
-    "airline": "Lufthansa",
-    "flights": 76
-  },
-  {
-    "airline": "Turkish Airlines",
-    "flights": 60
-  },
-  {
-    "airline": "JetBlue Airways",
-    "flights": 59
-  },
-  {
-    "airline": "Air India Limited",
-    "flights": 53
-  },
-  {
-    "airline": "Envoy Air",
-    "flights": 53
-  },
-  {
-    "airline": "Air Canada",
-    "flights": 49
+    "airline": "Ryanair",
+    "flights": 84
   },
   {
     "airline": "Frontier Airlines",
-    "flights": 49
+    "flights": 76
+  },
+  {
+    "airline": "United Parcel Service",
+    "flights": 74
+  },
+  {
+    "airline": "Envoy Air",
+    "flights": 57
+  },
+  {
+    "airline": "Turkish Airlines",
+    "flights": 57
+  },
+  {
+    "airline": "JetBlue Airways",
+    "flights": 56
+  },
+  {
+    "airline": "Air India Limited",
+    "flights": 54
+  },
+  {
+    "airline": "Air Canada",
+    "flights": 53
+  },
+  {
+    "airline": "WestJet",
+    "flights": 48
+  },
+  {
+    "airline": "Lufthansa",
+    "flights": 48
+  },
+  {
+    "airline": "Cathay Pacific",
+    "flights": 46
+  },
+  {
+    "airline": "Air France",
+    "flights": 46
+  },
+  {
+    "airline": "All Nippon Airways",
+    "flights": 45
   },
   {
     "airline": "Japan Airlines Domestic",
     "flights": 44
   },
   {
-    "airline": "All Nippon Airways",
-    "flights": 43
-  },
-  {
-    "airline": "Republic Airlines",
-    "flights": 39
-  },
-  {
     "airline": "British Airways",
-    "flights": 39
+    "flights": 44
   },
   {
-    "airline": "Cathay Pacific",
-    "flights": 39
-  },
-  {
-    "airline": "Scandinavian Airlines System",
-    "flights": 38
-  },
-  {
-    "airline": "PSA Airlines",
-    "flights": 38
+    "airline": "SunExpress",
+    "flights": 43
   }
 ]
