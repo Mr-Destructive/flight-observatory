@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 4427
+    "flights": 5560
   },
   {
     "airport": "KDEN",
-    "flights": 31
-  },
-  {
-    "airport": "KATL",
-    "flights": 26
+    "flights": 38
   },
   {
     "airport": "KDFW",
+    "flights": 37
+  },
+  {
+    "airport": "KATL",
+    "flights": 28
+  },
+  {
+    "airport": "KJFK",
+    "flights": 25
+  },
+  {
+    "airport": "KMSP",
     "flights": 23
   },
   {
-    "airport": "VHHH",
-    "flights": 22
-  },
-  {
-    "airport": "KPHX",
-    "flights": 21
-  },
-  {
-    "airport": "VIDP",
-    "flights": 20
-  },
-  {
     "airport": "RJTT",
-    "flights": 18
-  },
-  {
-    "airport": "CYYC",
-    "flights": 18
-  },
-  {
-    "airport": "YSSY",
-    "flights": 17
+    "flights": 23
   },
   {
     "airport": "CYYZ",
-    "flights": 16
+    "flights": 22
   },
   {
-    "airport": "LGAV",
-    "flights": 15
-  },
-  {
-    "airport": "KLAS",
-    "flights": 15
-  },
-  {
-    "airport": "KSEA",
-    "flights": 15
-  },
-  {
-    "airport": "CYVR",
-    "flights": 15
-  },
-  {
-    "airport": "LHBP",
-    "flights": 14
+    "airport": "KIAD",
+    "flights": 20
   },
   {
     "airport": "YMML",
-    "flights": 14
-  },
-  {
-    "airport": "KSLC",
-    "flights": 13
+    "flights": 18
   },
   {
     "airport": "KORD",
+    "flights": 15
+  },
+  {
+    "airport": "YSSY",
+    "flights": 15
+  },
+  {
+    "airport": "KPHX",
+    "flights": 14
+  },
+  {
+    "airport": "CYVR",
     "flights": 13
   },
   {
+    "airport": "KLAS",
+    "flights": 12
+  },
+  {
+    "airport": "KBOS",
+    "flights": 12
+  },
+  {
+    "airport": "KSFO",
+    "flights": 12
+  },
+  {
+    "airport": "VHHH",
+    "flights": 11
+  },
+  {
+    "airport": "CYUL",
+    "flights": 9
+  },
+  {
+    "airport": "CYYC",
+    "flights": 9
+  },
+  {
+    "airport": "VGHS",
+    "flights": 9
+  },
+  {
     "airport": "SKBO",
-    "flights": 12
+    "flights": 9
   },
   {
-    "airport": "EDDF",
-    "flights": 12
+    "airport": "RJBB",
+    "flights": 8
   },
   {
-    "airport": "LSZH",
-    "flights": 12
+    "airport": "KHWD",
+    "flights": 8
   },
   {
-    "airport": "LFPG",
-    "flights": 11
-  },
-  {
-    "airport": "RKSI",
-    "flights": 11
-  },
-  {
-    "airport": "KAUS",
-    "flights": 11
+    "airport": "MMMY",
+    "flights": 8
   }
 ]
