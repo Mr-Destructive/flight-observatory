@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 5560
-  },
-  {
-    "airport": "KDEN",
-    "flights": 38
-  },
-  {
-    "airport": "KDFW",
-    "flights": 37
-  },
-  {
-    "airport": "KATL",
-    "flights": 28
-  },
-  {
-    "airport": "KJFK",
-    "flights": 25
-  },
-  {
-    "airport": "KMSP",
-    "flights": 23
-  },
-  {
-    "airport": "RJTT",
-    "flights": 23
-  },
-  {
-    "airport": "CYYZ",
-    "flights": 22
-  },
-  {
-    "airport": "KIAD",
-    "flights": 20
-  },
-  {
-    "airport": "YMML",
-    "flights": 18
-  },
-  {
-    "airport": "KORD",
-    "flights": 15
+    "flights": 4347
   },
   {
     "airport": "YSSY",
-    "flights": 15
-  },
-  {
-    "airport": "KPHX",
-    "flights": 14
-  },
-  {
-    "airport": "CYVR",
-    "flights": 13
-  },
-  {
-    "airport": "KLAS",
-    "flights": 12
-  },
-  {
-    "airport": "KBOS",
-    "flights": 12
-  },
-  {
-    "airport": "KSFO",
-    "flights": 12
+    "flights": 24
   },
   {
     "airport": "VHHH",
+    "flights": 18
+  },
+  {
+    "airport": "CYVR",
+    "flights": 18
+  },
+  {
+    "airport": "YMML",
+    "flights": 17
+  },
+  {
+    "airport": "VIDP",
+    "flights": 15
+  },
+  {
+    "airport": "KSFO",
+    "flights": 15
+  },
+  {
+    "airport": "KLAS",
+    "flights": 15
+  },
+  {
+    "airport": "KSLC",
+    "flights": 14
+  },
+  {
+    "airport": "LSZH",
+    "flights": 14
+  },
+  {
+    "airport": "YPPH",
+    "flights": 13
+  },
+  {
+    "airport": "ESSA",
+    "flights": 13
+  },
+  {
+    "airport": "LGAV",
+    "flights": 12
+  },
+  {
+    "airport": "CYYZ",
+    "flights": 12
+  },
+  {
+    "airport": "LFPO",
     "flights": 11
   },
   {
-    "airport": "CYUL",
-    "flights": 9
+    "airport": "KPHX",
+    "flights": 11
   },
   {
-    "airport": "CYYC",
-    "flights": 9
+    "airport": "RJTT",
+    "flights": 11
   },
   {
-    "airport": "VGHS",
-    "flights": 9
+    "airport": "EBBR",
+    "flights": 11
   },
   {
-    "airport": "SKBO",
-    "flights": 9
+    "airport": "RKSI",
+    "flights": 11
   },
   {
-    "airport": "RJBB",
-    "flights": 8
+    "airport": "KORD",
+    "flights": 10
   },
   {
-    "airport": "KHWD",
-    "flights": 8
+    "airport": "EDDF",
+    "flights": 10
   },
   {
-    "airport": "MMMY",
-    "flights": 8
+    "airport": "KSJC",
+    "flights": 10
+  },
+  {
+    "airport": "KSEA",
+    "flights": 10
+  },
+  {
+    "airport": "LTFM",
+    "flights": 10
+  },
+  {
+    "airport": "LYBE",
+    "flights": 10
   }
 ]
