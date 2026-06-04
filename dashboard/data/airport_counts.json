@@ -1,34 +1,46 @@
 [
   {
     "airport": "unknown",
-    "flights": 4089
+    "flights": 4281
   },
   {
     "airport": "YSSY",
-    "flights": 21
+    "flights": 28
   },
   {
     "airport": "YPPH",
-    "flights": 17
-  },
-  {
-    "airport": "KAUS",
-    "flights": 17
-  },
-  {
-    "airport": "YMML",
-    "flights": 17
-  },
-  {
-    "airport": "EDDF",
-    "flights": 16
+    "flights": 24
   },
   {
     "airport": "LSZH",
-    "flights": 15
+    "flights": 23
   },
   {
     "airport": "LTFM",
+    "flights": 16
+  },
+  {
+    "airport": "YPJT",
+    "flights": 16
+  },
+  {
+    "airport": "RKSI",
+    "flights": 16
+  },
+  {
+    "airport": "VOBL",
+    "flights": 14
+  },
+  {
+    "airport": "OJAI",
+    "flights": 14
+  },
+  {
+    "airport": "YMML",
+    "flights": 14
+  },
+  {
+    "airport": "RJTT",
     "flights": 14
   },
   {
@@ -36,39 +48,11 @@
     "flights": 14
   },
   {
-    "airport": "YPJT",
-    "flights": 14
-  },
-  {
-    "airport": "CYVR",
-    "flights": 14
-  },
-  {
-    "airport": "CYYC",
-    "flights": 13
-  },
-  {
-    "airport": "KSEA",
-    "flights": 13
-  },
-  {
-    "airport": "LFPO",
-    "flights": 12
-  },
-  {
-    "airport": "KSLC",
-    "flights": 12
-  },
-  {
-    "airport": "KDEN",
-    "flights": 12
-  },
-  {
-    "airport": "KLAS",
-    "flights": 12
-  },
-  {
     "airport": "EGKK",
+    "flights": 14
+  },
+  {
+    "airport": "KPHX",
     "flights": 12
   },
   {
@@ -76,27 +60,43 @@
     "flights": 12
   },
   {
-    "airport": "KDFW",
+    "airport": "RJBB",
+    "flights": 12
+  },
+  {
+    "airport": "KSEA",
     "flights": 11
   },
   {
-    "airport": "EBBR",
+    "airport": "CYVR",
     "flights": 11
-  },
-  {
-    "airport": "RKSI",
-    "flights": 11
-  },
-  {
-    "airport": "VOBL",
-    "flights": 10
-  },
-  {
-    "airport": "ZGSZ",
-    "flights": 10
   },
   {
     "airport": "KSFO",
+    "flights": 11
+  },
+  {
+    "airport": "KMSP",
     "flights": 10
+  },
+  {
+    "airport": "EDDF",
+    "flights": 10
+  },
+  {
+    "airport": "LOWW",
+    "flights": 9
+  },
+  {
+    "airport": "LEBL",
+    "flights": 9
+  },
+  {
+    "airport": "KDEN",
+    "flights": 9
+  },
+  {
+    "airport": "CYYC",
+    "flights": 9
   }
 ]
