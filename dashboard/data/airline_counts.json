@@ -1,102 +1,102 @@
 [
   {
     "airline": "unknown",
-    "flights": 1217
-  },
-  {
-    "airline": "Ryanair",
-    "flights": 253
-  },
-  {
-    "airline": "United Airlines",
-    "flights": 210
+    "flights": 1021
   },
   {
     "airline": "American Airlines",
-    "flights": 201
+    "flights": 248
   },
   {
-    "airline": "Delta Air Lines",
-    "flights": 176
+    "airline": "Ryanair",
+    "flights": 225
+  },
+  {
+    "airline": "United Airlines",
+    "flights": 221
   },
   {
     "airline": "Southwest Airlines",
-    "flights": 138
+    "flights": 206
+  },
+  {
+    "airline": "Delta Air Lines",
+    "flights": 177
   },
   {
     "airline": "Alaska Airlines",
-    "flights": 109
+    "flights": 102
   },
   {
     "airline": "Lufthansa",
-    "flights": 107
-  },
-  {
-    "airline": "Federal Express",
-    "flights": 98
+    "flights": 101
   },
   {
     "airline": "Turkish Airlines",
-    "flights": 98
+    "flights": 89
   },
   {
     "airline": "SkyWest",
-    "flights": 82
-  },
-  {
-    "airline": "United Parcel Service",
-    "flights": 76
-  },
-  {
-    "airline": "IndiGo Airlines",
     "flights": 70
   },
   {
-    "airline": "KLM Royal Dutch Airlines",
-    "flights": 66
-  },
-  {
     "airline": "Air France",
-    "flights": 64
+    "flights": 63
   },
   {
-    "airline": "Scandinavian Airlines System",
-    "flights": 55
+    "airline": "KLM Royal Dutch Airlines",
+    "flights": 62
   },
   {
-    "airline": "Japan Airlines Domestic",
-    "flights": 47
+    "airline": "JetBlue Airways",
+    "flights": 58
   },
   {
-    "airline": "Wizz Air",
-    "flights": 47
+    "airline": "IndiGo Airlines",
+    "flights": 56
+  },
+  {
+    "airline": "Pegasus Airlines",
+    "flights": 53
   },
   {
     "airline": "British Airways",
-    "flights": 47
+    "flights": 50
   },
   {
     "airline": "Air Canada",
-    "flights": 44
+    "flights": 49
+  },
+  {
+    "airline": "Japan Airlines Domestic",
+    "flights": 48
+  },
+  {
+    "airline": "Wizz Air",
+    "flights": 48
+  },
+  {
+    "airline": "All Nippon Airways",
+    "flights": 46
   },
   {
     "airline": "Eurowings",
-    "flights": 42
+    "flights": 46
   },
   {
-    "airline": "Virgin Australia",
-    "flights": 42
+    "airline": "Frontier Airlines",
+    "flights": 46
   },
   {
-    "airline": "Cathay Pacific",
+    "airline": "Scandinavian Airlines System",
+    "flights": 44
+  },
+  {
+    "airline": "SunExpress",
     "flights": 41
   },
   {
-    "airline": "Air India Limited",
-    "flights": 37
-  },
-  {
     "airline": "Air New Zealand",
-    "flights": 36
+    "flights": 40
   }
 ]
