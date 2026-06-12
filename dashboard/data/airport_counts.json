@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 4515
-  },
-  {
-    "airport": "YSSY",
-    "flights": 28
-  },
-  {
-    "airport": "KMSP",
-    "flights": 23
+    "flights": 5074
   },
   {
     "airport": "LSZH",
-    "flights": 22
+    "flights": 27
   },
   {
     "airport": "RJTT",
-    "flights": 21
+    "flights": 22
+  },
+  {
+    "airport": "YMML",
+    "flights": 20
+  },
+  {
+    "airport": "YSSY",
+    "flights": 19
   },
   {
     "airport": "CYYZ",
-    "flights": 21
-  },
-  {
-    "airport": "LGAV",
-    "flights": 21
-  },
-  {
-    "airport": "KDFW",
-    "flights": 21
-  },
-  {
-    "airport": "YPPH",
-    "flights": 21
-  },
-  {
-    "airport": "VIDP",
     "flights": 17
   },
   {
-    "airport": "YPJT",
-    "flights": 17
+    "airport": "KORD",
+    "flights": 16
   },
   {
-    "airport": "KPHX",
-    "flights": 15
+    "airport": "KJFK",
+    "flights": 16
   },
   {
     "airport": "CYYC",
-    "flights": 15
+    "flights": 16
   },
   {
-    "airport": "CYVR",
+    "airport": "LGAV",
+    "flights": 16
+  },
+  {
+    "airport": "YPPH",
+    "flights": 16
+  },
+  {
+    "airport": "VIDP",
     "flights": 15
   },
   {
     "airport": "KBOS",
+    "flights": 15
+  },
+  {
+    "airport": "KOAK",
+    "flights": 14
+  },
+  {
+    "airport": "KDEN",
+    "flights": 14
+  },
+  {
+    "airport": "KMSP",
+    "flights": 14
+  },
+  {
+    "airport": "KLGA",
+    "flights": 14
+  },
+  {
+    "airport": "KATL",
     "flights": 13
   },
   {
-    "airport": "YMML",
+    "airport": "KSJC",
+    "flights": 13
+  },
+  {
+    "airport": "KEWR",
+    "flights": 13
+  },
+  {
+    "airport": "CYVR",
+    "flights": 13
+  },
+  {
+    "airport": "LIMC",
     "flights": 12
   },
   {
-    "airport": "LEBL",
-    "flights": 11
-  },
-  {
-    "airport": "KLAS",
-    "flights": 11
-  },
-  {
-    "airport": "LOWW",
-    "flights": 11
-  },
-  {
-    "airport": "KSLC",
-    "flights": 11
-  },
-  {
-    "airport": "KORD",
-    "flights": 10
-  },
-  {
-    "airport": "ZGSZ",
-    "flights": 10
-  },
-  {
-    "airport": "PANC",
-    "flights": 10
+    "airport": "KMCO",
+    "flights": 12
   },
   {
     "airport": "RKSI",
-    "flights": 10
+    "flights": 12
   },
   {
-    "airport": "VHHH",
-    "flights": 9
+    "airport": "LFPO",
+    "flights": 11
   }
 ]
