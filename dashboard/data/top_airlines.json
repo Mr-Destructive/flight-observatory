@@ -1,42 +1,42 @@
 [
   {
     "airline": "unknown",
-    "flights": 1401
+    "flights": 1255
   },
   {
     "airline": "Southwest Airlines",
-    "flights": 361
+    "flights": 393
   },
   {
     "airline": "United Airlines",
-    "flights": 292
+    "flights": 310
   },
   {
     "airline": "American Airlines",
-    "flights": 245
+    "flights": 298
   },
   {
     "airline": "Delta Air Lines",
-    "flights": 238
+    "flights": 282
   },
   {
     "airline": "Ryanair",
-    "flights": 237
+    "flights": 175
   },
   {
-    "airline": "Federal Express",
-    "flights": 116
+    "airline": "SkyWest",
+    "flights": 128
   },
   {
     "airline": "Alaska Airlines",
-    "flights": 110
+    "flights": 112
   },
   {
     "airline": "Lufthansa",
-    "flights": 105
+    "flights": 84
   },
   {
-    "airline": "United Parcel Service",
-    "flights": 90
+    "airline": "Federal Express",
+    "flights": 84
   }
 ]

@@ -1,34 +1,50 @@
 [
   {
     "airport": "unknown",
-    "flights": 5074
+    "flights": 4831
   },
   {
-    "airport": "LSZH",
-    "flights": 27
+    "airport": "KDFW",
+    "flights": 30
   },
   {
     "airport": "RJTT",
-    "flights": 22
+    "flights": 24
   },
   {
-    "airport": "YMML",
+    "airport": "KLAS",
     "flights": 20
   },
   {
-    "airport": "YSSY",
+    "airport": "LSZH",
+    "flights": 20
+  },
+  {
+    "airport": "KBOS",
     "flights": 19
   },
   {
-    "airport": "CYYZ",
-    "flights": 17
+    "airport": "EDDF",
+    "flights": 19
+  },
+  {
+    "airport": "KDEN",
+    "flights": 18
   },
   {
     "airport": "KORD",
-    "flights": 16
+    "flights": 17
   },
   {
-    "airport": "KJFK",
+    "airport": "YSSY",
+    "flights": 17
+  },
+  {
+    "airport": "VHHH",
+    "flights": 17
+  },
+  {
+    "airport": "VIDP",
     "flights": 16
   },
   {
@@ -36,67 +52,51 @@
     "flights": 16
   },
   {
-    "airport": "LGAV",
+    "airport": "RKSI",
     "flights": 16
-  },
-  {
-    "airport": "YPPH",
-    "flights": 16
-  },
-  {
-    "airport": "VIDP",
-    "flights": 15
-  },
-  {
-    "airport": "KBOS",
-    "flights": 15
-  },
-  {
-    "airport": "KOAK",
-    "flights": 14
-  },
-  {
-    "airport": "KDEN",
-    "flights": 14
   },
   {
     "airport": "KMSP",
+    "flights": 15
+  },
+  {
+    "airport": "LGAV",
     "flights": 14
-  },
-  {
-    "airport": "KLGA",
-    "flights": 14
-  },
-  {
-    "airport": "KATL",
-    "flights": 13
-  },
-  {
-    "airport": "KSJC",
-    "flights": 13
   },
   {
     "airport": "KEWR",
-    "flights": 13
-  },
-  {
-    "airport": "CYVR",
-    "flights": 13
-  },
-  {
-    "airport": "LIMC",
-    "flights": 12
-  },
-  {
-    "airport": "KMCO",
-    "flights": 12
-  },
-  {
-    "airport": "RKSI",
-    "flights": 12
+    "flights": 14
   },
   {
     "airport": "LFPO",
+    "flights": 13
+  },
+  {
+    "airport": "LOWW",
+    "flights": 13
+  },
+  {
+    "airport": "KSEA",
+    "flights": 13
+  },
+  {
+    "airport": "CYYZ",
+    "flights": 13
+  },
+  {
+    "airport": "KJFK",
+    "flights": 12
+  },
+  {
+    "airport": "EBBR",
+    "flights": 12
+  },
+  {
+    "airport": "YMML",
+    "flights": 12
+  },
+  {
+    "airport": "VTBS",
     "flights": 11
   }
 ]
