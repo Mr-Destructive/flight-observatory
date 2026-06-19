@@ -1,42 +1,42 @@
 [
   {
     "airport": "unknown",
-    "flights": 4282
-  },
-  {
-    "airport": "KDFW",
-    "flights": 21
-  },
-  {
-    "airport": "YSSY",
-    "flights": 20
+    "flights": 5099
   },
   {
     "airport": "LSZH",
-    "flights": 18
+    "flights": 31
   },
   {
     "airport": "VHHH",
-    "flights": 16
+    "flights": 24
+  },
+  {
+    "airport": "YSSY",
+    "flights": 23
+  },
+  {
+    "airport": "KATL",
+    "flights": 22
+  },
+  {
+    "airport": "LGAV",
+    "flights": 19
+  },
+  {
+    "airport": "LIMC",
+    "flights": 18
+  },
+  {
+    "airport": "YMML",
+    "flights": 17
+  },
+  {
+    "airport": "KBOS",
+    "flights": 17
   },
   {
     "airport": "RJTT",
     "flights": 16
-  },
-  {
-    "airport": "LGAV",
-    "flights": 16
-  },
-  {
-    "airport": "RKSI",
-    "flights": 15
-  },
-  {
-    "airport": "KDEN",
-    "flights": 15
-  },
-  {
-    "airport": "VIDP",
-    "flights": 14
   }
 ]
