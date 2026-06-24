@@ -1,30 +1,58 @@
 [
   {
     "airport": "unknown",
-    "flights": 4436
+    "flights": 4963
+  },
+  {
+    "airport": "KDFW",
+    "flights": 25
   },
   {
     "airport": "YSSY",
-    "flights": 23
+    "flights": 24
   },
   {
-    "airport": "KLAS",
-    "flights": 20
-  },
-  {
-    "airport": "LGAV",
-    "flights": 19
+    "airport": "YPPH",
+    "flights": 22
   },
   {
     "airport": "VHHH",
     "flights": 19
   },
   {
-    "airport": "KDFW",
-    "flights": 18
+    "airport": "RJTT",
+    "flights": 17
   },
   {
-    "airport": "LSZH",
+    "airport": "YPJT",
+    "flights": 17
+  },
+  {
+    "airport": "VIDP",
+    "flights": 15
+  },
+  {
+    "airport": "YBAF",
+    "flights": 15
+  },
+  {
+    "airport": "KPHX",
+    "flights": 15
+  },
+  {
+    "airport": "KBOS",
+    "flights": 15
+  },
+  {
+    "airport": "KSAN",
+    "flights": 15
+  },
+  {
+    "airport": "LEBL",
+    "flights": 15
+  },
+  {
+    "airport": "RKSI",
     "flights": 15
   },
   {
@@ -32,71 +60,43 @@
     "flights": 14
   },
   {
-    "airport": "RKSI",
+    "airport": "CYVR",
     "flights": 14
   },
   {
-    "airport": "YMML",
+    "airport": "CYYZ",
     "flights": 14
+  },
+  {
+    "airport": "LGAV",
+    "flights": 13
+  },
+  {
+    "airport": "KLAS",
+    "flights": 13
+  },
+  {
+    "airport": "ZGSZ",
+    "flights": 13
+  },
+  {
+    "airport": "CYYC",
+    "flights": 12
+  },
+  {
+    "airport": "KSLC",
+    "flights": 12
+  },
+  {
+    "airport": "ESSA",
+    "flights": 12
+  },
+  {
+    "airport": "LSZH",
+    "flights": 12
   },
   {
     "airport": "VECC",
-    "flights": 13
-  },
-  {
-    "airport": "KPHX",
-    "flights": 13
-  },
-  {
-    "airport": "RJTT",
-    "flights": 13
-  },
-  {
-    "airport": "KMIA",
-    "flights": 12
-  },
-  {
-    "airport": "CYUL",
-    "flights": 12
-  },
-  {
-    "airport": "KSFO",
-    "flights": 12
-  },
-  {
-    "airport": "EGKK",
-    "flights": 12
-  },
-  {
-    "airport": "LOWW",
     "flights": 11
-  },
-  {
-    "airport": "PANC",
-    "flights": 11
-  },
-  {
-    "airport": "EDDF",
-    "flights": 11
-  },
-  {
-    "airport": "KMSP",
-    "flights": 11
-  },
-  {
-    "airport": "KBOS",
-    "flights": 11
-  },
-  {
-    "airport": "LFPO",
-    "flights": 10
-  },
-  {
-    "airport": "VIDP",
-    "flights": 10
-  },
-  {
-    "airport": "LEBL",
-    "flights": 10
   }
 ]
