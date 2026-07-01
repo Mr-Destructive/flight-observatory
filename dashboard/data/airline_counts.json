@@ -1,102 +1,102 @@
 [
   {
     "airline": "unknown",
-    "flights": 1445
+    "flights": 1418
   },
   {
     "airline": "Southwest Airlines",
-    "flights": 331
+    "flights": 279
   },
   {
     "airline": "American Airlines",
-    "flights": 277
-  },
-  {
-    "airline": "Delta Air Lines",
-    "flights": 264
+    "flights": 255
   },
   {
     "airline": "United Airlines",
-    "flights": 237
+    "flights": 228
   },
   {
-    "airline": "Federal Express",
-    "flights": 139
+    "airline": "Delta Air Lines",
+    "flights": 202
   },
   {
     "airline": "Ryanair",
-    "flights": 135
+    "flights": 189
   },
   {
-    "airline": "SkyWest",
+    "airline": "Federal Express",
     "flights": 122
   },
   {
+    "airline": "SkyWest",
+    "flights": 117
+  },
+  {
     "airline": "Alaska Airlines",
-    "flights": 113
+    "flights": 100
   },
   {
     "airline": "United Parcel Service",
-    "flights": 111
+    "flights": 92
   },
   {
     "airline": "IndiGo Airlines",
-    "flights": 87
+    "flights": 74
   },
   {
     "airline": "JetBlue Airways",
-    "flights": 83
+    "flights": 72
   },
   {
     "airline": "Turkish Airlines",
-    "flights": 69
-  },
-  {
-    "airline": "Air Canada",
-    "flights": 68
+    "flights": 70
   },
   {
     "airline": "Lufthansa",
+    "flights": 66
+  },
+  {
+    "airline": "Air Canada",
+    "flights": 64
+  },
+  {
+    "airline": "Wizz Air",
     "flights": 62
   },
   {
-    "airline": "Envoy Air",
-    "flights": 62
-  },
-  {
-    "airline": "Frontier Airlines",
+    "airline": "Air France",
     "flights": 58
   },
   {
     "airline": "Emirates",
-    "flights": 57
-  },
-  {
-    "airline": "Wizz Air",
-    "flights": 53
+    "flights": 55
   },
   {
     "airline": "Japan Airlines Domestic",
+    "flights": 54
+  },
+  {
+    "airline": "Frontier Airlines",
+    "flights": 53
+  },
+  {
+    "airline": "KLM Royal Dutch Airlines",
     "flights": 52
   },
   {
-    "airline": "Republic Airlines",
-    "flights": 48
-  },
-  {
-    "airline": "Air France",
-    "flights": 48
+    "airline": "Pegasus Airlines",
+    "flights": 49
   },
   {
     "airline": "Qatar Airways",
     "flights": 48
   },
   {
-    "airline": "University of North Dakota",
-    "flights": 46
+    "airline": "Scandinavian Airlines System",
+    "flights": 47
   },
   {
-    "airline": "Air India Limited",
-    "flights": 45
+    "airline": "Envoy Air",
+    "flights": 47
   }
 ]
