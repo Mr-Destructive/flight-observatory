@@ -1,102 +1,102 @@
 [
   {
     "airline": "unknown",
-    "flights": 1418
+    "flights": 1523
   },
   {
     "airline": "Southwest Airlines",
-    "flights": 279
+    "flights": 310
   },
   {
     "airline": "American Airlines",
-    "flights": 255
+    "flights": 285
   },
   {
     "airline": "United Airlines",
-    "flights": 228
+    "flights": 266
   },
   {
     "airline": "Delta Air Lines",
-    "flights": 202
-  },
-  {
-    "airline": "Ryanair",
-    "flights": 189
+    "flights": 241
   },
   {
     "airline": "Federal Express",
-    "flights": 122
+    "flights": 142
   },
   {
     "airline": "SkyWest",
+    "flights": 131
+  },
+  {
+    "airline": "Ryanair",
     "flights": 117
   },
   {
-    "airline": "Alaska Airlines",
-    "flights": 100
-  },
-  {
     "airline": "United Parcel Service",
-    "flights": 92
+    "flights": 116
   },
   {
-    "airline": "IndiGo Airlines",
-    "flights": 74
+    "airline": "Alaska Airlines",
+    "flights": 112
   },
   {
     "airline": "JetBlue Airways",
-    "flights": 72
+    "flights": 89
+  },
+  {
+    "airline": "IndiGo Airlines",
+    "flights": 77
   },
   {
     "airline": "Turkish Airlines",
-    "flights": 70
-  },
-  {
-    "airline": "Lufthansa",
-    "flights": 66
+    "flights": 67
   },
   {
     "airline": "Air Canada",
-    "flights": 64
+    "flights": 65
   },
   {
-    "airline": "Wizz Air",
-    "flights": 62
-  },
-  {
-    "airline": "Air France",
+    "airline": "Lufthansa",
     "flights": 58
   },
   {
-    "airline": "Emirates",
-    "flights": 55
+    "airline": "Envoy Air",
+    "flights": 57
   },
   {
-    "airline": "Japan Airlines Domestic",
-    "flights": 54
-  },
-  {
-    "airline": "Frontier Airlines",
-    "flights": 53
-  },
-  {
-    "airline": "KLM Royal Dutch Airlines",
-    "flights": 52
+    "airline": "All Nippon Airways",
+    "flights": 56
   },
   {
     "airline": "Pegasus Airlines",
-    "flights": 49
+    "flights": 56
+  },
+  {
+    "airline": "WestJet",
+    "flights": 53
   },
   {
     "airline": "Qatar Airways",
-    "flights": 48
+    "flights": 53
   },
   {
-    "airline": "Scandinavian Airlines System",
-    "flights": 47
+    "airline": "Frontier Airlines",
+    "flights": 51
   },
   {
-    "airline": "Envoy Air",
-    "flights": 47
+    "airline": "British Airways",
+    "flights": 51
+  },
+  {
+    "airline": "Air India Limited",
+    "flights": 49
+  },
+  {
+    "airline": "Japan Airlines Domestic",
+    "flights": 49
+  },
+  {
+    "airline": "Wizz Air",
+    "flights": 46
   }
 ]

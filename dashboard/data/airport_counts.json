@@ -1,66 +1,90 @@
 [
   {
     "airport": "unknown",
-    "flights": 4856
+    "flights": 4974
   },
   {
-    "airport": "KDEN",
-    "flights": 28
+    "airport": "KSJC",
+    "flights": 44
+  },
+  {
+    "airport": "CYYZ",
+    "flights": 25
   },
   {
     "airport": "YSSY",
+    "flights": 24
+  },
+  {
+    "airport": "YPPH",
+    "flights": 22
+  },
+  {
+    "airport": "KPHX",
+    "flights": 22
+  },
+  {
+    "airport": "KBOS",
     "flights": 21
+  },
+  {
+    "airport": "CYYC",
+    "flights": 21
+  },
+  {
+    "airport": "RJTT",
+    "flights": 19
+  },
+  {
+    "airport": "KSEA",
+    "flights": 19
   },
   {
     "airport": "YMML",
     "flights": 19
   },
   {
-    "airport": "LEBL",
-    "flights": 17
-  },
-  {
-    "airport": "KSEA",
-    "flights": 17
-  },
-  {
-    "airport": "RJTT",
-    "flights": 17
-  },
-  {
-    "airport": "LGAV",
-    "flights": 17
-  },
-  {
-    "airport": "LSZH",
-    "flights": 17
-  },
-  {
-    "airport": "KPHX",
-    "flights": 14
-  },
-  {
     "airport": "VHHH",
+    "flights": 18
+  },
+  {
+    "airport": "CYVR",
+    "flights": 17
+  },
+  {
+    "airport": "KDFW",
+    "flights": 16
+  },
+  {
+    "airport": "YPJT",
+    "flights": 15
+  },
+  {
+    "airport": "KSLC",
     "flights": 14
   },
   {
     "airport": "VIDP",
+    "flights": 14
+  },
+  {
+    "airport": "KMSP",
     "flights": 13
   },
   {
-    "airport": "CYYZ",
+    "airport": "RKSI",
     "flights": 13
   },
   {
-    "airport": "YPPH",
+    "airport": "LSZH",
     "flights": 13
   },
   {
-    "airport": "KMCO",
-    "flights": 13
+    "airport": "VOBL",
+    "flights": 12
   },
   {
-    "airport": "ESSA",
+    "airport": "EDDF",
     "flights": 12
   },
   {
@@ -68,35 +92,11 @@
     "flights": 12
   },
   {
-    "airport": "CYVR",
-    "flights": 12
-  },
-  {
-    "airport": "NZAR",
-    "flights": 12
-  },
-  {
-    "airport": "KDFW",
-    "flights": 12
-  },
-  {
-    "airport": "RKSI",
-    "flights": 12
-  },
-  {
-    "airport": "LFPO",
+    "airport": "KOAK",
     "flights": 11
   },
   {
-    "airport": "KBOS",
-    "flights": 11
-  },
-  {
-    "airport": "KSFO",
-    "flights": 11
-  },
-  {
-    "airport": "CYYC",
-    "flights": 11
+    "airport": "PANC",
+    "flights": 10
   }
 ]
