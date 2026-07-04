@@ -1,39 +1,31 @@
 [
   {
     "airport": "unknown",
-    "flights": 4974
+    "flights": 4742
   },
   {
-    "airport": "KSJC",
-    "flights": 44
+    "airport": "KDEN",
+    "flights": 31
   },
   {
     "airport": "CYYZ",
+    "flights": 30
+  },
+  {
+    "airport": "KATL",
     "flights": 25
-  },
-  {
-    "airport": "YSSY",
-    "flights": 24
-  },
-  {
-    "airport": "YPPH",
-    "flights": 22
-  },
-  {
-    "airport": "KPHX",
-    "flights": 22
   },
   {
     "airport": "KBOS",
     "flights": 21
   },
   {
-    "airport": "CYYC",
-    "flights": 21
+    "airport": "KLGA",
+    "flights": 20
   },
   {
-    "airport": "RJTT",
-    "flights": 19
+    "airport": "YSSY",
+    "flights": 20
   },
   {
     "airport": "KSEA",
@@ -41,30 +33,30 @@
   },
   {
     "airport": "YMML",
-    "flights": 19
-  },
-  {
-    "airport": "VHHH",
     "flights": 18
   },
   {
-    "airport": "CYVR",
+    "airport": "RJTT",
     "flights": 17
   },
   {
-    "airport": "KDFW",
+    "airport": "CYYC",
+    "flights": 17
+  },
+  {
+    "airport": "KEWR",
     "flights": 16
   },
   {
-    "airport": "YPJT",
+    "airport": "RKSI",
+    "flights": 16
+  },
+  {
+    "airport": "VHHH",
     "flights": 15
   },
   {
-    "airport": "KSLC",
-    "flights": 14
-  },
-  {
-    "airport": "VIDP",
+    "airport": "KJFK",
     "flights": 14
   },
   {
@@ -72,31 +64,39 @@
     "flights": 13
   },
   {
-    "airport": "RKSI",
-    "flights": 13
-  },
-  {
-    "airport": "LSZH",
-    "flights": 13
-  },
-  {
-    "airport": "VOBL",
+    "airport": "VIDP",
     "flights": 12
   },
   {
-    "airport": "EDDF",
+    "airport": "LGAV",
     "flights": 12
   },
   {
-    "airport": "KLAS",
+    "airport": "KORD",
     "flights": 12
   },
   {
-    "airport": "KOAK",
+    "airport": "KMCO",
+    "flights": 12
+  },
+  {
+    "airport": "KSLC",
     "flights": 11
   },
   {
-    "airport": "PANC",
-    "flights": 10
+    "airport": "KLAS",
+    "flights": 11
+  },
+  {
+    "airport": "ZGSZ",
+    "flights": 11
+  },
+  {
+    "airport": "YPPH",
+    "flights": 11
+  },
+  {
+    "airport": "LFPG",
+    "flights": 11
   }
 ]
