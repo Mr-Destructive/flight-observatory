@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 4742
-  },
-  {
-    "airport": "KDEN",
-    "flights": 31
-  },
-  {
-    "airport": "CYYZ",
-    "flights": 30
-  },
-  {
-    "airport": "KATL",
-    "flights": 25
-  },
-  {
-    "airport": "KBOS",
-    "flights": 21
-  },
-  {
-    "airport": "KLGA",
-    "flights": 20
-  },
-  {
-    "airport": "YSSY",
-    "flights": 20
+    "flights": 5169
   },
   {
     "airport": "KSEA",
-    "flights": 19
-  },
-  {
-    "airport": "YMML",
-    "flights": 18
-  },
-  {
-    "airport": "RJTT",
-    "flights": 17
-  },
-  {
-    "airport": "CYYC",
-    "flights": 17
-  },
-  {
-    "airport": "KEWR",
-    "flights": 16
-  },
-  {
-    "airport": "RKSI",
-    "flights": 16
+    "flights": 30
   },
   {
     "airport": "VHHH",
-    "flights": 15
+    "flights": 28
   },
   {
-    "airport": "KJFK",
-    "flights": 14
+    "airport": "KDEN",
+    "flights": 25
   },
   {
-    "airport": "KMSP",
-    "flights": 13
-  },
-  {
-    "airport": "VIDP",
-    "flights": 12
+    "airport": "KDFW",
+    "flights": 24
   },
   {
     "airport": "LGAV",
-    "flights": 12
+    "flights": 23
   },
   {
-    "airport": "KORD",
-    "flights": 12
-  },
-  {
-    "airport": "KMCO",
-    "flights": 12
-  },
-  {
-    "airport": "KSLC",
-    "flights": 11
-  },
-  {
-    "airport": "KLAS",
-    "flights": 11
-  },
-  {
-    "airport": "ZGSZ",
-    "flights": 11
+    "airport": "CYYZ",
+    "flights": 21
   },
   {
     "airport": "YPPH",
-    "flights": 11
+    "flights": 20
   },
   {
-    "airport": "LFPG",
-    "flights": 11
+    "airport": "KBOS",
+    "flights": 18
+  },
+  {
+    "airport": "KATL",
+    "flights": 17
+  },
+  {
+    "airport": "KMCO",
+    "flights": 17
+  },
+  {
+    "airport": "KLAS",
+    "flights": 16
+  },
+  {
+    "airport": "CYVR",
+    "flights": 16
+  },
+  {
+    "airport": "YPJT",
+    "flights": 16
+  },
+  {
+    "airport": "KLGA",
+    "flights": 16
+  },
+  {
+    "airport": "RJTT",
+    "flights": 16
+  },
+  {
+    "airport": "YSSY",
+    "flights": 16
+  },
+  {
+    "airport": "YMML",
+    "flights": 16
+  },
+  {
+    "airport": "KMSP",
+    "flights": 15
+  },
+  {
+    "airport": "KIAD",
+    "flights": 15
+  },
+  {
+    "airport": "LIMC",
+    "flights": 13
+  },
+  {
+    "airport": "KPHX",
+    "flights": 12
+  },
+  {
+    "airport": "CYYC",
+    "flights": 12
+  },
+  {
+    "airport": "KEWR",
+    "flights": 12
+  },
+  {
+    "airport": "RKSI",
+    "flights": 12
   }
 ]
