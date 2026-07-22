@@ -1,51 +1,31 @@
 [
   {
     "airport": "unknown",
-    "flights": 5733
+    "flights": 5328
   },
   {
     "airport": "KDEN",
-    "flights": 35
-  },
-  {
-    "airport": "KJFK",
-    "flights": 33
-  },
-  {
-    "airport": "KATL",
-    "flights": 27
+    "flights": 36
   },
   {
     "airport": "CYYZ",
-    "flights": 22
+    "flights": 23
   },
   {
-    "airport": "KPHX",
-    "flights": 22
-  },
-  {
-    "airport": "KIAD",
-    "flights": 22
-  },
-  {
-    "airport": "KMSP",
-    "flights": 22
+    "airport": "KORD",
+    "flights": 21
   },
   {
     "airport": "KDFW",
     "flights": 21
   },
   {
-    "airport": "YSSY",
-    "flights": 21
-  },
-  {
-    "airport": "KSEA",
+    "airport": "KATL",
     "flights": 20
   },
   {
-    "airport": "KORD",
-    "flights": 19
+    "airport": "YSSY",
+    "flights": 20
   },
   {
     "airport": "RJTT",
@@ -53,26 +33,50 @@
   },
   {
     "airport": "YPPH",
+    "flights": 18
+  },
+  {
+    "airport": "YPJT",
     "flights": 17
+  },
+  {
+    "airport": "KMSP",
+    "flights": 16
   },
   {
     "airport": "VHHH",
-    "flights": 17
+    "flights": 16
   },
   {
-    "airport": "SKBO",
+    "airport": "KPHX",
     "flights": 15
   },
   {
-    "airport": "KBOS",
+    "airport": "KIAD",
     "flights": 15
   },
   {
-    "airport": "KSLC",
+    "airport": "KJFK",
     "flights": 14
   },
   {
-    "airport": "CYVR",
+    "airport": "RKSI",
+    "flights": 14
+  },
+  {
+    "airport": "RJBB",
+    "flights": 14
+  },
+  {
+    "airport": "YMML",
+    "flights": 14
+  },
+  {
+    "airport": "LGAV",
+    "flights": 14
+  },
+  {
+    "airport": "KSEA",
     "flights": 13
   },
   {
@@ -80,23 +84,19 @@
     "flights": 12
   },
   {
-    "airport": "LGAV",
+    "airport": "KSLC",
     "flights": 12
   },
   {
     "airport": "CYYC",
-    "flights": 11
+    "flights": 12
   },
   {
-    "airport": "KLGA",
-    "flights": 11
+    "airport": "KEWR",
+    "flights": 12
   },
   {
-    "airport": "KSAN",
+    "airport": "EDDF",
     "flights": 11
-  },
-  {
-    "airport": "YSBK",
-    "flights": 10
   }
 ]
