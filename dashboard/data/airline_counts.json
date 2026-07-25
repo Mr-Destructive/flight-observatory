@@ -1,102 +1,102 @@
 [
   {
     "airline": "unknown",
-    "flights": 1632
-  },
-  {
-    "airline": "Southwest Airlines",
-    "flights": 414
+    "flights": 1364
   },
   {
     "airline": "Delta Air Lines",
-    "flights": 408
+    "flights": 399
   },
   {
-    "airline": "United Airlines",
-    "flights": 373
+    "airline": "Southwest Airlines",
+    "flights": 394
   },
   {
     "airline": "American Airlines",
-    "flights": 364
+    "flights": 373
+  },
+  {
+    "airline": "United Airlines",
+    "flights": 355
   },
   {
     "airline": "SkyWest",
-    "flights": 183
-  },
-  {
-    "airline": "Federal Express",
-    "flights": 167
-  },
-  {
-    "airline": "United Parcel Service",
-    "flights": 141
+    "flights": 180
   },
   {
     "airline": "Alaska Airlines",
-    "flights": 136
+    "flights": 131
   },
   {
     "airline": "JetBlue Airways",
-    "flights": 121
+    "flights": 130
+  },
+  {
+    "airline": "Federal Express",
+    "flights": 93
+  },
+  {
+    "airline": "United Parcel Service",
+    "flights": 82
   },
   {
     "airline": "Frontier Airlines",
-    "flights": 87
+    "flights": 81
   },
   {
     "airline": "IndiGo Airlines",
-    "flights": 86
+    "flights": 77
   },
   {
     "airline": "Air Canada",
-    "flights": 72
-  },
-  {
-    "airline": "Envoy Air",
-    "flights": 69
-  },
-  {
-    "airline": "Qatar Airways",
-    "flights": 63
+    "flights": 73
   },
   {
     "airline": "All Nippon Airways",
-    "flights": 61
+    "flights": 67
   },
   {
-    "airline": "Japan Airlines Domestic",
+    "airline": "Allegiant Air",
     "flights": 59
   },
   {
-    "airline": "Air France",
-    "flights": 58
+    "airline": "Qatar Airways",
+    "flights": 56
   },
   {
-    "airline": "Emirates",
-    "flights": 55
-  },
-  {
-    "airline": "Turkish Airlines",
+    "airline": "Japan Airlines Domestic",
     "flights": 55
   },
   {
     "airline": "WestJet",
-    "flights": 53
+    "flights": 52
+  },
+  {
+    "airline": "Envoy Air",
+    "flights": 52
+  },
+  {
+    "airline": "Emirates",
+    "flights": 52
   },
   {
     "airline": "Pegasus Airlines",
+    "flights": 50
+  },
+  {
+    "airline": "Lufthansa",
+    "flights": 50
+  },
+  {
+    "airline": "Air China",
     "flights": 49
   },
   {
     "airline": "Etihad Airways",
-    "flights": 47
+    "flights": 49
   },
   {
-    "airline": "Republic Airlines",
-    "flights": 45
-  },
-  {
-    "airline": "Lufthansa",
-    "flights": 45
+    "airline": "Turkish Airlines",
+    "flights": 48
   }
 ]

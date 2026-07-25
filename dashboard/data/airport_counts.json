@@ -1,86 +1,86 @@
 [
   {
     "airport": "unknown",
-    "flights": 5915
-  },
-  {
-    "airport": "KDEN",
-    "flights": 50
+    "flights": 5429
   },
   {
     "airport": "KATL",
-    "flights": 38
+    "flights": 48
   },
   {
-    "airport": "KJFK",
+    "airport": "KDEN",
+    "flights": 36
+  },
+  {
+    "airport": "KSLC",
     "flights": 26
   },
   {
-    "airport": "KORD",
-    "flights": 25
-  },
-  {
-    "airport": "KSEA",
-    "flights": 22
-  },
-  {
-    "airport": "YPPH",
-    "flights": 22
-  },
-  {
     "airport": "VHHH",
-    "flights": 22
-  },
-  {
-    "airport": "KMSP",
-    "flights": 21
-  },
-  {
-    "airport": "KDFW",
-    "flights": 18
-  },
-  {
-    "airport": "LGAV",
-    "flights": 16
-  },
-  {
-    "airport": "YPJT",
-    "flights": 16
+    "flights": 24
   },
   {
     "airport": "CYYZ",
-    "flights": 16
+    "flights": 22
+  },
+  {
+    "airport": "KJFK",
+    "flights": 21
+  },
+  {
+    "airport": "KSEA",
+    "flights": 20
   },
   {
     "airport": "RJTT",
-    "flights": 14
+    "flights": 20
   },
   {
     "airport": "KPHX",
+    "flights": 20
+  },
+  {
+    "airport": "SKBO",
+    "flights": 17
+  },
+  {
+    "airport": "KDFW",
+    "flights": 17
+  },
+  {
+    "airport": "KMSP",
+    "flights": 15
+  },
+  {
+    "airport": "EDDF",
     "flights": 14
   },
   {
-    "airport": "YSSY",
+    "airport": "KLGA",
     "flights": 13
   },
   {
-    "airport": "YMML",
-    "flights": 13
+    "airport": "YSSY",
+    "flights": 12
   },
   {
     "airport": "CYVR",
-    "flights": 13
+    "flights": 12
   },
   {
-    "airport": "KLGA",
+    "airport": "KBOS",
     "flights": 11
   },
   {
-    "airport": "VIDP",
+    "airport": "YPJT",
     "flights": 11
   },
   {
-    "airport": "CYYC",
+    "airport": "VTBS",
+    "flights": 11
+  },
+  {
+    "airport": "YPPH",
     "flights": 11
   },
   {
@@ -88,15 +88,15 @@
     "flights": 11
   },
   {
-    "airport": "LSZH",
-    "flights": 11
-  },
-  {
-    "airport": "RJBB",
+    "airport": "KSFO",
     "flights": 10
   },
   {
-    "airport": "EDDF",
+    "airport": "CYYC",
+    "flights": 10
+  },
+  {
+    "airport": "PANC",
     "flights": 10
   }
 ]
