@@ -1,38 +1,58 @@
 [
   {
     "airport": "unknown",
-    "flights": 5087
+    "flights": 5700
+  },
+  {
+    "airport": "KATL",
+    "flights": 39
   },
   {
     "airport": "KDEN",
-    "flights": 36
+    "flights": 34
   },
   {
-    "airport": "KSEA",
-    "flights": 33
-  },
-  {
-    "airport": "VHHH",
+    "airport": "KIAD",
     "flights": 28
   },
   {
-    "airport": "RJTT",
+    "airport": "KDFW",
+    "flights": 27
+  },
+  {
+    "airport": "CYYZ",
+    "flights": 26
+  },
+  {
+    "airport": "KSEA",
     "flights": 22
+  },
+  {
+    "airport": "KMSP",
+    "flights": 21
   },
   {
     "airport": "YPPH",
     "flights": 20
   },
   {
-    "airport": "CYYZ",
+    "airport": "YMML",
     "flights": 20
   },
   {
-    "airport": "KPHX",
+    "airport": "KBOS",
     "flights": 19
   },
   {
-    "airport": "KDFW",
+    "airport": "KJFK",
+    "flights": 19
+  },
+  {
+    "airport": "RJTT",
+    "flights": 17
+  },
+  {
+    "airport": "VHHH",
     "flights": 16
   },
   {
@@ -40,63 +60,43 @@
     "flights": 16
   },
   {
-    "airport": "KMCO",
+    "airport": "KLGA",
     "flights": 15
   },
   {
-    "airport": "LGAV",
-    "flights": 15
-  },
-  {
-    "airport": "CYVR",
+    "airport": "KPHL",
     "flights": 14
   },
   {
-    "airport": "YMML",
-    "flights": 13
-  },
-  {
-    "airport": "KMSP",
-    "flights": 12
-  },
-  {
-    "airport": "KLGA",
-    "flights": 12
+    "airport": "KSLC",
+    "flights": 14
   },
   {
     "airport": "VIDP",
-    "flights": 11
+    "flights": 13
   },
   {
-    "airport": "CYYC",
-    "flights": 11
+    "airport": "KMCO",
+    "flights": 13
+  },
+  {
+    "airport": "YPJT",
+    "flights": 13
+  },
+  {
+    "airport": "CYVR",
+    "flights": 12
   },
   {
     "airport": "KSAN",
     "flights": 11
   },
   {
-    "airport": "KORD",
+    "airport": "ZGSZ",
     "flights": 11
   },
   {
-    "airport": "WIII",
-    "flights": 10
-  },
-  {
-    "airport": "KSFO",
-    "flights": 10
-  },
-  {
-    "airport": "VTBS",
-    "flights": 10
-  },
-  {
-    "airport": "LFPO",
-    "flights": 9
-  },
-  {
-    "airport": "KAUS",
-    "flights": 9
+    "airport": "CYUL",
+    "flights": 11
   }
 ]
