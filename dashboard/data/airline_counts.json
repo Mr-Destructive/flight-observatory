@@ -1,102 +1,102 @@
 [
   {
     "airline": "unknown",
-    "flights": 1586
+    "flights": 1523
   },
   {
     "airline": "Southwest Airlines",
-    "flights": 423
+    "flights": 397
   },
   {
     "airline": "Delta Air Lines",
-    "flights": 407
+    "flights": 359
   },
   {
     "airline": "American Airlines",
-    "flights": 371
+    "flights": 342
   },
   {
     "airline": "United Airlines",
-    "flights": 349
-  },
-  {
-    "airline": "Alaska Airlines",
-    "flights": 162
-  },
-  {
-    "airline": "Federal Express",
-    "flights": 153
+    "flights": 303
   },
   {
     "airline": "SkyWest",
-    "flights": 147
+    "flights": 169
+  },
+  {
+    "airline": "Federal Express",
+    "flights": 159
   },
   {
     "airline": "United Parcel Service",
-    "flights": 128
+    "flights": 138
   },
   {
-    "airline": "JetBlue Airways",
-    "flights": 109
+    "airline": "Alaska Airlines",
+    "flights": 135
   },
   {
     "airline": "IndiGo Airlines",
-    "flights": 91
+    "flights": 98
   },
   {
     "airline": "Air Canada",
-    "flights": 82
+    "flights": 86
   },
   {
-    "airline": "Frontier Airlines",
-    "flights": 79
-  },
-  {
-    "airline": "All Nippon Airways",
-    "flights": 75
-  },
-  {
-    "airline": "Qatar Airways",
-    "flights": 66
-  },
-  {
-    "airline": "Republic Airlines",
-    "flights": 61
+    "airline": "JetBlue Airways",
+    "flights": 84
   },
   {
     "airline": "Envoy Air",
-    "flights": 59
+    "flights": 79
   },
   {
-    "airline": "Allegiant Air",
-    "flights": 59
+    "airline": "Frontier Airlines",
+    "flights": 77
   },
   {
-    "airline": "Japan Airlines Domestic",
-    "flights": 53
+    "airline": "Qatar Airways",
+    "flights": 69
+  },
+  {
+    "airline": "All Nippon Airways",
+    "flights": 64
+  },
+  {
+    "airline": "WestJet",
+    "flights": 54
+  },
+  {
+    "airline": "Emirates",
+    "flights": 52
   },
   {
     "airline": "Turkish Airlines",
     "flights": 52
   },
   {
-    "airline": "Etihad Airways",
-    "flights": 52
-  },
-  {
-    "airline": "WestJet",
-    "flights": 51
-  },
-  {
-    "airline": "Emirates",
+    "airline": "Air France",
     "flights": 51
   },
   {
     "airline": "Lufthansa",
+    "flights": 50
+  },
+  {
+    "airline": "Japan Airlines Domestic",
     "flights": 49
   },
   {
-    "airline": "Virgin Australia",
+    "airline": "Pegasus Airlines",
+    "flights": 45
+  },
+  {
+    "airline": "PSA Airlines",
+    "flights": 45
+  },
+  {
+    "airline": "Etihad Airways",
     "flights": 45
   }
 ]
