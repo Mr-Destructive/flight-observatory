@@ -1,46 +1,26 @@
 [
   {
     "airport": "unknown",
-    "flights": 5839
+    "flights": 5418
+  },
+  {
+    "airport": "KDFW",
+    "flights": 27
   },
   {
     "airport": "KDEN",
-    "flights": 31
-  },
-  {
-    "airport": "KMSP",
     "flights": 26
   },
   {
-    "airport": "KBOS",
-    "flights": 22
-  },
-  {
     "airport": "CYYZ",
-    "flights": 22
+    "flights": 26
   },
   {
     "airport": "RJTT",
-    "flights": 21
-  },
-  {
-    "airport": "KSEA",
     "flights": 20
   },
   {
-    "airport": "KSLC",
-    "flights": 18
-  },
-  {
-    "airport": "YPPH",
-    "flights": 18
-  },
-  {
-    "airport": "YSSY",
-    "flights": 18
-  },
-  {
-    "airport": "YPJT",
+    "airport": "KJFK",
     "flights": 18
   },
   {
@@ -48,55 +28,75 @@
     "flights": 17
   },
   {
-    "airport": "YMML",
-    "flights": 17
-  },
-  {
     "airport": "VIDP",
     "flights": 16
   },
   {
-    "airport": "KPHX",
-    "flights": 15
+    "airport": "CYYC",
+    "flights": 16
   },
   {
-    "airport": "KDFW",
-    "flights": 15
-  },
-  {
-    "airport": "CYVR",
-    "flights": 15
-  },
-  {
-    "airport": "KORD",
-    "flights": 14
-  },
-  {
-    "airport": "KLGA",
-    "flights": 14
-  },
-  {
-    "airport": "KJFK",
-    "flights": 13
+    "airport": "KSEA",
+    "flights": 16
   },
   {
     "airport": "VHHH",
-    "flights": 13
+    "flights": 16
+  },
+  {
+    "airport": "KORD",
+    "flights": 15
+  },
+  {
+    "airport": "RJBB",
+    "flights": 15
+  },
+  {
+    "airport": "KMCO",
+    "flights": 14
+  },
+  {
+    "airport": "KBOS",
+    "flights": 14
   },
   {
     "airport": "LGAV",
     "flights": 13
   },
   {
-    "airport": "LSZH",
+    "airport": "KPHX",
     "flights": 13
   },
   {
-    "airport": "ZBTJ",
+    "airport": "YMML",
+    "flights": 13
+  },
+  {
+    "airport": "YPPH",
     "flights": 12
   },
   {
-    "airport": "RJBB",
-    "flights": 12
+    "airport": "KSJC",
+    "flights": 11
+  },
+  {
+    "airport": "WIII",
+    "flights": 11
+  },
+  {
+    "airport": "VTBS",
+    "flights": 11
+  },
+  {
+    "airport": "ZGSZ",
+    "flights": 11
+  },
+  {
+    "airport": "KAUS",
+    "flights": 11
+  },
+  {
+    "airport": "KSAN",
+    "flights": 11
   }
 ]
