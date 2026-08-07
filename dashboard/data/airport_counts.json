@@ -1,34 +1,50 @@
 [
   {
     "airport": "unknown",
-    "flights": 5288
+    "flights": 5918
   },
   {
     "airport": "KATL",
-    "flights": 45
+    "flights": 47
   },
   {
     "airport": "KDEN",
-    "flights": 34
-  },
-  {
-    "airport": "KJFK",
-    "flights": 33
-  },
-  {
-    "airport": "CYYZ",
-    "flights": 30
-  },
-  {
-    "airport": "KORD",
-    "flights": 26
+    "flights": 46
   },
   {
     "airport": "KEWR",
+    "flights": 33
+  },
+  {
+    "airport": "KJFK",
+    "flights": 31
+  },
+  {
+    "airport": "CYYZ",
+    "flights": 31
+  },
+  {
+    "airport": "KDFW",
+    "flights": 27
+  },
+  {
+    "airport": "KMSP",
     "flights": 26
   },
   {
-    "airport": "SKBO",
+    "airport": "YPPH",
+    "flights": 24
+  },
+  {
+    "airport": "KBOS",
+    "flights": 23
+  },
+  {
+    "airport": "KIAD",
+    "flights": 23
+  },
+  {
+    "airport": "KSEA",
     "flights": 22
   },
   {
@@ -36,15 +52,23 @@
     "flights": 21
   },
   {
-    "airport": "YPPH",
-    "flights": 19
+    "airport": "KLGA",
+    "flights": 21
   },
   {
     "airport": "YMML",
+    "flights": 19
+  },
+  {
+    "airport": "KORD",
     "flights": 18
   },
   {
-    "airport": "KIAD",
+    "airport": "YSSY",
+    "flights": 18
+  },
+  {
+    "airport": "ZBTJ",
     "flights": 17
   },
   {
@@ -52,51 +76,27 @@
     "flights": 16
   },
   {
-    "airport": "KBOS",
-    "flights": 16
-  },
-  {
-    "airport": "KSEA",
-    "flights": 16
-  },
-  {
-    "airport": "VHHH",
-    "flights": 16
-  },
-  {
-    "airport": "KMSP",
-    "flights": 16
-  },
-  {
-    "airport": "YSSY",
-    "flights": 15
-  },
-  {
-    "airport": "KDFW",
-    "flights": 15
-  },
-  {
-    "airport": "YMMB",
+    "airport": "CYVR",
     "flights": 14
   },
   {
-    "airport": "ZGSZ",
+    "airport": "VHHH",
+    "flights": 14
+  },
+  {
+    "airport": "KSAN",
     "flights": 13
   },
   {
-    "airport": "VTBS",
+    "airport": "KOAK",
+    "flights": 13
+  },
+  {
+    "airport": "YMMB",
     "flights": 13
   },
   {
     "airport": "KSJC",
-    "flights": 13
-  },
-  {
-    "airport": "LGAV",
-    "flights": 13
-  },
-  {
-    "airport": "KSLC",
     "flights": 12
   }
 ]
