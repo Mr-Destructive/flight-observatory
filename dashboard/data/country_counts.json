@@ -1,23 +1,23 @@
 [
   {
     "country": "United States",
-    "flights": 3355
+    "flights": 4047
   },
   {
     "country": "Canada",
-    "flights": 332
+    "flights": 367
   },
   {
     "country": "China",
-    "flights": 319
+    "flights": 285
   },
   {
     "country": "Australia",
-    "flights": 247
+    "flights": 256
   },
   {
     "country": "Japan",
-    "flights": 218
+    "flights": 211
   },
   {
     "country": "Turkey",
@@ -25,78 +25,78 @@
   },
   {
     "country": "India",
-    "flights": 153
+    "flights": 172
   },
   {
     "country": "United Arab Emirates",
-    "flights": 137
+    "flights": 140
   },
   {
     "country": "Republic of Korea",
-    "flights": 129
+    "flights": 130
   },
   {
     "country": "United Kingdom",
-    "flights": 116
+    "flights": 98
   },
   {
     "country": "Mexico",
-    "flights": 88
+    "flights": 96
   },
   {
-    "country": "Germany",
-    "flights": 80
-  },
-  {
-    "country": "Qatar",
-    "flights": 73
+    "country": "New Zealand",
+    "flights": 86
   },
   {
     "country": "Taiwan",
-    "flights": 69
+    "flights": 76
   },
   {
-    "country": "Brazil",
-    "flights": 65
+    "country": "Germany",
+    "flights": 74
+  },
+  {
+    "country": "Qatar",
+    "flights": 74
   },
   {
     "country": "Indonesia",
-    "flights": 63
+    "flights": 73
+  },
+  {
+    "country": "Brazil",
+    "flights": 73
+  },
+  {
+    "country": "Thailand",
+    "flights": 62
   },
   {
     "country": "Malaysia",
     "flights": 61
   },
   {
-    "country": "Thailand",
-    "flights": 56
-  },
-  {
     "country": "France",
-    "flights": 55
+    "flights": 60
   },
   {
     "country": "Spain",
-    "flights": 47
-  },
-  {
-    "country": "New Zealand",
-    "flights": 46
-  },
-  {
-    "country": "Chile",
-    "flights": 41
-  },
-  {
-    "country": "Poland",
-    "flights": 41
+    "flights": 50
   },
   {
     "country": "Singapore",
-    "flights": 37
+    "flights": 40
   },
   {
-    "country": "Egypt",
-    "flights": 31
+    "country": "Philippines",
+    "flights": 34
+  },
+  {
+    "country": "Chile",
+    "flights": 33
+  },
+  {
+    "country": "Malta",
+    "flights": 32
   }
 ]
