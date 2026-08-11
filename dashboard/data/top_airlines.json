@@ -1,42 +1,42 @@
 [
   {
     "airline": "unknown",
-    "flights": 1621
+    "flights": 1809
   },
   {
     "airline": "United Airlines",
-    "flights": 449
-  },
-  {
-    "airline": "American Airlines",
-    "flights": 428
+    "flights": 455
   },
   {
     "airline": "Delta Air Lines",
-    "flights": 425
+    "flights": 428
   },
   {
     "airline": "Southwest Airlines",
-    "flights": 422
+    "flights": 411
+  },
+  {
+    "airline": "American Airlines",
+    "flights": 363
   },
   {
     "airline": "SkyWest",
-    "flights": 169
+    "flights": 204
   },
   {
     "airline": "Alaska Airlines",
-    "flights": 146
+    "flights": 159
   },
   {
     "airline": "JetBlue Airways",
-    "flights": 133
+    "flights": 119
   },
   {
     "airline": "Air Canada",
     "flights": 94
   },
   {
-    "airline": "Republic Airlines",
-    "flights": 88
+    "airline": "Federal Express",
+    "flights": 90
   }
 ]

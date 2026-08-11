@@ -1,42 +1,34 @@
 [
   {
     "airport": "unknown",
-    "flights": 5656
+    "flights": 5938
   },
   {
     "airport": "KDEN",
-    "flights": 55
-  },
-  {
-    "airport": "CYYZ",
-    "flights": 39
+    "flights": 49
   },
   {
     "airport": "KATL",
-    "flights": 37
-  },
-  {
-    "airport": "KORD",
     "flights": 31
   },
   {
-    "airport": "YSSY",
+    "airport": "CYYZ",
     "flights": 28
   },
   {
-    "airport": "RJTT",
-    "flights": 24
+    "airport": "KDFW",
+    "flights": 23
   },
   {
     "airport": "YMML",
-    "flights": 24
+    "flights": 23
   },
   {
-    "airport": "KDFW",
-    "flights": 21
+    "airport": "YSSY",
+    "flights": 23
   },
   {
-    "airport": "KJFK",
+    "airport": "RJTT",
     "flights": 20
   },
   {
@@ -44,16 +36,20 @@
     "flights": 20
   },
   {
-    "airport": "KBOS",
+    "airport": "VIDP",
     "flights": 19
   },
   {
-    "airport": "KLGA",
+    "airport": "VHHH",
+    "flights": 19
+  },
+  {
+    "airport": "KBOS",
     "flights": 18
   },
   {
-    "airport": "VIDP",
-    "flights": 17
+    "airport": "KJFK",
+    "flights": 18
   },
   {
     "airport": "KMSP",
@@ -61,42 +57,46 @@
   },
   {
     "airport": "KPHX",
-    "flights": 16
+    "flights": 17
   },
   {
-    "airport": "KEWR",
-    "flights": 16
-  },
-  {
-    "airport": "KSAN",
-    "flights": 15
-  },
-  {
-    "airport": "VHHH",
-    "flights": 15
+    "airport": "KSLC",
+    "flights": 17
   },
   {
     "airport": "YPPH",
+    "flights": 16
+  },
+  {
+    "airport": "CYYC",
     "flights": 14
   },
   {
-    "airport": "KMCO",
+    "airport": "KPHL",
+    "flights": 14
+  },
+  {
+    "airport": "KLGA",
+    "flights": 14
+  },
+  {
+    "airport": "PAJN",
+    "flights": 14
+  },
+  {
+    "airport": "CYVR",
     "flights": 13
   },
   {
-    "airport": "KOAK",
+    "airport": "YPJT",
+    "flights": 13
+  },
+  {
+    "airport": "ZBTJ",
     "flights": 12
   },
   {
-    "airport": "YBBN",
-    "flights": 12
-  },
-  {
-    "airport": "CYUL",
-    "flights": 11
-  },
-  {
-    "airport": "KAUS",
+    "airport": "PANC",
     "flights": 11
   }
 ]
