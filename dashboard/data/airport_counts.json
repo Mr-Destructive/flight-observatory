@@ -1,19 +1,15 @@
 [
   {
     "airport": "unknown",
-    "flights": 5938
-  },
-  {
-    "airport": "KDEN",
-    "flights": 49
+    "flights": 5704
   },
   {
     "airport": "KATL",
-    "flights": 31
+    "flights": 56
   },
   {
-    "airport": "CYYZ",
-    "flights": 28
+    "airport": "KDEN",
+    "flights": 24
   },
   {
     "airport": "KDFW",
@@ -24,31 +20,31 @@
     "flights": 23
   },
   {
-    "airport": "YSSY",
-    "flights": 23
+    "airport": "KORD",
+    "flights": 22
+  },
+  {
+    "airport": "YPPH",
+    "flights": 22
   },
   {
     "airport": "RJTT",
+    "flights": 21
+  },
+  {
+    "airport": "CYYZ",
     "flights": 20
   },
   {
-    "airport": "KSEA",
+    "airport": "YPJT",
     "flights": 20
-  },
-  {
-    "airport": "VIDP",
-    "flights": 19
-  },
-  {
-    "airport": "VHHH",
-    "flights": 19
   },
   {
     "airport": "KBOS",
     "flights": 18
   },
   {
-    "airport": "KJFK",
+    "airport": "KEWR",
     "flights": 18
   },
   {
@@ -56,23 +52,19 @@
     "flights": 17
   },
   {
-    "airport": "KPHX",
-    "flights": 17
-  },
-  {
-    "airport": "KSLC",
-    "flights": 17
-  },
-  {
-    "airport": "YPPH",
+    "airport": "YSSY",
     "flights": 16
   },
   {
-    "airport": "CYYC",
-    "flights": 14
+    "airport": "VHHH",
+    "flights": 15
   },
   {
-    "airport": "KPHL",
+    "airport": "CYUL",
+    "flights": 15
+  },
+  {
+    "airport": "KJFK",
     "flights": 14
   },
   {
@@ -80,23 +72,31 @@
     "flights": 14
   },
   {
-    "airport": "PAJN",
-    "flights": 14
-  },
-  {
-    "airport": "CYVR",
+    "airport": "KSEA",
     "flights": 13
   },
   {
-    "airport": "YPJT",
+    "airport": "CYYC",
     "flights": 13
-  },
-  {
-    "airport": "ZBTJ",
-    "flights": 12
   },
   {
     "airport": "PANC",
+    "flights": 12
+  },
+  {
+    "airport": "KIAD",
     "flights": 11
+  },
+  {
+    "airport": "YMMB",
+    "flights": 10
+  },
+  {
+    "airport": "LLBG",
+    "flights": 10
+  },
+  {
+    "airport": "ZGSZ",
+    "flights": 10
   }
 ]

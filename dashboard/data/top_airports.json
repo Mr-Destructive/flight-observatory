@@ -1,23 +1,15 @@
 [
   {
     "airport": "unknown",
-    "flights": 5938
-  },
-  {
-    "airport": "KDEN",
-    "flights": 49
+    "flights": 5704
   },
   {
     "airport": "KATL",
-    "flights": 31
+    "flights": 56
   },
   {
-    "airport": "CYYZ",
-    "flights": 28
-  },
-  {
-    "airport": "YSSY",
-    "flights": 23
+    "airport": "KDEN",
+    "flights": 24
   },
   {
     "airport": "YMML",
@@ -28,15 +20,23 @@
     "flights": 23
   },
   {
+    "airport": "YPPH",
+    "flights": 22
+  },
+  {
+    "airport": "KORD",
+    "flights": 22
+  },
+  {
     "airport": "RJTT",
+    "flights": 21
+  },
+  {
+    "airport": "YPJT",
     "flights": 20
   },
   {
-    "airport": "KSEA",
+    "airport": "CYYZ",
     "flights": 20
-  },
-  {
-    "airport": "VIDP",
-    "flights": 19
   }
 ]
