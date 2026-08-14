@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 5767
-  },
-  {
-    "airport": "KDEN",
-    "flights": 44
-  },
-  {
-    "airport": "CYYZ",
-    "flights": 43
+    "flights": 6076
   },
   {
     "airport": "KDFW",
+    "flights": 36
+  },
+  {
+    "airport": "CYYZ",
     "flights": 33
   },
   {
-    "airport": "YMML",
-    "flights": 27
+    "airport": "OMAS",
+    "flights": 29
   },
   {
-    "airport": "RJTT",
-    "flights": 26
-  },
-  {
-    "airport": "KMSP",
-    "flights": 23
+    "airport": "KDEN",
+    "flights": 25
   },
   {
     "airport": "KORD",
-    "flights": 22
-  },
-  {
-    "airport": "YPPH",
-    "flights": 20
-  },
-  {
-    "airport": "VHHH",
-    "flights": 20
-  },
-  {
-    "airport": "CYYC",
-    "flights": 19
-  },
-  {
-    "airport": "KATL",
-    "flights": 17
-  },
-  {
-    "airport": "KBOS",
-    "flights": 17
-  },
-  {
-    "airport": "KIAD",
-    "flights": 16
-  },
-  {
-    "airport": "KJFK",
-    "flights": 16
-  },
-  {
-    "airport": "KSAN",
-    "flights": 15
-  },
-  {
-    "airport": "KEWR",
-    "flights": 14
-  },
-  {
-    "airport": "KLGA",
-    "flights": 14
-  },
-  {
-    "airport": "YPJT",
-    "flights": 13
-  },
-  {
-    "airport": "KSFO",
-    "flights": 13
-  },
-  {
-    "airport": "YMMB",
-    "flights": 13
-  },
-  {
-    "airport": "SKBO",
-    "flights": 12
-  },
-  {
-    "airport": "CYUL",
-    "flights": 12
-  },
-  {
-    "airport": "ZBTJ",
-    "flights": 11
+    "flights": 25
   },
   {
     "airport": "YSSY",
-    "flights": 10
+    "flights": 25
+  },
+  {
+    "airport": "KJFK",
+    "flights": 24
+  },
+  {
+    "airport": "YPPH",
+    "flights": 23
+  },
+  {
+    "airport": "KATL",
+    "flights": 22
+  },
+  {
+    "airport": "VHHH",
+    "flights": 22
+  },
+  {
+    "airport": "KSEA",
+    "flights": 21
+  },
+  {
+    "airport": "RJTT",
+    "flights": 21
+  },
+  {
+    "airport": "KEWR",
+    "flights": 21
+  },
+  {
+    "airport": "YMML",
+    "flights": 20
+  },
+  {
+    "airport": "KMSP",
+    "flights": 19
+  },
+  {
+    "airport": "KIAD",
+    "flights": 18
+  },
+  {
+    "airport": "YPJT",
+    "flights": 17
+  },
+  {
+    "airport": "CYYC",
+    "flights": 16
+  },
+  {
+    "airport": "KPHX",
+    "flights": 16
+  },
+  {
+    "airport": "KSFO",
+    "flights": 16
+  },
+  {
+    "airport": "ZBTJ",
+    "flights": 15
+  },
+  {
+    "airport": "CYUL",
+    "flights": 13
+  },
+  {
+    "airport": "RJBB",
+    "flights": 13
+  },
+  {
+    "airport": "KBOS",
+    "flights": 13
   }
 ]
