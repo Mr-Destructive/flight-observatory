@@ -1,102 +1,102 @@
 [
   {
     "airline": "unknown",
-    "flights": 1798
+    "flights": 1981
   },
   {
     "airline": "Delta Air Lines",
-    "flights": 408
+    "flights": 466
   },
   {
     "airline": "United Airlines",
-    "flights": 394
-  },
-  {
-    "airline": "American Airlines",
-    "flights": 390
+    "flights": 409
   },
   {
     "airline": "Southwest Airlines",
-    "flights": 386
+    "flights": 407
+  },
+  {
+    "airline": "American Airlines",
+    "flights": 396
   },
   {
     "airline": "SkyWest",
-    "flights": 193
+    "flights": 186
   },
   {
     "airline": "Alaska Airlines",
-    "flights": 154
+    "flights": 156
   },
   {
     "airline": "JetBlue Airways",
     "flights": 144
   },
   {
-    "airline": "Federal Express",
-    "flights": 124
-  },
-  {
-    "airline": "United Parcel Service",
-    "flights": 119
-  },
-  {
-    "airline": "Air Canada",
-    "flights": 81
-  },
-  {
-    "airline": "IndiGo Airlines",
-    "flights": 77
-  },
-  {
-    "airline": "Envoy Air",
-    "flights": 74
-  },
-  {
     "airline": "Republic Airlines",
-    "flights": 74
-  },
-  {
-    "airline": "Frontier Airlines",
-    "flights": 74
-  },
-  {
-    "airline": "All Nippon Airways",
-    "flights": 71
+    "flights": 93
   },
   {
     "airline": "Turkish Airlines",
-    "flights": 70
+    "flights": 92
+  },
+  {
+    "airline": "Frontier Airlines",
+    "flights": 81
+  },
+  {
+    "airline": "Air Canada",
+    "flights": 80
+  },
+  {
+    "airline": "All Nippon Airways",
+    "flights": 77
   },
   {
     "airline": "Qatar Airways",
-    "flights": 68
-  },
-  {
-    "airline": "Allegiant Air",
-    "flights": 63
-  },
-  {
-    "airline": "Etihad Airways",
-    "flights": 61
+    "flights": 73
   },
   {
     "airline": "WestJet",
-    "flights": 56
+    "flights": 66
+  },
+  {
+    "airline": "Envoy Air",
+    "flights": 66
   },
   {
     "airline": "Japan Airlines Domestic",
-    "flights": 54
+    "flights": 60
   },
   {
-    "airline": "Emirates",
-    "flights": 52
+    "airline": "IndiGo Airlines",
+    "flights": 59
   },
   {
     "airline": "PSA Airlines",
+    "flights": 55
+  },
+  {
+    "airline": "Allegiant Air",
+    "flights": 51
+  },
+  {
+    "airline": "Cathay Pacific",
     "flights": 50
   },
   {
-    "airline": "NetJets",
-    "flights": 46
+    "airline": "Emirates",
+    "flights": 49
+  },
+  {
+    "airline": "Federal Express",
+    "flights": 47
+  },
+  {
+    "airline": "Pegasus Airlines",
+    "flights": 45
+  },
+  {
+    "airline": "China Southern Airlines",
+    "flights": 45
   }
 ]
