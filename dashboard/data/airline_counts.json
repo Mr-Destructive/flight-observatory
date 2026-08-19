@@ -1,102 +1,102 @@
 [
   {
     "airline": "unknown",
-    "flights": 2072
+    "flights": 2220
   },
   {
     "airline": "Delta Air Lines",
-    "flights": 460
-  },
-  {
-    "airline": "Southwest Airlines",
-    "flights": 457
+    "flights": 382
   },
   {
     "airline": "United Airlines",
-    "flights": 394
+    "flights": 349
   },
   {
     "airline": "American Airlines",
-    "flights": 383
+    "flights": 331
+  },
+  {
+    "airline": "Southwest Airlines",
+    "flights": 303
   },
   {
     "airline": "SkyWest",
-    "flights": 196
+    "flights": 165
   },
   {
     "airline": "Alaska Airlines",
-    "flights": 146
+    "flights": 154
   },
   {
     "airline": "JetBlue Airways",
-    "flights": 133
+    "flights": 136
   },
   {
     "airline": "Air Canada",
-    "flights": 93
-  },
-  {
-    "airline": "Frontier Airlines",
-    "flights": 91
-  },
-  {
-    "airline": "Republic Airlines",
-    "flights": 83
+    "flights": 88
   },
   {
     "airline": "All Nippon Airways",
-    "flights": 82
+    "flights": 81
   },
   {
-    "airline": "Qatar Airways",
-    "flights": 71
+    "airline": "Republic Airlines",
+    "flights": 77
   },
   {
     "airline": "Turkish Airlines",
-    "flights": 65
+    "flights": 68
   },
   {
-    "airline": "Envoy Air",
-    "flights": 60
-  },
-  {
-    "airline": "WestJet",
-    "flights": 59
-  },
-  {
-    "airline": "PSA Airlines",
-    "flights": 59
-  },
-  {
-    "airline": "Japan Airlines Domestic",
-    "flights": 58
-  },
-  {
-    "airline": "China Southern Airlines",
-    "flights": 55
-  },
-  {
-    "airline": "Allegiant Air",
-    "flights": 55
+    "airline": "Federal Express",
+    "flights": 64
   },
   {
     "airline": "IndiGo Airlines",
-    "flights": 54
+    "flights": 63
+  },
+  {
+    "airline": "Frontier Airlines",
+    "flights": 63
+  },
+  {
+    "airline": "Japan Airlines Domestic",
+    "flights": 60
+  },
+  {
+    "airline": "Envoy Air",
+    "flights": 59
+  },
+  {
+    "airline": "WestJet",
+    "flights": 58
+  },
+  {
+    "airline": "United Parcel Service",
+    "flights": 57
+  },
+  {
+    "airline": "China Southern Airlines",
+    "flights": 56
+  },
+  {
+    "airline": "Qatar Airways",
+    "flights": 50
   },
   {
     "airline": "NetJets",
     "flights": 49
   },
   {
-    "airline": "Federal Express",
-    "flights": 48
+    "airline": "Emirates",
+    "flights": 46
   },
   {
     "airline": "Cathay Pacific",
-    "flights": 48
+    "flights": 45
   },
   {
-    "airline": "United Parcel Service",
-    "flights": 46
+    "airline": "PSA Airlines",
+    "flights": 38
   }
 ]
