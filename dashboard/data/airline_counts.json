@@ -1,102 +1,102 @@
 [
   {
     "airline": "unknown",
-    "flights": 2252
-  },
-  {
-    "airline": "United Airlines",
-    "flights": 430
+    "flights": 1778
   },
   {
     "airline": "Delta Air Lines",
-    "flights": 428
+    "flights": 477
   },
   {
     "airline": "Southwest Airlines",
-    "flights": 421
+    "flights": 417
   },
   {
     "airline": "American Airlines",
-    "flights": 409
+    "flights": 412
+  },
+  {
+    "airline": "United Airlines",
+    "flights": 397
   },
   {
     "airline": "SkyWest",
-    "flights": 212
-  },
-  {
-    "airline": "Alaska Airlines",
-    "flights": 157
+    "flights": 183
   },
   {
     "airline": "JetBlue Airways",
-    "flights": 108
+    "flights": 146
   },
   {
-    "airline": "Frontier Airlines",
-    "flights": 91
-  },
-  {
-    "airline": "Envoy Air",
-    "flights": 86
-  },
-  {
-    "airline": "Air Canada",
-    "flights": 84
-  },
-  {
-    "airline": "All Nippon Airways",
-    "flights": 77
-  },
-  {
-    "airline": "Turkish Airlines",
-    "flights": 75
-  },
-  {
-    "airline": "Qatar Airways",
-    "flights": 66
-  },
-  {
-    "airline": "IndiGo Airlines",
-    "flights": 65
-  },
-  {
-    "airline": "Japan Airlines Domestic",
-    "flights": 65
-  },
-  {
-    "airline": "Federal Express",
-    "flights": 64
-  },
-  {
-    "airline": "WestJet",
-    "flights": 62
-  },
-  {
-    "airline": "United Parcel Service",
-    "flights": 60
-  },
-  {
-    "airline": "NetJets",
-    "flights": 59
+    "airline": "Alaska Airlines",
+    "flights": 140
   },
   {
     "airline": "Republic Airlines",
-    "flights": 55
+    "flights": 95
+  },
+  {
+    "airline": "Frontier Airlines",
+    "flights": 88
+  },
+  {
+    "airline": "Air Canada",
+    "flights": 85
+  },
+  {
+    "airline": "All Nippon Airways",
+    "flights": 76
+  },
+  {
+    "airline": "Envoy Air",
+    "flights": 75
+  },
+  {
+    "airline": "WestJet",
+    "flights": 75
+  },
+  {
+    "airline": "Turkish Airlines",
+    "flights": 73
+  },
+  {
+    "airline": "Japan Airlines Domestic",
+    "flights": 70
+  },
+  {
+    "airline": "IndiGo Airlines",
+    "flights": 64
+  },
+  {
+    "airline": "Qatar Airways",
+    "flights": 61
+  },
+  {
+    "airline": "PSA Airlines",
+    "flights": 54
   },
   {
     "airline": "China Southern Airlines",
-    "flights": 51
-  },
-  {
-    "airline": "Virgin Australia",
     "flights": 49
   },
   {
-    "airline": "Air India Limited",
-    "flights": 48
+    "airline": "Emirates",
+    "flights": 45
   },
   {
-    "airline": "Emirates",
-    "flights": 46
+    "airline": "Air India Limited",
+    "flights": 44
+  },
+  {
+    "airline": "Federal Express",
+    "flights": 42
+  },
+  {
+    "airline": "Cathay Pacific",
+    "flights": 41
+  },
+  {
+    "airline": "China Eastern Airlines",
+    "flights": 38
   }
 ]
