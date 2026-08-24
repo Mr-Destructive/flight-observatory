@@ -1,102 +1,102 @@
 [
   {
     "airline": "unknown",
-    "flights": 1415
-  },
-  {
-    "airline": "Delta Air Lines",
-    "flights": 359
-  },
-  {
-    "airline": "United Airlines",
-    "flights": 356
+    "flights": 1814
   },
   {
     "airline": "American Airlines",
-    "flights": 339
+    "flights": 451
+  },
+  {
+    "airline": "Delta Air Lines",
+    "flights": 444
   },
   {
     "airline": "Southwest Airlines",
-    "flights": 221
+    "flights": 409
+  },
+  {
+    "airline": "United Airlines",
+    "flights": 408
   },
   {
     "airline": "SkyWest",
-    "flights": 174
-  },
-  {
-    "airline": "Alaska Airlines",
-    "flights": 138
+    "flights": 181
   },
   {
     "airline": "JetBlue Airways",
-    "flights": 136
+    "flights": 151
   },
   {
-    "airline": "Air Canada",
-    "flights": 82
-  },
-  {
-    "airline": "All Nippon Airways",
-    "flights": 74
+    "airline": "Alaska Airlines",
+    "flights": 148
   },
   {
     "airline": "Frontier Airlines",
-    "flights": 73
+    "flights": 94
   },
   {
-    "airline": "IndiGo Airlines",
-    "flights": 70
-  },
-  {
-    "airline": "Turkish Airlines",
-    "flights": 70
+    "airline": "Air Canada",
+    "flights": 94
   },
   {
     "airline": "Envoy Air",
-    "flights": 65
-  },
-  {
-    "airline": "Qatar Airways",
-    "flights": 65
-  },
-  {
-    "airline": "WestJet",
-    "flights": 64
-  },
-  {
-    "airline": "Japan Airlines Domestic",
-    "flights": 56
+    "flights": 83
   },
   {
     "airline": "Republic Airlines",
-    "flights": 50
+    "flights": 83
   },
   {
-    "airline": "China Southern Airlines",
-    "flights": 47
+    "airline": "All Nippon Airways",
+    "flights": 76
+  },
+  {
+    "airline": "IndiGo Airlines",
+    "flights": 75
+  },
+  {
+    "airline": "Turkish Airlines",
+    "flights": 72
+  },
+  {
+    "airline": "WestJet",
+    "flights": 70
+  },
+  {
+    "airline": "Qatar Airways",
+    "flights": 68
+  },
+  {
+    "airline": "Japan Airlines Domestic",
+    "flights": 63
+  },
+  {
+    "airline": "NetJets",
+    "flights": 59
   },
   {
     "airline": "Emirates",
-    "flights": 46
+    "flights": 55
   },
   {
-    "airline": "Air India Limited",
-    "flights": 43
+    "airline": "China Southern Airlines",
+    "flights": 50
   },
   {
-    "airline": "Etihad Airways",
-    "flights": 43
-  },
-  {
-    "airline": "Volaris",
-    "flights": 38
+    "airline": "PSA Airlines",
+    "flights": 48
   },
   {
     "airline": "Cathay Pacific",
-    "flights": 38
+    "flights": 45
   },
   {
-    "airline": "SunExpress",
-    "flights": 37
+    "airline": "Air India Limited",
+    "flights": 44
+  },
+  {
+    "airline": "Virgin Australia",
+    "flights": 42
   }
 ]

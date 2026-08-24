@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 4982
+    "flights": 5989
   },
   {
     "airport": "KDEN",
-    "flights": 43
-  },
-  {
-    "airport": "CYYZ",
-    "flights": 32
-  },
-  {
-    "airport": "KJFK",
-    "flights": 30
-  },
-  {
-    "airport": "KEWR",
-    "flights": 27
-  },
-  {
-    "airport": "KDFW",
-    "flights": 26
+    "flights": 53
   },
   {
     "airport": "KATL",
-    "flights": 24
+    "flights": 46
+  },
+  {
+    "airport": "KJFK",
+    "flights": 36
+  },
+  {
+    "airport": "CYYZ",
+    "flights": 35
+  },
+  {
+    "airport": "KDFW",
+    "flights": 22
   },
   {
     "airport": "KSEA",
-    "flights": 23
-  },
-  {
-    "airport": "RJTT",
-    "flights": 20
-  },
-  {
-    "airport": "VHHH",
-    "flights": 19
-  },
-  {
-    "airport": "YSSY",
-    "flights": 17
-  },
-  {
-    "airport": "KORD",
-    "flights": 17
-  },
-  {
-    "airport": "KSFO",
-    "flights": 15
-  },
-  {
-    "airport": "YMML",
-    "flights": 14
-  },
-  {
-    "airport": "KBOS",
-    "flights": 13
+    "flights": 21
   },
   {
     "airport": "KMSP",
+    "flights": 20
+  },
+  {
+    "airport": "RJTT",
+    "flights": 18
+  },
+  {
+    "airport": "YPPH",
+    "flights": 18
+  },
+  {
+    "airport": "KSLC",
+    "flights": 18
+  },
+  {
+    "airport": "CYUL",
+    "flights": 18
+  },
+  {
+    "airport": "YSSY",
+    "flights": 18
+  },
+  {
+    "airport": "KBOS",
+    "flights": 17
+  },
+  {
+    "airport": "VHHH",
+    "flights": 17
+  },
+  {
+    "airport": "YMML",
+    "flights": 16
+  },
+  {
+    "airport": "RCTP",
+    "flights": 16
+  },
+  {
+    "airport": "KSFO",
+    "flights": 14
+  },
+  {
+    "airport": "KSJC",
     "flights": 13
+  },
+  {
+    "airport": "KPHX",
+    "flights": 13
+  },
+  {
+    "airport": "CYYC",
+    "flights": 13
+  },
+  {
+    "airport": "KLGA",
+    "flights": 11
   },
   {
     "airport": "VIDP",
     "flights": 11
   },
   {
-    "airport": "ZGSZ",
+    "airport": "KOAK",
     "flights": 11
   },
   {
-    "airport": "KMCO",
+    "airport": "CYVR",
     "flights": 11
-  },
-  {
-    "airport": "KSLC",
-    "flights": 10
-  },
-  {
-    "airport": "KPHX",
-    "flights": 9
-  },
-  {
-    "airport": "RCTP",
-    "flights": 9
-  },
-  {
-    "airport": "YPPH",
-    "flights": 9
-  },
-  {
-    "airport": "YBBN",
-    "flights": 9
-  },
-  {
-    "airport": "CYYC",
-    "flights": 8
   }
 ]
