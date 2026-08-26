@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 6119
+    "flights": 5686
   },
   {
     "airport": "KDEN",
-    "flights": 44
-  },
-  {
-    "airport": "KATL",
-    "flights": 42
+    "flights": 58
   },
   {
     "airport": "CYYZ",
-    "flights": 34
+    "flights": 30
   },
   {
-    "airport": "RJTT",
-    "flights": 26
+    "airport": "KATL",
+    "flights": 24
   },
   {
     "airport": "KMSP",
-    "flights": 25
-  },
-  {
-    "airport": "YSSY",
     "flights": 24
-  },
-  {
-    "airport": "KJFK",
-    "flights": 24
-  },
-  {
-    "airport": "KSEA",
-    "flights": 23
-  },
-  {
-    "airport": "VHHH",
-    "flights": 23
   },
   {
     "airport": "YMML",
     "flights": 23
   },
   {
-    "airport": "RCTP",
-    "flights": 21
-  },
-  {
-    "airport": "KORD",
-    "flights": 20
-  },
-  {
-    "airport": "KDFW",
-    "flights": 18
+    "airport": "YSSY",
+    "flights": 23
   },
   {
     "airport": "YPPH",
+    "flights": 22
+  },
+  {
+    "airport": "VHHH",
+    "flights": 21
+  },
+  {
+    "airport": "KDFW",
+    "flights": 20
+  },
+  {
+    "airport": "KSEA",
     "flights": 18
   },
   {
+    "airport": "RJTT",
+    "flights": 17
+  },
+  {
     "airport": "KPHX",
-    "flights": 15
+    "flights": 17
+  },
+  {
+    "airport": "KJFK",
+    "flights": 16
+  },
+  {
+    "airport": "KORD",
+    "flights": 16
   },
   {
     "airport": "CYYC",
-    "flights": 15
+    "flights": 16
   },
   {
-    "airport": "KLAS",
-    "flights": 14
-  },
-  {
-    "airport": "KBOS",
-    "flights": 14
-  },
-  {
-    "airport": "CYVR",
-    "flights": 14
+    "airport": "RCTP",
+    "flights": 16
   },
   {
     "airport": "KEWR",
+    "flights": 14
+  },
+  {
+    "airport": "KSLC",
     "flights": 13
+  },
+  {
+    "airport": "PAJN",
+    "flights": 12
+  },
+  {
+    "airport": "KLAS",
+    "flights": 12
   },
   {
     "airport": "KSFO",
     "flights": 12
   },
   {
-    "airport": "KLGA",
+    "airport": "YPJT",
     "flights": 12
   },
   {
-    "airport": "CYUL",
-    "flights": 12
+    "airport": "VIDP",
+    "flights": 11
   },
   {
-    "airport": "KAUS",
+    "airport": "KBOS",
     "flights": 11
   }
 ]
