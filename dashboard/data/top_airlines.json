@@ -1,42 +1,42 @@
 [
   {
     "airline": "unknown",
-    "flights": 2008
+    "flights": 1568
   },
   {
-    "airline": "Delta Air Lines",
-    "flights": 374
+    "airline": "Ryanair",
+    "flights": 408
   },
   {
     "airline": "United Airlines",
-    "flights": 328
+    "flights": 128
   },
   {
-    "airline": "American Airlines",
-    "flights": 317
+    "airline": "Turkish Airlines",
+    "flights": 125
   },
   {
-    "airline": "Southwest Airlines",
-    "flights": 313
+    "airline": "Delta Air Lines",
+    "flights": 113
   },
   {
-    "airline": "SkyWest",
-    "flights": 165
+    "airline": "United Parcel Service",
+    "flights": 103
   },
   {
-    "airline": "JetBlue Airways",
-    "flights": 139
+    "airline": "Jet2.com",
+    "flights": 102
   },
   {
-    "airline": "Alaska Airlines",
-    "flights": 132
+    "airline": "Lufthansa",
+    "flights": 101
   },
   {
-    "airline": "Air Canada",
-    "flights": 82
+    "airline": "easyJet",
+    "flights": 100
   },
   {
-    "airline": "All Nippon Airways",
-    "flights": 71
+    "airline": "Air France",
+    "flights": 100
   }
 ]
