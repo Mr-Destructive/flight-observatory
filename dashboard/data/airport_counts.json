@@ -1,70 +1,50 @@
 [
   {
     "airport": "unknown",
-    "flights": 5450
+    "flights": 6476
   },
   {
     "airport": "LSZH",
-    "flights": 29
-  },
-  {
-    "airport": "VHHH",
-    "flights": 25
-  },
-  {
-    "airport": "YSSY",
-    "flights": 25
-  },
-  {
-    "airport": "EGKK",
-    "flights": 24
+    "flights": 34
   },
   {
     "airport": "RJTT",
-    "flights": 20
-  },
-  {
-    "airport": "YMML",
-    "flights": 19
-  },
-  {
-    "airport": "LGAV",
-    "flights": 18
-  },
-  {
-    "airport": "EDDF",
-    "flights": 17
+    "flights": 21
   },
   {
     "airport": "LEBL",
-    "flights": 17
+    "flights": 20
   },
   {
-    "airport": "RCTP",
-    "flights": 15
+    "airport": "VHHH",
+    "flights": 19
+  },
+  {
+    "airport": "LFPO",
+    "flights": 16
   },
   {
     "airport": "EIDW",
+    "flights": 15
+  },
+  {
+    "airport": "OJAI",
     "flights": 14
   },
   {
-    "airport": "LEMD",
+    "airport": "EDDF",
+    "flights": 14
+  },
+  {
+    "airport": "YMML",
+    "flights": 14
+  },
+  {
+    "airport": "ESSA",
     "flights": 13
   },
   {
-    "airport": "EKCH",
-    "flights": 13
-  },
-  {
-    "airport": "EDDM",
-    "flights": 13
-  },
-  {
-    "airport": "EHAM",
-    "flights": 13
-  },
-  {
-    "airport": "EBBR",
+    "airport": "KBOS",
     "flights": 13
   },
   {
@@ -72,23 +52,39 @@
     "flights": 13
   },
   {
+    "airport": "EGKK",
+    "flights": 13
+  },
+  {
+    "airport": "CYYZ",
+    "flights": 13
+  },
+  {
     "airport": "YPPH",
     "flights": 13
   },
   {
-    "airport": "PANC",
+    "airport": "VIDP",
     "flights": 12
   },
   {
-    "airport": "LOWW",
+    "airport": "YSSY",
+    "flights": 12
+  },
+  {
+    "airport": "CYUL",
+    "flights": 12
+  },
+  {
+    "airport": "VTBS",
     "flights": 11
   },
   {
-    "airport": "WIII",
+    "airport": "PANC",
     "flights": 10
   },
   {
-    "airport": "VIDP",
+    "airport": "LEMG",
     "flights": 10
   },
   {
@@ -96,7 +92,11 @@
     "flights": 10
   },
   {
-    "airport": "LIMC",
+    "airport": "KATL",
+    "flights": 10
+  },
+  {
+    "airport": "KDFW",
     "flights": 10
   }
 ]

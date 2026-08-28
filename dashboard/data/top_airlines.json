@@ -1,42 +1,42 @@
 [
   {
     "airline": "unknown",
-    "flights": 1568
+    "flights": 1687
   },
   {
     "airline": "Ryanair",
-    "flights": 408
-  },
-  {
-    "airline": "United Airlines",
-    "flights": 128
-  },
-  {
-    "airline": "Turkish Airlines",
-    "flights": 125
+    "flights": 402
   },
   {
     "airline": "Delta Air Lines",
-    "flights": 113
+    "flights": 210
   },
   {
-    "airline": "United Parcel Service",
-    "flights": 103
+    "airline": "American Airlines",
+    "flights": 192
   },
   {
-    "airline": "Jet2.com",
-    "flights": 102
+    "airline": "United Airlines",
+    "flights": 162
   },
   {
-    "airline": "Lufthansa",
-    "flights": 101
+    "airline": "Southwest Airlines",
+    "flights": 162
+  },
+  {
+    "airline": "Turkish Airlines",
+    "flights": 142
   },
   {
     "airline": "easyJet",
-    "flights": 100
+    "flights": 130
   },
   {
-    "airline": "Air France",
-    "flights": 100
+    "airline": "Qatar Airways",
+    "flights": 103
+  },
+  {
+    "airline": "Emirates",
+    "flights": 103
   }
 ]
