@@ -1,86 +1,66 @@
 [
   {
     "airline": "unknown",
-    "flights": 1687
+    "flights": 1209
   },
   {
     "airline": "Ryanair",
-    "flights": 402
-  },
-  {
-    "airline": "Delta Air Lines",
-    "flights": 210
-  },
-  {
-    "airline": "American Airlines",
-    "flights": 192
-  },
-  {
-    "airline": "United Airlines",
-    "flights": 162
-  },
-  {
-    "airline": "Southwest Airlines",
-    "flights": 162
+    "flights": 407
   },
   {
     "airline": "Turkish Airlines",
-    "flights": 142
+    "flights": 156
+  },
+  {
+    "airline": "Delta Air Lines",
+    "flights": 153
   },
   {
     "airline": "easyJet",
-    "flights": 130
+    "flights": 132
   },
   {
-    "airline": "Emirates",
-    "flights": 103
-  },
-  {
-    "airline": "Qatar Airways",
-    "flights": 103
-  },
-  {
-    "airline": "JetBlue Airways",
-    "flights": 100
-  },
-  {
-    "airline": "Federal Express",
-    "flights": 97
-  },
-  {
-    "airline": "Lufthansa",
-    "flights": 95
+    "airline": "United Airlines",
+    "flights": 119
   },
   {
     "airline": "IndiGo Airlines",
-    "flights": 90
+    "flights": 96
+  },
+  {
+    "airline": "Scandinavian Airlines System",
+    "flights": 94
+  },
+  {
+    "airline": "American Airlines",
+    "flights": 92
+  },
+  {
+    "airline": "Lufthansa",
+    "flights": 87
+  },
+  {
+    "airline": "Jet2.com",
+    "flights": 81
   },
   {
     "airline": "British Airways",
-    "flights": 80
-  },
-  {
-    "airline": "Republic Airlines",
-    "flights": 76
-  },
-  {
-    "airline": "United Parcel Service",
-    "flights": 74
-  },
-  {
-    "airline": "Vueling Airlines",
     "flights": 74
   },
   {
     "airline": "Air France",
-    "flights": 74
+    "flights": 70
   },
   {
-    "airline": "Eurowings",
-    "flights": 71
+    "airline": "Japan Airlines Domestic",
+    "flights": 69
   },
   {
-    "airline": "Pegasus Airlines",
+    "airline": "Vueling Airlines",
+    "flights": 69
+  },
+  {
+    "airline": "Transavia France",
     "flights": 68
   },
   {
@@ -88,15 +68,35 @@
     "flights": 67
   },
   {
-    "airline": "Jet2.com",
-    "flights": 67
+    "airline": "Qatar Airways",
+    "flights": 64
+  },
+  {
+    "airline": "Eurowings",
+    "flights": 61
+  },
+  {
+    "airline": "Southwest Airlines",
+    "flights": 60
+  },
+  {
+    "airline": "Emirates",
+    "flights": 60
+  },
+  {
+    "airline": "Swissair",
+    "flights": 57
   },
   {
     "airline": "SunExpress",
-    "flights": 63
+    "flights": 56
   },
   {
-    "airline": "Scandinavian Airlines System",
-    "flights": 59
+    "airline": "KLM Royal Dutch Airlines",
+    "flights": 55
+  },
+  {
+    "airline": "Wizz Air",
+    "flights": 54
   }
 ]

@@ -1,66 +1,74 @@
 [
   {
     "airport": "unknown",
-    "flights": 6476
+    "flights": 4778
+  },
+  {
+    "airport": "EDDF",
+    "flights": 26
   },
   {
     "airport": "LSZH",
-    "flights": 34
+    "flights": 23
   },
   {
-    "airport": "RJTT",
-    "flights": 21
+    "airport": "KSFO",
+    "flights": 19
   },
   {
-    "airport": "LEBL",
-    "flights": 20
-  },
-  {
-    "airport": "VHHH",
+    "airport": "EGKK",
     "flights": 19
   },
   {
     "airport": "LFPO",
-    "flights": 16
+    "flights": 18
   },
   {
-    "airport": "EIDW",
-    "flights": 15
+    "airport": "EKCH",
+    "flights": 18
   },
   {
-    "airport": "OJAI",
-    "flights": 14
-  },
-  {
-    "airport": "EDDF",
-    "flights": 14
-  },
-  {
-    "airport": "YMML",
-    "flights": 14
-  },
-  {
-    "airport": "ESSA",
-    "flights": 13
-  },
-  {
-    "airport": "KBOS",
-    "flights": 13
+    "airport": "KSEA",
+    "flights": 18
   },
   {
     "airport": "EGCC",
+    "flights": 17
+  },
+  {
+    "airport": "EHAM",
+    "flights": 17
+  },
+  {
+    "airport": "EIDW",
+    "flights": 17
+  },
+  {
+    "airport": "VHHH",
+    "flights": 16
+  },
+  {
+    "airport": "LEBL",
+    "flights": 15
+  },
+  {
+    "airport": "RJTT",
+    "flights": 15
+  },
+  {
+    "airport": "KLAS",
+    "flights": 14
+  },
+  {
+    "airport": "WIII",
     "flights": 13
   },
   {
-    "airport": "EGKK",
+    "airport": "WSSS",
     "flights": 13
   },
   {
-    "airport": "CYYZ",
-    "flights": 13
-  },
-  {
-    "airport": "YPPH",
+    "airport": "ZBTJ",
     "flights": 13
   },
   {
@@ -68,35 +76,27 @@
     "flights": 12
   },
   {
-    "airport": "YSSY",
+    "airport": "LGAV",
     "flights": 12
   },
   {
-    "airport": "CYUL",
+    "airport": "ESSA",
     "flights": 12
   },
   {
-    "airport": "VTBS",
+    "airport": "LTAI",
+    "flights": 12
+  },
+  {
+    "airport": "RCTP",
+    "flights": 12
+  },
+  {
+    "airport": "LFPG",
     "flights": 11
   },
   {
-    "airport": "PANC",
-    "flights": 10
-  },
-  {
-    "airport": "LEMG",
-    "flights": 10
-  },
-  {
-    "airport": "WSSS",
-    "flights": 10
-  },
-  {
-    "airport": "KATL",
-    "flights": 10
-  },
-  {
-    "airport": "KDFW",
+    "airport": "LIMC",
     "flights": 10
   }
 ]
