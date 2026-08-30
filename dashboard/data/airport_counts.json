@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 4778
-  },
-  {
-    "airport": "EDDF",
-    "flights": 26
-  },
-  {
-    "airport": "LSZH",
-    "flights": 23
-  },
-  {
-    "airport": "KSFO",
-    "flights": 19
-  },
-  {
-    "airport": "EGKK",
-    "flights": 19
-  },
-  {
-    "airport": "LFPO",
-    "flights": 18
-  },
-  {
-    "airport": "EKCH",
-    "flights": 18
+    "flights": 4281
   },
   {
     "airport": "KSEA",
+    "flights": 20
+  },
+  {
+    "airport": "RJTT",
     "flights": 18
   },
   {
-    "airport": "EGCC",
-    "flights": 17
+    "airport": "LSZH",
+    "flights": 18
   },
   {
-    "airport": "EHAM",
-    "flights": 17
-  },
-  {
-    "airport": "EIDW",
+    "airport": "CYYC",
     "flights": 17
   },
   {
     "airport": "VHHH",
-    "flights": 16
-  },
-  {
-    "airport": "LEBL",
-    "flights": 15
-  },
-  {
-    "airport": "RJTT",
-    "flights": 15
-  },
-  {
-    "airport": "KLAS",
-    "flights": 14
-  },
-  {
-    "airport": "WIII",
-    "flights": 13
-  },
-  {
-    "airport": "WSSS",
-    "flights": 13
-  },
-  {
-    "airport": "ZBTJ",
-    "flights": 13
+    "flights": 17
   },
   {
     "airport": "VIDP",
-    "flights": 12
+    "flights": 16
   },
   {
-    "airport": "LGAV",
-    "flights": 12
+    "airport": "CYVR",
+    "flights": 16
   },
   {
-    "airport": "ESSA",
-    "flights": 12
+    "airport": "CYYZ",
+    "flights": 16
+  },
+  {
+    "airport": "LFPO",
+    "flights": 15
+  },
+  {
+    "airport": "YMML",
+    "flights": 14
   },
   {
     "airport": "LTAI",
+    "flights": 13
+  },
+  {
+    "airport": "EDDF",
     "flights": 12
   },
   {
-    "airport": "RCTP",
-    "flights": 12
-  },
-  {
-    "airport": "LFPG",
+    "airport": "EGKK",
     "flights": 11
   },
   {
-    "airport": "LIMC",
+    "airport": "WSSS",
+    "flights": 11
+  },
+  {
+    "airport": "ZBTJ",
     "flights": 10
+  },
+  {
+    "airport": "VVNB",
+    "flights": 10
+  },
+  {
+    "airport": "ZGSZ",
+    "flights": 10
+  },
+  {
+    "airport": "YPPH",
+    "flights": 10
+  },
+  {
+    "airport": "LGAV",
+    "flights": 10
+  },
+  {
+    "airport": "LOWW",
+    "flights": 9
+  },
+  {
+    "airport": "LEBL",
+    "flights": 9
+  },
+  {
+    "airport": "RKSI",
+    "flights": 9
+  },
+  {
+    "airport": "EKCH",
+    "flights": 8
+  },
+  {
+    "airport": "RCTP",
+    "flights": 8
   }
 ]
