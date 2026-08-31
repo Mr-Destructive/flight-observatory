@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 4281
+    "flights": 4654
   },
   {
-    "airport": "KSEA",
-    "flights": 20
+    "airport": "YSSY",
+    "flights": 27
   },
   {
-    "airport": "RJTT",
-    "flights": 18
+    "airport": "KDEN",
+    "flights": 24
   },
   {
     "airport": "LSZH",
+    "flights": 22
+  },
+  {
+    "airport": "KSFO",
+    "flights": 21
+  },
+  {
+    "airport": "KSEA",
+    "flights": 19
+  },
+  {
+    "airport": "KLAS",
+    "flights": 19
+  },
+  {
+    "airport": "LGAV",
     "flights": 18
   },
   {
-    "airport": "CYYC",
+    "airport": "EKCH",
     "flights": 17
   },
   {
-    "airport": "VHHH",
+    "airport": "YPPH",
     "flights": 17
   },
   {
-    "airport": "VIDP",
-    "flights": 16
+    "airport": "RJTT",
+    "flights": 17
   },
   {
     "airport": "CYVR",
     "flights": 16
   },
   {
-    "airport": "CYYZ",
+    "airport": "VHHH",
     "flights": 16
   },
   {
-    "airport": "LFPO",
+    "airport": "ESSA",
     "flights": 15
+  },
+  {
+    "airport": "EGKK",
+    "flights": 14
   },
   {
     "airport": "YMML",
     "flights": 14
   },
   {
-    "airport": "LTAI",
+    "airport": "EDDF",
     "flights": 13
   },
   {
-    "airport": "EDDF",
-    "flights": 12
-  },
-  {
-    "airport": "EGKK",
-    "flights": 11
+    "airport": "RCTP",
+    "flights": 13
   },
   {
     "airport": "WSSS",
+    "flights": 12
+  },
+  {
+    "airport": "CYYZ",
     "flights": 11
   },
   {
-    "airport": "ZBTJ",
+    "airport": "KMSP",
+    "flights": 11
+  },
+  {
+    "airport": "KSLC",
+    "flights": 11
+  },
+  {
+    "airport": "VOBL",
     "flights": 10
   },
   {
-    "airport": "VVNB",
+    "airport": "YPAD",
     "flights": 10
   },
   {
-    "airport": "ZGSZ",
+    "airport": "LTAI",
     "flights": 10
-  },
-  {
-    "airport": "YPPH",
-    "flights": 10
-  },
-  {
-    "airport": "LGAV",
-    "flights": 10
-  },
-  {
-    "airport": "LOWW",
-    "flights": 9
-  },
-  {
-    "airport": "LEBL",
-    "flights": 9
-  },
-  {
-    "airport": "RKSI",
-    "flights": 9
-  },
-  {
-    "airport": "EKCH",
-    "flights": 8
-  },
-  {
-    "airport": "RCTP",
-    "flights": 8
   }
 ]
