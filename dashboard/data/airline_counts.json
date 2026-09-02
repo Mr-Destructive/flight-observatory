@@ -1,102 +1,102 @@
 [
   {
     "airline": "unknown",
-    "flights": 1167
-  },
-  {
-    "airline": "United Airlines",
-    "flights": 236
-  },
-  {
-    "airline": "Ryanair",
-    "flights": 217
-  },
-  {
-    "airline": "Southwest Airlines",
-    "flights": 201
+    "flights": 1314
   },
   {
     "airline": "Delta Air Lines",
-    "flights": 189
+    "flights": 230
   },
   {
     "airline": "American Airlines",
-    "flights": 143
+    "flights": 223
   },
   {
-    "airline": "Alaska Airlines",
-    "flights": 104
+    "airline": "United Airlines",
+    "flights": 199
   },
   {
     "airline": "Federal Express",
-    "flights": 103
-  },
-  {
-    "airline": "Lufthansa",
-    "flights": 100
-  },
-  {
-    "airline": "SkyWest",
-    "flights": 99
-  },
-  {
-    "airline": "IndiGo Airlines",
-    "flights": 93
-  },
-  {
-    "airline": "Turkish Airlines",
-    "flights": 79
-  },
-  {
-    "airline": "Wizz Air",
-    "flights": 75
+    "flights": 148
   },
   {
     "airline": "United Parcel Service",
-    "flights": 73
+    "flights": 123
+  },
+  {
+    "airline": "Southwest Airlines",
+    "flights": 121
+  },
+  {
+    "airline": "SkyWest",
+    "flights": 120
+  },
+  {
+    "airline": "IndiGo Airlines",
+    "flights": 111
   },
   {
     "airline": "JetBlue Airways",
-    "flights": 64
+    "flights": 96
   },
   {
-    "airline": "China Southern Airlines",
-    "flights": 63
+    "airline": "Ryanair",
+    "flights": 90
   },
   {
-    "airline": "Air France",
-    "flights": 62
-  },
-  {
-    "airline": "Air Canada",
-    "flights": 56
-  },
-  {
-    "airline": "Scandinavian Airlines System",
-    "flights": 54
-  },
-  {
-    "airline": "Japan Airlines Domestic",
-    "flights": 54
-  },
-  {
-    "airline": "Air India Limited",
-    "flights": 53
+    "airline": "Alaska Airlines",
+    "flights": 85
   },
   {
     "airline": "Qatar Airways",
-    "flights": 51
+    "flights": 71
   },
   {
-    "airline": "British Airways",
-    "flights": 50
+    "airline": "Turkish Airlines",
+    "flights": 68
   },
   {
-    "airline": "Frontier Airlines",
-    "flights": 49
+    "airline": "Air Canada",
+    "flights": 64
+  },
+  {
+    "airline": "Japan Airlines Domestic",
+    "flights": 58
   },
   {
     "airline": "All Nippon Airways",
-    "flights": 49
+    "flights": 58
+  },
+  {
+    "airline": "Lufthansa",
+    "flights": 57
+  },
+  {
+    "airline": "Emirates",
+    "flights": 55
+  },
+  {
+    "airline": "Air France",
+    "flights": 52
+  },
+  {
+    "airline": "Air India Limited",
+    "flights": 47
+  },
+  {
+    "airline": "WestJet",
+    "flights": 47
+  },
+  {
+    "airline": "Frontier Airlines",
+    "flights": 46
+  },
+  {
+    "airline": "SunExpress",
+    "flights": 46
+  },
+  {
+    "airline": "Etihad Airways",
+    "flights": 45
   }
 ]
