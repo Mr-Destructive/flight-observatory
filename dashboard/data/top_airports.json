@@ -1,42 +1,42 @@
 [
   {
     "airport": "unknown",
-    "flights": 4779
+    "flights": 5066
+  },
+  {
+    "airport": "KIAD",
+    "flights": 26
+  },
+  {
+    "airport": "KDFW",
+    "flights": 26
   },
   {
     "airport": "CYYZ",
-    "flights": 41
+    "flights": 25
   },
   {
     "airport": "KSEA",
-    "flights": 22
+    "flights": 24
   },
   {
-    "airport": "CYYC",
-    "flights": 21
-  },
-  {
-    "airport": "YSSY",
-    "flights": 18
-  },
-  {
-    "airport": "RJTT",
-    "flights": 18
-  },
-  {
-    "airport": "KBOS",
-    "flights": 18
+    "airport": "KLAS",
+    "flights": 23
   },
   {
     "airport": "YPPH",
-    "flights": 17
-  },
-  {
-    "airport": "LGAV",
-    "flights": 17
+    "flights": 21
   },
   {
     "airport": "YMML",
+    "flights": 19
+  },
+  {
+    "airport": "CYYC",
+    "flights": 18
+  },
+  {
+    "airport": "LGAV",
     "flights": 16
   }
 ]

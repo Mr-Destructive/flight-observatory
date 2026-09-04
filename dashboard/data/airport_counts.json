@@ -1,46 +1,46 @@
 [
   {
     "airport": "unknown",
-    "flights": 4779
+    "flights": 5066
+  },
+  {
+    "airport": "KIAD",
+    "flights": 26
+  },
+  {
+    "airport": "KDFW",
+    "flights": 26
   },
   {
     "airport": "CYYZ",
-    "flights": 41
+    "flights": 25
   },
   {
     "airport": "KSEA",
-    "flights": 22
+    "flights": 24
   },
   {
-    "airport": "CYYC",
+    "airport": "KLAS",
+    "flights": 23
+  },
+  {
+    "airport": "YPPH",
     "flights": 21
   },
   {
-    "airport": "RJTT",
-    "flights": 18
+    "airport": "YMML",
+    "flights": 19
   },
   {
-    "airport": "KBOS",
-    "flights": 18
-  },
-  {
-    "airport": "YSSY",
+    "airport": "CYYC",
     "flights": 18
   },
   {
     "airport": "LGAV",
-    "flights": 17
-  },
-  {
-    "airport": "YPPH",
-    "flights": 17
-  },
-  {
-    "airport": "CYVR",
     "flights": 16
   },
   {
-    "airport": "YMML",
+    "airport": "KJFK",
     "flights": 16
   },
   {
@@ -48,15 +48,43 @@
     "flights": 15
   },
   {
-    "airport": "KSLC",
-    "flights": 14
+    "airport": "KMSP",
+    "flights": 15
+  },
+  {
+    "airport": "CYVR",
+    "flights": 15
   },
   {
     "airport": "VHHH",
+    "flights": 15
+  },
+  {
+    "airport": "KORD",
+    "flights": 14
+  },
+  {
+    "airport": "SKBO",
+    "flights": 13
+  },
+  {
+    "airport": "RCTP",
+    "flights": 13
+  },
+  {
+    "airport": "YSSY",
     "flights": 12
   },
   {
-    "airport": "CYUL",
+    "airport": "YBBN",
+    "flights": 12
+  },
+  {
+    "airport": "ZBTJ",
+    "flights": 12
+  },
+  {
+    "airport": "RJBB",
     "flights": 12
   },
   {
@@ -64,39 +92,11 @@
     "flights": 11
   },
   {
-    "airport": "VTBS",
+    "airport": "EDDF",
     "flights": 11
   },
   {
-    "airport": "RCTP",
+    "airport": "KSFO",
     "flights": 11
-  },
-  {
-    "airport": "RJBB",
-    "flights": 11
-  },
-  {
-    "airport": "LSZH",
-    "flights": 11
-  },
-  {
-    "airport": "KORD",
-    "flights": 10
-  },
-  {
-    "airport": "KMCO",
-    "flights": 9
-  },
-  {
-    "airport": "KMSP",
-    "flights": 9
-  },
-  {
-    "airport": "LKPR",
-    "flights": 9
-  },
-  {
-    "airport": "LHBP",
-    "flights": 9
   }
 ]
