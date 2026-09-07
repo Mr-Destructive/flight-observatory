@@ -1,70 +1,82 @@
 [
   {
     "airline": "unknown",
-    "flights": 1022
-  },
-  {
-    "airline": "Delta Air Lines",
-    "flights": 217
-  },
-  {
-    "airline": "American Airlines",
-    "flights": 191
+    "flights": 1055
   },
   {
     "airline": "United Airlines",
-    "flights": 176
+    "flights": 228
   },
   {
-    "airline": "IndiGo Airlines",
-    "flights": 109
+    "airline": "American Airlines",
+    "flights": 223
   },
   {
-    "airline": "Ryanair",
-    "flights": 106
+    "airline": "Delta Air Lines",
+    "flights": 204
+  },
+  {
+    "airline": "Southwest Airlines",
+    "flights": 203
   },
   {
     "airline": "Alaska Airlines",
-    "flights": 91
+    "flights": 119
   },
   {
     "airline": "SkyWest",
-    "flights": 89
+    "flights": 116
   },
   {
-    "airline": "JetBlue Airways",
-    "flights": 73
+    "airline": "Ryanair",
+    "flights": 105
+  },
+  {
+    "airline": "IndiGo Airlines",
+    "flights": 98
+  },
+  {
+    "airline": "Frontier Airlines",
+    "flights": 74
   },
   {
     "airline": "Turkish Airlines",
     "flights": 69
   },
   {
-    "airline": "Lufthansa",
-    "flights": 62
-  },
-  {
-    "airline": "Air Canada",
-    "flights": 56
-  },
-  {
-    "airline": "Qatar Airways",
-    "flights": 55
-  },
-  {
-    "airline": "Air India Limited",
-    "flights": 52
+    "airline": "JetBlue Airways",
+    "flights": 68
   },
   {
     "airline": "Japan Airlines Domestic",
-    "flights": 52
+    "flights": 60
+  },
+  {
+    "airline": "Air Canada",
+    "flights": 59
   },
   {
     "airline": "All Nippon Airways",
-    "flights": 51
+    "flights": 54
   },
   {
-    "airline": "WestJet",
+    "airline": "Lufthansa",
+    "flights": 53
+  },
+  {
+    "airline": "Qatar Airways",
+    "flights": 53
+  },
+  {
+    "airline": "Air India Limited",
+    "flights": 50
+  },
+  {
+    "airline": "Emirates",
+    "flights": 50
+  },
+  {
+    "airline": "Air France",
     "flights": 49
   },
   {
@@ -72,31 +84,19 @@
     "flights": 48
   },
   {
+    "airline": "China Southern Airlines",
+    "flights": 47
+  },
+  {
+    "airline": "WestJet",
+    "flights": 46
+  },
+  {
     "airline": "Air China",
     "flights": 46
   },
   {
-    "airline": "Pegasus Airlines",
-    "flights": 45
-  },
-  {
-    "airline": "Etihad Airways",
-    "flights": 45
-  },
-  {
-    "airline": "Virgin Australia",
-    "flights": 45
-  },
-  {
-    "airline": "China Eastern Airlines",
-    "flights": 44
-  },
-  {
-    "airline": "Air France",
-    "flights": 44
-  },
-  {
     "airline": "Qantas",
-    "flights": 44
+    "flights": 46
   }
 ]
