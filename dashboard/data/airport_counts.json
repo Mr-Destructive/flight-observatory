@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 4639
-  },
-  {
-    "airport": "KATL",
-    "flights": 31
-  },
-  {
-    "airport": "CYYZ",
-    "flights": 30
-  },
-  {
-    "airport": "KSEA",
-    "flights": 19
-  },
-  {
-    "airport": "KSFO",
-    "flights": 19
-  },
-  {
-    "airport": "YSSY",
-    "flights": 18
-  },
-  {
-    "airport": "YMML",
-    "flights": 17
+    "flights": 4020
   },
   {
     "airport": "RJTT",
-    "flights": 15
+    "flights": 25
   },
   {
-    "airport": "RKSI",
-    "flights": 15
+    "airport": "LSZH",
+    "flights": 21
   },
   {
-    "airport": "YPPH",
-    "flights": 15
-  },
-  {
-    "airport": "ESSA",
-    "flights": 14
+    "airport": "YSSY",
+    "flights": 19
   },
   {
     "airport": "CYVR",
-    "flights": 14
+    "flights": 16
   },
   {
-    "airport": "VHHH",
-    "flights": 14
+    "airport": "KSFO",
+    "flights": 15
   },
   {
-    "airport": "LGAV",
-    "flights": 13
+    "airport": "WSSS",
+    "flights": 15
   },
   {
     "airport": "VIDP",
     "flights": 13
   },
   {
-    "airport": "LTAI",
+    "airport": "EDDF",
     "flights": 13
   },
   {
-    "airport": "KBOS",
+    "airport": "VHHH",
     "flights": 13
   },
   {
-    "airport": "WSSS",
+    "airport": "RCTP",
+    "flights": 13
+  },
+  {
+    "airport": "RKSI",
+    "flights": 13
+  },
+  {
+    "airport": "LOWW",
     "flights": 12
   },
   {
-    "airport": "VTBS",
-    "flights": 11
-  },
-  {
-    "airport": "KMSP",
-    "flights": 11
+    "airport": "KSLC",
+    "flights": 12
   },
   {
     "airport": "KAUS",
     "flights": 11
   },
   {
-    "airport": "KJFK",
-    "flights": 11
+    "airport": "EDDS",
+    "flights": 10
+  },
+  {
+    "airport": "LGAV",
+    "flights": 10
+  },
+  {
+    "airport": "CYYC",
+    "flights": 10
+  },
+  {
+    "airport": "LEBL",
+    "flights": 9
+  },
+  {
+    "airport": "LFPO",
+    "flights": 9
   },
   {
     "airport": "RJBB",
-    "flights": 11
+    "flights": 9
   },
   {
-    "airport": "EDDF",
-    "flights": 11
+    "airport": "PANC",
+    "flights": 9
   },
   {
-    "airport": "LOWW",
-    "flights": 10
+    "airport": "CYYZ",
+    "flights": 9
+  },
+  {
+    "airport": "YMML",
+    "flights": 9
+  },
+  {
+    "airport": "LTAI",
+    "flights": 9
   }
 ]
