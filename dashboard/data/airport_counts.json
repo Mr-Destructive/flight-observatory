@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 4020
-  },
-  {
-    "airport": "RJTT",
-    "flights": 25
+    "flights": 4742
   },
   {
     "airport": "LSZH",
+    "flights": 22
+  },
+  {
+    "airport": "KSEA",
     "flights": 21
   },
   {
-    "airport": "YSSY",
+    "airport": "KSFO",
+    "flights": 21
+  },
+  {
+    "airport": "RJTT",
     "flights": 19
   },
   {
-    "airport": "CYVR",
+    "airport": "YMML",
+    "flights": 19
+  },
+  {
+    "airport": "CYYZ",
+    "flights": 17
+  },
+  {
+    "airport": "KDEN",
     "flights": 16
   },
   {
-    "airport": "KSFO",
+    "airport": "LGAV",
+    "flights": 16
+  },
+  {
+    "airport": "VIDP",
+    "flights": 15
+  },
+  {
+    "airport": "RKSI",
+    "flights": 15
+  },
+  {
+    "airport": "KPHX",
     "flights": 15
   },
   {
     "airport": "WSSS",
-    "flights": 15
+    "flights": 14
   },
   {
-    "airport": "VIDP",
-    "flights": 13
+    "airport": "YSSY",
+    "flights": 14
   },
   {
-    "airport": "EDDF",
-    "flights": 13
-  },
-  {
-    "airport": "VHHH",
-    "flights": 13
+    "airport": "CYVR",
+    "flights": 14
   },
   {
     "airport": "RCTP",
+    "flights": 14
+  },
+  {
+    "airport": "YPPH",
     "flights": 13
   },
   {
-    "airport": "RKSI",
-    "flights": 13
-  },
-  {
-    "airport": "LOWW",
-    "flights": 12
-  },
-  {
-    "airport": "KSLC",
-    "flights": 12
-  },
-  {
-    "airport": "KAUS",
+    "airport": "EBBR",
     "flights": 11
   },
   {
-    "airport": "EDDS",
+    "airport": "KMCO",
+    "flights": 11
+  },
+  {
+    "airport": "KORD",
+    "flights": 11
+  },
+  {
+    "airport": "KLGA",
     "flights": 10
   },
   {
-    "airport": "LGAV",
+    "airport": "KLAS",
     "flights": 10
   },
   {
-    "airport": "CYYC",
+    "airport": "LTFM",
     "flights": 10
   },
   {
-    "airport": "LEBL",
-    "flights": 9
+    "airport": "VHHH",
+    "flights": 10
   },
   {
-    "airport": "LFPO",
-    "flights": 9
-  },
-  {
-    "airport": "RJBB",
-    "flights": 9
-  },
-  {
-    "airport": "PANC",
-    "flights": 9
-  },
-  {
-    "airport": "CYYZ",
-    "flights": 9
-  },
-  {
-    "airport": "YMML",
-    "flights": 9
-  },
-  {
-    "airport": "LTAI",
+    "airport": "EKCH",
     "flights": 9
   }
 ]
