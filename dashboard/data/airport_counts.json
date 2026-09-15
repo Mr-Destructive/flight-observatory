@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 4742
-  },
-  {
-    "airport": "LSZH",
-    "flights": 22
-  },
-  {
-    "airport": "KSEA",
-    "flights": 21
-  },
-  {
-    "airport": "KSFO",
-    "flights": 21
+    "flights": 4666
   },
   {
     "airport": "RJTT",
-    "flights": 19
+    "flights": 28
+  },
+  {
+    "airport": "KSEA",
+    "flights": 28
+  },
+  {
+    "airport": "YPPH",
+    "flights": 25
   },
   {
     "airport": "YMML",
-    "flights": 19
+    "flights": 23
   },
   {
-    "airport": "CYYZ",
-    "flights": 17
+    "airport": "YSSY",
+    "flights": 23
   },
   {
-    "airport": "KDEN",
-    "flights": 16
+    "airport": "LSZH",
+    "flights": 23
   },
   {
-    "airport": "LGAV",
-    "flights": 16
-  },
-  {
-    "airport": "VIDP",
-    "flights": 15
+    "airport": "KSFO",
+    "flights": 18
   },
   {
     "airport": "RKSI",
     "flights": 15
   },
   {
-    "airport": "KPHX",
+    "airport": "RCTP",
     "flights": 15
   },
   {
-    "airport": "WSSS",
-    "flights": 14
-  },
-  {
-    "airport": "YSSY",
-    "flights": 14
+    "airport": "LGAV",
+    "flights": 15
   },
   {
     "airport": "CYVR",
     "flights": 14
   },
   {
-    "airport": "RCTP",
-    "flights": 14
-  },
-  {
-    "airport": "YPPH",
+    "airport": "VIDP",
     "flights": 13
   },
   {
-    "airport": "EBBR",
-    "flights": 11
-  },
-  {
-    "airport": "KMCO",
-    "flights": 11
+    "airport": "WSSS",
+    "flights": 13
   },
   {
     "airport": "KORD",
+    "flights": 12
+  },
+  {
+    "airport": "ESSA",
+    "flights": 12
+  },
+  {
+    "airport": "LEBL",
+    "flights": 12
+  },
+  {
+    "airport": "EDDP",
     "flights": 11
   },
   {
-    "airport": "KLGA",
-    "flights": 10
-  },
-  {
-    "airport": "KLAS",
-    "flights": 10
-  },
-  {
-    "airport": "LTFM",
-    "flights": 10
+    "airport": "SKBO",
+    "flights": 11
   },
   {
     "airport": "VHHH",
+    "flights": 11
+  },
+  {
+    "airport": "LFPG",
+    "flights": 11
+  },
+  {
+    "airport": "YPJT",
+    "flights": 11
+  },
+  {
+    "airport": "EDDS",
     "flights": 10
   },
   {
-    "airport": "EKCH",
-    "flights": 9
+    "airport": "KDFW",
+    "flights": 10
+  },
+  {
+    "airport": "LIMC",
+    "flights": 10
   }
 ]
