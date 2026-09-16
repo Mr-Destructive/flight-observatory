@@ -1,54 +1,54 @@
 [
   {
     "airport": "unknown",
-    "flights": 4666
+    "flights": 4427
   },
   {
-    "airport": "RJTT",
-    "flights": 28
-  },
-  {
-    "airport": "KSEA",
-    "flights": 28
-  },
-  {
-    "airport": "YPPH",
-    "flights": 25
-  },
-  {
-    "airport": "YMML",
-    "flights": 23
-  },
-  {
-    "airport": "YSSY",
-    "flights": 23
+    "airport": "KORD",
+    "flights": 22
   },
   {
     "airport": "LSZH",
-    "flights": 23
+    "flights": 22
   },
   {
-    "airport": "KSFO",
+    "airport": "RJTT",
+    "flights": 20
+  },
+  {
+    "airport": "CYYZ",
+    "flights": 19
+  },
+  {
+    "airport": "YSSY",
+    "flights": 19
+  },
+  {
+    "airport": "YPPH",
     "flights": 18
   },
   {
-    "airport": "RKSI",
+    "airport": "YPJT",
+    "flights": 16
+  },
+  {
+    "airport": "KSFO",
     "flights": 15
   },
   {
-    "airport": "RCTP",
-    "flights": 15
-  },
-  {
-    "airport": "LGAV",
-    "flights": 15
-  },
-  {
-    "airport": "CYVR",
+    "airport": "YMML",
     "flights": 14
   },
   {
-    "airport": "VIDP",
+    "airport": "CYYC",
+    "flights": 13
+  },
+  {
+    "airport": "CYVR",
+    "flights": 13
+  },
+  {
+    "airport": "ZBTJ",
     "flights": 13
   },
   {
@@ -56,47 +56,47 @@
     "flights": 13
   },
   {
-    "airport": "KORD",
+    "airport": "EBBR",
     "flights": 12
   },
   {
-    "airport": "ESSA",
-    "flights": 12
+    "airport": "VIDP",
+    "flights": 11
   },
   {
-    "airport": "LEBL",
-    "flights": 12
-  },
-  {
-    "airport": "EDDP",
+    "airport": "KSEA",
     "flights": 11
   },
   {
     "airport": "SKBO",
-    "flights": 11
+    "flights": 10
   },
   {
-    "airport": "VHHH",
-    "flights": 11
+    "airport": "RCTP",
+    "flights": 10
   },
   {
-    "airport": "LFPG",
-    "flights": 11
+    "airport": "RKSI",
+    "flights": 10
   },
   {
-    "airport": "YPJT",
-    "flights": 11
+    "airport": "LGAV",
+    "flights": 10
   },
   {
     "airport": "EDDS",
-    "flights": 10
+    "flights": 9
   },
   {
-    "airport": "KDFW",
-    "flights": 10
+    "airport": "EPGD",
+    "flights": 9
   },
   {
-    "airport": "LIMC",
-    "flights": 10
+    "airport": "LHBP",
+    "flights": 9
+  },
+  {
+    "airport": "LEBL",
+    "flights": 9
   }
 ]
