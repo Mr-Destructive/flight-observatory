@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 4168
-  },
-  {
-    "airport": "RJTT",
-    "flights": 30
+    "flights": 4756
   },
   {
     "airport": "LSZH",
-    "flights": 21
+    "flights": 26
   },
   {
-    "airport": "RKSI",
-    "flights": 21
+    "airport": "RJTT",
+    "flights": 24
   },
   {
-    "airport": "KSEA",
+    "airport": "KDEN",
+    "flights": 20
+  },
+  {
+    "airport": "YPPH",
     "flights": 20
   },
   {
     "airport": "YSSY",
-    "flights": 20
-  },
-  {
-    "airport": "KDEN",
     "flights": 19
   },
   {
-    "airport": "YMML",
-    "flights": 18
+    "airport": "KSFO",
+    "flights": 17
   },
   {
-    "airport": "RCTP",
+    "airport": "YMML",
     "flights": 17
   },
   {
     "airport": "KORD",
+    "flights": 16
+  },
+  {
+    "airport": "RKSI",
+    "flights": 16
+  },
+  {
+    "airport": "KSEA",
     "flights": 15
   },
   {
     "airport": "VIDP",
-    "flights": 14
+    "flights": 13
   },
   {
-    "airport": "WSSS",
-    "flights": 14
-  },
-  {
-    "airport": "LGAV",
-    "flights": 14
-  },
-  {
-    "airport": "CYYZ",
+    "airport": "VHHH",
     "flights": 13
   },
   {
     "airport": "SKBO",
-    "flights": 11
+    "flights": 12
   },
   {
-    "airport": "LFPG",
-    "flights": 11
+    "airport": "KMSP",
+    "flights": 12
   },
   {
-    "airport": "KATL",
-    "flights": 11
-  },
-  {
-    "airport": "ESSA",
-    "flights": 10
-  },
-  {
-    "airport": "LOWW",
-    "flights": 10
-  },
-  {
-    "airport": "CYYC",
-    "flights": 10
+    "airport": "LGAV",
+    "flights": 12
   },
   {
     "airport": "KLAS",
-    "flights": 10
+    "flights": 12
   },
   {
-    "airport": "LTFM",
-    "flights": 10
+    "airport": "KDFW",
+    "flights": 12
   },
   {
-    "airport": "VHHH",
-    "flights": 10
+    "airport": "KSAN",
+    "flights": 11
   },
   {
-    "airport": "VECC",
-    "flights": 9
+    "airport": "EDDF",
+    "flights": 11
   },
   {
-    "airport": "EBBR",
-    "flights": 9
+    "airport": "CYYC",
+    "flights": 11
+  },
+  {
+    "airport": "LOWW",
+    "flights": 11
+  },
+  {
+    "airport": "KPHX",
+    "flights": 11
+  },
+  {
+    "airport": "CYVR",
+    "flights": 11
+  },
+  {
+    "airport": "RCTP",
+    "flights": 11
   }
 ]
