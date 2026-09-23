@@ -1,102 +1,102 @@
 [
   {
     "airline": "unknown",
-    "flights": 1214
+    "flights": 1246
   },
   {
     "airline": "Delta Air Lines",
-    "flights": 285
-  },
-  {
-    "airline": "American Airlines",
-    "flights": 262
-  },
-  {
-    "airline": "Southwest Airlines",
-    "flights": 259
+    "flights": 202
   },
   {
     "airline": "United Airlines",
-    "flights": 192
+    "flights": 167
   },
   {
     "airline": "Ryanair",
-    "flights": 178
+    "flights": 167
   },
   {
-    "airline": "SkyWest",
-    "flights": 117
+    "airline": "American Airlines",
+    "flights": 148
   },
   {
     "airline": "Federal Express",
-    "flights": 117
-  },
-  {
-    "airline": "Alaska Airlines",
-    "flights": 112
-  },
-  {
-    "airline": "United Parcel Service",
-    "flights": 106
+    "flights": 136
   },
   {
     "airline": "IndiGo Airlines",
-    "flights": 87
+    "flights": 99
   },
   {
-    "airline": "Lufthansa",
+    "airline": "Southwest Airlines",
+    "flights": 96
+  },
+  {
+    "airline": "United Parcel Service",
+    "flights": 94
+  },
+  {
+    "airline": "SkyWest",
     "flights": 85
   },
   {
     "airline": "Turkish Airlines",
-    "flights": 80
+    "flights": 84
   },
   {
-    "airline": "Frontier Airlines",
-    "flights": 64
+    "airline": "Alaska Airlines",
+    "flights": 78
   },
   {
-    "airline": "Emirates",
-    "flights": 64
+    "airline": "Lufthansa",
+    "flights": 76
   },
   {
-    "airline": "Qatar Airways",
-    "flights": 58
-  },
-  {
-    "airline": "Japan Airlines Domestic",
-    "flights": 57
-  },
-  {
-    "airline": "Air France",
-    "flights": 57
+    "airline": "All Nippon Airways",
+    "flights": 54
   },
   {
     "airline": "Wizz Air",
-    "flights": 56
+    "flights": 53
+  },
+  {
+    "airline": "China Southern Airlines",
+    "flights": 53
+  },
+  {
+    "airline": "Air France",
+    "flights": 53
+  },
+  {
+    "airline": "Emirates",
+    "flights": 53
+  },
+  {
+    "airline": "Qatar Airways",
+    "flights": 53
+  },
+  {
+    "airline": "Air India Limited",
+    "flights": 51
+  },
+  {
+    "airline": "Japan Airlines Domestic",
+    "flights": 51
   },
   {
     "airline": "Air Canada",
-    "flights": 56
-  },
-  {
-    "airline": "British Airways",
-    "flights": 56
-  },
-  {
-    "airline": "Air China",
-    "flights": 48
+    "flights": 51
   },
   {
     "airline": "Pegasus Airlines",
-    "flights": 47
+    "flights": 48
   },
   {
-    "airline": "Virgin Australia",
-    "flights": 47
+    "airline": "British Airways",
+    "flights": 48
   },
   {
-    "airline": "JetBlue Airways",
+    "airline": "Air China",
     "flights": 46
   }
 ]
