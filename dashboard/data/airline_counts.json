@@ -1,102 +1,102 @@
 [
   {
     "airline": "unknown",
-    "flights": 1220
-  },
-  {
-    "airline": "Southwest Airlines",
-    "flights": 248
+    "flights": 1130
   },
   {
     "airline": "Delta Air Lines",
-    "flights": 221
+    "flights": 252
   },
   {
     "airline": "United Airlines",
-    "flights": 214
+    "flights": 252
   },
   {
-    "airline": "American Airlines",
-    "flights": 213
+    "airline": "Southwest Airlines",
+    "flights": 234
   },
   {
     "airline": "Ryanair",
     "flights": 189
   },
   {
-    "airline": "Alaska Airlines",
-    "flights": 119
+    "airline": "American Airlines",
+    "flights": 164
   },
   {
     "airline": "SkyWest",
-    "flights": 112
+    "flights": 118
   },
   {
-    "airline": "Federal Express",
+    "airline": "Alaska Airlines",
     "flights": 110
   },
   {
-    "airline": "IndiGo Airlines",
-    "flights": 96
+    "airline": "Lufthansa",
+    "flights": 91
   },
   {
     "airline": "Turkish Airlines",
-    "flights": 90
+    "flights": 85
   },
   {
-    "airline": "United Parcel Service",
-    "flights": 87
+    "airline": "IndiGo Airlines",
+    "flights": 83
   },
   {
-    "airline": "Lufthansa",
+    "airline": "Federal Express",
     "flights": 78
   },
   {
     "airline": "Wizz Air",
-    "flights": 68
-  },
-  {
-    "airline": "Emirates",
-    "flights": 60
-  },
-  {
-    "airline": "Cathay Pacific",
-    "flights": 56
-  },
-  {
-    "airline": "Air China",
-    "flights": 55
+    "flights": 71
   },
   {
     "airline": "Air Canada",
+    "flights": 62
+  },
+  {
+    "airline": "Frontier Airlines",
+    "flights": 58
+  },
+  {
+    "airline": "China Southern Airlines",
+    "flights": 58
+  },
+  {
+    "airline": "Air France",
+    "flights": 58
+  },
+  {
+    "airline": "Emirates",
+    "flights": 57
+  },
+  {
+    "airline": "All Nippon Airways",
+    "flights": 55
+  },
+  {
+    "airline": "Air India Limited",
     "flights": 54
   },
   {
-    "airline": "China Eastern Airlines",
-    "flights": 54
-  },
-  {
-    "airline": "Virgin Australia",
+    "airline": "United Parcel Service",
     "flights": 54
   },
   {
     "airline": "Japan Airlines Domestic",
-    "flights": 53
-  },
-  {
-    "airline": "Air France",
-    "flights": 53
-  },
-  {
-    "airline": "Frontier Airlines",
-    "flights": 51
-  },
-  {
-    "airline": "China Southern Airlines",
-    "flights": 51
+    "flights": 54
   },
   {
     "airline": "Scandinavian Airlines System",
-    "flights": 50
+    "flights": 53
+  },
+  {
+    "airline": "Qatar Airways",
+    "flights": 53
+  },
+  {
+    "airline": "Pegasus Airlines",
+    "flights": 51
   }
 ]
