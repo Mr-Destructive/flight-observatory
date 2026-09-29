@@ -1,102 +1,102 @@
 [
   {
     "airline": "unknown",
-    "flights": 1089
-  },
-  {
-    "airline": "Southwest Airlines",
-    "flights": 248
-  },
-  {
-    "airline": "United Airlines",
-    "flights": 247
+    "flights": 1217
   },
   {
     "airline": "Ryanair",
-    "flights": 246
+    "flights": 305
   },
   {
-    "airline": "American Airlines",
-    "flights": 209
+    "airline": "Southwest Airlines",
+    "flights": 182
   },
   {
     "airline": "Delta Air Lines",
-    "flights": 191
+    "flights": 166
   },
   {
-    "airline": "Lufthansa",
-    "flights": 106
+    "airline": "United Airlines",
+    "flights": 154
   },
   {
     "airline": "Turkish Airlines",
-    "flights": 103
+    "flights": 140
+  },
+  {
+    "airline": "American Airlines",
+    "flights": 126
+  },
+  {
+    "airline": "Lufthansa",
+    "flights": 112
   },
   {
     "airline": "Alaska Airlines",
-    "flights": 101
-  },
-  {
-    "airline": "SkyWest",
-    "flights": 95
+    "flights": 98
   },
   {
     "airline": "Wizz Air",
-    "flights": 85
-  },
-  {
-    "airline": "IndiGo Airlines",
     "flights": 82
   },
   {
-    "airline": "Air France",
-    "flights": 71
+    "airline": "KLM Royal Dutch Airlines",
+    "flights": 80
   },
   {
-    "airline": "Emirates",
-    "flights": 66
+    "airline": "IndiGo Airlines",
+    "flights": 79
+  },
+  {
+    "airline": "Air France",
+    "flights": 79
   },
   {
     "airline": "Eurowings",
-    "flights": 62
+    "flights": 78
   },
   {
-    "airline": "Scandinavian Airlines System",
-    "flights": 60
-  },
-  {
-    "airline": "Air India Limited",
-    "flights": 59
-  },
-  {
-    "airline": "KLM Royal Dutch Airlines",
-    "flights": 57
-  },
-  {
-    "airline": "Japan Airlines Domestic",
-    "flights": 56
+    "airline": "Federal Express",
+    "flights": 67
   },
   {
     "airline": "All Nippon Airways",
-    "flights": 55
+    "flights": 61
   },
   {
-    "airline": "Pegasus Airlines",
-    "flights": 55
+    "airline": "Emirates",
+    "flights": 58
   },
   {
-    "airline": "British Airways",
+    "airline": "SkyWest",
+    "flights": 57
+  },
+  {
+    "airline": "Qatar Airways",
+    "flights": 56
+  },
+  {
+    "airline": "Scandinavian Airlines System",
+    "flights": 54
+  },
+  {
+    "airline": "Virgin Australia",
     "flights": 53
-  },
-  {
-    "airline": "Frontier Airlines",
-    "flights": 52
   },
   {
     "airline": "Etihad Airways",
     "flights": 51
   },
   {
-    "airline": "China Southern Airlines",
+    "airline": "Air Canada",
     "flights": 50
+  },
+  {
+    "airline": "Air China",
+    "flights": 50
+  },
+  {
+    "airline": "Japan Airlines Domestic",
+    "flights": 48
   }
 ]

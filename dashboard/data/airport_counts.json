@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 4643
-  },
-  {
-    "airport": "KSFO",
-    "flights": 26
-  },
-  {
-    "airport": "KSEA",
-    "flights": 21
-  },
-  {
-    "airport": "LSZH",
-    "flights": 21
-  },
-  {
-    "airport": "KDEN",
-    "flights": 19
-  },
-  {
-    "airport": "LGAV",
-    "flights": 18
-  },
-  {
-    "airport": "CYYC",
-    "flights": 18
-  },
-  {
-    "airport": "YSSY",
-    "flights": 18
-  },
-  {
-    "airport": "VIDP",
-    "flights": 17
+    "flights": 4636
   },
   {
     "airport": "YMML",
-    "flights": 17
+    "flights": 31
+  },
+  {
+    "airport": "LSZH",
+    "flights": 30
+  },
+  {
+    "airport": "YPPH",
+    "flights": 28
+  },
+  {
+    "airport": "KSEA",
+    "flights": 25
+  },
+  {
+    "airport": "EHAM",
+    "flights": 24
+  },
+  {
+    "airport": "RJTT",
+    "flights": 21
   },
   {
     "airport": "KLAS",
+    "flights": 18
+  },
+  {
+    "airport": "ESSA",
+    "flights": 17
+  },
+  {
+    "airport": "EDDM",
+    "flights": 17
+  },
+  {
+    "airport": "CYYZ",
     "flights": 16
   },
   {
-    "airport": "WSSS",
+    "airport": "EGKK",
+    "flights": 16
+  },
+  {
+    "airport": "YSSY",
+    "flights": 16
+  },
+  {
+    "airport": "CYVR",
+    "flights": 15
+  },
+  {
+    "airport": "LOWW",
+    "flights": 15
+  },
+  {
+    "airport": "LEMD",
+    "flights": 15
+  },
+  {
+    "airport": "RCTP",
     "flights": 15
   },
   {
     "airport": "RKSI",
+    "flights": 15
+  },
+  {
+    "airport": "LFPO",
     "flights": 14
   },
   {
-    "airport": "CYVR",
+    "airport": "VIDP",
     "flights": 14
   },
   {
-    "airport": "KORD",
-    "flights": 13
+    "airport": "EKCH",
+    "flights": 14
   },
   {
-    "airport": "EDDF",
+    "airport": "LEBL",
+    "flights": 14
+  },
+  {
+    "airport": "KSFO",
+    "flights": 14
+  },
+  {
+    "airport": "KDEN",
     "flights": 13
   },
   {
     "airport": "VHHH",
     "flights": 13
-  },
-  {
-    "airport": "KPHX",
-    "flights": 12
-  },
-  {
-    "airport": "KSAN",
-    "flights": 12
-  },
-  {
-    "airport": "RCTP",
-    "flights": 12
-  },
-  {
-    "airport": "EKCH",
-    "flights": 11
-  },
-  {
-    "airport": "LTFM",
-    "flights": 11
-  },
-  {
-    "airport": "EDDL",
-    "flights": 10
-  },
-  {
-    "airport": "YPPH",
-    "flights": 10
-  },
-  {
-    "airport": "CYYZ",
-    "flights": 10
   }
 ]
