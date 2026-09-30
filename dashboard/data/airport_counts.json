@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 4636
-  },
-  {
-    "airport": "YMML",
-    "flights": 31
+    "flights": 4289
   },
   {
     "airport": "LSZH",
-    "flights": 30
-  },
-  {
-    "airport": "YPPH",
-    "flights": 28
-  },
-  {
-    "airport": "KSEA",
-    "flights": 25
-  },
-  {
-    "airport": "EHAM",
-    "flights": 24
-  },
-  {
-    "airport": "RJTT",
-    "flights": 21
-  },
-  {
-    "airport": "KLAS",
-    "flights": 18
-  },
-  {
-    "airport": "ESSA",
-    "flights": 17
-  },
-  {
-    "airport": "EDDM",
-    "flights": 17
-  },
-  {
-    "airport": "CYYZ",
-    "flights": 16
-  },
-  {
-    "airport": "EGKK",
-    "flights": 16
+    "flights": 27
   },
   {
     "airport": "YSSY",
-    "flights": 16
+    "flights": 26
   },
   {
-    "airport": "CYVR",
-    "flights": 15
+    "airport": "YMML",
+    "flights": 25
   },
   {
-    "airport": "LOWW",
-    "flights": 15
-  },
-  {
-    "airport": "LEMD",
-    "flights": 15
-  },
-  {
-    "airport": "RCTP",
-    "flights": 15
-  },
-  {
-    "airport": "RKSI",
-    "flights": 15
-  },
-  {
-    "airport": "LFPO",
-    "flights": 14
+    "airport": "YPPH",
+    "flights": 23
   },
   {
     "airport": "VIDP",
-    "flights": 14
+    "flights": 16
+  },
+  {
+    "airport": "ESSA",
+    "flights": 16
+  },
+  {
+    "airport": "EDDF",
+    "flights": 16
+  },
+  {
+    "airport": "LGAV",
+    "flights": 15
   },
   {
     "airport": "EKCH",
     "flights": 14
   },
   {
-    "airport": "LEBL",
+    "airport": "RKSI",
     "flights": 14
   },
   {
-    "airport": "KSFO",
+    "airport": "EHAM",
     "flights": 14
   },
   {
-    "airport": "KDEN",
+    "airport": "CYYC",
+    "flights": 14
+  },
+  {
+    "airport": "EGKK",
+    "flights": 14
+  },
+  {
+    "airport": "VECC",
     "flights": 13
   },
   {
     "airport": "VHHH",
     "flights": 13
+  },
+  {
+    "airport": "CYYZ",
+    "flights": 13
+  },
+  {
+    "airport": "EIDW",
+    "flights": 13
+  },
+  {
+    "airport": "RJTT",
+    "flights": 12
+  },
+  {
+    "airport": "LTFM",
+    "flights": 12
+  },
+  {
+    "airport": "ZBTJ",
+    "flights": 12
+  },
+  {
+    "airport": "LIMC",
+    "flights": 11
+  },
+  {
+    "airport": "CYVR",
+    "flights": 11
+  },
+  {
+    "airport": "KSEA",
+    "flights": 11
+  },
+  {
+    "airport": "YMMB",
+    "flights": 11
   }
 ]
