@@ -1,10 +1,22 @@
 [
   {
     "airport": "unknown",
-    "flights": 4582
+    "flights": 5052
   },
   {
-    "airport": "YPPH",
+    "airport": "KDFW",
+    "flights": 29
+  },
+  {
+    "airport": "LSZH",
+    "flights": 26
+  },
+  {
+    "airport": "KSEA",
+    "flights": 25
+  },
+  {
+    "airport": "KAUS",
     "flights": 24
   },
   {
@@ -12,91 +24,79 @@
     "flights": 24
   },
   {
-    "airport": "LSZH",
-    "flights": 23
-  },
-  {
-    "airport": "YMML",
-    "flights": 21
-  },
-  {
-    "airport": "EHAM",
-    "flights": 20
-  },
-  {
-    "airport": "LFPO",
+    "airport": "YPPH",
     "flights": 19
   },
   {
-    "airport": "RKSI",
-    "flights": 19
-  },
-  {
-    "airport": "LTFM",
-    "flights": 17
-  },
-  {
-    "airport": "LOWW",
-    "flights": 16
-  },
-  {
-    "airport": "EGKK",
-    "flights": 16
-  },
-  {
-    "airport": "EDDF",
-    "flights": 16
-  },
-  {
-    "airport": "VHHH",
-    "flights": 16
+    "airport": "ESSA",
+    "flights": 18
   },
   {
     "airport": "RJTT",
-    "flights": 16
-  },
-  {
-    "airport": "KSEA",
-    "flights": 15
-  },
-  {
-    "airport": "SKBO",
-    "flights": 15
-  },
-  {
-    "airport": "LGAV",
-    "flights": 15
-  },
-  {
-    "airport": "LEMD",
-    "flights": 15
-  },
-  {
-    "airport": "EGLL",
-    "flights": 15
-  },
-  {
-    "airport": "VIDP",
-    "flights": 14
-  },
-  {
-    "airport": "LTAI",
-    "flights": 13
+    "flights": 18
   },
   {
     "airport": "KLAS",
+    "flights": 18
+  },
+  {
+    "airport": "YMML",
+    "flights": 18
+  },
+  {
+    "airport": "VIDP",
+    "flights": 17
+  },
+  {
+    "airport": "KSLC",
+    "flights": 17
+  },
+  {
+    "airport": "SKBO",
+    "flights": 16
+  },
+  {
+    "airport": "LGAV",
+    "flights": 16
+  },
+  {
+    "airport": "KDEN",
+    "flights": 16
+  },
+  {
+    "airport": "LFPO",
+    "flights": 15
+  },
+  {
+    "airport": "KSFO",
+    "flights": 15
+  },
+  {
+    "airport": "WSSS",
+    "flights": 15
+  },
+  {
+    "airport": "EHAM",
+    "flights": 15
+  },
+  {
+    "airport": "EGKK",
+    "flights": 15
+  },
+  {
+    "airport": "CYVR",
+    "flights": 14
+  },
+  {
+    "airport": "RKSI",
+    "flights": 14
+  },
+  {
+    "airport": "KMSP",
     "flights": 13
   },
   {
-    "airport": "LFPG",
-    "flights": 12
-  },
-  {
-    "airport": "EGCC",
-    "flights": 12
-  },
-  {
-    "airport": "LEBL",
-    "flights": 12
+    "airport": "ZBTJ",
+    "flights": 13
   }
 ]
