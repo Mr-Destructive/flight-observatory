@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 5052
-  },
-  {
-    "airport": "KDFW",
-    "flights": 29
-  },
-  {
-    "airport": "LSZH",
-    "flights": 26
+    "flights": 4560
   },
   {
     "airport": "KSEA",
-    "flights": 25
-  },
-  {
-    "airport": "KAUS",
-    "flights": 24
-  },
-  {
-    "airport": "YSSY",
-    "flights": 24
-  },
-  {
-    "airport": "YPPH",
-    "flights": 19
-  },
-  {
-    "airport": "ESSA",
-    "flights": 18
-  },
-  {
-    "airport": "RJTT",
-    "flights": 18
-  },
-  {
-    "airport": "KLAS",
-    "flights": 18
-  },
-  {
-    "airport": "YMML",
-    "flights": 18
-  },
-  {
-    "airport": "VIDP",
-    "flights": 17
-  },
-  {
-    "airport": "KSLC",
-    "flights": 17
-  },
-  {
-    "airport": "SKBO",
-    "flights": 16
-  },
-  {
-    "airport": "LGAV",
-    "flights": 16
-  },
-  {
-    "airport": "KDEN",
-    "flights": 16
-  },
-  {
-    "airport": "LFPO",
-    "flights": 15
+    "flights": 21
   },
   {
     "airport": "KSFO",
-    "flights": 15
+    "flights": 20
   },
   {
-    "airport": "WSSS",
-    "flights": 15
-  },
-  {
-    "airport": "EHAM",
-    "flights": 15
-  },
-  {
-    "airport": "EGKK",
-    "flights": 15
-  },
-  {
-    "airport": "CYVR",
-    "flights": 14
+    "airport": "YMML",
+    "flights": 20
   },
   {
     "airport": "RKSI",
+    "flights": 19
+  },
+  {
+    "airport": "WSSS",
+    "flights": 19
+  },
+  {
+    "airport": "VHHH",
+    "flights": 17
+  },
+  {
+    "airport": "RJTT",
+    "flights": 16
+  },
+  {
+    "airport": "KSLC",
+    "flights": 16
+  },
+  {
+    "airport": "LSZH",
+    "flights": 16
+  },
+  {
+    "airport": "KLAS",
+    "flights": 15
+  },
+  {
+    "airport": "LGAV",
     "flights": 14
   },
   {
-    "airport": "KMSP",
-    "flights": 13
+    "airport": "KSAN",
+    "flights": 14
+  },
+  {
+    "airport": "YPJT",
+    "flights": 12
+  },
+  {
+    "airport": "KDEN",
+    "flights": 12
+  },
+  {
+    "airport": "LTFM",
+    "flights": 12
+  },
+  {
+    "airport": "RCTP",
+    "flights": 12
+  },
+  {
+    "airport": "SKBO",
+    "flights": 11
   },
   {
     "airport": "ZBTJ",
-    "flights": 13
+    "flights": 11
+  },
+  {
+    "airport": "CYYC",
+    "flights": 11
+  },
+  {
+    "airport": "EGKK",
+    "flights": 11
+  },
+  {
+    "airport": "CYVR",
+    "flights": 10
+  },
+  {
+    "airport": "YSSY",
+    "flights": 10
+  },
+  {
+    "airport": "LFPO",
+    "flights": 9
+  },
+  {
+    "airport": "EPGD",
+    "flights": 9
   }
 ]
