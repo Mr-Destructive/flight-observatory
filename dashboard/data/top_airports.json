@@ -1,26 +1,18 @@
 [
   {
     "airport": "unknown",
-    "flights": 4560
+    "flights": 4282
   },
   {
-    "airport": "KSEA",
-    "flights": 21
+    "airport": "LSZH",
+    "flights": 24
   },
   {
-    "airport": "YMML",
-    "flights": 20
+    "airport": "EHAM",
+    "flights": 22
   },
   {
-    "airport": "KSFO",
-    "flights": 20
-  },
-  {
-    "airport": "WSSS",
-    "flights": 19
-  },
-  {
-    "airport": "RKSI",
+    "airport": "EGKK",
     "flights": 19
   },
   {
@@ -28,15 +20,23 @@
     "flights": 17
   },
   {
+    "airport": "LOWW",
+    "flights": 17
+  },
+  {
+    "airport": "EGLL",
+    "flights": 17
+  },
+  {
+    "airport": "CYVR",
+    "flights": 17
+  },
+  {
+    "airport": "RKSI",
+    "flights": 16
+  },
+  {
     "airport": "RJTT",
-    "flights": 16
-  },
-  {
-    "airport": "LSZH",
-    "flights": 16
-  },
-  {
-    "airport": "KSLC",
     "flights": 16
   }
 ]
