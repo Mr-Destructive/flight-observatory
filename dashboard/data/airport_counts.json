@@ -1,50 +1,58 @@
 [
   {
     "airport": "unknown",
-    "flights": 4403
+    "flights": 4629
   },
   {
     "airport": "LSZH",
-    "flights": 33
+    "flights": 34
   },
   {
     "airport": "YPPH",
-    "flights": 24
+    "flights": 32
   },
   {
-    "airport": "YMML",
-    "flights": 20
+    "airport": "YSSY",
+    "flights": 21
   },
   {
     "airport": "LFPO",
     "flights": 18
   },
   {
-    "airport": "YSSY",
+    "airport": "EDDF",
+    "flights": 18
+  },
+  {
+    "airport": "EGKK",
+    "flights": 18
+  },
+  {
+    "airport": "YMML",
     "flights": 17
   },
   {
-    "airport": "EDDF",
+    "airport": "EHAM",
     "flights": 16
   },
   {
-    "airport": "EHAM",
+    "airport": "EGLL",
+    "flights": 16
+  },
+  {
+    "airport": "RJTT",
     "flights": 15
   },
   {
-    "airport": "EGLL",
+    "airport": "VHHH",
     "flights": 15
   },
   {
     "airport": "EGCC",
-    "flights": 15
-  },
-  {
-    "airport": "LGAV",
     "flights": 14
   },
   {
-    "airport": "CYVR",
+    "airport": "LEBL",
     "flights": 14
   },
   {
@@ -52,11 +60,7 @@
     "flights": 14
   },
   {
-    "airport": "RJTT",
-    "flights": 13
-  },
-  {
-    "airport": "LOWW",
+    "airport": "VGHS",
     "flights": 13
   },
   {
@@ -64,23 +68,15 @@
     "flights": 13
   },
   {
-    "airport": "LEBL",
+    "airport": "ESSA",
     "flights": 13
   },
   {
-    "airport": "CYYZ",
+    "airport": "EDDM",
     "flights": 13
   },
   {
-    "airport": "VHHH",
-    "flights": 13
-  },
-  {
-    "airport": "RCTP",
-    "flights": 13
-  },
-  {
-    "airport": "EGKK",
+    "airport": "RKSI",
     "flights": 13
   },
   {
@@ -88,15 +84,19 @@
     "flights": 13
   },
   {
-    "airport": "ESSA",
+    "airport": "LGAV",
     "flights": 12
   },
   {
-    "airport": "LTFM",
+    "airport": "CYVR",
     "flights": 12
   },
   {
-    "airport": "RKSI",
+    "airport": "RCTP",
     "flights": 12
+  },
+  {
+    "airport": "SKBO",
+    "flights": 11
   }
 ]
