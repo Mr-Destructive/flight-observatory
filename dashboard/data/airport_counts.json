@@ -1,22 +1,38 @@
 [
   {
     "airport": "unknown",
-    "flights": 4629
+    "flights": 4927
   },
   {
     "airport": "LSZH",
-    "flights": 34
-  },
-  {
-    "airport": "YPPH",
-    "flights": 32
+    "flights": 31
   },
   {
     "airport": "YSSY",
-    "flights": 21
+    "flights": 23
+  },
+  {
+    "airport": "LEBL",
+    "flights": 22
   },
   {
     "airport": "LFPO",
+    "flights": 21
+  },
+  {
+    "airport": "YMML",
+    "flights": 21
+  },
+  {
+    "airport": "EGKK",
+    "flights": 20
+  },
+  {
+    "airport": "KSEA",
+    "flights": 19
+  },
+  {
+    "airport": "VIDP",
     "flights": 18
   },
   {
@@ -24,79 +40,63 @@
     "flights": 18
   },
   {
-    "airport": "EGKK",
+    "airport": "YPPH",
     "flights": 18
   },
   {
-    "airport": "YMML",
-    "flights": 17
-  },
-  {
-    "airport": "EHAM",
-    "flights": 16
-  },
-  {
-    "airport": "EGLL",
-    "flights": 16
+    "airport": "KLAS",
+    "flights": 18
   },
   {
     "airport": "RJTT",
-    "flights": 15
+    "flights": 17
   },
   {
     "airport": "VHHH",
-    "flights": 15
+    "flights": 17
   },
   {
-    "airport": "EGCC",
-    "flights": 14
+    "airport": "WSSS",
+    "flights": 16
   },
   {
-    "airport": "LEBL",
-    "flights": 14
-  },
-  {
-    "airport": "KLAS",
-    "flights": 14
-  },
-  {
-    "airport": "VGHS",
-    "flights": 13
-  },
-  {
-    "airport": "VIDP",
-    "flights": 13
-  },
-  {
-    "airport": "ESSA",
-    "flights": 13
-  },
-  {
-    "airport": "EDDM",
-    "flights": 13
-  },
-  {
-    "airport": "RKSI",
-    "flights": 13
-  },
-  {
-    "airport": "EIDW",
-    "flights": 13
-  },
-  {
-    "airport": "LGAV",
-    "flights": 12
+    "airport": "KSFO",
+    "flights": 16
   },
   {
     "airport": "CYVR",
+    "flights": 14
+  },
+  {
+    "airport": "RKSI",
+    "flights": 14
+  },
+  {
+    "airport": "KDEN",
+    "flights": 13
+  },
+  {
+    "airport": "LTFM",
+    "flights": 13
+  },
+  {
+    "airport": "KSAN",
+    "flights": 12
+  },
+  {
+    "airport": "KDFW",
+    "flights": 12
+  },
+  {
+    "airport": "EDDM",
+    "flights": 12
+  },
+  {
+    "airport": "EHAM",
     "flights": 12
   },
   {
     "airport": "RCTP",
     "flights": 12
-  },
-  {
-    "airport": "SKBO",
-    "flights": 11
   }
 ]
