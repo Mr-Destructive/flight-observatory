@@ -1,42 +1,42 @@
 [
   {
     "airport": "unknown",
-    "flights": 4927
+    "flights": 4815
   },
   {
     "airport": "LSZH",
     "flights": 31
   },
   {
-    "airport": "YSSY",
-    "flights": 23
+    "airport": "LGAV",
+    "flights": 20
   },
   {
-    "airport": "LEBL",
-    "flights": 22
-  },
-  {
-    "airport": "YMML",
-    "flights": 21
-  },
-  {
-    "airport": "LFPO",
-    "flights": 21
-  },
-  {
-    "airport": "EGKK",
+    "airport": "KSFO",
     "flights": 20
   },
   {
     "airport": "KSEA",
-    "flights": 19
+    "flights": 20
   },
   {
-    "airport": "YPPH",
+    "airport": "EHAM",
+    "flights": 20
+  },
+  {
+    "airport": "KLAS",
     "flights": 18
+  },
+  {
+    "airport": "WSSS",
+    "flights": 17
+  },
+  {
+    "airport": "LFPO",
+    "flights": 17
   },
   {
     "airport": "VIDP",
-    "flights": 18
+    "flights": 16
   }
 ]
