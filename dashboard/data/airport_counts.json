@@ -1,86 +1,54 @@
 [
   {
     "airport": "unknown",
-    "flights": 4707
+    "flights": 4391
   },
   {
     "airport": "LSZH",
-    "flights": 28
-  },
-  {
-    "airport": "EDDF",
-    "flights": 24
-  },
-  {
-    "airport": "YPPH",
-    "flights": 20
-  },
-  {
-    "airport": "EGKK",
-    "flights": 19
+    "flights": 26
   },
   {
     "airport": "RJTT",
-    "flights": 19
+    "flights": 20
   },
   {
-    "airport": "KLAS",
+    "airport": "YMML",
+    "flights": 20
+  },
+  {
+    "airport": "KORD",
     "flights": 18
   },
   {
-    "airport": "EGLL",
-    "flights": 17
-  },
-  {
-    "airport": "ESSA",
-    "flights": 16
-  },
-  {
-    "airport": "EHAM",
-    "flights": 16
-  },
-  {
-    "airport": "EBBR",
-    "flights": 16
-  },
-  {
-    "airport": "EIDW",
-    "flights": 16
-  },
-  {
-    "airport": "LFPO",
-    "flights": 15
-  },
-  {
-    "airport": "LGAV",
-    "flights": 15
+    "airport": "KDFW",
+    "flights": 18
   },
   {
     "airport": "YSSY",
-    "flights": 15
+    "flights": 17
   },
   {
-    "airport": "VHHH",
-    "flights": 14
-  },
-  {
-    "airport": "KSEA",
-    "flights": 14
-  },
-  {
-    "airport": "LEBL",
-    "flights": 14
-  },
-  {
-    "airport": "EGCC",
-    "flights": 14
+    "airport": "YPPH",
+    "flights": 17
   },
   {
     "airport": "VIDP",
+    "flights": 14
+  },
+  {
+    "airport": "CYYC",
     "flights": 13
   },
   {
-    "airport": "EKCH",
+    "airport": "EPGD",
+    "flights": 12
+  },
+  {
+    "airport": "WSSS",
+    "flights": 12
+  },
+  {
+    "airport": "KSLC",
     "flights": 12
   },
   {
@@ -88,15 +56,47 @@
     "flights": 12
   },
   {
-    "airport": "YPJT",
-    "flights": 12
-  },
-  {
-    "airport": "LFBO",
+    "airport": "KSEA",
     "flights": 11
   },
   {
-    "airport": "EDDM",
+    "airport": "KSFO",
     "flights": 11
+  },
+  {
+    "airport": "EPWA",
+    "flights": 11
+  },
+  {
+    "airport": "VHHH",
+    "flights": 11
+  },
+  {
+    "airport": "KPHX",
+    "flights": 10
+  },
+  {
+    "airport": "SKBO",
+    "flights": 10
+  },
+  {
+    "airport": "VTBS",
+    "flights": 10
+  },
+  {
+    "airport": "RKSI",
+    "flights": 10
+  },
+  {
+    "airport": "LOWW",
+    "flights": 10
+  },
+  {
+    "airport": "CYVR",
+    "flights": 10
+  },
+  {
+    "airport": "EHAM",
+    "flights": 9
   }
 ]
