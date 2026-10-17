@@ -1,78 +1,66 @@
 [
   {
     "airport": "unknown",
-    "flights": 5045
+    "flights": 4880
   },
   {
     "airport": "KDFW",
-    "flights": 27
+    "flights": 36
   },
   {
     "airport": "KDEN",
-    "flights": 24
-  },
-  {
-    "airport": "KPHX",
     "flights": 23
   },
   {
-    "airport": "KORD",
-    "flights": 18
-  },
-  {
-    "airport": "KSEA",
-    "flights": 18
-  },
-  {
-    "airport": "RJTT",
-    "flights": 17
-  },
-  {
-    "airport": "YMML",
-    "flights": 17
-  },
-  {
-    "airport": "YPPH",
-    "flights": 17
+    "airport": "KLGA",
+    "flights": 20
   },
   {
     "airport": "SKBO",
-    "flights": 16
+    "flights": 19
   },
   {
-    "airport": "CYYC",
-    "flights": 16
+    "airport": "KSEA",
+    "flights": 19
   },
   {
-    "airport": "VHHH",
-    "flights": 16
+    "airport": "CYYZ",
+    "flights": 17
   },
   {
-    "airport": "KSFO",
-    "flights": 15
+    "airport": "KPHX",
+    "flights": 16
   },
   {
     "airport": "KSLC",
+    "flights": 15
+  },
+  {
+    "airport": "RJTT",
+    "flights": 15
+  },
+  {
+    "airport": "RKSI",
     "flights": 14
   },
   {
-    "airport": "VIDP",
+    "airport": "KORD",
     "flights": 13
   },
   {
-    "airport": "LGAV",
+    "airport": "KDCA",
     "flights": 13
   },
   {
-    "airport": "ZBTJ",
-    "flights": 13
+    "airport": "CYYC",
+    "flights": 12
   },
   {
-    "airport": "KLAS",
-    "flights": 13
+    "airport": "KEWR",
+    "flights": 12
   },
   {
-    "airport": "KSAN",
+    "airport": "VHHH",
     "flights": 12
   },
   {
@@ -80,23 +68,35 @@
     "flights": 12
   },
   {
-    "airport": "YSSY",
-    "flights": 12
-  },
-  {
-    "airport": "RCTP",
-    "flights": 12
-  },
-  {
     "airport": "CYVR",
+    "flights": 12
+  },
+  {
+    "airport": "YMML",
+    "flights": 12
+  },
+  {
+    "airport": "KBOS",
     "flights": 11
   },
   {
-    "airport": "KMSP",
+    "airport": "KLAS",
     "flights": 11
   },
   {
-    "airport": "VECC",
+    "airport": "KSAN",
+    "flights": 11
+  },
+  {
+    "airport": "KMCO",
+    "flights": 11
+  },
+  {
+    "airport": "VIDP",
+    "flights": 10
+  },
+  {
+    "airport": "LFPO",
     "flights": 10
   }
 ]
