@@ -1,74 +1,50 @@
 [
   {
     "airport": "unknown",
-    "flights": 4880
+    "flights": 3996
   },
   {
     "airport": "KDFW",
-    "flights": 36
-  },
-  {
-    "airport": "KDEN",
-    "flights": 23
-  },
-  {
-    "airport": "KLGA",
-    "flights": 20
-  },
-  {
-    "airport": "SKBO",
-    "flights": 19
-  },
-  {
-    "airport": "KSEA",
-    "flights": 19
-  },
-  {
-    "airport": "CYYZ",
-    "flights": 17
-  },
-  {
-    "airport": "KPHX",
-    "flights": 16
-  },
-  {
-    "airport": "KSLC",
-    "flights": 15
+    "flights": 29
   },
   {
     "airport": "RJTT",
-    "flights": 15
+    "flights": 16
   },
   {
-    "airport": "RKSI",
-    "flights": 14
-  },
-  {
-    "airport": "KORD",
-    "flights": 13
-  },
-  {
-    "airport": "KDCA",
-    "flights": 13
-  },
-  {
-    "airport": "CYYC",
-    "flights": 12
-  },
-  {
-    "airport": "KEWR",
-    "flights": 12
+    "airport": "KSFO",
+    "flights": 16
   },
   {
     "airport": "VHHH",
-    "flights": 12
+    "flights": 16
+  },
+  {
+    "airport": "LGAV",
+    "flights": 14
+  },
+  {
+    "airport": "CYYZ",
+    "flights": 14
+  },
+  {
+    "airport": "YSSY",
+    "flights": 14
+  },
+  {
+    "airport": "KSEA",
+    "flights": 13
   },
   {
     "airport": "WSSS",
-    "flights": 12
+    "flights": 13
   },
   {
     "airport": "CYVR",
+    "flights": 12
+  },
+  {
+    "airport": "SKBO",
     "flights": 12
   },
   {
@@ -76,27 +52,51 @@
     "flights": 12
   },
   {
-    "airport": "KBOS",
-    "flights": 11
+    "airport": "RCTP",
+    "flights": 12
   },
   {
     "airport": "KLAS",
     "flights": 11
   },
   {
-    "airport": "KSAN",
+    "airport": "KMSP",
     "flights": 11
+  },
+  {
+    "airport": "KORD",
+    "flights": 11
+  },
+  {
+    "airport": "ZBTJ",
+    "flights": 11
+  },
+  {
+    "airport": "RKSI",
+    "flights": 11
+  },
+  {
+    "airport": "VTBS",
+    "flights": 10
+  },
+  {
+    "airport": "VOBL",
+    "flights": 10
+  },
+  {
+    "airport": "CYYC",
+    "flights": 10
   },
   {
     "airport": "KMCO",
-    "flights": 11
-  },
-  {
-    "airport": "VIDP",
     "flights": 10
   },
   {
-    "airport": "LFPO",
-    "flights": 10
+    "airport": "KDEN",
+    "flights": 9
+  },
+  {
+    "airport": "LHBP",
+    "flights": 9
   }
 ]
