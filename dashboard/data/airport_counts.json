@@ -1,66 +1,70 @@
 [
   {
     "airport": "unknown",
-    "flights": 4531
+    "flights": 4715
+  },
+  {
+    "airport": "RJTT",
+    "flights": 22
+  },
+  {
+    "airport": "KSJC",
+    "flights": 20
+  },
+  {
+    "airport": "WSSS",
+    "flights": 20
+  },
+  {
+    "airport": "KORD",
+    "flights": 20
   },
   {
     "airport": "KSFO",
     "flights": 20
   },
   {
-    "airport": "RJTT",
+    "airport": "LSZH",
+    "flights": 20
+  },
+  {
+    "airport": "YSSY",
     "flights": 19
   },
   {
-    "airport": "VHHH",
+    "airport": "RCTP",
     "flights": 19
   },
   {
-    "airport": "YPPH",
+    "airport": "KPHX",
     "flights": 17
   },
   {
     "airport": "YMML",
-    "flights": 17
-  },
-  {
-    "airport": "YSSY",
-    "flights": 17
-  },
-  {
-    "airport": "VIDP",
     "flights": 16
   },
   {
-    "airport": "KDFW",
+    "airport": "YPPH",
     "flights": 16
-  },
-  {
-    "airport": "KSAN",
-    "flights": 15
-  },
-  {
-    "airport": "WSSS",
-    "flights": 15
-  },
-  {
-    "airport": "KPHX",
-    "flights": 14
   },
   {
     "airport": "KSLC",
-    "flights": 14
+    "flights": 16
   },
   {
-    "airport": "LSZH",
-    "flights": 14
+    "airport": "VHHH",
+    "flights": 16
   },
   {
     "airport": "LGAV",
-    "flights": 13
+    "flights": 15
   },
   {
-    "airport": "KLAS",
+    "airport": "VIDP",
+    "flights": 14
+  },
+  {
+    "airport": "VTBS",
     "flights": 13
   },
   {
@@ -68,35 +72,31 @@
     "flights": 13
   },
   {
-    "airport": "RCTP",
+    "airport": "KDFW",
     "flights": 13
   },
   {
-    "airport": "KORD",
+    "airport": "CYYC",
     "flights": 12
   },
   {
-    "airport": "KMSP",
+    "airport": "EFHK",
     "flights": 11
   },
   {
-    "airport": "VTBS",
+    "airport": "KLAS",
     "flights": 11
   },
   {
-    "airport": "ZBTJ",
+    "airport": "LEBL",
     "flights": 11
   },
   {
-    "airport": "LHBP",
+    "airport": "KSEA",
     "flights": 10
   },
   {
-    "airport": "LTFM",
+    "airport": "KATL",
     "flights": 10
-  },
-  {
-    "airport": "EDDS",
-    "flights": 9
   }
 ]

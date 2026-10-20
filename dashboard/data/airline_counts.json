@@ -1,31 +1,35 @@
 [
   {
     "airline": "unknown",
-    "flights": 1065
+    "flights": 1137
   },
   {
     "airline": "Southwest Airlines",
-    "flights": 390
+    "flights": 354
   },
   {
     "airline": "American Airlines",
-    "flights": 278
+    "flights": 262
   },
   {
     "airline": "Delta Air Lines",
-    "flights": 258
+    "flights": 214
   },
   {
     "airline": "United Airlines",
-    "flights": 239
+    "flights": 193
   },
   {
     "airline": "Ryanair",
-    "flights": 140
+    "flights": 160
   },
   {
     "airline": "SkyWest",
-    "flights": 124
+    "flights": 118
+  },
+  {
+    "airline": "Federal Express",
+    "flights": 116
   },
   {
     "airline": "Alaska Airlines",
@@ -33,70 +37,66 @@
   },
   {
     "airline": "IndiGo Airlines",
-    "flights": 99
+    "flights": 102
   },
   {
-    "airline": "Turkish Airlines",
+    "airline": "United Parcel Service",
     "flights": 85
   },
   {
-    "airline": "Frontier Airlines",
-    "flights": 68
-  },
-  {
-    "airline": "Cathay Pacific",
-    "flights": 64
-  },
-  {
     "airline": "Lufthansa",
-    "flights": 59
+    "flights": 82
+  },
+  {
+    "airline": "Turkish Airlines",
+    "flights": 78
+  },
+  {
+    "airline": "Qatar Airways",
+    "flights": 62
   },
   {
     "airline": "Wizz Air",
-    "flights": 57
-  },
-  {
-    "airline": "Japan Airlines Domestic",
-    "flights": 56
-  },
-  {
-    "airline": "China Southern Airlines",
-    "flights": 54
-  },
-  {
-    "airline": "Emirates",
-    "flights": 54
+    "flights": 61
   },
   {
     "airline": "Air China",
+    "flights": 60
+  },
+  {
+    "airline": "Frontier Airlines",
+    "flights": 58
+  },
+  {
+    "airline": "Japan Airlines Domestic",
     "flights": 54
   },
   {
-    "airline": "Virgin Australia",
-    "flights": 52
-  },
-  {
-    "airline": "Air Canada",
-    "flights": 51
-  },
-  {
     "airline": "Air France",
+    "flights": 54
+  },
+  {
+    "airline": "China Southern Airlines",
+    "flights": 53
+  },
+  {
+    "airline": "All Nippon Airways",
     "flights": 51
   },
   {
     "airline": "British Airways",
-    "flights": 48
+    "flights": 51
   },
   {
-    "airline": "All Nippon Airways",
-    "flights": 47
+    "airline": "Emirates",
+    "flights": 50
   },
   {
     "airline": "Envoy Air",
-    "flights": 46
+    "flights": 49
   },
   {
-    "airline": "SunExpress",
-    "flights": 46
+    "airline": "Air Canada",
+    "flights": 48
   }
 ]
