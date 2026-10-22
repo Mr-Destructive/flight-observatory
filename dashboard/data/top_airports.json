@@ -1,42 +1,42 @@
 [
   {
     "airport": "unknown",
-    "flights": 4296
+    "flights": 4411
   },
   {
-    "airport": "KDFW",
-    "flights": 28
+    "airport": "KPHX",
+    "flights": 24
   },
   {
-    "airport": "KSFO",
+    "airport": "KORD",
     "flights": 19
   },
   {
-    "airport": "YMML",
-    "flights": 18
-  },
-  {
-    "airport": "RCTP",
-    "flights": 18
-  },
-  {
-    "airport": "LSZH",
-    "flights": 18
-  },
-  {
-    "airport": "CYYZ",
-    "flights": 18
-  },
-  {
     "airport": "RJTT",
+    "flights": 18
+  },
+  {
+    "airport": "KDFW",
+    "flights": 18
+  },
+  {
+    "airport": "YPPH",
     "flights": 17
   },
   {
-    "airport": "YSSY",
+    "airport": "SKBO",
     "flights": 15
   },
   {
-    "airport": "LGAV",
-    "flights": 15
+    "airport": "YMML",
+    "flights": 14
+  },
+  {
+    "airport": "VIDP",
+    "flights": 14
+  },
+  {
+    "airport": "LSZH",
+    "flights": 14
   }
 ]
