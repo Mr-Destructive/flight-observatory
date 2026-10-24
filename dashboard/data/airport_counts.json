@@ -1,74 +1,74 @@
 [
   {
     "airport": "unknown",
-    "flights": 4850
+    "flights": 4588
   },
   {
     "airport": "KDEN",
-    "flights": 25
+    "flights": 46
+  },
+  {
+    "airport": "KDFW",
+    "flights": 23
+  },
+  {
+    "airport": "KPHX",
+    "flights": 23
   },
   {
     "airport": "RJTT",
-    "flights": 22
+    "flights": 21
+  },
+  {
+    "airport": "KSLC",
+    "flights": 20
   },
   {
     "airport": "KSEA",
     "flights": 20
   },
   {
-    "airport": "YMML",
-    "flights": 20
-  },
-  {
-    "airport": "KSAN",
-    "flights": 18
-  },
-  {
-    "airport": "YSSY",
-    "flights": 17
-  },
-  {
-    "airport": "KDFW",
-    "flights": 16
+    "airport": "KSFO",
+    "flights": 19
   },
   {
     "airport": "KORD",
-    "flights": 15
+    "flights": 18
   },
   {
     "airport": "VHHH",
+    "flights": 17
+  },
+  {
+    "airport": "LSZH",
+    "flights": 17
+  },
+  {
+    "airport": "KAUS",
     "flights": 15
   },
   {
-    "airport": "KMCO",
+    "airport": "KLAS",
     "flights": 15
   },
   {
-    "airport": "CYYC",
+    "airport": "CYVR",
+    "flights": 15
+  },
+  {
+    "airport": "VIDP",
+    "flights": 14
+  },
+  {
+    "airport": "YMML",
+    "flights": 14
+  },
+  {
+    "airport": "CYYZ",
     "flights": 14
   },
   {
     "airport": "SKBO",
-    "flights": 14
-  },
-  {
-    "airport": "KSFO",
-    "flights": 14
-  },
-  {
-    "airport": "KPHX",
-    "flights": 14
-  },
-  {
-    "airport": "YPPH",
-    "flights": 14
-  },
-  {
-    "airport": "LSZH",
-    "flights": 14
-  },
-  {
-    "airport": "KSLC",
     "flights": 13
   },
   {
@@ -76,24 +76,24 @@
     "flights": 13
   },
   {
+    "airport": "CYYC",
+    "flights": 13
+  },
+  {
+    "airport": "KMCO",
+    "flights": 13
+  },
+  {
+    "airport": "RCTP",
+    "flights": 13
+  },
+  {
     "airport": "LFPO",
     "flights": 12
   },
   {
-    "airport": "KSJC",
-    "flights": 12
-  },
-  {
-    "airport": "LHBP",
-    "flights": 12
-  },
-  {
-    "airport": "LTFM",
-    "flights": 12
-  },
-  {
-    "airport": "ZBTJ",
-    "flights": 12
+    "airport": "KMSP",
+    "flights": 11
   },
   {
     "airport": "VTBS",
