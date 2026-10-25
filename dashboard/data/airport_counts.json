@@ -1,54 +1,34 @@
 [
   {
     "airport": "unknown",
-    "flights": 4588
+    "flights": 3444
   },
   {
-    "airport": "KDEN",
-    "flights": 46
+    "airport": "YMML",
+    "flights": 17
   },
   {
-    "airport": "KDFW",
-    "flights": 23
+    "airport": "VIDP",
+    "flights": 16
   },
   {
-    "airport": "KPHX",
-    "flights": 23
+    "airport": "CYYC",
+    "flights": 16
   },
   {
     "airport": "RJTT",
-    "flights": 21
-  },
-  {
-    "airport": "KSLC",
-    "flights": 20
-  },
-  {
-    "airport": "KSEA",
-    "flights": 20
-  },
-  {
-    "airport": "KSFO",
-    "flights": 19
-  },
-  {
-    "airport": "KORD",
-    "flights": 18
-  },
-  {
-    "airport": "VHHH",
-    "flights": 17
-  },
-  {
-    "airport": "LSZH",
-    "flights": 17
-  },
-  {
-    "airport": "KAUS",
     "flights": 15
   },
   {
-    "airport": "KLAS",
+    "airport": "YPPH",
+    "flights": 15
+  },
+  {
+    "airport": "KDFW",
+    "flights": 15
+  },
+  {
+    "airport": "VHHH",
     "flights": 15
   },
   {
@@ -56,47 +36,67 @@
     "flights": 15
   },
   {
-    "airport": "VIDP",
-    "flights": 14
-  },
-  {
-    "airport": "YMML",
-    "flights": 14
-  },
-  {
-    "airport": "CYYZ",
-    "flights": 14
+    "airport": "RCTP",
+    "flights": 15
   },
   {
     "airport": "SKBO",
-    "flights": 13
-  },
-  {
-    "airport": "LGAV",
-    "flights": 13
-  },
-  {
-    "airport": "CYYC",
-    "flights": 13
-  },
-  {
-    "airport": "KMCO",
-    "flights": 13
-  },
-  {
-    "airport": "RCTP",
-    "flights": 13
-  },
-  {
-    "airport": "LFPO",
-    "flights": 12
+    "flights": 14
   },
   {
     "airport": "KMSP",
-    "flights": 11
+    "flights": 13
+  },
+  {
+    "airport": "KAUS",
+    "flights": 13
+  },
+  {
+    "airport": "RJBB",
+    "flights": 13
   },
   {
     "airport": "VTBS",
+    "flights": 12
+  },
+  {
+    "airport": "VECC",
+    "flights": 12
+  },
+  {
+    "airport": "KORD",
+    "flights": 12
+  },
+  {
+    "airport": "YSSY",
+    "flights": 12
+  },
+  {
+    "airport": "KSEA",
     "flights": 11
+  },
+  {
+    "airport": "RKSI",
+    "flights": 11
+  },
+  {
+    "airport": "KSFO",
+    "flights": 10
+  },
+  {
+    "airport": "WSSS",
+    "flights": 10
+  },
+  {
+    "airport": "KMCO",
+    "flights": 9
+  },
+  {
+    "airport": "ZBTJ",
+    "flights": 9
+  },
+  {
+    "airport": "CYYZ",
+    "flights": 8
   }
 ]
