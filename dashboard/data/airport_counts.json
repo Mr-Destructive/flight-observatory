@@ -1,34 +1,42 @@
 [
   {
     "airport": "unknown",
-    "flights": 3444
-  },
-  {
-    "airport": "YMML",
-    "flights": 17
-  },
-  {
-    "airport": "VIDP",
-    "flights": 16
-  },
-  {
-    "airport": "CYYC",
-    "flights": 16
-  },
-  {
-    "airport": "RJTT",
-    "flights": 15
+    "flights": 4040
   },
   {
     "airport": "YPPH",
-    "flights": 15
+    "flights": 19
   },
   {
-    "airport": "KDFW",
-    "flights": 15
+    "airport": "RJTT",
+    "flights": 18
   },
   {
-    "airport": "VHHH",
+    "airport": "YPJT",
+    "flights": 18
+  },
+  {
+    "airport": "SKBO",
+    "flights": 17
+  },
+  {
+    "airport": "KPHX",
+    "flights": 17
+  },
+  {
+    "airport": "KSEA",
+    "flights": 17
+  },
+  {
+    "airport": "KORD",
+    "flights": 16
+  },
+  {
+    "airport": "YMML",
+    "flights": 16
+  },
+  {
+    "airport": "KMSP",
     "flights": 15
   },
   {
@@ -36,67 +44,59 @@
     "flights": 15
   },
   {
-    "airport": "RCTP",
+    "airport": "KLAS",
     "flights": 15
   },
   {
-    "airport": "SKBO",
-    "flights": 14
+    "airport": "KSFO",
+    "flights": 15
   },
   {
-    "airport": "KMSP",
-    "flights": 13
-  },
-  {
-    "airport": "KAUS",
-    "flights": 13
-  },
-  {
-    "airport": "RJBB",
-    "flights": 13
-  },
-  {
-    "airport": "VTBS",
-    "flights": 12
-  },
-  {
-    "airport": "VECC",
-    "flights": 12
-  },
-  {
-    "airport": "KORD",
-    "flights": 12
+    "airport": "KDFW",
+    "flights": 15
   },
   {
     "airport": "YSSY",
+    "flights": 13
+  },
+  {
+    "airport": "KSAN",
     "flights": 12
   },
   {
-    "airport": "KSEA",
+    "airport": "VHHH",
+    "flights": 12
+  },
+  {
+    "airport": "VIDP",
     "flights": 11
-  },
-  {
-    "airport": "RKSI",
-    "flights": 11
-  },
-  {
-    "airport": "KSFO",
-    "flights": 10
-  },
-  {
-    "airport": "WSSS",
-    "flights": 10
-  },
-  {
-    "airport": "KMCO",
-    "flights": 9
-  },
-  {
-    "airport": "ZBTJ",
-    "flights": 9
   },
   {
     "airport": "CYYZ",
-    "flights": 8
+    "flights": 11
+  },
+  {
+    "airport": "VECC",
+    "flights": 11
+  },
+  {
+    "airport": "RCTP",
+    "flights": 11
+  },
+  {
+    "airport": "KSJC",
+    "flights": 11
+  },
+  {
+    "airport": "KJFK",
+    "flights": 10
+  },
+  {
+    "airport": "VTBS",
+    "flights": 10
+  },
+  {
+    "airport": "CYYC",
+    "flights": 10
   }
 ]
