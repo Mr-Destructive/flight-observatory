@@ -1,54 +1,70 @@
 [
   {
     "airport": "unknown",
-    "flights": 3471
+    "flights": 3661
   },
   {
-    "airport": "YPPH",
-    "flights": 27
-  },
-  {
-    "airport": "CYYZ",
-    "flights": 22
+    "airport": "LSZH",
+    "flights": 20
   },
   {
     "airport": "RJTT",
-    "flights": 17
+    "flights": 18
   },
   {
-    "airport": "YMML",
+    "airport": "SKBO",
+    "flights": 18
+  },
+  {
+    "airport": "YPPH",
+    "flights": 18
+  },
+  {
+    "airport": "CYVR",
     "flights": 16
   },
   {
-    "airport": "VHHH",
+    "airport": "YMML",
     "flights": 15
   },
   {
-    "airport": "ZBTJ",
-    "flights": 12
+    "airport": "KMSP",
+    "flights": 14
   },
   {
-    "airport": "KSLC",
-    "flights": 12
-  },
-  {
-    "airport": "WSSS",
-    "flights": 12
-  },
-  {
-    "airport": "RJBB",
-    "flights": 12
+    "airport": "YSSY",
+    "flights": 13
   },
   {
     "airport": "VIDP",
+    "flights": 12
+  },
+  {
+    "airport": "YPJT",
+    "flights": 12
+  },
+  {
+    "airport": "VHHH",
+    "flights": 12
+  },
+  {
+    "airport": "LFPO",
     "flights": 11
   },
   {
-    "airport": "KBOS",
+    "airport": "KLAS",
     "flights": 11
   },
   {
-    "airport": "LOWW",
+    "airport": "EPWA",
+    "flights": 11
+  },
+  {
+    "airport": "LKPR",
+    "flights": 11
+  },
+  {
+    "airport": "LTFM",
     "flights": 11
   },
   {
@@ -56,47 +72,31 @@
     "flights": 11
   },
   {
-    "airport": "CYVR",
-    "flights": 11
-  },
-  {
-    "airport": "KMSP",
+    "airport": "CYYZ",
     "flights": 10
   },
   {
-    "airport": "SKBO",
+    "airport": "WSSS",
     "flights": 10
+  },
+  {
+    "airport": "RCTP",
+    "flights": 10
+  },
+  {
+    "airport": "LGAV",
+    "flights": 10
+  },
+  {
+    "airport": "WIII",
+    "flights": 9
   },
   {
     "airport": "CYYC",
-    "flights": 10
-  },
-  {
-    "airport": "YSSY",
-    "flights": 10
-  },
-  {
-    "airport": "KSFO",
-    "flights": 10
-  },
-  {
-    "airport": "LSZH",
-    "flights": 10
-  },
-  {
-    "airport": "VOBL",
     "flights": 9
   },
   {
-    "airport": "VECC",
-    "flights": 9
-  },
-  {
-    "airport": "KLAS",
-    "flights": 9
-  },
-  {
-    "airport": "YPJT",
+    "airport": "ZGSZ",
     "flights": 9
   }
 ]
