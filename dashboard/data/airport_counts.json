@@ -1,50 +1,74 @@
 [
   {
     "airport": "unknown",
-    "flights": 3661
+    "flights": 3890
   },
   {
     "airport": "LSZH",
-    "flights": 20
-  },
-  {
-    "airport": "RJTT",
-    "flights": 18
-  },
-  {
-    "airport": "SKBO",
-    "flights": 18
-  },
-  {
-    "airport": "YPPH",
-    "flights": 18
-  },
-  {
-    "airport": "CYVR",
-    "flights": 16
-  },
-  {
-    "airport": "YMML",
-    "flights": 15
-  },
-  {
-    "airport": "KMSP",
-    "flights": 14
-  },
-  {
-    "airport": "YSSY",
-    "flights": 13
+    "flights": 25
   },
   {
     "airport": "VIDP",
-    "flights": 12
+    "flights": 24
   },
   {
-    "airport": "YPJT",
-    "flights": 12
+    "airport": "RJTT",
+    "flights": 23
+  },
+  {
+    "airport": "KSEA",
+    "flights": 20
+  },
+  {
+    "airport": "YMML",
+    "flights": 20
+  },
+  {
+    "airport": "YPPH",
+    "flights": 19
+  },
+  {
+    "airport": "SKBO",
+    "flights": 17
   },
   {
     "airport": "VHHH",
+    "flights": 17
+  },
+  {
+    "airport": "YSSY",
+    "flights": 16
+  },
+  {
+    "airport": "KDEN",
+    "flights": 15
+  },
+  {
+    "airport": "YMMB",
+    "flights": 14
+  },
+  {
+    "airport": "KSFO",
+    "flights": 14
+  },
+  {
+    "airport": "CYYZ",
+    "flights": 13
+  },
+  {
+    "airport": "KSAN",
+    "flights": 13
+  },
+  {
+    "airport": "LGAV",
+    "flights": 12
+  },
+  {
+    "airport": "KLAS",
+    "flights": 12
+  },
+  {
+    "airport": "WSSS",
     "flights": 12
   },
   {
@@ -52,51 +76,27 @@
     "flights": 11
   },
   {
-    "airport": "KLAS",
+    "airport": "KDFW",
     "flights": 11
   },
   {
-    "airport": "EPWA",
+    "airport": "LIMC",
     "flights": 11
-  },
-  {
-    "airport": "LKPR",
-    "flights": 11
-  },
-  {
-    "airport": "LTFM",
-    "flights": 11
-  },
-  {
-    "airport": "YBBN",
-    "flights": 11
-  },
-  {
-    "airport": "CYYZ",
-    "flights": 10
-  },
-  {
-    "airport": "WSSS",
-    "flights": 10
-  },
-  {
-    "airport": "RCTP",
-    "flights": 10
-  },
-  {
-    "airport": "LGAV",
-    "flights": 10
-  },
-  {
-    "airport": "WIII",
-    "flights": 9
   },
   {
     "airport": "CYYC",
-    "flights": 9
+    "flights": 11
   },
   {
-    "airport": "ZGSZ",
-    "flights": 9
+    "airport": "RCTP",
+    "flights": 11
+  },
+  {
+    "airport": "CYVR",
+    "flights": 10
+  },
+  {
+    "airport": "LTFM",
+    "flights": 10
   }
 ]
