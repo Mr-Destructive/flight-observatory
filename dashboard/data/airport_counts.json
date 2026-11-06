@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 3895
-  },
-  {
-    "airport": "YPPH",
-    "flights": 26
-  },
-  {
-    "airport": "UUEE",
-    "flights": 17
-  },
-  {
-    "airport": "LIMC",
-    "flights": 16
-  },
-  {
-    "airport": "VHHH",
-    "flights": 16
-  },
-  {
-    "airport": "LFPG",
-    "flights": 16
+    "flights": 4308
   },
   {
     "airport": "LSZH",
-    "flights": 16
-  },
-  {
-    "airport": "LEBL",
-    "flights": 15
-  },
-  {
-    "airport": "LOWW",
-    "flights": 15
-  },
-  {
-    "airport": "CYYZ",
-    "flights": 14
-  },
-  {
-    "airport": "WSSS",
-    "flights": 14
+    "flights": 24
   },
   {
     "airport": "YSSY",
-    "flights": 14
-  },
-  {
-    "airport": "EIDW",
-    "flights": 13
-  },
-  {
-    "airport": "RCTP",
-    "flights": 13
-  },
-  {
-    "airport": "LFPO",
-    "flights": 12
+    "flights": 23
   },
   {
     "airport": "KSEA",
-    "flights": 12
+    "flights": 21
   },
   {
-    "airport": "CYYC",
-    "flights": 12
-  },
-  {
-    "airport": "YBBN",
-    "flights": 12
-  },
-  {
-    "airport": "YPJT",
-    "flights": 11
-  },
-  {
-    "airport": "LTFM",
-    "flights": 11
+    "airport": "LFPO",
+    "flights": 18
   },
   {
     "airport": "RJTT",
-    "flights": 10
+    "flights": 18
+  },
+  {
+    "airport": "YPPH",
+    "flights": 18
+  },
+  {
+    "airport": "WSSS",
+    "flights": 18
+  },
+  {
+    "airport": "CYYC",
+    "flights": 17
+  },
+  {
+    "airport": "YMML",
+    "flights": 16
+  },
+  {
+    "airport": "KSFO",
+    "flights": 16
+  },
+  {
+    "airport": "VIDP",
+    "flights": 15
+  },
+  {
+    "airport": "KPHX",
+    "flights": 15
   },
   {
     "airport": "LGAV",
-    "flights": 10
+    "flights": 13
   },
   {
-    "airport": "VECC",
-    "flights": 10
+    "airport": "LTFM",
+    "flights": 13
   },
   {
-    "airport": "VTBS",
-    "flights": 10
+    "airport": "VHHH",
+    "flights": 13
   },
   {
     "airport": "EFHK",
+    "flights": 12
+  },
+  {
+    "airport": "LIMC",
+    "flights": 12
+  },
+  {
+    "airport": "KLAS",
+    "flights": 12
+  },
+  {
+    "airport": "VTBS",
+    "flights": 11
+  },
+  {
+    "airport": "RJAA",
+    "flights": 11
+  },
+  {
+    "airport": "EIDW",
+    "flights": 11
+  },
+  {
+    "airport": "WIII",
+    "flights": 10
+  },
+  {
+    "airport": "YPJT",
+    "flights": 10
+  },
+  {
+    "airport": "KMSP",
     "flights": 10
   }
 ]
