@@ -1,42 +1,42 @@
 [
   {
     "airport": "unknown",
-    "flights": 4308
+    "flights": 4188
   },
   {
-    "airport": "LSZH",
-    "flights": 24
-  },
-  {
-    "airport": "YSSY",
-    "flights": 23
-  },
-  {
-    "airport": "KSEA",
-    "flights": 21
-  },
-  {
-    "airport": "YPPH",
-    "flights": 18
-  },
-  {
-    "airport": "WSSS",
-    "flights": 18
+    "airport": "KSFO",
+    "flights": 28
   },
   {
     "airport": "RJTT",
-    "flights": 18
+    "flights": 20
+  },
+  {
+    "airport": "LSZH",
+    "flights": 20
+  },
+  {
+    "airport": "CYYZ",
+    "flights": 16
+  },
+  {
+    "airport": "VHHH",
+    "flights": 15
+  },
+  {
+    "airport": "WSSS",
+    "flights": 14
+  },
+  {
+    "airport": "UUEE",
+    "flights": 14
   },
   {
     "airport": "LFPO",
-    "flights": 18
+    "flights": 14
   },
   {
-    "airport": "CYYC",
-    "flights": 17
-  },
-  {
-    "airport": "YMML",
-    "flights": 16
+    "airport": "KSEA",
+    "flights": 14
   }
 ]
