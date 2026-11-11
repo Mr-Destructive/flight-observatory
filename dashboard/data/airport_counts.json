@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 3936
+    "flights": 3557
   },
   {
     "airport": "LSZH",
-    "flights": 24
+    "flights": 26
   },
   {
     "airport": "YPPH",
     "flights": 24
   },
   {
-    "airport": "RCTP",
-    "flights": 21
+    "airport": "CYYZ",
+    "flights": 19
   },
   {
-    "airport": "YSSY",
+    "airport": "VHHH",
     "flights": 18
   },
   {
-    "airport": "EHAM",
-    "flights": 17
-  },
-  {
-    "airport": "LGAV",
-    "flights": 17
-  },
-  {
-    "airport": "EDDF",
-    "flights": 17
-  },
-  {
-    "airport": "RJTT",
-    "flights": 15
-  },
-  {
-    "airport": "KLAS",
-    "flights": 15
-  },
-  {
-    "airport": "EGLL",
+    "airport": "WSSS",
     "flights": 15
   },
   {
     "airport": "KSFO",
+    "flights": 15
+  },
+  {
+    "airport": "CYVR",
+    "flights": 15
+  },
+  {
+    "airport": "KSLC",
     "flights": 14
   },
   {
-    "airport": "WSSS",
+    "airport": "LTFM",
     "flights": 14
+  },
+  {
+    "airport": "RCTP",
+    "flights": 14
+  },
+  {
+    "airport": "CYYC",
+    "flights": 13
+  },
+  {
+    "airport": "YMML",
+    "flights": 13
+  },
+  {
+    "airport": "YSSY",
+    "flights": 13
   },
   {
     "airport": "VIDP",
-    "flights": 13
-  },
-  {
-    "airport": "RJAA",
-    "flights": 13
-  },
-  {
-    "airport": "VTBS",
-    "flights": 13
-  },
-  {
-    "airport": "UUEE",
-    "flights": 13
-  },
-  {
-    "airport": "LOWW",
     "flights": 12
-  },
-  {
-    "airport": "KSEA",
-    "flights": 12
-  },
-  {
-    "airport": "EIDW",
-    "flights": 12
-  },
-  {
-    "airport": "ENGM",
-    "flights": 11
   },
   {
     "airport": "ZBTJ",
+    "flights": 12
+  },
+  {
+    "airport": "RJTT",
+    "flights": 12
+  },
+  {
+    "airport": "VECC",
     "flights": 11
   },
   {
-    "airport": "LFBO",
+    "airport": "EKCH",
     "flights": 11
   },
   {
     "airport": "LFPO",
-    "flights": 11
+    "flights": 10
   },
   {
-    "airport": "VHHH",
-    "flights": 11
+    "airport": "VGHS",
+    "flights": 10
+  },
+  {
+    "airport": "VTBS",
+    "flights": 10
+  },
+  {
+    "airport": "PANC",
+    "flights": 10
+  },
+  {
+    "airport": "EFHK",
+    "flights": 9
+  },
+  {
+    "airport": "KORD",
+    "flights": 9
   }
 ]
