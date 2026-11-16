@@ -1,26 +1,34 @@
 [
   {
     "airport": "unknown",
-    "flights": 3907
-  },
-  {
-    "airport": "VHHH",
-    "flights": 24
-  },
-  {
-    "airport": "YMML",
-    "flights": 21
+    "flights": 4311
   },
   {
     "airport": "LSZH",
-    "flights": 20
+    "flights": 24
   },
   {
-    "airport": "LTFM",
-    "flights": 18
+    "airport": "KSEA",
+    "flights": 24
+  },
+  {
+    "airport": "KSFO",
+    "flights": 21
   },
   {
     "airport": "YSSY",
+    "flights": 20
+  },
+  {
+    "airport": "KSAN",
+    "flights": 19
+  },
+  {
+    "airport": "KDEN",
+    "flights": 17
+  },
+  {
+    "airport": "KLAS",
     "flights": 17
   },
   {
@@ -28,27 +36,51 @@
     "flights": 16
   },
   {
-    "airport": "KORD",
+    "airport": "KDFW",
+    "flights": 16
+  },
+  {
+    "airport": "CYVR",
+    "flights": 15
+  },
+  {
+    "airport": "VHHH",
+    "flights": 15
+  },
+  {
+    "airport": "WSSS",
     "flights": 14
   },
   {
-    "airport": "RJAA",
-    "flights": 13
-  },
-  {
-    "airport": "UUEE",
-    "flights": 13
-  },
-  {
-    "airport": "RCTP",
+    "airport": "CYYC",
     "flights": 13
   },
   {
     "airport": "RJTT",
+    "flights": 13
+  },
+  {
+    "airport": "YMML",
     "flights": 12
   },
   {
-    "airport": "LIMC",
+    "airport": "LGAV",
+    "flights": 12
+  },
+  {
+    "airport": "CYYZ",
+    "flights": 12
+  },
+  {
+    "airport": "KMSP",
+    "flights": 12
+  },
+  {
+    "airport": "PANC",
+    "flights": 12
+  },
+  {
+    "airport": "KBNA",
     "flights": 11
   },
   {
@@ -56,47 +88,15 @@
     "flights": 11
   },
   {
-    "airport": "KDFW",
+    "airport": "LFPG",
+    "flights": 11
+  },
+  {
+    "airport": "KPHX",
+    "flights": 11
+  },
+  {
+    "airport": "KSLC",
     "flights": 10
-  },
-  {
-    "airport": "CYVR",
-    "flights": 10
-  },
-  {
-    "airport": "KMSP",
-    "flights": 10
-  },
-  {
-    "airport": "KSFO",
-    "flights": 10
-  },
-  {
-    "airport": "KSEA",
-    "flights": 10
-  },
-  {
-    "airport": "KATL",
-    "flights": 10
-  },
-  {
-    "airport": "SKBO",
-    "flights": 9
-  },
-  {
-    "airport": "KBOS",
-    "flights": 9
-  },
-  {
-    "airport": "CYYZ",
-    "flights": 9
-  },
-  {
-    "airport": "KDEN",
-    "flights": 8
-  },
-  {
-    "airport": "VECC",
-    "flights": 8
   }
 ]
