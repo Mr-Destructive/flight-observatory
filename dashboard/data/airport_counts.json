@@ -1,70 +1,86 @@
 [
   {
     "airport": "unknown",
-    "flights": 3753
+    "flights": 4014
   },
   {
-    "airport": "YSSY",
+    "airport": "KSFO",
     "flights": 25
   },
   {
     "airport": "LSZH",
+    "flights": 24
+  },
+  {
+    "airport": "UUEE",
     "flights": 22
   },
   {
-    "airport": "YPPH",
+    "airport": "WSSS",
     "flights": 21
   },
   {
-    "airport": "KSLC",
-    "flights": 20
-  },
-  {
-    "airport": "CYYC",
+    "airport": "LFPO",
     "flights": 19
   },
   {
+    "airport": "YPPH",
+    "flights": 19
+  },
+  {
+    "airport": "RJTT",
+    "flights": 17
+  },
+  {
     "airport": "LEBL",
-    "flights": 18
+    "flights": 17
+  },
+  {
+    "airport": "EGLL",
+    "flights": 17
+  },
+  {
+    "airport": "YSSY",
+    "flights": 17
+  },
+  {
+    "airport": "YMML",
+    "flights": 17
   },
   {
     "airport": "LGAV",
     "flights": 16
   },
   {
-    "airport": "EHAM",
-    "flights": 16
-  },
-  {
-    "airport": "RJTT",
+    "airport": "CYYC",
     "flights": 15
   },
   {
-    "airport": "LFPO",
-    "flights": 13
+    "airport": "EHAM",
+    "flights": 14
   },
   {
-    "airport": "YMML",
-    "flights": 13
+    "airport": "EIDW",
+    "flights": 14
   },
   {
     "airport": "RCTP",
     "flights": 13
   },
   {
-    "airport": "LFBO",
-    "flights": 12
-  },
-  {
-    "airport": "KSFO",
-    "flights": 12
-  },
-  {
     "airport": "VIDP",
-    "flights": 11
+    "flights": 12
   },
   {
-    "airport": "ENGM",
+    "airport": "LOWW",
+    "flights": 12
+  },
+  {
+    "airport": "EGKK",
+    "flights": 12
+  },
+  {
+    "airport": "LFBO",
     "flights": 11
   },
   {
@@ -72,31 +88,15 @@
     "flights": 11
   },
   {
-    "airport": "RJAA",
+    "airport": "ZBTJ",
+    "flights": 11
+  },
+  {
+    "airport": "EDDH",
     "flights": 10
   },
   {
-    "airport": "EGLL",
+    "airport": "KLAS",
     "flights": 10
-  },
-  {
-    "airport": "LTFM",
-    "flights": 10
-  },
-  {
-    "airport": "EIDW",
-    "flights": 10
-  },
-  {
-    "airport": "VTBS",
-    "flights": 9
-  },
-  {
-    "airport": "CYYZ",
-    "flights": 9
-  },
-  {
-    "airport": "KSEA",
-    "flights": 9
   }
 ]

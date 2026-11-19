@@ -1,15 +1,19 @@
 [
   {
     "airline": "unknown",
-    "flights": 1059
-  },
-  {
-    "airline": "Turkish Airlines",
-    "flights": 158
+    "flights": 1070
   },
   {
     "airline": "Ryanair",
-    "flights": 135
+    "flights": 263
+  },
+  {
+    "airline": "Turkish Airlines",
+    "flights": 154
+  },
+  {
+    "airline": "United Airlines",
+    "flights": 140
   },
   {
     "airline": "Delta Air Lines",
@@ -17,86 +21,82 @@
   },
   {
     "airline": "IndiGo Airlines",
-    "flights": 95
+    "flights": 98
   },
   {
     "airline": "American Airlines",
-    "flights": 92
-  },
-  {
-    "airline": "United Airlines",
-    "flights": 89
+    "flights": 94
   },
   {
     "airline": "Lufthansa",
-    "flights": 82
+    "flights": 91
   },
   {
-    "airline": "Japan Airlines Domestic",
-    "flights": 69
-  },
-  {
-    "airline": "Air France",
-    "flights": 66
+    "airline": "Wizz Air",
+    "flights": 67
   },
   {
     "airline": "KLM Royal Dutch Airlines",
+    "flights": 66
+  },
+  {
+    "airline": "Japan Airlines Domestic",
+    "flights": 65
+  },
+  {
+    "airline": "Air France",
+    "flights": 65
+  },
+  {
+    "airline": "British Airways",
     "flights": 62
+  },
+  {
+    "airline": "Qatar Airways",
+    "flights": 59
   },
   {
     "airline": "All Nippon Airways",
     "flights": 57
   },
   {
-    "airline": "British Airways",
-    "flights": 56
-  },
-  {
-    "airline": "Emirates",
-    "flights": 52
-  },
-  {
-    "airline": "Qatar Airways",
-    "flights": 52
-  },
-  {
-    "airline": "Wizz Air",
-    "flights": 51
-  },
-  {
-    "airline": "Singapore Airlines",
-    "flights": 46
-  },
-  {
-    "airline": "Virgin Australia",
-    "flights": 44
-  },
-  {
-    "airline": "China Southern Airlines",
-    "flights": 44
+    "airline": "Qantas",
+    "flights": 55
   },
   {
     "airline": "Vueling Airlines",
-    "flights": 43
+    "flights": 54
   },
   {
-    "airline": "Qantas",
-    "flights": 43
+    "airline": "Eurowings",
+    "flights": 53
+  },
+  {
+    "airline": "Singapore Airlines",
+    "flights": 51
+  },
+  {
+    "airline": "Emirates",
+    "flights": 49
   },
   {
     "airline": "Pegasus Airlines",
-    "flights": 42
+    "flights": 48
   },
   {
-    "airline": "SkyWest",
-    "flights": 40
-  },
-  {
-    "airline": "Transavia France",
-    "flights": 39
+    "airline": "Virgin Australia",
+    "flights": 47
   },
   {
     "airline": "Swissair",
-    "flights": 39
+    "flights": 43
+  },
+  {
+    "airline": "Alaska Airlines",
+    "flights": 43
+  },
+  {
+    "airline": "Air India Limited",
+    "flights": 41
   }
 ]
