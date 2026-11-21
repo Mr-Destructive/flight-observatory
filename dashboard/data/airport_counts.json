@@ -1,74 +1,66 @@
 [
   {
     "airport": "unknown",
-    "flights": 4300
+    "flights": 4237
   },
   {
     "airport": "LSZH",
-    "flights": 29
+    "flights": 24
   },
   {
-    "airport": "WSSS",
-    "flights": 22
+    "airport": "EHAM",
+    "flights": 21
   },
   {
-    "airport": "YSSY",
+    "airport": "KSFO",
     "flights": 20
   },
   {
     "airport": "RCTP",
-    "flights": 20
-  },
-  {
-    "airport": "EGLL",
-    "flights": 19
-  },
-  {
-    "airport": "CYVR",
-    "flights": 18
-  },
-  {
-    "airport": "YPPH",
     "flights": 17
   },
   {
-    "airport": "EGKK",
-    "flights": 17
+    "airport": "UUEE",
+    "flights": 16
   },
   {
-    "airport": "KSFO",
+    "airport": "VIDP",
+    "flights": 15
+  },
+  {
+    "airport": "RJTT",
     "flights": 15
   },
   {
     "airport": "EIDW",
-    "flights": 15
-  },
-  {
-    "airport": "UUEE",
-    "flights": 15
-  },
-  {
-    "airport": "EHAM",
     "flights": 14
   },
   {
-    "airport": "EDDF",
-    "flights": 14
+    "airport": "LGAV",
+    "flights": 13
+  },
+  {
+    "airport": "EGLL",
+    "flights": 13
+  },
+  {
+    "airport": "LEBL",
+    "flights": 13
+  },
+  {
+    "airport": "KSEA",
+    "flights": 13
+  },
+  {
+    "airport": "EGCC",
+    "flights": 13
   },
   {
     "airport": "LFPO",
-    "flights": 13
+    "flights": 12
   },
   {
-    "airport": "LEMD",
-    "flights": 13
-  },
-  {
-    "airport": "CYYC",
-    "flights": 13
-  },
-  {
-    "airport": "PANC",
+    "airport": "VTBS",
     "flights": 12
   },
   {
@@ -76,27 +68,35 @@
     "flights": 12
   },
   {
+    "airport": "EDDF",
+    "flights": 12
+  },
+  {
+    "airport": "KPHX",
+    "flights": 12
+  },
+  {
+    "airport": "KSAN",
+    "flights": 12
+  },
+  {
     "airport": "VHHH",
     "flights": 12
   },
   {
+    "airport": "LFPG",
+    "flights": 12
+  },
+  {
     "airport": "KLAS",
-    "flights": 12
-  },
-  {
-    "airport": "YMML",
-    "flights": 12
-  },
-  {
-    "airport": "VIDP",
     "flights": 11
   },
   {
-    "airport": "RJTT",
+    "airport": "LIMC",
     "flights": 11
   },
   {
-    "airport": "EKCH",
+    "airport": "YPPH",
     "flights": 11
   }
 ]
