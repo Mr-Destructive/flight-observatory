@@ -1,50 +1,70 @@
 [
   {
     "airport": "unknown",
-    "flights": 4237
+    "flights": 4008
   },
   {
-    "airport": "LSZH",
-    "flights": 24
-  },
-  {
-    "airport": "EHAM",
+    "airport": "YSSY",
     "flights": 21
+  },
+  {
+    "airport": "CYYC",
+    "flights": 20
   },
   {
     "airport": "KSFO",
     "flights": 20
   },
   {
-    "airport": "RCTP",
-    "flights": 17
+    "airport": "LSZH",
+    "flights": 19
   },
   {
     "airport": "UUEE",
-    "flights": 16
+    "flights": 18
+  },
+  {
+    "airport": "KDEN",
+    "flights": 17
+  },
+  {
+    "airport": "KLAS",
+    "flights": 17
   },
   {
     "airport": "VIDP",
-    "flights": 15
+    "flights": 16
+  },
+  {
+    "airport": "EHAM",
+    "flights": 16
   },
   {
     "airport": "RJTT",
+    "flights": 16
+  },
+  {
+    "airport": "WSSS",
+    "flights": 16
+  },
+  {
+    "airport": "KMSP",
     "flights": 15
   },
   {
-    "airport": "EIDW",
-    "flights": 14
+    "airport": "VECC",
+    "flights": 15
   },
   {
-    "airport": "LGAV",
+    "airport": "CYYZ",
+    "flights": 15
+  },
+  {
+    "airport": "VHHH",
     "flights": 13
   },
   {
-    "airport": "EGLL",
-    "flights": 13
-  },
-  {
-    "airport": "LEBL",
+    "airport": "KSAN",
     "flights": 13
   },
   {
@@ -52,11 +72,7 @@
     "flights": 13
   },
   {
-    "airport": "EGCC",
-    "flights": 13
-  },
-  {
-    "airport": "LFPO",
+    "airport": "LGAV",
     "flights": 12
   },
   {
@@ -64,39 +80,23 @@
     "flights": 12
   },
   {
-    "airport": "CYYZ",
-    "flights": 12
-  },
-  {
     "airport": "EDDF",
     "flights": 12
   },
   {
-    "airport": "KPHX",
+    "airport": "KMCO",
     "flights": 12
   },
   {
-    "airport": "KSAN",
+    "airport": "KSJC",
     "flights": 12
   },
   {
-    "airport": "VHHH",
+    "airport": "EYVI",
     "flights": 12
   },
   {
-    "airport": "LFPG",
-    "flights": 12
-  },
-  {
-    "airport": "KLAS",
-    "flights": 11
-  },
-  {
-    "airport": "LIMC",
-    "flights": 11
-  },
-  {
-    "airport": "YPPH",
+    "airport": "EGLL",
     "flights": 11
   }
 ]
