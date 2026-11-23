@@ -1,74 +1,74 @@
 [
   {
     "airport": "unknown",
-    "flights": 4008
+    "flights": 4275
   },
   {
-    "airport": "YSSY",
-    "flights": 21
+    "airport": "LSZH",
+    "flights": 36
   },
   {
-    "airport": "CYYC",
+    "airport": "EHAM",
+    "flights": 22
+  },
+  {
+    "airport": "KLAS",
+    "flights": 22
+  },
+  {
+    "airport": "UUEE",
     "flights": 20
   },
   {
     "airport": "KSFO",
-    "flights": 20
-  },
-  {
-    "airport": "LSZH",
-    "flights": 19
-  },
-  {
-    "airport": "UUEE",
     "flights": 18
   },
   {
-    "airport": "KDEN",
+    "airport": "EIDW",
     "flights": 17
   },
   {
-    "airport": "KLAS",
-    "flights": 17
-  },
-  {
-    "airport": "VIDP",
+    "airport": "LFPO",
     "flights": 16
   },
   {
-    "airport": "EHAM",
+    "airport": "KPHX",
     "flights": 16
   },
   {
-    "airport": "RJTT",
+    "airport": "YSSY",
     "flights": 16
   },
   {
     "airport": "WSSS",
-    "flights": 16
-  },
-  {
-    "airport": "KMSP",
     "flights": 15
   },
   {
-    "airport": "VECC",
+    "airport": "RJTT",
     "flights": 15
   },
   {
-    "airport": "CYYZ",
-    "flights": 15
+    "airport": "VIDP",
+    "flights": 14
   },
   {
-    "airport": "VHHH",
-    "flights": 13
+    "airport": "YPJT",
+    "flights": 14
   },
   {
-    "airport": "KSAN",
-    "flights": 13
+    "airport": "EGLL",
+    "flights": 14
   },
   {
-    "airport": "KSEA",
+    "airport": "EGKK",
+    "flights": 14
+  },
+  {
+    "airport": "YPPH",
+    "flights": 14
+  },
+  {
+    "airport": "VTBS",
     "flights": 13
   },
   {
@@ -76,27 +76,27 @@
     "flights": 12
   },
   {
-    "airport": "VTBS",
+    "airport": "LEBL",
     "flights": 12
   },
   {
-    "airport": "EDDF",
+    "airport": "YMML",
     "flights": 12
   },
   {
-    "airport": "KMCO",
-    "flights": 12
-  },
-  {
-    "airport": "KSJC",
-    "flights": 12
-  },
-  {
-    "airport": "EYVI",
-    "flights": 12
-  },
-  {
-    "airport": "EGLL",
+    "airport": "RCTP",
     "flights": 11
+  },
+  {
+    "airport": "KDEN",
+    "flights": 10
+  },
+  {
+    "airport": "EDDL",
+    "flights": 10
+  },
+  {
+    "airport": "LOWW",
+    "flights": 10
   }
 ]

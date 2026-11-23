@@ -1,42 +1,42 @@
 [
   {
     "airport": "unknown",
-    "flights": 4008
-  },
-  {
-    "airport": "YSSY",
-    "flights": 21
-  },
-  {
-    "airport": "KSFO",
-    "flights": 20
-  },
-  {
-    "airport": "CYYC",
-    "flights": 20
+    "flights": 4275
   },
   {
     "airport": "LSZH",
-    "flights": 19
-  },
-  {
-    "airport": "UUEE",
-    "flights": 18
+    "flights": 36
   },
   {
     "airport": "KLAS",
+    "flights": 22
+  },
+  {
+    "airport": "EHAM",
+    "flights": 22
+  },
+  {
+    "airport": "UUEE",
+    "flights": 20
+  },
+  {
+    "airport": "KSFO",
+    "flights": 18
+  },
+  {
+    "airport": "EIDW",
     "flights": 17
   },
   {
-    "airport": "KDEN",
-    "flights": 17
-  },
-  {
-    "airport": "WSSS",
+    "airport": "YSSY",
     "flights": 16
   },
   {
-    "airport": "VIDP",
+    "airport": "LFPO",
+    "flights": 16
+  },
+  {
+    "airport": "KPHX",
     "flights": 16
   }
 ]
