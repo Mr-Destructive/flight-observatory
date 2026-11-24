@@ -1,66 +1,58 @@
 [
   {
     "airport": "unknown",
-    "flights": 4275
+    "flights": 4354
+  },
+  {
+    "airport": "RJTT",
+    "flights": 30
   },
   {
     "airport": "LSZH",
-    "flights": 36
+    "flights": 27
   },
   {
-    "airport": "EHAM",
-    "flights": 22
+    "airport": "EGLL",
+    "flights": 26
   },
   {
-    "airport": "KLAS",
-    "flights": 22
-  },
-  {
-    "airport": "UUEE",
+    "airport": "EBBR",
     "flights": 20
   },
   {
-    "airport": "KSFO",
+    "airport": "EHAM",
+    "flights": 19
+  },
+  {
+    "airport": "EDDF",
     "flights": 18
   },
   {
-    "airport": "EIDW",
+    "airport": "LFBO",
     "flights": 17
   },
   {
-    "airport": "LFPO",
+    "airport": "LEBL",
+    "flights": 17
+  },
+  {
+    "airport": "RCTP",
     "flights": 16
   },
   {
-    "airport": "KPHX",
+    "airport": "LFPG",
     "flights": 16
   },
   {
-    "airport": "YSSY",
-    "flights": 16
+    "airport": "KMSP",
+    "flights": 15
   },
   {
     "airport": "WSSS",
     "flights": 15
   },
   {
-    "airport": "RJTT",
-    "flights": 15
-  },
-  {
-    "airport": "VIDP",
-    "flights": 14
-  },
-  {
-    "airport": "YPJT",
-    "flights": 14
-  },
-  {
-    "airport": "EGLL",
-    "flights": 14
-  },
-  {
-    "airport": "EGKK",
+    "airport": "VHHH",
     "flights": 14
   },
   {
@@ -68,35 +60,43 @@
     "flights": 14
   },
   {
-    "airport": "VTBS",
+    "airport": "EGKK",
+    "flights": 14
+  },
+  {
+    "airport": "YSSY",
     "flights": 13
   },
   {
-    "airport": "LGAV",
+    "airport": "LTFM",
     "flights": 12
   },
   {
-    "airport": "LEBL",
+    "airport": "LEMD",
     "flights": 12
   },
   {
-    "airport": "YMML",
+    "airport": "EDDM",
     "flights": 12
   },
   {
-    "airport": "RCTP",
-    "flights": 11
-  },
-  {
-    "airport": "KDEN",
-    "flights": 10
-  },
-  {
-    "airport": "EDDL",
-    "flights": 10
+    "airport": "UUEE",
+    "flights": 12
   },
   {
     "airport": "LOWW",
+    "flights": 11
+  },
+  {
+    "airport": "LFPO",
     "flights": 10
+  },
+  {
+    "airport": "EKCH",
+    "flights": 10
+  },
+  {
+    "airport": "VECC",
+    "flights": 9
   }
 ]
