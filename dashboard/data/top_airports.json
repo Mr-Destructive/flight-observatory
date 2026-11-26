@@ -1,42 +1,42 @@
 [
   {
     "airport": "unknown",
-    "flights": 4176
+    "flights": 4249
   },
   {
-    "airport": "EGLL",
+    "airport": "LOWW",
     "flights": 33
   },
   {
-    "airport": "YSSY",
-    "flights": 23
-  },
-  {
-    "airport": "RJTT",
-    "flights": 21
-  },
-  {
     "airport": "LSZH",
-    "flights": 21
-  },
-  {
-    "airport": "EDDF",
-    "flights": 21
-  },
-  {
-    "airport": "KLAS",
-    "flights": 20
-  },
-  {
-    "airport": "KSFO",
-    "flights": 19
-  },
-  {
-    "airport": "YPPH",
-    "flights": 18
+    "flights": 26
   },
   {
     "airport": "UUEE",
+    "flights": 23
+  },
+  {
+    "airport": "EGLL",
+    "flights": 23
+  },
+  {
+    "airport": "YSSY",
+    "flights": 21
+  },
+  {
+    "airport": "EHAM",
     "flights": 18
+  },
+  {
+    "airport": "VHHH",
+    "flights": 17
+  },
+  {
+    "airport": "RCTP",
+    "flights": 17
+  },
+  {
+    "airport": "EKCH",
+    "flights": 17
   }
 ]
