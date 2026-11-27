@@ -1,42 +1,42 @@
 [
   {
     "airport": "unknown",
-    "flights": 4249
-  },
-  {
-    "airport": "LOWW",
-    "flights": 33
-  },
-  {
-    "airport": "LSZH",
-    "flights": 26
-  },
-  {
-    "airport": "UUEE",
-    "flights": 23
-  },
-  {
-    "airport": "EGLL",
-    "flights": 23
-  },
-  {
-    "airport": "YSSY",
-    "flights": 21
+    "flights": 3949
   },
   {
     "airport": "EHAM",
-    "flights": 18
+    "flights": 26
   },
   {
-    "airport": "VHHH",
-    "flights": 17
+    "airport": "RJTT",
+    "flights": 25
   },
   {
-    "airport": "RCTP",
-    "flights": 17
+    "airport": "LSZH",
+    "flights": 25
   },
   {
-    "airport": "EKCH",
-    "flights": 17
+    "airport": "YSSY",
+    "flights": 23
+  },
+  {
+    "airport": "EGKK",
+    "flights": 22
+  },
+  {
+    "airport": "LKPR",
+    "flights": 21
+  },
+  {
+    "airport": "YMML",
+    "flights": 20
+  },
+  {
+    "airport": "UUEE",
+    "flights": 20
+  },
+  {
+    "airport": "LOWW",
+    "flights": 19
   }
 ]

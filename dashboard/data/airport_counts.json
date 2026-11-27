@@ -1,38 +1,54 @@
 [
   {
     "airport": "unknown",
-    "flights": 4249
-  },
-  {
-    "airport": "LOWW",
-    "flights": 33
-  },
-  {
-    "airport": "LSZH",
-    "flights": 26
-  },
-  {
-    "airport": "EGLL",
-    "flights": 23
-  },
-  {
-    "airport": "UUEE",
-    "flights": 23
-  },
-  {
-    "airport": "YSSY",
-    "flights": 21
+    "flights": 3949
   },
   {
     "airport": "EHAM",
+    "flights": 26
+  },
+  {
+    "airport": "LSZH",
+    "flights": 25
+  },
+  {
+    "airport": "RJTT",
+    "flights": 25
+  },
+  {
+    "airport": "YSSY",
+    "flights": 23
+  },
+  {
+    "airport": "EGKK",
+    "flights": 22
+  },
+  {
+    "airport": "LKPR",
+    "flights": 21
+  },
+  {
+    "airport": "YMML",
+    "flights": 20
+  },
+  {
+    "airport": "UUEE",
+    "flights": 20
+  },
+  {
+    "airport": "LOWW",
+    "flights": 19
+  },
+  {
+    "airport": "LFPO",
+    "flights": 19
+  },
+  {
+    "airport": "YPPH",
     "flights": 18
   },
   {
-    "airport": "EKCH",
-    "flights": 17
-  },
-  {
-    "airport": "VHHH",
+    "airport": "EGLL",
     "flights": 17
   },
   {
@@ -40,63 +56,47 @@
     "flights": 17
   },
   {
-    "airport": "EDDF",
+    "airport": "VHHH",
     "flights": 17
   },
   {
-    "airport": "YMML",
+    "airport": "WSSS",
     "flights": 16
   },
   {
-    "airport": "KSFO",
+    "airport": "LEBL",
     "flights": 15
   },
   {
-    "airport": "VIDP",
-    "flights": 14
-  },
-  {
-    "airport": "RJTT",
-    "flights": 14
-  },
-  {
-    "airport": "YPPH",
+    "airport": "EDDF",
     "flights": 13
   },
   {
-    "airport": "LEBL",
-    "flights": 12
-  },
-  {
-    "airport": "EGKK",
-    "flights": 12
-  },
-  {
     "airport": "EDDM",
-    "flights": 12
+    "flights": 13
   },
   {
-    "airport": "WSSS",
+    "airport": "EKCH",
     "flights": 12
   },
   {
     "airport": "LGAV",
+    "flights": 12
+  },
+  {
+    "airport": "VTBS",
+    "flights": 12
+  },
+  {
+    "airport": "RJBB",
+    "flights": 12
+  },
+  {
+    "airport": "CYYZ",
+    "flights": 12
+  },
+  {
+    "airport": "EIDW",
     "flights": 11
-  },
-  {
-    "airport": "KLAS",
-    "flights": 11
-  },
-  {
-    "airport": "LFBO",
-    "flights": 11
-  },
-  {
-    "airport": "KSEA",
-    "flights": 9
-  },
-  {
-    "airport": "LFSB",
-    "flights": 9
   }
 ]
