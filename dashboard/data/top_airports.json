@@ -1,42 +1,42 @@
 [
   {
     "airport": "unknown",
-    "flights": 3949
+    "flights": 4015
+  },
+  {
+    "airport": "KSFO",
+    "flights": 25
   },
   {
     "airport": "EHAM",
-    "flights": 26
-  },
-  {
-    "airport": "RJTT",
     "flights": 25
   },
   {
-    "airport": "LSZH",
-    "flights": 25
-  },
-  {
-    "airport": "YSSY",
-    "flights": 23
-  },
-  {
-    "airport": "EGKK",
-    "flights": 22
-  },
-  {
-    "airport": "LKPR",
-    "flights": 21
-  },
-  {
-    "airport": "YMML",
+    "airport": "EGLL",
     "flights": 20
   },
   {
     "airport": "UUEE",
-    "flights": 20
+    "flights": 19
   },
   {
-    "airport": "LOWW",
-    "flights": 19
+    "airport": "LSZH",
+    "flights": 18
+  },
+  {
+    "airport": "EIDW",
+    "flights": 17
+  },
+  {
+    "airport": "LEBL",
+    "flights": 15
+  },
+  {
+    "airport": "KLAS",
+    "flights": 15
+  },
+  {
+    "airport": "EKCH",
+    "flights": 15
   }
 ]

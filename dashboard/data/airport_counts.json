@@ -1,102 +1,102 @@
 [
   {
     "airport": "unknown",
-    "flights": 3949
+    "flights": 4015
   },
   {
     "airport": "EHAM",
-    "flights": 26
-  },
-  {
-    "airport": "LSZH",
     "flights": 25
   },
   {
-    "airport": "RJTT",
+    "airport": "KSFO",
     "flights": 25
   },
   {
-    "airport": "YSSY",
-    "flights": 23
-  },
-  {
-    "airport": "EGKK",
-    "flights": 22
-  },
-  {
-    "airport": "LKPR",
-    "flights": 21
-  },
-  {
-    "airport": "YMML",
+    "airport": "EGLL",
     "flights": 20
   },
   {
     "airport": "UUEE",
-    "flights": 20
-  },
-  {
-    "airport": "LOWW",
     "flights": 19
   },
   {
-    "airport": "LFPO",
-    "flights": 19
-  },
-  {
-    "airport": "YPPH",
+    "airport": "LSZH",
     "flights": 18
   },
   {
-    "airport": "EGLL",
+    "airport": "EIDW",
     "flights": 17
-  },
-  {
-    "airport": "RCTP",
-    "flights": 17
-  },
-  {
-    "airport": "VHHH",
-    "flights": 17
-  },
-  {
-    "airport": "WSSS",
-    "flights": 16
   },
   {
     "airport": "LEBL",
     "flights": 15
   },
   {
-    "airport": "EDDF",
-    "flights": 13
-  },
-  {
-    "airport": "EDDM",
-    "flights": 13
-  },
-  {
     "airport": "EKCH",
+    "flights": 15
+  },
+  {
+    "airport": "KLAS",
+    "flights": 15
+  },
+  {
+    "airport": "EGKK",
+    "flights": 15
+  },
+  {
+    "airport": "VIDP",
+    "flights": 14
+  },
+  {
+    "airport": "LFPO",
+    "flights": 14
+  },
+  {
+    "airport": "WSSS",
+    "flights": 14
+  },
+  {
+    "airport": "YMML",
+    "flights": 14
+  },
+  {
+    "airport": "RJTT",
     "flights": 12
   },
   {
-    "airport": "LGAV",
-    "flights": 12
+    "airport": "LOWW",
+    "flights": 11
+  },
+  {
+    "airport": "EDDF",
+    "flights": 11
+  },
+  {
+    "airport": "ZBTJ",
+    "flights": 10
   },
   {
     "airport": "VTBS",
-    "flights": 12
+    "flights": 10
   },
   {
-    "airport": "RJBB",
-    "flights": 12
+    "airport": "VGHS",
+    "flights": 10
   },
   {
-    "airport": "CYYZ",
-    "flights": 12
+    "airport": "VHHH",
+    "flights": 10
   },
   {
-    "airport": "EIDW",
-    "flights": 11
+    "airport": "YSSY",
+    "flights": 10
+  },
+  {
+    "airport": "RCTP",
+    "flights": 10
+  },
+  {
+    "airport": "LGAV",
+    "flights": 9
   }
 ]
